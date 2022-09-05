@@ -1,0 +1,98 @@
+{{!< default}}
+
+<main class="gh-main">
+    {{#post}}
+        <article class="gh-article {{post_class}}">
+
+            <header class="gh-article-header gh-canvas">
+                {{#if primary_tag}}
+                    <a class="gh-article-tag" href="{{primary_tag.url}}">{{primary_tag.name}}</a>
+                {{/if}}
+
+                <h1 class="gh-article-title">{{title}}</h1>
+
+                {{> "post-meta"}}
+
+                {{#if custom_excerpt}}
+                    <p class="gh-article-excerpt">{{custom_excerpt}}</p>
+                {{/if}}
+
+                {{#if feature_image}}
+                    <figure class="gh-article-image">
+                        <img
+                            srcset="{{img_url feature_image size="s"}} 300w,
+                                    {{img_url feature_image size="m"}} 720w,
+                                    {{img_url feature_image size="l"}} 960w,
+                                    {{img_url feature_image size="xl"}} 1200w,
+                                    {{img_url feature_image size="xxl"}} 2000w"
+                            sizes="(max-width: 1200px) 100vw, 1200px"
+                            src="{{img_url feature_image size="xl"}}"
+                            alt="{{title}}"
+                        >
+                        {{#if feature_image_caption}}
+                            <figcaption>{{feature_image_caption}}</figcaption>
+                        {{/if}}
+                    </figure>
+                {{/if}}
+            </header>
+    <div class="gh-full-content blog-full-content">
+        <div class="toc-inner">
+            <h3>{{t "TOC"}}</h3>
+            <div class="toc">
+            </div>
+        </div>
+            <section class="gh-content gh-canvas toc-content">
+            <aside class="gh-sidebar"></aside> {{! The TOC will be inserted here }}
+            {{content}}
+            </section>
+
+        </article>
+    {{/post}}
+
+    {{> "related-posts"}}
+
+    {{#post}}
+    {{#if comments}}
+        <div class="gh-comments gh-read-next gh-canvas">
+                <div id='discourse-comments'></div>
+                <script type="text/javascript">
+                    window.DiscourseEmbed = {
+                        discourseUrl: 'https://comunidad.criptonautas.com.ar/',
+                        discourseEmbedUrl: `http://criptonautas.com.ar{{url}}`,
+                        discourseReferrerPolicy: 'strict-origin-when-cross-origin'
+                    };
+
+
+
+                    (function () {
+                        var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+                        d.src = window.DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+                    })();
+                </script>
+        </div>
+    {{/if}}
+    {{/post}}
+</main>
+    {{#contentFor "scripts"}}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.18.2/tocbot.min.js"></script>
+    <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            tocbot.init({
+                tocSelector: '.toc',
+                contentSelector: '.toc-content',
+                headingSelector: 'h1',
+                hasInnerContainers: true,
+                scrollSmooth: true,
+                scrollSmoothDuration: 420,
+                headingsOffset: 40,
+                scrollSmoothOffset: -40
+            });
+        })
+            var tocInner =  document.getElementsByClassName("toc")
+            if (tocInner.childNodes.length > 0) {
+                tocInner.parents(".toc-inner").remove()
+                $(".blog-full-content").addClass("without-toc")
+            }
+    </script>
+    {{/contentFor}}

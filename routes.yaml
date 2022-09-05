@@ -1,0 +1,3 @@
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/
