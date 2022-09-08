@@ -810,8 +810,8 @@ padding-top: 1.23rem;
     }
     }
     @media screen and (max-width: 991px) {
-        .is-head-open.gh-head-btn.gh-btn {
-            gh-head-btn.gh-btn {
+        .is-head-open.gh-head-btn.gh-btn,
+            .gh-head-btn.gh-btn {
         font-size: 2rem;
         padding: 1.5rem 3.5rem !important;
     }
@@ -836,7 +836,6 @@ padding-top: 1.23rem;
         margin-top: 36px;
         font-size: 2.4rem;
     }
-}
 
 @media screen and (max-width: 1199px) {
     .gh-article-sidebar {
