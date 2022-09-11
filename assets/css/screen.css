@@ -197,7 +197,7 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 
 .gh-topic-grid .gh-card-excerpt {
     margin-top: 12px;
-    font-size: 2rem;
+    font-size: 2.23rem !important;
 }
 
 .gh-topic-grid .gh-card.no-image.large .gh-card-excerpt {
@@ -519,7 +519,7 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 }
 
 .gh-content > p {
-font-size: 2.5rem;
+font-size: 2.5rem !important;
 }
 
 /* Page head */
@@ -1111,6 +1111,10 @@ grid-template-columns: 25rem auto 25rem;
   color: var(--color-base);
 }
 /* Matenauta stuff */
+
+.gh-content .kg-callout-card .kg-callout-text {
+font-size: 2.23rem;
+}
 
 .gh-burger::after, .gh-burger::before {
     background-color: var(--color-base);
