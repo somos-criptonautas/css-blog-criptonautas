@@ -89,10 +89,9 @@
                 scrollSmoothOffset: -40
             });
         })
-            var tocInner =  document.getElementsByClassName("toc")
-            if (tocInner.childNodes.length > 0) {
-                tocInner.parents(".toc-inner").remove()
-                $(".blog-full-content").addClass("without-toc")
+            var toc = document.getElementsByClassName('toc-inner')[0];
+            if (toc.childNodes.length > 0) {
+                toc.classList.add("hidden");
             }
     </script>
     {{/contentFor}}

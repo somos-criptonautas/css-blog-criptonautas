@@ -18,4 +18,14 @@
 
 const removeAccents = (str) => {
     return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-  } 
+  }
+
+function darkMode() {
+    document.querySelector('.it-dark-light').addEventListener('click', function () {
+        if (html.classList.contains('dark')) {
+            html.classList.remove('dark');
+        } else {
+            html.classList.add('dark');
+        }
+    });
+}

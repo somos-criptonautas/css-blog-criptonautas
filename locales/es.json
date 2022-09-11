@@ -11,7 +11,7 @@
 	"Edit billing info": "Editar la información de facturación",
 	"Hey there!": "Hola!",
 	"is subscribed to free updates from {sitetitle}, but doesn't have a paid subscription to unlock full access.": "está suscrito a actualizaciones gratuitas de {sitetitle}, pero no tiene una suscripción paga para desbloquear el acceso completo.",
-	"Subscribe now": "Quiero empezar gratis",
+	"Subscribe now": "quiero empezar gratis",
 	"Welcome back!": "dar una buena acogida",
 	"Sign into your account again for full access": "Inicie sesión en su cuenta nuevamente para tener acceso completo",
 	"Your email address": "Tu correo electrónico",
@@ -109,11 +109,13 @@
 	"Show more": "Ver más",
 	"Featured": "Lo más visto",
 	"TOC": "Lo más importante",
-	"Subscribe to": "Descubre por qué",
+	"Subscribe to": "descubre por qué",
 	"Read next": "Quieres más?",
 	"We are": "Somos",
 	"Cryptonauts": "criptonautas de todo el mundo!",
 	"Newsletter description": "Recibe dos veces a la semana la info mas genuina de cripto en español y participa por premios gratuitos 🚀",
 	"A minute of reading time": "Un minuto de lectura",
-	"mins of reading time": "mins de lectura"
+	"mins of reading time": "mins de lectura",
+	"First newsletter title": "Libertad = tiempo + dinero",
+	"First newsletter description": "Liberate gratis con tips y sugerencias criptonautas (dos veces al mes 🏄)"
 }
