@@ -1110,10 +1110,24 @@ grid-template-columns: 25rem auto 25rem;
   a {
   color: var(--color-base);
 }
+
 /* Matenauta stuff */
 
-.gh-content .kg-callout-card .kg-callout-text {
-font-size: 2.23rem;
+.kg-toggle-heading-text {
+font-size: inherit;
+}
+.kg-toggle-heading svg {
+width: 3.33rem;
+}
+.kg-toggle-heading path {
+stroke-width: 3.33;
+}
+.kg-header-card.kg-size-small h2.kg-header-card-header {
+font-size: 3.33rem;
+}
+
+.gh-content > ul {
+font-size: 2rem;
 }
 
 .gh-burger::after, .gh-burger::before {
@@ -1123,7 +1137,12 @@ font-size: 2.23rem;
 .toc-inner.hidden {
 visibility: hidden;
 }
+@media screen and (max-width: 767px) {
 
+.toc-inner.hidden {
+    visibility: hidden;
+}
+}
 .gh-head-logo img {
 max-height: 66px;
 }
@@ -1147,7 +1166,7 @@ border: 0;
 }
 
 .gh-content .kg-callout-card .kg-callout-text, .gh-content .kg-toggle-card .kg-toggle-content > ol, .gh-content .kg-toggle-card .kg-toggle-content > p, .gh-content .kg-toggle-card .kg-toggle-content > ul {
-font-size: 2rem;
+font-size: 2.3rem;
 }
 
 blockquote:not([class]) {
