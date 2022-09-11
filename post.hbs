@@ -90,8 +90,8 @@
             });
         })
             var toc = document.getElementsByClassName('toc-inner')[0];
-            if (toc.childNodes.length > 0) {
-                toc.classList.add("hidden");
+            if (toc.childNodes.length < 0) {
+                toc.classList.add("show");
             }
     </script>
     {{/contentFor}}

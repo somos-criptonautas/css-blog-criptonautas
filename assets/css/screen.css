@@ -33,10 +33,6 @@ figcaption {
     font-size: 1.66rem;
 }
 
-body:not(.is-head-transparent) .gh-head-logo img + img {
-    display: none;
-}
-
 .is-head-transparent .gh-head-logo img:first-of-type:not(:only-child) {
     display: none;
 }
@@ -656,6 +652,10 @@ padding-top: 1.23rem;
 
 /* Media queries */
 
+.gh-main {
+max-width: 100%;
+}
+
 @media screen and (max-width: 767px) {
     .gh-main {
         padding-top: 6.4rem;
@@ -1014,6 +1014,13 @@ grid-template-columns: 25rem auto 25rem;
         display: block;
     }
     @media screen and (max-width: 991px) {
+    .it-dark-light {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        padding: 0.5rem 1rem;
+    }
     .gh-icon-btn,
     .it-dark-light svg {
     width: 2rem;
@@ -1036,8 +1043,16 @@ grid-template-columns: 25rem auto 25rem;
         display: none;
     }
 
+    img.logo-dark {
+        display: none;
+    }
+    
     html[data-theme='dark'] img.logo-dark {
-        display: block !important;
+        display: block;
+    }
+
+    .is-head-open html[data-theme='dark'] img.logo-dark {
+    display: none;
     }
     
     html[data-theme='dark'] .icon-dark {
@@ -1113,6 +1128,28 @@ grid-template-columns: 25rem auto 25rem;
 
 /* Matenauta stuff */
 
+/* New hamburger */
+
+.gh-burger::before,
+.gh-burger::after,
+.is-head-open .gh-burger::before,
+.is-head-open .gh-burger::after {
+    top: inherit !important;
+    bottom: inherit !important;
+    left: inherit !important;
+    right: inherit !important;
+}
+
+
+.gh-content > ol {
+font-size: inherit;
+}
+
+.kg-card .kg-bookmark-card {
+box-shadow: 0 2px 7px 0 rgba(20, 20, 43, 0.06);
+padding-top: 2.23rem;
+margin-bottom: 2.23rem;
+}
 .kg-toggle-heading-text {
 font-size: inherit;
 }
@@ -1134,14 +1171,16 @@ font-size: 2rem;
     background-color: var(--color-base);
 }
 
-.toc-inner.hidden {
+.toc-inner {
 visibility: hidden;
 }
-@media screen and (max-width: 767px) {
 
-.toc-inner.hidden {
-    visibility: hidden;
+.toc-inner.show {
+visibility: visible;
 }
+
+.is-head-open .gh-head-logo img {
+display: none !important;
 }
 .gh-head-logo img {
 max-height: 66px;
@@ -1166,7 +1205,7 @@ border: 0;
 }
 
 .gh-content .kg-callout-card .kg-callout-text, .gh-content .kg-toggle-card .kg-toggle-content > ol, .gh-content .kg-toggle-card .kg-toggle-content > p, .gh-content .kg-toggle-card .kg-toggle-content > ul {
-font-size: 2.3rem;
+font-size: inherit;
 }
 
 blockquote:not([class]) {
@@ -1218,7 +1257,7 @@ grid-template-columns: none;
 
 .gh-burger::after, .gh-burger::before {
 height: 3px;
-width: 3rem;
+width: 3.5rem;
 }
 .is-head-open .gh-burger::after {
 bottom: 12px;
@@ -1229,7 +1268,10 @@ overflow: hidden;
 }
 
 .gh-burger {
-margin: -1rem 0.5rem 0;
+    position: absolute;
+    right: 1rem;
+    width: 6.66rem;
+    height: 5.66rem;
 }
 
 .gh-burger::before {
@@ -1238,10 +1280,13 @@ top: 9px;
 
 @media screen and (max-width: 991px) {
 #gh-head .gh-head-btn {
-  margin-left: 0;
-  margin-top: .23rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0;
 }
-#gh-head .nav a {
+#gh-head .nav a,
+#gh-head .gh-head-btn {
     font-size: 3rem;
   }
 }
@@ -1391,15 +1436,10 @@ form[data-members-form] .it-button {
         min-width: 35vh;
         }
     .newsletter {
-        background: var(--color-base);
         background-color: var(--color-bg);
       height: 100%;
       overflow: auto;
       position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      right: 0;
       transform: var(--transform);
       transition: all .2s ease;
       width: 100%;
@@ -1422,6 +1462,7 @@ form[data-members-form] .it-button {
       font-size: 5.5rem;
       line-height: 1;
       font-weight: 900;
+      padding-top: 40vh;
     }
     .newsletter p.wide {
         letter-spacing: .025em;
@@ -1446,7 +1487,7 @@ form[data-members-form] .it-button {
         margin: 0 !important;
     }
     .newsletter-form {
-        padding: 40vh !important;
+        padding: 0 40vh !important;
         }
 }
 @media screen and (min-width: 900px) and (max-width: 1200px) {
