@@ -591,6 +591,11 @@ height: 1.66rem;
     opacity: 0.777;
 }
 
+
+.gh-subscribe-btn:hover text {
+    opacity: 1;
+}
+
 .gh-subscribe-btn svg {
     margin-right: 1rem;
 }
