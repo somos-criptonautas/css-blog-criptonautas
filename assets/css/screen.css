@@ -6,7 +6,7 @@
     --color-base: #111;
     --head-nav-gap: 32px;
     --color-primary-text: var(--color-darker-gray);
-    --h1-size: 4.4rem;
+    --h1-size: 4.7rem;
 }
 a:hover {
 opacity: 0.77;
@@ -603,9 +603,9 @@ height: 1.66rem;
 /* Site footer */
 
 .gh-foot {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    margin-top: 120px;
+    padding-top: 9rem;
+    margin-top: 3.5rem;
+    padding-bottom: 5rem;
     background-color: var(--color-base);
     color: var(--color-text);
 }
@@ -739,9 +739,8 @@ max-width: 100%;
     }
 
     .gh-foot {
-        padding-top: 64px;
-        padding-bottom: 160px;
-        margin-top: 64px;
+        padding-top: 3rem;
+        margin-top: 3rem;
     }
 
     .gh-subscribe {
@@ -960,7 +959,12 @@ opacity: 1;
     .toc-inner {
         background-color: var(--color-border);
         color: var(--color-base);
-        padding: 1rem 2rem;
+        padding: 3rem 2rem;
+        max-width: 80%;
+        margin: 7rem auto 0;
+    }
+    .toc-inner h3 {
+    padding-left:2.5rem;
     }
     a.toc-link {
     color: var(--color-base);
@@ -1145,6 +1149,9 @@ grid-template-columns: 25rem auto 25rem;
     right: inherit !important;
 }
 
+.gh-content > blockquote:not([class]), .gh-content > dl, .gh-content > ol, .gh-content > p, .gh-content > ul {
+font-size: inherit;
+}
 
 .gh-content > ol {
 font-size: inherit;
@@ -1210,7 +1217,7 @@ border: 0;
 }
 
 .gh-content .kg-callout-card .kg-callout-text, .gh-content .kg-toggle-card .kg-toggle-content > ol, .gh-content .kg-toggle-card .kg-toggle-content > p, .gh-content .kg-toggle-card .kg-toggle-content > ul {
-font-size: inherit;
+font-size: 2.25rem;
 }
 
 blockquote:not([class]) {
@@ -1293,6 +1300,7 @@ top: 9px;
 #gh-head .nav a,
 #gh-head .gh-head-btn {
     font-size: 3rem;
+    padding: 2.23rem 0 !important;
   }
 }
 
@@ -1468,6 +1476,11 @@ form[data-members-form] .it-button {
       line-height: 1;
       font-weight: 900;
     }
+    @media screen and (max-width: 991px){
+    .newsletter-title {
+    font-size: 4rem;
+    }
+}
     .newsletter p.wide {
         letter-spacing: .025em;
       margin: 1.5rem 2rem 0.5rem;
