@@ -1,6 +1,8 @@
 @import "@tryghost/shared-theme-assets/assets/css/screen.css";
 @import "fonts.css";
 @import "vars.css";
+@import "layouts/signin.css";
+@import "layouts/members.css";
 
 :root {
     --color-base: #111;
@@ -1857,7 +1859,3 @@ background-color: var(--color-primary);
     background-color: var(--color-danger);
     box-shadow: none;
 }
-
-/* Ghost components */
-@import "layouts/signin.css";
-@import "layouts/members.css";

@@ -147,7 +147,24 @@
 }
 
 
-
+input {
+    -webkit-appearance: none;
+    background: #fff;
+    border: 1px solid #dbe3e7;
+    border-radius: .8rem;
+    color: var(--color-base);
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1em;
+    min-height: 44px;
+    padding: 1.5rem 2rem;
+    transition: border-color .15s linear;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    user-select: text;
+    width: 100%;
+}
 /* .single-input {
     position: relative;
 }
