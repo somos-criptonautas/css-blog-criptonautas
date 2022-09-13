@@ -1,13 +1,13 @@
 {{#is "post"}}
     <aside class="gh-article-sidebar">
         {{#primary_author}}
-            <a class="author-name" href="{{url}}"><figure class="gh-author-image">
+            <figure class="gh-author-image">
                 {{#if profile_image}}
-                    <img src="{{profile_image}}" alt="{{name}}">
+                    <a class="author-name" href="{{url}}"><img src="{{profile_image}}" alt="{{name}}"></a>
                 {{else}}
-                    <div class="gh-author-icon">{{> icons/avatar}}</div>
+                    <a class="author-name" href="{{url}}"><div class="gh-author-icon">{{> icons/avatar}}</div></a>
                 {{/if}}
-            </figure></a>
+            </figure>
 
             <h4 class="gh-author-name">
                             <a href="{{url}}">{{name}}</a>

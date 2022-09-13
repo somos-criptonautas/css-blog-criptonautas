@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="{{@site.locale}}">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="{{asset "built/app.min.css"}}" />
+    
+        <title>{{meta_title}}</title>
+        
+        <script>
+            var pagination_next_page_number       = '{{ pagination.next }}',
+                pagination_available_pages_number = '{{ pagination.pages }}',
+                api_url = '{{@site.url}}';
+    
+            if(typeof(Storage) !== 'undefined') {
+                if (localStorage.getItem('selected-theme') == 'light') {
+                    document.documentElement.setAttribute('data-theme', 'light');
+                }
+                else if (localStorage.getItem('selected-theme') == 'dark') {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                }
+            }
+            {{#is "home"}}
+                if(typeof(Storage) !== 'undefined') {
+                    if (localStorage.getItem('intro') == 'hidden') {
+                        document.documentElement.setAttribute('data-intro', 'hide');
+                    }
+                }
+                
+                window.addEventListener('load', (event) => {
+                    if (!document.documentElement.hasAttribute('data-intro')) {
+                         document.querySelector('.home-template').classList.add('hidden-overflow');
+                    }
+                });
+            {{/is}}
+        </script>
+        {{ghost_head}}
+        {{!-- Outputs SEO meta+structured data and important settings, should always be in <head> --}}
+    </head>
+
+<body class="{{body_class}}">
+
+
+
+{{#if @member.paid}}
+    {{!-- Logged in: Redirect home --}}
+    <script>window.location = '{{@site.url}}';</script>
+{{else if @member}}
+    {{!-- Member: Redirect to Subscribe --}}
+    <script>window.location = '{{@site.url}}/account/';</script>
+{{else}}
+
+
+<!-- subscribe section start from here    -->
+<div class="subscribe-section min-vh-100">
+    {{#post}}
+    
+    {{#if feature_image}}
+    <a href="{{@site.url}}" class="back-to-home d-flex align-items-center">
+        {{> icons/arrow-left}}
+        <span>{{t "Home"}}</span>
+    </a>
+    {{else}}
+    <a href="{{@site.url}}" class="no-feature-back-to-home d-flex align-items-center">
+        {{> icons/arrow-left}}
+        <span>{{t "Home"}}</span>
+    </a>
+    {{/if}}
+    
+    <div class="sign-wrapper">
+        {{#if feature_image}}
+            <div class="custom-feature-sign">
+                <img class="lazy" srcset="{{img_url feature_image size="s"}} 300w,
+                        {{img_url feature_image size="m"}} 600w,
+                        {{img_url feature_image size="l"}} 1000w,
+                        {{img_url feature_image size="xl"}} 1600w"
+                sizes="(max-width: 600px) 600px, (max-width: 1160px) 1000px, 1140px"
+                data-src="{{img_url feature_image size="m"}}"
+                alt="{{title}}"
+            />
+            </div>
+        {{/if}}
+        <div class="{{#if feature_image}}signup-form{{else}}custom-no-feature-sign mx-auto{{/if}}">
+            <div class="cus-sign-box">
+                <div class="subscribe-title mb-40" style="margin-bottom: 6rem;">
+                    <h2>{{t "Signin to"}}&nbsp;{{@site.title}}</h2>
+                </div>
+                <div class="form-inner-content">
+                    <form data-members-form="signin">
+                        <div>
+                            <div class="single-input" style= 'margin-bottom: 25px;'>
+                                <input data-members-email class="form-control" type="email" required placeholder="{{t "Email address"}}">
+                            </div>
+                            
+                            <div class="subscribe-btn d-flex align-items-center">
+                                <button  type="submit" class="btn btn-sign">
+                                    <span class="button-text">{{t "Send login link"}}</span>
+                                    <span class="button-loader">{{> "icons/loader"}}</span>
+                                </button>
+                            </div>
+                        </div>
+                        <p>{{t "Don't have an account yet?"}}<a href="{{@site.url}}/signup/">&nbsp;{{t "Sign up"}}</a></p>
+                        <div class="message-text">
+                            <div class="message-success">
+                                {{{t "<strong>Please</strong> check your inbox and click the link to confirm your subscription."}}}
+                            </div>
+                            <div class="message-error">
+                                {{t "Please enter a valid email address!"}}
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/post}}
+</div>
+{{/if}}
+<!-- // subscribe section end from here   -->
+
+
+{{!-- Jquery scripts --}}
+{{!-- {{> "membership/notifications"}} --}}
+{{> "site-structure/site-scripts"}} 
+
+{{!-- ghost footer --}}
+{{ghost_foot}}
+
+</body>
+</html>

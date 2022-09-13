@@ -1,0 +1,343 @@
+.pricing-sec {
+    padding: 90px 0;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.min-vh-100 {
+    min-height: 100vh !important;
+}
+.sign-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.custom-feature-sign {
+    width: 50%;
+    height: 100vh;
+}
+.custom-feature-sign img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 50%;
+}
+.cus-sign-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 550px;
+    width: 100%;
+    padding: 0 15px;
+}
+.form-inner-content {
+    max-width: 390px;
+    width: 100%;
+}
+.custom-no-feature-sign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 800px;
+    width: 100%;
+    height: 100vh;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.custom-no-feature-sign p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0;
+    color: var(--color-base);
+    padding-top: 15px;
+}
+.custom-no-feature-sign p a {
+    color: var(--color-primary);
+}
+
+.subscribe-section {
+    background-color: var(--color-bg);
+}
+
+.signup-form {
+    position: relative;
+}
+
+.back-to-home span {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-base);
+    padding-left: 10px;
+    transition: 0.3s;
+}
+.back-to-home svg {
+    color: var(--color-base);
+    width: 25px;
+    height: 25px;
+    transition: 150ms;
+}
+.back-to-home:hover span {
+    color: var(--color-primary);
+}
+.back-to-home:hover svg {
+    transform: translateX(5px);
+    color: var(--color-primary);
+}
+
+
+.no-feature-back-to-home {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 36.5%;
+    top: 50px;
+}
+
+.no-feature-back-to-home svg{
+    height: 18px;
+    width: 18px;
+}
+
+.no-feature-back-to-home span {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-base);
+    padding-left: 10px;
+    transition: 0.3s;
+}
+
+.no-feature-back-to-home svg {
+    color: var(--color-base);
+    width: 25px;
+    height: 25px;
+    transition: 150ms;
+}
+
+.no-feature-back-to-home:hover span {
+    color: var(--color-primary);
+}
+
+.no-feature-back-to-home:hover svg {
+    transform: translateX(5px);
+    color: var(--color-primary);
+}
+
+.back-to-home {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 52%;
+    top: 50px;
+}
+
+.back-to-home svg{
+    height: 18px;
+    width: 18px;
+}
+
+
+
+/* .single-input {
+    position: relative;
+}
+
+.single-input .icon_mail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 60px;
+    background-color: var(--color-bg);
+}
+.single-input .icon_mail svg {
+    width: 20px;
+    height: 20px;
+    color: var(--color-base);
+    stroke-width: 2;
+} */
+
+.single-input .form-control {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-base);
+    font-family: var(--font-body);
+    font-weight: normal;
+    height: 50px;
+    width: 100%;
+    border-radius: 4px 0px 0px 4px;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-bg);
+    --form-control-bg: var(--color-white);
+}
+.single-input .form-control:focus {
+    box-shadow: none !important;
+    border-color: var(--color-border) !important;
+}
+.single-input .form-control::placeholder {
+    color: var(--color-base);
+}
+.subscribe-title h2 {
+    margin-bottom: 0;
+}
+.subscribe-form p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0;
+    color: var(--color-base);
+    padding-top: 15px;
+}
+.subscribe-form p a {
+    color: var(--color-primary);
+}
+.signup-form p {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-base);
+    margin-bottom: 0;
+    padding-top: 15px;
+}
+.signup-form p a {
+    color: var(--color-primary);
+}
+.message-text {
+    max-width: 550px;
+}
+.message-success {
+    color: var(--color-success);
+    font-size: 16px;
+    line-height: 24px;
+    display: none;
+    margin-top: 10px;
+}
+.success .message-success, .error .message-error {
+    display: block;
+}
+.message-error {
+    color: var(--color-red);
+    font-size: 16px;
+    line-height: 24px;
+    display: none;
+    margin-top: 10px;
+}
+
+.subscribe-btn {
+    display: flex;
+    align-items: center;
+}
+.subscribe-btn .btn {
+    position: relative;
+    height: 45px;
+}
+.subscribe-btn .button-loader svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-sign {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-white);
+    background: var(--ghost-accent-color);
+    border: 1px solid var(--ghost-accent-color);
+    transition: 0s;
+    width: 100% !important;
+    padding: 8px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.btn-sign:focus {
+    box-shadow: none;
+}
+.btn-sign:hover {
+    color: var(--color-white);
+    background: var(--ghost-accent-color);
+    border-color: var(--ghost-accent-color);
+    opacity: 0.8;
+}
+
+
+.loading .button-text {
+    display: none;
+}
+.loading .button-loader {
+    display: block;
+}
+.button-loader {
+    display: none;
+}
+.button-loader svg {
+    height: 25px;
+    width: 25px;
+}
+.button-loader svg path {
+    fill: var(--color-white);
+    opacity: 0.7;
+}
+.account-informations h2 {
+    color: var(--color-base);
+    text-align: center;
+}
+.member-name {
+    text-transform: capitalize;
+}
+.subscribe-cover {
+    margin: 0 auto;
+    max-width: 500px;
+}
+.subscribe-cover p {
+    color: var(--color-base);
+}
+.plan-item {
+    font-size: 36px;
+    line-height: 1.4;
+    color: var(--color-base);
+    margin-bottom: 0;
+}
+/* media for 991px*/
+@media screen and (max-width: 991px) {
+    .signup-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+   }
+    .custom-feature-sign {
+        display: none;
+   }
+   .back-to-home {
+        left: 20px;
+    }
+    .no-feature-back-to-home {
+        left: 20px;
+    }
+
+}
+/* media for 575px*/
+@media screen and (max-width: 575px) {
+    .subscribe-title h2 {
+        font-size: 24px;
+   }
+    .subscribe-cover-section h2 {
+        font-size: 26px;
+   }
+}

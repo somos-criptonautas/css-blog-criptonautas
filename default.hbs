@@ -36,9 +36,14 @@
 </head>
 
 <body class="{{body_class}}{{{block "body_class"}}} {{#if @site.description}}is-head-b--a_n{{else}}is-head-b--n--a{{/if}}{{#match @custom.title_font "=" "Elegant serif"}} has-serif-title{{/match}}{{#match @custom.body_font "=" "Elegant serif"}} has-serif-body{{/match}}{{#is "tag"}}{{#if tag.feature_image}} is-head-transparent{{/if}}{{/is}}{{#match @custom.header_style "Accent color"}} is-head-brand{{/match}}{{#match @custom.header_style "Dark"}} is-head-dark{{/match}}">
+
+        {{#if @member.paid}}
+        {{> "site-structure/social-shit"}}
+        {{else if @member.paid}}
         {{#is "home"}}
-            {{> "newsletter"}}
+        {{> "newsletter"}}
         {{/is}}
+        {{/if}}
     <div class="gh-site">
         <header id="gh-head" class="gh-head gh-outer">
             <div class="gh-head-inner gh-inner">
@@ -92,13 +97,13 @@
                 {{^if @member.paid}}
                     <section class="gh-subscribe">
                         {{^if @member}}
-                            <h4 class="gh-subscribe-title">{{ t "Subscribe to" }} {{@site.title}}</h3>
+                            <h4 class="gh-subscribe-title">{{ t "Subscribe to" }}</h3>
 
                             {{#if @custom.email_signup_text}}
                                 <div class="gh-subscribe-description">{{ t "Newsletter description"}}</div>
                             {{/if}}
 
-                            <button class="gh-subscribe-btn gh-btn" data-portal="signup">{{> "icons/email"}} {{ t "Subscribe now" }}</button>
+                            <button class="gh-subscribe-btn gh-btn" data-portal="signup">{{ t "Subscribe now" }}</button>
                         {{else}}
                             <h3 class="gh-subscribe-title">Ready for unlimited access?</h3>
 
