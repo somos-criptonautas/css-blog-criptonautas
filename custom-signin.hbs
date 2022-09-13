@@ -46,7 +46,7 @@
 
 {{#if @member.paid}}
     {{!-- Logged in: Redirect home --}}
-    <script>window.location = '{{@site.url}}';</script>
+    <script>window.location = '{{@site.url/filosofia}}';</script>
 {{else if @member}}
     {{!-- Member: Redirect to Subscribe --}}
     <script>window.location = '{{@site.url}}/account/';</script>
