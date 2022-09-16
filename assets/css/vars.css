@@ -11,7 +11,7 @@ body {
 
     /* Colours */
     --color-primary: #ed5107;
-    --color-secondary: #ef6b2c;
+    --color-secondary: #5107ed;
     --color-success: #07815c;
     --color-danger: #ca203f;
     --color-base: #111;
@@ -32,6 +32,9 @@ body {
     --font-heavy: 800;
     --content-font-size: 24px;
 
+@media screen and (max-width: 991px) {
+    --content-font-size: 24px;
+}
     /* Breakpoints */
     --xlarge: 1680px;
     --large: 1280px;

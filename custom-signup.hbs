@@ -57,12 +57,12 @@
     {{#post}}
     
     {{#if feature_image}}
-    <a href="{{@site.url}}" class="back-to-home d-flex align-items-center">
+    <a href="{{@site.url}}" class="back-to-home align-items-center">
         {{> icons/arrow-left}}
         <span>{{t "Home"}}</span>
     </a>
     {{else}}
-    <a href="{{@site.url}}" class="no-feature-back-to-home d-flex align-items-center">
+    <a href="{{@site.url}}" class="no-feature-back-to-home align-items-center">
         {{> icons/arrow-left}}
         <span>{{t "Home"}}</span>
     </a>
@@ -84,26 +84,23 @@
         {{/if}}
         <div class="{{#if feature_image}}signup-form{{else}}custom-no-feature-sign mx-auto{{/if}}">
             <div class="cus-sign-box">
-                <div class="subscribe-title" style="margin-bottom: 6rem;">
-                    <h2>{{t "Signup to"}} {{@site.title}}</h2>
+                <div class="subscribe-title">
+                    <h1>{{t "Signup to"}} {{@site.title}}</h1>
                 </div>
                 <div class="form-inner-content">
                     <form data-members-form="signup">
                         <div class="subscribe-form">
                             <div class="single-input mb-20">
-                                <input data-members-name class="form-control" type="name" required placeholder="{{t "Your name"}}">
-                            </div>
-                            <div class="single-input mb-20">
                                 <input data-members-email class="form-control" type="email" required placeholder="{{t "Enter your email"}}">
                             </div>
-                            <div class="subscribe-btn d-flex align-items-center">
+                            <div class="subscribe-btn align-items-center">
                                 <button  type="submit" class="btn btn-sign">
                                     <span class="button-text">{{t "Continue"}}</span>
                                     <span class="button-loader">{{> "icons/loader"}}</span>
                                 </button>
                             </div>
                         </div>
-                        <p>{{t "Already have an account?"}}&nbsp;<a href="{{@site.url}}/signin/">{{t "Sign in"}}</a></p>
+                        <p class="center">{{t "Already have an account?"}}</br><a href="{{@site.url}}/signin/">{{t "Sign in"}}</a></p>
                         <div class="message-text">
                             <div class="message-success">
                                 {{{t "<strong>Please</strong> check your inbox and click the link to confirm your subscription."}}}

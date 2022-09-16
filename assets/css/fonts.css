@@ -3,6 +3,7 @@
     font-family: 'Crimson Pro';
     font-style: normal;
     font-weight: 400;
+    font-display: swap;
     src: url('../fonts/crimson-pro-v23-latin-regular.eot'); /* IE9 Compat Modes */
     src: local(''),
          url('../fonts/crimson-pro-v23-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -17,6 +18,7 @@
     font-family: 'Crimson Pro';
     font-style: normal;
     font-weight: 600;
+    font-display: swap;
     src: url('../fonts/crimson-pro-v23-latin-600.eot'); /* IE9 Compat Modes */
     src: local(''),
          url('../fonts/crimson-pro-v23-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -28,6 +30,7 @@
   
   /* crimson-pro-italic - latin */
   @font-face {
+    font-display: swap;
     font-family: 'Crimson Pro';
     font-style: italic;
     font-weight: 400;
@@ -45,6 +48,7 @@
     font-family: 'Crimson Pro';
     font-style: italic;
     font-weight: 700;
+    font-display: swap;
     src: url('../fonts/crimson-pro-v23-latin-700italic.eot'); /* IE9 Compat Modes */
     src: local(''),
          url('../fonts/crimson-pro-v23-latin-700italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -59,6 +63,7 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
+    font-display: swap;
     src: url('../fonts/inter-v12-latin-regular.eot'); /* IE9 Compat Modes */
     src: local(''),
          url('../fonts/inter-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -73,6 +78,7 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
+    font-display: swap;
     src: url('../fonts/inter-v12-latin-800.eot'); /* IE9 Compat Modes */
     src: local(''),
          url('../fonts/inter-v12-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -87,6 +93,7 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 900;
+    font-display: swap;
     src: url('../fonts/inter-v12-latin-900.eot'); /* IE9 Compat Modes */
     src: local(''),
          url('../fonts/inter-v12-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
