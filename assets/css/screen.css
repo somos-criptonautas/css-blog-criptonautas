@@ -25,7 +25,6 @@ html[data-theme=dark] .figcaption {
 .has-full-image figcaption {
     padding: 0 16px;
 }
-
 .gh-btn {
     font-weight: 500;
     font-size: 2rem;
@@ -843,6 +842,7 @@ max-width: 100%;
             .gh-head-btn.gh-btn {
         font-size: 2rem;
         padding: 1.5rem 3.5rem !important;
+        margin-left: 2.77rem;
     }
 }
     .gh-head-btn.gh-btn:hover {
@@ -1303,7 +1303,7 @@ grid-template-columns: none;
 .gh-burger::after, .gh-burger::before {
 height: 3px;
 width: 3.5rem;
-color: var(--color-primary);
+color: var(--color-base);
 }
 .is-head-open .gh-burger::after {
 bottom: 12px;
@@ -1339,8 +1339,8 @@ html[data-theme=dark] .is-head-open .gh-burger::before {
     right: 1rem;
     width: 6.66rem;
     height: 5.66rem;
-    background-color: var(--color-primary);
-    opacity: .23;
+    background-color: var(--color-light-gray);
+    opacity: .77;
 }
 
 .is-head-open .gh-burger {
@@ -1353,10 +1353,12 @@ top: 9px;
 
 @media screen and (max-width: 991px) {
 #gh-head .gh-head-btn {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    border-radius: 0;
+    position: relative;
+    min-width: 23rem;
+    width: 50%;
+    border-radius: 1.77;
+    margin-top: 3rem;
+    padding: 2.33rem;
 }
 #gh-head .nav a,
 #gh-head .gh-head-btn {
@@ -1366,7 +1368,7 @@ top: 9px;
 }
 
 .is-head-open:not(.is-head-transparent) .gh-burger::after, .is-head-open:not(.is-head-transparent) .gh-burger::before {
-background-color: var(--color-primary);
+background-color: var(--color-base);
 }
 
 .is-head-brand:not(.is-head-transparent) .gh-head {
