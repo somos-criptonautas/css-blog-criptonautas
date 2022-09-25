@@ -1309,7 +1309,7 @@ color: var(--color-base);
 bottom: 12px;
 }
 body.page-template {
-background: linear-gradient(315deg,#efefef,#fff);
+background: var(--color-bg);
 }
 .is-head-open .page-template {
 overflow: hidden;

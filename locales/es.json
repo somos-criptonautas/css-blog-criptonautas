@@ -17,8 +17,8 @@
 	"Your email address": "Tu correo electrónico",
 	"Email": "ejemplo@simplelogin.io",
 	"Sign in": "Ingresa",
-	"Don't have an account yet?": "¿Aún no tienes una cuenta?",
-	"Sign up": "Regístrate",
+	"Don't have an account yet?": "¿Aún no tienes una?",
+	"Sign up": "Registrate gratis",
 	"Great! Check your inbox and click the link to complete signin": "¡Excelente! Revise su bandeja de entrada y haga clic en el enlace para completar el inicio de sesión",
 	"Please enter a valid email address!": "¡Por favor, introduce una dirección de correo electrónico válida!",
 	"Choose your subscription": "Elija su suscripción",
@@ -119,6 +119,6 @@
 	"First newsletter title": "Libertad = tiempo + dinero",
 	"First newsletter description": "Recibe dos veces al mes tips y sugerencias criptonautas 🏄",
 	"Latest": "Trending",
-	"Welcome back": "Bienvenid@ :)",
-	"Continue to your account": "Continua a tu cuenta"
+	"Welcome back": "Aloha!",
+	"Continue to your account": "Ingresa a tu cuenta:"
 }
