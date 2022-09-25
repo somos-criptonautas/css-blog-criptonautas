@@ -32,6 +32,7 @@ html[data-theme=dark] .figcaption {
     background-color: var(--color-primary);
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px, rgba(0, 0, 0, 0.03) 0px 2px 6px 0px;
     border-radius: .6rem;
+    margin-left: 1.77rem;
 }
 
 .gh-head-description,
@@ -842,7 +843,6 @@ max-width: 100%;
             .gh-head-btn.gh-btn {
         font-size: 2rem;
         padding: 1.5rem 3.5rem !important;
-        margin-left: 2.77rem;
     }
 }
     .gh-head-btn.gh-btn:hover {
