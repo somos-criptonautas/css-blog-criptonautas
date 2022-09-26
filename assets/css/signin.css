@@ -113,7 +113,34 @@ margin: auto;
     color: var(--color-primary);
 }
 
+.no-feature-back-to-home svg{
+    height: 18px;
+    width: 18px;
+}
 
+.no-feature-back-to-home span {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-base);
+    padding-left: 10px;
+    transition: 0.3s;
+}
+
+.no-feature-back-to-home svg {
+    color: var(--color-base);
+    width: 25px;
+    height: 25px;
+    transition: 150ms;
+}
+
+.no-feature-back-to-home:hover span {
+    color: var(--color-primary);
+}
+
+.no-feature-back-to-home:hover svg {
+    transform: translateX(5px);
+    color: var(--color-primary);
+}
 
 /* .single-input {
     position: relative;
