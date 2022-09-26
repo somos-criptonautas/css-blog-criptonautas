@@ -49,6 +49,7 @@
 }
 .cus-sign-box h1 {
 padding-bottom: 5rem;
+font-size: 11rem;
 }
 .cus-sign-box .mainhead {
 align-items: center;
@@ -169,7 +170,7 @@ margin: auto;
     color: var(--color-base);
     font-family: var(--font-body);
     font-weight: normal;
-    height: 6.3rem;
+    height: 6rem;
     width: 100%;
     border-radius: 0.5rem;
     padding: 1.5rem 2rem;
@@ -251,7 +252,7 @@ margin: auto;
     font-size: 2rem;
     line-height: 1em;
     min-height: 44px;
-    height: 6.3rem;
+    height: 5.33rem;
     outline: none;
     padding: 2rem 2.5rem;
     text-decoration: none !important;
