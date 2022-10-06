@@ -33,7 +33,7 @@
 	"Yearly": "Yearly",
 	"year": "year",
 	"One easy payment instead of 12!": "One easy payment instead of 12!",
-	"Signup to {sitetitle}": "Subscribe to {sitetitle}",
+	"Signup to": "Start to change",
 	"Type your email...": "Type your email...",
 	"Continue": "Continue",
 	"Already have an account?": "Already have an account?",
@@ -111,5 +111,6 @@
 	"Latest": "Trending",
 	"Welcome back": "Welcome back!",
 	"Continue to your account": "Continue to your account",
-	"Send login link": "Send login link"
+	"Send login link": "Send login link",
+	"Enter your email": "Your e-mail"
 }
