@@ -47,9 +47,17 @@
     width: 100%;
     padding: 0 15px;
 }
+.cus-sign-box {
+    text-align: center;
+}
 .cus-sign-box h1 {
 padding-bottom: 5rem;
-font-size: 11rem;
+font-size: 7rem;
+
+}
+.cus-sign-box h2 {
+padding-bottom: 5rem;
+font-size: 7rem;
 }
 .cus-sign-box .mainhead {
 align-items: center;
@@ -106,6 +114,7 @@ margin: auto;
     height: 1rem;
     transition: 150ms;
     transform: translateX(0.5rem);
+    margin-bottom: 0.5rem;
 }
 .back-to-home:hover span {
     color: var(--color-primary);

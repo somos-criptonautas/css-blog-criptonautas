@@ -75,7 +75,6 @@ body:not(.home-template) .gh-topic-grid .gh-topic-content {
     padding-top: 20px;
     margin-top: 48px;
     text-align: right;
-    border-top: 1px solid var(--color-light-gray);
 }
 
 .gh-topic-grid .gh-card.large,
@@ -90,12 +89,12 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 .gh-topic-grid .gh-card:not(.large) {
     width: 100%;
     max-width: 720px;
+    padding-bottom: 2rem;
 }
 
 .gh-topic-grid .gh-card:not(:only-child).large {
     padding-bottom: 48px;
     margin-bottom: 16px;
-    border-bottom: 1px solid var(--color-light-gray);
 }
 
 .gh-topic-grid .gh-card-link {
@@ -174,7 +173,6 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 }
 
 .gh-topic-grid .gh-card-title {
-    line-height: 1.2    3;
     letter-spacing: -0.015em;
 }
 
@@ -200,7 +198,7 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 
 .gh-topic-grid .gh-card-excerpt {
     margin-top: 12px;
-    font-size: 2.23rem !important;
+    font-size: 2rem !important;
 }
 
 .gh-topic-grid .gh-card.no-image.large .gh-card-excerpt {
@@ -212,7 +210,7 @@ body:not(.home-template) .gh-topic-grid .gh-card {
     margin-top: 4px;
     overflow-y: hidden;
     font-size: 1.75rem;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 }
 
@@ -224,8 +222,8 @@ body:not(.home-template) .gh-topic-grid .gh-card {
     display: flex;
     gap: 6px;
     align-items: center;
-    margin-top: 16px;
-    font-size: 1.7rem;
+    padding-top: 1rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: var(--color-secondary-text);
     text-transform: uppercase;
@@ -1143,6 +1141,13 @@ grid-template-columns: 25rem auto 25rem;
 
 /* Matenauta stuff */
 
+.kg-bookmark-description {
+    max-height: inherit;
+    font-size: 1.5rem;
+}
+.kg-bookmark-title {
+    font-size:1.66rem;
+}
 .gh-input.focus, .gh-input:focus, .gh-select:focus, select:focus, textarea:focus {
     border-color: #ed5107;
     box-shadow: 0 0 0 3px rgba(237,81,7,.15);
@@ -1435,18 +1440,14 @@ h2 {
 }
 
 h3 {
-    font-size: 3.8rem;
+    font-size: 3rem;
 }
 
 h4 {
-    font-size: 3.2rem;
-}
-
-h5 {
     font-size: 2.8rem;
 }
 
-h6 {
+h5 {
     font-size: 2.6rem;
 }
 
@@ -1604,6 +1605,14 @@ form[data-members-form] .it-button {
         border-radius: .5rem;
       font-size: 100%;
       border: 1px solid #dbe3e7;
+    }
+    .newsletter input .home{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .letmeb {
+        padding-top: 0.25rem;
+        padding-left: 0.5rem;
     }
     .letme {
         background: transparent;

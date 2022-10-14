@@ -92,26 +92,20 @@
         {{{body}}}
 
         <footer class="gh-foot gh-outer">
-            <div class="gh-foot-inner gh-inner">
-                {{^if @member.paid}}
+            <div class="gh-foot-inner gh-inner">                     
                     <section class="gh-subscribe">
-                        {{^if @member}}
-                            <h4 class="gh-subscribe-title">{{ t "Subscribe to" }}</h3>
-
-                            {{#if @custom.email_signup_text}}
+                        {{#if @member.paid}}
+                        <h4 class="gh-subscribe-title">{{ t "We are here" }}</h3>
+                                <div class="gh-subscribe-description">{{ t "Contact us paid"}}</div>
+                        {{else if @member}}
+                            <h4 class="gh-subscribe-title">{{ t "Want trading" }}</h3>
+ {{else}}
+                        <h4 class="gh-subscribe-title">{{ t "Subscribe to" }}</h3>
                                 <div class="gh-subscribe-description">{{ t "Newsletter description"}}</div>
-                            {{/if}}
 
                             <button class="gh-subscribe-btn gh-btn" data-portal="signup">{{ t "Subscribe now" }}</button>
-                        {{else}}
-                            <h3 class="gh-subscribe-title">Ready for unlimited access?</h3>
-
-                            <div class="gh-subscribe-description">Upgrade to a paid account to get full access to all content.</div>
-
-                            <button class="gh-subscribe-btn gh-btn" data-portal="account/plans">Upgrade now</button>
-                        {{/if}}
-                    </section>
                 {{/if}}
+                    </section>
 
                 <nav class="gh-foot-menu">
                     {{navigation type="secondary"}}
