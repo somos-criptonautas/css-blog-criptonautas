@@ -1419,7 +1419,8 @@ opacity: 0.77;
     }
 
     h1, h2, h3, h4, h5, h6 {
-    color: var(--color-base)
+    color: var(--color-base);
+    font-family: var(--font-sans-serif);
     }
 
 h1, h2, h3 {
@@ -1595,6 +1596,7 @@ form[data-members-form] .it-button {
         color: var(--color-white);
         cursor: pointer;
         -webkit-appearance: button;
+        appearance: button;
     }
     .newsletter-subscribe:hover {
     opacity: 0.77;
