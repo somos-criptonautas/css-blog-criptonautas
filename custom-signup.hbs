@@ -10,10 +10,6 @@
         <title>{{meta_title}}</title>
         
         <script>
-            var pagination_next_page_number       = '{{ pagination.next }}',
-                pagination_available_pages_number = '{{ pagination.pages }}',
-                api_url = '{{@site.url}}';
-    
             if(typeof(Storage) !== 'undefined') {
                 if (localStorage.getItem('selected-theme') == 'light') {
                     document.documentElement.setAttribute('data-theme', 'light');
@@ -22,19 +18,6 @@
                     document.documentElement.setAttribute('data-theme', 'dark');
                 }
             }
-            {{#is "home"}}
-                if(typeof(Storage) !== 'undefined') {
-                    if (localStorage.getItem('intro') == 'hidden') {
-                        document.documentElement.setAttribute('data-intro', 'hide');
-                    }
-                }
-                
-                window.addEventListener('load', (event) => {
-                    if (!document.documentElement.hasAttribute('data-intro')) {
-                         document.querySelector('.home-template').classList.add('hidden-overflow');
-                    }
-                });
-            {{/is}}
         </script>
         {{ghost_head}}
         {{!-- Outputs SEO meta+structured data and important settings, should always be in <head> --}}
