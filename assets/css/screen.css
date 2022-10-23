@@ -580,20 +580,17 @@ font-size: 2.5rem !important;
 }
 
 .gh-subscribe-btn {
-    margin-top: 5rem;
+    margin: 5rem 0 7rem;
     color: var(--color-svg);
     letter-spacing: -0.011em;
     background-color: var(--color-primary);
     padding: 2rem 7.5rem;
+    font-family: var(--font-sans-serif);
 }
 
 .gh-subscribe-btn svg {
 width: 1.66rem;
 height: 1.66rem;
-}
-
-.gh-subscribe-btn:hover {
-    opacity: 0.777;
 }
 
 
@@ -1036,9 +1033,9 @@ grid-template-columns: 25rem auto 25rem;
         padding: 0.5rem 1rem;
     }
     .gh-icon-btn,
-    .it-dark-light svg {
-    width: 2.5rem;
-    height: 2.5rem;
+    .feather-moon {
+    width: 2.11rem;
+    height: 2.11rem;
     }
     }
     .it-dark-light:hover .icon-light svg {
@@ -1141,8 +1138,11 @@ grid-template-columns: 25rem auto 25rem;
 
 /* Matenauta stuff */
 
+.gh-search {
+margin: 0;
+}
 .kg-bookmark-description {
-    max-height: inherit;
+    max-height: inherit !important;
     font-size: 1.5rem;
 }
 .kg-bookmark-title {
@@ -1403,10 +1403,6 @@ opacity: 0.77;
     }
     img {
     border-radius: 0.11rem;
-    }
-    .gh-icon-btn svg {
-        height: 2.1rem;
-        width: 2.1rem;
     }
     
     .nav-current {
