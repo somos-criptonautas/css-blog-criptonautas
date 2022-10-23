@@ -1240,6 +1240,31 @@ display: none !important;
 max-height: 66px;
 }
 
+@media screen and (max-width: 991px) {
+
+.gh-head-logo .logo-light,
+.gh-head-logo .logo-dark {
+display: none;
+}
+.gh-head-logo .logo-xs-light,
+.gh-head-logo .logo-xs-dark {
+display: inherit;
+}
+}
+
+@media screen and (min-width: 992px) {
+
+    .gh-head-logo .logo-light,
+    .gh-head-logo .logo-dark {
+    display: inherit;
+    }
+    .gh-head-logo .logo-xs-light,
+    .gh-head-logo .logo-xs-dark {
+    display: none;
+    }
+    }
+
+
 .kg-toggle-card, .kg-toggle-card * {
 color: var(--color-base);
 }
