@@ -1141,6 +1141,10 @@ grid-template-columns: 25rem auto 25rem;
 .gh-search {
 margin: 0;
 }
+.gh-icon-btn svg {
+width: inherit;
+height: inherit;
+}
 .kg-bookmark-description {
     max-height: inherit !important;
     font-size: 1.5rem;
