@@ -58,6 +58,10 @@ html[data-theme=dark] .figcaption {
     margin-bottom: 40px;
     text-transform: uppercase;
     letter-spacing: -0.01em;
+    background-color: var(--color-bg);
+    color: var(--color-base);
+    padding: 1rem;
+    border-radius: 0.77rem;
 }
 
 .gh-topic-grid .gh-topic-content {
@@ -89,7 +93,7 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 .gh-topic-grid .gh-card:not(.large) {
     width: 100%;
     max-width: 720px;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 }
 
 .gh-topic-grid .gh-card:not(:only-child).large {
@@ -134,7 +138,7 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 .gh-topic-grid .gh-card-image {
     position: relative;
     flex-shrink: 0;
-    width: 128px;
+    width: 25vh;
     height: 100%;
 }
 
@@ -162,6 +166,7 @@ body:not(.home-template) .gh-topic-grid .gh-card {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius:0.77rem;
 }
 
 .gh-topic-grid .gh-card-wrapper {
@@ -174,6 +179,7 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 
 .gh-topic-grid .gh-card-title {
     letter-spacing: -0.015em;
+    font-size: 2.33rem;
 }
 
 .gh-topic-grid .gh-card.large .gh-card-title {
