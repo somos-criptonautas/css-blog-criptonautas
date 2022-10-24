@@ -4,14 +4,21 @@ Headline is a [Ghost](https://github.com/TryGhost/Ghost) theme built from the gr
 
 **Demo: https://headline.ghost.io**
 
-# Instructions
+# Criptonaut update
 
-1. [Download this theme](https://github.com/TryGhost/Headline/archive/main.zip)
-2. Log into Ghost, and go to the `Design` settings area to upload the zip file
+We update the theme for make it more modern and we adapt it for our CSS style :)
 
 # Development
 
-Edition styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
+Edition styles are compiled using Gulp/PostCSS to polyfill future CSS spec.
+
+You'll need installed globally:
+
+- [Node](https://nodejs.org/)
+- [Yarn](https://yarnpkg.com/)
+- [Gulp](https://gulpjs.com) 
+- 
+- After that, from the theme's root directory:
 
 ```bash
 # Install
@@ -21,17 +28,12 @@ yarn
 yarn dev
 ```
 
-Now you can edit `/assets/css/` files, which will be compiled to `/assets/built/` automatically.
+Then you could edit `/assets/css/` files, which will be compiled to `/assets/built/` automatically :)
 
-The `zip` Gulp task packages the theme files into `dist/headline.zip`, which you can then upload to your site.
-
-```bash
-yarn zip
-```
 
 # Contribution
 
-This repo is synced automatically with [TryGhost/Themes](https://github.com/TryGhost/Themes) monorepo. If you're looking to contribute or raise an issue, head over to the main repository [TryGhost/Themes](https://github.com/TryGhost/Themes) where our official themes are developed.
+You can make a PR if you fix issues or suggest UI/UX improvements and we can update our main branch (forked from Ghost one)
 
 ## Copyright & License
 
