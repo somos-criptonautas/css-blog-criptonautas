@@ -852,6 +852,8 @@ max-width: 100%;
 
     .gh-head-menu {
         height: 56px;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .gh-head-menu::after {
@@ -1021,6 +1023,9 @@ grid-template-columns: 25rem auto 25rem;
 
 .it-dark-light {
         cursor: pointer;
+        width: 115%;
+        height: 115%;
+        margin-top:0.11rem;
     }
     
     .icon-light {
@@ -1371,9 +1376,9 @@ top: 9px;
     position: relative;
     min-width: 23rem;
     width: 50%;
+    margin: 3rem auto;
     border-radius: 1.77;
-    margin-top: 3rem;
-    padding: 2.33rem;
+    display: flex;
 }
 #gh-head .nav a,
 #gh-head .gh-head-btn {
