@@ -1009,16 +1009,14 @@ grid-template-columns: 25rem auto 25rem;
 
 /* End of toc */
 
+.gh-icon-btn,
+.feather-moon {
+width: 2.33rem;
+height: 2.33rem;
+}
 
 /* Dark/light */
-
-.it-dark-light {
-        cursor: pointer;
-        width: 115%;
-        height: 115%;
-        margin-top:0.11rem;
-    }
-    
+   
     .icon-light {
         display: none;
     }
@@ -1139,6 +1137,10 @@ grid-template-columns: 25rem auto 25rem;
 }
 
 /* Matenauta stuff */
+
+.gh-main .gh-outer h2.gh-topic-name {
+display: none
+}
 
 @media screen and (max-width: 991px){
 .page-registro {
@@ -1552,6 +1554,9 @@ form[data-members-form] .it-button {
     .newsletter-title {
     font-size: 4rem;
     }
+    .newsletter {
+    padding: 10vh 0;
+    }
 }
     .newsletter p.wide {
         letter-spacing: .025em;
@@ -1560,30 +1565,6 @@ form[data-members-form] .it-button {
     .newsletter form {
     margin-bottom: 2.5rem;
     }
-
-    @media screen and (max-width: 991px){
-        .newsletter form {
-    margin: 0 !important;
-        }
-    }
-    @media screen and (min-width: 992px) and (max-width: 1200px) {
-        .newsletter form {
-            margin: 0 11vh !important;
-        }
-    }
-    @media screen and (min-width: 1200px) {
-    .newsletter form {
-        margin: 0 !important;
-    }
-    .newsletter form {
-        padding: 0 40vh !important;
-        }
-}
-@media screen and (min-width: 900px) and (max-width: 1200px) {
-.newsletter form {
-    padding: 2rem 20% !important;
-    }
-}
 .newsletter form {
     padding: 2rem 10%;
 }
