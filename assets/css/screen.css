@@ -1132,6 +1132,10 @@ grid-template-columns: 25rem auto 25rem;
 
 /* Matenauta stuff */
 
+.flex {
+display: flex;
+}
+
 .gh-topic .gh-topic-grid h2 {
 display: none;
 }
@@ -1610,13 +1614,12 @@ form[data-members-form] .it-button {
     }
     .newsletter form {
         justify-content: center;
-        flex-direction: row;
+        flex-direction: column;
         width: 100%;
         display: flex;
         border: 0 solid #e5e7eb;
         box-sizing: border-box;
         padding: 2rem 0;
-        margin: auto !important;
         flex-wrap: wrap;
     }
     .it-newsletter {
