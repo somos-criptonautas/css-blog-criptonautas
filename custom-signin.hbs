@@ -59,6 +59,14 @@
                     <p>{{ t "Continue to your account" }}</p>
                 </div>
                 <div class="form-inner-content">
+                        <div class="message-text">
+                            <div class="message-success">
+                                {{{t "<strong>Please</strong> check your inbox and click the link to confirm your subscription."}}}
+                            </div>
+                            <div class="message-error">
+                                {{t "Please enter a valid email address!"}}
+                            </div>
+
                     <form data-members-form="signin">
                         <div>
                             <div class="single-input mb-20">
@@ -73,13 +81,6 @@
                             </div>
                         </div>
                         <p>{{t "Don't have an account yet?"}}<br><a href="{{@site.url}}/registro/">&nbsp;{{t "Sign up"}}</a></p>
-                        <div class="message-text">
-                            <div class="message-success">
-                                {{{t "<strong>Please</strong> check your inbox and click the link to confirm your subscription."}}}
-                            </div>
-                            <div class="message-error">
-                                {{t "Please enter a valid email address!"}}
-                            </div>
                         </div>
                     </form>
                 </div>

@@ -1149,6 +1149,11 @@ grid-template-columns: 25rem auto 25rem;
 
 /* Matenauta stuff */
 
+@media screen and (max-width: 991px){
+.page-registro {
+padding: 25vh 0;
+}
+}
 .gh-search {
 margin: 0;
 }
