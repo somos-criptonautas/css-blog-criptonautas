@@ -1536,11 +1536,9 @@ form[data-members-form] .it-button {
       text-align: center;
     align-items: center;
     justify-content: center;
-    display: flex;
     z-index: 1;
     padding: 0 2rem;
     }
-
     .newsletter.container {
       height: 100vh;
       display: flex;
