@@ -1009,12 +1009,6 @@ grid-template-columns: 25rem auto 25rem;
 
 /* End of toc */
 
-.gh-icon-btn,
-.feather-moon {
-width: 2.33rem;
-height: 2.33rem;
-}
-
 /* Dark/light */
    
     .icon-light {
@@ -1138,8 +1132,8 @@ height: 2.33rem;
 
 /* Matenauta stuff */
 
-.gh-main .gh-outer h2.gh-topic-name {
-display: none
+.gh-topic .gh-topic-grid h2 {
+display: none;
 }
 
 @media screen and (max-width: 991px){
@@ -1151,8 +1145,8 @@ padding: 25vh 0;
 margin: 0;
 }
 .gh-icon-btn svg {
-width: inherit;
-height: inherit;
+width: 2.11rem;
+height: 2.11rem;
 }
 .kg-bookmark-description {
     max-height: inherit !important;
