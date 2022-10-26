@@ -665,16 +665,7 @@ padding-top: 1.23rem;
 
 /* Media queries */
 
-.gh-main {
-max-width: 100%;
-}
-
 @media screen and (max-width: 767px) {
-    .gh-main {
-        padding-top: 6.4rem;
-        padding-bottom: 6.4rem;
-    }
-
     .gh-cover-content {
         margin-top: 40px;
     }
@@ -1531,18 +1522,19 @@ form[data-members-form] .it-button {
         min-width: 35vh;
         }
     .newsletter {
-        background-color: var(--color-bg);
-      height: 100%;
-      overflow: auto;
-      position: absolute;
-      transform: var(--transform);
-      transition: all .2s ease;
-      width: 100%;
-      text-align: center;
-    align-items: center;
-    justify-content: center;
+    background-color: var(--color-bg);
+    height: 100%;
+    overflow: auto;
+    position: absolute;
+    transform: var(--transform);
+    transition: all .2s ease;
+    max-width: 100%;
     z-index: 1;
     padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     }
     .newsletter.container {
       height: 100vh;
@@ -1583,12 +1575,12 @@ form[data-members-form] .it-button {
     .newsletter form {
         margin: 0 !important;
     }
-    .newsletter-form {
+    .newsletter form {
         padding: 0 40vh !important;
         }
 }
 @media screen and (min-width: 900px) and (max-width: 1200px) {
-.newsletter-form {
+.newsletter form {
     padding: 2rem 20% !important;
     }
 }
@@ -1641,7 +1633,7 @@ form[data-members-form] .it-button {
     .letme:hover {
     opacity: 0.77;
     }
-    .newsletter-form {
+    .newsletter form {
         justify-content: center;
         flex-direction: row;
         width: 100%;
@@ -1650,6 +1642,7 @@ form[data-members-form] .it-button {
         box-sizing: border-box;
         padding: 2rem 0;
         margin: auto !important;
+        flex-wrap: wrap;
     }
     .it-newsletter {
         width: 100%;
