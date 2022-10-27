@@ -1116,7 +1116,7 @@ grid-template-columns: 25rem auto 25rem;
   .is-head-open html {
 --overflow-y: hidden;
   }
-  
+
   .shadow {
       box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   }
@@ -1545,6 +1545,15 @@ form[data-members-form] .it-button {
     min-width: 120px;
 }
     /* Newsletter */
+
+
+    @media screen and (max-width: 890px){
+
+    .newsletter-subscribe { 
+padding-top: 2rem;
+}
+}
+
     .newsletter-subscribe {
         min-width: 35vh;
         }
@@ -1614,11 +1623,12 @@ form[data-members-form] .it-button {
     .newsletter-subscribe:hover {
     opacity: 0.77;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 987px) {
     .newsletter input {
         padding-top: 2rem;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
+        max-width: 30rem;
     }
 }
     .newsletter input {
