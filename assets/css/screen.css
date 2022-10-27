@@ -1592,6 +1592,13 @@ form[data-members-form] .it-button {
     .newsletter-subscribe:hover {
     opacity: 0.77;
     }
+    @media screen and (max-width: 767px) {
+    .newsletter input {
+        padding-top: 2rem;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
     .newsletter input {
         flex-grow: 1;
         padding: 1rem;
@@ -1620,7 +1627,6 @@ form[data-members-form] .it-button {
     }
     .newsletter form {
         justify-content: center;
-        flex-direction: column;
         width: 100%;
         display: flex;
         border: 0 solid #e5e7eb;
