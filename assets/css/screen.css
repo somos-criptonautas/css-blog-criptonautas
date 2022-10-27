@@ -1535,6 +1535,7 @@ form[data-members-form] .it-button {
     justify-content: center;
     text-align: center;
     align-items: center;
+    flex-direction: column;
     }
     .newsletter.container {
       height: 100vh;
