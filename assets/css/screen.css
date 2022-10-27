@@ -824,6 +824,11 @@ padding-top: 1.23rem;
     .is-head-b--a_n .gh-head-logo {
         font-size: 3rem;
     }
+    @media screen and (min-width: 992px) and (max-width: 1199) {
+        .is-head-open.gh-head-btn.gh-btn {
+     display: none;
+        }
+    }    
     @media screen and (min-width: 992px) {
         .is-head-open.gh-head-btn.gh-btn {
         font-size: 1.8rem;
@@ -1107,6 +1112,11 @@ grid-template-columns: 25rem auto 25rem;
       --transform: translate(-120vw);
       --overflow-y: scroll;
   }
+
+  .is-head-open html {
+--overflow-y: hidden;
+  }
+  
   .shadow {
       box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   }
@@ -1135,6 +1145,17 @@ grid-template-columns: 25rem auto 25rem;
 
 /* Matenauta stuff */
 
+.gh-outer {
+padding: 6rem 0;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    padding: 1.233rem 2.311rem;
+    margin: 3.5rem 0 1rem;
+}
+.gh-post-upgrade-cta h2 {
+font-size: 3.11rem;
+}
 .flex-newsletter {
 display: flex;
 justify-content: center;
@@ -1357,11 +1378,12 @@ html[data-theme=dark] .is-head-open .gh-burger::before {
 
 .gh-burger {
     position: absolute;
-    right: 1rem;
+    right: 2rem;
     width: 6.66rem;
     height: 5.66rem;
     background-color: var(--color-light-gray);
     opacity: .77;
+    top: 1rem;
 }
 
 .is-head-open .gh-burger {
@@ -1369,7 +1391,7 @@ opacity: 1;
 }
 
 .gh-burger::before {
-top: 9px;
+top: 1.5rem;
 }
 
 @media screen and (max-width: 991px) {
