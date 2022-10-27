@@ -56,7 +56,7 @@
                     {{#unless @member}}
                         <a class="gh-head-btn gh-btn" href="/registro">{{ t "Subscribe" }}</a>
                     {{else}}
-                        <a class="gh-head-btn gh-btn" href="#/portal/account">{{ t "Account" }}</a>
+                        <a class="gh-head-btn gh-btn" href="/cuenta">{{ t "Account" }}</a>
                     {{/unless}}
                 </nav>
 
@@ -80,21 +80,27 @@
 
         <footer class="gh-foot gh-outer">
             <div class="gh-foot-inner gh-inner">                     
+
+  {{#get 'posts'}}
+    {{#foreach posts visibility='all'}}
+      {{#has visibility="paid"}}
                     <section class="gh-subscribe">
-                        {{#if @member.paid}}
+                        {{#has @member.paid}}
                         <h4 class="gh-subscribe-title">{{ t "We are here" }}</h3>
                                 <div class="gh-subscribe-description">{{ t "Contact us paid"}}</div>
                         {{else if @member}}
                             <h4 class="gh-subscribe-title">{{ t "Want trading" }}</h3>
                                                         <a class="gh-subscribe-btn gh-btn" href="https://discord.criptonautas.co">{{ t "Learn from Criptonauts" }}</a>
- {{else}}
+                        {{else}}
                         <h4 class="gh-subscribe-title">{{ t "Subscribe to" }}</h3>
                                 <div class="gh-subscribe-description">{{ t "Newsletter description"}}</div>
 
                             <a class="gh-subscribe-btn gh-btn" href="/registro">{{ t "Subscribe now" }}</a>
                 {{/if}}
                     </section>
-
+      {{/has}}
+    {{/foreach}}
+  {{/get}}
                 <nav class="gh-foot-menu">
                     {{navigation type="secondary"}}
                 </nav>
