@@ -1018,6 +1018,9 @@ grid-template-columns: 25rem auto 25rem;
     .icon-dark {
         display: block;
     }
+    .it-dark-light {
+    padding-top: 0.77rem;
+    }
     @media screen and (max-width: 991px) {
     .it-dark-light {
         display: block;
@@ -1132,8 +1135,10 @@ grid-template-columns: 25rem auto 25rem;
 
 /* Matenauta stuff */
 
-.flex {
+.flex-newsletter {
 display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .gh-topic .gh-topic-grid h2 {
@@ -1379,7 +1384,7 @@ top: 9px;
 #gh-head .nav a,
 #gh-head .gh-head-btn {
     font-size: 2.5rem;
-    padding: 3rem 0 !important;
+    padding: 2rem 0 !important;
   }
 }
 
@@ -1528,7 +1533,7 @@ form[data-members-form] .it-button {
     position: absolute;
     transform: var(--transform);
     transition: all .2s ease;
-    max-width: 100%;
+    width: 100%;
     z-index: 1;
     padding: 0 2rem;
     display: flex;
@@ -1620,7 +1625,6 @@ form[data-members-form] .it-button {
         display: flex;
         border: 0 solid #e5e7eb;
         box-sizing: border-box;
-        padding: 2rem 0;
         flex-wrap: wrap;
     }
     .it-newsletter {
