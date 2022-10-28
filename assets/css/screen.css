@@ -1638,13 +1638,11 @@ form[data-members-form] .it-button {
         flex-grow: 1;
         padding: 1rem;
         border-bottom-left-radius: .5rem;
-        border-bottom-right-radius: .5rem;
-      font-size: 100%;
-      border: 1px solid #dbe3e7;
-    }
-    .newsletter input.email.home{
+        border-top-left-radius: .5rem;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
+      font-size: 100%;
+      border: 1px solid #dbe3e7;
     }
     .letmeb {
         padding-top: 0.25rem;
