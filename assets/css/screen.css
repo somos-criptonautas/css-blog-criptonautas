@@ -1567,10 +1567,12 @@ form[data-members-form] .it-button {
     /* Newsletter */
 
 
-    @media screen and (max-width: 890px){
+    @media screen and (max-width: 987px){
 
     .newsletter-subscribe { 
-padding-top: 2rem;
+margin-top: 2rem !important;
+border-bottom-left-radius: 0.5rem;
+border-top-left-radius: 0.5rem;
 }
 }
 
@@ -1592,6 +1594,7 @@ padding-top: 2rem;
     text-align: center;
     align-items: center;
     flex-direction: column;
+    padding:3.33rem;
     }
     .newsletter.container {
       height: 100vh;
@@ -1604,6 +1607,7 @@ padding-top: 2rem;
       font-size: 5.5rem;
       line-height: 1;
       font-weight: 900;
+      padding-top: 2rem;
     }
     @media screen and (max-width: 768px){
     .newsletter-title {
@@ -1676,11 +1680,6 @@ padding-top: 2rem;
     .newsletter form {
     max-width: 80%;
     flex-wrap: inherit;
-    }
-    .newsletter-subscribe {
-    margin-top: 2rem;
-    border-bottom-left-radius: 0.5rem;
-    border-top-left-radius: 0.5rem;
     }
     }
     .newsletter form {
