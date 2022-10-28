@@ -1629,20 +1629,11 @@ form[data-members-form] .it-button {
         cursor: pointer;
         -webkit-appearance: button;
         appearance: button;
+        opacity: 0.93;
     }
     .newsletter-subscribe:hover {
-    opacity: 0.77;
+    opacity: 1;
     }
-    @media screen and (max-width: 987px) {
-    .newsletter input .home {
-        border-top-right-radius: 0.5rem;
-        border-bottom-right-radius: 0.5rem;
-        max-width: 30rem;
-    }
-    .newsletter-subscribe {
-        padding-top: 2rem;
-    }
-}
     .newsletter input {
         flex-grow: 1;
         padding: 1rem;
@@ -1667,7 +1658,7 @@ form[data-members-form] .it-button {
         opacity:0.77;
     }
     .letme:hover {
-    opacity: 0.77;
+    opacity: 1;
     }
     .newsletter form {
         justify-content: center;
