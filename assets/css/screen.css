@@ -1676,15 +1676,9 @@ border-top-left-radius: 0.5rem;
     .letme:hover {
     opacity: 0.77;
     }
-    @media screen and (max-width: 769px) {
-    .newsletter form {
-    max-width: 80%;
-    flex-wrap: inherit;
-    }
-    }
     .newsletter form {
         justify-content: center;
-        width: 100%;
+        max-width: 80%;
         display: flex;
         border: 0 solid #e5e7eb;
         box-sizing: border-box;
