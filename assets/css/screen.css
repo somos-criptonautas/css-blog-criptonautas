@@ -1160,6 +1160,10 @@ grid-template-columns: 25rem auto 25rem;
 
 /* Matenauta stuff */
 
+.no-feature-back-to-home {
+font-size: 1.11rem;
+}
+
 .headroom { top: -5em !important; }
 .navbar {
   -webkit-transition: top 0.75s; 

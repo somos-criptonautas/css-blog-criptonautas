@@ -83,9 +83,10 @@
 
   {{#get 'posts'}}
     {{#foreach posts visibility='all'}}
-      {{#has visibility="paid"}}
-                    <section class="gh-subscribe">
-                        {{#has @member.paid}}
+        {{/foreach}}
+  {{/get}}
+    <section class="gh-subscribe">
+                {{#if @member.paid}}
                         <h4 class="gh-subscribe-title">{{ t "We are here" }}</h3>
                                 <div class="gh-subscribe-description">{{ t "Contact us paid"}}</div>
                         {{else if @member}}
@@ -98,9 +99,6 @@
                             <a class="gh-subscribe-btn gh-btn" href="/registro">{{ t "Subscribe now" }}</a>
                 {{/if}}
                     </section>
-      {{/has}}
-    {{/foreach}}
-  {{/get}}
                 <nav class="gh-foot-menu">
                     {{navigation type="secondary"}}
                 </nav>
