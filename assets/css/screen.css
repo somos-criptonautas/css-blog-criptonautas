@@ -1662,11 +1662,12 @@ form[data-members-form] .it-button {
     .newsletter form {
         justify-content: center;
         display: flex;
+        flex-wrap: nowrap;
         border: 0 solid #e5e7eb;
         box-sizing: border-box;
         margin-bottom: 2.5rem;
         padding: 2rem 10%;
-        width: 80%;
+        width: 90%;
     }
     .it-newsletter {
         width: 100%;
