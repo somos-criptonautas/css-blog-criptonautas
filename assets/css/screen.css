@@ -1637,11 +1637,12 @@ form[data-members-form] .it-button {
     .newsletter input {
         flex-grow: 1;
         padding: 1rem;
-        border-radius: .5rem;
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
       font-size: 100%;
       border: 1px solid #dbe3e7;
     }
-    input.email.home{
+    .newsletter input.email.home{
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
     }
