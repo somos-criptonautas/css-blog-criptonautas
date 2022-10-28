@@ -1161,6 +1161,7 @@ grid-template-columns: 25rem auto 25rem;
 
 .no-feature-back-to-home {
 font-size: 1.11rem;
+padding-left: 1rem;
 }
 
 .headroom { top: -5em !important; }
@@ -1566,16 +1567,6 @@ form[data-members-form] .it-button {
 }
     /* Newsletter */
 
-
-    @media screen and (max-width: 987px){
-
-    .newsletter-subscribe { 
-margin-top: 2rem !important;
-border-bottom-left-radius: 0.5rem;
-border-top-left-radius: 0.5rem;
-}
-}
-
     .newsletter-subscribe {
         min-width: 35vh;
         }
@@ -1643,11 +1634,13 @@ border-top-left-radius: 0.5rem;
     opacity: 0.77;
     }
     @media screen and (max-width: 987px) {
-    .newsletter input {
-        padding-top: 2rem;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
+    .newsletter input .home {
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
         max-width: 30rem;
+    }
+    .newsletter-subscribe {
+        padding-top: 2rem;
     }
 }
     .newsletter input {
