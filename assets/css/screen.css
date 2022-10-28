@@ -54,7 +54,7 @@ html[data-theme=dark] .figcaption {
     margin-top: 80px;
 }
 
-.gh-topic-name:first-child {
+.gh-topic-name:first-of-type {
 display: none;
 }
 
@@ -80,8 +80,6 @@ body:not(.home-template) .gh-topic-grid .gh-topic-content {
 }
 
 .gh-topic-footer {
-    padding-top: 20px;
-    margin-top: 48px;
     text-align: right;
 }
 
@@ -577,13 +575,13 @@ font-size: 2.33rem !important;
 }
 
 .gh-subscribe-description {
-    margin-top: 2rem;
+    margin-top: 3.33rem;
     font-size: 2.33rem;
 }
 
 @media screen and (max-width: 767px) {
 .gh-subscribe-description {
-    margin-top: 3.5rem;
+    margin-top: 4rem;
 }
 }
 
@@ -639,6 +637,7 @@ height: 1.66rem;
     flex-direction: column;
     align-items: center;
     font-size: 1.8rem;
+    padding-top: 5rem;
 }
 
 .gh-foot-menu {
@@ -1035,10 +1034,10 @@ grid-template-columns: 25rem auto 25rem;
     @media screen and (max-width: 991px) {
     .it-dark-light {
         display: block;
+        left: 48vh;
+        padding: .5rem 1rem;
         position: absolute;
-        left: 0;
-        top: 50%;
-        padding: 0.5rem 1rem;
+        top: 3rem;
     }
     .gh-icon-btn,
     .feather-moon {
@@ -1172,7 +1171,7 @@ font-size: 1.11rem;
 }
 
 .gh-outer {
-padding: 6rem 0;
+padding: 6rem 2rem;
 }
 
 .gh-post-upgrade-cta a.gh-btn {
@@ -1412,7 +1411,7 @@ opacity: 1;
 }
 
 .gh-burger::before {
-top: 1.5rem;
+top: 2.33rem;
 }
 
 @media screen and (max-width: 991px) {
@@ -1606,7 +1605,7 @@ padding-top: 2rem;
       line-height: 1;
       font-weight: 900;
     }
-    @media screen and (max-width: 991px){
+    @media screen and (max-width: 768px){
     .newsletter-title {
     font-size: 4rem;
     padding: 2rem;
@@ -1673,7 +1672,7 @@ padding-top: 2rem;
     .letme:hover {
     opacity: 0.77;
     }
-    @media screen and (min-width: 769px) {
+    @media screen and (max-width: 769px) {
     .newsletter form {
     max-width: 80%;
     flex-wrap: inherit;
