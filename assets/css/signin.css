@@ -102,6 +102,10 @@ width: 100%;
 padding-bottom: 3rem;
 margin: auto;
 }
+
+.subscribe-section svg {
+width: 0.77rem;
+}
 .signup-form {
     position: relative;
 }
@@ -291,12 +295,19 @@ width: 100%;
     .custom-feature-sign {
         display: none;
    }
-    .no-feature-back-to-home {
-        left: 1.5rem;
-    }
 
 }
 
+.back-to-home {
+    font-size: 0.77rem;
+    font-size: 1.66rem;
+    opacity: 0.33;
+    padding-left: 1rem;
+   }
+
+   .back-to-home:hover {
+    opacity: 1;
+   }
 
 .subscribe-title::not(.signup-form) h1 {
 padding-bottom: 5rem;

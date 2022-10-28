@@ -54,6 +54,10 @@ html[data-theme=dark] .figcaption {
     margin-top: 80px;
 }
 
+.gh-topic-name:first-child {
+display: none;
+}
+
 .gh-topic-grid .gh-topic-name {
     margin-bottom: 40px;
     text-transform: uppercase;
@@ -279,10 +283,12 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 
 .gh-topic-header .gh-topic-name {
     letter-spacing: -0.015em;
+    font-size: 3.5rem;
 }
 
 .gh-topic-header .gh-topic-link {
     color: var(--color-dark-gray);
+    font-size: 2rem;
 }
 
 .gh-topic-minimal .gh-card {
@@ -1048,6 +1054,15 @@ grid-template-columns: 25rem auto 25rem;
         fill: #111;
     }
     
+    html[data-theme='dark'] .gh-subscribe-btn {
+    background-color: var(--color-secondary);
+    color: var(--color-base);
+    }
+    
+    html[data-theme='dark'] .gh-subscribe-btn:hover {
+    color: inherit;
+    }
+
     html[data-theme='dark'] .icon-light {
         display: block !important;
     }
@@ -1145,6 +1160,13 @@ grid-template-columns: 25rem auto 25rem;
 
 /* Matenauta stuff */
 
+.headroom { top: -5em !important; }
+.navbar {
+  -webkit-transition: top 0.75s; 
+  -o-transition: top 0.75s; 
+  transition: top 0.75s; 
+}
+
 .gh-outer {
 padding: 6rem 0;
 }
@@ -1155,11 +1177,6 @@ padding: 6rem 0;
 }
 .gh-post-upgrade-cta h2 {
 font-size: 3.11rem;
-}
-.flex-newsletter {
-display: flex;
-justify-content: center;
-align-items: center;
 }
 
 .gh-topic .gh-topic-grid h2 {
@@ -1588,6 +1605,7 @@ padding-top: 2rem;
     @media screen and (max-width: 991px){
     .newsletter-title {
     font-size: 4rem;
+    padding: 2rem;
     }
     .newsletter {
     padding: 10vh 0;
@@ -1597,12 +1615,6 @@ padding-top: 2rem;
         letter-spacing: .025em;
       margin: 1.5rem 2rem 0.5rem;
     }
-    .newsletter form {
-    margin-bottom: 2.5rem;
-    }
-.newsletter form {
-    padding: 2rem 10%;
-}
     .newsletter.mb {
     padding-bottom: 2.5rem;
     }
@@ -1657,6 +1669,17 @@ padding-top: 2rem;
     .letme:hover {
     opacity: 0.77;
     }
+    @media screen and (min-width: 769px) {
+    .newsletter form {
+    max-width: 80%;
+    flex-wrap: inherit;
+    }
+    .newsletter-subscribe {
+    margin-top: 2rem;
+    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    }
+    }
     .newsletter form {
         justify-content: center;
         width: 100%;
@@ -1664,6 +1687,8 @@ padding-top: 2rem;
         border: 0 solid #e5e7eb;
         box-sizing: border-box;
         flex-wrap: wrap;
+        margin-bottom: 2.5rem;
+        padding: 2rem 10%;
     }
     .it-newsletter {
         width: 100%;
