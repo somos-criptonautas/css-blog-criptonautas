@@ -194,6 +194,11 @@ width: 0.66rem;
     margin-top: 10px;
 }
 
+.message-success {
+    color: var(--color-success);
+    background-color: none;
+}
+
 .subscribe-btn {
     display: flex;
     align-items: center;
