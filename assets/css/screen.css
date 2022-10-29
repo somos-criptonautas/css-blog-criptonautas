@@ -1186,12 +1186,6 @@ font-size: 3.11rem;
 .gh-topic .gh-topic-grid h2 {
 display: none;
 }
-
-@media screen and (max-width: 991px){
-.page-registro {
-padding: 25vh 0;
-}
-}
 .gh-search {
 margin: 0;
 }
