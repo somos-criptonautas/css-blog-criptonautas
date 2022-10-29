@@ -82,8 +82,7 @@
                 {{#if @member.paid}}
                         <h4 class="gh-subscribe-title">{{ t "We are here" }}</h3>
                                 <div class="gh-subscribe-description">{{ t "Contact us paid"}}</div>
-                        
-                    {{/if}} {{if @member}}
+                        {{else if @member}}
                             <h4 class="gh-subscribe-title">{{ t "Want trading" }}</h3>
                                                         <a class="gh-subscribe-btn gh-btn" href="https://discord.criptonautas.co">{{ t "Learn from Criptonauts" }}</a>
                         {{else}}

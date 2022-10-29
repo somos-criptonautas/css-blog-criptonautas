@@ -29,7 +29,7 @@
 
 
 
-{{^if @member.paid}}
+{{#if @member.paid}}
     {{!-- Logged in: Redirect home --}}
     <script>window.location = '{{@site.url}}';</script>
 {{else if @member}}
