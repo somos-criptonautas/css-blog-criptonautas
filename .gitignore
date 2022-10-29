@@ -1,0 +1,5 @@
+.git
+package-lock.json
+.node_modules/
+headline.zip
+node_modules

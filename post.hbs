@@ -17,11 +17,33 @@
                     <p class="gh-article-excerpt">{{custom_excerpt}}</p>
                 {{/if}}
 
-                {{> "feature-image"}}
+                {{#if feature_image}}
+                    <figure class="gh-article-image">
+                        <img
+                            srcset="{{img_url feature_image size="s"}} 300w,
+                                    {{img_url feature_image size="m"}} 720w,
+                                    {{img_url feature_image size="l"}} 960w,
+                                    {{img_url feature_image size="xl"}} 1200w,
+                                    {{img_url feature_image size="xxl"}} 2000w"
+                            sizes="(max-width: 1200px) 100vw, 1200px"
+                            src="{{img_url feature_image size="xl"}}"
+                            alt="{{title}}"
+                        >
+                        {{#if feature_image_caption}}
+                            <figcaption>{{feature_image_caption}}</figcaption>
+                        {{/if}}
+                    </figure>
+                {{/if}}
             </header>
-
-            <section class="gh-content gh-canvas">
-                {{content}}
+    <div class="gh-full-content blog-full-content">
+        <div class="toc-inner">
+            <h3>{{t "TOC"}}</h3>
+            <div class="toc">
+            </div>
+        </div>
+            <section class="gh-content gh-canvas toc-content">
+            <aside class="gh-sidebar"></aside> {{! The TOC will be inserted here }}
+            {{content}}
             </section>
 
         </article>
@@ -30,6 +52,70 @@
     {{> "related-posts"}}
 
     {{#post}}
-        {{> "comments"}}
+    {{#if comments}}
+        <div class="gh-comments gh-read-next gh-canvas">
+                <div id='discourse-comments'></div>
+                <script type="text/javascript">
+                    window.DiscourseEmbed = {
+                        discourseUrl: 'https://comunidad.criptonautas.co/',
+                        discourseEmbedUrl: `https://criptonautas.co{{url}}`,
+                        discourseReferrerPolicy: 'strict-origin-when-cross-origin'
+                    };
+
+
+
+                    (function () {
+                        var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+                        d.src = window.DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+                    })();
+                </script>
+        </div>
+    {{/if}}
     {{/post}}
 </main>
+    {{#contentFor "scripts"}}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.18.2/tocbot.min.js"></script>
+    <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            tocbot.init({
+                tocSelector: '.toc',
+                contentSelector: '.toc-content',
+                headingSelector: 'h1',
+                hasInnerContainers: true,
+                scrollSmooth: true,
+                scrollSmoothDuration: 420,
+                headingsOffset: 40,
+                scrollSmoothOffset: -40
+            });
+        })
+            var toc = document.getElementsByClassName('toc-inner')[0];
+            if (toc.childNodes.length < 0) {
+                toc.classList.add("show");
+            }
+    </script>
+    {{/contentFor}}
+
+    {{#contentFor "footer"}}
+<script>
+  window.onUsersnapCXLoad = function(api) {
+    api.init();
+  }
+  var script = document.createElement('script');
+  script.defer = 1;
+  script.src = 'https://widget.usersnap.com/global/load/71ee3bfb-3219-4127-bc36-0caff76ab729?onload=onUsersnapCXLoad';
+  document.getElementsByTagName('head')[0].appendChild(script);
+</script>
+<script nonce="D6E2B9C79093E981DF9F67CE43A22952"  src="https://widget.usersnap.com/load/71ee3bfb-3219-4127-bc36-0caff76ab729?onload=onUsersnapCXLoad&n=D6E2B9C79093E981DF9F67CE43A22952" async></script>
+ <script>
+  var content_key = '4bc520b9dd88334861c183a452';
+</script>
+<script type="text/javascript">
+	var links = document.getElementsByTagName("article")[0].querySelectorAll('a');
+    var a = new RegExp('/' + window.location.host + '/');
+	links.forEach((link) => {
+		if(!a.test(link.href)) {
+			link.setAttribute("target","newtab");
+		}
+	});
+</script>
+    {{/contentFor}}

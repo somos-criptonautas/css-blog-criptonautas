@@ -1,0 +1,23 @@
+/* Global Footer
+/* ---------------------------------------------------------- */
+
+.it-foot-social {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+    align-items: center;
+}
+.it-foot-social a {
+    margin-left: .8rem;
+    display: inline-block;
+    padding: .5rem;
+}
+.it-foot-social a svg {
+    height: 2rem;
+    fill: var(--color-svg)
+}
+@media (max-width: 767px) {
+    .it-foot-menu {
+        text-align: center;
+    }
+}

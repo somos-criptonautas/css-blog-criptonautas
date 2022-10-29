@@ -38,6 +38,7 @@ function hbs(done) {
 function css(done) {
     pump([
         src('assets/css/screen.css', {sourcemaps: true}),
+        src('assets/css/home.css', {sourcemaps: true}),
         postcss([
             easyimport,
             autoprefixer(),

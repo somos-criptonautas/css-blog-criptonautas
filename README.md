@@ -1,28 +1,17 @@
 # Headline
 
-Headline is a [Ghost](https://github.com/TryGhost/Ghost) theme built from the ground up for local news. 
-
-While it can be used for any purpose, the theme takes a thoughtful approach to displaying large amounts of content across various areas of coverage.
-
-Headline adapts the content by allowing to choose which topics are front and center.
+Headline is a [Ghost](https://github.com/TryGhost/Ghost) theme built from the ground up for local news. While it can be used for any purpose, the theme takes a thoughtful approach to displaying large amounts of content across various areas of coverage. Headline adapts to your content by showcasing your most written about topics or by giving you the control to decide which topics are front and center.
 
 **Demo: https://headline.ghost.io**
 
-# Criptonaut update
+# Instructions
 
-We update the theme for make it more modern and we adapt it for our CSS style :)
+1. [Download this theme](https://github.com/TryGhost/Headline/archive/main.zip)
+2. Log into Ghost, and go to the `Design` settings area to upload the zip file
 
 # Development
 
-Edition styles are compiled using Gulp/PostCSS to polyfill future CSS spec.
-
-You'll need installed globally:
-
-- [Node](https://nodejs.org/)
-- [Yarn](https://yarnpkg.com/)
-- [Gulp](https://gulpjs.com) 
-- 
-- After that, from the theme's root directory:
+Edition styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
 
 ```bash
 # Install
@@ -32,12 +21,17 @@ yarn
 yarn dev
 ```
 
-Then you could edit `/assets/css/` files, which will be compiled to `/assets/built/` automatically :)
+Now you can edit `/assets/css/` files, which will be compiled to `/assets/built/` automatically.
 
+The `zip` Gulp task packages the theme files into `dist/headline.zip`, which you can then upload to your site.
+
+```bash
+yarn zip
+```
 
 # Contribution
 
-You can make a PR if you fix issues or suggest UI/UX improvements and we can update our main branch (forked from Ghost one)
+This repo is synced automatically with [TryGhost/Themes](https://github.com/TryGhost/Themes) monorepo. If you're looking to contribute or raise an issue, head over to the main repository [TryGhost/Themes](https://github.com/TryGhost/Themes) where our official themes are developed.
 
 ## Copyright & License
 

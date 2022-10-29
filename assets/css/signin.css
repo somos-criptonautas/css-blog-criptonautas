@@ -1,0 +1,326 @@
+#ghost-portal-root {
+    display:none!important
+}
+
+.pricing-sec {
+    padding: 90px 0;
+}
+
+.mb-40 {
+    margin-bottom: 4rem;
+}
+
+.mb-20 {
+    margin-bottom: 2rem;
+}
+
+.min-vh-100 {
+    min-height: 100vh !important;
+}
+.sign-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.custom-feature-sign {
+    width: 50%;
+    height: 100vh;
+}
+.custom-feature-sign img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    width: 50%;
+}
+.cus-sign-box { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 550px;
+    width: 100%;
+    padding: 0 15px;
+}
+.cus-sign-box {
+    text-align: center;
+}
+.cus-sign-box h1 {
+padding-bottom: 5rem;
+font-size: 7rem;
+
+}
+@media screen and (max-width: 991px){
+.cus-sign-box h2 {
+font-size: 5rem;
+}
+}
+.cus-sign-box h2 {
+padding-bottom: 5rem;
+font-size: 7rem;
+}
+.cus-sign-box .mainhead {
+align-items: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.form-inner-content {
+    width: 100%;
+}
+.custom-no-feature-sign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vh;
+    height: 100vh;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.custom-no-feature-sign p {
+    font-size: 1.77rem;
+    margin-bottom: 0;
+    color: var(--color-base);
+    padding-top: 15px;
+    text-align: center;
+}
+.custom-no-feature-sign p a {
+    color: var(--color-primary);
+}
+
+.subscribe-section img {
+width: 100%;
+}
+
+.subscribe-section a img {
+padding-bottom: 3rem;
+margin: auto;
+}
+
+.subscribe-section svg {
+width: 0.66rem;
+}
+.signup-form {
+    position: relative;
+}
+
+/* .single-input {
+    position: relative;
+}
+
+.single-input .icon_mail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 60px;
+    background-color: var(--color-bg);
+}
+.single-input .icon_mail svg {
+    width: 20px;
+    height: 20px;
+    color: var(--color-base);
+    stroke-width: 2;
+} */
+
+.single-input .form-control {
+    font-size: 2rem;
+    color: var(--color-base);
+    font-family: var(--font-body);
+    font-weight: normal;
+    height: 6rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 1.5rem 2rem;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-bg);
+    --form-control-bg: var(--color-white);
+}
+
+.single-input .form-control:focus {
+    border-color: #5107ed;
+    box-shadow: 0 0 0 3px rgba(81,7,237,.15);
+    outline: 0;
+}
+
+
+.single-input .form-control::placeholder {
+    color: var(--color-base);
+}
+.subscribe-form p {
+    font-size: 1.77rem;
+    margin-bottom: 0;
+    color: var(--color-base);
+    padding-top: 15px;
+}
+.subscribe-form p a {
+    color: var(--color-primary);
+}
+.signup-form p {
+    font-size: 1.77rem;
+    color: var(--color-base);
+    margin-bottom: 0;
+    padding-top: 15px;
+}
+.signup-form p a {
+    color: var(--color-primary);
+}
+.message-text {
+    max-width: 550px;
+}
+.message-success {
+    color: var(--color-success);
+    font-size: 16px;
+    line-height: 24px;
+    display: none;
+    margin-top: 10px;
+}
+.success .message-success, .error .message-error {
+    display: block;
+}
+.message-error {
+    color: var(--color-red);
+    font-size: 16px;
+    line-height: 24px;
+    display: none;
+    margin-top: 10px;
+}
+
+.subscribe-btn {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.77rem;
+}
+.subscribe-btn .btn {
+    position: relative;
+}
+.subscribe-btn .button-loader svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-sign {
+    -webkit-font-smoothing: subpixel-antialiased;
+    background: var(--color-primary);
+    border-radius: .8rem;
+    color: #fff;
+    display: inline-block;
+    font-size: 2rem;
+    line-height: 1em;
+    min-height: 44px;
+    height: 5.33rem;
+    outline: none;
+    padding: 2rem 2.5rem;
+    text-decoration: none !important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    cursor: pointer;
+    display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+}
+
+.btn-sign:focus {
+    box-shadow: none;
+}
+.btn-sign:hover {
+    color: var(--color-white);
+    background: var(--color-secondary);
+    border-color: var(--color-secondary);
+    opacity: 0.8;
+}
+
+
+.loading .button-text {
+    display: none;
+}
+.loading .button-loader {
+    display: block;
+}
+.button-loader {
+    display: none;
+}
+.button-loader svg {
+    height: 25px;
+    width: 25px;
+}
+.button-loader svg path {
+    fill: var(--color-white);
+    opacity: 0.7;
+}
+.account-informations h2 {
+    color: var(--color-base);
+    text-align: center;
+}
+.member-name {
+    text-transform: capitalize;
+}
+.subscribe-cover {
+    margin: 0 auto;
+    max-width: 500px;
+}
+.subscribe-cover p {
+    color: var(--color-base);
+}
+.plan-item {
+    font-size: 36px;
+    line-height: 1.4;
+    color: var(--color-base);
+    margin-bottom: 0;
+}
+/* media for 991px*/
+@media screen and (max-width: 991px) {
+    .signup-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+   }
+    .custom-feature-sign {
+        display: none;
+   }
+
+}
+
+.back-to-home {
+    font-size: 0.77rem;
+    font-size: 1.66rem;
+    opacity: 0.33;
+    padding-left: 1rem;
+   }
+
+   .back-to-home:hover {
+    opacity: 1;
+   }
+
+.subscribe-title::not(.signup-form) h1 {
+padding-bottom: 5rem;
+}
+.subscribe-title p {
+margin: .4em 0 0;
+text-align: center;
+}
+/* media for 575px*/
+@media screen and (max-width: 575px) {
+    .subscribe-title h1 {
+        font-size: 1rem;
+   }
+    .subscribe-cover-section h2 {
+        font-size: 1rem;
+   }
+}

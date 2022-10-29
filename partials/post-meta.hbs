@@ -1,36 +1,26 @@
 {{#is "post"}}
     <aside class="gh-article-sidebar">
+        {{#primary_author}}
+            <figure class="gh-author-image">
+                {{#if profile_image}}
+                    <a class="author-name" href="{{url}}"><img src="{{profile_image}}" alt="{{name}}"></a>
+                {{else}}
+                    <a class="author-name" href="{{url}}"><div class="gh-author-icon">{{> icons/avatar}}</div></a>
+                {{/if}}
+            </figure>
 
-        <div class="gh-author-image-list">
-            {{#foreach authors}}
-                <a class="gh-author-image" href="{{url}}">
-                    {{#if profile_image}}
-                        <img src="{{profile_image}}" alt="{{name}}">
-                    {{else}}
-                        <div class="gh-author-icon">{{> icons/avatar}}</div>
-                    {{/if}}
-                </a>
-            {{/foreach}}
-        </div>
-
-        <div class="gh-author-name-list">
-            {{#foreach authors}}
-                <h4 class="gh-author-name">
-                    <a href="{{url}}">{{name}}</a>
-                </h4>
-                {{#unless @last}},&nbsp;{{/unless}}
-            {{/foreach}}
-        </div>
+            <h4 class="gh-author-name">
+                            <a href="{{url}}">{{name}}</a>
+            </h4>
+        {{/primary_author}}
 
         <div class="gh-article-meta">
             <div class="gh-article-meta-inner">
-                <time class="gh-article-date" datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
+                <time class="gh-article-date" datetime="{{date}}">{{date published_at timeago="true"}}</time>
                 {{#if reading_time}}
-                    <span class="gh-article-meta-sep"></span>
-                    <span class="gh-article-length">{{reading_time minute="1 min" minutes="% min"}}</span>
+                    <span class="gh-article-length">({{reading_time minute="Menos de un min de lectura" minutes="% mins de lectura"}})</span>
                 {{/if}}
             </div>
         </div>
-
     </aside>
 {{/is}}

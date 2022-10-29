@@ -1,0 +1,38 @@
+{{!< default}}
+		{{#post}}
+			<header class="it-header it-canvas">
+		    	<h1 class="it-title">{{title}}</h1>
+		        {{#if custom_excerpt}}
+		            <p class="it-excerpt">{{custom_excerpt}}</p>
+		        {{/if}}
+		        
+		        {{#if feature_image}}
+		            <figure class="it-feature-image-wrapper">
+		                <img class="it-feature-image" 
+		                    srcset="{{img_url feature_image size="s"}} 300w,
+		                            {{img_url feature_image size="m"}} 600w,
+		                            {{img_url feature_image size="l"}} 1000w,
+		                            {{img_url feature_image size="xl"}} 2000w"
+		                    sizes="(max-width: 1000px) 490px, 2000px"
+		                    src="{{img_url feature_image size="m"}}"
+		                    alt="{{title}}"
+		                />
+		            </figure>
+		        {{/if}}
+		    </header>
+		{{/post}}
+		
+	<div class="it-content it-canvas">
+	    <div class="it-tags it-grid-c3">
+	    	{{#get "tags" limit="all" include="count.posts" order="count.posts desc"}}
+		        {{#foreach tags}}
+		            <a class="it-tags-item" title="{{name}}" href='{{ url }}'>
+		                <h2 class="it-tags-title" {{#if accent_color}}style="color: {{accent_color}};"{{/if}}>
+		                    {{ name }}
+		                </h2>
+		                <span>{{count.posts}} {{t "Articles"}}</span>
+		            </a>
+		        {{/foreach}}
+		    {{/get}}
+	    </div>
+

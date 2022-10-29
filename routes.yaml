@@ -1,0 +1,7 @@
+taxonomies:
+  tag: /{slug}/
+  author: /team/{slug}/
+
+routes:
+  /archivo/:
+    controller: channel
