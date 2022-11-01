@@ -4,7 +4,7 @@
 <div class="account-section">
 	<div class="account-header archive-section is-image">
 		<div class="account-image archive-image global-image">
-			{{>icons/site/user}}
+			{{>icons/user}}
 			{{#if @member.avatar_image}}
 			<img src="{{@member.avatar_image}}">
 			{{/if}}
@@ -39,9 +39,6 @@
 	</div>
 </div>
 {{#get "posts" limit="6" filter="visibility:[members,paid,tiers]+feature_image:-null" include="authors" as |special_posts|}}
-	{{#if special_posts}}
-		{{>related label=(t "The latest posts {start-bold}only for subscribers{end-bold}" start-bold="<span>" end-bold="</span>")}}
-	{{/if}}
 {{/get}}
 {{else}}
 {{#contentFor "script_js"}}
