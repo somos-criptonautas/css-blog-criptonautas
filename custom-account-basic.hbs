@@ -1,0 +1,51 @@
+{{!< default}}
+{{#post}}
+{{#if @member}}
+<div class="account-section{{>partial_mode}}">
+	<div class="account-header archive-section is-image">
+		<div class="account-image archive-image global-image">
+			{{>icons/site/user}}
+			{{#if @member.avatar_image}}
+			<img src="{{@member.avatar_image}}">
+			{{/if}}
+		</div>
+		<h1 class="archive-title global-title">{{#if @member.name}}{{@member.name}}{{else}}{{t "Your account"}}{{/if}}</h1>
+		<p class="archive-excerpt global-excerpt">
+			{{#if custom_excerpt}}
+			{{custom_excerpt}}
+			{{else}}
+			{{t "You’ve an active account with access to posts for subscribers."}}
+			{{/if}}
+		</p>
+		<div class="account-details">
+			<div class="account-details-wrap global-radius">
+				<h2 class="account-details-title">{{t "Account details"}}</h2>
+				<div class="account-details-content">
+					<div class="account-detail-column">
+						<div>
+							<label class="account-detail-heading">{{t "Email address"}}</label>
+							<span class="account-detail-content">{{@member.email}}</span>
+						</div>
+					</div>
+					<div class="account-signout-wrap">
+						<span class="account-signout global-button" data-members-signout>{{t "Sign out"}}</span>
+					</div>
+				</div>
+			</div>
+			<div class="account-buttons">
+				<a href="javascript:" class="account-button" data-portal="account">{{t "Account settings"}}</a>
+			</div>
+		</div>
+	</div>
+</div>
+{{#get "posts" limit="6" filter="visibility:[members,paid,tiers]+feature_image:-null" include="authors" as |special_posts|}}
+	{{#if special_posts}}
+		{{>related label=(t "The latest posts {start-bold}only for subscribers{end-bold}" start-bold="<span>" end-bold="</span>")}}
+	{{/if}}
+{{/get}}
+{{else}}
+{{#contentFor "script_js"}}
+<script>window.addEventListener("load",function(){window.location='{{@site.url}}'})</script>
+{{/contentFor}}
+{{/if}}
+{{/post}}
