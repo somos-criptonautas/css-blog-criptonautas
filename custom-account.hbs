@@ -69,7 +69,7 @@
 		{{/foreach}}
 	</div>
 </div>
-{{#get "posts" limit="6" filter="visibility:[members,paid,tiers]+feature_image:-null" include="authors" as |special_posts|}}
+{{#get "posts" limit="6" filter="visibility:[members,paid]+feature_image:-null" include="authors" as |special_posts|}}
 {{/get}}
 {{else if @member}}
 <div class="account-section">
@@ -115,7 +115,7 @@
 		</div>
 	</div>
 </div>
-{{#get "posts" limit="6" filter="visibility:[members,paid,tiers]+feature_image:-null" include="authors" as |special_posts|}}
+{{#get "posts" limit="6" filter="visibility:[members,paid]+feature_image:-null" include="authors" as |special_posts|}}
 {{/get}}
 {{else}}
 {{#contentFor "scripts"}}
