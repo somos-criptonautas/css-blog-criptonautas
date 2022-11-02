@@ -206,7 +206,7 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 
 .gh-topic-grid .gh-card-excerpt {
     margin-top: 12px;
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
 }
 
 .gh-topic-grid .gh-card.no-image.large .gh-card-excerpt {
@@ -1224,11 +1224,11 @@ font-weight: 500;
 right: inherit !important;
 }
 
+
 .gh-burger::before,
 .gh-burger::after,
 .is-head-open .gh-burger::before,
 .is-head-open .gh-burger::after {
-    top: inherit !important;
     bottom: inherit !important;
     left: inherit !important;
 }
@@ -1360,8 +1360,9 @@ grid-template-columns: none;
 
 .gh-burger::after, .gh-burger::before {
 height: 3px;
-width: 3.5rem;
+width: 3rem;
 color: var(--color-base);
+left: 1rem;
 }
 .is-head-open .gh-burger::after {
 bottom: 12px;
@@ -1399,7 +1400,7 @@ html[data-theme=dark] .is-head-open .gh-burger::before {
     height: 5.66rem;
     background-color: var(--color-light-gray);
     opacity: .77;
-    top: 1rem;
+    top: 1.5rem;
 }
 
 .is-head-open .gh-burger {
@@ -1407,7 +1408,7 @@ opacity: 1;
 }
 
 .gh-burger::before {
-top: 2.33rem;
+top: 3.33rem !important;
 }
 
 @media screen and (max-width: 991px) {
@@ -1532,30 +1533,16 @@ form[data-members-form] .message-error {
 
 form[data-members-form].success .message-success,
 form[data-members-form].error .message-error {
-    position: fixed;
-    top: 20px;
-    left: 4vw;
-    right: 4vw;
-    max-width: calc(1400px - 8vw);
     margin: 0 auto;
-    padding: 10px 0;
-    color: #fff;
-    font-size: 1.4rem;
+    color: var(--color-dark-gray);
+    font-size: 1.5rem;
     line-height: 1.5em;
     font-weight: 500;
     text-align: center;
     background: var(--color-base);
     border-radius: var(--radius);
+    padding: 2rem;
 }
-form[data-members-form].success .message-success {
-    background: var(--color-success);
-}
-form[data-members-form].error .message-error {
-    color: red;
-    background: #fff;
-    box-shadow: red 0 0 0 1px;
-}
-
 form[data-members-form] .it-button {
     position: relative;
     min-width: 120px;
