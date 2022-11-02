@@ -208,7 +208,7 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 
 .gh-topic-grid .gh-card-excerpt {
     margin-top: 12px;
-    font-family: var(--font-sans-serif);
+    font-family: var(--font-serif);
     font-size: 2rem;
 }
 
@@ -302,7 +302,7 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 
 .gh-topic-minimal .gh-card-title {
     font-size: 1.9rem;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.55;
     letter-spacing: -0.01em;
 }
@@ -1035,7 +1035,6 @@ grid-template-columns: 25rem auto 25rem;
     @media screen and (max-width: 991px) {
     .it-dark-light {
         display: block;
-        left: 48vh;
         padding: .5rem 1rem;
         position: absolute;
         top: 3rem;
@@ -1128,8 +1127,8 @@ grid-template-columns: 25rem auto 25rem;
       --overflow-y: scroll;
   }
 
-  .is-head-open html {
---overflow-y: hidden;
+  .is-head-open body {
+      --overflow-y: hidden;
   }
 
   .shadow {
