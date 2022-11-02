@@ -1222,6 +1222,7 @@ font-weight: 500;
 .gh-burger::before,
 .gh-burger::after {
 right: inherit !important;
+left: 1.5rem !important;
 }
 
 
@@ -1360,9 +1361,8 @@ grid-template-columns: none;
 
 .gh-burger::after, .gh-burger::before {
 height: 3px;
-width: 3rem;
+width: 3.75rem;
 color: var(--color-base);
-left: 1rem;
 }
 .is-head-open .gh-burger::after {
 bottom: 12px;
@@ -1410,6 +1410,10 @@ opacity: 1;
 .gh-burger::before {
 top: 3.33rem !important;
 }
+
+.is-head-open .gh-burger::before {
+    top: 2.5rem !important;
+    }
 
 @media screen and (max-width: 991px) {
 #gh-head .gh-head-btn {
