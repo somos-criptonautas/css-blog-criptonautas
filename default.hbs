@@ -24,9 +24,8 @@
 
 <body class="{{body_class}}{{{block "body_class"}}} {{#if @site.description}}is-head-b--a_n{{else}}is-head-b--n--a{{/if}}{{#is "tag"}}{{#if tag.feature_image}} is-head-transparent{{/if}}{{/is}}{{#match @custom.header_style "Accent color"}} is-head-brand{{/match}}{{#match @custom.header_style "Dark"}} is-head-dark{{/match}}">
     <div class="gh-site">
-{{header}}
+{{navigation}}
 
-        {{!-- {{navigation}} --}}
 
         {{{body}}}
 
