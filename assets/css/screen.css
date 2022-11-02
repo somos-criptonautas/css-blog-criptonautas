@@ -659,10 +659,11 @@ height: 1.66rem;
 }
 
 .gh-copyright {
-    margin-top: 64px;
+    margin-top: 7rem;
     color: var(--color-secondary-text);
     letter-spacing: -0.006em;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 .gh-copyright p {
@@ -765,7 +766,7 @@ padding-top: 1.23rem;
     }
 
     .gh-copyright {
-        margin-top: 32px;
+        margin-top: 5rem;
     }
 }
 
@@ -1160,6 +1161,10 @@ grid-template-columns: 25rem auto 25rem;
 
 /* Matenauta stuff */
 
+li.nav-wearehiring {
+font-weight: 600;
+}
+
 .no-feature-back-to-home {
 font-size: 1.11rem;
 padding-left: 1rem;
@@ -1230,7 +1235,7 @@ background-color: transparent;
 }
 
 .is-head-open .gh-burger::before {
-    top: 2.75rem !important;
+    top: 2.5rem !important;
 
 .is-head-open .gh-burger::before,
 .is-head-open .gh-burger::after {
