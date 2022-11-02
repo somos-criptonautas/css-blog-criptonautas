@@ -1235,7 +1235,7 @@ background-color: transparent;
 
 .is-head-open .gh-burger::before {
     top: 2.5rem !important;
-
+}
 .is-head-open .gh-burger::before,
 .is-head-open .gh-burger::after {
     color: var(--color-primary) !important;
