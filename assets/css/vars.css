@@ -53,9 +53,6 @@ html[data-theme="dark"] {
     --font-heavy: 800;
     --content-font-size: 24px;
 
-@media screen and (max-width: 991px) {
-    --content-font-size: 24px;
-}
     /* Breakpoints */
     --xlarge: 1680px;
     --large: 1280px;
