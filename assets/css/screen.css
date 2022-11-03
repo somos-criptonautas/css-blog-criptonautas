@@ -10,8 +10,11 @@
     --color-primary-text: var(--color-darker-gray);
     --h1-size: 4.7rem;
 }
+a {
+opacity: 0.63;
+}
 a:hover {
-opacity: 0.77;
+opacity: 1;
 }
 
 figcaption {
@@ -1231,12 +1234,15 @@ margin: 0;
 width: 2.11rem;
 height: 2.11rem;
 }
-.kg-bookmark-description {
-    max-height: inherit !important;
-    font-size: 1.5rem;
+.kg-bookmark-description,
+.kg-bookmark-metadata {
+    font-size: 1.5rem !important;
+}
+    .kg-bookmark-description {    
+        max-height: inherit !important;
 }
 .kg-bookmark-title {
-    font-size:1.66rem;
+    font-size:1.66rem !important;
 }
 .gh-input.focus, .gh-input:focus, .gh-select:focus, select:focus, textarea:focus {
     border-color: #ed5107;
