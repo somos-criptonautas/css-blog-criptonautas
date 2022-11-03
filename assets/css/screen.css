@@ -828,7 +828,7 @@ padding-top: 1.23rem;
         display: flex;
         align-items: center;
     }
-    @media screen and (max-width: 10250px) {
+    @media screen and (max-width: 1250px) {
     .gh-head-brand-wrapper {
     display: none;
     }
@@ -1155,7 +1155,7 @@ flex-basis: content;
 margin: 4rem 0 0 1rem;
 }
 
-@media screen and (max-width: 1089px) {
+@media screen and (max-width: 1250px) {
     .gh-sidebar {
         flex-basis: -moz-available;
         }
@@ -1163,7 +1163,7 @@ margin: 4rem 0 0 1rem;
         padding: 0;
         }
         .toc-list-item.is-active-li {
-            list-style-type: none;
+            list-style-type: none !important;
         }
         .toc {
         font-size: 1.63rem;
