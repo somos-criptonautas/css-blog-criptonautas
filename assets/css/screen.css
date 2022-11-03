@@ -11,7 +11,7 @@
     --h1-size: 4.7rem;
 }
 a:hover {
-opacity: 0.77;
+opacity: 1;
 }
 
 figcaption {
@@ -1075,25 +1075,6 @@ opacity: 1;
     html[data-theme='dark'] .icon-dark {
         display: none;
     }
-
-    html[data-theme="dark"] {
-        --color-base: #f1f1f1;
-        --color-bg: #111;
-        --color-link: #111;
-        --color-bg-white: #111;
-        --color-border: #323232;
-        --color-svg: #f1f1f1;
-        --border-form-control: #010230;
-        --bg-icon-mail: #1f2e5b;
-      }
-      html[data-theme=dark] h1,
-      html[data-theme=dark] h2,
-      html[data-theme=dark] h3,
-      html[data-theme=dark] h4:not(.gh-subscribe-title),
-      html[data-theme=dark] h5,
-      html[data-theme=dark] h6 {
-        color: var(--color-base)
-        }
       html[data-theme=dark].it-post-meta {
           color: var(--color-bg) !important;
       }
@@ -1153,6 +1134,7 @@ opacity: 1;
   .gh-head,
   a {
   color: var(--color-base);
+  opacity: 0.74;
 }
 
 /* Matenauta stuff */
@@ -1303,6 +1285,10 @@ font-size: inherit;
 box-shadow: 0 2px 7px 0 rgba(20, 20, 43, 0.06);
 padding-top: 2.23rem;
 margin-bottom: 2.23rem;
+}
+.kg-card .kg-bookmark-card,
+.gh-topic-grid .gh-card-link {
+    opacity: 0.63;
 }
 .kg-toggle-heading-text {
 font-size: inherit;

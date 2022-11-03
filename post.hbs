@@ -36,11 +36,10 @@
                 {{/if}}
             </header>
     <div class="gh-full-content">
-<aside class="gh-sidebar">                    <div class="toc-inner">
+<aside class="gh-sidebar">
             <h3>{{t "TOC"}}</h3>
             <div class="toc">
-            </div>
-        </div></aside>
+            </div></aside>
             <section class="gh-content gh-canvas toc-content">
             {{content}}
             </section>
@@ -88,7 +87,7 @@
             });
         })
             var toc = document.getElementsByClassName('gh-sidebar')[0];
-            if (toc.childNodes.length < 0) {
+            if (toc.childNodes.length < 1) {
                 toc.classList.add("show");
             }
     </script>
