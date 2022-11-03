@@ -824,6 +824,7 @@ padding-top: 1.23rem;
     .gh-head-brand-wrapper {
     display: none;
     }
+}
     .is-head-b--a_n .gh-head-logo {
         font-size: 3rem;
     }
@@ -1252,6 +1253,7 @@ padding: 4rem 0 2rem;
 blockquote.kg-blockquote-alt {
 font-weight: 500;
 line-height: 1.6;
+padding: 0;
 }
 
 /* New hamburger */
@@ -1317,7 +1319,7 @@ visibility: visible;
 display: none !important;
 }
 .gh-head-logo img {
-max-height: 66px;
+max-height: 4rem;
 }
 
 .kg-toggle-card, .kg-toggle-card * {
@@ -1346,12 +1348,9 @@ code {
 color: var(--color-base);
 font-size: 1.5rem;
 }
-
-code {
-    background-color: var(--color-darker-gray);
-    }
-
-
+html[data-theme="dark"] code {
+    color: var(--color-bg);
+}
 
 *, ::after, ::before {
     border: 0 solid #e5e7eb;
