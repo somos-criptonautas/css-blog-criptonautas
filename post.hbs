@@ -36,15 +36,15 @@
                 {{/if}}
             </header>
     <div class="gh-full-content blog-full-content">
-        <div class="toc-inner">
+            <section class="gh-content gh-canvas toc-content">
+            <aside class="gh-sidebar"></aside>
+                    <div class="toc-inner">
             <h3>{{t "TOC"}}</h3>
             <div class="toc">
             </div>
-            <section class="gh-content gh-canvas toc-content">
-            <aside class="gh-sidebar"></aside> {{! The TOC will be inserted here }}
+        </div>
             {{content}}
             </section>
-        </div>
 
         </article>
     {{/post}}
