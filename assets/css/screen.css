@@ -25,6 +25,10 @@ html[data-theme=dark] .figcaption {
 .has-full-image figcaption {
     padding: 0 16px;
 }
+
+html[data-theme=dark] .gh-btn {
+    background-color: var(--color-primary);
+}
 .gh-btn {
     font-weight: 500;
     font-size: 2rem;
@@ -57,7 +61,7 @@ html[data-theme=dark] .figcaption {
     margin-top: 80px;
 }
 
-.gh-topic-name:nth-of-type(1) {
+.gh-topic-name > [id]:not(:first-child) {
 display: none;
 }
 
@@ -305,7 +309,7 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 
 .gh-topic-minimal .gh-card-title {
     font-size: 1.9rem;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.55;
     letter-spacing: -0.01em;
 }
@@ -337,8 +341,7 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 }
 
 html[data-theme=dark] .gh-article-tag {
-background-color: var(--color-white);
-padding: 0.25rem 0.5rem;
+color: var(--color-white);
 }
 .gh-article-tag {
     margin-bottom: 1rem;
@@ -1237,6 +1240,7 @@ padding: 4rem 0 2rem;
 }
 blockquote.kg-blockquote-alt {
 font-weight: 500;
+line-height: 1.6;
 }
 
 /* New hamburger */
@@ -1324,7 +1328,7 @@ border: 0;
 }
 
 .gh-content .kg-callout-card .kg-callout-text, .gh-content .kg-toggle-card .kg-toggle-content > ol, .gh-content .kg-toggle-card .kg-toggle-content > p, .gh-content .kg-toggle-card .kg-toggle-content > ul {
-font-size: 2.25rem;
+font-size: 2rem;
 }
 
 blockquote:not([class]) {
@@ -1663,7 +1667,7 @@ flex-wrap: wrap;
     }
     @media screen and (min-width: 1200px) {
     .newsletter form {
-max-width: 90%;
+max-width: 80%;
     }
 }
 @media screen and (min-width: 1500px) {
