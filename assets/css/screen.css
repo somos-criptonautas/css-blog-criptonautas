@@ -1019,6 +1019,14 @@ grid-template-columns: 25rem auto 25rem;
 
 /* End of toc */
 
+.gh-icon-btn,
+.feather-moon {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
 /* Dark/light */
    
     .icon-light {
@@ -1037,11 +1045,6 @@ grid-template-columns: 25rem auto 25rem;
         padding: .5rem 1rem;
         position: absolute;
         top: 3rem;
-    }
-    .gh-icon-btn,
-    .feather-moon {
-    width: 2.11rem;
-    height: 2.11rem;
     }
     }
     .it-dark-light:hover .icon-light svg {
@@ -1167,8 +1170,7 @@ align-items: inherit;
 }
 
 .gh-main {
-padding-top: 4rem;
-padding-bottom: 6rem;
+padding: 6rem 0;
 }
 
 li.nav-wearehiring {
