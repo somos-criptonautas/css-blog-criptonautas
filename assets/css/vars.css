@@ -10,7 +10,7 @@ body {
 :root {
 
     /* Colours */
-    --color-secondary-text: 
+    --color-secondary-text: #e1e1e1;
     --color-primary: #ed5107;
     --color-secondary: #5107ed;
     --color-success: #07815c;
