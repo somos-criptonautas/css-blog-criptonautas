@@ -944,12 +944,13 @@ padding-bottom: 1rem;
 
 @media screen and (max-width: 991px) {
     .gh-full-content {
-        display: inherit;
+        display: inherit !important;
         }
     }
 
 .gh-full-content {
 display: flex;
+margin-top: 2rem;
 }
 
 .toc {
@@ -1155,8 +1156,15 @@ opacity: 1;
 /* Matenauta stuff */
 
 .gh-sidebar {
-flex-basis: -moz-available;
+flex-basis: content;
+margin: 4rem 0 0 1rem;
 }
+
+@media screen and (max-width: 1089px) {
+    .gh-sidebar {
+        flex-basis: -moz-available;
+        }
+    }
 .gh-head-actions {
 align-items: inherit;
 }
@@ -1354,7 +1362,7 @@ grid-column: 2;
 @media screen and (max-width: 991px) {
 .is-head-b--a_n .gh-head-menu {
 grid-row-start: inherit;
-grid-column: inherit;
+grid-column: 1;
 }
 }
 
