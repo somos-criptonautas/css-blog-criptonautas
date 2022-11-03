@@ -1180,9 +1180,8 @@ padding-left: 1rem;
     padding: 4rem 10vh;
     border: 5px dotted var(--color-gray);
 }
-.gh-post-upgrade-cta-content, .gh-post-upgrade-cta h2 {
-color: var(--color-base);
-padding: 0;
+gh-post-upgrade-cta, .gh-post-upgrade-cta-content, .gh-post-upgrade-cta h2, a.gh-portal-close {
+color: inherit !important;
 background:transparent !important;
 }
 .gh-post-upgrade-cta a.gh-btn {
