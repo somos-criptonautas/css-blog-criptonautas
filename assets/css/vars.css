@@ -10,12 +10,13 @@ body {
 :root {
 
     /* Colours */
+    --color-secondary-text: 
     --color-primary: #ed5107;
     --color-secondary: #5107ed;
     --color-success: #07815c;
     --color-danger: #ca203f;
     --color-base: #111;
-    --color-gray: #aaa;
+    --color-gray: #636363;
     --color-border: #f1f1f1;
     --color-bg: #fff;
     --color-link: #fff;

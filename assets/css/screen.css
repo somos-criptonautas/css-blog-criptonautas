@@ -17,6 +17,7 @@ opacity: 0.77;
 figcaption {
     font-size: 1.5rem;
     text-align: right;
+    color: var(--color-gray);
 }
 
 html[data-theme=dark] .figcaption {
@@ -421,7 +422,7 @@ color: var(--color-white);
 }
 
 .gh-read-next {
-    margin-top: 80px;
+    margin-top: 23rem;
 }
 
 .gh-read-next .gh-pagehead {
@@ -583,6 +584,7 @@ font-size: 2.33rem !important;
 .gh-subscribe-description {
     margin-top: 1rem;
     font-size: 2.33rem;
+    padding: 0 10vh;
 }
 
 @media screen and (max-width: 767px) {
@@ -975,14 +977,14 @@ opacity: 1;
 }
 
 @media screen and (max-width: 992px) {
-    .toc-inner {
+    .gh-sidebar {
         background-color: var(--color-light-gray);
         color: var(--color-bg);
         padding: 3rem 2rem;
         max-width: 90%;
         margin: 7rem auto 3.5rem;
     }
-    .toc-inner h3 {
+    .gh-sidebar h3 {
     padding-left:2.5rem;
     }
     a.toc-link {
@@ -1155,6 +1157,9 @@ opacity: 1;
 
 /* Matenauta stuff */
 
+.gh-content > .kg-card + [id] {
+padding-bottom: 2rem;
+}
 .gh-sidebar {
 flex-basis: content;
 margin: 4rem 0 0 1rem;
@@ -1165,6 +1170,14 @@ margin: 4rem 0 0 1rem;
         flex-basis: -moz-available;
         }
     }
+    @media screen and (min-width: 1090px) {
+        .gh-sidebar {
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            align-self: flex-start;
+            }
+        }
 .gh-head-actions {
 align-items: inherit;
 }
@@ -1282,10 +1295,6 @@ background-color: transparent;
     opacity: 1 !important;
 }
 
-.gh-content > blockquote:not([class]), .gh-content > dl, .gh-content > ol, .gh-content > p, .gh-content > ul {
-font-size: 2rem;
-}
-
 .gh-content > ol {
 font-size: inherit;
 }
@@ -1371,11 +1380,11 @@ grid-column: 1;
 
 .gh-head {
     overflow: hidden;
+    padding-top: 2rem;
 }
 
-.gh-head,
-.is-head-open #gh-head {
-    padding-top: 1rem;
+.is-head-open #gh-head .gh-head-menu {
+display: contents;
 }
 
 .gh-burger::after, .gh-burger::before {
@@ -1475,9 +1484,12 @@ color: white;
 font-weight: 500;
 }
 .gh-main .gh-outer {
-padding-top: 6rem;
-padding-left: 2rem;
-padding-right: 2rem;
+padding: 6rem 2rem 0;
+}
+@media screen and (max-width: 991px){
+.gh-main .gh-outer {
+padding: 6rem 5vh 0;
+}
 }
 .gh-foot .gh-outer {
 opacity: 0.77;
@@ -1629,7 +1641,7 @@ form[data-members-form] .it-button {
         font-weight: 500;
         padding: 1rem;
         background-color: var(--color-primary);
-        border: 0;
+        border: 1px solid #ed5107;
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
         border-bottom-right-radius: 0.5rem;
@@ -1645,7 +1657,6 @@ form[data-members-form] .it-button {
     opacity: 1;
     }
     .newsletter input {
-        flex-grow: 1;
         padding: 1rem;
         border-bottom-left-radius: .5rem;
         border-top-left-radius: .5rem;
@@ -1671,7 +1682,7 @@ form[data-members-form] .it-button {
     }
     @media screen and (max-width: 691px) {
     .newsletter form {
-flex-wrap: wrap;
+flex-wrap: wrap !important;
     }
     @media screen and (min-width: 1200px) {
     .newsletter form {
