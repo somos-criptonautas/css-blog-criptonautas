@@ -802,16 +802,13 @@ padding-top: 1.23rem;
     }
 }
 
-@media screen and (min-width: 1251px) {
+@media screen and (min-width: 992px) {
     .is-head-b--a_n .gh-head-inner {
         grid-template-columns: 1fr auto 1fr;
         row-gap: 0;
     }
 }
 @media screen and (min-width: 992px) and (max-width: 1250px) {
-    .is-head-b--a_n .gh-head-inner {
-    grid-template-columns: 1fr auto;
-}
 .gh-head-inner {
 max-width: 90%;
 }
