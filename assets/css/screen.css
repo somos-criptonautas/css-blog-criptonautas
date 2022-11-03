@@ -1056,10 +1056,6 @@ grid-template-columns: 25rem auto 25rem;
     background-color: var(--color-secondary);
     color: var(--color-base);
     }
-    
-    html[data-theme='dark'] .gh-subscribe-btn:hover {
-    color: inherit;
-    }
 
     html[data-theme='dark'] .icon-light {
         display: block !important;
@@ -1067,6 +1063,10 @@ grid-template-columns: 25rem auto 25rem;
 
     html[data-theme='dark'] img.logo-light {
         display: none;
+    }
+
+    body .is-head-open {
+    overflow: hidden !important;
     }
 
     img.logo-dark {
@@ -1384,7 +1384,11 @@ overflow: hidden;
 
 html[data-theme=dark] .gh-burger {
 opacity: 1;
-background-color: var(--color-base);
+}
+
+html[data-theme=dark] .gh-burger::before,
+html[data-theme=dark] .gh-burger::after {
+background-color: var(--color-bg) !important;
 }
 
 html[data-theme=dark] .is-head-open .gh-burger  {
