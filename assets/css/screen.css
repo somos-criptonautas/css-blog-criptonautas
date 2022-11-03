@@ -1116,9 +1116,24 @@ opacity: 1;
 .gh-content {
     margin-top: 4rem;
     grid-template-columns: auto;
-    padding: 0 20vh;
+}
+@media screen and (max-width:991px) {
+.gh-content {
+    padding: 0 5vh;
+}
 }
 
+@media screen and (min-width:992px) and (max-width: 1499px) {
+.gh-content {
+    padding: 0 10vh;
+}
+}
+
+@media screen and (min-width: 1500px) {
+.gh-content {
+    padding: 0 20vh;
+}
+}
 @media screen and (min-width: 1500px) {
 .home-template .gh-main a {
     opacity: 0.63;
