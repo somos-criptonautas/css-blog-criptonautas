@@ -1169,10 +1169,6 @@ grid-template-columns: 25rem auto 25rem;
 align-items: inherit;
 }
 
-.gh-main {
-padding: 6rem 0;
-}
-
 li.nav-wearehiring {
 font-weight: 600;
 }
@@ -1480,7 +1476,12 @@ background-color: var(--color-primary);
 color: white;
 font-weight: 500;
 }
-
+.gh-main .gh-outer {
+padding-top: 6rem;
+}
+.gh-topic-grid + h2 .gh-topic-name {
+display: none;
+}
 .gh-foot .gh-outer {
 opacity: 0.77;
 }
