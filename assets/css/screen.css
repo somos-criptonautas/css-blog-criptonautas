@@ -336,6 +336,10 @@ body:not(.home-template) .gh-topic-grid .gh-card {
     justify-items: start;
 }
 
+html[data-theme=dark] .gh-article-tag {
+background-color: var(--color-white);
+padding: 0.25rem 0.5rem;
+}
 .gh-article-tag {
     margin-bottom: 1rem;
     font-size: 2rem;
@@ -1065,10 +1069,6 @@ grid-template-columns: 25rem auto 25rem;
         display: none;
     }
 
-    body .is-head-open {
-    overflow: hidden !important;
-    }
-
     img.logo-dark {
         display: none;
     }
@@ -1176,7 +1176,11 @@ padding-left: 1rem;
   -o-transition: top 0.75s; 
   transition: top 0.75s; 
 }
-
+@media screen and (max-width: 767px) {
+.gh-outer {
+padding: 6rem 3rem;
+}
+}
 .gh-outer {
 padding: 6rem 2rem;
 }
