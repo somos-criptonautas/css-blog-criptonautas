@@ -603,7 +603,7 @@ font-size: 2.33rem !important;
 .gh-subscribe-btn {
     margin: 5rem 0 7rem;
     letter-spacing: -0.011em;
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
     color: var(--color-base);
     padding: 2rem 7.5rem;
     font-family: var(--font-sans-serif);
@@ -969,11 +969,11 @@ opacity: 1;
 
 @media screen and (max-width: 992px) {
     .toc-inner {
-        background-color: var(--color-border);
-        color: var(--color-base);
+        background-color: var(--color-light-gray);
+        color: var(--color-bg);
         padding: 3rem 2rem;
-        max-width: 80%;
-        margin: 7rem auto 0;
+        max-width: 90%;
+        margin: 7rem auto 3.5rem;
     }
     .toc-inner h3 {
     padding-left:2.5rem;
@@ -1054,7 +1054,7 @@ grid-template-columns: 25rem auto 25rem;
     }
     
     html[data-theme='dark'] .gh-subscribe-btn {
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
     color: var(--color-white);
     }
 
@@ -1092,8 +1092,13 @@ grid-template-columns: 25rem auto 25rem;
         --border-form-control: #010230;
         --bg-icon-mail: #1f2e5b;
       }
-      html[data-theme=dark] h1, h2, h3, h4, h5, h6 {
-        color: var(--color-white)
+      html[data-theme=dark] h1,
+      html[data-theme=dark] h2,
+      html[data-theme=dark] h3,
+      html[data-theme=dark] h4,
+      html[data-theme=dark] h5,
+      html[data-theme=dark] h6 {
+        color: var(--color-base)
         }
       html[data-theme=dark].it-post-meta {
           color: var(--color-bg) !important;
@@ -1158,8 +1163,15 @@ grid-template-columns: 25rem auto 25rem;
 
 /* Matenauta stuff */
 
+#gh-head .gh-head-inner {
+padding: 1rem 0;
+}
+.gh-head-inner {
+align-items: initial;
+}
 .gh-main {
-padding: 6rem 0;
+padding-top: 4rem;
+padding-bottom: 6rem;
 }
 
 li.nav-wearehiring {
@@ -1262,7 +1274,7 @@ background-color: transparent;
 }
 
 .gh-content > blockquote:not([class]), .gh-content > dl, .gh-content > ol, .gh-content > p, .gh-content > ul {
-font-size: 2.25rem;
+font-size: 2rem;
 }
 
 .gh-content > ol {
@@ -1326,11 +1338,6 @@ border: 0;
 
 .gh-content .kg-callout-card .kg-callout-text, .gh-content .kg-toggle-card .kg-toggle-content > ol, .gh-content .kg-toggle-card .kg-toggle-content > p, .gh-content .kg-toggle-card .kg-toggle-content > ul {
 font-size: 2rem;
-}
-
-blockquote:not([class]) {
-opacity: 0.77;
-font-size: 1.8rem;
 }
 
 code {
@@ -1413,6 +1420,7 @@ html[data-theme=dark] .is-head-open .gh-burger::before {
     background-color: var(--color-light-gray);
     opacity: .77;
     top: 1.5rem;
+    border-radius: 0.5rem;
 }
 
 .is-head-open html {
