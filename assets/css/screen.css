@@ -1478,6 +1478,8 @@ font-weight: 500;
 }
 .gh-main .gh-outer {
 padding-top: 6rem;
+padding-left: 2rem;
+padding-right: 2rem;
 }
 .gh-topic-grid + h2 .gh-topic-name {
 display: none;
