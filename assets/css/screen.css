@@ -61,10 +61,6 @@ html[data-theme=dark] .gh-btn {
     margin-top: 80px;
 }
 
-.gh-topic-name::first-child) {
-display: none;
-}
-
 .gh-topic-grid .gh-topic-name {
     margin-bottom: 40px;
     text-transform: uppercase;
@@ -820,9 +816,6 @@ padding-top: 1.23rem;
     }
 
     @media screen and (max-width: 991px) {
-        .gh-head-inner {
-            align-items: normal;
-        }
         .gh-head-inner .gh-head-menu {
         padding-top: 11vh;
         }
@@ -1164,6 +1157,10 @@ grid-template-columns: 25rem auto 25rem;
 
 /* Matenauta stuff */
 
+.gh-main {
+padding: 6rem 0;
+}
+
 li.nav-wearehiring {
 font-weight: 600;
 }
@@ -1178,14 +1175,6 @@ padding-left: 1rem;
   -webkit-transition: top 0.75s; 
   -o-transition: top 0.75s; 
   transition: top 0.75s; 
-}
-@media screen and (max-width: 767px) {
-.gh-outer {
-padding: 6rem 3rem;
-}
-}
-.gh-outer {
-padding: 6rem 2rem;
 }
 .gh-post-upgrade-cta {
     padding: 4rem 10vh;
@@ -1407,7 +1396,7 @@ background-color: transparent !important;
 
 html[data-theme=dark] .is-head-open .gh-burger::after,
 html[data-theme=dark] .is-head-open .gh-burger::before {
-    color: var(--color-base) !important;
+    background-color: var(--color-base) !important;
 }
 
 .gh-burger {
