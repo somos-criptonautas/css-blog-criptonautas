@@ -1359,18 +1359,6 @@ html[data-theme="dark"] code {
 
 ol > li > ol {list-style-type: lower-alpha;}
 
-.is-head-b--a_n .gh-head-menu {
-justify-content: center;
-grid-row-start: 1;
-grid-column: 2;
-}
-
-@media screen and (max-width: 991px) {
-.is-head-b--a_n .gh-head-menu {
-grid-row-start: inherit;
-grid-column: 1;
-}
-}
 
 .gh-head {
     overflow: hidden;
