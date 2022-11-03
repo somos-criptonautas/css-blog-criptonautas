@@ -61,7 +61,7 @@ html[data-theme=dark] .gh-btn {
     margin-top: 80px;
 }
 
-.gh-topic-name > [id]:not(:first-child) {
+.gh-topic-name::first-child) {
 display: none;
 }
 
@@ -190,7 +190,7 @@ body:not(.home-template) .gh-topic-grid .gh-card {
     letter-spacing: -0.015em;
     font-size: 2.5rem;
     font-family: var(--font-sans-serif);
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .gh-topic-grid .gh-card.large .gh-card-title {
@@ -292,10 +292,11 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 .gh-topic-header .gh-topic-name {
     letter-spacing: -0.015em;
     font-size: 3.5rem;
+    text-transform: uppercase;
 }
 
 .gh-topic-header .gh-topic-link {
-    color: var(--color-dark-gray);
+    color: var(--color-base);
     font-size: 2rem;
 }
 
