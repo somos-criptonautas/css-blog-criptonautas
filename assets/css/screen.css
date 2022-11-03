@@ -1017,7 +1017,7 @@ opacity: 1;
     .it-dark-light:hover .icon-light svg {
         fill: #f1f1f1;
     }
-    
+}
     .it-dark-light:hover .icon-dark svg {
         fill: #111;
     }
