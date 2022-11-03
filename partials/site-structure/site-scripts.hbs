@@ -1,4 +1,11 @@
 <script src="{{asset "built/main.min.js"}}"></script>
+        <script>
+                  if (localStorage.getItem('data-intro') == 'hide') {
+                     document.documentElement.setAttribute('data-intro', 'hide');
+                	   document.querySelector('.home-template').classList.remove('hidden-overflow');
+
+                  }
+        </script>
 <script>
 
     // Dark/Light Mode
@@ -17,18 +24,6 @@
     });
     
     {{#is "home"}}
-            	if(typeof(Storage) !== 'undefined') {
-                    if (localStorage.getItem('data-intro') == 'hide') {
-                        document.documentElement.setAttribute('data-intro', 'hide');
-                    }
-            	}
-            	
-            	window.addEventListener('load', (event) => {
-                	if (!document.documentElement.hasAttribute('data-intro')) {
-                	     document.querySelector('.home-template').classList.add('hidden-overflow');
-                	}
-            	});
-        </script>
     // Intro Popup
     const readIssue = document.querySelector('.letme');
     readIssue.addEventListener('click', function(){
