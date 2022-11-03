@@ -1144,10 +1144,11 @@ opacity: 1;
 
 /* Matenauta stuff */
 
+@media screen and (min-width: 1250px) {
 .home-template .gh-main a {
     opacity: 0.63;
 }
-
+}
 .gh-content > .kg-card + [id] {
 padding-bottom: 2rem;
 }
@@ -1504,16 +1505,10 @@ opacity: 0.77;
     img {
     border-radius: 0.11rem;
     }
-    
+    ul.nav li:hover,
     .nav-current {
     box-shadow: 0 -2px 0 0 var(--color-base) inset;
     }
-    
-    .nav-about:hover,
-    .nav-home:hover {
-    box-shadow: 0 -2px 0 0 var(--color-base) inset;
-    }
-
     h1, h2, h3, h4, h5, h6 {
     color: var(--color-base);
     font-family: var(--font-sans-serif);
