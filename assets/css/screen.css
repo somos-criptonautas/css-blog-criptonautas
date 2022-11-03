@@ -184,7 +184,7 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 
 .gh-topic-grid .gh-card-title {
     letter-spacing: -0.015em;
-    font-size: 2.33rem;
+    font-size: 2.5rem;
     font-family: var(--font-sans-serif);
     font-weight: 600;
 }
@@ -1389,11 +1389,6 @@ background-color: var(--color-base);
 
 html[data-theme=dark] .is-head-open .gh-burger  {
 background-color: transparent !important;
-}
-
-html[data-theme=dark] .gh-burger::after,
-html[data-theme=dark] .gh-burger::before {
-background-color: var(--color-link) !important;
 }
 
 html[data-theme=dark] .is-head-open .gh-burger::after,
