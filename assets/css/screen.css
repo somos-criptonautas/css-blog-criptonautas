@@ -1055,6 +1055,7 @@ grid-template-columns: 25rem auto 25rem;
     
     html[data-theme='dark'] .gh-subscribe-btn {
     background-color: var(--color-primary);
+    color: var(--color-white);
     }
 
     html[data-theme='dark'] .icon-light {
