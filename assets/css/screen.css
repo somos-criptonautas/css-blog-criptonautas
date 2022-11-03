@@ -1868,7 +1868,9 @@ max-width: 75%;
     .hidden-overflow {
         overflow: hidden !important;
     }
-    
+    .hide {
+    display: none;
+    }
     
     
     .it-pagination {
