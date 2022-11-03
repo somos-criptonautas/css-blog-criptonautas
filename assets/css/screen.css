@@ -44,7 +44,7 @@ html[data-theme=dark] .gh-btn {
 }
 .gh-head-description,
 .nav {
-    font-size: 1.66rem;
+    font-size: 1.76rem;
 }
 
 .is-head-transparent .gh-head-logo img:first-of-type:not(:only-child) {
@@ -580,7 +580,7 @@ font-size: 2.33rem !important;
 }
 
 .gh-subscribe-title {
-    font-size: 4.4rem;
+    font-size: 5rem;
     color: var(--color-link);
     padding-bottom: 3rem;
 }
@@ -677,7 +677,7 @@ height: 1.66rem;
     color: var(--color-secondary-text);
     letter-spacing: -0.006em;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 
 .gh-copyright p {
@@ -1191,19 +1191,21 @@ padding: 6rem 2rem;
     padding: 4rem 10vh;
     border: 5px dotted var(--color-gray);
 }
-.gh-post-upgrade-cta-content, .gh-post-upgrade-cta h2,  {
-color: inherit;
+.gh-post-upgrade-cta-content, .gh-post-upgrade-cta h2 {
+color: var(--color-base);
+padding: 0;
+background:transparent !important;
 }
 .gh-post-upgrade-cta a.gh-btn {
     padding: 1.5rem 2rem !important;
     margin-top: 3.5rem;
     border-radius: inherit;
     font-size: 1.75rem;
-    color: var(--color-secondary);
+    color: var(--color-secondary) !important;
 }
 .gh-post-upgrade-cta a.gh-btn:hover {
-background-color: var(--color-secondary);
-color: var(--color-white);
+background-color: var(--color-secondary) !important;
+color: var(--color-white) !important;
 }
 .gh-post-upgrade-cta h2 {
 font-size: 3.11rem;
