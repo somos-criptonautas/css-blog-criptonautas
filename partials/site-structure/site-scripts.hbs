@@ -1,9 +1,9 @@
 <script src="{{asset "built/main.min.js"}}"></script>
         <script>
-            	if(typeof(Storage) !== 'undefined') {
-                    if (localStorage.getItem('intro') == 'hidden') {
+                              if (localStorage.getItem('intro') == 'hidden') {
                         document.documentElement.setAttribute('data-intro', 'hide');
-                    }
+}
+            	if(typeof(Storage) !== 'undefined') {
                 	if (!document.documentElement.hasAttribute('data-intro')) {
                 	     document.querySelector('.home-template').classList.add('hidden-overflow');
                 	}

@@ -51,9 +51,6 @@ html[data-theme=dark] .gh-btn {
     display: none;
 }
 
-.gh-head-actions {
-    gap: 24px;
-}
 
 /* Styles specific to grid style sections */
 
@@ -824,9 +821,11 @@ padding-top: 1.23rem;
     .gh-head-brand {
         display: flex;
         align-items: center;
-        height: 80px;
     }
-
+    @media screen and (max-width: 992px) {
+    .gh-head-brand-wrapper {
+    display: none;
+    }
     .is-head-b--a_n .gh-head-logo {
         font-size: 3rem;
     }
@@ -1169,6 +1168,10 @@ padding: 1rem 0;
 .gh-head-inner {
 align-items: initial;
 }
+.gh-head-actions {
+align-items: inherit;
+}
+
 .gh-main {
 padding-top: 4rem;
 padding-bottom: 6rem;
@@ -1413,7 +1416,7 @@ html[data-theme=dark] .is-head-open .gh-burger::before {
 }
 
 .gh-burger {
-    position: absolute;
+    position: fixed;
     right: 2rem;
     width: 6.66rem;
     height: 5.66rem;
