@@ -942,12 +942,14 @@ padding-bottom: 1rem;
 
 /* toc */
 
+@media screen and (max-width: 991px) {
+    .gh-full-content {
+        display: inherit;
+        }
+    }
+
 .gh-full-content {
 display: flex;
-}
-
-.toc-inner {
-    margin: 7rem 2rem 0 2rem;
 }
 
 .toc {
@@ -989,15 +991,6 @@ opacity: 1;
 
 
 /* toc */
-
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-    .toc-inner {
-        margin-right: 0;
-        margin-top: 0;
-        margin-bottom: 1.5rem;
-    }
-
-}
 
 @media screen and (max-width: 991px) {
     .welcome-figures {
@@ -1161,6 +1154,9 @@ opacity: 1;
 
 /* Matenauta stuff */
 
+.gh-sidebar {
+flex-basis: -moz-available;
+}
 .gh-head-actions {
 align-items: inherit;
 }
@@ -1305,13 +1301,6 @@ font-size: 3.33rem;
     background-color: var(--color-base);
 }
 
-.toc-inner {
-visibility: hidden;
-}
-
-.toc-inner.show {
-visibility: visible;
-}
 
 .is-head-open .gh-head-logo img {
 display: none !important;
