@@ -1113,7 +1113,13 @@ opacity: 1;
 
 /* Matenauta stuff */
 
-@media screen and (min-width: 1250px) {
+.gh-content {
+    margin-top: 4rem;
+    grid-template-columns: auto;
+    padding: 0 20vh;
+}
+
+@media screen and (min-width: 1500px) {
 .home-template .gh-main a {
     opacity: 0.63;
 }
@@ -1131,7 +1137,7 @@ flex-basis: content;
 margin: 4rem 0 0 1rem;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1500px) {
     .gh-sidebar {
         flex-basis: -moz-available;
         }
