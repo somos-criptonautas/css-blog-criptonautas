@@ -1138,8 +1138,8 @@ opacity: 1;
 
 /* Matenauta stuff */
 
-.home-template .gh-inner a {
-    opacity: 0.74;
+.home-template .gh-main a {
+    opacity: 0.63;
 }
 
 .gh-content > .kg-card + [id] {
@@ -1157,7 +1157,7 @@ margin: 4rem 0 0 1rem;
     }
     @media screen and (min-width: 1090px) {
         .gh-sidebar {
-            position: fixed;
+            position: sticky;
             top: 2rem;
             left: 2rem;
             align-self: flex-start;
