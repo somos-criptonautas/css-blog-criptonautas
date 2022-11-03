@@ -982,7 +982,7 @@ opacity: 1;
         color: var(--color-bg);
         padding: 3rem 2rem;
         max-width: 90%;
-        margin: 7rem auto 3.5rem;
+        margin: 7rem auto 3.5rem !important;
     }
     .gh-sidebar h3 {
     padding-left:2.5rem;
@@ -1134,10 +1134,13 @@ opacity: 1;
   .gh-head,
   a {
   color: var(--color-base);
-  opacity: 0.74;
 }
 
 /* Matenauta stuff */
+
+.home-template .gh-inner a {
+    opacity: 0.74;
+}
 
 .gh-content > .kg-card + [id] {
 padding-bottom: 2rem;
