@@ -20,7 +20,6 @@
 .sign-wrapper {
     display: flex;
     flex-wrap: wrap;
-    background: linear-gradient(315deg,#efefef,#fff);
 }
 
 .custom-feature-sign {

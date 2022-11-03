@@ -1,8 +1,5 @@
 <script src="{{asset "built/main.min.js"}}"></script>
         <script>
-                              if (localStorage.getItem('intro') == 'hidden') {
-                        document.documentElement.setAttribute('data-intro', 'hide');
-}
             	if(typeof(Storage) !== 'undefined') {
                 	if (!document.documentElement.hasAttribute('data-intro')) {
                 	     document.querySelector('.home-template').classList.add('hidden-overflow');
@@ -32,16 +29,16 @@
     readIssue.addEventListener('click', function(){
         console.log('clicked')
         html.setAttribute('data-intro', 'hide')
-        localStorage.setItem('intro', 'hidden');
+        localStorage.setItem('data-intro', 'hide');
         document.querySelector('.home-template').classList.remove('hidden-overflow');
-        createCookie('intro-added', true, 1)
+        createCookie('data-intro', true, 1)
         
        console.log(html.hasAttribute('data-intro'))
        return false;
     });
     
-    if (!readCookie('intro-added')) {
-        localStorage.removeItem("intro");
+    if (!readCookie('data-intro')) {
+        localStorage.removeItem("data-intro");
     }
     // And some generic cookie logic
     function createCookie(name,value,days) {

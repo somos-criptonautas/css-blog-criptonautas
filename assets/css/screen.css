@@ -808,6 +808,7 @@ padding-top: 1.23rem;
     .gh-head-inner {
         padding: 0;
         font-weight: 500;
+        max-width: 90%
     }
 
     @media screen and (max-width: 991px) {
@@ -1390,6 +1391,9 @@ color: var(--color-base);
 }
 body.page-template {
 background: var(--color-bg);
+}
+body.page-template.page-registro {
+background: linear-gradient(315deg,#efefef,#fff);
 }
 .is-head-open .page-template {
 overflow: hidden;
