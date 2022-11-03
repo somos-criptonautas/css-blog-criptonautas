@@ -1200,15 +1200,23 @@ gh-post-upgrade-cta, .gh-post-upgrade-cta-content, .gh-post-upgrade-cta h2, a.gh
 color: inherit !important;
 background:transparent !important;
 }
+gh-post-upgrade-cta, .gh-post-upgrade-cta-content {
+    color: var(--color-base) !important;
+}
 .gh-post-upgrade-cta a.gh-btn {
     padding: 1.5rem 2rem !important;
     margin-top: 3.5rem;
     border-radius: inherit;
     font-size: 1.75rem;
-    color: var(--color-secondary) !important;
+    color: var(--color-primary) !important;
+}
+html[data-theme=dark] .gh-post-upgrade-cta a.gh-btn
+html[data-theme=dark] .gh-post-upgrade-cta a:hover {
+    background-color: var(--color-secondary) !important;
+
 }
 .gh-post-upgrade-cta a.gh-btn:hover {
-background-color: var(--color-secondary) !important;
+background-color: var(--color-primary) !important;
 color: var(--color-white) !important;
 }
 .gh-post-upgrade-cta h2 {
