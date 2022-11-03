@@ -1094,7 +1094,7 @@ grid-template-columns: 25rem auto 25rem;
       html[data-theme=dark] h1,
       html[data-theme=dark] h2,
       html[data-theme=dark] h3,
-      html[data-theme=dark] h4,
+      html[data-theme=dark] h4:not(.gh-subscribe-title),
       html[data-theme=dark] h5,
       html[data-theme=dark] h6 {
         color: var(--color-base)
@@ -1162,12 +1162,6 @@ grid-template-columns: 25rem auto 25rem;
 
 /* Matenauta stuff */
 
-#gh-head .gh-head-inner {
-padding: 1rem 0;
-}
-.gh-head-inner {
-align-items: initial;
-}
 .gh-head-actions {
 align-items: inherit;
 }
