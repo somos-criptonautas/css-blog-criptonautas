@@ -1199,7 +1199,13 @@ color: var(--color-white) !important;
 .gh-post-upgrade-cta h2 {
 font-size: 3.11rem;
 }
-
+.gh-post-upgrade-cta,
+.gh-post-upgrade-cta a {
+color: inherit;
+}
+.gh-post-upgrade-cta a:hover {
+color: var(--color-secondary);
+}
 .gh-topic .gh-topic-grid h2 {
 display: none;
 }

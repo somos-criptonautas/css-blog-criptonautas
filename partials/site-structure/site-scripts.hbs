@@ -2,9 +2,9 @@
         <script>
             	if(typeof(Storage) !== 'undefined') {
                     if (localStorage.getItem('intro') == 'hidden') {
-                        document.documentElement.setAttribute('newsletter', 'hide');
+                        document.documentElement.setAttribute('data-intro', 'hide');
                     }
-                	if (!document.documentElement.hasAttribute('newsletter')) {
+                	if (!document.documentElement.hasAttribute('data-intro')) {
                 	     document.querySelector('.home-template').classList.add('hidden-overflow');
                 	}
             	}
