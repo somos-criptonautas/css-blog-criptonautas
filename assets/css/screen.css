@@ -1589,11 +1589,6 @@ form[data-members-form] .it-button {
       font-weight: 900;
       padding: 2rem 0;
     }
-    @media screen and (max-width: 768px){
-    .newsletter-title {
-    font-size: 4rem;
-    padding: 2rem;
-    }
     .newsletter {
     padding: 10vh 0;
     }
@@ -1620,6 +1615,7 @@ form[data-members-form] .it-button {
         appearance: button;
         opacity: 0.93;
         min-width: 25vh;
+        margin: 0;
     }
     .newsletter-subscribe:hover {
     opacity: 1;
@@ -1632,6 +1628,7 @@ form[data-members-form] .it-button {
         border-bottom-right-radius: 0;
       font-size: 100%;
       border: 1px solid #dbe3e7;
+      margin: 0;
     }
     .letmeb {
         padding-top: 0.25rem;
