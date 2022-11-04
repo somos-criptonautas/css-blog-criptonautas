@@ -38,11 +38,18 @@ function remClass (el, cl) { if (el) { var a = el.className.split(' '); arem(a, 
  * Setup Variables
  */
 var previousPosition = window.pageYOffset;
-var navbar = document.getElementById("gh-burger").getElementById("gh-head");
+var navbar = document.getElementById("gh-burger");
 var navbarHeight = navbar.offsetHeight;
 
 if (previousPosition > navbarHeight) {
     addClass(navbar, 'headroom');
+}
+
+var navbar = document.getElementById("gh-head");
+var navbar2Height = navbar2.offsetHeight;
+
+if (previousPosition > navbar2Height) {
+    addClass(navbar2, 'headroom');
 }
 
 
@@ -56,8 +63,10 @@ window.onscroll = function() {
 
     if (velocity > 35 || currentPosition < navbarHeight) {
       remClass(navbar, 'headroom');
+      remClass(navbar2, 'headroom');
     } else if (velocity < 0) {
       addClass(navbar, 'headroom');
+      addClass(navbar2, 'headroom');
     }
 
     previousPosition = currentPosition;
