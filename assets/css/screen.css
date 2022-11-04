@@ -72,7 +72,7 @@ html[data-theme=dark] .gh-btn {
 }
 
 body:not(.home-template) .gh-topic-grid .gh-topic-content {
-    row-gap: 48px;
+    row-gap: 2rem;
     justify-items: center;
 }
 
@@ -102,7 +102,7 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 
 .gh-topic-grid .gh-card-link {
     display: flex;
-    gap: 24px;
+    gap: 1.5rem;
 }
 
 .gh-topic-grid .gh-card-link:hover {
@@ -174,7 +174,6 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 
 .gh-topic-grid .gh-card-title {
     letter-spacing: -0.015em;
-    font-size: 2.5rem;
     font-family: var(--font-sans-serif);
     font-weight: 700;
 }
@@ -211,10 +210,10 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 
 .gh-topic-grid .gh-card:not(.large) .gh-card-excerpt {
     display: -webkit-box;
-    margin-top: 4px;
+    margin-top: 0.5rem;
     overflow-y: hidden;
-    font-size: 1.75rem;
-    -webkit-line-clamp: 3;
+    font-size: 2rem;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
 }
 
@@ -399,13 +398,12 @@ color: var(--color-white);
 
 .gh-read-next .gh-pagehead {
     max-width: none;
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
 }
 
 .gh-read-next .gh-pagehead-title {
     display: flex;
     align-items: center;
-    font-size: 1.8rem;
 }
 
 .gh-read-next .gh-pagehead-title::after {
@@ -521,14 +519,13 @@ font-size: 2.33rem !important;
 }
 
 .gh-pagehead-title {
-    font-size: 2.4rem;
     text-transform: uppercase;
     letter-spacing: -0.01em;
 }
 
 .gh-pagehead-description {
-    margin-top: 12px;
-    font-size: 1.7rem;
+    margin-top: 1rem;
+    font-size: 2rem;
     color: var(--color-secondary-text);
 }
 
@@ -680,11 +677,11 @@ padding-top: 1.23rem;
     }
 
     .gh-topic-grid .gh-card-link {
-        gap: 16px;
+        gap: 1rem;
     }
 
     .gh-topic-grid .gh-card.large .gh-card-link {
-        gap: 32px;
+        gap: 2rem;
     }
 
     .gh-topic-grid .gh-card.featured.large a.gh-card-link {
