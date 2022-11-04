@@ -1082,6 +1082,11 @@ overflow: hidden;
 
 /* Matenauta stuff */
 
+.404-center {
+text-align: center;
+padding-bottom: 6rem;
+}
+
 @media screen and (max-width: 991px) {
     .is-head-open .gh-head-brand-wrapper {
         display: flex;
