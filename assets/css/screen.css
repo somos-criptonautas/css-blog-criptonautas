@@ -43,10 +43,6 @@ html[data-theme=dark] .gh-btn {
 .gh-btn:hover {
     opacity: 1;
 }
-.gh-head-description,
-.nav {
-    font-size: 1.76rem;
-}
 
 .is-head-transparent .gh-head-logo img:first-of-type:not(:only-child) {
     display: none;
@@ -786,7 +782,7 @@ padding-top: 1.23rem;
 @media screen and (min-width: 992px) {
     .is-head-b--a_n .gh-head-inner {
         row-gap: 0;
-        grid-template-columns: 3fr auto 2fr;
+        grid-template-columns: 4fr auto 2fr;
     }
 }
 @media screen and (min-width: 992px) and (max-width: 1250px) {
@@ -823,19 +819,6 @@ max-width: 90%;
      display: none;
         }
     }    
-    @media screen and (min-width: 992px) {
-        .is-head-open.gh-head-btn.gh-btn {
-        font-size: 1.8rem;
-        padding: 1rem 2.5rem !important;
-    }
-    }
-    @media screen and (max-width: 991px) {
-        .is-head-open.gh-head-btn.gh-btn,
-            .gh-head-btn.gh-btn {
-        font-size: 2rem;
-        padding: 1.5rem 3.5rem !important;
-    }
-}
     .gh-head-btn.gh-btn:hover {
         opacity: 0.95 !important;
     }
@@ -997,9 +980,9 @@ opacity: 1;
 /* End of toc */
 
 .gh-icon-btn,
-.feather-moon {
-    width: 2rem;
-    height: 2rem;
+.feather {
+    width: 3rem;
+    height: 3rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
 }
@@ -1237,8 +1220,8 @@ display: none;
 margin: 0;
 }
 .gh-icon-btn svg {
-width: 2.11rem;
-height: 2.11rem;
+width: 100%;
+height: 100%;
 }
 .kg-bookmark-description,
 .kg-bookmark-metadata {
