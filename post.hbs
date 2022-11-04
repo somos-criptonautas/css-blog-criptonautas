@@ -37,7 +37,7 @@
                 {{> "post-meta"}}
     </div>
     <div class="gh-full-content">
-<aside class="gh-sidebar">
+<aside class="gh-sidebar" id="sidebar-toc">
                 {{#if reading_time}}
                 <h3>
                     {{reading_time minute="Menos de un min de lectura 👇" minutes="% mins de lectura 👇"}}
@@ -92,7 +92,7 @@
             });
             var toc = document.getElementsByClassName('toc')[0];
             if (toc.childNodes.length < 1) {
-                document.getElementById('gh-sidebar').hidden = true
+                document.getElementById('sidebar-toc').hidden = true
             }
         })
     </script>
