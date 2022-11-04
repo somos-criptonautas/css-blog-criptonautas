@@ -935,7 +935,7 @@ opacity: 1;
 
 @media screen and (max-width: 992px) {
     .gh-sidebar {
-        background-color: var(--color-light-gray);
+        background-color: var(--color-border);
         color: var(--color-bg);
         padding: 3rem 2rem;
         max-width: 90%;
@@ -1053,10 +1053,10 @@ margin-bottom: 0.25rem;
   }
 
   .is-head-open .home-template {
-      --overflow-y: hidden;
+      overflow: hidden !important;
   }
   .home-template {
---overflow-y:scroll;
+overflow: hidden;
   }
 
   .shadow {
