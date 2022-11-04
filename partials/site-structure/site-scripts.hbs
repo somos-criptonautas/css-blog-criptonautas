@@ -1,10 +1,15 @@
 <script src="{{asset "built/main.min.js"}}"></script>
     <script>
+            	if(typeof(Storage) !== 'undefined') {
     if (localStorage.getItem('data-intro') == 'hide') {
     document.documentElement.setAttribute('data-intro', 'hide');
+                    }
+            	}
+            	window.addEventListener('load', (event) => {
+                	if (!document.documentElement.hasAttribute('data-intro')) {
     document.querySelector('.home-template').classList.remove('hidden-overflow');
-
     }
+            	});
     </script>
 <script>
     // Dark/Light Mode
