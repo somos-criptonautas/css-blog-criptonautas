@@ -1,7 +1,33 @@
 {{!< default}}
 
+		{{#post}}
 <h1>Ooops!</h1>
 <p>{{ t "Somebody turned off" }}
 		</p>
+<p>{{ t "Please check our last articles" }}
+		</p>
+
+<main class="gh-main gh-outer">
+    <div class="gh-inner">
+        <section class="gh-topic gh-topic-grid">
+            <h2 class="gh-topic-name">
+                {{#match pagination.pages ">" 1}}
+                    <a href="{{@site.url}}/archivo">{{ t "Featured" }}</a>
+                {{else}}
+                    # {{t "Featured" }}
+                {{/match}}
+            </h2>
+
+            <div class="gh-topic-content">
+                {{#get "posts" include="authors" limit="7"}}
+                    {{#foreach posts}}
+                        {{> "loop-grid"}}
+                    {{/foreach}}
+                {{/get}}
+            </div>
+        </section>
+    </div>
+</main>
 
 <script>plausible("404",{ props: { path: document.location.pathname } });</script>
+		{{/post}}
