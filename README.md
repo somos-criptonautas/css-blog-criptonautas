@@ -8,9 +8,13 @@ Headline adapts the content by allowing to choose which topics are front and cen
 
 **Demo: https://headline.ghost.io**
 
+&nbsp;
+
 # Criptonaut update
 
 We update the theme for make it more modern and we adapt it for our CSS style :)
+
+&nbsp;
 
 # Development
 
@@ -21,10 +25,11 @@ You'll need installed globally:
 - [Node](https://nodejs.org/)
 - [Yarn](https://yarnpkg.com/)
 - [Gulp](https://gulpjs.com) 
-- 
-- After that, from the theme's root directory:
+
+After that, from the theme's root directory:
 
 ```bash
+
 # Install
 yarn
 
@@ -34,10 +39,13 @@ yarn dev
 
 Then you could edit `/assets/css/` files, which will be compiled to `/assets/built/` automatically :)
 
+&nbsp;
 
 # Contribution
 
 You can make a PR if you fix issues or suggest UI/UX improvements and we can update our main branch (forked from Ghost one)
+
+&nbsp;
 
 ## Copyright & License
 
