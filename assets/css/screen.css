@@ -1106,6 +1106,7 @@ display: inherit;
     .gh-author-criptonaut {
         width: 70%;
         display: grid;
+        margin: 7rem auto 5rem;
     }
     }
 .gh-inner {
