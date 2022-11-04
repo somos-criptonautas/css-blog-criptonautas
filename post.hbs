@@ -91,9 +91,9 @@
                 scrollSmoothOffset: -40
             });
         })
-            var toc = document.getElementsByClassName('gh-sidebar')[0];
+            var toc = document.getElementsByClassName('toc')[0];
             if (toc.childNodes.length < 1) {
-                toc.classList.add("hide");
+                document.getElementById('gh-sidebar').hidden = true
             }
     </script>
     {{/contentFor}}
