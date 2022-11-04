@@ -1091,6 +1091,10 @@ display: inherit
 
 /* Matenauta stuff */
 
+.gh-head-actions .gh-search {
+display: unset !important;
+}
+
 .gh-content {
     margin-top: 4rem;
     grid-template-columns: auto;
