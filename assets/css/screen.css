@@ -372,7 +372,6 @@ color: var(--color-white);
 }
 
 .gh-article-meta {
-    margin-top: 6px;
     font-size: 2rem;
     color: var(--color-secondary-text);
     letter-spacing: -0.003em;
@@ -841,7 +840,6 @@ max-width: 90%;
         grid-template-columns: auto 1fr;
         grid-column: main-start / main-end;
         column-gap: 0.5rem;
-        align-items: center;
         padding-right: 0;
         margin: 3rem 0 2rem;
     }
@@ -1092,7 +1090,7 @@ overflow: hidden;
 
 @media screen and (max-width:991px) {
 .gh-author-criptonaut {
-display: inherit;
+display: flow-root;
 }
 }
 @media screen and (min-width:992px) and (max-width: 1249) {
