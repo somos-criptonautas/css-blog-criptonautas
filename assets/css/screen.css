@@ -1091,6 +1091,9 @@ overflow: hidden;
 
 /* Matenauta stuff */
 
+.gh-inner {
+max-width: 1500px;
+}
 .gh-head-actions .gh-search {
 display: unset !important;
 }
@@ -1105,25 +1108,30 @@ display: unset !important;
 }
 }
 
-@media screen and (min-width:992px) and (max-width: 1499px) {
+@media screen and (min-width:992px) and (max-width: 1699px) {
 .gh-content {
     padding: 0 10vh;
 }
 }
-
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1700px) {
 .gh-content {
-    padding: 0 20vh;
+    padding: 0 15vh;
 }
 }
 @media screen and (min-width: 1500px) {
 .home-template .gh-main a {
     opacity: 0.63;
 }
+.home-template .gh-main a:hover {
+opacity: 1;
+}
 }
 @media screen and (max-width: 1249px) {
     .home-template .gh-main a {
         opacity: 1;
+    }
+    .home-template .gh-main a:hover {
+    opacity: 77;
     }
     }
 .gh-content > .kg-card + [id] {
@@ -1284,6 +1292,14 @@ margin-bottom: 2.23rem;
 }
 .gh-topic-grid .gh-card-link {
     opacity: 0.63;
+}
+@media screen and (min-width: 1500px) {
+kg-bookmark-card a.kg-bookmark-container {
+    opacity: 0.63;
+}
+kg-bookmark-card a.kg-bookmark-container:hover {
+    opacity: 1 !important;
+}
 }
 .kg-toggle-heading-text {
 font-size: inherit;
