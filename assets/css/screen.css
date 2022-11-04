@@ -1052,6 +1052,10 @@ margin-bottom: 0.25rem;
       --overflow-y: scroll;
   }
 
+  html[data-intro="hide"] .gh-burger {
+display: inherit
+  }
+
   .is-head-open .home-template {
       --overflow-y: hidden;
   }
@@ -1394,6 +1398,7 @@ html[data-theme=dark] .is-head-open .gh-burger::before {
 }
 
 .gh-burger {
+    display: none;
     position: fixed;
     right: 2rem;
     width: 6.66rem;
@@ -1574,7 +1579,6 @@ form[data-members-form] .it-button {
     text-align: center;
     align-items: center;
     flex-direction: column;
-    padding:3.33rem;
     }
     .newsletter.container {
       height: 100vh;
@@ -1588,9 +1592,6 @@ form[data-members-form] .it-button {
       line-height: 1;
       font-weight: 900;
       padding: 2rem 0;
-    }
-    .newsletter {
-    padding: 10vh 0;
     }
     .newsletter p.wide {
         letter-spacing: .025em;
