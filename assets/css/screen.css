@@ -1082,6 +1082,14 @@ overflow: hidden;
 
 /* Matenauta stuff */
 
+@media screen and (max-width: 991px) {
+    .is-head-open .gh-head-brand-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding-top: 5rem;
+    }
+}
+
 @media screen and (max-width:991px) {
 .gh-author-criptonaut {
 display: flow-root;
@@ -1334,11 +1342,9 @@ font-size: 3.33rem;
 }
 
 
-.is-head-open .gh-head-logo img {
-display: none !important;
-}
+
 .gh-head-logo img {
-max-height: 5rem;
+max-height: 6rem;
 }
 
 .kg-toggle-card, .kg-toggle-card * {
@@ -1383,7 +1389,7 @@ grid-row-start: 1;
 grid-column: 2;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (min-width: 992px) and (max-width: 1250px) {
 .is-head-b--a_n .gh-head-menu {
 grid-row-start: 1;
 grid-column: 1;
