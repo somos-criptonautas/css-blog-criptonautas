@@ -1052,10 +1052,6 @@ margin-bottom: 0.25rem;
       --overflow-y: scroll;
   }
 
-  html[data-intro="hide"] .gh-burger {
-display: inherit
-  }
-
   .is-head-open .home-template {
       --overflow-y: hidden;
   }
@@ -1414,6 +1410,11 @@ html[data-theme=dark] .is-head-open .gh-burger::before {
     z-index:11;
 }
 
+@media screen and (max-width: 991px) {
+html[data-intro="hide"] .gh-burger {
+display: inherit
+}
+}
 body .is-head-open {
 overflow: hidden !important;
 }
