@@ -1041,10 +1041,13 @@ margin-bottom: 0.25rem;
       background: #ed5107 !important;
   
   }
-      
+html {
+overflow: hidden;
+}
   html[data-intro="hide"] {
       --transform: translate(-120vw);
       --overflow-y: scroll;
+      overflow: auto;
   }
 
   .home-template .is-head-open {
