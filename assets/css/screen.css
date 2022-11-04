@@ -1303,7 +1303,7 @@ padding-top: 2.23rem;
 margin-bottom: 2.23rem;
 }
 .gh-topic-grid .gh-card-link {
-    opacity: 0.63;
+    opacity: 1;
 }
 @media screen and (min-width: 1500px) {
 kg-bookmark-card a.kg-bookmark-container {
