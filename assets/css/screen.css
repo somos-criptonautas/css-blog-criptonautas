@@ -778,7 +778,7 @@ padding-top: 1.23rem;
 @media screen and (min-width: 992px) {
     .is-head-b--a_n .gh-head-inner {
         row-gap: 0;
-        grid-template-columns: 4fr auto 2fr;
+        grid-template-columns: 3fr auto 3fr;
     }
 }
 @media screen and (min-width: 992px) and (max-width: 1250px) {
@@ -807,7 +807,11 @@ max-width: 90%;
         .is-head-open.gh-head-btn.gh-btn {
      display: none;
         }
-    }    
+    }
+    .gh-head-btn.gh-btn {
+        font-size: inherit;
+        padding: 1rem 2rem;
+    }
     .gh-head-btn.gh-btn:hover {
         opacity: 0.95 !important;
     }
@@ -1352,6 +1356,9 @@ grid-column: 2;
 .is-head-b--a_n .gh-head-menu {
 grid-row-start: 1;
 grid-column: 1;
+}
+.nav-blog {
+    display: none;
 }
 }
 
