@@ -109,10 +109,6 @@ body:not(.home-template) .gh-topic-grid .gh-card {
     opacity: 1 !important;
 }
 
-.gh-topic-grid .gh-card-link:hover .gh-card-title {
-    opacity: 0.77;
-}
-
 .gh-topic-grid .gh-card.large .gh-card-link {
     gap: 40px;
 }
@@ -793,13 +789,6 @@ max-width: 90%;
     .gh-head-inner {
         padding: 0;
         font-weight: 500;
-        max-width: 80%;
-    }
-
-    @media screen and (max-width: 991px) {
-        .gh-head-inner .gh-head-menu {
-        padding-top: 11vh;
-        }
     }
 
     .gh-head-brand {
@@ -986,7 +975,9 @@ opacity: 1;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
 }
-
+.feather {
+margin-bottom: 0.25rem;
+}
 /* Dark/light */
    
     .icon-light {
@@ -1435,7 +1426,7 @@ top: 3.33rem !important;
     min-width: 23rem;
     width: 50%;
     margin: 3rem auto;
-    border-radius: 1.77;
+    border-radius: 0.77rem;
     display: flex;
 }
 #gh-head .nav a,
