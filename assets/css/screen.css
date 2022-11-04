@@ -915,7 +915,11 @@ padding-bottom: 1rem;
 display: flex;
 margin-top: 2rem;
 }
-
+@media screen and (max-width: 991px) {
+.gh-full-content {
+margin-top: 7rem;
+}
+}
 .toc {
     display: flex;
     flex-direction: column;
