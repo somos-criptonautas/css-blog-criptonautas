@@ -841,7 +841,7 @@ max-width: 90%;
         grid-column: main-start / main-end;
         column-gap: 0.5rem;
         padding-right: 0;
-        margin: 3rem 0 2rem;
+        margin: 5rem 0 2rem;
     }
 
     .gh-article-sidebar .gh-author-image {
@@ -941,9 +941,6 @@ opacity: 1;
         padding: 3rem 2rem;
         max-width: 90%;
         margin: 7rem auto 3.5rem !important;
-    }
-    .gh-sidebar h3 {
-    padding-left:2.5rem;
     }
     a.toc-link {
     color: var(--color-base);
@@ -1053,11 +1050,8 @@ margin-bottom: 0.25rem;
       --overflow-y: scroll;
   }
 
-  .is-head-open .home-template {
+  .home-template .is-head-open {
       overflow: hidden !important;
-  }
-  .home-template {
-overflow: hidden;
   }
 
   .shadow {
@@ -1091,6 +1085,10 @@ overflow: hidden;
 @media screen and (max-width:991px) {
 .gh-author-criptonaut {
 display: flow-root;
+margin: 7rem 5rem;
+}
+.gh-article-excerpt {
+font-size: 2.5rem;
 }
 }
 @media screen and (min-width:992px) and (max-width: 1249) {
