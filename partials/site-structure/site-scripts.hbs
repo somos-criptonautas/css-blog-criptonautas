@@ -38,7 +38,7 @@ function remClass (el, cl) { if (el) { var a = el.className.split(' '); arem(a, 
  * Setup Variables
  */
 var previousPosition = window.pageYOffset;
-var navbar = document.getElementById("gh-burger");
+var navbar = document.getElementById("gh-burger").getElementById("gh-head");
 var navbarHeight = navbar.offsetHeight;
 
 if (previousPosition > navbarHeight) {
@@ -54,7 +54,7 @@ window.onscroll = function() {
     var currentPosition = window.pageYOffset;
     var velocity = previousPosition - currentPosition;
 
-    if (velocity > 55 || currentPosition < navbarHeight) {
+    if (velocity > 35 || currentPosition < navbarHeight) {
       remClass(navbar, 'headroom');
     } else if (velocity < 0) {
       addClass(navbar, 'headroom');
