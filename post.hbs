@@ -11,12 +11,6 @@
 
                 <h1 class="gh-article-title">{{title}}</h1>
 
-                {{> "post-meta"}}
-
-                {{#if custom_excerpt}}
-                    <p class="gh-article-excerpt">{{custom_excerpt}}</p>
-                {{/if}}
-
                 {{#if feature_image}}
                     <figure class="gh-article-image">
                         <img
@@ -35,9 +29,20 @@
                     </figure>
                 {{/if}}
             </header>
+    <div class="gh-author-criptonaut">
+                        {{#if custom_excerpt}}
+                    <p class="gh-article-excerpt">{{custom_excerpt}}</p>
+                {{/if}}
+
+                {{> "post-meta"}}
+    </div>
     <div class="gh-full-content">
 <aside class="gh-sidebar">
-            <h3>{{t "TOC"}}</h3>
+                {{#if reading_time}}
+                <h3>
+                    {{reading_time minute="Menos de un min de lectura 👇" minutes="% mins de lectura 👇"}}
+                </h3>
+                {{/if}}
             <div class="toc">
             </div></aside>
             <section class="gh-content gh-canvas toc-content">
