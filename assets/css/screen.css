@@ -201,7 +201,8 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 .gh-topic-grid .gh-card-excerpt {
     margin-top: 12px;
     font-family: var(--font-serif);
-    font-size: 2rem;
+    font-size: 1.77rem;
+    line-height: 1.77;
 }
 
 .gh-topic-grid .gh-card.no-image.large .gh-card-excerpt {
@@ -505,8 +506,10 @@ color: var(--color-white);
     font-family: var(--font-serif);
 }
 
-.gh-content > p {
-font-size: 2.33rem !important;
+.gh-content > p,
+.gh-content > ul,
+.gh-content > ol {
+font-size: 2.33rem;
 }
 
 /* Page head */
@@ -1219,9 +1222,9 @@ gh-post-upgrade-cta, .gh-post-upgrade-cta-content {
 }
 .gh-post-upgrade-cta a.gh-btn {
     padding: 1.5rem 2rem !important;
-    margin-top: 3.5rem;
-    border-radius: inherit;
-    font-size: 1.75rem;
+    margin: 3.5rem 0 0 !important;
+    border-radius: 0.77rem !important;
+    font-size: 1.75rem !important;
     color: var(--color-primary) !important;
 }
 html[data-theme=dark] .gh-post-upgrade-cta a.gh-btn
@@ -1234,7 +1237,8 @@ background-color: var(--color-primary) !important;
 color: var(--color-white) !important;
 }
 .gh-post-upgrade-cta h2 {
-font-size: 3.11rem;
+font-size: 3.11rem !important;
+
 }
 .gh-post-upgrade-cta,
 .gh-post-upgrade-cta a {
@@ -1649,9 +1653,9 @@ form[data-members-form] .it-button {
     }
     .newsletter-subscribe{
         font-weight: 500;
-        padding: 1rem;
-        background-color: var(--color-primary);
-        border: 1px solid #ed5107;
+        padding: 1rem 2rem;
+        background-color: var(--color-secondary);
+        border: 0.25rem solid var(--color-secondary);
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
         border-bottom-right-radius: 0.5rem;
@@ -1661,7 +1665,7 @@ form[data-members-form] .it-button {
         -webkit-appearance: button;
         appearance: button;
         opacity: 0.93;
-        min-width: 25vh;
+        min-width: 35vh;
         margin: 0;
     }
     .newsletter-subscribe:hover {
