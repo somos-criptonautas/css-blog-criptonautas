@@ -124,7 +124,7 @@
 	"Continue to your account": "Ingresa al portal criptonauta 🧑🏻‍🚀",
 	"Send login link": "Continuar",
 	"Enter your email": "Tu e-mail",
-	"Want trading": "¿Ya compartiste tus análisis?",
+	"Shared analysis?": "Compartiste o miraste algún análisis?",
 	"We are here": "Hey, aquí estamos para acompañarte",
 	"Contact us paid": "Sumate a nuestro servidor en Discord :)",
 	"Somebody turned off" : "Oops, alguien pateó un cable!",
@@ -135,5 +135,6 @@
 	"Upgrade my account": "Actualizar perfil",
 	"By": "por",
 	"Please check our last articles": "Puedes ver nuestros últimos artículos 😬",
-	"First level subscription": "Tienes acceso libre a nuestros artículos gratuitos, "
+	"First level subscription": "Tienes acceso libre a nuestros artículos gratuitos",
+	"Padawans description": "Compartir es la manera más simple que tienes de aprender."
 }
