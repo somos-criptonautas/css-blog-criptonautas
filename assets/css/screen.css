@@ -1615,7 +1615,7 @@ form[data-members-form] .it-button {
     /* Newsletter */
 
     .newsletter {
-    background-color: var(--color-bg);
+    background: var(--color-bg);
     height: 100%;
     overflow: auto;
     position: absolute;
