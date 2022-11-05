@@ -179,25 +179,16 @@ width: 0.66rem;
     max-width: 550px;
 }
 .message-success {
-    color: var(--color-success);
-    font-size: 16px;
-    line-height: 24px;
+    color: var(--color-base);
     display: none;
-    margin-top: 10px;
+    background-color: none;
 }
 .success .message-success, .error .message-error {
     display: block;
 }
 .message-error {
-    color: var(--color-red);
-    font-size: 16px;
-    line-height: 24px;
+    color: var(--color-base);
     display: none;
-    margin-top: 10px;
-}
-
-.message-success {
-    color: var(--color-success);
     background-color: none;
 }
 
