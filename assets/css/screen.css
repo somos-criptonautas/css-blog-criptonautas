@@ -176,6 +176,7 @@ body:not(.home-template) .gh-topic-grid .gh-card {
     letter-spacing: -0.015em;
     font-family: var(--font-sans-serif);
     font-weight: 700;
+    font-size: 3.5rem;
 }
 
 .gh-topic-grid .gh-card.large .gh-card-title {
@@ -224,10 +225,10 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 
 .gh-card-footer {
     display: flex;
-    gap: 6px;
+    gap: 0.5rem;
     align-items: center;
-    padding-top: 1rem;
-    font-size: 1.5rem;
+    padding-top: 2rem;
+    font-size: 2rem;
     font-weight: 500;
     color: var(--color-secondary-text);
     text-transform: uppercase;
@@ -1080,6 +1081,10 @@ overflow: hidden;
 }
 
 /* Matenauta stuff */
+
+.gh-content h3 {
+font-weight: 700;
+}
 
 @media screen and (max-width: 991px) {
     .is-head-open .gh-head-brand-wrapper {

@@ -1,7 +1,9 @@
 {{!< default}}
 {{#post}}
 {{#if @member}}
-<div class="account-section">
+<main class="gh-main gh-outer">
+    <div class="gh-inner">
+		<div class="account-section">
 	<div class="account-header archive-section is-image">
 		<div class="account-image archive-image global-image">
 			{{>icons/user}}
@@ -44,5 +46,6 @@
 {{#contentFor "script_js"}}
 <script>window.addEventListener("load",function(){window.location='{{@site.url}}'})</script>
 {{/contentFor}}
+</main></div>
 {{/if}}
 {{/post}}
