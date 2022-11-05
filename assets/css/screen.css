@@ -636,7 +636,7 @@ height: 1.66rem;
 }
 
 .gh-copyright {
-    margin-top: 7rem;
+    margin-top: 5rem;
     color: var(--color-secondary-text);
     letter-spacing: -0.006em;
     text-align: center;
@@ -732,10 +732,6 @@ padding-top: 1.23rem;
 
     .gh-foot-menu .nav {
         gap: 12px;
-    }
-
-    .gh-copyright {
-        margin-top: 5rem;
     }
 }
 
@@ -1398,8 +1394,10 @@ grid-column: 2;
 grid-row-start: 1;
 grid-column: 1;
 }
+.gh-head {
+    padding: 3rem 3rem 0 3rem;
 }
-
+}
 .gh-head {
     overflow: hidden;
     padding-top: 2rem;
@@ -1604,7 +1602,6 @@ form[data-members-form].error .message-error {
     line-height: 1.5em;
     font-weight: 500;
     text-align: center;
-    background: var(--color-base);
     border-radius: var(--radius);
     padding: 2rem;
 }
