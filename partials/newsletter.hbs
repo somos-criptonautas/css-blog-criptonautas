@@ -2,18 +2,16 @@
 			<h1 class="newsletter-title">{{ t "First newsletter title" }}</h1>
 			<p class="wide">
 				<span>
-					{{ t "First newsletter description" }}</span>
+					{{ t "First newsletter description" }}<br>
+					{{ t "Twice a month" }}</span>
 			</p>
 			<form data-members-form="subscribe">
 					<input type="email" class="input.email.home" placeholder="{{t " Email"}}" aria-label="{{t "Email"}}" data-members-email="">
-					<button type="submit" class="newsletter-subscribe">{{t "Subscribe"}}</button>
-				<div class="message-success">{{t "Please check your inbox and click the link to confirm your
+					<button type="submit" class="newsletter-subscribe">{{t "Join now"}}</button>
+			</form>
+							<div class="message-success">{{t "Please check your inbox and click the link to confirm your
 					subscription."}}</div>
 				<div class="message-error">{{t "An error occurred, please try again later."}}</div>
-			</form>
-			<div class="mb">
-				{{ t "We are" }} <b>10.000</b> {{ t "Cryptonauts" }}
-			</div>
 			<div class="w-full letmeb">
 				<button class="letme">{{t "Let me read it first"}} {{> "icons/arrow"}}</button>
 			</div>
