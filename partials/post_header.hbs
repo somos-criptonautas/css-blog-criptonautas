@@ -1,0 +1,64 @@
+<div class="post-header{{>partial_mode}}">
+	<div class="post-header-wrap global-padding{{#if post_center}} is-center{{else if post_classic}} is-classic{{else if membership_page}} is-center{{else unless feature_image}} is-center{{/if}}">
+		<div class="post-header-container">
+			<div class="post-header-content">
+				<div>
+					<div class="post-tags global-tags">{{>members/visibility_label}}{{#if tags}}{{tags limit="all" separator=""}}{{/if}}</div>
+					<h1 class="post-title global-title">{{title}}</h1>
+					{{#if custom_excerpt}}
+					<p class="post-excerpt global-excerpt">{{custom_excerpt}}</p>
+					{{else if membership_page}}
+					<p class="post-excerpt global-excerpt">{{t "Unlock full access to {site-title} and see the entire library of subscribers-only content & updates" site-title=@site.title}}</p>
+					{{/if}}
+				</div>
+				{{^is "page"}}
+				<div class="post-meta">
+					<div class="post-authors global-authors">
+						<div>
+							{{#foreach authors}}
+							<div class="post-item-author global-item-author{{#if profile_image}} is-image global-image{{/if}}">
+								<a href="{{url}}" class="global-link" title="{{name}}"></a>
+								{{#if profile_image}}
+								{{>images/other_image other_image=profile_image alt=name}}
+								{{else}}
+								<span>{{name}}</span>
+								{{/if}}
+							</div>
+							{{/foreach}}
+						</div>
+					</div>
+					<div class="post-meta-content">
+						{{#has author="count:1"}}
+						{{authors}}
+						{{else has author="count:2"}}
+						{{authors separator=(t "and")}}
+						{{else has author="count:3"}}
+						{{authors to="2"}}{{t "and"}}{{authors from="3"}}
+						{{else has author="count:>3"}}
+						{{authors}}
+						{{/has}}
+						<time datetime="{{date format="YYYY-MM-DD"}}">{{date published_at format="LL"}} — {{reading_time minute=(t "1 minute read") minutes=(t "% minutes read")}}</time>
+					</div>
+				</div>
+				{{/is}}
+			</div>
+			{{^if membership_page}}
+			{{#if feature_image}}
+			<div class="post-header-image">
+				<figure>
+					<div class="global-image global-image-orientation global-radius{{#if post_center}} is-natural{{else if post_classic}} is-natural{{else match @custom.feature_image_orientation "Landscape"}} is-landscape{{else match @custom.feature_image_orientation "Square"}} is-square{{else match @custom.feature_image_orientation "Natural"}} is-natural{{/if}}">
+						{{>images/post_image}}
+					</div>
+					{{#if feature_image_caption}}
+					<figcaption>{{feature_image_caption}}</figcaption>
+					{{/if}}
+				</figure>
+			</div>
+			{{/if}}
+			{{/if}}
+		</div>
+	</div>
+	{{#if membership_page}}
+	{{>members/tiers}}
+	{{/if}}
+</div>
