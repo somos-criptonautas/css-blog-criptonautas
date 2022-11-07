@@ -2125,7 +2125,14 @@ form[data-members-form] .it-button {
     min-width: 120px;
 }
     /* Newsletter */
-
+    @media screen and (max-width: 549px) {
+        .newsletter-title {
+4rem;
+        }
+    .newsletter {
+    font-size:90%
+    }
+}
     .newsletter {
     background: var(--color-bg);
     height: 100%;
