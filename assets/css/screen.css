@@ -1589,6 +1589,20 @@ overflow: hidden;
 
 /* Matenauta stuff */
 
+.kg-toggle-heading {
+padding: 2rem 1rem;
+justify-content: center;
+align-items: center;
+}
+.kg-toggle-card {
+padding 0;
+box-shadow: inset 0 0 0 2px rgba(33, 33, 33, 0.33);
+}
+
+html[data-thene=dark].kg-toggle-card {
+    box-shadow: inset 0 0 0 2px rgba(223, 233, 243, 0.33);
+}
+}
 .gh-content h3 {
 font-weight: 700;
 }
@@ -1844,13 +1858,15 @@ kg-bookmark-card a.kg-bookmark-container:hover {
 }
 }
 .kg-toggle-heading-text {
-font-size: inherit;
+font-size: 2.5rem;
+margin: 0;
+padding: 0;
 }
 .kg-toggle-heading svg {
-width: 3.33rem;
+width: 1.5rem !important;
 }
 .kg-toggle-heading path {
-stroke-width: 3.33;
+stroke-width: 3.33 !important;
 }
 .kg-header-card.kg-size-small h2.kg-header-card-header {
 font-size: 3.33rem;
