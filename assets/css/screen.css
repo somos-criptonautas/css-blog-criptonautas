@@ -915,7 +915,8 @@ margin-top: 7rem;
     position: sticky;
     top: 2rem;
     font-size: 2rem;
-    line-height: 1.5;
+    line-height: 1.45;
+    overflow-y: auto;
 }
 .toc-list-item {
 padding: 0.5rem 0;
@@ -1689,16 +1690,13 @@ display: unset !important;
 }
 }
 
-@media screen and (min-width:992px) and (max-width: 1199px) {
+@media screen and (min-width:992px) and (max-width: 1699px) {
 .gh-content {
     padding: 0 20vh;
+    flex-basis: initial;
 }
+
 }
-@media screen and (min-width:1200px) and (max-width: 1699px) {
-    .gh-content {
-        padding: 0 30vh;
-    }
-    }
 @media screen and (min-width: 1700px) {
 .gh-content {
     padding: 0 40vh 0 30vh;
@@ -1849,7 +1847,7 @@ blockquote.kg-blockquote-alt {
 font-weight: 500;
 line-height: 1.9;
 font-family: var(--font-serif);
-margin: 11rem 0 5rem;
+margin-top: 7rem;
 }
 
 /* New hamburger */
@@ -2108,7 +2106,7 @@ opacity: 0.77;
     }
     ul.nav li:hover,
     .nav-current {
-    box-shadow: 0 -2px 0 0 var(--color-base) inset;
+    box-shadow: 0 -3px 0 0 var(--color-base) inset;
     }
     h1, h2, h3, h4, h5, h6 {
     color: var(--color-base);
