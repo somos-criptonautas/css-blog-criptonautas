@@ -165,8 +165,12 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 
 .gh-topic-grid .gh-card-wrapper {
     margin-top: -3px;
+    opacity: 0.73;
 }
 
+a.gh-card-link:hover .gh-topic-grid .gh-card-wrapper {
+opacity: 1;
+}
 .gh-topic-grid .gh-card.featured.large .gh-card-wrapper {
     max-width: 560px;
 }
@@ -2127,7 +2131,7 @@ form[data-members-form] .it-button {
     /* Newsletter */
     @media screen and (max-width: 549px) {
         .newsletter-title {
-4rem;
+padding-top: 4rem;
         }
     .newsletter {
     font-size:90%

@@ -1,0 +1,10 @@
+<div class="special-section global-padding">
+	<div class="special-subtitle global-subtitle">
+		<small class="global-subtitle-title">{{{label}}}</small>
+	</div>
+	<div class="special-wrap">
+		{{#foreach posts}}
+		{{>item is_special=true}}
+		{{/foreach}}
+	</div>
+</div>
