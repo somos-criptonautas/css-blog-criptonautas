@@ -176,7 +176,9 @@ width: 0.66rem;
     color: var(--color-primary);
 }
 .message-text {
-    max-width: 550px;
+    transition: ease 0.23s;
+    font-size: 1.77rem;
+    margin: 2rem 1rem;
 }
 .message-success {
     color: var(--color-base);
@@ -189,7 +191,6 @@ width: 0.66rem;
 .message-error {
     color: var(--color-base);
     display: none;
-    background-color: none;
 }
 
 .subscribe-btn {
