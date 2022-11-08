@@ -396,7 +396,11 @@ color: var(--color-white);
 .gh-read-next {
     margin-top: 23vh;
 }
-
+@media screen and (min-width: 1700px){
+.gh-read-next {
+margin-left: 20vh;
+}
+}
 .gh-read-next .gh-pagehead {
     max-width: none;
     margin-bottom: 3rem;
@@ -716,10 +720,6 @@ padding-top: 1.23rem;
         margin-top: 12px;
     }
 
-    .gh-read-next {
-        margin-top: 64px;
-    }
-
     .gh-foot {
         padding-top: 3rem;
         margin-top: 3rem;
@@ -931,7 +931,7 @@ opacity: 1;
 }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     .gh-sidebar {
         background-color: var(--color-border);
         color: var(--color-bg);
@@ -1847,6 +1847,7 @@ font-weight: 500;
 line-height: 1.9;
 font-family: var(--font-serif);
 margin-top: 7rem;
+font-size:2.25rem;
 }
 
 /* New hamburger */
