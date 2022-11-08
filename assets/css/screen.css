@@ -1589,6 +1589,13 @@ overflow: hidden;
 
 /* Matenauta stuff */
 
+.gh-content > blockquote:not([class]), .gh-content > dl, .gh-content > ol, .gh-content > p, .gh-content > ul {
+font-size: 2rem;
+}
+
+.gh-content > blockquote {
+margin-bottom: 2.5rem;
+}
 .kg-toggle-content {
 padding: 0 1rem 3rem !important;
 }
@@ -1661,6 +1668,11 @@ display: unset !important;
     margin-top: 4rem;
     grid-template-columns: auto;
     flex-basis: fit-content;
+}
+.gh-content,
+.gh-article-excerpt {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
 }
 @media screen and (max-width:991px) {
 .gh-content {
@@ -1820,8 +1832,9 @@ margin: auto;
 }
 blockquote.kg-blockquote-alt {
 font-weight: 500;
-line-height: 1.6;
-padding: 0;
+line-height: 1.5;
+font-family: (--font-serif);
+margin: 11rem 0 5rem;
 }
 
 /* New hamburger */
