@@ -198,8 +198,8 @@ opacity: 1;
     color: var(--color-white);
 }
 
-.gh-topic-grid .gh-card.featured.large .gh-card-link:hover .gh-card-title {
-    opacity: 0.9;
+.gh-topic-grid .gh-card.featured.large .gh-card-link:hover .gh-card-wrapper {
+    opacity: 1;
 }
 
 .gh-topic-grid .gh-card-excerpt {
