@@ -837,7 +837,7 @@ max-width: 90%;
         grid-column: main-start / main-end;
         column-gap: 0.5rem;
         padding-right: 0;
-        margin: 5rem 0 2rem;
+        margin: 4rem 0 2rem;
     }
 
     .gh-article-sidebar .gh-author-image {
@@ -1625,7 +1625,7 @@ box-shadow: inset 0 0 0 2px rgba(33, 33, 33, 0.33) !important;
 }
 
 html[data-thene=dark].kg-toggle-card {
-    box-shadow: inset 0 0 0 2px rgba(223, 233, 243, 0.33) !important;
+    box-shadow: inset 0 0 0 2px rgba(99,99,99,.93) !important;
 }
 
 .gh-content h3 {
