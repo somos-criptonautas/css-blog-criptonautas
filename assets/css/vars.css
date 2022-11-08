@@ -46,6 +46,7 @@ html[data-theme="dark"] {
     --color-white:#fff;
 
     /* Fonts */
+    --font-sans:  'Inter Tight', 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     --font-sans-serif: 'Inter Tight', 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     --font-serif: 'Merriweather', Georgia, Times, serif;
     --font-mono: Menlo, Courier, monospace;
