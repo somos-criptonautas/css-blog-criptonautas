@@ -50,7 +50,7 @@ html[data-theme="dark"] {
     --font-serif: 'Merriweather', Georgia, Times, serif;
     --font-mono: Menlo, Courier, monospace;
     --font-light: 300;
-    --font-normal: 500;
+    --font-normal: 400;
     --font-bold: 600;
     --font-heavy: 800;
     --content-font-size: 24px;
