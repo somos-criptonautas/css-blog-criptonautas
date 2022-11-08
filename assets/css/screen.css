@@ -200,7 +200,6 @@ opacity: 1 !important;
 }
 
 .gh-topic-grid .gh-card-excerpt {
-    margin-top: 12px;
     font-family: var(--font-serif);
     font-size: 1.77rem;
     line-height: 1.77;
@@ -1044,6 +1043,9 @@ margin-bottom: 0.25rem;
 html {
 overflow: hidden;
 }
+html, body {
+    overscroll-behavior-y: none;
+  }
   html[data-intro="hide"] {
       --transform: translate(-120vw);
       --overflow-y: scroll;
