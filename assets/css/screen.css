@@ -915,11 +915,11 @@ margin-top: 7rem;
     position: sticky;
     top: 2rem;
     font-size: 2rem;
-    line-height: 1.45;
+    line-height: 1.35;
     overflow-y: auto;
 }
 .toc-list-item {
-padding: 0.5rem 0;
+padding: 1rem 0 0.5rem;
 opacity: 0.63;
 list-style: none;
 }
@@ -1607,7 +1607,7 @@ font-size: 2rem;
 margin-bottom: 2.5rem;
 }
 .kg-toggle-content {
-padding: 0 1rem 3rem !important;
+padding: 0 2rem 3rem !important;
 }
 
 .gh-content .kg-card + :not(.kg-card):not([id]), .gh-content :not(.kg-card):not([id]) + .kg-card {
@@ -1621,11 +1621,11 @@ align-items: center !important;
 }
 .kg-toggle-card {
 padding: 0 !important;
-box-shadow: inset 0 0 0 2px rgba(33, 33, 33, 0.33);
+box-shadow: inset 0 0 0 2px rgba(33, 33, 33, 0.33) !important;
 }
 
 html[data-thene=dark].kg-toggle-card {
-    box-shadow: inset 0 0 0 2px rgba(223, 233, 243, 0.33);
+    box-shadow: inset 0 0 0 2px rgba(223, 233, 243, 0.33) !important;
 }
 
 .gh-content h3 {
