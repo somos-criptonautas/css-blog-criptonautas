@@ -3,7 +3,7 @@
 		<div class="post-header-container">
 			<div class="post-header-content">
 				<div>
-					<div class="post-tags global-tags">{{>members/visibility_label}}{{#if tags}}{{tags limit="all" separator=""}}{{/if}}</div>
+					<div class="post-tags global-tags">{{^if access}}{{>icons/site/padlock}}{{/if}}{{#if tags}}{{tags limit="all" separator=""}}{{/if}}</div>
 					<h1 class="post-title global-title">{{title}}</h1>
 					{{#if custom_excerpt}}
 					<p class="post-excerpt global-excerpt">{{custom_excerpt}}</p>

@@ -3,7 +3,23 @@
 	<div class="item-image global-image global-image-orientation global-radius{{#if is_loop}}{{#match @custom.feed_images_orientation "Landscape"}} is-landscape{{else match @custom.feed_images_orientation "Square"}} is-square{{else match @custom.feed_images_orientation "Natural"}} is-natural{{/match}}{{/if}}{{#if is_featured}}{{#match @custom.slider_images_orientation "Landscape"}} is-landscape{{else match @custom.slider_images_orientation "Square"}} is-square{{else match @custom.slider_images_orientation "Natural"}} is-natural{{/match}}{{/if}}">
 		{{#if is_featured}}{{#if @last}}<span class="is-last"></span>{{/if}}{{/if}}
 		<a href="{{url}}" class="global-link" aria-label="{{title}}"></a>
-		{{>images/loop_image}}
+		
+{{#if is_special}}
+<img srcset="{{img_url feature_image size="s"}} 300w, 
+			 {{img_url feature_image size="m"}} 600w"
+	 sizes="(max-width:480px) 300px, 600px"
+	 src="{{img_url feature_image size="m"}}"
+	 loading="lazy"
+	 alt="">
+{{else}}
+<img srcset="{{img_url feature_image size="s"}} 300w, 
+			 {{img_url feature_image size="m"}} 600w,
+			 {{img_url feature_image size="l"}} 1200w"
+	 sizes="(max-width:480px) 300px, (max-width:768px) 600px, 1200px"
+	 src="{{img_url feature_image size="l"}}"
+	 loading="lazy"
+	 alt="">
+{{/if}}
 		<div class="item-authors global-authors">
 			<div>
 				{{#foreach authors to="5"}}
@@ -23,7 +39,7 @@
 	<div class="item-content">
 		{{^if is_special}}
 		<div class="item-tags global-tags">
-			{{>members/visibility_label}}{{#if tags}}{{tags limit="1" separator=""}}<span>{{tags from="2" limit="2" separator=""}}</span>{{/if}}
+			{{^if access}}{{>icons/site/padlock}}{{/if}}{{#if tags}}{{tags limit="1" separator=""}}<span>{{tags from="2" limit="2" separator=""}}</span>{{/if}}
 		</div>
 		{{/if}}
 		<h2 class="item-title"><a href="{{url}}">{{title}}</a></h2>
