@@ -1599,8 +1599,8 @@ margin: 3.33rem 0 2.23rem;
 
 .kg-toggle-heading {
 padding: 2rem 1rem;
-justify-content: center;
-align-items: center;
+justify-content: center !important;
+align-items: center !important;
 }
 .kg-toggle-card {
 padding: 0 !important;
@@ -1866,9 +1866,16 @@ kg-bookmark-card a.kg-bookmark-container:hover {
 }
 }
 .kg-toggle-heading-text {
-font-size: 2.5rem;
+font-size: 2.5rem !important;
 margin: 0;
 padding: 0;
+}
+.kg-toggle-card-icon,
+.kg-toggle-card[data-kg-toggle-state="close"] svg {
+cursor: pointer;
+}
+.kg-toggle-card[data-kg-toggle-state="close"] .kg-toggle-content {
+padding: 0 !important;
 }
 .kg-toggle-heading svg {
 width: 1.5rem !important;
