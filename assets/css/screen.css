@@ -162,14 +162,11 @@ body:not(.home-template) .gh-topic-grid .gh-card {
     height: 100%;
     border-radius:0.77rem;
 }
-
-.gh-topic-grid .gh-card-wrapper {
-    margin-top: -3px;
-    opacity: 0.73;
-}
-
-a.gh-card-link:hover .gh-topic-grid .gh-card-wrapper {
-opacity: 1;
+a.gh-card-lin {
+    opacity: 0.73 !important;
+    }
+a.gh-card-link:hover {
+opacity: 1 !important;
 }
 .gh-topic-grid .gh-card.featured.large .gh-card-wrapper {
     max-width: 560px;
@@ -1439,10 +1436,16 @@ overflow: hidden;
     –––––––––––––––––––––––––––––––––––––––––––––––––––– */
  .archive-title {
     position: relative;
-    display: inline-block;
-    margin-bottom: .5vh;
+    margin-bottom: 3.3rem;
  }
  
+ .archive-excerpt .level {
+    background-color: var(--color-gray) !important;
+    color: var(--color-bg);
+    padding: .73rem 1.23rem;
+    margin-right: 1rem;
+ }
+
  .archive-title.is-tag {
     transform: translateX(-5px);
  }
@@ -1588,6 +1591,10 @@ overflow: hidden;
  }
 
 /* Matenauta stuff */
+
+.kg-callout-card {
+padding: 1.25em 1.5em;
+}
 
 .gh-content > blockquote:not([class]), .gh-content > dl, .gh-content > ol, .gh-content > p, .gh-content > ul {
 font-size: 2rem;
@@ -1814,7 +1821,13 @@ height: 100%;
         max-height: inherit !important;
 }
 .kg-bookmark-title {
-    font-size:1.66rem !important;
+    font-size:1.73rem !important;
+    padding-bottom: 1.5rem;
+
+}
+.kg-bookmark-thumbnail img {
+width: 90%;
+height: 90%;
 }
 .gh-input.focus, .gh-input:focus, .gh-select:focus, select:focus, textarea:focus {
     border-color: #ed5107;
@@ -1832,8 +1845,8 @@ margin: auto;
 }
 blockquote.kg-blockquote-alt {
 font-weight: 500;
-line-height: 1.5;
-font-family: (--font-serif);
+line-height: 1.9;
+font-family: var(--font-serif);
 margin: 11rem 0 5rem;
 }
 
@@ -2097,7 +2110,7 @@ opacity: 0.77;
     }
     h1, h2, h3, h4, h5, h6 {
     color: var(--color-base);
-    font-family: var(--font-sans-serif);
+    font-family: var(--font-sans);
     }
 
 h1, h2, h3 {

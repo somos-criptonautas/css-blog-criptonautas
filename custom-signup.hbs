@@ -39,18 +39,6 @@
 <div class="subscribe-section min-vh-100">
     {{#post}}
     
-    {{#if feature_image}}
-    <a href="{{@site.url}}" class="back-to-home">
-        {{> icons/arrow-left}}
-        <span>{{t "Home"}}</span>
-    </a>
-    {{else}}
-    <a href="{{@site.url}}" class="no-feature-back-to-home">
-        {{> icons/arrow-left}}
-        <span>{{t "Home"}}</span>
-    </a>
-    {{/if}}
-    
     <div class="sign-wrapper">
         {{#if feature_image}}
             <div class="custom-feature-sign">
@@ -69,6 +57,7 @@
             <div class="cus-sign-box">
                 <div class="subscribe-title">
                     <h2>{{t "Signup to"}}</h2>
+                    <p>{{ t "Start free" }}</p>
                 </div>
                 <div class="form-inner-content">
                         <div class="message-text">

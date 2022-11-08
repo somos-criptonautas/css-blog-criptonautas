@@ -12,13 +12,14 @@
 			{{/if}}
 		</div>
 		<h1 class="archive-title global-title">{{#if @member.name}}{{@member.name}}{{else}}{{t "Your account"}}{{/if}}</h1>
-		<p class="archive-excerpt global-excerpt">
+		<span class="archive-excerpt level"></span>
+		<span class="archive-excerpt global-excerpt">
 			{{#if custom_excerpt}}
 			{{custom_excerpt}}
 			{{else}}
 			{{t "You’ve an active account with access to posts for subscribers."}}
 			{{/if}}
-		</p>
+		</span>
 		<div class="account-details">
 			<div class="account-details-wrap global-radius">
 				<h2 class="account-details-title">{{t "Account details"}}</h2>
