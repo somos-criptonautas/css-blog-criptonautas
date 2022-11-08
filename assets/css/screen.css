@@ -1840,7 +1840,6 @@ text-align: center;
 }
 .kg-image-card {
 padding: 4rem 0 2rem;
-max-width: 80%;
 margin: auto;
 }
 blockquote.kg-blockquote-alt {
@@ -2279,6 +2278,10 @@ padding-top: 4rem;
     .newsletter form {
 flex-wrap: wrap !important;
     }
+    .kg-image-card {
+        max-width: 80%;
+        }
+    }
     @media screen and (min-width: 1200px) {
     .newsletter form {
 max-width: 80%;
@@ -2298,7 +2301,6 @@ max-width: 75%;
         border-top-left-radius: 0.5rem;
         margin-top: 2rem;
     }
-}
     .newsletter form {
         justify-content: center;
         display: flex;
