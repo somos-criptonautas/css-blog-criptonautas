@@ -2251,7 +2251,7 @@ cursor: pointer;
 -webkit-appearance: button;
 appearance: button;
 opacity: 0.93;
-min-width: 35vh;
+min-width: 40vh;
 margin: 0;
 }
 .newsletter-subscribe:hover {
@@ -2278,9 +2278,9 @@ opacity:0.77;
 .letme:hover {
 opacity: 1;
 }
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 749px) {
 .newsletter form {
-flex-wrap: wrap !important;
+display: grid !important;
 }
 .kg-image-card {
 max-width: 80%;
@@ -2288,7 +2288,6 @@ max-width: 80%;
 .newsletter-subscribe {
 border-bottom-left-radius: 0.5rem !important;
 border-top-left-radius: 0.5rem !important;
-margin-top: 2rem;
 }
 .newsletter input {
     border-bottom-right-radius: 0.5rem !important;
@@ -2302,7 +2301,7 @@ max-width: 80%;
 }
 @media screen and (min-width: 1500px) {
 .newsletter form {
-max-width: 75%;
+max-width: 70%;
 }
 }
 .newsletter form {
@@ -2311,8 +2310,7 @@ display: flex;
 flex-wrap: nowrap;
 border: 0 solid #e5e7eb;
 box-sizing: border-box;
-margin-bottom: 2.5rem;
-padding: 2rem 10%;
+margin: 3rem auto 2.5rem;
 }
 .it-newsletter {
 width: 100%;
