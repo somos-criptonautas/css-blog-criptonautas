@@ -2273,7 +2273,7 @@ opacity:0.77;
 .letme:hover {
 opacity: 1;
 }
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 499px) {
 .newsletter form {
 flex-wrap: wrap !important;
 }
