@@ -134,7 +134,7 @@ width: 0.66rem;
     font-weight: normal;
     height: 6rem;
     width: 100%;
-    border-radius: 0.5rem;
+    border-radius: var(--radius);
     padding: 1.5rem 2rem;
     border: 1px solid var(--color-border);
     background-color: var(--color-bg);
@@ -206,7 +206,7 @@ width: 0.66rem;
 .btn-sign {
     -webkit-font-smoothing: subpixel-antialiased;
     background: var(--color-secondary);
-    border-radius: .5rem;
+    border-radius: var(--radius);
     color: #fff;
     display: inline-block;
     font-size: 2rem;
