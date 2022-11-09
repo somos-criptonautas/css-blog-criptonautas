@@ -1990,7 +1990,8 @@ color: var(--color-base);
 body.page-template {
 background: var(--color-bg);
 }
-body.page-template.page-registro {
+body.page-template.page-registro,
+body.page-template.page-ingreso {
 background: linear-gradient(315deg,#efefef,#fff);
 }
 .is-head-open .page-template {
@@ -2172,7 +2173,7 @@ fill: red;
 form[data-members-form].success .message-success,
 form[data-members-form].error .message-error {
 margin: 0 auto;
-color: var(--color-dark-gray);
+color: var(--color-secondary);
 font-size: 1.5rem;
 line-height: 1.5em;
 font-weight: 500;
@@ -2219,7 +2220,7 @@ margin-right: auto;
 letter-spacing: .025em;
 font-size: 5.5rem;
 line-height: 1;
-font-weight: 700;
+font-weight: 800;
 padding: 2rem 0;
 }
 .newsletter p.wide {
@@ -2280,11 +2281,11 @@ max-width: 80%;
 .newsletter-subscribe {
 border-bottom-left-radius: 0.5rem !important;
 border-top-left-radius: 0.5rem !important;
+margin-top: 2rem;
 }
 .newsletter input {
     border-bottom-right-radius: 0.5rem !important;
     border-top-right-radius: 0.5rem !important;
-    margin-top: 2rem;
 }
 }
 @media screen and (min-width: 1200px) {
