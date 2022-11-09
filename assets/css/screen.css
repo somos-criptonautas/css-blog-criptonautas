@@ -772,11 +772,6 @@ row-gap: 0;
 grid-template-columns: 3fr auto 3fr;
 }
 }
-@media screen and (min-width: 992px) and (max-width: 1250px) {
-.gh-head-inner {
-max-width: 90%;
-}
-}
 .gh-head-inner {
 padding: 0;
 font-weight: 500;
