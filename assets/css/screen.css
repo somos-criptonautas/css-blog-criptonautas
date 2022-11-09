@@ -807,9 +807,6 @@ display: none;
 font-size: inherit;
 padding: 1rem 2rem;
 }
-.gh-head-btn.gh-btn:hover {
-opacity: 0.95 !important;
-}
 
 .gh-head-menu {
 height: 2rem;
@@ -1678,6 +1675,8 @@ display: unset !important;
 margin-top: 4rem;
 grid-template-columns: auto;
 flex-basis: fit-content;
+margin: auto;
+max-width: 963px;
 }
 .gh-content,
 .gh-article-excerpt {
