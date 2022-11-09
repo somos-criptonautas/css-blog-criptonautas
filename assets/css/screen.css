@@ -92,7 +92,7 @@ width: 100%;
 .gh-topic-grid .gh-card:not(.large) {
 width: 100%;
 max-width: 720px;
-padding-bottom: 3rem;
+padding-bottom: 5rem;
 }
 
 .gh-topic-grid .gh-card:not(:only-child).large {
@@ -177,6 +177,11 @@ letter-spacing: -0.015em;
 font-family: var(--font-sans-serif);
 font-weight: 700;
 font-size: 3.5rem;
+}
+@media screen and (max-width: 767px){
+.gh-topic-grid .gh-card-title {
+font-size: 3rem;
+}
 }
 
 .gh-topic-grid .gh-card.large .gh-card-title {
