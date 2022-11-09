@@ -1975,14 +1975,9 @@ grid-row-start: 1;
 grid-column: 1;
 }
 .gh-head {
-padding: 3rem 3rem 0 3rem;
+   padding: 1rem 3rem 1.5rem;
+   overflow: hidden;
 }
-}
-.gh-head {
-overflow: hidden;
-padding-top: 2rem;
-}
-
 .is-head-open #gh-head .gh-head-menu {
 display: contents;
 }
