@@ -2236,10 +2236,17 @@ line-height: 1;
 font-weight: 800;
 padding: 2rem 0;
 }
+@media screen and (max-width: 1199px) {
 .newsletter p.wide {
 letter-spacing: .025em;
 margin: 1.5rem 2rem 0.5rem;
 width: 90%;
+}
+}
+@media screen and (min-width: 1200px) {
+.newsletter p.wide {
+width: 80%;
+}
 }
 .newsletter.mb {
 padding-bottom: 2.5rem;
