@@ -1597,9 +1597,18 @@ background-color: var(--color-alert-error);
 }
 
 /* Matenauta stuff */
+.is-head-open html {
+overflow: hidden !important;
+}
+.kg-callout-card div.kg-callout-text {
+line-height: 1.6rem;
+}
 
+.kg-product-card .kg-product-card-description li + li, .kg-toggle-card li + li {
+margin-top: 1.5rem;
+}
 .gh-main {
-padding: 3rem 2rem 0;
+padding: 6rem 2rem;
 }
 
 .kg-callout-card {
@@ -1631,7 +1640,7 @@ padding: 0 !important;
 box-shadow: inset 0 0 0 2px rgba(33, 33, 33, 0.33) !important;
 }
 
-html[data-thene=dark].kg-toggle-card {
+html[data-theme=dark] .kg-toggle-card {
 box-shadow: inset 0 0 0 2px rgba(99,99,99,.93) !important;
 }
 
@@ -1750,8 +1759,8 @@ padding: 0;
 @media screen and (min-width: 1090px) {
 .gh-sidebar {
     position: sticky;
-    top: 3rem;
-    left: 3rem;
+    top: 4.5rem;
+    left: 3.5rem;
     align-self: flex-start;
     }
 }
@@ -2070,13 +2079,28 @@ margin: 3rem auto;
 border-radius: 0.77rem;
 display: flex;
 }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+   #gh-head .nav a,
+   #gh-head .gh-head-btn {
+   font-size: 2.5rem;
+   padding: 2rem 0 !important;
+   }
+
+@media screen and (max-width: 767px) {
 #gh-head .nav a,
 #gh-head .gh-head-btn {
-font-size: 2.5rem;
-padding: 2rem 0 !important;
+font-size: 2.33rem;
+padding: 1.66rem 0 !important;
+}
+.gh-head-logo img {
+max-height: 4.5rem;
+}
+.is-head-open #gh-head .gh-head-inner {
+grid-template-rows: none;
+height: inherit;
 }
 }
-
 .is-head-open:not(.is-head-transparent) .gh-burger::after, .is-head-open:not(.is-head-transparent) .gh-burger::before {
 background-color: var(--color-base);
 }
