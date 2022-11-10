@@ -1056,8 +1056,8 @@ html[data-intro="hide"] {
 overflow: auto;
 }
 
-.home-template .is-head-open {
-overflow: hidden !important;
+.is-head-open html[data-intro="hide"] {
+overflow: hidden;
 }
 
 .shadow {
