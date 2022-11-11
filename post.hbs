@@ -55,7 +55,6 @@
     {{> "related-posts"}}
 
     {{#post}}
-    {{#if comments}}
         <div class="gh-comments gh-read-next gh-canvas">
                 <div id='discourse-comments'></div>
                 <script type="text/javascript">
@@ -73,7 +72,6 @@
                     })();
                 </script>
         </div>
-    {{/if}}
     {{/post}}
 </main>
     {{#contentFor "scripts"}}

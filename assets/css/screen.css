@@ -812,6 +812,7 @@ display: none;
 .gh-head-btn.gh-btn {
 font-size: inherit;
 padding: 1rem 2rem;
+z-index: 1;
 }
 
 .gh-head-menu {
@@ -1631,7 +1632,7 @@ margin: 3.33rem 0 2.23rem;
 }
 
 .kg-toggle-heading {
-padding: 2rem 1rem;
+padding: 3rem 4rem;
 justify-content: center !important;
 align-items: center !important;
 }
