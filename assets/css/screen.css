@@ -314,6 +314,7 @@ margin-left: 4px;
 .gh-article-header {
 position: relative;
 justify-items: start;
+margin-bottom: 7rem;
 }
 
 html[data-theme=dark] .gh-article-tag {
@@ -812,7 +813,7 @@ display: none;
 .gh-head-btn.gh-btn {
 font-size: inherit;
 padding: 1rem 2rem;
-z-index: 1;
+z-index: 0;
 }
 
 .gh-head-menu {
