@@ -594,7 +594,7 @@ font-family: var(--font-serif);
 margin: 5rem 0 7rem;
 letter-spacing: -0.011em;
 background-color: var(--color-primary);
-color: var(--color-base);
+color: var(--color-bg);
 padding: 2rem 7.5rem;
 font-family: var(--font-sans-serif);
 }
@@ -623,11 +623,6 @@ background-color: var(--color-border);
 color: var(--color-text);
 }
 
-.gh-foot,
-.gh-foot a,
-.gh-foot a:hover {
-color: var(--color-base);
-}
 
 .gh-foot-inner {
 display: flex;
@@ -994,7 +989,6 @@ fill: #111;
 
 html[data-theme='dark'] .gh-subscribe-btn {
 background-color: var(--color-secondary);
-color: var(--color-white);
 }
 
 html[data-theme='dark'] .icon-light {
@@ -1596,6 +1590,12 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
+@media screen and (min-width: 992px) {
+.gh-foot .gh-outer {
+max-width: 80%;
+margin: auto;
+}
+}
 .footer-criptonauta {
 margin: 2rem 1rem;
 }
