@@ -556,7 +556,6 @@ font-family: var(--font-serif);
 /* Subscription banner */
 
 .gh-subscribe {
-margin-bottom: 80px;
 text-align: center;
 }
 
@@ -630,21 +629,17 @@ color: var(--color-text);
 color: var(--color-base);
 }
 
-.gh-foot a:hover {
-color: var(--color-border);
-}
-
 .gh-foot-inner {
 display: flex;
 flex-direction: column;
 align-items: center;
 font-size: 2rem;
-padding-top: 5rem;
+padding: 6rem 1rem;
 }
 
 .gh-foot-menu {
 width: 100%;
-padding: 16px 0;
+padding: 2.11 0;
 text-align: center;
 }
 
