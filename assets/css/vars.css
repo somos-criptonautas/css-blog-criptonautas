@@ -13,10 +13,10 @@ html[data-theme="dark"] {
     --color-bg: #111;
     --color-link: #111;
     --color-bg-white: #111;
-    --color-border: #323232;
+    --color-border: #232323;
     --color-svg: #f1f1f1;
     --border-form-control: #010230;
-    --bg-icon-mail: #1f2e5b;
+    --bg-icon-mail: #111;
   }
   html[data-theme=dark] h1,
   html[data-theme=dark] h2,
@@ -27,7 +27,7 @@ html[data-theme="dark"] {
     color: var(--color-base)
     }
     html[data-theme=dark] .gh-copyright {
-        color: var(--color-gray);
+        color: var(--color-white);
     }
 :root {
 

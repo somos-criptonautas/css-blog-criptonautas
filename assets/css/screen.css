@@ -621,14 +621,14 @@ margin-right: 1rem;
 padding-top: 9rem;
 margin-top: 3.5rem;
 padding-bottom: 5rem;
-background-color: var(--color-base);
+background-color: var(--color-border);
 color: var(--color-text);
 }
 
 .gh-foot,
 .gh-foot a,
 .gh-foot a:hover {
-color: var(--color-link);
+color: var(--color-base);
 }
 
 .gh-foot a:hover {
