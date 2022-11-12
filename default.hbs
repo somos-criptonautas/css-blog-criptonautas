@@ -98,6 +98,9 @@
                 <nav class="gh-foot-menu">
                     {{navigation type="secondary"}}
                 </nav>
+            </div>
+        </footer>
+    {{> "site-structure/social-shit"}}
                 <div class="gh-copyright">
                     {{#unless @custom.footer_text}}
                 <p>Criptonautas&nbsp;{{ t "is licensed under" }}  <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" >Creative Commons</a><br>{{ t "with 🧘‍♂️" }} <a href="https://matenauta.co" title="matenauta's stuff" target="_blank" rel="noopener">matenauta</a></p>
@@ -106,10 +109,6 @@
                         {{@custom.footer_text}}
                     {{/unless}}
                 </div>
-                {{> "site-structure/social-shit"}}
-
-            </div>
-        </footer>
     </div>
 
     {{#is "post, page"}}
