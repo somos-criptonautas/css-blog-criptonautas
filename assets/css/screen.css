@@ -3,6 +3,7 @@
 @import "vars.css";
 @import "signin.css";
 @import "members.css";
+@import "footer.css";
 
 :root {
 --color-base: #111;
