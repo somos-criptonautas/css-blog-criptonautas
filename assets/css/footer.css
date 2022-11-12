@@ -17,7 +17,8 @@
     fill: var(--color-svg)
 }
 @media (max-width: 767px) {
-    .it-foot-menu {
+    .it-foot-menu {width: 2.3rem;
+display: inline-flex;
         text-align: center;
     }
 }
