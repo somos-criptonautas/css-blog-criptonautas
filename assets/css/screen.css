@@ -639,7 +639,7 @@ padding: 6rem 1rem;
 
 .gh-foot-menu {
 width: 100%;
-padding: 2.11 0;
+padding: 2.11rem 0;
 text-align: center;
 }
 
@@ -1595,6 +1595,11 @@ background-color: var(--color-alert-error);
 }
 
 /* Matenauta stuff */
+
+.footer-criptonauta {
+margin: 2rem 1rem;
+}
+
 .is-head-open html {
 overflow: hidden !important;
 }
