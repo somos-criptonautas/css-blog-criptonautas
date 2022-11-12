@@ -3,6 +3,7 @@
 
 .it-foot-social {
 padding-top: 5rem;
+text-align: center;
 }
 
 .it-foot-social a {
@@ -11,8 +12,8 @@ padding-top: 5rem;
     padding: .5rem;
 }
 .it-foot-social a svg {
-    height: 2.3rem;
-    fill: var(--color-bg);
+    height: 2.5rem;
+    fill: var(--color-base);
 }
 @media (max-width: 767px) {
     .it-foot-menu {width: 2.3rem;

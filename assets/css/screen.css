@@ -647,8 +647,6 @@ padding-top: 5rem;
 width: 100%;
 padding: 16px 0;
 text-align: center;
-border-top: 1px solid var(--color-border);
-border-bottom: 1px solid var(--color-border);
 }
 
 .gh-foot-menu .nav {
@@ -661,7 +659,6 @@ display: none;
 }
 
 .gh-copyright {
-color: var(--color-secondary-text);
 letter-spacing: -0.006em;
 text-align: center;
 font-size: 1.75rem;
