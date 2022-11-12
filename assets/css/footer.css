@@ -2,19 +2,17 @@
 /* ---------------------------------------------------------- */
 
 .it-foot-social {
-    display: inline-flex;
-    flex-wrap: wrap;
-    margin-bottom: 5rem;
-    align-items: center;
+padding-top: 5rem;
 }
+
 .it-foot-social a {
     margin-left: .8rem;
     display: inline-block;
     padding: .5rem;
 }
 .it-foot-social a svg {
-    height: 2rem;
-    fill: var(--color-svg)
+    height: 2.3rem;
+    fill: var(--color-bg);
 }
 @media (max-width: 767px) {
     .it-foot-menu {width: 2.3rem;
