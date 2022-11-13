@@ -20,9 +20,13 @@ text-align: center;
 .it-foot-social a svg:active {
 fill: var(--color-base);
 }
-.it-foot-social a svg.rss {
+.it-foot-social a.rss svg {
 width: 3.7rem;
 height: 3.7rem;
+}
+.it-foot-social a.github svg {
+width: 2.77rem;
+height: 2.77rem;
 }
 @media (max-width: 767px) {
     .it-foot-menu {width: 2.3rem;
