@@ -14,10 +14,14 @@ text-align: center;
 .it-foot-social a svg {
     height: 2.77rem;
     height: 2.77rem;
+}
+    .it-foot-social a {
     color: var(--color-dark-gray);
 }
 .it-foot-social a svg:hover,
-.it-foot-social a svg:active {
+.it-foot-social a svg:active,
+.it-foot-social a:hover,
+.it-foot-social a:active {
 fill: var(--color-base);
 }
 .it-foot-social a.rss svg {
