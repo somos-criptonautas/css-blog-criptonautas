@@ -6,14 +6,23 @@ padding-top: 5rem;
 text-align: center;
 }
 
-.it-foot-social a {
+.it-foot-social a, {
     margin-left: .8rem;
     display: inline-block;
     padding: .5rem;
 }
 .it-foot-social a svg {
-    height: 2.5rem;
-    fill: var(--color-base);
+    height: 2.77rem;
+    height: 2.77rem;
+    var(--color-dark-gray)
+}
+.it-foot-social a svg:hover,
+.it-foot-social a svg:active {
+fill: var(--color-base);
+}
+.it-foot-social a svg.rss {
+width: 3.7rem;
+height: 3.7rem;
 }
 @media (max-width: 767px) {
     .it-foot-menu {width: 2.3rem;
