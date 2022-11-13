@@ -14,7 +14,7 @@ text-align: center;
 .it-foot-social a svg {
     height: 2.77rem;
     height: 2.77rem;
-    var(--color-dark-gray);
+    color: var(--color-dark-gray);
 }
 .it-foot-social a svg:hover,
 .it-foot-social a svg:active {
