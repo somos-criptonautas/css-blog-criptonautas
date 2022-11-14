@@ -35,7 +35,7 @@ background-color: var(--color-primary);
 font-weight: 500;
 font-size: 2rem;
 padding: 1.33rem 3.33rem;
-background-color: var(--color-secondary);
+background-color: var(--color-secondary) !important;
 box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px, rgba(0, 0, 0, 0.03) 0px 2px 6px 0px;
 border-radius: .6rem;
 margin-left: 1.77rem;
@@ -44,7 +44,12 @@ opacity: 0.93;
 .gh-btn:hover {
 opacity: 1;
 }
-
+.gh-foot a:hover {
+color: inherit;
+}
+html[data-theme=dark].gh-foot a:hover {
+color: var(--color-bg);
+}
 .is-head-transparent .gh-head-logo img:first-of-type:not(:only-child) {
 display: none;
 }
@@ -588,11 +593,6 @@ padding: 0 5vh;
 .has-serif-body .gh-subscribe-description {
 font-family: var(--font-serif);
 font-size: 2.33rem;
-}
-
-.gh-foot a,
-.gh-foot a:hover {
-   color: var(--color-bg);
 }
 
 .gh-subscribe-btn {
@@ -2272,7 +2272,7 @@ margin-right: auto;
 letter-spacing: .025em;
 font-size: 5.5rem;
 line-height: 1;
-font-weight: 800;
+font-weight: 700;
 padding: 2rem 0;
 }
 .newsletter p.wide {
