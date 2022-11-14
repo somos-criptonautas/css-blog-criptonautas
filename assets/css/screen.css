@@ -38,7 +38,11 @@ background-color: var(--color-secondary) !important;
 box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px, rgba(0, 0, 0, 0.03) 0px 2px 6px 0px;
 border-radius: .6rem;
 opacity: 0.93;
-color: var(--color-bg);
+color: var(--color-bg) !important;
+margin-left: 2.3rem;
+}
+.gh-btn .ma {
+margin-left: 2.3rem;
 }
 .gh-btn:hover {
 opacity: 1;
@@ -1051,8 +1055,8 @@ html[data-intro="hide"] {
 overflow: auto;
 }
 
-.is-head-open html[data-intro="hide"] {
-overflow: hidden;
+html[data-intro="hide"] .is-head-open html {
+overflow: hidden !important;
 }
 
 .shadow {
