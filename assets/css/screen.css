@@ -570,7 +570,6 @@ font-family: var(--font-serif);
 @media screen and (min-width: 768px) and (max-width: 991px) {
    .gh-subscribe-description {
    margin-top: 1rem;
-   font-size: 2.33rem;
    padding: 0 10vh;
    }
    }
@@ -588,6 +587,7 @@ padding: 0 5vh;
 
 .has-serif-body .gh-subscribe-description {
 font-family: var(--font-serif);
+font-size: 2.33rem;
 }
 
 .gh-foot a,
@@ -995,6 +995,7 @@ fill: #111;
 
 html[data-theme='dark'] .gh-subscribe-btn {
 background-color: var(--color-secondary);
+color: var(--color-white);
 }
 
 html[data-theme='dark'] .icon-light {
