@@ -1082,7 +1082,7 @@ html,
 body,
 .gh-head,
 a {
-color: var(--color-base);
+color: var(--color-base) !important;
 }
 
 
