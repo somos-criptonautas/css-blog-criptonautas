@@ -1011,6 +1011,8 @@ background: #ed5107 !important;
 }
 html {
 overflow: hidden;
+font-size: medium;
+zoom: 100%;
 }
 html, body {
 overscroll-behavior-y: none;
