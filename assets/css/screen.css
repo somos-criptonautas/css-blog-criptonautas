@@ -994,8 +994,7 @@ fill: #111;
 }
 
 html[data-theme='dark'] .gh-subscribe-btn {
-background-color: var(--color-secondary);
-color: var(--color-white);
+color: var(--color-white) !important;
 }
 
 html[data-theme='dark'] .icon-light {

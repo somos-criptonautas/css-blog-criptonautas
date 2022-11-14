@@ -5,11 +5,14 @@
 padding-top: 5rem;
 text-align: center;
 }
-
+.it-foot-social a,
+gh-copyright {
+opacity: 0.74;
+}
 .it-foot-social a, {
-    margin-left: .8rem;
-    display: inline-block;
-    padding: .5rem;
+margin-left: .8rem;
+display: inline-block;
+padding: .5rem;
 }
 .it-foot-social a svg {
     height: 2.77rem;
