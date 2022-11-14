@@ -334,12 +334,9 @@ text-transform: uppercase;
 letter-spacing: 0.01em;
 }
 
-.gh-article-excerpt {
-font-size: 3rem;
-}
 
 .has-full-image .gh-article-excerpt {
-margin-bottom: -8px;
+margin-bottom: 0.25rem;
 }
 
 .gh-article-image {
@@ -569,32 +566,6 @@ font-size: 5rem;
 padding-bottom: 3rem;
 }
 
-.has-serif-title .gh-subscribe-title {
-font-family: var(--font-serif);
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-   .gh-subscribe-description {
-   margin-top: 1rem;
-   padding: 0 10vh;
-   }
-   }
-@media screen and (min-width: 992px) {
-.gh-subscribe-description {
-padding: 0 20vh;
-}
-}
-@media screen and (max-width: 767px) {
-.gh-subscribe-description {
-margin-top: 2rem;
-padding: 0 5vh;
-}
-}
-
-.has-serif-body .gh-subscribe-description {
-font-family: var(--font-serif);
-font-size: 2.33rem;
-}
-
 .gh-subscribe-btn {
 margin: 5rem 0 7rem;
 letter-spacing: -0.011em;
@@ -637,6 +608,7 @@ margin: auto;
 display: flex;
 flex-direction: column;
 align-items: center;
+padding: 1rem 2rem;
 }
 
 .gh-foot-menu {
@@ -1053,9 +1025,6 @@ html[data-intro="hide"] .is-head-open html {
 overflow: hidden !important;
 }
 
-.shadow {
-box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-}
 .shadow-newsletter {
 --tw-shadow: 0 20px 25px -5pxrgba(0,0,0,.33),0 8px 10px -6pxrgba(0,0,0,.33);
 --tw-shadow-colored: 0 20px 25px -5pxvar(--tw-shadow-color),0 8px 10px -6px var(--tw-shadow-color);
@@ -1591,9 +1560,6 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
-.gh-foot-inner {
-font-size: inherit;
-}
 
 @media screen and (min-width: 992px) {
 .gh-foot .gh-outer {
@@ -1673,7 +1639,7 @@ margin: 7rem 5rem;
 font-size: 2.5rem;
 }
 }
-@media screen and (min-width:992px) and (max-width: 1249) {
+@media screen and (min-width:992px) and (max-width: 1249px) {
 .gh-author-criptonaut {
 width: 80%;
 display: grid;
@@ -1707,7 +1673,6 @@ max-width: 963px;
 }
 .gh-content,
 .gh-article-excerpt {
-font-family: var(--font-serif);
 font-size: 2.5rem;
 }
 @media screen and (max-width:991px) {
