@@ -54,6 +54,17 @@
 
     {{> "related-posts"}}
 
+{{#post}}
+	{{#prev_post}}
+		<a href="{{url}}">{{title}}</a>
+	{{/prev_post}}
+
+	{{#next_post}}
+		<a href="{{url}}">{{title}}</a>
+	{{/next_post}}
+{{/post}}
+
+
     {{#post}}
     {{/post}}
 </main>
@@ -79,13 +90,4 @@
     </script>
     {{/contentFor}}
     {{#contentFor "footer"}}
-<script type="text/javascript">
-	var links = document.getElementsByTagName("article")[0].querySelectorAll('a');
-    var a = new RegExp('/' + window.location.host + '/');
-	links.forEach((link) => {
-		if(!a.test(link.href)) {
-			link.setAttribute("target","newtab");
-		}
-	});
-</script>
     {{/contentFor}}
