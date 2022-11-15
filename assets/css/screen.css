@@ -2087,7 +2087,7 @@ font-size: 2.33rem;
 padding: 1.66rem 0 !important;
 }
 .gh-head-logo img {
-max-height: 4.5rem;
+display: none;
 }
 .is-head-open #gh-head .gh-head-inner {
 grid-template-rows: none;
