@@ -184,7 +184,7 @@ html[data-theme=dark].single-input .form-control:focus {
 }
 .success .subscribe-title,
 .success .single-input,
-.success .btn-sign {
+.success .subscribe-btn .btn {
 display: none;
 }
 .message-error {
