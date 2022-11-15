@@ -1573,7 +1573,8 @@ background-color: var(--color-alert-error);
 }
 @media screen and (min-width: 1199px) {
 gh-subscribe-description {
-width: 90%
+width: 90%;
+margin: auto;
 }
 }
 @media screen and (min-width: 992px) {
