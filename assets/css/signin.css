@@ -182,6 +182,9 @@ html[data-theme=dark].single-input .form-control:focus {
 .success .message-success, .message-error {
     display: block;
 }
+.success .subscribe-title, .single-input {
+display: none;
+}
 .message-error {
     color: var(--color-secondary);
     display: none;
