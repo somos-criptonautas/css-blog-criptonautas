@@ -15,7 +15,8 @@
                 }
         	}
         </script>
-        {{#if !@member}}
+        {{#if @member}}
+        {{else}}
         {{#is "home"}}
         {{> "newsletter"}}
     <link rel="stylesheet" href="{{asset "built/home.css"}}">
