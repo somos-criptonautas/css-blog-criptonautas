@@ -140,11 +140,13 @@ width: 0.66rem;
 }
 
 .single-input .form-control:focus {
-    border-color: #5107ed;
+    border-color: var(--color-secondary);
     box-shadow: 0 0 0 3px rgba(81,7,237,.15);
     outline: 0;
 }
-
+html[data-theme=dark].single-input .form-control:focus {
+    border-color: var(--color-primary);
+}
 
 .single-input .form-control::placeholder {
     color: var(--color-base);

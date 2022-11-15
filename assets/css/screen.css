@@ -563,10 +563,10 @@ text-align: center;
 
 .gh-subscribe-title {
 font-size: 5rem;
-padding-bottom: 3rem;
+padding: 3rem 0;
 }
 .custom-no-feature-sign p a {
-color: var(--color-primary);
+color: var(--color-primary) !important;
 }
 .gh-subscribe-btn {
    background-color: var(--color-primary);
@@ -1566,7 +1566,11 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
-
+@media screen and (min-width: 1199px) {
+gh-subscribe-description {
+width: 90%
+}
+}
 @media screen and (min-width: 992px) {
 .gh-foot .gh-outer {
 max-width: 80%;
@@ -1974,7 +1978,7 @@ grid-column: 1;
 }
 }
 .gh-head {
-   padding: 1rem 3rem 1.5rem;
+   padding: 2rem 3rem;
    overflow: hidden;
 }
 .is-head-open #gh-head .gh-head-menu {
