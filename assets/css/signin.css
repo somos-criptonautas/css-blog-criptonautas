@@ -183,7 +183,8 @@ html[data-theme=dark].single-input .form-control:focus {
     display: block;
 }
 .success .subscribe-title,
-.success .single-input {
+.success .single-input,
+.success .btn-sign {
 display: none;
 }
 .message-error {
