@@ -1103,7 +1103,9 @@ border-top: var(--border) var(--color-border-one);
 .faq-content .kg-toggle-card + .kg-toggle-card {
 margin-top: 0;
 }
-
+.gh-content .kg-card + :not(.kg-card):not([id]), .gh-content :not(.kg-card):not([id]) + .kg-card {
+margin: 2rem 0;
+}
 .faq-content .kg-toggle-card .kg-toggle-heading {
 position: relative;
 padding: 3.2vh 12vw 3.2vh 0;
@@ -1598,7 +1600,7 @@ line-height: 1.6rem;
 margin-top: 1.5rem;
 }
 .gh-main {
-padding: 6rem 2rem;
+padding: 6rem 1rem;
 }
 
 .kg-callout-card {
@@ -1617,7 +1619,7 @@ padding: 0 2rem 3rem !important;
 }
 
 .kg-toggle-heading {
-padding: 3rem 4rem;
+padding: 3rem 2rem;
 justify-content: center !important;
 align-items: center !important;
 }
@@ -1645,7 +1647,7 @@ padding-top: 2rem;
 @media screen and (max-width:991px) {
 .gh-author-criptonaut {
 display: flow-root;
-margin: 7rem 5rem;
+margin: 7rem 3.5rem;
 }
 .gh-article-excerpt {
 font-size: 2.33rem;
@@ -1815,7 +1817,9 @@ border-color: #ed5107;
 box-shadow: 0 0 0 3px rgba(237,81,7,.15);
 outline: 0;
 }
-
+.gh-content {
+   padding: 0 2rem;
+}
 .center {
 text-align: center;
 }
@@ -1828,7 +1832,7 @@ font-weight: 500;
 line-height: 1.9;
 font-family: var(--font-serif);
 margin-top: 7rem;
-font-size:2.25rem;
+font-size:2.11rem;
 }
 
 /* New hamburger */
