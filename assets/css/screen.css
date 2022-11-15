@@ -1725,10 +1725,6 @@ opacity: 77;
 .gh-content > .kg-card + [id] {
 padding-bottom: 2rem;
 }
-.gh-sidebar {
-flex-basis: max-content;
-margin: 6rem 0 0 3rem;
-}
 
 @media screen and (max-width: 1500px) {
 .gh-sidebar {
@@ -1744,10 +1740,10 @@ padding: 0;
 @media screen and (min-width: 1090px) {
 .gh-sidebar {
     position: sticky;
-    top: 4.5rem;
-    left: 3.5rem;
+    top: 2.23rem;
+    left: 3.33rem;
     align-self: flex-start;
-    }
+}
 }
 @media screen and (min-width: 992px) and (max-width: 1249px) {
 .gh-head-actions {
