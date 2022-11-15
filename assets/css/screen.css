@@ -766,7 +766,7 @@ font-weight: 500;
 display: flex;
 align-items: center;
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1350px) {
 .gh-head-brand-wrapper {
 display: none;
 }
@@ -1658,7 +1658,7 @@ display: grid;
 margin: 7rem auto;
 }
 }
-@media screen and (min-width:1250px) {
+@media screen and (min-width:1350px) {
 .gh-author-criptonaut {
 width: 70%;
 display: grid;
@@ -1973,7 +1973,7 @@ grid-row-start: 1;
 grid-column: 2;
 }
 
-@media screen and (min-width: 992px) and (max-width: 1250px) {
+@media screen and (min-width: 992px) and (max-width: 1350px) {
 .is-head-b--a_n .gh-head-menu {
 grid-row-start: 1;
 grid-column: 1;
