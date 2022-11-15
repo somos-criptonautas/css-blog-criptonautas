@@ -54,12 +54,7 @@ html[data-theme="dark"] {
     --font-normal: 400;
     --font-bold: 600;
     --font-heavy: 800;
-    @media screen and (max-width: 991px) {
-        --content-font-size: 20px;
-    }
-    @media screen and (min-width: 992px) {
-        --content-font-size: 24px;
-}
+
     /* Breakpoints */
     --xlarge: 1680px;
     --large: 1280px;
@@ -86,7 +81,12 @@ html[data-theme="dark"] {
     --global-radius: 2px;
     
 }
-
+@media screen and (max-width: 991px) {
+    --content-font-size: 20px;
+}
+@media screen and (min-width: 992px) {
+    --content-font-size: 24px;
+}
 .shadow {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
