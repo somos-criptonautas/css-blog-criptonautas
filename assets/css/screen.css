@@ -2236,6 +2236,12 @@ padding-top: 4rem;
 font-size:90%
 }
 }
+.newsletter .inner {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
 .newsletter {
 background: var(--color-bg);
 height: 100%;
