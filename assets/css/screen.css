@@ -565,9 +565,11 @@ text-align: center;
 font-size: 5rem;
 padding-bottom: 3rem;
 }
-.custom-no-feature-sign p a,
+.custom-no-feature-sign p a {
+color: var(--color-primary);
+}
 .gh-subscribe-btn {
-   background-color: var(--color-primary) !important;
+   background-color: var(--color-primary);
 }
 .gh-subscribe-btn {
 margin: 5rem 0 7rem;
