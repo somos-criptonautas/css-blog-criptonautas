@@ -85,9 +85,6 @@ justify-content: center;
     padding-top: 15px;
     text-align: center;
 }
-.custom-no-feature-sign p a {
-    color: var(--color-primary);
-}
 
 .subscribe-section img {
 width: 100%;
@@ -225,9 +222,14 @@ width: 0.66rem;
 align-items: center;
 justify-content: center;
 width: 100%;
+opacity: 0.93;
 }
-
-
+.btn-sign:hover { 
+opacity: 1;
+}
+html[data-theme=dark].btn-sign {
+background: var(--color-primary);
+}
 .loading .button-text {
     display: none;
 }
