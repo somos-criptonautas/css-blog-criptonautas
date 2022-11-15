@@ -81,10 +81,10 @@ html[data-theme="dark"] {
     --global-radius: 2px;
     
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1249px) {
     --content-font-size: 20px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1250px) {
     --content-font-size: 24px;
 }
 .shadow {
