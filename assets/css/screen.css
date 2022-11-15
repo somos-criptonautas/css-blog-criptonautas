@@ -563,7 +563,7 @@ text-align: center;
 
 .gh-subscribe-title {
 font-size: 5rem;
-padding: 3rem 0;
+padding: 3rem 0 5rem;
 }
 .custom-no-feature-sign p a {
 color: var(--color-primary) !important;
