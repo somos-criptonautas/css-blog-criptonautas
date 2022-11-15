@@ -1571,7 +1571,7 @@ background-color: var(--color-alert-error);
    font-size: medium !important;
 }
 }
-@media screen and (min-width: 1199px) {
+@media (min-width: 1199px) {
 gh-subscribe-description {
 width: 90%;
 margin: auto;
