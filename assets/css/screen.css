@@ -1615,10 +1615,6 @@ margin-bottom: 2.5rem;
 padding: 0 2rem 3rem !important;
 }
 
-.gh-content .kg-card + :not(.kg-card):not([id]), .gh-content :not(.kg-card):not([id]) + .kg-card {
-margin: 3.33rem 0 2.23rem;
-}
-
 .kg-toggle-heading {
 padding: 3rem 4rem;
 justify-content: center !important;
