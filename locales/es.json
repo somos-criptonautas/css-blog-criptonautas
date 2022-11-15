@@ -4,10 +4,10 @@
 	"If you change your mind in the meantime you can turn auto-renew back on to continue your subscription.": "Si cambia de opinión mientras tanto, puede volver a activar la renovación automática para continuar con su suscripción.",
 	"Hey! You have an active {sitetitle} account with access to all areas. Get in touch if have any problems or need some help getting things updated, and thanks for subscribing.": "¡Oye! Tiene una cuenta de {sitetitle} activa con acceso a todas las áreas. Póngase en contacto si tiene algún problema o necesita ayuda para actualizar las cosas, y gracias por suscribirse.",
 	"Email address": "E-mail",
-	"Your plan": "Nivel",
+	"Your plan": "Categoría",
 	"Card": "Tarjeta",
 	"Expires": "Expira",
-	"Next bill date": "Próxima fecha de factura",
+	"Next bill date": "Próximo cargo",
 	"Edit billing info": "Editar tu dirección en Stripe",
 	"Hey there!": "Hola!",
 	"is subscribed to free updates from {sitetitle}, but doesn't have a paid subscription to unlock full access.": "está suscrito a actualizaciones gratuitas de {sitetitle}, pero no tiene una suscripción paga para desbloquear el acceso completo.",
@@ -140,6 +140,6 @@
 	"First level subscription": "Tienes acceso libre a nuestros artículos gratuitos",
 	"Padawans description": "Compartir es la manera más simple que tienes de aprender.",
 	"Start free": "Aprende cripto y trading independiente, desde personas como tú 😎",
-	"Account details": "Tu data",
+	"Account details": "Estos son tus datos",
 	"Sign out": "Salir"
 }
