@@ -174,13 +174,19 @@ html[data-theme=dark].single-input .form-control:focus {
     font-size: 1.77rem;
     margin: 2rem 1rem;
 }
-.message-success {
-    color: var(--color-base);
+.message-success,
+.message-error {
+    color: var(--color-primary);
     display: none;
     background: none;
 }
-.success .message-success, .message-error {
-    display: block;
+.newsletter form[class=sucess].message-success
+.newsletter form[class=error].message-error {
+    display: block !important;
+}
+html[data-theme=dark] .message-success,
+html[data-theme=dark] .message-error {
+    color: var(--color-secondary);
 }
 .success .subscribe-title,
 .success .single-input,
