@@ -1566,8 +1566,10 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
-@media screen and (-webkit-min-device-pixel-ratio:0) html {
-font-size: medium !important;
+@supports(-webkit-text-security: circle) {
+   html {
+   font-size: medium !important;
+}
 }
 @media screen and (min-width: 1199px) {
 gh-subscribe-description {
