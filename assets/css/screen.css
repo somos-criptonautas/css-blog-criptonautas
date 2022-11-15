@@ -1676,35 +1676,12 @@ max-width: 1500px;
 display: unset !important;
 }
 
-.gh-content {
-margin-top: 4rem;
-grid-template-columns: auto;
-flex-basis: fit-content;
-margin: auto;
-max-width: 963px;
-}
 .gh-content,
 .gh-article-excerpt {
 font-size: 2.5rem;
 }
-@media screen and (max-width:991px) {
-.gh-content {
-padding: 4rem 5vh 3rem;
-}
-}
 
-@media screen and (min-width:992px) and (max-width: 1699px) {
-.gh-content {
-padding: 0 20vh;
-flex-basis: initial;
-}
 
-}
-@media screen and (min-width: 1700px) {
-.gh-content {
-padding: 0 40vh 0 30vh;
-}
-}
 @media screen and (min-width: 1500px) {
 .home-template .gh-main a,
 .kg-bookmark-container {
@@ -2229,7 +2206,7 @@ min-width: 120px;
 padding-top: 4rem;
 }
 .newsletter {
-font-size:90%
+font-size:90%;
 }
 }
 .newsletter .inner {
