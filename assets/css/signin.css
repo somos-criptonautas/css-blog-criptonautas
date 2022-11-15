@@ -227,7 +227,7 @@ opacity: 0.93;
 .btn-sign:hover { 
 opacity: 1;
 }
-html[data-theme=dark].btn-sign {
+html[data-theme=dark] .btn-sign {
 background: var(--color-primary);
 }
 .loading .button-text {

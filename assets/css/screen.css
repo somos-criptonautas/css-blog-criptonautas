@@ -1994,8 +1994,8 @@ body.page-template.page-ingreso {
 background: linear-gradient(315deg,#efefef,#fff);
 }
 
-html[data-theme=dark]body.page-template.page-registro,
-html[data-theme=dark]body.page-template.page-ingreso {
+html[data-theme=dark] body.page-template.page-registro,
+html[data-theme=dark] body.page-template.page-ingreso {
 background: linear-gradient(315deg,#0c0c0c,#0e0e0e) !important;
 }
 
