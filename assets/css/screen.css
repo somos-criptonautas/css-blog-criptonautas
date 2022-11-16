@@ -623,7 +623,7 @@ text-align: center;
 }
 
 .gh-foot-menu .nav {
-gap: 32px;
+gap: 2.3rem;
 font-weight: 400;
 }
 
@@ -2219,6 +2219,7 @@ font-size:90%;
    align-items: center;
    align-content: center;
    height: 100%;
+   flex-direction: inherit;
 }
 .newsletter {
 background: var(--color-bg);
