@@ -125,6 +125,22 @@ width: 0.66rem;
     stroke-width: 2;
 } */
 
+
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: var(--color-secondary-text);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: var(--color-secondary-text);
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: var(--color-secondary-text);
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: var(--color-secondary-text);
+}
+
+
 .single-input .form-control {
     font-size: 2rem;
     color: var(--color-base);
