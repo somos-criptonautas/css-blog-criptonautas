@@ -20,6 +20,7 @@
 .sign-wrapper {
     display: flex;
     flex-wrap: wrap;
+    min-height: 50rem;
 }
 
 .custom-feature-sign {
@@ -306,7 +307,11 @@ background: var(--color-primary);
    .back-to-home:hover {
     opacity: 1;
    }
-
+@media screen and (max-width:991px) {
+   subscribe-title {
+padding-top: 25rem;
+   }
+}
 .subscribe-title::not(.signup-form) h1 {
 padding-bottom: 5rem;
 }
