@@ -184,9 +184,12 @@ font-family: var(--font-sans-serif);
 font-weight: 700;
 font-size: 3.5rem;
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 991px){
 .gh-topic-grid .gh-card-title {
-font-size: 3rem;
+font-size: 3rem !important;
+}
+.gh-card-footer {
+font-size: 1.7rem !important;
 }
 }
 
@@ -233,7 +236,6 @@ display: none;
 display: flex;
 gap: 0.5rem;
 align-items: center;
-padding-top: 2rem;
 font-size: 2rem;
 font-weight: 500;
 color: var(--color-secondary-text);
