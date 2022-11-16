@@ -522,7 +522,7 @@ font-family: var(--font-serif);
 .gh-content > ol {
 font-size: 2.33rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1025px) {
 .gh-content > p {
 font-size: 2rem !important;
 }
@@ -532,6 +532,13 @@ font-size:2.5rem;
 .gh-article-meta {
 font-size: 1.75rem;
 }
+}
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+   .gh-content > p {
+      font-size: 1.8rem !important;
+      }
 }
 /* Page head */
 
@@ -605,7 +612,7 @@ color: var(--color-text);
 margin: auto;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
 .gh-foot {
    width: 80%
 }
