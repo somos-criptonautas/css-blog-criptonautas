@@ -324,8 +324,10 @@ background: var(--color-primary);
     opacity: 1;
    }
 @media screen and (max-width:991px) {
-   subscribe-title {
-padding-top: 25rem;
+   subscribe-title,
+   cus-sign-box h2 {
+    {
+padding: 25rem 0 5rem;
    }
 }
 .subscribe-title::not(.signup-form) h1 {
