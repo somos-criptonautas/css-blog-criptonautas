@@ -2219,8 +2219,8 @@ position: relative;
 min-width: 120px;
 }
 /* Newsletter */
-@media screen and (max-width: 549px) .newsletter-title,
-@media screen and (max-height: 450px) .newsletter-title {
+@media screen and (max-width: 549px) or (max-height: 450px) {
+.newsletter-title {
 padding-top: 11rem !important;
 font-size: 4rem;
 }
