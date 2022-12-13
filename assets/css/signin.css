@@ -165,7 +165,11 @@ html[data-theme=dark].single-input .form-control:focus {
     border-color: var(--color-primary);
 }
 
-.single-input .form-control::placeholder {
+.single-input .form-control::placeholder,
+.single-input .form-control::-webkit-input-placeholder, 
+.single-input .form-control::-moz-placeholder,
+.single-input .form-control:-moz-placeholder,
+.single-input .form-control:-ms-input-placeholder { 
     color: var(--color-base);
 }
 .subscribe-form p {

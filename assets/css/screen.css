@@ -621,7 +621,7 @@ margin: auto;
 display: flex;
 flex-direction: column;
 align-items: center;
-padding: 1rem 2rem;
+padding: 0 4rem;
 font-size: inherit;
 }
 
@@ -2219,7 +2219,8 @@ position: relative;
 min-width: 120px;
 }
 /* Newsletter */
-@media screen and (max-width: 549px) {
+@media screen and (max-width: 549px),
+@media screen and (max-height: 450px) {
 .newsletter-title {
 padding-top: 11rem !important;
 font-size: 4rem;
