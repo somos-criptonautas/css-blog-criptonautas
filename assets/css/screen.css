@@ -569,10 +569,18 @@ font-family: var(--font-serif);
 .gh-subscribe {
 text-align: center;
 }
-
+.gh-subscribe-title {
+   padding: 2rem 0 5rem;
+}
+@media (min-width) and (max-width: 767px) {
 .gh-subscribe-title {
 font-size: 5rem;
-padding: 2rem 0 5rem;
+}
+}
+@media (max-width: 767px) {
+.gh-subscribe-title {
+font-size: 2.5rem;
+}
 }
 .custom-no-feature-sign p a {
 color: var(--color-primary) !important;
