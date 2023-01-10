@@ -1,4 +1,4 @@
-@import "@tryghost/shared-theme-assets/assets/css/screen.css";
+@import "@tryghost/shared-theme-assets/assets/css/v1/screen.css";
 @import "fonts.css";
 @import "vars.css";
 @import "signin.css";
@@ -41,8 +41,22 @@ opacity: 0.93;
 color: var(--color-bg) !important;
 margin-left: 2.3rem;
 }
+<<<<<<< HEAD
 .gh-btn .ma {
 margin-left: 2.3rem;
+=======
+
+body:not(.is-head-stacked) .gh-head {
+    height: 88px;
+}
+
+body:not(.is-head-stacked) .gh-head-inner {
+    border-bottom: 1px solid var(--color-light-gray);
+}
+
+.nav {
+    letter-spacing: -0.006em;
+>>>>>>> upstream/main
 }
 .gh-btn:hover {
 opacity: 1;
@@ -54,7 +68,10 @@ color: inherit;
 display: none;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/main
 /* Styles specific to grid style sections */
 
 .gh-topic-grid + .gh-topic-grid {
@@ -763,6 +780,7 @@ flex-direction: column;
 min-height: 480px;
 }
 
+<<<<<<< HEAD
 .gh-topic-grid .gh-card.large .gh-card-link > * {
 width: 100%;
 }
@@ -778,6 +796,12 @@ grid-template-columns: 3fr auto 3fr;
 padding: 0;
 font-weight: 500;
 }
+=======
+@media (max-width: 991px) {
+    .gh-topic-grid .gh-topic-content {
+        grid-template-columns: 1fr;
+    }
+>>>>>>> upstream/main
 
 .gh-head-brand {
 display: flex;
@@ -816,6 +840,7 @@ body:not(.is-head-b--a_n) .gh-head-menu::after {
 display: none;
 }
 
+<<<<<<< HEAD
 .has-full-image .gh-article-excerpt {
 margin-top: 36px;
 font-size: 2.4rem;
@@ -1732,6 +1757,18 @@ opacity: 77;
 }
 .gh-content > .kg-card + [id] {
 padding-bottom: 2rem;
+=======
+@media (min-width: 992px) {
+    .gh-head {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+    .has-full-image .gh-article-excerpt {
+        margin-top: 36px;
+        font-size: 2.4rem;
+    }
+>>>>>>> upstream/main
 }
 
 @media screen and (max-width: 1500px) {
