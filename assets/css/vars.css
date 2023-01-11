@@ -26,7 +26,7 @@ html[data-theme="dark"] {
   html[data-theme=dark] h6 {
     color: var(--color-base)
     }
-    html[data-theme=dark] .gh-copyright,
+html[data-theme=dark] .gh-copyright,
     .gh-foot-menu a {
         color: var(--color-white);
     }

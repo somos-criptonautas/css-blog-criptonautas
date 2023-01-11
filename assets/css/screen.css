@@ -1,4 +1,4 @@
-@import "@tryghost/shared-theme-assets/assets/css/screen.css";
+@import "@tryghost/shared-theme-assets/assets/css/v1/screen.css";
 @import "fonts.css";
 @import "vars.css";
 @import "signin.css";
@@ -41,8 +41,22 @@ opacity: 0.93;
 color: var(--color-bg) !important;
 margin-left: 2.3rem;
 }
+<<<<<<< HEAD
 .gh-btn .ma {
 margin-left: 2.3rem;
+=======
+
+body:not(.is-head-stacked) .gh-head {
+    height: 88px;
+}
+
+body:not(.is-head-stacked) .gh-head-inner {
+    border-bottom: 1px solid var(--color-light-gray);
+}
+
+.nav {
+    letter-spacing: -0.006em;
+>>>>>>> upstream/main
 }
 .gh-btn:hover {
 opacity: 1;
@@ -54,7 +68,10 @@ color: inherit;
 display: none;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/main
 /* Styles specific to grid style sections */
 
 .gh-topic-grid + .gh-topic-grid {
@@ -575,12 +592,12 @@ text-align: center;
 .gh-subscribe-title {
    padding: 2rem 0 5rem;
 }
-@media (min-width) and (max-width: 767px) {
+@media screen and (min-width: 768px) {
 .gh-subscribe-title {
 font-size: 5rem;
 }
 }
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
 .gh-subscribe-title {
 font-size: 2.5rem;
 }
@@ -766,6 +783,7 @@ flex-direction: column;
 min-height: 480px;
 }
 
+<<<<<<< HEAD
 .gh-topic-grid .gh-card.large .gh-card-link > * {
 width: 100%;
 }
@@ -781,6 +799,12 @@ grid-template-columns: 3fr auto 3fr;
 padding: 0;
 font-weight: 500;
 }
+=======
+@media (max-width: 991px) {
+    .gh-topic-grid .gh-topic-content {
+        grid-template-columns: 1fr;
+    }
+>>>>>>> upstream/main
 
 .gh-head-brand {
 display: flex;
@@ -819,6 +843,7 @@ body:not(.is-head-b--a_n) .gh-head-menu::after {
 display: none;
 }
 
+<<<<<<< HEAD
 .has-full-image .gh-article-excerpt {
 margin-top: 36px;
 font-size: 2.4rem;
@@ -1168,7 +1193,7 @@ padding: 0 4vw 0 0;
 
 /* RWD — Membership page
 –––––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media (max-width:1480px) {
+@media screen and (max-width:1480px) {
 .membership-section {
 padding-bottom: 12vh;
 }
@@ -1227,14 +1252,14 @@ transform: translateY(-2px);
 
 }
 
-@media (max-width:1280px) {
+@media screen and (max-width:1280px) {
 .membership-card-price {
 font-size: 6.6rem;
 }
 
 }
 
-@media (max-width:1024px) {
+@media screen and (max-width:1024px) {
 .membership-section {
 padding-bottom: 5vh;
 }
@@ -1249,7 +1274,7 @@ margin-bottom: 18vh;
 
 }
 
-@media (max-width:768px) {
+@media screen and (max-width:768px) {
 .membership-switch {
 max-width: 300px;
 min-height: 50px;
@@ -1283,7 +1308,7 @@ right: 0;
 
 }
 
-@media (max-width:480px) {
+@media screen and (max-width:480px) {
 .membership-wrap {
 padding: calc(var(--grid-gap) / 2);
 }
@@ -1321,7 +1346,7 @@ font-size: 1.6rem;
 
 }
 
-@media (max-width:320px) {
+@media screen and (max-width:320px) {
 .membership-card {
 padding: 12px;
 }
@@ -1588,7 +1613,7 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
 .gh-content .kg-callout-card .kg-callout-text, .gh-content .kg-toggle-card .kg-toggle-content > ol, .gh-content .kg-toggle-card .kg-toggle-content > p, .gh-content .kg-toggle-card .kg-toggle-content > ul, .gh-content > blockquote:not([class]), .gh-content > dl, .gh-content > ol, .gh-content > p, .gh-content > ul {
   font-size: 1.7rem !important;
 }
@@ -1598,7 +1623,14 @@ background-color: var(--color-alert-error);
    font-size: medium !important;
 }
 }
-@media (min-width: 1199px) {
+@media screen and (max-width: 1199px) {
+body {
+   -webkit-text-size-adjust: 83%;
+   -moz-text-size-adjust: 83%;
+   -ms-text-size-adjust: 83%;
+   }
+}
+@media screen and (min-width: 1199px) {
 gh-subscribe-description {
 width: 87%;
 margin: auto;
@@ -1730,6 +1762,18 @@ opacity: 77;
 }
 .gh-content > .kg-card + [id] {
 padding-bottom: 2rem;
+=======
+@media (min-width: 992px) {
+    .gh-head {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+    .has-full-image .gh-article-excerpt {
+        margin-top: 36px;
+        font-size: 2.4rem;
+    }
+>>>>>>> upstream/main
 }
 
 @media screen and (max-width: 1500px) {
@@ -2170,7 +2214,7 @@ h5 {
 font-size: 2.6rem;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
    h2 {
       font-size: 3.77rem;
       }
@@ -2232,35 +2276,15 @@ position: relative;
 min-width: 120px;
 }
 /* Newsletter */
-@media screen and (max-width: 549px) or (max-height: 450px) {
-.newsletter-title {
-padding-top: 11rem !important;
-font-size: 4rem;
-}
-.newsletter {
-font-size:90%;
-}
-}
-.newsletter .inner {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   align-content: center;
-   height: 100%;
-   flex-direction: inherit;
-   padding: 1.11rem;
-}
 .newsletter {
 background: var(--color-bg);
 height: 100%;
 overflow: auto;
 position: absolute;
 transform: var(--transform);
-transition: all .2s ease;
-width: 100%;
+transition: all .11s ease;
 height: 100%;
 z-index: 1;
-padding: 5rem;
 display: flex;
 justify-content: center;
 text-align: center;
@@ -2811,14 +2835,14 @@ box-shadow: none;
  
  /* RWD — Account page
     –––––––––––––––––––––––––––––––––––––––––––––––––––– */
- @media (max-width:768px) {
+ @media screen and (max-width:768px) {
     .account-header {
        padding-bottom: 5vh;
     }
  
  }
  
- @media (max-width:480px) {
+ @media screen and (max-width:480px) {
     .account-section + .membership-section {
        padding-bottom: 3vh;
     }
@@ -2879,28 +2903,28 @@ box-shadow: none;
  
  }
  
- @media (max-width:1480px) and (min-width:1281px) {
+ @media screen and (max-width:1480px) and (min-width:1281px) {
     .custom-archive .loop-wrap {
        grid-template-columns: repeat(5, 1fr);
     }
  
  }
  
- @media (max-width:1280px) and (min-width:1025px) {
+ @media screen and (max-width:1280px) and (min-width:1025px) {
     .custom-archive .loop-wrap {
        grid-template-columns: repeat(4, 1fr);
     }
  
  }
  
- @media (max-width:1024px) and (min-width:769px) {
+ @media screen and (max-width:1024px) and (min-width:769px) {
     .custom-archive .loop-wrap {
        grid-template-columns: repeat(3, 1fr);
     }
  
  }
  
- @media (max-width:480px) {
+ @media screen and (max-width:480px) {
     .custom-archive {
        margin-bottom: 6vh;
     }
@@ -2915,7 +2939,7 @@ box-shadow: none;
  
  }
  
- @media (max-width:320px) {
+ @media screen and (max-width:320px) {
     .custom-archive .loop-wrap {
        grid-template-columns: repeat(1, 1fr);
     }
