@@ -533,9 +533,12 @@ font-size:2.5rem;
 font-size: 1.75rem;
 }
 }
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px)  {
+@media only screen and (max-width : 768px) {
+.gh-content > p {
+font-size: 1.6rem !important;
+}
+}
+@media only screen and (min-width : 768px) and (max-width : 1024px)  {
    .gh-content > p {
       font-size: 1.8rem !important;
       }
@@ -1597,7 +1600,7 @@ background-color: var(--color-alert-error);
 }
 @media (min-width: 1199px) {
 gh-subscribe-description {
-width: 90%;
+width: 87%;
 margin: auto;
 }
 }
@@ -1622,13 +1625,15 @@ line-height: 1.6rem;
 margin-top: 1.5rem;
 }
 .gh-main {
-padding: 6rem 1rem;
+padding: 6rem 1rem 11rem;
 }
 
 .kg-callout-card {
 padding: 1.25em 1.5em;
 }
-
+.gh-content > blockquote:not([class]), .gh-content > dl, .gh-content > ol, .gh-content > p, .gh-content > ul {
+margin-bottom: 3.5rem;
+}
 .gh-content > blockquote:not([class]), .gh-content > dl, .gh-content > ol, .gh-content > p, .gh-content > ul {
 font-size: 2rem;
 }
@@ -2078,6 +2083,9 @@ display: flex;
 #gh-head .gh-head-btn {
 font-size: 2.33rem;
 padding: 1.66rem 0 !important;
+}
+#gh-head .gh-head-inner {
+padding: 4rem 0 2rem;
 }
 .is-head-open #gh-head .gh-head-inner {
 grid-template-rows: none;
