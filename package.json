@@ -44,22 +44,36 @@
         "custom": {
             "navigation_layout": {
                 "type": "select",
-                "options": ["Logo on the left", "Logo in the middle", "Stacked"],
+                "options": [
+                    "Logo on the left",
+                    "Logo in the middle",
+                    "Stacked"
+                ],
                 "default": "Stacked"
             },
             "header_style": {
                 "type": "select",
-                "options": ["Light", "Accent color", "Dark"],
+                "options": [
+                    "Light",
+                    "Accent color",
+                    "Dark"
+                ],
                 "default": "Light"
             },
             "title_font": {
                 "type": "select",
-                "options": ["Modern sans-serif", "Elegant serif"],
+                "options": [
+                    "Modern sans-serif",
+                    "Elegant serif"
+                ],
                 "default": "Modern sans-serif"
             },
             "body_font": {
                 "type": "select",
-                "options": ["Modern sans-serif", "Elegant serif"],
+                "options": [
+                    "Modern sans-serif",
+                    "Elegant serif"
+                ],
                 "default": "Elegant serif"
             },
             "white_publication_logo_for_transparent_header": {
@@ -81,7 +95,11 @@
     "scripts": {
         "dev": "gulp",
         "test": "gscan .",
-        "zip": "gulp zip"
+        "zip": "gulp zip",
+        "preinstall": "npm install --package-lock-only --ignore-scripts && npx npm-force-resolutions"
+    },
+    "resolutions": {
+        "graceful-fs": "^4.2.10"
     },
     "dependencies": {
         "tocbot": "^4.18.2"
@@ -91,13 +109,13 @@
         "autoprefixer": "10.4.13",
         "beeper": "2.1.0",
         "cssnano": "5.1.14",
-        "gscan": "4.36.0",
-        "gulp": "4.0.2",
+        "gscan": "^3.3.1",
+        "gulp": "^4.0.2",
         "gulp-concat": "2.6.1",
         "gulp-livereload": "4.0.2",
         "gulp-postcss": "9.0.1",
         "gulp-uglify": "3.0.2",
-        "gulp-zip": "5.1.0",
+        "gulp-zip": "^4.2.0",
         "postcss": "8.4.21",
         "postcss-easy-import": "4.0.0",
         "pump": "3.0.0"
