@@ -228,7 +228,6 @@ max-width: 720px;
 display: -webkit-box;
 margin-top: 0.5rem;
 overflow-y: hidden;
-font-size: var(--);
 -webkit-line-clamp: 4;
 -webkit-box-orient: vertical;
 }
@@ -526,7 +525,8 @@ font-family: var(--font-serif);
 .gh-content > p,
 .gh-content > ul,
 .gh-content > ol,
-.gh-content .kg-callout-card .kg-callout-text, .gh-content .kg-toggle-card .kg-toggle-content > ol, .gh-content .kg-toggle-card .kg-toggle-content > p, .gh-content .kg-toggle-card .kg-toggle-content > ul {
+.gh-content .kg-callout-card .kg-callout-text, .gh-content .kg-toggle-card .kg-toggle-content > ol, .gh-content .kg-toggle-card .kg-toggle-content > p, .gh-content .kg-toggle-card .kg-toggle-content > ul,
+.gh-topic-grid .gh-card:not(.large) .gh-card-excerpt {
 font-size: 2rem;
 }
 .gh-author-name {
@@ -535,12 +535,12 @@ font-size:2.5rem;
 .gh-article-meta {
 font-size: 1.75rem;
 }
-}
 @media only screen and (max-width : 768px) {
 .gh-content > p,
 .gh-content > ul,
 .gh-content > ol,
-.gh-content .kg-callout-card .kg-callout-text, .gh-content .kg-toggle-card .kg-toggle-content > ol, .gh-content .kg-toggle-card .kg-toggle-content > p, .gh-content .kg-toggle-card .kg-toggle-content > ul {
+.gh-content .kg-callout-card .kg-callout-text, .gh-content .kg-toggle-card .kg-toggle-content > ol, .gh-content .kg-toggle-card .kg-toggle-content > p, .gh-content .kg-toggle-card .kg-toggle-content > ul,
+.gh-topic-grid .gh-card:not(.large) .gh-card-excerpt {
 font-size: 1.6rem !important;
 }
 }
@@ -548,7 +548,8 @@ font-size: 1.6rem !important;
    .gh-content > p,
    .gh-content > ul,
    .gh-content > ol,
-   .gh-content .kg-callout-card .kg-callout-text, .gh-content .kg-toggle-card .kg-toggle-content > ol, .gh-content .kg-toggle-card .kg-toggle-content > p, .gh-content .kg-toggle-card .kg-toggle-content > ul {
+   .gh-content .kg-callout-card .kg-callout-text, .gh-content .kg-toggle-card .kg-toggle-content > ol, .gh-content .kg-toggle-card .kg-toggle-content > p, .gh-content .kg-toggle-card .kg-toggle-content > ul,
+   .gh-topic-grid .gh-card:not(.large) .gh-card-excerpt {
       font-size: 1.8rem !important;
       }
 }
@@ -1132,9 +1133,6 @@ border-top: var(--border) var(--color-border-one);
 .faq-content .kg-toggle-card,
 .faq-content .kg-toggle-card + .kg-toggle-card {
 margin-top: 0;
-}
-.gh-content .kg-card + :not(.kg-card):not([id]), .gh-content :not(.kg-card):not([id]) + .kg-card {
-margin: 2rem auto;
 }
 .faq-content .kg-toggle-card .kg-toggle-heading {
 position: relative;
