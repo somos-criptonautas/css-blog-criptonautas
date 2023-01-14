@@ -17,7 +17,6 @@ opacity: 1;
 
 figcaption {
     font-size: 1.3rem;
-    text-align: right;
 }
 
 html[data-theme=dark] .figcaption {
@@ -54,8 +53,13 @@ body:not(.is-head-stacked) .gh-head {
 opacity: 1;
 }
 
+body.is-head-transparent .gh-head-logo img + img {
+    opacity: 1;
+}
+
 .is-head-transparent .gh-head-logo img:first-of-type:not(:only-child) {
-    display: none;
+    display: block;
+    opacity: 0;
 }
 
 /* Styles specific to grid style sections */
@@ -579,11 +583,11 @@ font-family: var(--font-serif);
 .gh-subscribe {
     margin-top: 40px;
     margin-bottom: 80px;
-    text-align: center;
 }
 .gh-subscribe-title {
     font-size: 4.4rem;
     color: var(--color-white);
+    white-space: break-spaces;
 }
 @media screen and (min-width: 768px) {
 .gh-subscribe-title {
@@ -593,6 +597,7 @@ font-size: 5rem;
 .gh-subscribe-description {
     margin-top: 16px;
     font-size: 2rem;
+    white-space: break-spaces;
 }
 @media screen and (max-width: 767px) {
 .gh-subscribe-title {
