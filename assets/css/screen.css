@@ -196,9 +196,6 @@ font-size: 3.5rem;
 .gh-topic-grid .gh-card-title {
 font-size: 3rem !important;
 }
-.gh-card-footer {
-font-size: 1.7rem !important;
-}
 }
 
 .gh-topic-grid .gh-card.large .gh-card-title {
@@ -231,7 +228,7 @@ max-width: 720px;
 display: -webkit-box;
 margin-top: 0.5rem;
 overflow-y: hidden;
-font-size: 2rem;
+font-size: var(--);
 -webkit-line-clamp: 4;
 -webkit-box-orient: vertical;
 }
@@ -248,6 +245,7 @@ font-size: 2rem;
 font-weight: 500;
 color: var(--color-secondary-text);
 text-transform: uppercase;
+margin-top:1rem;
 }
 
 .gh-topic-grid .gh-card.featured.large .gh-card-footer {
@@ -527,12 +525,9 @@ font-family: var(--font-serif);
 
 .gh-content > p,
 .gh-content > ul,
-.gh-content > ol {
-font-size: 2.33rem;
-}
-@media screen and (min-width: 1025px) {
-.gh-content > p {
-font-size: 2rem !important;
+.gh-content > ol,
+.gh-content .kg-callout-card .kg-callout-text, .gh-content .kg-toggle-card .kg-toggle-content > ol, .gh-content .kg-toggle-card .kg-toggle-content > p, .gh-content .kg-toggle-card .kg-toggle-content > ul {
+font-size: 2rem;
 }
 .gh-author-name {
 font-size:2.5rem;
@@ -542,12 +537,18 @@ font-size: 1.75rem;
 }
 }
 @media only screen and (max-width : 768px) {
-.gh-content > p {
+.gh-content > p,
+.gh-content > ul,
+.gh-content > ol,
+.gh-content .kg-callout-card .kg-callout-text, .gh-content .kg-toggle-card .kg-toggle-content > ol, .gh-content .kg-toggle-card .kg-toggle-content > p, .gh-content .kg-toggle-card .kg-toggle-content > ul {
 font-size: 1.6rem !important;
 }
 }
 @media only screen and (min-width : 768px) and (max-width : 1024px)  {
-   .gh-content > p {
+   .gh-content > p,
+   .gh-content > ul,
+   .gh-content > ol,
+   .gh-content .kg-callout-card .kg-callout-text, .gh-content .kg-toggle-card .kg-toggle-content > ol, .gh-content .kg-toggle-card .kg-toggle-content > p, .gh-content .kg-toggle-card .kg-toggle-content > ul {
       font-size: 1.8rem !important;
       }
 }
@@ -938,9 +939,9 @@ opacity: 1;
 .gh-sidebar {
 background-color: var(--color-border);
 color: var(--color-bg);
-padding: 5rem 2.5rem;
+padding: 5rem 3rem;
 max-width: 90%;
-margin: 7rem auto 3.5rem !important;
+margin: 7rem auto !important;
 }
 a.toc-link {
 color: var(--color-base);
@@ -1602,7 +1603,7 @@ min-height: auto;
 }
 
 @media screen and (max-width: 767px) {
-.gh-content .kg-callout-card .kg-callout-text, .gh-content .kg-toggle-card .kg-toggle-content > ol, .gh-content .kg-toggle-card .kg-toggle-content > p, .gh-content .kg-toggle-card .kg-toggle-content > ul, .gh-content > blockquote:not([class]), .gh-content > dl, .gh-content > ol, .gh-content > p, .gh-content > ul {
+.gh-content .kg-toggle-card .kg-toggle-content > ol, .gh-content .kg-toggle-card .kg-toggle-content > p, .gh-content .kg-toggle-card .kg-toggle-content > ul, .gh-content > blockquote:not([class]), .gh-content > dl {
   font-size: 1.7rem !important;
 }
 }
@@ -1645,16 +1646,16 @@ line-height: 1.6rem;
 margin-top: 1.5rem;
 }
 .gh-main {
-padding: 6rem 1rem 11rem;
+padding: 6rem 0;
 }
 
 .kg-callout-card {
 padding: 1.25em 1.5em;
 }
-.gh-content > blockquote:not([class]), .gh-content > dl, .gh-content > ol, .gh-content > p, .gh-content > ul {
+.gh-content > blockquote:not([class]), .gh-content > dl, .gh-content > ol, .gh-content > ul {
 margin-bottom: 3.5rem;
 }
-.gh-content > blockquote:not([class]), .gh-content > dl, .gh-content > ol, .gh-content > p, .gh-content > ul {
+.gh-content > blockquote:not([class]), .gh-content > dl, .gh-content > ol, .gh-content > ul {
 font-size: 2rem;
 }
 
@@ -1697,7 +1698,7 @@ display: flow-root;
 margin: 7rem 3.5rem;
 }
 .gh-article-excerpt {
-font-size: 2.11rem !important;
+font-size: 2rem !important;
 }
 }
 @media screen and (min-width:992px) and (max-width: 1249px) {
@@ -1727,7 +1728,7 @@ display: unset !important;
 
 .gh-content,
 .gh-article-excerpt {
-font-size: 2.5rem;
+font-size: 2.25rem;
 }
 
 
@@ -1968,10 +1969,6 @@ display: none;
 
 .gh-portal-btn .gh-portal-btn-link {
 border: 0;
-}
-
-.gh-content .kg-callout-card .kg-callout-text, .gh-content .kg-toggle-card .kg-toggle-content > ol, .gh-content .kg-toggle-card .kg-toggle-content > p, .gh-content .kg-toggle-card .kg-toggle-content > ul {
-font-size: 2rem;
 }
 
 code {
