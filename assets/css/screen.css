@@ -1597,6 +1597,10 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
+.gh-site {
+min-height: auto;
+}
+
 @media screen and (max-width: 767px) {
 .gh-content .kg-callout-card .kg-callout-text, .gh-content .kg-toggle-card .kg-toggle-content > ol, .gh-content .kg-toggle-card .kg-toggle-content > p, .gh-content .kg-toggle-card .kg-toggle-content > ul, .gh-content > blockquote:not([class]), .gh-content > dl, .gh-content > ol, .gh-content > p, .gh-content > ul {
   font-size: 1.7rem !important;
