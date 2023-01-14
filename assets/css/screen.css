@@ -48,10 +48,6 @@ body:not(.is-head-stacked) .gh-head {
     height: 88px;
 }
 
-body:not(.is-head-stacked) .gh-head-inner {
-    border-bottom: 1px solid var(--color-light-gray);
-}
-
 .nav {
     letter-spacing: -0.006em;
 }
@@ -93,7 +89,8 @@ justify-items: center;
 }
 
 .gh-topic-footer {
-text-align: right;
+text-align: center;
+padding-top: 2rem;
 }
 
 .gh-topic-grid .gh-card.large,
@@ -109,6 +106,7 @@ width: 100%;
 width: 100%;
 max-width: 720px;
 padding-bottom: 5rem;
+margin: auto;
 }
 
 .gh-topic-grid .gh-card:not(:only-child).large {
@@ -630,6 +628,7 @@ margin-top: 3.5rem;
 padding-bottom: 5rem;
 background-color: var(--color-border);
 color: var(--color-text);
+white-space: inherit;
 }
 
 @media screen and (min-width: 1200px) {
@@ -2257,6 +2256,7 @@ position: absolute;
 transform: var(--transform);
 transition: all .11s ease;
 height: 100%;
+width: 100%;
 z-index: 1;
 display: flex;
 justify-content: center;
