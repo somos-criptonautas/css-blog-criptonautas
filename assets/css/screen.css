@@ -587,7 +587,7 @@ font-family: var(--font-serif);
 .gh-subscribe-title {
 font-size: 5rem;
 }
-
+}
 @media screen and (min-width: 1199px) {
    gh-subscribe-description {
    width: 90%;
@@ -2062,7 +2062,7 @@ z-index:11;
 
 @media screen and (max-width: 991px) {
 html[data-intro="hide"] .gh-burger {
-display: inherit
+display: inherit;
 }
 }
 body .is-head-open {
@@ -2932,4 +2932,3 @@ box-shadow: none;
        font-size: 1.6rem;
     }
    }
- }
