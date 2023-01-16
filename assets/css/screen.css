@@ -39,9 +39,6 @@ opacity: 0.93;
 color: var(--color-bg) !important;
 margin-left: 2.3rem;
 }
-.gh-btn .ma {
-margin-left: 2.3rem;
-}
 body:not(.is-head-stacked) .gh-head {
     height: 88px;
 }
@@ -581,24 +578,22 @@ font-family: var(--font-serif);
 /* Subscription banner */
 
 .gh-subscribe {
-    margin-top: 40px;
-    margin-bottom: 80px;
-}
-.gh-subscribe-title {
-    font-size: 4.4rem;
-    color: var(--color-white);
-    white-space: break-spaces;
-}
+   text-align: center;
+   }
+   .gh-subscribe-title {
+      padding: 2rem 0 5rem;
+   }
 @media screen and (min-width: 768px) {
 .gh-subscribe-title {
 font-size: 5rem;
 }
 
-.gh-subscribe-description {
-    margin-top: 16px;
-    font-size: 2rem;
-    white-space: break-spaces;
-}
+@media screen and (min-width: 1199px) {
+   gh-subscribe-description {
+   width: 90%;
+   margin: auto;
+   }
+   }
 @media screen and (max-width: 767px) {
 .gh-subscribe-title {
 font-size: 2.5rem;
@@ -1606,7 +1601,7 @@ background-color: var(--color-alert-error);
 /* Matenauta stuff */
 
 .gh-site {
-min-height: auto;
+min-height: auto !important;
 }
 
 @media screen and (max-width: 767px) {
