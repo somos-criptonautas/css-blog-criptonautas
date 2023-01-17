@@ -422,7 +422,7 @@ flex-grow: 1;
 height: 1px;
 margin-left: 1.6rem;
 content: "";
-background-color: var(--color-light-gray);
+background-color: var(--color-base);
 }
 
 /* Full screen cover */
@@ -1600,7 +1600,9 @@ background-color: var(--color-alert-error);
 }
 
 /* Matenauta stuff */
-
+a {
+color: var(--color-base);
+}
 .is-head-open #gh-head .gh-head-actions {
 background-color: unset;
 padding: 0;
