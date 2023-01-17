@@ -188,7 +188,7 @@ font-size: 3.5rem;
 }
 @media screen and (max-width: 991px){
 .gh-topic-grid .gh-card-title {
-font-size: 3rem !important;
+font-size: 3.3rem !important;
 }
 }
 
@@ -788,7 +788,7 @@ width: 100%;
 }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
 .is-head-b--a_n .gh-head-inner {
 row-gap: 0;
 grid-template-columns: 3fr auto 3fr;
