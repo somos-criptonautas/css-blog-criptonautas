@@ -596,7 +596,7 @@ font-size: 5rem;
    }
 @media screen and (max-width: 767px) {
 .gh-subscribe-title {
-font-size: 2.5rem;
+font-size: 3.75rem;
 }
 }
 .custom-no-feature-sign p a {
@@ -669,7 +669,7 @@ display: none;
 .gh-copyright {
 letter-spacing: -0.006em;
 text-align: center;
-font-size: 1.75rem;
+font-size: 1.5rem;
 }
 
 .gh-copyright p {
@@ -1650,7 +1650,11 @@ margin-top: 1.5rem;
 .gh-main {
 padding: 6rem 2rem;
 }
-
+@media screen and (max-width: 767px) {
+.gh-main {
+   padding: 5rem 1rem;
+}
+}
 .kg-callout-card {
 padding: 1.25em 1.5em;
 }
@@ -1781,6 +1785,8 @@ height: 6rem;
 }
 .gh-head-actions {
 align-items: inherit;
+position: unset;
+padding: 0;
 }
 
 li.nav-wearehiring {
@@ -2345,9 +2351,6 @@ padding-top: 0.5rem;
 @media screen and (max-width: 749px) {
 .newsletter form {
 display: grid !important;
-}
-.kg-image-card {
-max-width: 80%;
 }
 .newsletter-subscribe {
 border-bottom-left-radius: 0.5rem !important;
