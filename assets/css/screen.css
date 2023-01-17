@@ -601,6 +601,9 @@ font-size: 3.75rem;
 .custom-no-feature-sign p a {
 color: var(--color-primary) !important;
 }
+html[data-theme=dark].custom-no-feature-sign p a {
+   background-color: var(--color-secondary) !important;
+}
 .gh-subscribe-btn {
    background-color: var(--color-primary);
 }
@@ -1598,12 +1601,6 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
-a {
-color: var(--color-primary);
-}
-html[data-theme=dark] a {
-color: var(--color-secondary);
-}
 .is-head-open #gh-head .gh-head-actions {
 background-color: unset;
 padding: 0;
