@@ -1083,8 +1083,7 @@ background: var(--color-bg);
 }
 html,
 body,
-.gh-head,
-a {
+.gh-head {
 color: var(--color-base) !important;
 }
 
@@ -1599,6 +1598,12 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
+a {
+color: var(--color-primary);
+}
+html[data-theme=dark] a {
+color: var(--color-secondary);
+}
 .is-head-open #gh-head .gh-head-actions {
 background-color: unset;
 padding: 0;
@@ -1889,7 +1894,11 @@ font-family: var(--font-serif);
 margin-top: 7rem;
 font-size:2.11rem;
 }
-
+@media screen and (min-width: 767px) and (max-width: 991px) {
+.kg-image-card {
+max-width: 90%;
+}
+}
 /* New hamburger */
 
 .gh-burger::before,
@@ -2068,7 +2077,7 @@ border-radius: 0.5rem;
 z-index:11;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
 html[data-intro="hide"] .gh-burger {
 display: inherit;
 }
