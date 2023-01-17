@@ -1600,15 +1600,15 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
+.is-head-open #gh-head .gh-head-actions {
+background-color: unset;
+padding: 0;
+}
+
 .gh-site {
 min-height: auto !important;
 }
 
-@media screen and (max-width: 767px) {
-.gh-content .kg-toggle-card .kg-toggle-content > ol, .gh-content .kg-toggle-card .kg-toggle-content > p, .gh-content .kg-toggle-card .kg-toggle-content > ul, .gh-content > blockquote:not([class]), .gh-content > dl {
-  font-size: 1.7rem !important;
-}
-}
 @supports(-webkit-text-security: circle) {
    html {
    font-size: medium !important;
@@ -1653,6 +1653,9 @@ padding: 6rem 2rem;
 @media screen and (max-width: 767px) {
 .gh-main {
    padding: 5rem 1rem;
+}
+.kg-callout-card {
+   padding: 1rem 1.25rem;
 }
 }
 .kg-callout-card {
@@ -1784,9 +1787,9 @@ height: 6rem;
 }
 }
 .gh-head-actions {
-align-items: inherit;
-position: unset;
-padding: 0;
+align-items: inherit !important;
+position: unset !important;
+padding: 0 !important;
 }
 
 li.nav-wearehiring {
