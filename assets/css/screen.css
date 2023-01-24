@@ -1601,10 +1601,80 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
-@media only screen and (device-width: 768px) {
-body {
-font-size: 83%;
+
+/*iPad Pro 9.7"*/
+/* Portrait */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+   :root {
+      --content-font-size: 18px;
+  }
 }
+
+/* Landscape */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+   :root {
+      --content-font-size: 18px;
+  }
+}
+/*iPad Pro 10.5"*/
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen
+and (min-device-width: 834px)
+and (max-device-width: 834px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+   :root {
+      --content-font-size: 18px;
+  }
+}
+
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen
+and (min-device-width: 1112px)
+and (max-device-width: 1112px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+   :root {
+      --content-font-size: 18px;
+  }
+}
+/*ipad PRo 12.9"*/
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen
+and (min-device-width: 1024px)
+and (max-device-width: 1024px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+   :root {
+      --content-font-size: 18px;
+  }
+}
+
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen
+and (min-device-width: 1366px)
+and (max-device-width: 1366px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+   :root {
+      --content-font-size: 18px;
+  }
 }
 a {
 color: var(--color-base);
