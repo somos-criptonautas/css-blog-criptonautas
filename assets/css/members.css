@@ -111,18 +111,6 @@ form[data-members-form].loading .it-button-loader {
   fill: #fff;
 }
 
-/*-- Show success message on success --*/
-form[data-members-form].success .message-success {
-    display: block;
-}
-
-/*-- Show error message on error --*/
-form[data-members-form].error .message-error {
-    display: block;
-}
-
-
-
 /* Members Visibility Label
 /* ---------------------------------------------------------- */
 .it-member-label {

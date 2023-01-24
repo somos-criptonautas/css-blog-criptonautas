@@ -208,8 +208,8 @@ color: var(--color-secondary);
 
 }
 
-form[data-members-form].error .message-error .cus-sign-box .subscribe-title,
-form[data-members-form].sucess .message-success .cus-sign-box .subscribe-title {
+. form-inner-content form[data-members-form].error .message-error .cus-sign-box .subscribe-title,
+. form-inner-content form[data-members-form].sucess .message-success .cus-sign-box .subscribe-title {
 display: none;
 }
 html[data-theme=dark] .message-success,
