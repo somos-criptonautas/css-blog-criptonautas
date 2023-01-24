@@ -60,7 +60,8 @@
                     <p>{{ t "Start free" }}</p>
                 </div>
                 <div class="form-inner-content">
-                        <div class="message-text">
+                    <form data-members-form="signup">
+                                                <div class="message-text">
                             <div class="message-success">
                                 {{{t "Check your inbox"}}}
                             </div>
@@ -68,7 +69,6 @@
                                 {{t "Please enter a valid email address!"}}
                             </div>
                         </div>
-                    <form data-members-form="signup">
                         <div class="subscribe-form">
                             <div class="single-input mb-20">
                                 <input data-members-email class="form-control" type="email" required placeholder="{{t "Enter your email"}}">

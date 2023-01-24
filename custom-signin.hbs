@@ -56,17 +56,18 @@
                     </a>
                 </header>
                 <div class="form-inner-content">
-                                                                        <div class="message-text">
+                                    <div class="subscribe-title">
+                    <p>{{ t "Continue to your account" }}</p>
+                </div>
+                    <form data-members-form="signin">
+                                                <div class="message-text">
                             <div class="message-success">
                                 {{t "Check your inbox"}}
                             </div>
                             <div class="message-error">
                                 {{t "Please enter a valid email address!"}}
-                            </div></div>
-                                    <div class="subscribe-title">
-                    <p>{{ t "Continue to your account" }}</p>
-                </div>
-                    <form data-members-form="signin">
+                            </div>
+                        </div>
                         <div>
                             <div class="single-input mb-20">
                                 <input data-members-email class="form-control" type="email" required placeholder="{{t "Email"}}">

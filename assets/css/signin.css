@@ -200,6 +200,12 @@ html[data-theme=dark].single-input .form-control:focus {
     display: none;
     background: none;
 }
+form .sucess .message-success {
+display: inherit;
+}
+form .error .message-error {
+display: inherit;
+}
 .newsletter form[class=sucess].message-success
 .newsletter form[class=error].message-error {
     display: block !important;
