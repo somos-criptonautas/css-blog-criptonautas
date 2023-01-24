@@ -2298,50 +2298,6 @@ font-size: 2.6rem;
       font-size: 2.25rem;
       }
 }
-
-/* Members Forms
-/* ---------------------------------------------------------- */
-
-form[data-members-form] .it-button-loader,
-form[data-members-form] .message-success,
-form[data-members-form] .message-error {
-display: none;
-}
-
-.it-button-content {
-min-width: 100px;
-}
-
-.message-success svg,
-.message-error svg {
-position: relative;
-top: -1px;
-margin-right: 5px;
-height: 15px;
-width: 15px;
-}
-.message-success svg {
-fill: #fff;
-}
-.message-error svg {
-fill: red;
-}
-
-form[data-members-form].success .message-success,
-form[data-members-form].error .message-error {
-margin: 0 auto;
-color: var(--color-secondary);
-font-size: 1.75rem;
-line-height: 1.5em;
-font-weight: 500;
-text-align: center;
-border-radius: var(--radius);
-padding: 2rem;
-}
-form[data-members-form] .it-button {
-position: relative;
-min-width: 120px;
-}
 /* Newsletter */
 .newsletter {
 background: var(--color-bg);

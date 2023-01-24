@@ -196,34 +196,26 @@ html[data-theme=dark].single-input .form-control:focus {
 }
 .message-success,
 .message-error {
-    color: var(--color-primary);
-    display: none;
-    background: none;
+color: var(--color-primary);
+background: none;
 }
-form .sucess .message-success {
+form[data-members-form].sucess .message-success {
 display: inherit;
 }
-form .error .message-error {
+form[data-members-form].error .message-error {
 display: inherit;
+color: var(--color-secondary);
+
 }
-.newsletter form[class=sucess].message-success
-.newsletter form[class=error].message-error {
-    display: block !important;
+
+form[data-members-form].error .message-error .cus-sign-box .subscribe-title,
+form[data-members-form].sucess .message-success .cus-sign-box .subscribe-title {
+display: none;
 }
 html[data-theme=dark] .message-success,
 html[data-theme=dark] .message-error {
     color: var(--color-secondary);
 }
-.success .subscribe-title,
-.success .single-input,
-.success .subscribe-btn .btn {
-display: none;
-}
-.message-error {
-    color: var(--color-secondary);
-    display: none;
-}
-
 .subscribe-btn {
     display: flex;
     align-items: center;
