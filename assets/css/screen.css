@@ -791,7 +791,7 @@ width: 100%;
 @media screen and (min-width: 768px) {
 .is-head-b--a_n .gh-head-inner {
 row-gap: 0;
-grid-template-columns: 3fr auto 3fr;
+grid-template-columns: 3fr 7fr 3fr;
 }
 }
 .gh-head-inner {
@@ -2175,7 +2175,10 @@ top: 3.33rem !important;
 .is-head-open .gh-burger::before {
 top: 2.5rem !important;
 }
-
+@media screen and (max-width: 767px) {
+   #gh-head .gh-head-btn {
+   min-width: inherit;
+}
 @media screen and (max-width: 991px) {
 #gh-head .gh-head-btn {
 position: relative;
