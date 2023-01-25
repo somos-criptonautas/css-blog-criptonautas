@@ -791,7 +791,7 @@ width: 100%;
 @media screen and (min-width: 768px) {
 .is-head-b--a_n .gh-head-inner {
 row-gap: 0;
-grid-template-columns: 3fr 7fr 3fr;
+grid-template-columns: 3fr 8fr 3fr;
 }
 }
 .gh-head-inner {
@@ -1942,7 +1942,7 @@ font-size: 1.5rem !important;
 max-height: inherit !important;
 }
 .kg-bookmark-title {
-font-size:1.73rem !important;
+font-size:1.77rem !important;
 padding-bottom: 1.5rem;
 
 }
