@@ -2301,8 +2301,8 @@ font-size: 2.6rem;
 }
 /* Newsletter */
 
-.newsletter span {
-margin-top: 3.5rem;
+.newsletter p {
+margin-top: 3rem;
 }
 .newsletter {
 background: var(--color-bg);
