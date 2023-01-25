@@ -2179,6 +2179,7 @@ top: 2.5rem !important;
    #gh-head .gh-head-btn {
    min-width: inherit;
 }
+}
 @media screen and (max-width: 991px) {
 #gh-head .gh-head-btn {
 position: relative;
