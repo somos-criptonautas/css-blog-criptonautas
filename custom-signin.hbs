@@ -41,8 +41,6 @@
 <!-- subscribe section start from here    -->
 <div class="subscribe-section min-vh-100">
     {{#post}}
-    <div class="sign-wrapper">
-
         <div class="custom-no-feature-sign mx-auto">
             <div class="cus-sign-box">
                     <header class="mainhead">
@@ -56,10 +54,10 @@
                     </a>
                 </header>
                 <div class="form-inner-content">
-                                    <div class="subscribe-title">
+                    <form data-members-form="signin">
+                                                            <div class="subscribe-title">
                     <p>{{ t "Continue to your account" }}</p>
                 </div>
-                    <form data-members-form="signin">
                                                 <div class="message-text">
                             <div class="message-success">
                                 {{t "Check your inbox"}}
@@ -84,7 +82,6 @@
                 </div>
             </div>
         </div>
-    </div>
     {{/post}}
 </div>
 {{/if}}

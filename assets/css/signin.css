@@ -2,9 +2,6 @@
     display:none!important
 }
 
-.pricing-sec {
-    padding: 90px 0;
-}
 
 .mb-40 {
     margin-bottom: 4rem;
@@ -12,15 +9,6 @@
 
 .mb-20 {
     margin-bottom: 2rem;
-}
-
-.min-vh-100 {
-    min-height: 100vh !important;
-}
-.sign-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    min-height: 50rem;
 }
 
 .custom-feature-sign {
@@ -73,10 +61,7 @@ justify-content: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100vh;
-    height: 100vh;
-    padding: 0 15px;
-    margin: 0 auto;
+    margin: auto;
 }
 .custom-no-feature-sign p {
     font-size: 2rem;
@@ -189,14 +174,9 @@ html[data-theme=dark].single-input .form-control:focus {
 .signup-form p a {
     color: var(--color-primary);
 }
-.message-text {
-    transition: ease 0.23s;
-    font-size: 1.77rem;
-    margin: 2rem 1rem;
-}
 .message-success,
 .message-error {
-color: var(--color-primary);
+color: var(--color-secondary);
 background: none;
 }
 form[data-members-form].sucess .message-success {
@@ -204,13 +184,11 @@ display: inherit;
 }
 form[data-members-form].error .message-error {
 display: inherit;
-color: var(--color-secondary);
-
 }
 
-.form-inner-content form[data-members-form].error .form-inner-content .subscribe-title,
-.form-inner-content form[data-members-form].sucess .form-inner-content .subscribe-title {
-display: none;
+form[data-members-form].error .subscribe-title,
+form[data-members-form].sucess .subscribe-title {
+display: none !important;
 }
 html[data-theme=dark] .message-success,
 html[data-theme=dark] .message-error {
@@ -322,9 +300,8 @@ opacity: 1;
     opacity: 1;
    }
 @media screen and (max-width:991px) {
-   subscribe-title,
    cus-sign-box h2 {
-padding: 25rem 0 5rem;
+padding: 25rem 0 5rem !important;
    }
 }
 .subscribe-title::not(.signup-form) h1 {
@@ -336,8 +313,8 @@ text-align: center;
 }
 /* media for 575px*/
 @media screen and (max-width: 575px) {
-    .subscribe-title h1 {
-        font-size: 1rem;
+    .subscribe-title h2 {
+        font-size: 1.5rem;
    }
     .subscribe-cover-section h2 {
         font-size: 1rem;

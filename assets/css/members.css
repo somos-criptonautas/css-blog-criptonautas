@@ -56,6 +56,11 @@ form[data-members-form] .message-error {
     display: none;
 }
 
+form[data-members-form].sucess .message-success,
+form[data-members-form].error .message-error {
+    display: inherit !important;
+}
+
 .it-button-content {
     min-width: 100px;
 }
@@ -68,20 +73,19 @@ form[data-members-form] .message-error {
     height: 15px;
     width: 15px;
 }
-.message-success svg {
+.message-success svg,
+.message-error svg {
     fill: #fff;
 }
-.message-error svg {
-    fill: red;
-}
 
-form[data-members-form].success .message-success,
-form[data-members-form].error .message-error {
+.message-success,
+.message-error {
     margin: 0 auto;
     padding: 2rem 0;
     font-size: 2rem;
     line-height: 1.5em;
     text-align: center;
+    color: var(--color-secondary);
 }
 
 form[data-members-form] .it-button {
