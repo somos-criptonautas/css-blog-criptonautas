@@ -2,19 +2,15 @@
     <script>
     const readIssue = document.querySelector('.letme');
     readIssue.addEventListener('click', function(){
-        console.log('clicked')
         html.setAttribute('data-intro', 'hide')
         localStorage.setItem('data-intro', 'hide');
-        document.querySelector('.home-template').classList.remove('hidden-overflow');
         createCookie('data-intro', true, 1)
-        
-       console.log(html.hasAttribute('data-intro'))
        return false;
     });
     
     if (!readCookie('data-intro')) {
         localStorage.removeItem("data-intro");
-        document.querySelector('.home-template').classList.remove('hidden-overflow');
+        html.setAttribute('data-intro', 'hide')
     }
     // And some generic cookie logic
     function createCookie(name,value,days) {
