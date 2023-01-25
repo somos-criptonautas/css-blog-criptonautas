@@ -1051,10 +1051,6 @@ color: #f1f1f1 !important;
 background: #ed5107 !important;
 
 }
-html {
-overflow: hidden;
-zoom: 100%;
-}
 html, body {
 overscroll-behavior-y: none;
 }
@@ -1064,7 +1060,7 @@ html[data-intro="hide"] {
 overflow: auto;
 }
 
-html[data-intro="hide"] .is-head-open html {
+.is-head-open html {
 overflow: hidden !important;
 }
 
@@ -1816,6 +1812,9 @@ display: unset !important;
 font-size: 2.25rem;
 }
 
+.home-template {
+opacity: 0;
+}
 
 @media screen and (min-width: 1500px) {
 .home-template .gh-main a,
@@ -2578,8 +2577,8 @@ top: 3px;
 left: 3px;
 }
 
-.hidden-overflow {
-overflow: hidden !important;
+.show {
+opacity: 1 !important;
 }
 .hide {
 display: none;
