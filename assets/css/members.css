@@ -56,9 +56,14 @@ form[data-members-form] .message-error {
     display: none;
 }
 
-form[data-members-form].sucess .message-success,
-form[data-members-form].error .message-error {
+.sucess form[data-members-form] .message-success,
+.error form[data-members-form] .message-error {
     display: inherit !important;
+}
+
+.sucess form[data-members-form] .login-text,
+.error form[data-members-form] .login-text {
+display: none !important;
 }
 
 .it-button-content {
