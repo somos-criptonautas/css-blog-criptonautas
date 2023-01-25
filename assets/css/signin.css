@@ -37,9 +37,6 @@
     width: 100%;
     padding: 1rem;
 }
-.cus-sign-box {
-    text-align: center;
-}
 .cus-sign-box h1 {
 padding-bottom: 5rem;
 font-size: 7rem;
@@ -79,7 +76,12 @@ width: 100%;
 padding-bottom: 3rem;
 margin: auto;
 }
-
+.subscribe-section {
+display: flex;
+align-content: center;
+align-items: center;
+height: 100vh;
+}
 .subscribe-section svg {
 width: 0.66rem;
 }
@@ -179,10 +181,10 @@ html[data-theme=dark].single-input .form-control:focus {
 color: var(--color-secondary);
 background: none;
 }
-form[data-members-form].sucess .message-success {
+form[data-members-form].sucess .text-message .message-success {
 display: inherit;
 }
-form[data-members-form].error .message-error {
+form[data-members-form].error .text-message .message-error {
 display: inherit;
 }
 
@@ -191,8 +193,10 @@ form[data-members-form].sucess .subscribe-title {
 display: none !important;
 }
 html[data-theme=dark] .message-success,
-html[data-theme=dark] .message-error {
-    color: var(--color-secondary);
+html[data-theme=dark] .message-error,
+html[data-darkreader-scheme=dark] .message-success,
+html[data-darkreader-scheme=dark] .message-error {
+color: var(--color-white);
 }
 .subscribe-btn {
     display: flex;
