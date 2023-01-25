@@ -181,7 +181,7 @@ html[data-theme=dark].single-input .form-control:focus {
 color: var(--color-secondary);
 background: none;
 }
-form[data-members-form].sucess .text-message .message-success {
+form[data-members-form].success .text-message .message-success {
 display: inherit;
 }
 form[data-members-form].error .text-message .message-error {
@@ -189,7 +189,7 @@ display: inherit;
 }
 
 form[data-members-form].error .subscribe-title,
-form[data-members-form].sucess .subscribe-title {
+form[data-members-form].success .subscribe-title {
 display: none !important;
 }
 html[data-theme=dark] .message-success,

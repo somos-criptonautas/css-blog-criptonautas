@@ -55,13 +55,12 @@ form[data-members-form] .message-success,
 form[data-members-form] .message-error {
     display: none;
 }
-
-.sucess form[data-members-form] .message-success,
-.error form[data-members-form] .message-error {
+form.success .message-success,
+.error form.success .message-error {
     display: inherit !important;
 }
 
-.sucess form[data-members-form] .login-text,
+.success form[data-members-form] .login-text,
 .error form[data-members-form] .login-text {
 display: none !important;
 }
@@ -91,6 +90,7 @@ display: none !important;
     line-height: 1.5em;
     text-align: center;
     color: var(--color-secondary);
+    display: none;
 }
 
 form[data-members-form] .it-button {

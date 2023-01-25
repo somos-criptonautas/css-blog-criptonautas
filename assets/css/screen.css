@@ -2296,6 +2296,10 @@ font-size: 2.6rem;
       }
 }
 /* Newsletter */
+
+.newsletter span {
+margin-top: 3.5rem;
+}
 .newsletter {
 background: var(--color-bg);
 height: 100%;
