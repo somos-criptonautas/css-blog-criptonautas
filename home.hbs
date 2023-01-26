@@ -11,7 +11,8 @@
     if (!readCookie('data-intro')) {
         localStorage.removeItem("data-intro");
         html.setAttribute('data-intro', 'hide');
-        document.querySelector('.home-template').classList.add('show');
+        const list = document.querySelector('.home-template').classList;
+        list.add('show')
     }
     // And some generic cookie logic
     function createCookie(name,value,days) {
