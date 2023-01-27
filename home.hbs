@@ -13,7 +13,6 @@
     
     if (!readCookie('data-intro')) {
         localStorage.removeItem("data-intro");
-        html.setAttribute('data-intro', 'hide');
         const list = document.querySelector('.home-template').classList;
         list.add('show')
     }
