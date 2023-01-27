@@ -2,6 +2,7 @@
     <script>
     const readIssue = document.querySelector('.letme');
     readIssue.addEventListener('click', function(){
+        console.log('clicked')
         html.setAttribute('data-intro', 'hide')
         localStorage.setItem('data-intro', 'hide');
         createCookie('data-intro', true, 1)
