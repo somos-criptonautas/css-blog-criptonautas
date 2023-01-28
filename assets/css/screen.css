@@ -1812,11 +1812,6 @@ display: unset !important;
 font-size: 2.25rem;
 }
 
-.home-template {
-opacity: 0;
-overflow: hidden;
-}
-
 @media screen and (min-width: 1500px) {
 .home-template .gh-main a,
 .kg-bookmark-container {
