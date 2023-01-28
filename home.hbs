@@ -6,15 +6,14 @@
         html.setAttribute('data-intro', 'hide')
         localStorage.setItem('data-intro', 'hide');
         createCookie('data-intro', true, 1)
-
        console.log(html.hasAttribute('data-intro'))
        return false;
     });
     
     if (!readCookie('data-intro')) {
         localStorage.removeItem("data-intro");
-        const list = document.querySelector('.home-template').classList;
-        list.add('show')
+        const list = document.querySelector('.newsletter').classList;
+        list.add('flex')
     }
     // And some generic cookie logic
     function createCookie(name,value,days) {

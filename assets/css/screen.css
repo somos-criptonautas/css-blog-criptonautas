@@ -2314,11 +2314,14 @@ transition: all .11s ease;
 height: 100%;
 width: 100%;
 z-index: 1;
-display: flex;
+display: none;
 justify-content: center;
 text-align: center;
 align-items: center;
 flex-direction: column;
+}
+.flex {
+display: flex;
 }
 .newsletter.container {
 height: 100vh;
