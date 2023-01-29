@@ -795,6 +795,11 @@ width: 100%;
    grid-template-columns: 1fr auto auto;
    height: 64px;
  }
+ #gh-head .gh-head-inner {
+   gap: 48px;
+   grid-template-columns: 1fr;
+   grid-template-rows: auto 1fr auto;
+ }
 }
 @media screen and (min-width: 992px) {
 .is-head-b--a_n .gh-head-inner {
@@ -2185,7 +2190,9 @@ html[data-intro="hide"] .gh-burger {
 .is-head-open .gh-burger {
 opacity: 1;
 }
-
+#gh-head .gh-head-logo {
+   font-size: 2.2rem;
+ }
 .gh-burger::before {
 top: 3.33rem !important;
 }
@@ -2207,8 +2214,15 @@ margin: 3rem auto;
 border-radius: 0.77rem;
 display: flex;
 }
+#gh-head .gh-head-inner {
+display: none;
 }
-@media screen and (max-width: 991px) {
+.is-head-open #gh-head .nav {
+   display: flex;
+   flex-direction: column;
+ }
+}
+@media screen and (min-width: 992px) {
 #gh-head .nav a,
 #gh-head .gh-head-btn {
 font-size: 2.33rem;
