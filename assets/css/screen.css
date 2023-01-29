@@ -787,7 +787,15 @@ min-height: 480px;
 width: 100%;
 }
 }
-
+@media screen and (max-width: 991px) {
+#gh-head .gh-head-brand {
+   align-items: center;
+   display: grid;
+   grid-column-start: 1;
+   grid-template-columns: 1fr auto auto;
+   height: 64px;
+ }
+}
 @media screen and (min-width: 992px) {
 .is-head-b--a_n .gh-head-inner {
 row-gap: 0;
