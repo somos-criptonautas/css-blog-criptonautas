@@ -41,6 +41,7 @@ color: var(--color-base)
     --color-gray: #636363;
     --color-border: #f1f1f1;
     --color-bg: #fff;
+    --color-bg-alt: #f1f1f1;
     --color-link: #fff;
     --color-shadow: rgba(37,115,247,.05);
     --color-white:#fff;
