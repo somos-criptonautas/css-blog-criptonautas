@@ -1872,9 +1872,10 @@ height: 6rem;
 }
 }
 .gh-head-actions {
-align-items: inherit !important;
-position: unset !important;
-padding: 0 !important;
+align-items: inherit;
+position: unset;
+padding: 0;
+justify-content: inherit;
 }
 
 li.nav-wearehiring {
