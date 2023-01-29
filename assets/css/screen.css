@@ -1858,8 +1858,9 @@ padding: 0;
 .gh-sidebar {
     position: sticky;
     top: 2.23rem;
-    left: 3.33rem;
+    left: 1.33rem;
     align-self: flex-start;
+    width: 50%;
 }
 }
 @media screen and (min-width: 992px) and (max-width: 1249px) {
