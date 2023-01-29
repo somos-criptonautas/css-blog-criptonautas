@@ -10,13 +10,15 @@ body {
 html[data-theme="dark"] {
     --color-secondary-text: #f1f1f1;
     --color-base: #f1f1f1;
-    --color-bg: #111;
-    --color-link: #111;
-    --color-bg-white: #111;
-    --color-border: #232323;
+    --color-bg: #24292f;
+    --color-bg-alt: #22272e;
+    --color-link: #539bf5;
+    --color-bg-white: #24292f;
+    --color-border: #444c56;
     --color-svg: #f1f1f1;
-    --border-form-control: #010230;
-    --bg-icon-mail: #111;
+    --border-form-control: #444c56;
+    --bg-icon-mail: #539bf5;
+    --ghost-accent-color: #539bf5;
 }
 html[data-theme=dark] h1,
 html[data-theme=dark] h2,
@@ -75,17 +77,17 @@ color: var(--color-base)
     --gap-xl: calc(var(--gap)*4);
 
     /* radius */
-    --global-radius: 2px;
+    --global-radius: 0.25rem;
     
 }
 @media screen and (min-width: 768px) and (max-width: 1249px) {
     :root {
-    --content-font-size: 20px;
+    --content-font-size: 20px !important;
 }
 }
 @media screen and (min-width: 1250px) {
     :root {
-    --content-font-size: 24px;
+    --content-font-size: 24px !important;
 }
 }
 .shadow {
