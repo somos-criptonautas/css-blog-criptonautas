@@ -48,7 +48,8 @@
                     <button id="gh-burger" class="gh-burger"></button>
 
                 <div class="gh-head-actions">
-                                    <nav class="gh-head-menu">
+                    <div class ="actions-container">
+                <nav class="gh-head-menu">
                     {{navigation}}
                     {{#unless @member}}
                         <a class="gh-head-btn gh-btn" href="/ingreso">{{ t "Subscribe" }}</a>
@@ -56,7 +57,6 @@
                         <a class="gh-head-btn gh-btn" href="/cuenta">{{ t "Account" }}</a>
                     {{/unless}}
                 </nav>
-                    <div class ="container">
                     <button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button>
                     <div class="it-dark-light gh-icon-btn">
                     <div class="icon-dark">

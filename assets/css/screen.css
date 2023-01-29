@@ -36,7 +36,6 @@ box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
 border-radius: .6rem;
 opacity: 0.93;
 color: var(--color-bg) !important;
-margin-left: 2.3rem;
 }
 .nav {
     letter-spacing: -0.006em;
@@ -45,14 +44,6 @@ margin-left: 2.3rem;
 opacity: 1;
 }
 
-body.is-head-transparent .gh-head-logo img + img {
-    opacity: 1;
-}
-
-.is-head-transparent .gh-head-logo img:first-of-type:not(:only-child) {
-    display: block;
-    opacity: 0;
-}
 
 /* Styles specific to grid style sections */
 
@@ -183,16 +174,9 @@ max-width: 560px;
 letter-spacing: -0.015em;
 font-family: var(--font-sans-serif);
 font-weight: 700;
-font-size: 3.5rem;
-}
-@media screen and (max-width: 991px){
-.gh-topic-grid .gh-card-title {
-font-size: 3.3rem !important;
-}
 }
 
 .gh-topic-grid .gh-card.large .gh-card-title {
-font-size: 3.77rem;
 letter-spacing: -0.02em;
 }
 
@@ -630,16 +614,16 @@ padding-top: 9rem;
 margin-top: 3.5rem;
 padding-bottom: 5rem;
 background-color: var(--color-bg-alt);
-border: 2px solid var(--color-border);
-border-radius: 1.11rem;
 color: var(--color-text);
 white-space: inherit;
 }
 
 @media screen and (min-width: 1200px) {
 .gh-foot {
-   width: 80%;
-   margin: auto;
+width: 80%;
+margin: auto;
+border: 2px solid var(--color-border);
+border-radius: 1.11rem;
 }
 }
 .gh-foot-inner {
@@ -813,7 +797,7 @@ grid-template-columns: 3fr 8fr 4fr;
 padding: 0;
 font-weight: 500;
 }
-
+.actions-container,
 .gh-head-brand {
 display: flex;
 align-items: center;
@@ -2066,7 +2050,14 @@ font-size: 3.33rem;
 background-color: var(--color-base);
 }
 
-
+@media screen and (max-width: 992px) {
+   .gh-head-logo {
+   display:none;
+   }
+   .is-head-open .gh-head-logo {
+   display: flex;
+   }
+}
 
 .gh-head-logo img {
 max-height: 6rem;
