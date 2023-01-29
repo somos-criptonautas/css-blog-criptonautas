@@ -788,14 +788,9 @@ width: 100%;
 }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
 .is-head-b--a_n .gh-head-inner {
 row-gap: 0;
-grid-template-columns: 3fr 8fr 3fr;
-}
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-.is-head-b--a_n .gh-head-inner {
 grid-template-columns: 3fr 8fr 3fr;
 }
 }
