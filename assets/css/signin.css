@@ -158,6 +158,11 @@ html[data-theme=dark].single-input .form-control:focus {
 .single-input .form-control:-ms-input-placeholder { 
     color: var(--color-base);
 }
+.subscribe-form {
+display: flex;
+flex-wrap: nowrap;
+margin-top: 2rem;
+}
 .subscribe-form p {
     font-size: 1.77rem;
     margin-bottom: 0;

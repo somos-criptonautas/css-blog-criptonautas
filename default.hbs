@@ -52,9 +52,9 @@
                 <div class="gh-head-actions">
                     <div class ="actions-container">
                                             {{#unless @member}}
-                        <a class="gh-head-btn gh-btn" href="/ingreso">{{ t "Subscribe" }}</a>
+                        <a class="gh-head-btn gh-btn shadow" href="/ingreso">{{ t "Subscribe" }}</a>
                     {{else}}
-                        <a class="gh-head-btn gh-btn" href="/cuenta">{{ t "Account" }}</a>
+                        <a class="gh-head-btn gh-btn shadow" href="/cuenta">{{ t "Account" }}</a>
                     {{/unless}}
                     <button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button>
                     <div class="it-dark-light gh-icon-btn">
@@ -72,14 +72,14 @@
             </div>
         {{{body}}}
 
-        <footer class="gh-foot gh-outer">
+        <footer class="gh-foot gh-outer shadow">
             <div class="gh-foot-inner gh-inner">                     
 
   {{#get 'posts'}}
     {{#foreach posts visibility='all'}}
         {{/foreach}}
   {{/get}}
-    <section class="gh-subscribe">
+    <section>
                 {{#if @member.paid}}
                         <h4 class="gh-subscribe-title">{{ t "We are here" }}</h3>
                                 <div class="gh-subscribe-description">{{ t "Contact us paid"}}</div>
