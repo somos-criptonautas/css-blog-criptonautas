@@ -412,16 +412,12 @@ margin-bottom: 3rem;
 }
 
 .gh-read-next .gh-pagehead-title {
-display: flex;
-align-items: center;
+   margin: auto;
+   padding-bottom: 3.11rem;
 }
 
 .gh-read-next .gh-pagehead-title::after {
-flex-grow: 1;
-height: 1px;
-margin-left: 1.6rem;
-content: "";
-background-color: var(--color-base);
+display: none;
 }
 
 /* Full screen cover */
@@ -670,9 +666,9 @@ display: none;
 }
 
 .gh-copyright {
-letter-spacing: -0.006em;
+letter-spacing: .011rem;
 text-align: center;
-font-size: 1.5rem;
+font-size: 1.7rem;
 }
 
 .gh-copyright p {
