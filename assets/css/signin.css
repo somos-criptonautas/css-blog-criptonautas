@@ -315,12 +315,3 @@ padding-bottom: 5rem;
 margin: 0 0 3.33rem;
 text-align: center;
 }
-/* media for 575px*/
-@media screen and (max-width: 575px) {
-    .subscribe-title h2 {
-        font-size: 1.5rem;
-   }
-    .subscribe-cover-section h2 {
-        font-size: 1rem;
-   }
-}
