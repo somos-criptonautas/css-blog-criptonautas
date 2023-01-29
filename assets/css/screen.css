@@ -2207,6 +2207,9 @@ top: 2.5rem !important;
 }
 @media screen and (max-width: 991px) {
 #gh-head .gh-head-btn {
+padding: 1.66rem 0 !important;
+}
+#gh-head .gh-head-btn {
 position: relative;
 min-width: 23rem;
 width: 50%;
@@ -2214,7 +2217,7 @@ margin: 3rem auto;
 border-radius: 0.77rem;
 display: flex;
 }
-#gh-head .gh-head-inner {
+.gh-head-brand-wrapper {
 display: none;
 }
 .is-head-open #gh-head .nav {
@@ -2226,7 +2229,6 @@ display: none;
 #gh-head .nav a,
 #gh-head .gh-head-btn {
 font-size: 2.33rem;
-padding: 1.66rem 0 !important;
 font-weight: 500;
 }
 #gh-head .gh-head-inner {

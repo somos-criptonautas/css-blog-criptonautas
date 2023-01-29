@@ -55,8 +55,8 @@ color: var(--color-base)
     /* Breakpoints */
     --xlarge: 1680px;
     --large: 1280px;
-    --medium: 980px;
-    --small: 740px;
+    --medium: 992px;
+    --small: 768px;
     --xsmall: 480px;
 
     /* Sizes */
