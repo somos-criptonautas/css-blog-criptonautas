@@ -490,7 +490,8 @@ font-size: 1.9rem;
 color: var(--color-link);
 }
 
-.has-serif-body .gh-cover-description {
+.has-serif-body .gh-cover-description,
+.gh-content > p {
 font-family: var(--font-serif);
 }
 
