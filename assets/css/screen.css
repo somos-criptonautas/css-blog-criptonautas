@@ -2151,13 +2151,13 @@ border-radius: 0.5rem;
 z-index:11;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
+.gh-burger {
+display: block !important;
+}
 html[data-intro="hide"] .gh-burger {
-display: inherit;
+   display: inherit;
 }
-}
-body .is-head-open {
-overflow: hidden !important;
 }
 .is-head-open .gh-burger {
 opacity: 1;
