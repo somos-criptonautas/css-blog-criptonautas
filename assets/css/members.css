@@ -59,9 +59,12 @@ form.success .message-success,
 .error form.success .message-error {
     display: inherit !important;
 }
-
-.success form[data-members-form] .login-text,
-.error form[data-members-form] .login-text {
+form[data-members-form].success .login-text,
+form[data-members-form].error .login-text,
+form[data-members-form].success .subscribe-form,
+form[data-members-form].error .subscribe-form,
+form[data-members-form].error p,
+form[data-members-form].success p {
 display: none !important;
 }
 
