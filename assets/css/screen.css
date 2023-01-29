@@ -2097,7 +2097,18 @@ grid-column: 1;
 .is-head-open #gh-head .gh-head-menu {
 display: contents;
 }
-
+@media screen and (max-width: 991px) {
+#gh-head .gh-head-menu {
+   transform: translateY(0);
+   transition: none;
+ }
+#gh-head .gh-head-actions, #gh-head .gh-head-menu {
+  justify-content: center;
+  opacity: 0;
+  position: fixed;
+  visibility: hidden;
+}
+}
 .gh-burger::after, .gh-burger::before {
 height: 3px;
 width: 3.75rem;
