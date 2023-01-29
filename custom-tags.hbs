@@ -1,38 +1,58 @@
 {{!< default}}
-		{{#post}}
-			<header class="it-header it-canvas">
-		    	<h1 class="it-title">{{title}}</h1>
-		        {{#if custom_excerpt}}
-		            <p class="it-excerpt">{{custom_excerpt}}</p>
-		        {{/if}}
-		        
-		        {{#if feature_image}}
-		            <figure class="it-feature-image-wrapper">
-		                <img class="it-feature-image" 
-		                    srcset="{{img_url feature_image size="s"}} 300w,
-		                            {{img_url feature_image size="m"}} 600w,
-		                            {{img_url feature_image size="l"}} 1000w,
-		                            {{img_url feature_image size="xl"}} 2000w"
-		                    sizes="(max-width: 1000px) 490px, 2000px"
-		                    src="{{img_url feature_image size="m"}}"
-		                    alt="{{title}}"
-		                />
-		            </figure>
-		        {{/if}}
-		    </header>
-		{{/post}}
-		
-	<div class="it-content it-canvas">
-	    <div class="it-tags it-grid-c3">
-	    	{{#get "tags" limit="all" include="count.posts" order="count.posts desc"}}
-		        {{#foreach tags}}
-		            <a class="it-tags-item" title="{{name}}" href='{{ url }}'>
-		                <h2 class="it-tags-title" {{#if accent_color}}style="color: {{accent_color}};"{{/if}}>
-		                    {{ name }}
-		                </h2>
-		                <span>{{count.posts}} {{t "Articles"}}</span>
-		            </a>
-		        {{/foreach}}
-		    {{/get}}
-	    </div>
 
+{{> site-header}}
+{{#post}}
+<div class="header_banner" data-header-cover-image="{{img_url feature_image}}">
+    <div class="header_banner_inner">
+        <div class="container">
+            <h2 class="site_description">{{title}}</h2>
+        </div>
+    </div>
+</div>
+
+<main id="site-main" class="site-main outer">
+    <div class="container">
+
+        <div class="tag_list_page">
+            <div class="row">
+            {{#get 'tags' limit='all' include='count.posts' order='count.posts desc'}}
+                {{#foreach tags}}
+                    <div class="col-xs-6">
+                        <div class="tag_list_item card">
+                            <a href='{{ url }}'>
+                                <div class="row">
+                                    <div class="col-xs-4 tag_list_item_img" data-tag-list-image="{{img_url feature_image size="xs"}}"></div>
+                                    <div class="col-xs-8">
+                                        <div class="tag_list_item_details">
+                                            <h2>#{{ name }}</h2>
+                                            <h5>{{ count.posts }} Posts</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                {{/foreach}}
+            {{/get}}
+            </div>
+        </div>
+
+    </div>
+</main>
+{{/post}}
+{{#contentFor "scripts"}}
+<script>
+    $(document).ready(function () {
+        var headerCoverImage = $(".header_banner").data("header-cover-image");
+        if(headerCoverImage){
+            $('.header_banner').css('background', 'url(' + headerCoverImage + ')');
+        }
+        $( ".tag_list_item_img" ).each(function() {
+            var tagFeaturedImage = $(this).data("tag-list-image");
+            if(tagFeaturedImage){
+                $(this).css('background', 'url(' + tagFeaturedImage + ')');
+            }
+        });
+    });
+</script>
+{{/contentFor}}
