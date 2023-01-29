@@ -2180,9 +2180,6 @@ z-index:11;
 }
 
 @media screen and (max-width: 991px) {
-.gh-burger {
-display: block !important;
-}
 html[data-intro="hide"] .gh-burger {
    display: inherit;
 }
@@ -2209,6 +2206,10 @@ top: 2.5rem !important;
 #gh-head .gh-head-btn {
 padding: 1.66rem 0 !important;
 }
+#gh-head .gh-head-inner {
+   padding: 4rem 0 2rem;
+   grid-template-columns: 1fr;
+   }
 #gh-head .gh-head-btn {
 position: relative;
 min-width: 23rem;
@@ -2230,10 +2231,6 @@ display: none;
 #gh-head .gh-head-btn {
 font-size: 2.33rem;
 font-weight: 500;
-}
-#gh-head .gh-head-inner {
-padding: 4rem 0 2rem;
-grid-template-columns: 1fr;
 }
 .is-head-open #gh-head .gh-head-inner {
 grid-template-rows: none;
