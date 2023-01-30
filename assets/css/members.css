@@ -56,8 +56,8 @@ form[data-members-form] .message-error {
     display: none;
 }
 form.success .message-success,
-.error form.success .message-error {
-    display: inherit !important;
+form.error .message-error {
+display: inherit !important;
 }
 form[data-members-form].success .login-text,
 form[data-members-form].error .login-text,

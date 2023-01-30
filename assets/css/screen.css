@@ -303,7 +303,6 @@ margin-left: 4px;
 .gh-article-header {
 position: relative;
 justify-items: start;
-margin-bottom: 7rem;
 }
 
 html[data-theme=dark] .gh-article-tag {
@@ -839,13 +838,12 @@ font-size: 2.4rem;
 }
 
 .gh-article-sidebar {
-position: static;
-display: grid;
+display: flex;
 grid-template-columns: auto 1fr;
 grid-column: main-start / main-end;
 column-gap: 0.5rem;
-padding-right: 0;
-margin: 7rem 0 2rem;
+align-content: center;
+align-items: center;
 }
 
 .gh-article-sidebar .gh-author-image {
@@ -1595,6 +1593,11 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
+/* padding on lists */
+.gh-content li + li {
+padding-top: 4rem;
+}
+
 /* search aligned */
 @media screen and (min-width:640px) {
 .sm\:max-w-lg {
@@ -1744,7 +1747,7 @@ padding: 6rem 2rem;
 padding: 1.25em 1.5em;
 }
 .gh-content > blockquote:not([class]), .gh-content > dl, .gh-content > ol, .gh-content > ul {
-margin-bottom: 3.5rem;
+margin-bottom: 1rem;
 }
 
 .gh-content > blockquote {
