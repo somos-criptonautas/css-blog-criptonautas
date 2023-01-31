@@ -781,7 +781,7 @@ width: 100%;
 @media screen and (min-width: 992px) and (max-width: 1349px) {
 .is-head-b--a_n .gh-head-inner {
 row-gap: 0;
-grid-template-columns: 4fr 10fr;
+grid-template-columns: 6fr 2fr;
 }
 }
 @media screen and (min-width: 1350px) {
@@ -797,6 +797,11 @@ font-weight: 500;
 .gh-head-brand {
 display: flex;
 align-items: center;
+}
+@media screen and (max-width: 992px) {
+.actions-container {
+flex-direction: column;
+}
 }
 @media screen and (max-width: 1350px) {
 .gh-head-brand {
