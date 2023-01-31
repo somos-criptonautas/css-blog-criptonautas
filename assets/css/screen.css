@@ -191,7 +191,8 @@ line-height: 1.2;
 color: var(--color-white);
 }
 
-.gh-topic-grid .gh-card-excerpt {
+.gh-topic-grid .gh-card-excerpt,
+.gh-content p {
 font-family: var(--font-serif);
 font-size: 1.77rem;
 line-height: 1.77;
