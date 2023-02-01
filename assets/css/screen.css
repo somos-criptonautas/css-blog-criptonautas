@@ -842,7 +842,16 @@ display: none;
 margin-top: 36px;
 font-size: 2.4rem;
 }
-
+@media screen and (max-width: 991px) {
+.gh-article-sidebar {
+margin-top: 5rem;
+flex-direction: row-reverse;
+align-items: center;
+}
+.gh-article-sidebar a {
+padding-top: 0.33rem;
+}
+}
 .gh-article-sidebar {
 display: flex;
 grid-template-columns: auto 1fr;
@@ -1600,7 +1609,7 @@ background-color: var(--color-alert-error);
 /* Matenauta stuff */
 
 .kg-embed-card {
-max-width: 63xrem;
+max-width: 63rem;
 margin-left: auto;
 margin-right: auto;
 }
@@ -1836,6 +1845,10 @@ display: unset !important;
 .gh-content,
 .gh-article-excerpt {
 font-size: 2.25rem;
+}
+
+.gh-article-excerpt {
+margin-top: none;
 }
 
 @media screen and (min-width: 1500px) {
