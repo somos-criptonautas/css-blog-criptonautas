@@ -68,7 +68,7 @@ gap: 32px 40px;
 }
 
 body:not(.home-template) .gh-topic-grid .gh-topic-content {
-row-gap: 2rem;
+row-gap: 6.33rem;
 justify-items: center;
 }
 
@@ -192,9 +192,10 @@ color: var(--color-white);
 }
 
 .gh-topic-grid .gh-card-excerpt,
-.gh-content p {
+.gh-content p,
+.gh-author-bio .gh-pagehead-description {
 font-family: var(--font-serif);
-font-size: 1.77rem;
+font-size: 2rem;
 line-height: 1.77;
 }
 
@@ -339,9 +340,20 @@ top: calc(100% + 40px);
 top: 40px;
 }
 
+.gh-pagehead {
+margin: auto;
+  margin-bottom: auto;
+margin-bottom: 7.33rem;
+}
 .gh-author-image {
 position: relative;
-overflow: hidden;
+overflow: inherit;
+}
+.gh-author-image img {
+height: 11rem;
+width: 11rem;
+position: inherit;
+margin-bottom: 2.23rem;
 }
 .gh-author-image-page {
 position: inherit;
@@ -500,10 +512,13 @@ color: var(--color-link);
 
 .has-serif-body .gh-cover-description,
 .gh-content > p,
-.gh-content .kg-callout-card .kg-callout-text {
+.gh-content .kg-callout-card .kg-callout-text,
+.gh-content > blockquote {
 font-family: var(--font-serif);
 }
-
+.gh-content > ul {
+   font-family: var(--font-serif) !important;
+}
 .gh-content > p,
 .gh-content > ul,
 .gh-content > ol,
@@ -543,17 +558,21 @@ font-size: 1.6rem !important;
 .gh-pagehead {
 display: flex;
 flex-direction: column;
-max-width: 560px;
-margin-bottom: 40px;
+max-width: 623px;
+margin-bottom: 5rem;
+margin: auto;
+
 }
 
 .gh-pagehead-title {
 text-transform: uppercase;
 letter-spacing: -0.01em;
 }
-
+html[data-theme=dark] .gh-pagehead-title {
+opacity: 66% !important;
+}
 .gh-pagehead-description {
-margin-top: 1rem;
+margin: 1rem 0 5rem;
 font-size: 2rem;
 color: var(--color-secondary-text);
 }
@@ -627,7 +646,7 @@ padding: 11rem 0;
 
 @media screen and (min-width: 1200px) {
 .gh-foot {
-width: 80%;
+width: 66%;
 margin: auto;
 border: 2px solid var(--color-border);
 border-radius: 1.11rem;
@@ -1621,6 +1640,18 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
+html[data-theme=dark] hr {
+opacity: 33% !important;
+}
+.gh-topic-content .gh-feed {
+padding: 5rem 0;
+}
+.navicons {
+align-content: center;
+align-items: center;
+align-self: center;
+display: flex;
+}
 .kg-embed-card {
 max-width: 63rem;
 margin-left: auto;
@@ -1629,7 +1660,8 @@ margin-right: auto;
 
 /* padding on lists */
 .gh-content li + li {
-padding-top: 4rem;
+padding-top: 3rem;
+font-family: var(--font-serif);
 }
 
 /* search aligned */
@@ -1776,6 +1808,12 @@ padding: 6rem 2rem;
 .kg-callout-card {
    padding: 1rem 1.25rem;
 }
+}
+.gh-post-upgrade-cta {
+align-items: inherit;
+}
+.gh-post-upgrade-cta-content {
+padding: 0;
 }
 .kg-callout-card {
 padding: 1.25em 1.5em;
