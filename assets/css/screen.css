@@ -1094,9 +1094,6 @@ color: #f1f1f1 !important;
 background: #ed5107 !important;
 
 }
-html, body {
-overscroll-behavior-y: none;
-}
 html[data-intro="hide"] {
 --transform: translate(-120vw);
 --overflow-y: scroll;
