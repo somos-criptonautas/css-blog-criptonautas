@@ -51,12 +51,10 @@
 
         </article>
     {{/post}}
-
-    {{> "related-posts"}}
-
     {{#post}}
         {{> "comments"}}
     {{/post}}
+    {{> "related-posts"}}
 </main>
     {{#contentFor "scripts"}}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.18.2/tocbot.min.js"></script>

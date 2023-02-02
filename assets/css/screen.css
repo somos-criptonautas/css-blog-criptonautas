@@ -1640,6 +1640,15 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
+.comunidad-comments {
+padding: 6.11rem 3.11rem
+}
+
+@media screen and (max-width: 768px) {
+.gh-main {
+padding: 6rem 1rem;
+}
+}
 .gh-pagehead hr {
 margin-bottom:7.11rem;
 }
@@ -1681,8 +1690,8 @@ padding-top: 2rem !important;
 /* texts by matenauta */
 
 @media screen and (max-width: 768px) {
-    html {
-        font-size: 66%;  }
+html {
+font-size: 60%;  }
 }
 
 /*iPad Pro 9.7"*/
@@ -1692,7 +1701,7 @@ and (min-width: 768px)
 and (max-width: 1024px)
 and (orientation: portrait) {
    html {
-      font-size: 73%;  }
+      font-size: 63%;  }
 }
 
 /* Landscape */
@@ -1712,7 +1721,7 @@ and (min-width: 834px)
 and (max-width: 834px)
 and (orientation: portrait) {
    html {
-      font-size: 73%;  }
+      font-size: 53%;  }
 }
 
 /* Landscape */
@@ -1723,7 +1732,7 @@ and (min-width: 1112px)
 and (max-width: 1112px)
 and (orientation: landscape) {
    html {
-      font-size: 77%;  }
+      font-size: 66%;  }
 }
 /*ipad PRo 12.9"*/
 /* Portrait */
@@ -1734,21 +1743,15 @@ and (min-width: 1024px)
 and (max-width: 1024px)
 and (orientation: portrait) {
    html {
-      font-size: 73%;
+      font-size: 66%;
    }
 }
-
-/* Landscape */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media screen
-and (min-width: 1366px)
-and (max-width: 1366px)
-and (orientation: landscape) {
-   html {
-      font-size: 80%;
-     }
+@media screen and (min-width:1350) {
+html {
+font-size: 77%;
 }
+}
+
 a {
 color: var(--color-base);
 }
@@ -1761,11 +1764,6 @@ padding: 0;
 min-height: auto !important;
 }
 
-@supports(-webkit-text-security: circle) {
-   html {
-   font-size: medium !important;
-}
-}
 @media screen and (min-width: 1199px) {
 gh-subscribe-description {
 width: 87%;
@@ -1792,16 +1790,8 @@ line-height: 1.6rem;
 .kg-product-card .kg-product-card-description li + li, .kg-toggle-card li + li {
 margin-top: 1.5rem;
 }
-.gh-main {
-padding: 6rem 2rem;
-}
-@media screen and (max-width: 767px) {
-.gh-main {
-   padding: 5rem 1rem;
-}
 .kg-callout-card {
    padding: 1rem 1.25rem;
-}
 }
 .gh-post-upgrade-cta {
 align-items: inherit;
