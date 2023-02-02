@@ -90,7 +90,7 @@ z-index: 0;
 .gh-topic-grid .gh-card:not(.large) {
 width: 100%;
 max-width: 720px;
-padding-bottom: 5rem;
+padding-bottom: 1.11rem;
 margin: auto;
 }
 
@@ -646,7 +646,7 @@ padding: 11rem 0;
 
 @media screen and (min-width: 1200px) {
 .gh-foot {
-width: 66%;
+width: 87%;
 margin: auto;
 border: 2px solid var(--color-border);
 border-radius: 1.11rem;
@@ -1919,6 +1919,11 @@ padding: 0;
 .toc-list-item.is-active-li {
     list-style-type: none !important;
 }
+}
+@media screen and (min-width: 992px) and (max-width: 1089px) {
+   .gh-sidebar {
+   display: none;
+   }
 }
 @media screen and (min-width: 1090px) {
 .gh-sidebar {
