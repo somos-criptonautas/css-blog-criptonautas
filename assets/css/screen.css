@@ -533,7 +533,7 @@ font-size:2.5rem;
 .gh-article-meta {
 font-size: 1.75rem;
 }
-@media only screen and (max-width : 768px) {
+@media screen and (max-width : 768px) {
 .gh-content > p,
 .gh-content > ul,
 .gh-content > ol,
@@ -543,7 +543,7 @@ font-size: 1.75rem;
 font-size: 1.6rem !important;
 }
 }
-@media only screen and (min-width : 768px) and (max-width : 1024px)  {
+@media screen and (min-width : 768px) and (max-width : 1024px)  {
    .gh-content > p,
    .gh-content > ul,
    .gh-content > ol,
@@ -1680,77 +1680,70 @@ padding-top: 2rem !important;
 
 /*iPad Pro 9.7"*/
 /* Portrait */
-@media only screen
+@media screen
 and (min-width: 768px)
 and (max-width: 1024px)
 and (orientation: portrait)
 and (-webkit-min-device-pixel-ratio: 2) {
-   :root {
-      --content-font-size: 18px !important;
-  }
+   html {
+      font-size: 73%;  }
 }
 
 /* Landscape */
-@media only screen
+@media screen
 and (min-width: 768px)
 and (max-width: 1024px)
-and (orientation: landscape)
-and (-webkit-min-device-pixel-ratio: 2) {
-   :root {
-      --content-font-size: 18px !important;
-  }
+and (orientation: landscape) {
+html {
+   font-size: 80%;  }
 }
 /*iPad Pro 10.5"*/
 /* Portrait */
 /* Declare the same value for min- and max-width to avoid colliding with desktops */
 /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen
+@media screen
 and (min-width: 834px)
 and (max-width: 834px)
 and (orientation: portrait)
 and (-webkit-min-device-pixel-ratio: 2) {
-   :root {
-      --content-font-size: 18px !important;
-  }
+   html {
+      font-size: 73%;  }
 }
 
 /* Landscape */
 /* Declare the same value for min- and max-width to avoid colliding with desktops */
 /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen
+@media screen
 and (min-width: 1112px)
 and (max-width: 1112px)
 and (orientation: landscape)
 and (-webkit-min-device-pixel-ratio: 2) {
-   :root {
-      --content-font-size: 18px !important;
-  }
+   html {
+      font-size: 80%;  }
 }
 /*ipad PRo 12.9"*/
 /* Portrait */
 /* Declare the same value for min- and max-width to avoid colliding with desktops */
 /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen
+@media screen
 and (min-width: 1024px)
 and (max-width: 1024px)
 and (orientation: portrait)
 and (-webkit-min-device-pixel-ratio: 2) {
-   :root {
-      --content-font-size: 18px !important;
-  }
+   html {
+      font-size: 75%;  }
 }
 
 /* Landscape */
 /* Declare the same value for min- and max-width to avoid colliding with desktops */
 /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen
+@media screen
 and (min-width: 1366px)
 and (max-width: 1366px)
 and (orientation: landscape)
 and (-webkit-min-device-pixel-ratio: 2) {
-   :root {
-      --content-font-size: 18px !important;
-  }
+   html {
+      font-size: 80%;  }
 }
 a {
 color: var(--color-base);
