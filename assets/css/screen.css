@@ -1640,13 +1640,17 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
+.gh-pagehead hr {
+margin-bottom:7.11rem;
+}
+
 html[data-theme=dark] hr {
 opacity: 33% !important;
 }
 .gh-topic-content .gh-feed {
 padding: 5rem 0;
 }
-.navicons {
+.nav-icons {
 align-content: center;
 align-items: center;
 align-self: center;
@@ -1677,8 +1681,8 @@ padding-top: 2rem !important;
 /*iPad Pro 9.7"*/
 /* Portrait */
 @media only screen
-and (min-device-width: 768px)
-and (max-device-width: 1024px)
+and (min-width: 768px)
+and (max-width: 1024px)
 and (orientation: portrait)
 and (-webkit-min-device-pixel-ratio: 2) {
    :root {
@@ -1688,8 +1692,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
 /* Landscape */
 @media only screen
-and (min-device-width: 768px)
-and (max-device-width: 1024px)
+and (min-width: 768px)
+and (max-width: 1024px)
 and (orientation: landscape)
 and (-webkit-min-device-pixel-ratio: 2) {
    :root {
@@ -1701,8 +1705,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
 /* Declare the same value for min- and max-width to avoid colliding with desktops */
 /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
 @media only screen
-and (min-device-width: 834px)
-and (max-device-width: 834px)
+and (min-width: 834px)
+and (max-width: 834px)
 and (orientation: portrait)
 and (-webkit-min-device-pixel-ratio: 2) {
    :root {
@@ -1714,8 +1718,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
 /* Declare the same value for min- and max-width to avoid colliding with desktops */
 /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
 @media only screen
-and (min-device-width: 1112px)
-and (max-device-width: 1112px)
+and (min-width: 1112px)
+and (max-width: 1112px)
 and (orientation: landscape)
 and (-webkit-min-device-pixel-ratio: 2) {
    :root {
@@ -1727,8 +1731,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
 /* Declare the same value for min- and max-width to avoid colliding with desktops */
 /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
 @media only screen
-and (min-device-width: 1024px)
-and (max-device-width: 1024px)
+and (min-width: 1024px)
+and (max-width: 1024px)
 and (orientation: portrait)
 and (-webkit-min-device-pixel-ratio: 2) {
    :root {
@@ -1740,8 +1744,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
 /* Declare the same value for min- and max-width to avoid colliding with desktops */
 /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
 @media only screen
-and (min-device-width: 1366px)
-and (max-device-width: 1366px)
+and (min-width: 1366px)
+and (max-width: 1366px)
 and (orientation: landscape)
 and (-webkit-min-device-pixel-ratio: 2) {
    :root {
@@ -1879,7 +1883,7 @@ margin: 7rem auto;
 .gh-author-criptonaut {
 width: 70%;
 display: grid;
-margin: 7rem auto 5rem;
+margin: 7rem auto 11rem;
 }
 }
 .error-center {

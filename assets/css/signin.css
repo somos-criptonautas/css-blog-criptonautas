@@ -277,7 +277,7 @@ opacity: 1;
     color: var(--color-base);
 }
 .plan-item {
-    font-size: 36px;
+    font-size: 3.5rem;
     line-height: 1.4;
     color: var(--color-base);
     margin-bottom: 0;
