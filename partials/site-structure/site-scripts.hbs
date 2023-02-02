@@ -52,17 +52,9 @@ if (previousPosition > navbar2Height) {
 window.onscroll = function() {
   
     var currentPosition = window.pageYOffset;
-    var velocity = previousPosition - currentPosition;
 
-    if (velocity > 35 || currentPosition < navbarHeight) {
-      remClass(navbar, 'headroom');
-      remClass(navbar2, 'headroom');
-    } else if (velocity < 0) {
       addClass(navbar, 'headroom');
       addClass(navbar2, 'headroom');
-    }
-
-    previousPosition = currentPosition;
 };
 </script>
 <script>
