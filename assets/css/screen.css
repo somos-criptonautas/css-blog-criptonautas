@@ -831,7 +831,7 @@ font-weight: 500;
 display: flex;
 align-items: center;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
 .actions-container {
 flex-direction: column;
 }
@@ -1952,7 +1952,6 @@ font-size: 1.11rem;
 padding-left: 1rem;
 }
 
-.headroom { top: -5em !important; }
 .navbar {
 -webkit-transition: top 0.75s; 
 -o-transition: top 0.75s; 
@@ -2114,7 +2113,7 @@ font-size: 3.33rem;
 background-color: var(--color-base);
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
    .gh-head-logo {
    display:none;
    }
@@ -2176,8 +2175,11 @@ grid-column: 1;
 }
 }
 .gh-head {
-   padding: 2rem 3rem;
-   overflow: hidden;
+overflow: hidden !important;
+}
+
+.gh-head-inner .gh-inner {
+   padding: 1rem 2rem;
 }
 .is-head-open #gh-head .gh-head-menu {
 display: contents;
