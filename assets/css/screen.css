@@ -1678,13 +1678,19 @@ font-family: var(--font-serif);
 padding-top: 2rem !important;
 }
 
+/* texts by matenauta */
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 77%;  }
+}
+
 /*iPad Pro 9.7"*/
 /* Portrait */
 @media screen
 and (min-width: 768px)
 and (max-width: 1024px)
-and (orientation: portrait)
-and (-webkit-min-device-pixel-ratio: 2) {
+and (orientation: portrait) {
    html {
       font-size: 73%;  }
 }
@@ -1704,8 +1710,7 @@ html {
 @media screen
 and (min-width: 834px)
 and (max-width: 834px)
-and (orientation: portrait)
-and (-webkit-min-device-pixel-ratio: 2) {
+and (orientation: portrait) {
    html {
       font-size: 73%;  }
 }
@@ -1716,8 +1721,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 @media screen
 and (min-width: 1112px)
 and (max-width: 1112px)
-and (orientation: landscape)
-and (-webkit-min-device-pixel-ratio: 2) {
+and (orientation: landscape) {
    html {
       font-size: 80%;  }
 }
@@ -1728,10 +1732,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
 @media screen
 and (min-width: 1024px)
 and (max-width: 1024px)
-and (orientation: portrait)
-and (-webkit-min-device-pixel-ratio: 2) {
+and (orientation: portrait) {
    html {
-      font-size: 75%;  }
+      font-size: 75%;
+   }
 }
 
 /* Landscape */
@@ -1740,10 +1744,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
 @media screen
 and (min-width: 1366px)
 and (max-width: 1366px)
-and (orientation: landscape)
-and (-webkit-min-device-pixel-ratio: 2) {
+and (orientation: landscape) {
    html {
-      font-size: 80%;  }
+      font-size: 80%;
+     }
 }
 a {
 color: var(--color-base);
@@ -1761,13 +1765,6 @@ min-height: auto !important;
    html {
    font-size: medium !important;
 }
-}
-@media screen and (max-width: 1199px) {
-body {
-   -webkit-text-size-adjust: 83%;
-   -moz-text-size-adjust: 83%;
-   -ms-text-size-adjust: 83%;
-   }
 }
 @media screen and (min-width: 1199px) {
 gh-subscribe-description {
