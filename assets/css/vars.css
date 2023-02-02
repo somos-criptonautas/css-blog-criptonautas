@@ -3,7 +3,7 @@
 
 @media screen and (-webkit-min-device-pixel-ratio:0) { 
     html {
-        font-size: 70%;
+        font-size: 70% !important;
       }
 }
 
