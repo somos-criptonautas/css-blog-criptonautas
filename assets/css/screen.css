@@ -1637,6 +1637,8 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
+
+
 .comunidad-comments {
 padding: 6.11rem 3.11rem
 }
@@ -1930,6 +1932,9 @@ padding: 0;
     align-self: flex-start;
     width: 50%;
 }
+.kg-width-full img {
+   width: 90%;
+   }
 }
 @media screen and (min-width: 992px) and (max-width: 1249px) {
 .gh-head-actions {
