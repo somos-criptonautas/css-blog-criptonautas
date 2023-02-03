@@ -68,7 +68,7 @@ gap: 2.33rem 4.11rem;
 }
 
 body:not(.home-template) .gh-topic-grid .gh-topic-content {
-row-gap: 6.33rem;
+row-gap: 4.23rem;
 justify-items: center;
 }
 
@@ -90,7 +90,7 @@ z-index: 0;
 .gh-topic-grid .gh-card:not(.large) {
 width: 100%;
 max-width: 720px;
-padding-bottom: 1.11rem;
+padding-bottom: 3.11rem;
 margin: auto;
 }
 
@@ -774,6 +774,7 @@ grid-template-columns: 1fr;
 
 .gh-topic-grid .gh-card.large {
 grid-column: auto;
+padding-bottom: 4.23rem;
 }
 
 .gh-topic-grid .gh-card:not(.featured).large .gh-card-link {
@@ -1630,6 +1631,9 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
+.gh-card-header h3 {
+padding-bottom: 1rem;
+}
 #gh-head .nav li,
 .is-head-open #gh-head .nav li {
 transform: none;
@@ -1845,11 +1849,18 @@ flex-direction: column;
    visibility: visible;
 }
 }
-
-@media screen and (max-width:991px) {
 .gh-author-criptonaut {
-display: flow-root;
-margin: 4.23rem 2.11rem;
+   display: flow-root;
+   margin: 4.23rem auto 2.11rem;
+}
+@media screen and (max-width:767px) {
+   .gh-author-criptonaut {
+      width: 90%;
+   }
+}
+@media screen and (min-width: 768px) and (max-width:991px) {
+.gh-author-criptonaut {
+width: 75%;
 }
 .gh-article-excerpt {
 font-size: 2rem !important;
