@@ -5,11 +5,11 @@
         {{#author}}
             <section class="gh-pagehead">
                 <figure class="gh-author-image">
-                    {{#if profile_image}}
-                        <img src="{{profile_image}}" alt="{{name}}">
-                    {{else}}
-                        <div class="gh-author-icon">{{> icons/avatar}}</div>
-                    {{/if}}
+                {{#if profile_image}}
+                    <a class="author-name-page" href="{{url}}"><img src="{{profile_image}}" alt="{{name}}"></a>
+                {{else}}
+                    <a class="author-name" href="{{url}}"><div class="gh-author-icon">{{> icons/avatar}}</div></a>
+                {{/if}}
                 </figure>
 
                 <div class="gh-pagehead-content center">

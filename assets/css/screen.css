@@ -763,7 +763,7 @@ width: 160px;
 }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1349px) {
 .gh-head-description {
 display: none;
 }
@@ -815,7 +815,7 @@ grid-template-columns: 3fr 8fr 4fr;
 }
 }
 .gh-head-inner {
-padding: 0;
+padding-top: 1.11rem;
 font-weight: 500;
 }
 .actions-container,
@@ -840,9 +840,12 @@ font-size: 3rem;
 .is-head-open.gh-head-btn.gh-btn {
 display: none;
 }
+.gh-head-btn.gh-btn {
+min-width: 18rem;
+}
 }
 .gh-head-btn.gh-btn {
-font-size: inherit;
+font-size: 2.11rem;
 padding: 1rem 2rem;
 z-index: 0;
 margin-right: 2rem;
