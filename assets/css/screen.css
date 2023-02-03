@@ -142,7 +142,7 @@ content: "";
 }
 
 .gh-topic-grid .gh-card.large .gh-card-image::before {
-padding-bottom: 60% !important;
+padding-bottom: 50% !important;
 }
 
 .gh-topic-grid .gh-card.featured.large .gh-card-image {
@@ -196,7 +196,7 @@ color: var(--color-white);
 .gh-author-bio .gh-pagehead-description {
 font-family: var(--font-serif);
 font-size: 2rem;
-line-height: 1.77;
+line-height: 1.7;
 }
 
 .gh-topic-grid .gh-card.no-image.large .gh-card-excerpt {
@@ -279,6 +279,7 @@ display: block;
 font-weight: 600;
 line-height: 1.33;
 letter-spacing: -0.01em;
+font-size: 2.5rem;
 }
 
 .gh-topic-minimal .gh-card + .gh-card {
@@ -330,6 +331,7 @@ width: 100%;
 
 .has-wide-image .gh-article-image {
 grid-column: wide-start / wide-end;
+margin-bottom: 5rem;
 }
 
 .has-wide-image .gh-article-sidebar {
@@ -408,7 +410,7 @@ margin-left: 20vh;
 }
 .gh-read-next .gh-pagehead {
 max-width: none;
-margin-bottom: 3rem;
+margin-bottom: 6rem;
 }
 
 .gh-read-next .gh-pagehead-title::after {
@@ -532,7 +534,7 @@ font-size: 1.75rem;
 .gh-content .kg-callout-card .kg-callout-text, .gh-content .kg-toggle-card .kg-toggle-content > ol, .gh-content .kg-toggle-card .kg-toggle-content > p, .gh-content .kg-toggle-card .kg-toggle-content > ul,
 .gh-topic-grid .gh-card:not(.large) .gh-card-excerpt,
 .gh-content > blockquote:not([class]), .gh-content > dl, .gh-content > ol, .gh-content > ul {
-font-size: 1.6rem !important;
+font-size: 1.7rem !important;
 }
 }
 @media screen and (min-width : 768px) and (max-width : 1024px)  {
@@ -734,9 +736,6 @@ display: none;
 
 .gh-card:not(.large) .gh-card-footer {
 margin-top: 8px;
-}
-.gh-topic-grid .gh-card:not(.large) {
-margin-top: 7rem;
 }
 .gh-topic-grid .gh-card:not(.large) :where(.gh-card-author, .gh-card-footer-sep) {
 display: none;
@@ -1642,12 +1641,13 @@ max-width: 777px;
 }
 
 .comunidad-comments {
-padding: 6.11rem 3.11rem
+padding: 6.11rem 3.11rem;
+margin-bottom: 6.11rem;
 }
 
 @media screen and (max-width: 768px) {
 .gh-main {
-padding: 6rem 0;
+padding: 5rem 0;
 }
 }
 .gh-pagehead hr {
@@ -1849,7 +1849,7 @@ flex-direction: column;
 @media screen and (max-width:991px) {
 .gh-author-criptonaut {
 display: flow-root;
-margin: 7rem 3.5rem;
+margin: 4.23rem 2.11rem;
 }
 .gh-article-excerpt {
 font-size: 2rem !important;
