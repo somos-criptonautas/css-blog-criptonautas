@@ -401,9 +401,6 @@ background-color: currentColor;
 border-radius: 50%;
 }
 
-.gh-read-next {
-margin-top: 23vh;
-}
 @media screen and (min-width: 1700px){
 .gh-read-next {
 margin-left: 20vh;
@@ -412,11 +409,6 @@ margin-left: 20vh;
 .gh-read-next .gh-pagehead {
 max-width: none;
 margin-bottom: 3rem;
-}
-
-.gh-read-next .gh-pagehead-title {
-   margin: auto;
-   padding-bottom: 3.11rem;
 }
 
 .gh-read-next .gh-pagehead-title::after {
@@ -1639,6 +1631,11 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
+#gh-head .nav li,
+.is-head-open #gh-head .nav li {
+transform: none;
+}
+
 blockquote.twitter-tweet {
 font-size: 133%;
 max-width: 777px;
@@ -1650,7 +1647,7 @@ padding: 6.11rem 3.11rem
 
 @media screen and (max-width: 768px) {
 .gh-main {
-padding: 6rem 1rem;
+padding: 6rem 0;
 }
 }
 .gh-pagehead hr {
@@ -1695,7 +1692,8 @@ padding-top: 2rem !important;
 
 @media screen and (max-width: 768px) {
 html {
-font-size: 60%;  }
+font-size: 60% !important;
+}
 }
 
 /*iPad Pro 9.7"*/

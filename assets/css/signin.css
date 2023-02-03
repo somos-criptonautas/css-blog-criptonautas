@@ -158,6 +158,15 @@ html[data-theme=dark].single-input .form-control:focus {
 .single-input .form-control:-ms-input-placeholder { 
     color: var(--color-base);
 }
+@media screen and (max-width: 991px) {
+    .subscribe-form {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .subscribe-form input {
+    margin-bottom: 2rem;
+    }
+}
 .subscribe-form {
 display: flex;
 flex-wrap: nowrap;
