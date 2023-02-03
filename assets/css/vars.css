@@ -1,7 +1,7 @@
 /* Variables
 /* ---------------------------------------------------------- */
 
-@media screen and (-webkit-min-device-pixel-ratio:0) and { 
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
     html {
         font-size: 62.5% !important;
       }

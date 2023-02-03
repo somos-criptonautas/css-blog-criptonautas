@@ -131,7 +131,7 @@ flex: 1;
 .gh-topic-grid .gh-card-image {
 position: relative;
 flex-shrink: 0;
-width: 33vh;
+width: 25vh;
 height: 100%;
 }
 
@@ -1637,10 +1637,6 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
-.gh-canvas {
-   display: grid;
-   grid-template-columns: [full-start] minmax(var(--gap),auto) [wide-start] minmax(auto,calc((var(--container-width, 1200px) - var(--content-width, 720px))/2)) [main-start] min(var(--content-width,720px),calc(100% - var(--gap)*2)) [main-end] minmax(auto,calc((var(--container-width, 1200px) - var(--content-width, 720px))/2)) [wide-end] minmax(var(--gap),auto) [full-end];
-}
 .comunidad-comments {
 padding: 6.11rem 3.11rem
 }
@@ -1955,6 +1951,7 @@ font-weight: 600;
 font-size: 1.11rem;
 padding-left: 1rem;
 }
+
 
 .navbar {
 -webkit-transition: top 0.75s; 
