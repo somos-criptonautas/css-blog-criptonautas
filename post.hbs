@@ -29,6 +29,7 @@
                     </figure>
                 {{/if}}
             </header>
+            {{#is "post"}}
     <div class="gh-author-criptonaut">
                         {{#if custom_excerpt}}
                     <p class="gh-article-excerpt">{{custom_excerpt}}</p>
@@ -36,6 +37,7 @@
 
                 {{> "post-meta"}}
     </div>
+            {{/is}}
     <div class="gh-full-content">
 <aside class="gh-sidebar" id="sidebar-toc">
                 {{#if reading_time}}
