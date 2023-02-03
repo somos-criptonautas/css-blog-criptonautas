@@ -1637,7 +1637,10 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
-
+blockquote.twitter-tweet {
+font-size: 133%;
+max-width: 777px;
+}
 
 .comunidad-comments {
 padding: 6.11rem 3.11rem

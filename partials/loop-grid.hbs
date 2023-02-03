@@ -19,8 +19,7 @@
             <header class="gh-card-header">
                 <h3 class="gh-card-title">{{title}}</h3>
             </header>
-        </div>
- <div lass="gh-card-display">
+
             {{#if excerpt}}
                 {{#is "home"}}
                     {{#has index="0"}}
@@ -37,7 +36,7 @@
                 {{#if @site.comments_enabled}}
                     {{comment_count class="gh-card-comments"}}
                 {{/if}}
-            </footer></div>
+            </footer>
+        </div>
     </a>
-    </div>
 </article>
