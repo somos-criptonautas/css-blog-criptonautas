@@ -30,11 +30,13 @@
     {{#post}}
         <article class="gh-article {{post_class}}">
             <header class="gh-article-header gh-canvas">
-                {{> "post-meta"}}
-
-                {{#if custom_excerpt}}
+    <div class="gh-author-criptonaut">
+                        {{#if custom_excerpt}}
                     <p class="gh-article-excerpt">{{custom_excerpt}}</p>
                 {{/if}}
+
+                {{> "post-meta"}}
+    </div>
             </header>
 
             <section class="gh-content gh-canvas">
