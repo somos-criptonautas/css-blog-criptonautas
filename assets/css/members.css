@@ -95,7 +95,9 @@ display: none !important;
     color: var(--color-secondary);
     display: none;
 }
-
+.message-error bold {
+font-weight: 500;
+}
 form[data-members-form] .it-button {
     position: relative;
     min-width: 120px;

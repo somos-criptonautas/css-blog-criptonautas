@@ -20,8 +20,8 @@
 	"Don't have an account yet?": "Primera vez?",
 	"Sign up": "Comienza gratis",
 	"Great! Check your inbox and click the link to complete signin": "¡Excelente! Revise su bandeja de entrada y haga clic en el enlace para completar el inicio de sesión",
-	"Please enter a valid email address!": "Oops! Algo no funciona como debería. Revisas tu dirección o <a href='https://discord.criptonautas.co' target='_blank' rel='noopener'>nos buscas en Discord</a>? 🙂",
-	"Your first time": "<a href='/registro'>Sumate</a> si es tu primera vez 🏄",
+	"Please enter a valid email address!": "Oops, no pudimos avanza. Revisas tu dirección o nos escribes al chat? 🙂",
+	"Follow the link": "-> Sigue este enlace si recién llegas",
 	"Choose your subscription": "Elija su suscripción",
 	"Unlock full access to {sitetitle} to get premium contents & updates": "Desbloquea el acceso completo a {sitetitle} para obtener contenidos y actualizaciones premium",
 	"Monthly": "Mensual",
@@ -139,7 +139,7 @@
 	"Please check our last articles": "Puedes ver nuestros últimos artículos 😬",
 	"First level subscription": "Tienes acceso libre a nuestros artículos gratuitos",
 	"Padawans description": "Trading en cripto para personas, desde personas.",
-	"Start free": "Descubre cómo salir de La Matrix",
+	"Start free": "Descubre cómo salir de La Matrix.",
 	"Account details": "Estos son tus datos",
 	"Sign out": "Salir"
 }
