@@ -1,11 +1,10 @@
 {{#is "post"}}
-<div class ="comunidad-comments">
-        <div class="gh-comments">
-                <h1 class="gh-pagehead-title"></h1>
                 {{#if @member.paid}}
                 {{else}}
+<div class ="comunidad-comments">
+        <div class="gh-comments">
+                <h2 class="gh-pagehead-title"></h2>
                 <div id='discourse-comments'></div>
-                {{/if}}
                 <script type="text/javascript">
                     window.DiscourseEmbed = {
                         discourseUrl: 'https://comunidad.criptonautas.co/',
@@ -23,4 +22,5 @@
 </script>
         </div>
         </div>
+{{/if}}
 {{/is}}

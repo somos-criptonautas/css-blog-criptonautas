@@ -95,7 +95,7 @@ margin: auto;
 }
 
 .gh-topic-grid .gh-card:not(:only-child).large {
-padding: 0;
+padding-bottom: 4.23rem;
 }
 
 .gh-topic-grid .gh-card-link {
@@ -2342,7 +2342,7 @@ background-color: var(--color-bg) !important;
 height: 100vh;
 }
 .is-head-brand:not(.is-head-transparent) .gh-head .nav a, .is-head-brand:not(.is-head-transparent) .gh-head-description, .is-head-brand:not(.is-head-transparent) .gh-head-logo, .is-head-brand:not(.is-head-transparent) .gh-search {
-color: var(--color-base);
+color: var(--color-base) !important;
 }
 
 .is-head-brand:not(.is-head-transparent) .gh-head-btn {
