@@ -560,7 +560,8 @@ margin: auto;
 
 .gh-pagehead-title {
 text-transform: uppercase;
-letter-spacing: -0.01em;   
+letter-spacing: -0.01em;
+font-size: 4rem;
 }
 html[data-theme=dark] .gh-pagehead-title {
 opacity: 66% !important;
