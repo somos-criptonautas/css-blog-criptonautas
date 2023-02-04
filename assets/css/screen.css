@@ -1856,6 +1856,9 @@ flex-direction: column;
    display: flow-root;
    margin: 4.23rem auto 2.11rem;
 }
+.page-chat .gh-author-criptonaut {
+display: none;
+}
 @media screen and (max-width:767px) {
    .gh-author-criptonaut {
       width: 90%;
@@ -2271,7 +2274,7 @@ background-color: var(--color-light-gray);
 opacity: .77;
 top: 1.5rem;
 border-radius: 0.5rem;
-z-index:11;
+z-index: 11;
 }
 
 @media screen and (max-width: 991px) {
