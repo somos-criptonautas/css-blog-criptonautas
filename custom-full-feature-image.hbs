@@ -27,8 +27,7 @@
 {{/post}}
 
 <main class="gh-main">
-    {{#post}}
-    {{^is "page"}}
+    {{is "post"}}
         <article class="gh-article {{post_class}}">
             <header class="gh-article-header gh-canvas">
             </header>
@@ -40,6 +39,7 @@
                 {{> "post-meta"}}
                 </div>
     {{/is}}
+    {{#post}}
     <div class="gh-full-content">
 <aside class="gh-sidebar" id="sidebar-toc">
                 {{#if reading_time}}
