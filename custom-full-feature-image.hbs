@@ -25,7 +25,7 @@
         </section>
     {{/if}}
 {{/post}}
-
+    {{#post}}
 <main class="gh-main">
     {{is "post"}}
         <article class="gh-article {{post_class}}">
@@ -39,7 +39,6 @@
                 {{> "post-meta"}}
                 </div>
     {{/is}}
-    {{#post}}
     <div class="gh-full-content">
 <aside class="gh-sidebar" id="sidebar-toc">
                 {{#if reading_time}}
