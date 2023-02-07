@@ -1655,7 +1655,7 @@ margin-bottom: 6.11rem;
 
 @media screen and (max-width: 768px) {
 .gh-main {
-padding: 5rem 0;
+padding: 5rem 1rem;
 }
 }
 .gh-pagehead hr {
@@ -1700,7 +1700,7 @@ padding-top: 2rem !important;
 
 @media screen and (max-width: 768px) {
 html {
-font-size: 60% !important;
+font-size: 63% !important;
 }
 }
 
@@ -1711,7 +1711,7 @@ and (min-width: 768px)
 and (max-width: 1024px)
 and (orientation: portrait) {
    html {
-      font-size: 63%;  }
+      font-size: 67%;  }
 }
 
 /* Landscape */
@@ -1742,7 +1742,7 @@ and (min-width: 1112px)
 and (max-width: 1112px)
 and (orientation: landscape) {
    html {
-      font-size: 66%;  }
+      font-size: 67%;  }
 }
 /*ipad PRo 12.9"*/
 /* Portrait */
@@ -1753,7 +1753,7 @@ and (min-width: 1024px)
 and (max-width: 1024px)
 and (orientation: portrait) {
    html {
-      font-size: 66%;
+      font-size: 67%;
    }
 }
 @media screen and (min-width:1350) {
@@ -1901,10 +1901,6 @@ display: unset !important;
 .gh-content,
 .gh-article-excerpt {
 font-size: 2.25rem;
-}
-
-.gh-article-excerpt {
-margin-top: none;
 }
 
 @media screen and (min-width: 1500px) {
@@ -2329,7 +2325,6 @@ display: flex;
 @media screen and (min-width: 992px) {
 #gh-head .nav a,
 #gh-head .gh-head-btn {
-font-size: 2.33rem;
 font-weight: 500;
 }
 .is-head-open #gh-head .gh-head-inner {
@@ -2357,13 +2352,9 @@ background-color: var(--color-primary);
 color: white;
 font-weight: 500;
 }
-.gh-main .gh-outer {
-padding: 6rem 2rem 0;
-}
-@media screen and (max-width: 991px){
-.gh-main .gh-outer {
-padding: 6rem 5vh 0;
-}
+.gh-outer {
+padding-left: var(--gap) !important;
+padding-right: var(--gap) !important;
 }
 .gh-foot .gh-outer {
 opacity: 0.77;
