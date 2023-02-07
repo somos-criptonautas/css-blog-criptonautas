@@ -29,14 +29,15 @@
                     </figure>
                 {{/if}}
             </header>
-            {{#is "post"}}
     <div class="gh-author-criptonaut">
                         {{#if custom_excerpt}}
                     <p class="gh-article-excerpt">{{custom_excerpt}}</p>
                 {{/if}}
+
                 {{> "post-meta"}}
     </div>
     <div class="gh-full-content">
+{{^is "page"}}
 <aside class="gh-sidebar" id="sidebar-toc">
                 {{#if reading_time}}
                 <h3>
@@ -44,18 +45,14 @@
                 </h3>
                 {{/if}}
             <div class="toc">
-            </div></aside>
+            </div>
+</aside>
             <section class="gh-content gh-canvas toc-content">
             {{content}}
             </section>
+{{/is}}
+</div>
         </article>
-            {{else}}
-            <section class="gh-content gh-canvas">
-            {{content}}
-            </section>
-        </article>
-            {{/is}}
-    {{/post}}
     {{#post}}
         {{> "comments"}}
     {{/post}}
