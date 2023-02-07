@@ -1,7 +1,7 @@
 {{!< default}}
 
 <main class="gh-main">
-    {{#post}}
+    {{#is "post"}}
         <article class="gh-article {{post_class}}">
             <header class="gh-article-header gh-canvas">
                 {{#if feature_image}}
@@ -28,7 +28,6 @@
 
                 <h1 class="gh-article-title">{{title}}</h1>
             </header>
-    {{#is "post"}}
     <div class="gh-author-criptonaut">
                         {{#if custom_excerpt}}
                     <p class="gh-article-excerpt">{{custom_excerpt}}</p>

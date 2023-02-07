@@ -15,8 +15,8 @@ display: inline-block;
 padding: .5rem;
 }
 .it-foot-social a svg {
-    height: 3rem;
-    height: 3rem;
+    height: 3.23rem;
+    height: 3.23rem;
 }
     .it-foot-social a {
     color: var(--color-base);
@@ -28,12 +28,8 @@ padding: .5rem;
 fill: var(--color-base);
 }
 .it-foot-social a.rss svg {
-width: 3.47rem;
-height: 3.47rem;
-}
-.it-foot-social a.github svg {
-width: 2.77rem;
-height: 2.77rem;
+width: 3.77rem;
+height: 3.77rem;
 }
 @media screen and (max-width: 767px) {
     .it-foot-menu {width: 2.3rem;

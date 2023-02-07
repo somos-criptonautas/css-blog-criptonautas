@@ -2245,13 +2245,13 @@ color: var(--color-base);
 body.page-template {
 background: var(--color-bg);
 }
-body.page-template.page-registro,
-body.page-template.page-ingreso {
+body.page-template.page-empieza,
+body.page-template.page-ingresa {
 background: linear-gradient(315deg,#f1f1f1,#fff);
 }
 
-html[data-theme=dark] body.page-template.page-registro,
-html[data-theme=dark] body.page-template.page-ingreso {
+html[data-theme=dark] body.page-template.page-empieza,
+html[data-theme=dark] body.page-template.page-ingresa {
 background: linear-gradient(315deg,#1C2128,#22272e) !important;
 }
 
