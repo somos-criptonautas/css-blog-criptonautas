@@ -148,7 +148,7 @@ padding-bottom: 50% !important;
 .gh-topic-grid .gh-card.featured.large .gh-card-image {
 position: absolute;
 inset: 0;
-z-index: -1;
+z-index: 0;
 width: 100%;
 }
 
@@ -168,6 +168,7 @@ opacity: 1 !important;
 }
 .gh-topic-grid .gh-card.featured.large .gh-card-wrapper {
 max-width: 560px;
+z-index: 1;
 }
 
 .gh-topic-grid .gh-card-title {
