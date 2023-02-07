@@ -445,8 +445,9 @@ position: absolute;
 inset: 0;
 content: "";
 background-color: var(--color-black);
-opacity: 0.3;
+opacity: 0.51;
 transition: opacity 1.5s ease;
+z-index: 1;
 }
 
 .post-template .gh-cover.loading::before {
@@ -456,6 +457,7 @@ opacity: 1;
 .post-template .gh-cover-image {
 transition: transform 1.5s ease;
 transform: scale(1);
+z-index: 0;
 }
 
 .post-template .gh-cover.loading .gh-cover-image {
@@ -478,6 +480,7 @@ align-items: flex-start;
 max-width: 1200px;
 margin-bottom: 64px;
 text-align: left;
+z-index: 1;
 }
 
 .gh-cover-content .gh-article-tag {
@@ -808,12 +811,12 @@ width: 100%;
 @media screen and (min-width: 992px) and (max-width: 1349px) {
 .is-head-b--a_n .gh-head-inner {
 row-gap: 0;
-grid-template-columns: 4fr 2fr;
+grid-template-columns: 4fr 3fr;
 }
 }
 @media screen and (min-width: 1350px) {
 .is-head-b--a_n .gh-head-inner {
-grid-template-columns: 3fr 8fr 4fr;
+grid-template-columns: 3fr 8fr 5fr;
 }
 }
 .gh-head-inner {
@@ -1014,6 +1017,17 @@ margin: 40px auto 0px;
 }
 
 /* End of toc */
+
+.is-head-transparent .gh-icon-btn {
+color: var(--color-white);
+}
+.is-head-transparent .gh-icon-btn:hover,
+.gh-icon-btn svg:active, .gh-icon-btn svg:hover {
+fill: var(--color-white);
+}
+.is-head-transparent .nav-current, ul.nav li:hover {
+box-shadow: 0 -3px 0 0 var(--color-white) inset;
+}
 
 .gh-icon-btn,
 .feather {
@@ -1656,7 +1670,7 @@ margin-bottom: 6.11rem;
 
 @media screen and (max-width: 768px) {
 .gh-main {
-padding: 5rem 1rem;
+padding: 5rem 0;
 }
 }
 .gh-pagehead hr {
@@ -2369,7 +2383,7 @@ border-radius: var(--radius);
 }
 ul.nav li:hover,
 .nav-current {
-box-shadow: 0 -2px 0 0 var(--color-base) inset;
+box-shadow: 0 -3px 0 0 var(--color-base) inset;
 }
 h1, h2, h3, h4, h5, h6 {
 color: var(--color-base);
