@@ -34,7 +34,6 @@
                         {{#if custom_excerpt}}
                     <p class="gh-article-excerpt">{{custom_excerpt}}</p>
                 {{/if}}
-
                 {{> "post-meta"}}
     </div>
     <div class="gh-full-content">
@@ -48,12 +47,14 @@
             </div></aside>
             <section class="gh-content gh-canvas toc-content">
             {{content}}
+            </section>
+        </article>
             {{else}}
             <section class="gh-content gh-canvas">
             {{content}}
-            {{/is}}
             </section>
         </article>
+            {{/is}}
     {{/post}}
     {{#post}}
         {{> "comments"}}
