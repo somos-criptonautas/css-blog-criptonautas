@@ -381,6 +381,10 @@ background-color: var(--color-light-gray);
 font-size: 3rem;
 letter-spacing: -0.01em;
 }
+.gh-author-name-full {
+   font-size: 2.5rem;
+   letter-spacing: -0.01em;
+}
 
 .gh-article-meta {
 font-size: 2rem;
