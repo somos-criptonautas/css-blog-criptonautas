@@ -1,37 +1,34 @@
 {{!< default}}
 
-{{#post}}
+<main class="gh-main gh-outer">
+    <div class="gh-inner">
+        {{#author}}
+            <section class="gh-pagehead">
+                <figure class="gh-author-image">
+                {{#if profile_image}}
+                    <a class="author-name-page" href="{{url}}"><img src="{{profile_image}}" alt="{{name}}"></a>
+                {{else}}
+                    <a class="author-name" href="{{url}}"><div class="gh-author-icon">{{> icons/avatar}}</div></a>
+                {{/if}}
+                </figure>
 
-<main id="site-main" class="site-main outer" role="main">
-  <div class="inner">
-    <header class="post-full-header">
-      <h1 class="post-full-title">{{title}}</h1>
-    </header>
+                <div class="gh-pagehead-content center">
+                    <h2 class="gh-pagehead-title">{{name}}</h2>
 
-    {{#get 'authors' limit='all' include='count.posts' order='count.posts desc'}}
-      <div class="post-feed">
-        {{#foreach authors}}
-          <article class="post-card {{#unless profile_image}} no-image{{/unless}}">
-            {{#if profile_image}}
-              <a class="post-card-image-link" href="{{url}}">
-                <div class="post-card-image" style="background-image: url({{profile_image}})"></div>
-              </a>
-            {{/if}}
-            <div class="post-card-content">
-              <a class="post-card-content-link" href="{{url}}">
-                <header class="post-card-header">
-                  <h2 class="post-card-title">{{name}}</h2>
-                </header>
-                <section class="post-card-excerpt">
-                  <p>{{bio}}</p>
-                </section>
-              </a>
+                    {{#if bio}}
+                        <div class="gh-author-bio gh-pagehead-description">{{bio}}</div>
+                    {{/if}}
+                </div>
+                <hr>
+            </section>
+        {{/author}}
+
+        <div class="gh-topic gh-topic-grid">
+            <div class="gh-topic-content gh-feed">
+                {{#foreach posts limit="all"}}
+                    {{> "loop-grid"}}
+                {{/foreach}}
             </div>
-          </article>
-        {{/foreach}}
-      </div>
-    {{/get}}
-  </div>
+        </div>
+    </div>
 </main>
-
-{{/post}}
