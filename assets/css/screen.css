@@ -990,6 +990,9 @@ opacity: 1;
 .gh-sidebar h3 {
 padding: 1rem;
 }
+.gh-sidebar {
+display: none;
+}
 @media screen and (max-width: 991px) {
 .gh-sidebar {
 background-color: var(--color-border);
