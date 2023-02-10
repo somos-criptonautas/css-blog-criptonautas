@@ -1655,6 +1655,10 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
+.white {
+color: var(--color-white);
+}
+
 .gh-card-header h3 {
 padding-bottom: 1rem;
 }

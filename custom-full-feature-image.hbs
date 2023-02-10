@@ -21,7 +21,6 @@
                 {{/if}}
 
                 <h1 class="gh-cover-title">{{title}}</h1>
-                {{> "post-meta-full"}}
             </div>
         </section>
     {{/if}}
@@ -34,8 +33,9 @@
                         {{#if custom_excerpt}}
                     <p class="gh-article-excerpt">{{custom_excerpt}}</p>
                 {{/if}}
-                </div>
+                {{> "post-meta"}}
 
+                </div>
     <div class="gh-full-content">
 <aside class="gh-sidebar" id="sidebar-toc" hidden>
                 {{#if reading_time}}
