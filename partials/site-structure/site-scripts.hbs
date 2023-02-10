@@ -65,3 +65,24 @@ window.onscroll = function() {
     })
 </script>
         {{/is}}
+        {{^is "post"}}
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.18.2/tocbot.min.js"></script>
+    <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            tocbot.init({
+                tocSelector: '.toc',
+                contentSelector: '.toc-content',
+                headingSelector: 'h1',
+                hasInnerContainers: true,
+                scrollSmooth: true,
+                scrollSmoothDuration: 420,
+                headingsOffset: 40,
+                scrollSmoothOffset: -40
+            });
+            var toc = document.getElementsByClassName('toc')[0];
+            if (toc.childNodes.length > 3) {
+                document.getElementById('sidebar-toc').hidden = false
+            }
+        })
+    </script>
+        {{/is}}

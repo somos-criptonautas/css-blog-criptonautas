@@ -2,8 +2,7 @@
 
 <main class="gh-main">
     {{#post}}
-        <article class="gh-article {{post_class}}">
-
+        <article class="gh-article {{post_class}}">~
             <header class="gh-article-header gh-canvas">
                 {{#if primary_tag}}
                     <a class="gh-article-tag" href="{{primary_tag.url}}">{{primary_tag.name}}</a>
@@ -38,7 +37,7 @@
                 {{> "post-meta"}}
     </div>
     <div class="gh-full-content">
-<aside class="gh-sidebar" id="sidebar-toc">
+<aside class="gh-sidebar" id="sidebar-toc" hidden>
                 {{#if reading_time}}
                 <h3>
                     {{reading_time minute="⌚ > 1 min de lectura" minutes="⌚ % mins de lectura"}}
@@ -58,25 +57,6 @@
     {{> "related-posts"}}
 </main>
     {{#contentFor "scripts"}}
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.18.2/tocbot.min.js"></script>
-    <script>
-            document.addEventListener("DOMContentLoaded", () => {
-            tocbot.init({
-                tocSelector: '.toc',
-                contentSelector: '.toc-content',
-                headingSelector: 'h1',
-                hasInnerContainers: true,
-                scrollSmooth: true,
-                scrollSmoothDuration: 420,
-                headingsOffset: 40,
-                scrollSmoothOffset: -40
-            });
-            var toc = document.getElementsByClassName('toc')[0];
-            if (toc.childNodes.length < 1) {
-                document.getElementById('sidebar-toc').hidden = true
-            }
-        })
-    </script>
     {{/contentFor}}
     {{#contentFor "footer"}}
     {{/contentFor}}

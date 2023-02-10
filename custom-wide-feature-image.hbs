@@ -1,7 +1,7 @@
 {{!< default}}
 
 <main class="gh-main">
-    {{#is "post"}}
+    {{#post}}
         <article class="gh-article {{post_class}}">
             <header class="gh-article-header gh-canvas">
                 {{#if feature_image}}
@@ -28,6 +28,7 @@
 
                 <h1 class="gh-article-title">{{title}}</h1>
             </header>
+    {{#is "post"}}
     <div class="gh-author-criptonaut">
                         {{#if custom_excerpt}}
                     <p class="gh-article-excerpt">{{custom_excerpt}}</p>
@@ -36,22 +37,21 @@
                 {{> "post-meta"}}
     </div>
     <div class="gh-full-content">
-<aside class="gh-sidebar" id="sidebar-toc">
+<aside class="gh-sidebar" id="sidebar-toc" hidden>
                 {{#if reading_time}}
                 <h3>
                     {{reading_time minute="⌚ > 1 min de lectura" minutes="⌚ % mins de lectura"}}
                 </h3>
                 {{/if}}
             <div class="toc">
-            </div></aside>
+            </div>
+</aside>
             <section class="gh-content gh-canvas toc-content">
             {{content}}
-    {{else}}
-            <section class="gh-content gh-canvas">
-            {{content}}
             </section>
-        </article>
     {{/is}}
+</div>
+        </article>
         {{> "comments"}}
     {{/post}}
     
