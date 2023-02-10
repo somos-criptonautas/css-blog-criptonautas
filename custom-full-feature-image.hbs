@@ -59,5 +59,6 @@
     {{> "related-posts"}}
 
 </main>
-
+    {{#contentFor "scripts"}}
+    {{/contentFor}}
 {{#contentFor "body_class"}} has-full-image{{#if post.feature_image}} is-head-transparent{{/if}}{{/contentFor}}
