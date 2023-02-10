@@ -81,7 +81,8 @@ window.onscroll = function() {
             });
             var toc = document.getElementsByClassName('toc')[0];
             if (toc.childNodes.length > 3) {
-                document.getElementById('sidebar-toc').hidden = false
+                document.getElementById('sidebar-toc');
+                toc.removeAttribute("hidden");
             }
         })
     </script>

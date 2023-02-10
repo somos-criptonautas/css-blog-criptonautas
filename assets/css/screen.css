@@ -2271,6 +2271,10 @@ html[data-theme=dark] .gh-burger {
 opacity: 1;
 }
 
+html[data-theme=dark] .post-template .gh-cover::before {
+opacity: .63;
+}
+
 html[data-theme=dark] .gh-burger::before,
 html[data-theme=dark] .gh-burger::after {
 background-color: var(--color-bg) !important;
