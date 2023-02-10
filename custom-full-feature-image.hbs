@@ -33,8 +33,6 @@
                         {{#if custom_excerpt}}
                     <p class="gh-article-excerpt">{{custom_excerpt}}</p>
                 {{/if}}
-
-                {{> "post-meta"}}
                 </div>
 
     <div class="gh-full-content">
@@ -59,6 +57,4 @@
     {{> "related-posts"}}
 
 </main>
-    {{#contentFor "scripts"}}
-    {{/contentFor}}
 {{#contentFor "body_class"}} has-full-image{{#if post.feature_image}} is-head-transparent{{/if}}{{/contentFor}}
