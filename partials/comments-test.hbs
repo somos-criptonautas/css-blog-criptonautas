@@ -1,0 +1,12 @@
+{{#is "post"}}
+                {{#if @member.paid}}
+                {{else}}
+<div class ="comunidad-comments">
+        <div class="gh-comments">
+                <h2 class="gh-pagehead-title"></h2>
+         <discourse-embed-topics
+            forum-base-url="https://forum.example.com"
+        ></discourse-embed-topics>       </div>
+        </div>
+{{/if}}
+{{/is}}

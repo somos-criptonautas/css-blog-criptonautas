@@ -51,8 +51,7 @@
 					</div>
 					{{/if}}
 				</div>
-				<a href="javascript:" data-portal="signup/{{id}}/monthly" class="membership-button global-button" data-monthly>{{t "Sign up now"}}</a>
-				<a href="javascript:" data-portal="signup/{{id}}/yearly" class="membership-button global-button" data-yearly>{{t "Sign up now"}}</a>
+				<a href="javascript:" data-portal="/reseteate" class="global-button">{{t "Sign up now"}}</a>
 			</div>
 			{{/foreach}}
 			{{/get}}
@@ -60,7 +59,7 @@
 	</div>
 	{{^if @member}}
 	{{#if membership_page}}
-	<small class="global-question">{{t "Already have an account?"}} <a href="{{@site.url}}/signin/">{{t "Sign in"}}</a></small>
+	<small class="global-question">{{t "Already have an account?"}} <a href="{{@site.url}}/ingresa/">{{t "Sign in"}}</a></small>
 	{{/if}}
 	{{/if}}
 </div>
