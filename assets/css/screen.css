@@ -402,7 +402,9 @@ margin: 0 6px;
 background-color: currentColor;
 border-radius: 50%;
 }
-
+.gh-read-next {
+padding-top:5rem;
+   }
 @media screen and (min-width: 1700px){
 .gh-read-next {
 margin-left: 20vh;
