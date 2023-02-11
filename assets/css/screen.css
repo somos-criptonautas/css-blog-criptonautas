@@ -1830,20 +1830,16 @@ line-height: 1.6rem;
 .kg-product-card .kg-product-card-description li + li, .kg-toggle-card li + li {
 margin-top: 1.5rem;
 }
-.kg-callout-card {
-   padding: 1rem 1.25rem;
-}
 .gh-post-upgrade-cta {
 align-items: inherit;
 }
 .gh-post-upgrade-cta-content {
 padding: 0;
 }
-.kg-callout-card {
-padding: 1.25em 1.5em;
-}
-.gh-content > blockquote:not([class]), .gh-content > dl, .gh-content > ol, .gh-content > ul {
-margin-bottom: 1rem;
+.kg-callout-emoji {
+   position: relative;
+   left: -1rem;
+   font-size: 5rem;
 }
 
 .gh-content > blockquote {
@@ -1872,6 +1868,12 @@ font-weight: 700;
 }
 
 @media screen and (max-width: 991px) {
+   .kg-callout-card {
+      padding: 2.23rem 2.11rem 2.11rem 3.11rem;
+   }
+   .gh-content > blockquote:not([class]), .gh-content > dl, .gh-content > ol, .gh-content > ul {
+   margin-bottom: 1rem;
+   }
 .is-head-open .gh-head-brand-wrapper {
 display: flex;
 flex-direction: column;
@@ -2339,7 +2341,7 @@ padding: 1.66rem 0 !important;
 display: block;
 }
 #gh-head .gh-head-inner {
-padding: 4rem 0 2rem;
+padding: 6rem 0 2rem;
 grid-template-columns: 1fr;
 }
 #gh-head .gh-head-btn {
@@ -2355,11 +2357,11 @@ display: flex;
    flex-direction: column;
  }
 }
-@media screen and (min-width: 992px) {
 #gh-head .nav a,
 #gh-head .gh-head-btn {
 font-weight: 500;
 }
+@media screen and (min-width: 992px) {
 .is-head-open #gh-head .gh-head-inner {
 grid-template-rows: none;
 }
