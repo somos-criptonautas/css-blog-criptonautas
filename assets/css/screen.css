@@ -817,7 +817,7 @@ width: 100%;
 @media screen and (min-width: 992px) and (max-width: 1349px) {
 .is-head-b--a_n .gh-head-inner {
 row-gap: 0;
-grid-template-columns: 4fr 3fr;
+grid-template-columns: 5fr 3fr;
 }
 }
 @media screen and (min-width: 1350px) {
@@ -1036,7 +1036,7 @@ color: var(--color-white);
 fill: var(--color-white) !important;
 }
 .is-head-transparent .nav-current,
-.is-head-transparent :not(.gh-foot-menu) ul.nav li:hover {
+.is-head-transparent ul.nav:not(.gh-foot-menu) li:hover {
 box-shadow: 0 -3px 0 0 var(--color-white) inset !important;
 }
 
@@ -2367,7 +2367,10 @@ grid-template-rows: none;
 .is-head-open:not(.is-head-transparent) .gh-burger::after, .is-head-open:not(.is-head-transparent) .gh-burger::before {
 background-color: var(--color-base);
 }
-
+.is-head-transparent .gh-burger::after,
+.is-head-transparent .gh-burger::before {
+background-color: var(--color-base);
+}
 .is-head-brand:not(.is-head-transparent) .gh-head {
 background-color: transparent;
 }
