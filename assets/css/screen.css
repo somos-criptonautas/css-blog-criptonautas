@@ -1029,7 +1029,8 @@ margin: 40px auto 0px;
 color: var(--color-white);
 }
 .is-head-transparent .gh-icon-btn:hover,
-.gh-icon-btn svg:active, .gh-icon-btn svg:hover {
+.is-head-transparent .gh-icon-btn svg:active,
+.is-head-transparent .gh-icon-btn svg:hover {
 fill: var(--color-white) !important;
 }
 .is-head-transparent .nav-current,
@@ -1900,7 +1901,7 @@ width: 75%;
 font-size: 2rem !important;
 }
 }
-@media screen and (min-width:992px) and (max-width: 1249px) {
+@media screen and (min-width:992px) and (max-width: 1349px) {
 .gh-author-criptonaut {
 width: 80%;
 display: grid;
