@@ -991,6 +991,9 @@ list-style: none;
 list-style-type: "👉 " !important;
 opacity: 1;
 }
+.toc-list-item a:hover {
+   opacity: 1;
+   }
 }
 .gh-sidebar h3 {
 padding: 1rem;
@@ -2371,7 +2374,7 @@ background-color: var(--color-base);
 }
 .is-head-transparent .gh-burger::after,
 .is-head-transparent .gh-burger::before {
-background-color: var(--color-base);
+background-color: var(--color-base) !important;
 }
 .is-head-brand:not(.is-head-transparent) .gh-head {
 background-color: transparent;
