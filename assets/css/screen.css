@@ -2359,7 +2359,7 @@ display: flex;
 }
 #gh-head .nav a,
 #gh-head .gh-head-btn {
-font-weight: 500;
+font-weight: 500 !important;
 }
 @media screen and (min-width: 992px) {
 .is-head-open #gh-head .gh-head-inner {
