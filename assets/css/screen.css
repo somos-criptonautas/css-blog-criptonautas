@@ -197,7 +197,7 @@ color: var(--color-white);
 .gh-author-bio .gh-pagehead-description {
 font-family: var(--font-serif);
 font-size: 2rem;
-line-height: 1.7;
+line-height: 1.66;
 }
 
 .gh-topic-grid .gh-card.no-image.large .gh-card-excerpt {
