@@ -201,9 +201,19 @@ display: inherit;
 form[data-members-form].error .text-message .message-error {
 display: inherit;
 }
-
+form[data-members-form].error .single-input,
+form[data-members-form].success .single-input {
+pointer-events:none;
+}
+form[data-members-form].error input[type="email"],
+form[data-members-form].success input[type="email"] {
+background-color: var(--color-bg-alt);
+color: var(--border-form-control);
+}
 form[data-members-form].error .subscribe-title,
-form[data-members-form].success .subscribe-title {
+form[data-members-form].success .subscribe-title,
+form[data-members-form].success .btn,
+form[data-members-form].error .btn {
 display: none !important;
 }
 html[data-theme=dark] .message-success,

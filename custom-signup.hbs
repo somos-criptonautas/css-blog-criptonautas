@@ -31,7 +31,7 @@
     <script>window.location = '{{@site.url}}';</script>
 {{else if @member}}
     {{!-- Member: Redirect to Subscribe --}}
-    <script>window.location = '{{@site.url}}/cuenta/';</script>
+    <script>window.location = '{{@site.url}}/perfil/';</script>
 {{else}}
 
 
@@ -79,7 +79,7 @@
                                 </button>
                             </div>
                         </div>
-                        <p>{{t "Already have an account?"}}</br><a href="{{@site.url}}/ingresa  /">{{t "Sign in"}}</a></p>
+                        <p>{{t "Already have an account?"}}</br><a href="{{@site.url}}/ingresa">{{t "Sign in"}}</a></p>
                     </form>
                 </div>
             </div>

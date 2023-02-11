@@ -55,7 +55,7 @@
                                             {{#unless @member}}
                         <a class="gh-head-btn gh-btn shadow" href="/ingresa">{{ t "Subscribe" }}</a>
                     {{else}}
-                        <a class="gh-head-btn gh-btn shadow" href="/cuenta">{{ t "Account" }}</a>
+                        <a class="gh-head-btn gh-btn shadow" href="/perfil">{{ t "Account" }}</a>
                     {{/unless}}
                     <div class="nav-icons">
                     <button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button>
@@ -106,6 +106,7 @@
                     {{navigation type="secondary"}}
                 </nav>
             <div class="it-foot-social">
+                <a href="https://comunidad.criptonautas.co/" class="discourse" title="{{t "Discourse"}}" target="_blank" rel="noopener" aria-label="{{t "Discourse"}}">{{> "icons/discourse"}}</a>
                 {{#if @site.twitter}}
                 <a href="{{twitter_url @site.twitter}}" title="{{t "Twitter"}}" target="_blank" rel="noopener" aria-label="{{t "Twitter"}}">{{> "icons/twitter"}}</a>
                 {{/if}}

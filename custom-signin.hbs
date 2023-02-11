@@ -34,7 +34,7 @@
     <script>window.location = '{{@site.url}}';</script>
 {{else if @member}}
     {{!-- Member: Redirect to Subscribe --}}
-    <script>window.location = '{{@site.url}}/cuenta/';</script>
+    <script>window.location = '{{@site.url}}/perfil/';</script>
 {{else}}
 
 
@@ -62,9 +62,9 @@
                             <div class="message-success">
                                 {{t "Check your inbox"}}
                             </div>
-                            <div class="message-error bold">
-                                {{t "Please enter a valid email address!"}}
-                                <a href="/empieza">{{ t "Follow the link"}}</a>
+                            <div class="bold">
+                                {{t "Please enter a valid email address!"}}<br><br>
+                                <a class="message-error" href="/empieza">{{ t "Follow the link"}}</a>
                             </div>
                         </div>
                         <div>
