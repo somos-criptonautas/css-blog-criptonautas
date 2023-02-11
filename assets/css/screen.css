@@ -320,11 +320,6 @@ text-transform: uppercase;
 letter-spacing: 0.01em;
 }
 
-
-.has-full-image .gh-article-excerpt {
-margin-bottom: 0.25rem;
-}
-
 .gh-article-image {
 grid-column: main-start / main-end;
 width: 100%;
@@ -707,7 +702,7 @@ margin-bottom: 32px;
 }
 
 .gh-cover-title {
-font-size: 3.2rem;
+font-size: 5rem;
 }
 
 .gh-cover-description {
@@ -879,10 +874,6 @@ body:not(.is-head-b--a_n) .gh-head-menu::after {
 display: none;
 }
 
-.has-full-image .gh-article-excerpt {
-margin-top: 36px;
-font-size: 2.4rem;
-}
 @media screen and (max-width: 991px) {
 .gh-article-sidebar {
 margin-top: 5rem;
@@ -1973,8 +1964,9 @@ padding: 0;
 }
 @media screen and (min-width: 992px) and (max-width: 1089px) {
    .gh-sidebar {
-   display: none;
+   padding: 0 1.77rem;
    }
+   
 }
 @media screen and (min-width: 1090px) {
 .gh-sidebar {
