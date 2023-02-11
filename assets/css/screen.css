@@ -642,6 +642,10 @@ margin-right: 1rem;
 
 /* Site footer */
 
+.footer-criptonauta {
+   margin: 2rem 1rem;
+}
+
 .gh-foot {
 background-color: var(--color-bg-alt);
 color: var(--color-text);
@@ -1815,9 +1819,6 @@ margin: auto;
 max-width: 80%;
 margin: auto;
 }
-}
-.footer-criptonauta {
-margin: 2rem 1rem;
 }
 
 .is-head-open html {
