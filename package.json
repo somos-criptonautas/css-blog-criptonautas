@@ -42,15 +42,6 @@
         },
         "card_assets": true,
         "custom": {
-            "navigation_layout": {
-                "type": "select",
-                "options": [
-                    "Logo on the left",
-                    "Logo in the middle",
-                    "Stacked"
-                ],
-                "default": "Stacked"
-            },
             "header_style": {
                 "type": "select",
                 "options": [
@@ -59,22 +50,6 @@
                     "Dark"
                 ],
                 "default": "Light"
-            },
-            "title_font": {
-                "type": "select",
-                "options": [
-                    "Modern sans-serif",
-                    "Elegant serif"
-                ],
-                "default": "Modern sans-serif"
-            },
-            "body_font": {
-                "type": "select",
-                "options": [
-                    "Modern sans-serif",
-                    "Elegant serif"
-                ],
-                "default": "Elegant serif"
             },
             "white_publication_logo_for_transparent_header": {
                 "type": "image"
