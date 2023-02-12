@@ -540,7 +540,7 @@ font-size: 1.75rem;
 .gh-content .kg-callout-card .kg-callout-text, .gh-content .kg-toggle-card .kg-toggle-content > ol, .gh-content .kg-toggle-card .kg-toggle-content > p, .gh-content .kg-toggle-card .kg-toggle-content > ul,
 .gh-topic-grid .gh-card:not(.large) .gh-card-excerpt,
 .gh-content > blockquote:not([class]), .gh-content > dl, .gh-content > ol, .gh-content > ul {
-font-size: 1.7rem !important;
+font-size: 1.73rem !important;
 }
 }
 @media screen and (min-width : 768px) and (max-width : 1024px)  {
@@ -567,7 +567,7 @@ margin: auto;
 .gh-pagehead-title {
 text-transform: uppercase;
 letter-spacing: -0.01em;
-font-size: 4rem;
+font-size: 3.77rem;
 margin: 0 0 3rem;
 }
 html[data-theme=dark] .gh-pagehead-title {
@@ -822,7 +822,7 @@ grid-template-columns: 5fr 3fr;
 }
 @media screen and (min-width: 1350px) {
 .is-head-b--a_n .gh-head-inner {
-grid-template-columns: 3fr 8fr 5fr;
+grid-template-columns: 5fr 11fr 7fr;
 }
 }
 .gh-head-inner {
@@ -2339,10 +2339,6 @@ padding: 1.66rem 0 !important;
 }
 .gh-burger {
 display: block;
-}
-#gh-head .gh-head-inner {
-padding: 6rem 0 2rem;
-grid-template-columns: 1fr;
 }
 #gh-head .gh-head-btn {
 position: relative;
