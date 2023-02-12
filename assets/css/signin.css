@@ -191,7 +191,8 @@ margin-top: 2rem;
     color: var(--color-primary);
 }
 .message-success,
-.message-error {
+.message-error:not(.bold),
+.bold {
 color: var(--color-secondary);
 background: none;
 }
