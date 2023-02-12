@@ -190,9 +190,7 @@ margin-top: 2rem;
 .signup-form p a {
     color: var(--color-primary);
 }
-.message-success,
-.message-error:not(.bold),
-.bold {
+.message-success {
 color: var(--color-secondary);
 background: none;
 }
@@ -202,7 +200,6 @@ display: inherit;
 form[data-members-form].error .text-message .message-error {
 display: inherit;
 }
-form[data-members-form].error .single-input,
 form[data-members-form].success .single-input {
 pointer-events:none;
 }
@@ -213,14 +210,11 @@ color: var(--border-form-control);
 }
 form[data-members-form].error .subscribe-title,
 form[data-members-form].success .subscribe-title,
-form[data-members-form].success .btn,
-form[data-members-form].error .btn {
+form[data-members-form].success .btn {
 display: none !important;
 }
 html[data-theme=dark] .message-success,
-html[data-theme=dark] .message-error,
-html[data-darkreader-scheme=dark] .message-success,
-html[data-darkreader-scheme=dark] .message-error {
+html[data-theme=dark] .message-error {
 color: var(--color-white);
 }
 .subscribe-btn {
