@@ -1,4 +1,7 @@
 {
+	"lvl1":
+	"lvl2":
+	"lvl3":
 	"Your account": "Tu perfil",
 	"Your subscription will expire on": "Su suscripción caducará el",
 	"If you change your mind in the meantime you can turn auto-renew back on to continue your subscription.": "Si cambia de opinión mientras tanto, puede volver a activar la renovación automática para continuar con su suscripción.",
@@ -140,6 +143,7 @@
 	"By": "por",
 	"Please check our last articles": "Puedes ver nuestros últimos artículos 😬",
 	"First level subscription": "Tienes acceso a nuestros artículos gratuitos.",
+	"First level info": "Pero aún mucho por descubrir!",
 	"Padawans description": "Practicamos en comunidad porque es la manera más simple de aprender 🏄",
 	"Start free": "tipea tu e-mail (puede ser temporal) y descubre cómo salir de La Matrix 🛸",
 	"Sign out": "Salir"
