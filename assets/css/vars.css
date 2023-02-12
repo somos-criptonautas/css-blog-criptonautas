@@ -1,12 +1,10 @@
 /* Variables
 /* ---------------------------------------------------------- */
 
-@supports (-moz-appearance:none) {
-    @media screen and (-webkit-min-device-pixel-ratio:0) and { 
+    @media screen and (-webkit-min-device-pixel-ratio:0) { 
         html {
             font-size: 70% !important;
           }
-    }
     }
 html {
     font-size: 80% !important;
