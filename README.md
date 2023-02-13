@@ -6,15 +6,10 @@ While it can be used for any purpose, the theme takes a thoughtful approach to d
 
 Headline adapts the content by allowing to choose which topics are front and center.
 
-**Demo: https://headline.ghost.io**
+## Criptonautas update
 
-&nbsp;
+We take the base of Headline but develop a new concept. Modern, minimalistic, readable and clean 🙂
 
-# Criptonaut update
-
-We update the theme for make it more modern and we adapt it for our CSS style :)
-
-&nbsp;
 
 # Development
 
@@ -39,13 +34,9 @@ yarn dev
 
 Then you could edit `/assets/css/` files, which will be compiled to `/assets/built/` automatically :)
 
-&nbsp;
-
 # Contribution
 
-You can make a PR if you fix issues or suggest UI/UX improvements and we can update our main branch (forked from Ghost one)
-
-&nbsp;
+At the moment you can Contribute coding or donating. CCS Proposals are in our roadmap like featured sponsored or backed for the crowd.
 
 ## Copyright & License
 
