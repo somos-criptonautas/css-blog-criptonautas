@@ -649,10 +649,16 @@ color: var(--color-text);
 white-space: inherit;
 padding: 7.77rem 0;
 }
-
+.gh-subscribe-description {
+   max-width: 80% !important;
+ }
+ }
+ .gh-subscribe-description {
+   max-width: 90%;
+ }
 @media screen and (min-width: 1200px) {
 .gh-foot {
-width: 87%;
+width: 63%;
 margin: auto;
 border: 2px solid var(--color-border);
 border-radius: 1.11rem;
@@ -1986,7 +1992,6 @@ padding: 0;
     top: 2.23rem;
     left: 1.33rem;
     align-self: flex-start;
-    width: 50%;
 }
 .kg-width-full img {
    width: 90%;
