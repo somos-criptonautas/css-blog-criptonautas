@@ -649,13 +649,16 @@ color: var(--color-text);
 white-space: inherit;
 padding: 7.77rem 0;
 }
+@media screen and (max-width: 991px) {
 .gh-subscribe-description {
-   max-width: 80% !important;
+   max-width: 80%;
  }
- }
+}
+@media screen and (min-width: 992px) {
  .gh-subscribe-description {
    max-width: 90%;
  }
+}
 @media screen and (min-width: 1200px) {
 .gh-foot {
 width: 63%;

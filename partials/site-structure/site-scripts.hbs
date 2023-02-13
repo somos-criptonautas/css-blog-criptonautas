@@ -81,7 +81,6 @@ window.onscroll = function() {
 };
 </script>
         {{^is "page"}}
-                <script src="assets/js/tocbot.min.js"></script>
     <script>
             document.addEventListener("DOMContentLoaded", () => {
             tocbot.init({
@@ -101,8 +100,6 @@ window.onscroll = function() {
         })
     </script>
         {{/is}}
-
-<script src="{{asset "assets/js/flying-pages.min.js"}}" defer></script>
 <script>
   window.addEventListener("load", () => {
     flyingPages({
