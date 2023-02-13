@@ -2448,19 +2448,19 @@ font-size: 2.6rem;
 
 @media screen and (max-width: 767px) {
    h2 {
-      font-size: 3.77rem;
+      font-size: 3rem;
       }
       
       h3 {
-      font-size: 2.77rem;
-      }
-      
-      h4 {
       font-size: 2.5rem;
       }
       
-      h5 {
+      h4 {
       font-size: 2.25rem;
+      }
+      
+      h5 {
+      font-size: 2rem;
       }
 }
 /* Newsletter */
