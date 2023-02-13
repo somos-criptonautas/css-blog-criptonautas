@@ -5,7 +5,7 @@
 only screen and (-o-min-device-pixel-ratio: 13/10),
 only screen and (min-resolution: 120dpi) {
         html {
-            font-size: 80% !important;
+            font-size: 85% !important;
           }
     }
 html {
