@@ -1044,7 +1044,7 @@ color: var(--color-white);
 fill: var(--color-white) !important;
 }
 .is-head-transparent .nav-current,
-.is-head-transparent:not(.gh-foot-menu) ul.nav li:hover {
+.is-head-transparent ul.nav:not(.gh-foot-menu) li:hover {
 box-shadow: 0 -3px 0 0 var(--color-white) inset !important;
 }
 
@@ -1995,6 +1995,7 @@ padding: 0;
     top: 2.23rem;
     left: 1.33rem;
     align-self: flex-start;
+    width: 56%:
 }
 .kg-width-full img {
    width: 90%;
