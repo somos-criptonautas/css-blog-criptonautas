@@ -93,8 +93,8 @@ window.onscroll = function() {
                 headingsOffset: 40,
                 scrollSmoothOffset: -40
             });
-
-            if (document.getElementsByClassName('toc')[0].childNodes.length > 0) {
+            var toc = document.getElementsByClassName('toc')[0];
+            if (toc.childNodes.length > 0) {
                 document.getElementById('sidebar-toc').style.display = 'flow-root';
             };
         })
