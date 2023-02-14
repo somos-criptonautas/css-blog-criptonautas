@@ -1,11 +1,8 @@
 {{!< default}}
     <script>
     var readIssue,
-    element = document.getElementById('letme');
-    if (element != null) {
-        readIssue = element.value;
-    }
-    else {
+    readissuecheck = document.getElementById('letme');
+    if (readissuecheck != null) {
     const readIssue = document.querySelector('.letme');
     readIssue.addEventListener('click', function(){
         console.log('clicked')
@@ -14,7 +11,10 @@
         createCookie('data-intro', true, 1)
        console.log(html.hasAttribute('data-intro'))
        return false;
-           }
+    )}
+    else {
+
+           return false;
     });
     
     if (!readCookie('data-intro')) {
