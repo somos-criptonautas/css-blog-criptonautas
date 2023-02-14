@@ -1,19 +1,14 @@
 {{!< default}}
     <script>
-    var readIssue,
-    readissuecheck = document.getElementById('letme');
-    if (readissuecheck != null) {
+    const readIssue = document.querySelector('.letme');
     readIssue.addEventListener('click', function(){
-        console.log('clicked');
-        html.setAttribute('data-intro', 'hide');
+        console.log('clicked')
+        html.setAttribute('data-intro', 'hide')
         localStorage.setItem('data-intro', 'hide');
-        createCookie('data-intro', true, 1);
-       console.log(html.hasAttribute('data-intro'));
+        createCookie('data-intro', true, 1)
+       console.log(html.hasAttribute('data-intro'))
        return false;
-    )}
-    else {
-           readIssue = null;
-    };
+    });
     
     if (!readCookie('data-intro')) {
         localStorage.removeItem("data-intro");
@@ -111,3 +106,4 @@
         {{/if}}
     </div>
 </main>
+Footer

@@ -1,7 +1,7 @@
 .git
 package-lock.json
-.node_modules/
+node_modules/
 headline.zip
 node_modules
-yarn.lock
 yarn-error.log
+yarn.lock
