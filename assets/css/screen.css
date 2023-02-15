@@ -2598,9 +2598,6 @@ max-width: 70%;
 }
 }
 .newsletter form {
-justify-content: center;
-display: flex;
-flex-wrap: nowrap;
 border: 0 solid #e5e7eb;
 box-sizing: border-box;
 margin: 3rem auto 2.5rem;
