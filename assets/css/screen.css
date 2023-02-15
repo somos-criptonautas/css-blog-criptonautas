@@ -137,7 +137,8 @@ height: 100%;
 
 .gh-topic-grid .gh-card-image::before {
 display: block;
-padding-bottom: 70%;
+height: 100%;
+width: 100%;
 content: "";
 }
 
@@ -148,7 +149,7 @@ padding-bottom: 50% !important;
 .gh-topic-grid .gh-card.featured.large .gh-card-image {
 position: absolute;
 inset: 0;
-z-index: 0;
+z-index: -1;
 width: 100%;
 }
 
@@ -656,7 +657,7 @@ padding: 7.77rem 0;
 }
 @media screen and (min-width: 992px) {
  .gh-subscribe-description {
-   max-width: 90%;
+   max-width: 100%;
  }
 }
 @media screen and (min-width: 1200px) {
