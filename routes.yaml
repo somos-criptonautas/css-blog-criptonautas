@@ -1,7 +1,6 @@
 taxonomies:
-  tag: /{slug}/
   author: /team/{slug}/
 
 routes:
-  /archivo/:
+  /articulos/:
     controller: channel
