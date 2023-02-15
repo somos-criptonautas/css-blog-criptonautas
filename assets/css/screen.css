@@ -134,14 +134,14 @@ flex-shrink: 0;
 width: 33vh;
 height: 100%;
 }
-.gh-topic-grid.featured::not(.large).gh-card-image::before {
+.gh-topic-grid.featured:not(.large).gh-card-image::before {
 display: block;
 height: 100%;
 width: 100%;
 content: "";
 position: relative;
 }
-.gh-topic-grid.featured::not(.large).gh-card-image::before {
+.gh-topic-grid.featured:not(.large).gh-card-image::before {
 padding-bottom: 70%;
 }
 .gh-topic-grid .gh-card.featured.large .gh-card-image::before {
