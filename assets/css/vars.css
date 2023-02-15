@@ -78,7 +78,6 @@ color: var(--color-base)
     --radius: 0.5rem;
     
     /* intro */
-
     /* gaps */
     --gap: 1em;
     --gap-rem: 1rem;
@@ -91,6 +90,13 @@ color: var(--color-base)
     --global-radius: 0.25rem;
     
 }
+
+@media screen and (max-width: 767px) {
+    :root {
+        --gap: var(--gap-xs);
+    }
+}
+
 .shadow {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
