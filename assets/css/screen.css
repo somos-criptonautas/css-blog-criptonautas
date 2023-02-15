@@ -142,10 +142,6 @@ width: 100%;
 content: "";
 }
 
-.gh-topic-grid .gh-card.large .gh-card-image::before {
-padding-bottom: 50% !important;
-}
-
 .gh-topic-grid .gh-card.featured.large .gh-card-image {
 position: absolute;
 inset: 0;
