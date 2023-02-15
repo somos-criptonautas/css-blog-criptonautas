@@ -95,7 +95,7 @@ margin: auto;
 }
 
 .gh-topic-grid .gh-card:not(:only-child).large {
-padding-bottom: 4.23rem;
+margin-bottom: 4.23rem;
 }
 
 .gh-topic-grid .gh-card-link {
@@ -141,6 +141,11 @@ height: 100%;
 width: 100%;
 content: "";
 position: relative;
+}
+
+
+.gh-topic-grid .gh-card:not.featured {
+padding-bottom: 70%;
 }
 
 .gh-topic-grid .gh-card.featured.large .gh-card-image {
@@ -720,11 +725,6 @@ font-size: 1.7rem;
 
 .gh-topic-grid .gh-topic-content {
 row-gap: 32px !important;
-}
-
-.gh-topic-grid .gh-card:not(:only-child).large {
-padding-bottom: 36px;
-margin-bottom: 4px;
 }
 
 .gh-topic-grid .gh-card-link {
