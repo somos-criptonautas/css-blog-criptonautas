@@ -140,6 +140,7 @@ display: block;
 height: 100%;
 width: 100%;
 content: "";
+position: relative;
 }
 
 .gh-topic-grid .gh-card.featured.large .gh-card-image {
