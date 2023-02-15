@@ -141,11 +141,12 @@ height: 100%;
 width: 100%;
 content: "";
 position: relative;
+padding-bottom: 70%;
 }
 
 
 .gh-topic-grid .gh-card.featured.large .gh-card-image::before {
-padding-bottom: 70%;
+padding-bottom: none;
 }
 
 .gh-topic-grid .gh-card.featured.large .gh-card-image {
