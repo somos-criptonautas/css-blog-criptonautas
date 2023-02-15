@@ -1745,6 +1745,10 @@ padding-top: 2rem !important;
 
 /* texts by matenauta */
 
+body:not(.is-dropdown-loaded) .gh-head-menu .nav > li {
+opacity: inherit;
+}
+
 @media screen and (max-width: 768px) {
 html {
 font-size: 63% !important;
