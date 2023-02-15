@@ -144,7 +144,7 @@ position: relative;
 }
 
 
-.gh-topic-grid .gh-card::not(.featured)::before {
+.gh-topic-grid .gh-card.featured::not(.large)::before {
 padding-bottom: 70%;
 }
 
