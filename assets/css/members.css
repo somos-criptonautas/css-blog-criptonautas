@@ -68,6 +68,10 @@ form[data-members-form].success p {
 display: none !important;
 }
 
+form[data-members-form=subscribe].error .subscribe-form {
+display: 
+}
+
 .it-button-content {
     min-width: 100px;
 }
