@@ -20,6 +20,7 @@ html {
     font-size: 2rem !important;
     height: 100%;
     width: 100%;
+	scroll-behavior: smooth;
 }
 
 html[data-theme="dark"] {
