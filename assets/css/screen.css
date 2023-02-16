@@ -160,9 +160,7 @@ width: 100%;
 height: 100%;
 border-radius:0.77rem;
 object-fit: cover;
-}
-.gh-topic-grid:not(.large) .gh-card-image img {
-   max-height: 35vh;
+max-height: 35vh;
 }
 .gh-topic-grid .gh-card-image img
 a.gh-card-lin {
