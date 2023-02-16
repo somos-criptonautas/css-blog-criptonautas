@@ -99,7 +99,7 @@ color: var(--color-base)
 
 @media screen and (max-width: 767px) {
     :root {
-        --gap: var(--gap-xs);
+        --gap: 1.11rem;
     }
 }
 
