@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{meta_title}}</title>
-    <link rel="stylesheet" href="{{asset "built/screen.css"}}">
+    <link rel="preload" href="{{asset "built/screen.css"}}" as="style">
         <script>
         	if(typeof(Storage) !== 'undefined') {
                 if (localStorage.getItem('selected-theme') == 'light') {
@@ -19,7 +19,7 @@
         {{else}}
         {{#is "home"}}
         {{> "newsletter"}}
-    <link rel="stylesheet" href="{{asset "built/home.css"}}">
+    <link rel="preload" href="{{asset "built/home.css"}}" as="style">
         {{else}}
         {{/is}}
         {{/if}}
