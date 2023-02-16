@@ -139,6 +139,7 @@ display: block;
 height: 100%;
 width: 100%;
 content: "";
+padding-bottom: 0;
 }
 .gh-topic-grid .gh-card.featured.large .gh-card-image::before {
 padding-bottom: none;
