@@ -231,11 +231,6 @@ text-transform: uppercase;
 margin-top:1rem;
 }
 
-.gh-topic-grid .gh-card.featured.large .gh-card-footer {
-margin-top: 20px;
-color: var(--color-link);
-}
-
 .gh-card-footer > * + * {
 display: flex;
 gap: 6px;
