@@ -741,8 +741,11 @@ display: none;
 }
 
 .gh-card:not(.large) .gh-card-footer {
-margin-top: 8px;
+margin-top: 0.35rem;
 }
+
+.gh-card:not(.large) .gh-card-footer {
+
 .gh-topic-grid .gh-card:not(.large) :where(.gh-card-author, .gh-card-footer-sep) {
 display: none;
 }
@@ -802,6 +805,7 @@ width: 100%;
    grid-column-start: 1;
    grid-template-columns: 1fr auto auto;
    height: 64px;
+   margin-bottom: 5vh;
  }
  #gh-head .gh-head-inner {
    gap: var(--gap-lg);
