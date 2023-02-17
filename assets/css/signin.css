@@ -163,6 +163,7 @@ html[data-theme=dark].single-input .form-control:focus {
     .subscribe-form {
         flex-wrap: wrap;
         flex-direction: column;
+        max-width: 90%;
     }
     .subscribe-form input {
     margin-bottom: 2rem;
