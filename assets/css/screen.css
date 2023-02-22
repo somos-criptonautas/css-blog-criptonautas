@@ -696,8 +696,8 @@ padding-top: 1.23rem;
 @media screen and (max-width: 767px) {
 .gh-cover-content {
 margin-top: 40px;
-}
 
+}
 .post-template .gh-cover-content {
 bottom: 32px;
 margin-bottom: 32px;
@@ -743,8 +743,6 @@ display: none;
 .gh-card:not(.large) .gh-card-footer {
 margin-top: 0.35rem;
 }
-
-.gh-card:not(.large) .gh-card-footer {
 
 .gh-topic-grid .gh-card:not(.large) :where(.gh-card-author, .gh-card-footer-sep) {
 display: none;
