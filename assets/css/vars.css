@@ -9,7 +9,7 @@ only screen and (min-resolution: 120dpi) {
           }
     }
 html {
-    font-size: 75% !important;
+    font-size: 71% !important;
   }
   @media screen and (prefers-reduced-motion: reduce) {
 	html {
