@@ -8,16 +8,15 @@
                     <figure class="gh-article-image">
                         <img
                                     loading="lazy"
-            srcset="https://res.cloudinary.com/cawnmzxdha/image/fetch/w_300,c_fit,q_auto,f_auto,dpr_auto/{{img_url feature_image size="s"}} 300w,
-                    https://res.cloudinary.com/cawnmzxdha/image/fetch/w_720,c_fit,q_auto,f_auto,dpr_auto/{{img_url feature_image size="m"}} 720w,
-                    https://res.cloudinary.com/cawnmzxdha/image/fetch/w_960,c_fit,q_auto,f_auto,dpr_auto/{{img_url feature_image size="l"}} 960w,
-                    https://res.cloudinary.com/cawnmzxdha/image/fetch/w_1200,c_fit,q_auto,f_auto,dpr_auto/{{img_url feature_image size="xl"}} 1200w,
-                    https://res.cloudinary.com/cawnmzxdha/image/fetch/w_2000,c_fit,q_auto,f_auto,dpr_auto/{{img_url feature_image size="xxl"}} 2000w"
-            sizes="(max-width: 1200px) 100vw, 1200px"
-            loading="lazy"
-            src="https://res.cloudinary.com/cawnmzxdha/image/fetch/w_960,c_fit,q_auto,f_auto,dpr_auto/{{img_url feature_image size="l"}}"
-            alt="{{title}}"
-        >
+                            srcset="{{img_url feature_image size="s"}} 300w,
+                                    {{img_url feature_image size="m"}} 720w,
+                                    {{img_url feature_image size="l"}} 960w,
+                                    {{img_url feature_image size="xl"}} 1200w,
+                                    {{img_url feature_image size="xxl"}} 2000w"
+                            sizes="(max-width: 1200px) 100vw, 1200px"
+                            src="{{img_url feature_image size="xl"}}"
+                            alt="{{title}}"
+                        >
                         {{#if feature_image_caption}}
                             <figcaption>{{feature_image_caption}}</figcaption>
                         {{/if}}
