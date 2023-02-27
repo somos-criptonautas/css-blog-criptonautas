@@ -85,6 +85,7 @@ window.onscroll = function() {
 </script>
         {{^is "page"}}
     <script>
+        if (toc.childNodes.length > 0) {
             document.addEventListener("DOMContentLoaded", () => {
             tocbot.init({
                 tocSelector: '.toc',
@@ -101,6 +102,7 @@ window.onscroll = function() {
                 document.getElementById('sidebar-toc').style.display = 'flow-root';
             };
         })
+        }
     </script>
         {{/is}}
 <script>
