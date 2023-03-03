@@ -19,28 +19,6 @@
        console.log(html.hasAttribute('data-theme'))
     });
 </script>
-
-<script>
-
-window.addEventListener("message", handleMessageListener);
-
-const handleMessageListener = (event:MessageEvent<any>) => {
-var origin = event.origin;
-if (origin === discourseUrl) {
-setIframeStyle();
-}
-};
-
-const SetIframeStyle = () => {
-conset iframe = document.getElementById("discourse-embed-frame")! as any;
-if (iframe && iframe.contentWindow) {
-iframe.contentWindow.postMessage(
-    darkModeFlag ? "dark" : "light",
-    discourseUrl
-);
-}
-};
-</script>
 <script>
   /**
  * Boilerplate Functions
