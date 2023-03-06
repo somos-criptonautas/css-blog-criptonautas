@@ -41,12 +41,8 @@
                     <div class="gh-head-brand-wrapper">
                         <a class="gh-head-logo" href="{{@site.url}}">
                             {{#if @site.logo}}
-                                {{#if @custom.white_publication_logo_for_transparent_header}}
         <img class="logo-light" src="{{@site.logo}}" alt="{{@site.title}}">
         <img class="logo-dark" src="{{@custom.white_publication_logo_for_transparent_header}}" alt="{{@site.title}}">
-                                    {{else}}
-                            <img src="{{@site.logo}}" alt="{{@site.title}}">
-                                {{/if}}
                             {{else}}
                                 {{@site.title}}
                             {{/if}}
