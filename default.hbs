@@ -56,9 +56,9 @@
                 <div class="gh-head-actions">
                     <div class ="actions-container">
                                             {{#unless @member}}
-                        <a class="gh-head-btn gh-btn shadow" href="/start">{{ t "Subscribe" }}</a>
+                        <a aria-label="signup-button" title="start here" class="gh-head-btn gh-btn shadow" href="/start">{{ t "Subscribe" }}</a>
                     {{else}}
-                        <a class="gh-head-btn gh-btn shadow" href="/player">{{ t "Account" }}</a>
+                        <a aria-label="signin-button" title="continue"  class="gh-head-btn gh-btn shadow" href="/player">{{ t "Account" }}</a>
                     {{/unless}}
                     <div class="nav-icons">
                     <button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button>
