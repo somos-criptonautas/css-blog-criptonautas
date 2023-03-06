@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
     
-        <title>Sumate al Universo Criptonauta</title>
+        <title>Empieza tu camino en Criptonautas</title>
         
         <script>
             if(typeof(Storage) !== 'undefined') {
@@ -31,7 +31,7 @@
     <script>window.location = '{{@site.url}}';</script>
 {{else if @member}}
     {{!-- Member: Redirect to Subscribe --}}
-    <script>window.location = '{{@site.url}}/perfil/';</script>
+    <script>window.location = '{{@site.url}}/player/';</script>
 {{else}}
 
 
@@ -55,6 +55,7 @@
         <div class="{{#if feature_image}}signup-form{{else}}custom-no-feature-sign{{/if}}">
             <div class="cus-sign-box subscribe-title">
                     <h2>{{t "Signup to"}}</h2>
+                    <a href="/start"><img src ="assets/images/mario-mushroom.gif"></img></a>
                 <div class="form-inner-content">
                     <form data-members-form="signup">
                 <div class="login-text">
@@ -79,7 +80,7 @@
                                 </button>
                             </div>
                         </div>
-                        <p>{{t "Already have an account?"}}</br><a href="{{@site.url}}/ingresa">{{t "Sign in"}}</a></p>
+                        <p>{{t "Already have an account?"}}</br><a href="{{@site.url}}/continue">{{t "Sign in"}}</a></p>
                     </form>
                 </div>
             </div>

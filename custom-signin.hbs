@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
     
-        <title>Ingresa al universo Criptonauta</title>
+        <title>{{ t "Continue to your account" }}</title>
         
         <script>
     
@@ -34,7 +34,7 @@
     <script>window.location = '{{@site.url}}';</script>
 {{else if @member}}
     {{!-- Member: Redirect to Subscribe --}}
-    <script>window.location = '{{@site.url}}/perfil/';</script>
+    <script>window.location = '{{@site.url}}/player/';</script>
 {{else}}
 
 
@@ -60,7 +60,7 @@
                             </div>
                             <div class="message-error">
                                 {{t "Please enter a valid email address!"}}<br><br>
-                                <a class="start-here" href="/comienza">{{ t "Follow the link"}}</a>
+                                <a class="start-here" href="/start">{{ t "Follow the link"}}</a>
                             </div>
                         </div>
                         <div>
@@ -73,7 +73,7 @@
                                     <span class="button-loader">{{> "icons/loader"}}</span>
                                 </button>
                             </div>
-                        <p>{{t "Don't have an account yet?"}}<br><a href="{{@site.url}}/comienza/">&nbsp;{{t "Sign up"}}</a></p>
+                        <p>{{t "Don't have an account yet?"}}<br><a href="{{@site.url}}/start/">&nbsp;{{t "Sign up"}}</a></p>
                         </div>
                     </form>
                 </div>

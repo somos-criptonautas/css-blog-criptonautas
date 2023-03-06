@@ -1659,6 +1659,10 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
+.subscribe-section img {
+   width: 77%;
+   margin: 0 auto 3rem;
+}
 .gh-head-logo img:nth-child(2) {
 left: unset;
 top: unset;
