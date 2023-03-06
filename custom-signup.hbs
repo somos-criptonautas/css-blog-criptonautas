@@ -41,13 +41,13 @@
     
         {{#if feature_image}}
             <div class="custom-feature-sign">
-                <img class="lazy" srcset="{{img_url feature_image size="s"}} 300w,
-                        {{img_url feature_image size="m"}} 600w,
-                        {{img_url feature_image size="l"}} 1000w,
-                        {{img_url feature_image size="xl"}} 1600w"
+                <img loading="lazy" srcset="{{img_url feature_image size="s" format="webp"}} 300w,
+                        {{img_url feature_image size="m" format="webp"}} 600w,
+                        {{img_url feature_image size="l" format="webp"}} 1000w,
+                        {{img_url feature_image size="xl" format="webp"}} 1600w"
                 sizes="(max-width: 600px) 600px, (max-width: 1160px) 1000px, 1140px"
-                src="{{img_url feature_image size="m"}}"
-                data-src="{{img_url feature_image size="m"}}"
+                src="{{img_url feature_image size="m" format="webp"}}"
+                data-src="{{img_url feature_image size="m" format="webp"}}"
                 alt="{{title}}"
             />
             </div>
