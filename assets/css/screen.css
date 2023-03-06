@@ -1659,6 +1659,10 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
+.full-width .contents .topic-list .topic-list-body .topic-list-item .topic-list-data.main-link {
+   width: 100% !important;
+}
+
 .subscribe-section img {
    width: 77%;
    margin: 0 auto 3rem;
