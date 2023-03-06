@@ -59,6 +59,7 @@ window.onscroll = function() {
 </script>
         {{^is "page"}}
     <script>
+            var toc = document.getElementsByClassName('toc')[0];
         if (toc.childNodes.length > 0) {
             document.addEventListener("DOMContentLoaded", () => {
             tocbot.init({
@@ -71,8 +72,7 @@ window.onscroll = function() {
                 headingsOffset: 40,
                 scrollSmoothOffset: -40
             });
-            var toc = document.getElementsByClassName('toc')[0];
-            if (toc.childNodes.length > 0) {
+\            if (toc.childNodes.length > 0) {
                 document.getElementById('sidebar-toc').style.display = 'flow-root';
             };
         })
