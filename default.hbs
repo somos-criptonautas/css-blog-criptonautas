@@ -22,6 +22,12 @@
         {{> "newsletter"}}
     <link rel="stylesheet" href="{{asset "built/home.css"}}">
         {{else}}
+        <script type="module">
+  import Typebot from "https://cdn.jsdelivr.net/npm/@typebot.io/js@0.0.14/dist/web.js";
+
+  Typebot.initPopup({ typebot: "hi", apiHost: "https://bot.criptonautas.co" });
+</script>
+
         {{/is}}
         {{/if}}
     {{ghost_head}}
