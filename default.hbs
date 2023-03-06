@@ -22,6 +22,20 @@
         {{> "newsletter"}}
     <link rel="stylesheet" href="{{asset "built/home.css"}}">
         {{else}}
+        <script type="module">
+  import Typebot from "https://cdn.jsdelivr.net/npm/@typebot.io/js@0.0.14/dist/web.js";
+
+  Typebot.initBubble({
+    typebot: "hi",
+    apiHost: "https://bot.criptonautas.co",
+    theme: {
+      button: { backgroundColor: "#5107ed", iconColor: "#FFFFFF" },
+      previewMessage: { backgroundColor: "#ffffff", textColor: "black" },
+      chatWindow: { backgroundColor: "#ffffff" },
+    },
+  });
+</script>
+
         {{/is}}
         {{/if}}
     {{ghost_head}}
