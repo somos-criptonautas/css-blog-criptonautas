@@ -1861,11 +1861,6 @@ align-items: inherit;
 .gh-post-upgrade-cta-content {
 padding: 0;
 }
-.kg-callout-emoji {
-   position: relative;
-   left: -1rem;
-   font-size: 5rem;
-}
 
 .gh-content > blockquote {
 margin-bottom: 2.5rem;
