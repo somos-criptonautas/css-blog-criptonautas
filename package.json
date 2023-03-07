@@ -46,7 +46,6 @@
                 "type": "select",
                 "options": [
                     "Light",
-                    "Accent color",
                     "Dark"
                 ],
                 "default": "Light"
