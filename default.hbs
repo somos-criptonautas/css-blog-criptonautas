@@ -22,6 +22,9 @@
         {{> "newsletter"}}
     <link rel="stylesheet" href="{{asset "built/home.css"}}">
         {{else}}
+        {{/is}}
+        {{/if}}
+    {{ghost_head}}
 <script type="module">
   import Typebot from "https://cdn.jsdelivr.net/npm/@typebot.io/js@0.0.14/dist/web.js";
 
@@ -33,12 +36,6 @@
     },
   });
 </script>
-
-
-        {{/is}}
-        {{/if}}
-    {{ghost_head}}
-
 </head>
 
 <body class="{{body_class}}{{{block "body_class"}}} {{#if @site.description}}is-head-b--a_n{{else}}is-head-b--n--a{{/if}}{{#is "tag"}}{{#if tag.feature_image}} is-head-transparent{{/if}}{{/is}}{{#match @custom.header_style "Accent color"}} is-head-brand{{/match}}{{#match @custom.header_style "Dark"}} is-head-dark{{/match}}">

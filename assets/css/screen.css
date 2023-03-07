@@ -1945,9 +1945,8 @@ padding-bottom: 6rem;
 .gh-inner {
 max-width: 1500px;
 }
-.gh-head-actions .gh-search,
-.is-head-transparent .gh-head .nav > li a {
-color: unset !important;
+.gh-head-actions .gh-search {
+display: unset !important;
 }
 
 .gh-content,
