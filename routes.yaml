@@ -2,5 +2,5 @@ taxonomies:
   author: /team/{slug}/
 
 routes:
-  /articulos/:
+  /publicaciones/:
     controller: channel

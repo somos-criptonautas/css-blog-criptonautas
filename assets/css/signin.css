@@ -166,13 +166,19 @@ html[data-theme=dark].single-input .form-control:focus {
         max-width: 90%;
     }
     .subscribe-form input {
-    margin-bottom: 2rem;
+    margin-bottom: 2rem !important;
+    border-bottom-right-radius: 0.5rem;
+border-top-right-radius: 0.5rem;
+    }
+    .newsletter-subscribe {
+        border-bottom-left-radius: 0.5rem;
+        border-top-left-radius: 0.5rem;
     }
 }
 .subscribe-form {
 display: flex;
 flex-wrap: nowrap;
-margin-top: 2rem;
+margin: 3.33rem 0;
 }
 .subscribe-form p {
     font-size: 1.77rem;
