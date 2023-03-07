@@ -3,6 +3,7 @@
     // Dark/Light Mode
     
     var html = document.querySelector('html'),
+    var darkLight = null,
     darkLight = document.querySelector('.it-dark-light')
     darkLight.addEventListener('click', function(){
        if(html.getAttribute('data-theme') === 'dark'){
@@ -31,7 +32,8 @@ function remClass (el, cl) { if (el) { var a = el.className.split(' '); arem(a, 
  * Setup Variables
  */
 var previousPosition = window.pageYOffset;
-var navbar = document.getElementById("gh-burger");
+var navbar = null;
+navbar = document.getElementById("gh-burger");
 var navbarHeight = navbar.offsetHeight;
 
 if (previousPosition > navbarHeight) {
