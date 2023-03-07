@@ -274,6 +274,7 @@ display: block;
 .gh-topic-minimal .gh-card-title {
 font-weight: 600;
 line-height: 1.33;
+padding: 1.33rem 0;
 letter-spacing: -0.01em;
 font-size: 2.5rem;
 }
