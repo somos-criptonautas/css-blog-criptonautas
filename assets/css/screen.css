@@ -1659,7 +1659,7 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
-.kg-callout-card.beta-box {
+.kg-callout-card .beta-box {
 max-width: 777px;
 margin: 0 auto 3rem;
 }
