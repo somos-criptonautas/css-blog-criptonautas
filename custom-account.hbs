@@ -79,7 +79,7 @@
 		<div class="account-image archive-image global-image">
 			{{>icons/user}}
 			{{#if @member.avatar_image}}
-			<img src="{{@member.avatar_image}}">
+			<img src="{{@member.avatar_image}}" size="s" alt="{{name}}" format="webp">
 			{{/if}}
 		</div>
 		<h1 class="archive-title global-title">{{#if @member.name}}{{@member.name}}{{else}}{{t "Your account"}}{{/if}}</h1>

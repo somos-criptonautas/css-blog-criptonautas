@@ -7,7 +7,7 @@
 	<div class="account-header archive-section is-image">
 		<div class="account-image archive-image global-image">
 			{{#if @member.avatar_image}}
-			<img src="{{@member.avatar_image}}">
+			<img src="{{@member.avatar_image}}" size="s" alt="{{name}}" format="webp">
 			{{else}}
 			<div class="account-emoji">{{>icons/user}}</div>
 			{{/if}}
