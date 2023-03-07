@@ -1,7 +1,9 @@
 {
-	"lvl1": "Nivel 1",
-	"lvl2": "Nivel 2",
-	"lvl3": "Nivel 3",
+	"Tourist description": "You’ve an active account with access to posts for subscribers.",
+	"lvl1": "Encuentro inicial (fácil)",
+	"lvl2": "Mundo Padawan (medio)",
+	"lvl3": "Universo Criptonauta (difícil)",
+	"You need to contribute": "Debes contribuir o esperar para subscribirte y avanzar al próximo nivel.",
 	"Your account": "Tu perfil",
 	"Your subscription will expire on": "Su suscripción caducará el",
 	"If you change your mind in the meantime you can turn auto-renew back on to continue your subscription.": "Si cambia de opinión mientras tanto, puede volver a activar la renovación automática para continuar con su suscripción.",
