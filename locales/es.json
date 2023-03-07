@@ -75,7 +75,7 @@
 	"Discourse": "Comunidad",
 	"RSS": "RSS",
 	"Account": "⭐",
-	"Signin": "ingresa",
+	"Signin": "continue",
 	"Signup": "Sumate gratis",
 	"Search": "buscar",
 	"Please enable JavaScript to view the": "Habilite JavaScript para ver el",
@@ -144,6 +144,6 @@
 	"Please check our last articles": "Puedes ver nuestros últimos artículos 😬",
 	"First level subscription": "Tienes acceso a nuestros artículos y canales gratuitos.",
 	"Padawans description": "Practicamos en comunidad para salir del loop 🏄",
-	"Start free": "tipea tu e-mail (puede ser temporal) y descubre cómo salir de La Matrix 🛸",
+	"Start free": "tipea tu e-mail (puede ser temporal) y descubre cómo salir de La Matrix:",
 	"Sign out": "Salir"
 }
