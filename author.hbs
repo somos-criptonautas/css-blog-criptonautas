@@ -6,7 +6,12 @@
             <section class="gh-pagehead">
                 <figure class="gh-author-image">
                 {{#if profile_image}}
-                    <a class="author-name" href="{{url}}"><img loading="lazy" src="{{profile_image}}" size="s" alt="{{name}}" format="webp"></a>
+                    <a class="author-name" href="{{url}}">
+                        <img
+                         loading="lazy"
+                         src="{{profile_image}}"
+                         srcset="{{profile_image size="s" format="webp"}} 300w"
+                         alt="{{name}}"></a>
                 {{else}}
                     <a class="author-name" href="{{url}}"><div class="gh-author-icon">{{> icons/avatar}}</div></a>
                 {{/if}}
