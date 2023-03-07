@@ -274,7 +274,6 @@ display: block;
 .gh-topic-minimal .gh-card-title {
 font-weight: 600;
 line-height: 1.33;
-padding: 1.33rem 0;
 letter-spacing: -0.01em;
 font-size: 2.5rem;
 }
@@ -1660,9 +1659,10 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
-.kg-callout-card .beta-box {
+.beta-box {
 max-width: 777px;
 margin: 0 auto 3rem;
+
 }
 .subscribe-section img {
    width: 77%;
@@ -1860,6 +1860,11 @@ align-items: inherit;
 }
 .gh-post-upgrade-cta-content {
 padding: 0;
+}
+.kg-callout-emoji {
+   position: relative;
+   left: -1rem;
+   font-size: 5rem;
 }
 
 .gh-content > blockquote {
