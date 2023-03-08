@@ -59,6 +59,7 @@ window.onscroll = function() {
 </script>
         {{^is "page"}}
     <script>
+            var toc = '';
             var toc = document.getElementsByClassName('toc')[0];
         if (toc.childNodes.length > 0) {
             document.addEventListener("DOMContentLoaded", () => {
