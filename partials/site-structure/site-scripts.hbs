@@ -83,7 +83,7 @@ window.onscroll = function() {
 <script>    
     const handleMessageListener = ('message', (event) => {
         var origin = event.origin;
-        if (origin == "https://criptonautas.co") {
+        if (origin == "https://comunidad.criptonautas.co") {
             setIframeStyle();
     }
     });
@@ -93,7 +93,7 @@ window.onscroll = function() {
         if (iframe && iframe.contentWindow) {
            iframe.contentWindow.postMessage(
                darkModeFlag ? "dark" : "light",
-               discourseUrl
+               "https://comunidad.criptonautas.co"
                );
         }
     };
