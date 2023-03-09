@@ -62,9 +62,9 @@
                 <div class="gh-head-actions">
                     <div class ="actions-container">
                                             {{#unless @member}}
-                        <a aria-label="signup-button" title="start here" class="gh-head-btn gh-btn shadow" href="/start">{{ t "Subscribe" }}</a>
+                        <a aria-label="signup-button" title="start here" class="gh-head-btn gh-btn shadow" href="{{@site.url}}">{{ t "Subscribe" }}</a>
                     {{else}}
-                        <a aria-label="signin-button" title="continue"  class="gh-head-btn gh-btn shadow" href="/player">{{ t "Account" }}</a>
+                        <a aria-label="signin-button" title="continue"  class="gh-head-btn gh-btn shadow" href="{{@site.url}}/player">{{ t "Account" }}</a>
                     {{/unless}}
                     <div class="nav-icons">
                     <button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button>
@@ -104,7 +104,7 @@
                         <h4 class="gh-subscribe-title">{{ t "Subscribe to" }}</h3>
                                 <div class="gh-subscribe-description">{{ t "Newsletter description"}}</div>
 
-                            <a class="gh-subscribe-btn gh-btn" href="/start">{{ t "Subscribe now" }}</a>
+                            <a class="gh-subscribe-btn gh-btn" href="{{@site.url}}">{{ t "Subscribe now" }}</a>
                 {{/if}}
                     </section>
             </div>

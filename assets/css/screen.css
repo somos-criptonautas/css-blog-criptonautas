@@ -28,6 +28,23 @@ padding: 0 16px;
 html[data-theme=dark] .gh-btn {
 color: var(--color-white) !important;
 }
+.btn {
+   box-sizing: border-box;
+   appearance: none;
+   cursor: pointer;
+   display: flex;
+   align-self: center;
+   text-decoration: none;
+   text-align: center;
+   text-transform: uppercase;
+}
+ .first {
+   transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+ }
+ .first:hover {
+     box-shadow: 0 0 40px 40px inset;
+   }
+
 .gh-btn {
 font-weight: 500;
 font-size: 2rem;
