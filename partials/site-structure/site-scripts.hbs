@@ -1,4 +1,6 @@
 <script src="{{asset "built/main.min.js"}}" defer></script>
+
+
 <script>
     // Dark/Light Mode
     
@@ -78,7 +80,26 @@ window.onscroll = function() {
         })
         }
     </script>
+<script>    
+    const handleMessageListener = ('message', (event) => {
+        var origin = event.origin;
+        if (origin == discourseUrl) {
+            setIframeStyle();
+    }
+    });
+    
+    const setIframeStyle = () => {
+        const iframe = document.getElementById("discourse-embed-iframe");
+        if (iframe && iframe.contentWindow) {
+           iframe.contentWindow.postMessage(
+               darkModeFlag ? "dark" : "light",
+               discourseUrl
+               );
+        }
+    };
+</script>
         {{/is}}
+        
 <script>
   window.addEventListener("load", () => {
     flyingPages({
@@ -88,6 +109,7 @@ window.onscroll = function() {
       hoverDelay: 50
     });
   });
+   window.addEventListener('message', handlMessageListener);
 </script>
 
 <script>
