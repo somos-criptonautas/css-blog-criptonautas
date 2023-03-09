@@ -2532,7 +2532,7 @@ line-height: 1;
 font-weight: 700;
 padding: 2rem 0;
 }
-newsletter-title .description {
+.newsletter-title.description {
    padding: 0 0 2.33rem;
 }
 .newsletter p.wide {
