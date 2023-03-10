@@ -57,8 +57,18 @@ color: var(--color-bg) !important;
 .nav {
     letter-spacing: -0.006em;
 }
+<<<<<<< HEAD
 .gh-btn:hover {
 opacity: 1;
+=======
+
+body:not(.is-head-transparent):not(.is-head-brand):not(.is-head-dark) .gh-head-logo img + img {
+    display: none;
+}
+
+body:is(.is-head-transparent, .is-head-brand, .is-head-dark) .gh-head-logo img + img {
+    opacity: 1;
+>>>>>>> efacc93842633ea8cb7ac4a541cc5483c8b479a5
 }
 
 
@@ -599,10 +609,16 @@ font-family: var(--font-serif);
 /* Subscription banner */
 
 .gh-subscribe {
+<<<<<<< HEAD
    text-align: center;
    }
    .gh-subscribe-title {
       padding-bottom: 3.33rem;
+=======
+    margin-top: 40px;
+    margin-bottom: 80px;
+    text-align: center;
+>>>>>>> efacc93842633ea8cb7ac4a541cc5483c8b479a5
 }
 @media screen and (min-width: 768px) {
 .gh-subscribe-title {
