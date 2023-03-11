@@ -578,7 +578,6 @@ margin: auto;
 }
 
 .gh-pagehead-title {
-text-transform: uppercase;
 letter-spacing: -0.01em;
 font-size: 3.77rem;
 margin: 0 0 3rem;
@@ -704,7 +703,8 @@ font-size: 1.7rem;
 }
 
 .gh-copyright p {
-padding-top: 1.23rem;
+  padding: 1.33rem 0;
+  font-size: 1.33rem;
 }
 
 /* Media queries */
@@ -1013,7 +1013,7 @@ display: none;
 .gh-sidebar {
 background-color: var(--color-border);
 color: var(--color-bg);
-padding: 5rem 3rem;
+padding: 3rem 3.33rem;
 max-width: 90%;
 margin: 7rem auto !important;
 }
@@ -1903,10 +1903,14 @@ box-shadow: inset 0 0 0 2px rgba(99,99,99,.93) !important;
 .gh-content h3 {
 font-weight: 700;
 }
-
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
    .kg-callout-card {
       padding: 2.23rem 2.11rem 2.11rem 3.11rem;
+   }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+   .kg-callout-card {
+      padding: 2.23rem 1.11rem 1.11rem 2.11rem;
    }
    .gh-content > blockquote:not([class]), .gh-content > dl, .gh-content > ol, .gh-content > ul {
    margin-bottom: 1rem;
