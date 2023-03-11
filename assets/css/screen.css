@@ -57,8 +57,13 @@ color: var(--color-bg) !important;
 .nav {
     letter-spacing: -0.006em;
 }
-.gh-btn:hover {
-opacity: 1;
+
+body:not(.is-head-transparent):not(.is-head-brand):not(.is-head-dark) .gh-head-logo img + img {
+    display: none;
+}
+
+body:is(.is-head-transparent, .is-head-brand, .is-head-dark) .gh-head-logo img + img {
+    opacity: 1;
 }
 
 
@@ -615,6 +620,9 @@ font-family: var(--font-serif);
    }
    }
 @media screen and (max-width: 767px) {
+   kg-bookmark-title {
+      font-size: 1.57rem !important;
+   }
 .gh-subscribe-title {
 font-size: 3.75rem;
 }
@@ -1906,6 +1914,13 @@ font-weight: 700;
 @media screen and (max-width: 767px) {
    .kg-callout-card {
       padding: 2.23rem 2.11rem 2.11rem 3.11rem;
+   }
+   .kg-bookmark-card .kg-bookmark-content {
+      padding:1.77rem;
+   }
+   
+   .kg-bookmark-title {
+   line-height: 1.3rem;
    }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
