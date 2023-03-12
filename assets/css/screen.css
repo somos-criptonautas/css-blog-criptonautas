@@ -58,10 +58,6 @@ color: var(--color-bg) !important;
     letter-spacing: -0.006em;
 }
 
-body:not(.is-head-transparent):not(.is-head-brand):not(.is-head-dark) .gh-head-logo img + img {
-    display: none;
-}
-
 body:is(.is-head-transparent, .is-head-brand, .is-head-dark) .gh-head-logo img + img {
     opacity: 1;
 }
@@ -1684,6 +1680,10 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
+.is-head-transparent .gh-icon-btn svg {
+   color: var(--color-white);
+}
+
 .beta-box {
 max-width: 777px;
 margin: 0 auto 3rem;
@@ -2458,9 +2458,12 @@ fill: var(--color-base);
 img {
 border-radius: var(--radius);
 }
-:not(.is-head-transparent) ul.nav li:hover,
+ul.nav li:hover,
 .nav-current {
 box-shadow: 0 -3px 0 0 var(--color-base) inset;
+}
+.is-head-transparent ul.nav li:hover {
+box-shadow: 0 -3px 0 0 var(--color-bg) inset;
 }
 h1, h2, h3, h4, h5, h6 {
 color: var(--color-base);
