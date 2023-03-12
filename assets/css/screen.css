@@ -1040,8 +1040,6 @@ margin: 40px auto 0px;
 
 /* End of toc */
 
-.is-head-transparent
-
 .is-head-transparent .gh-icon-btn {
 color: var(--color-white);
 }
@@ -1070,6 +1068,14 @@ margin-bottom: 0.25rem;
 
 .icon-light {
 display: none;
+}
+
+.is-head-transparent .icon-light {
+display: none;
+}
+
+.is-head-transparent .icon-dark {
+display: block;
 }
 
 .icon-dark {
@@ -2458,7 +2464,7 @@ ul.nav li:hover,
 box-shadow: 0 -3px 0 0 var(--color-base) inset;
 }
 .is-head-transparent ul.nav li:hover {
-box-shadow: 0 -3px 0 0 var(--color-bg) inset;
+box-shadow: 0 -3px 0 0 var(--color-white) inset;
 }
 h1, h2, h3, h4, h5, h6 {
 color: var(--color-base);
