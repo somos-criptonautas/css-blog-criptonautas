@@ -575,7 +575,7 @@ margin: auto;
 
 .gh-pagehead-title {
 letter-spacing: -0.01em;
-font-size: 3.77rem;
+font-size: 4.23rem;
 margin: 0 0 3rem;
 }
 .gh-pagehead-description {
@@ -995,7 +995,7 @@ list-style: none;
 list-style-type: "👉 " !important;
 opacity: 1;
 }
-.toc-list-item a:hover {
+.toc-list-item:hover {
    opacity: 1;
    }
 }
@@ -1681,6 +1681,15 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
+@media screen and (max-width: 768px) {
+
+.kg-callout-emoji {
+   margin-left: -5.23rem;
+   margin-top: -4rem;
+   font-size: 6.33rem;
+   padding: 0.33;
+ }
+}
 .is-head-transparent .gh-icon-btn svg {
    color: var(--color-white);
 }
