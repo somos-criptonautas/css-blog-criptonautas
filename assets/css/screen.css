@@ -1107,11 +1107,11 @@ display: none;
 }
 
 html[data-theme='dark'] img.logo-dark {
-display: block;
+display: block !important;
 }
 
 .is-head-open html[data-theme='dark'] img.logo-dark {
-display: none;
+display: none !important;
 }
 
 html[data-theme='dark'] .icon-dark {
