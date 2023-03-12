@@ -38,12 +38,7 @@ color: var(--color-white) !important;
    text-align: center;
    text-transform: uppercase;
 }
- .first {
-   transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
- }
- .first:hover {
-     box-shadow: 0 0 40px 40px inset;
-   }
+
 
 .gh-btn {
 font-weight: 500;
