@@ -345,7 +345,9 @@ top: calc(100% + 40px);
 .has-full-image .gh-article-sidebar {
 top: 40px;
 }
-
+.gh-author-image {
+margin: auto;
+}
 .gh-pagehead {
 margin: auto;
   margin-bottom: auto;
@@ -454,7 +456,8 @@ margin-bottom: -56px;
 background-color: transparent;
 }
 
-.post-template .gh-cover::before {
+.post-template .gh-cover::before,
+.page-template .gh-cover::before {
 position: absolute;
 inset: 0;
 content: "";
@@ -465,14 +468,16 @@ z-index: 1;
 }
 
 
-.post-template .gh-cover-image {
-transition: transform 1.5s ease;
+.post-template .gh-cover-image,
+.page-template .gh-cover-image {
+transition: transform 5s ease;
 transform: scale(1);
 z-index: 0;
 }
 
-.post-template .gh-cover.loading .gh-cover-image {
-transform: scale(1.02);
+.post-template .gh-cover.loading .gh-cover-image,
+.page-template .gh-cover.loading .gh-cover-image {
+transform: scale(1.11);
 }
 
 .gh-cover-content {
@@ -575,7 +580,7 @@ margin: auto;
 
 .gh-pagehead-title {
 letter-spacing: -0.01em;
-font-size: 4.23rem;
+font-size: 4rem;
 margin: 0 0 3rem;
 }
 .gh-pagehead-description {
@@ -2346,7 +2351,8 @@ html[data-theme=dark] .gh-burger {
 opacity: 1;
 }
 
-html[data-theme=dark] .post-template .gh-cover::before {
+html[data-theme=dark] .post-template .gh-cover::before,
+html[data-theme=dark] .page-template .gh-cover::before {
 opacity: .63;
 }
 
