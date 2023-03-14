@@ -463,14 +463,14 @@ inset: 0;
 content: "";
 background-color: var(--color-black);
 opacity: 0.51;
-transition: opacity 1.5s ease;
+transition: opacity 0.33s ease;
 z-index: 1;
 }
 
 
 .post-template .gh-cover-image,
 .page-template .gh-cover-image {
-transition: transform 5s ease;
+transition: transform 0.33s ease;
 transform: scale(1);
 z-index: 0;
 }
@@ -489,7 +489,8 @@ margin-top: 100px;
 text-align: center;
 }
 
-.post-template .gh-cover-content {
+.post-template .gh-cover-content,
+.page-template .gh-cover-content {
 position: sticky;
 bottom: 80px;
 align-items: flex-start;
