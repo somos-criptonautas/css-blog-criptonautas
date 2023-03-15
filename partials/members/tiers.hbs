@@ -1,6 +1,6 @@
 {{!-- members/tiers.hbs --}}
 
-{{#get "tiers" include="monthly_price,benefits" limit="all" filter="type:paid"}}
+{{#get "tiers" filter="type:paid"}}
     {{#foreach tiers}}
         <div class="it-checkout-plan">
             <header class="it-checkout-plan-header">
