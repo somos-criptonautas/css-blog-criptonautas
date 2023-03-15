@@ -541,6 +541,7 @@ font-family: var(--font-serif);
 .gh-topic-grid .gh-card:not(.large) .gh-card-excerpt,
 .gh-content > blockquote:not([class]), .gh-content > dl, .gh-content > ol, .gh-content > ul {
 font-size: 2rem;
+padding-bottom: 1.73rem;
 }
 .gh-author-name {
 font-size:2.5rem;
@@ -604,7 +605,7 @@ font-family: var(--font-serif);
 }
 @media screen and (min-width: 768px) {
 .gh-subscribe-title {
-   font-size: 4rem;
+   font-size: 5rem;
 }
 }
 @media screen and (min-width: 1199px) {
@@ -2004,6 +2005,7 @@ display: unset !important;
 .gh-content,
 .gh-article-excerpt {
 font-size: 2.25rem;
+padding: 0 1rem;
 }
 
 @media screen and (min-width: 1500px) {
@@ -2167,11 +2169,12 @@ padding: 4rem 0 2rem;
 margin: auto;
 }
 blockquote.kg-blockquote-alt {
-font-weight: 500;
+font-weight: 600;
 line-height: 1.9;
 font-family: var(--font-serif);
+font-style: italic;
 margin-top: 7rem;
-font-size:2.11rem;
+font-size: 2.43rem;
 }
 @media screen and (min-width: 767px) and (max-width: 991px) {
 .kg-image-card {
