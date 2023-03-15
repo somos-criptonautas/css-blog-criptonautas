@@ -4,6 +4,3 @@ taxonomies:
 routes:
   /publicaciones/:
     controller: channel
-  /membership/:
-    template: membership
-    data: page.membership
