@@ -1,25 +1,10 @@
 {{#is "post"}}
-                {{#if @member.paid}}
-                {{else}}
-<div class ="comunidad-comments">
-        <div class="gh-comments">
-                <div id='discourse-comments'></div>
-                <script type="text/javascript">
-                    window.DiscourseEmbed = {
-                        discourseUrl: 'https://comunidad.criptonautas.co/',
-                        discourseEmbedUrl: `https://criptonautas.co{{url}}`,
-                        discourseReferrerPolicy: 'no-referrer-when-downgrade'
-                    };
-
-
-
-  (function() {
-    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
-    d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
-  })();
-</script>
+    {{#if comments}}
+        <div class="gh-comments gh-read-next gh-canvas">
+            <section class="gh-pagehead">
+                <h3 class="gh-pagehead-title">({{comment_count empty="0" singular="" plural=""}}) comentarios</h3>
+            </section>
+            {{comments title="" count=false}}
         </div>
-        </div>
-{{/if}}
+    {{/if}}
 {{/is}}
