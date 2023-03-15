@@ -1,6 +1,6 @@
 {{!-- members/tiers.hbs --}}
 
-{{#get "tiers" filter="type:paid"}}
+{{#get "tiers"}}
     {{#foreach tiers}}
         <div class="it-checkout-plan">
             <header class="it-checkout-plan-header">
@@ -23,7 +23,7 @@
     {{/foreach}}
 {{/get}}
 
-{{#get "tiers" include="yearly_price,benefits" limit="all" as |tiers|}}
+    {{#get "tiers"}}
     {{#foreach tiers}}
         <div class="it-checkout-plan">
             <header class="it-checkout-plan-header">
