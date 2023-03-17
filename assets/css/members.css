@@ -220,6 +220,7 @@ form[data-members-form].loading .it-button-loader {
 .it-checkout-plan-content {
     flex-grow: 1;
     margin-bottom: 6rem;
+    list-style: none;
 }
 
 

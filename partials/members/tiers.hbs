@@ -1,7 +1,8 @@
 {{!-- members/tiers.hbs --}}
-
 {{#get "tiers" include="monthly_price,benefits" filter="type:paid"}}
     {{#foreach tiers}}
+    <div class="pricing-table">
+    <a class="pricing-table-plan" href="#" data-members-plan="Monthly">
         <div class="it-checkout-plan">
             <header class="it-checkout-plan-header">
             <h3>{{name}}</h3>
@@ -16,9 +17,11 @@
         </div>
     {{/foreach}}
 {{/get}}
-
+</a></div>
     {{#get "tiers" include="anual_price,benefits" filter="type:paid"}}
     {{#foreach tiers}}
+    <div class="pricing-table">
+    <a class="pricing-table-plan" href="#" data-members-plan="Yearly">
         <div class="it-checkout-plan">
             <header class="it-checkout-plan-header">
             <h3>{{name}}</h3>
@@ -31,5 +34,7 @@
             </ul>
               <a class="it-button it-button-secondary fit price-button" href="javascript:void(0)" data-portal="signup/{{id}}/yearly">{{t "Select"}} - {{price yearly_price currency=currency}} / {{t "Yr"}}</a>
         </div>
+    </a>
+    </div>
     {{/foreach}}
 {{/get}}
