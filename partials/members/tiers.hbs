@@ -1,29 +1,35 @@
 {{!-- members/tiers.hbs --}}
 
-{{#if @product}}
-    {{#if @product.monthly_price}}
-        <a data-members-plan="{{@product.monthly_price.id}}">
-            Sign up to {{@product.name}} for {{price @product.monthly_price}} a month
-        </a>
-    {{/if}}
-
-    {{#if @product.yearly_price}}
-        <a data-members-plan="{{@product.yearly_price.id}}">
-            Sign up to {{@product.name}} for {{price @product.yearly_price}} annually
-        </a>
-    {{/if}}
-{{else}}
-    {{#foreach @products as |product|}}
-        {{#if product.monthly_price}}
-            <a data-members-plan="{{product.monthly_price.id}}">
-                Sign up to {{product.name}} for {{price product.monthly_price}} a month
-            </a>
-        {{/if}}
-
-        {{#if product.yearly_price}}
-            <a data-members-plan="{{product.yearly_price.id}}">
-                Sign up to {{product.name}} for {{price product.yearly_price}} annually
-            </a>
-        {{/if}}
+{{#get "tiers" include="monthly_price,benefits" filter="type:paid"}}
+    {{#foreach tiers}}
+        <div class="it-checkout-plan">
+            <header class="it-checkout-plan-header">
+            <h3>{{name}}</h3>
+            <span>{{description}}</span>
+            </header>
+            <ul class="it-checkout-plan-content">
+                {{#foreach benefits as |benefit|}}
+                    <li>{{benefit}}</li>
+                {{/foreach}}
+            </ul>
+              <a class="it-button it-button-primary fit price-button" href="javascript:void(0)" data-portal="signup/{{id}}/monthly">{{t "Select"}} - {{price monthly_price currency=currency}} / {{t "Mo"}}</a>
+        </div>
     {{/foreach}}
-{{/if}}
+{{/get}}
+
+    {{#get "tiers" include="anual_price,benefits" filter="type:paid"}}
+    {{#foreach tiers}}
+        <div class="it-checkout-plan">
+            <header class="it-checkout-plan-header">
+            <h3>{{name}}</h3>
+            <span>{{description}}</span>
+            </header>
+            <ul class="it-checkout-plan-content">
+                {{#foreach benefits as |benefit|}}
+                    <li>{{benefit}}</li>
+                {{/foreach}}
+            </ul>
+              <a class="it-button it-button-secondary fit price-button" href="javascript:void(0)" data-portal="signup/{{id}}/yearly">{{t "Select"}} - {{price yearly_price currency=currency}} / {{t "Yr"}}</a>
+        </div>
+    {{/foreach}}
+{{/get}}
