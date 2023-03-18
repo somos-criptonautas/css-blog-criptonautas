@@ -611,11 +611,12 @@ font-family: var(--font-serif);
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
    .gh-subscribe-title {
-width: 90%;
+width: 90% !important;
    }
+}
 @media screen and (min-width: 1199px) {
    .gh-subscribe-title {
-   width: 80%;
+   width: 80% !important;
    }
    }
 @media screen and (max-width: 767px) {
@@ -1689,6 +1690,12 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
+.pricingtable, .pricingtable-plan {
+   -webkit-box-pack: justify;
+   -ms-flex-pack: justify;
+   justify-content: space-between;
+ }
+
 .pricing-table-plan {
 display: -webkit-box;
 display: -ms-flexbox;
@@ -1773,8 +1780,12 @@ max-width: 777px;
 .comunidad-comments {
 margin-bottom: 6.11rem;
 }
-
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+.gh-main {
+   padding-bottom: 0;
+}
+}
+@media screen and (max-width: 767px) {
 .gh-main {
 padding: 5rem 0;
 }
@@ -3286,6 +3297,7 @@ box-shadow: none;
 
   .youtube-player img:hover {
     -webkit-filter: brightness(73%);
+    filter: brightness(73%);
   }
 
   .youtube-player .play {
