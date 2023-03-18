@@ -603,30 +603,26 @@ font-family: var(--font-serif);
    .gh-subscribe-title {
       padding-bottom: 3.33rem;
 }
-@media screen and (min-width: 768px) {
-.gh-subscribe-title {
-   font-size: 5rem;
-   margin: auto;
-}
-}
-@media screen and (min-width: 768px) and (max-width: 992px) {
-   .gh-subscribe-title {
-width: 90% !important;
-   }
-}
-@media screen and (min-width: 1199px) {
-   .gh-subscribe-title {
-   width: 80% !important;
-   }
-   }
 @media screen and (max-width: 767px) {
-   .kg-bookmark-title {
-      font-size: 1.57rem !important;
-   }
+.kg-bookmark-title {
+   font-size: 1.57rem !important;
+}
 .gh-subscribe-title {
 font-size: 3.75rem;
 }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+   .gh-subscribe-title {
+width: 90% !important;
+   }
+}
+@media screen and (min-width: 992px) {
+   .gh-subscribe-title {
+   width: 80% !important;
+   font-size: 5rem;
+   margin: auto;
+   }
+   }
 .custom-no-feature-sign p a {
 color: var(--color-primary) !important;
 }
