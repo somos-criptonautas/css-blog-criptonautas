@@ -19,27 +19,25 @@
 	<div class="faq-wrap">
 		<h2 class="faq-title">{{t "FAQs"}}</h2>
 		<div class="faq-content">
-			{{content}}
+			                    <div class="faq-item">
+                        <h4>Podré cancelar mi plan?</h4>
+                        <p>Sí, claro! Con un click, sin contratos ni reglas sin sentido 🙂<br><br>Las subscripciones son mensuales o anuales.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Por qué hay descuento en BETA?</h4>
+                        <p>Cuando tengamos 50 artículos o 100 videos, la subscripción costará el doble.<br><br><i>(Tienes descuento aparte si te subscribes un año)</i></p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Aprenderé trading?</h4>
+                        <p>La membresía te acercará más info, dependerá de ti ponerla en práctica.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Tengo otra pregunta</h4>
+                        <p>Sigue la burbuja de chat debajo a la derecha o <a href="mailto:somos@criptonautas.co">envianos un e-mail</a> 👊</p>
+                    </div>
 		</div>
 	</div>
 </div>
-
-        {{^if @member}}
-          <div class="it-subscribe-section">
-              <h2 class="it-checkout-title it-title-highlight">{{t "Or Become a free Member"}}</h2>
-              <p>{{t "To stay up to date with our members only contents straight to your inbox"}}</p>
-              <div class="it-subscribe-content">
-                <form data-members-form="subscribe" class="subscribe-form">
-                  <div class="input-wrapper">
-                    <input type="email" class="subscribe-form-input" placeholder="{{t "Enter your email address"}}" aria-label="{{t "Email"}}" data-members-email="" required="true">
-                    <button type="submit" class="subscribe-form-button it-button it-button-primary">{{t "Subscribe"}}</button>
-                  </div>
-                  <div class="message-success">{{t "Please check your inbox and click the link to confirm your subscription."}}</div>
-                  <div class="message-error">{{t "An error occurred, please try again later."}}</div>
-                </form>
-              </div>
-            </div>
-        {{/if}}
 {{#get "posts" limit="6" filter="visibility:[members,paid,tiers]+feature_image:-null" include="authors" as |special_posts|}}
 	{{#if special_posts}}
 		{{>related label=(t "Last insights for Randoms, Padawans & Criptonautas 🔥")}}

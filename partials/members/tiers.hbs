@@ -1,5 +1,5 @@
 {{!-- members/tiers.hbs --}}
-{{#get "tiers" include="monthly_price,benefits" filter="type:paid"}}
+{{#get "tiers" include="monthly_price,benefits" filter="type:paid"  limit="all" as |tiers|}}
     {{#foreach tiers}}
     <a class="pricing-table-plan" href="#" data-members-plan="Monthly">
     <div class="pricing-table it-checkout-plan">
@@ -18,7 +18,7 @@
     {{/foreach}}
 {{/get}}
 
-    {{#get "tiers" include="anual_price,benefits" filter="type:paid"}}
+    {{#get "tiers" include="anual_price,benefits" filter="type:paid"  limit="all" as |tiers|}}
     {{#foreach tiers}}
     <a class="pricing-table-plan" href="#" data-members-plan="Anual">
     <div class="pricing-table it-checkout-plan">

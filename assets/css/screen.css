@@ -1691,6 +1691,15 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
+.faq-content {
+display: grid;
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
+justify-content: space-between;
+grid-gap: 8vmin 12vmin;
+grid-template-columns: 1fr 1fr;
+}
+
 .pricingtable, .pricingtable-plan {
    -webkit-box-pack: justify;
    -ms-flex-pack: justify;
