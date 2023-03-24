@@ -9,27 +9,27 @@
 <div class="custom-archive loop-section global-padding">
 	<div class="global-subtitle">
 		<small class="global-subtitle-title">
-		{{{t "Explore our {start-bold}tags{end-bold}" start-bold="<span>" end-bold="</span>"}}}
+		{{{t "Meet our {start-bold}authors{end-bold}" start-bold="<span>" end-bold="</span>"}}}
 		</small>
 	</div>
-	{{#get "tags" limit="all" filter="visibility:public" include="count.posts" order="count.posts desc" as |tags|}}
-	{{#if tags}}
-	<div class="loop-wrap is-tags">
-		{{#foreach tags}}
+	{{#get "authors" limit="all" include="count.posts" order="count.posts desc" as |authors|}}
+	{{#if authors}}
+	<div class="loop-wrap is-authors">
+		{{#foreach authors}}
 		{{#if count.posts}}
 		<div class="item is-loop">
-			{{#if feature_image}}
-			<div class="item-image is-landscape global-image global-image-orientation global-radius">
+			{{#if profile_image}}
+			<div class="item-image global-image global-image-orientation global-radius">
 				<a href="{{url}}" class="global-link" aria-label="{{name}}"></a>
-				{{>images/archive_image archive_image=feature_image}}
+				{{>images/archive_image archive_image=profile_image}}
 			</div>
 			{{/if}}
 			<div class="item-content">
 				<h2 class="item-title"><a href="{{url}}">{{name}}</a></h2>
-				<small>{{plural count.posts empty=(t "No posts") singular=(t "1 post") plural=(t "% posts")}}</small>
-				{{#if description}}
+				<small>{{#if location}}{{t "from"}} {{location}} ∙ {{/if}}{{plural count.posts empty=(t "No posts") singular=(t "1 post") plural=(t "% posts")}}</small>
+				{{#if bio}}
 				<p class="item-excerpt">
-					{{description}}
+					{{bio}}
 				</p>
 				{{/if}}
 			</div>

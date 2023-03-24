@@ -1,0 +1,36 @@
+<div class="loop-section global-padding">
+	<div class="{{#is "tag,author"}}global-subtitle{{else if is_error}}global-subtitle{{else}}loop-subtitle{{/is}}">
+		<small class="{{#is "tag,author"}}global-subtitle-title{{else if is_error}}global-subtitle-title{{else}}loop-subtitle-title global-title{{/is}}">
+		{{#is "tag,author"}}{{{t "Check out the {start-bold}latest posts{end-bold}" start-bold="<span>" end-bold="</span>"}}}{{else if is_error}}{{{t "Check out the {start-bold}latest posts{end-bold}" start-bold="<span>" end-bold="</span>"}}}{{else}}{{{t "See what we’ve {break}{start-bold}written lately{end-bold}" break="<br>" start-bold="<span>" end-bold="</span>"}}}{{/is}}</small>
+		{{^if is_error}}
+		{{^is "tag,author"}}
+		{{#get "authors" limit="6" include="count.posts" order="count.posts desc"}}
+		<div class="global-authors option{{#foreach authors}}{{#if count.posts}}{{#has number="1"}}-1{{else has number="2"}}-2{{else has number="6"}}-3{{/has}}{{/if}}{{/foreach}}">
+			<div>
+				{{#foreach authors to="5"}}
+				{{#if count.posts}}
+				<div class="global-item-author{{#if profile_image}} is-image global-image{{/if}}">
+					<a href="{{url}}" class="global-link" title="{{name}}"></a>
+					{{#if profile_image}}
+					{{>images/other_image other_image=profile_image alt=name}}
+					{{else}}
+					<span>{{name}}</span>
+					{{/if}}
+				</div>
+				{{/if}}
+				{{/foreach}}
+			</div>
+			<small>{{t "Meet our author"}}</small>
+			<small>{{t "Meet our authors"}}</small>
+			<small>{{t "Meet our top authors"}}</small>
+		</div>
+		{{/get}}
+		{{/is}}
+		{{/if}}
+	</div>
+	<div class="loop-wrap">
+		{{#foreach posts}}
+		{{>item is_loop=true show_excerpt=true}}
+		{{/foreach}}
+	</div>
+</div>

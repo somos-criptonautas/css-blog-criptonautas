@@ -418,7 +418,7 @@ background-color: currentColor;
 border-radius: 50%;
 }
 .gh-read-next {
-padding-top:5rem;
+padding-top:7rem;
    }
 @media screen and (min-width: 1700px){
 .gh-read-next {
@@ -595,6 +595,81 @@ color: var(--color-secondary-text);
 font-family: var(--font-serif);
 }
 
+
+/* --------------------------------------------------------------------------
+   18.Custom — Membership page
+   -------------------------------------------------------------------------- */
+   .membership-section {
+      margin-bottom: 7vh;
+      padding-bottom: 10vh;
+   }
+   
+   .membership-wrap {
+      padding: 8vh 4vw;
+      background-color: var(--color-eleven);
+   }
+   
+   .membership-switch[data-active-price="yearly"] + .membership-cards [data-monthly],
+   .membership-switch[data-active-price="monthly"] + .membership-cards [data-yearly] {
+      display: none;
+   }
+   
+   /* Switch
+      –––––––––––––––––––––––––––––––––––––––––––––––––––– */
+   .membership-switch,
+   .membership-switch::before,
+   .membership-switch-button {
+      border-radius: 100px;
+   }
+   
+   .membership-switch,
+   .membership-switch button {
+      position: relative;
+   }
+   
+   .membership-switch {
+      display: none;
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 350px;
+      min-height: 56px;
+      margin: 0 auto 4vh;
+      padding: 6px;
+      background-color: var(--color-body);
+   }
+   
+   .membership-switch[data-active-price="monthly"]::before {
+      transform: translateX(-100%);
+   }
+   
+   .membership-switch::before {
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      bottom: 6px;
+      width: calc(50% - 6px);
+      content: "";
+      transition: transform .15s ease-in-out;
+      background-color: var(--color-thirteen);
+   }
+   
+   .membership-switch button {
+      font-size: 1.6rem;
+      font-weight: var(--font-weight-three-medium);
+      line-height: 1;
+      width: 50%;
+      padding: 0;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+      color: var(--color-font-three);
+      border: 0;
+      outline: none;
+      background-color: transparent;
+      box-shadow: none;
+   }
+
 /* Subscription banner */
 
 .gh-subscribe {
@@ -653,6 +728,52 @@ opacity: 1;
 margin-right: 1rem;
 }
 
+
+/* Tags & Members visibility label
+   –––––––––––––––––––––––––––––––––––––––––––––––––––– */
+   .global-tags {
+      line-height: 0;
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+   }
+   
+   .global-tags:empty {
+      display: none;
+   }
+   
+   .global-tags a {
+      font-family: var(--font-family-three);
+      font-size: 1.4rem;
+      font-weight: var(--font-weight-three-medium);
+      line-height: 1;
+      display: inline-block;
+      margin: 0 5px 5px 0;
+      padding: 7px 10px;
+      transition: background-color .2s ease;
+      background-color: var(--color-one);
+   }
+   
+   .global-tags a:hover {
+      background-color: var(--color-two);
+   }
+   
+   .global-tags a,
+   .global-tags > svg {
+      border-radius: 100px;
+   }
+   
+   .global-tags > svg {
+      line-height: 0;
+      display: inline-flex;
+      height: 14px;
+      margin-right: 5px;
+      padding: 7px;
+      background-color: var(--color-one);
+      fill: var(--color-font-one);
+   }
+   
+
 /* Site footer */
 
 .footer-criptonauta {
@@ -662,13 +783,14 @@ margin-right: 1rem;
 @media screen and (max-width: 768px) {
    .gh-foot {
       padding-bottom: 3.33rem;
+      padding-top: 6rem;
    }
 }
 .gh-foot {
 margin: auto;
 color: var(--color-text);
 white-space: inherit;
-padding: 7.77rem 0 5.55rem;
+padding: 11rem 0 5.55rem;
 }
 .gh-subscribe-description {
 margin: auto;
@@ -1734,7 +1856,7 @@ margin: 5vw auto;
 @media screen and (max-width: 768px) {
 
 .kg-callout-emoji {
-   margin-left: -5.23rem;
+   margin-left: -4.23rem;
    margin-top: -4.5rem;
    font-size: 6rem !important;
    padding: 0.33rem !important;
@@ -1977,7 +2099,7 @@ font-weight: 700;
 }
 @media screen and (max-width: 767px) {
    .kg-callout-card {
-      padding: 2.23rem 2.11rem 2.11rem 3.11rem;
+      padding: 2.23rem 1.6rem 1rem 1.33rem;
    }
    .kg-bookmark-card .kg-bookmark-content {
       padding:1.77rem;
@@ -2210,10 +2332,6 @@ outline: 0;
 .center {
 text-align: center;
 margin:auto;
-}
-.kg-image-card {
-padding: 4rem 0 2rem;
-margin: auto;
 }
 blockquote.kg-blockquote-alt {
 font-weight: 600;

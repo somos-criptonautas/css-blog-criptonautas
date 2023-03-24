@@ -1,24 +1,14 @@
 {{!< default}}
-{{#page}}
-
-<div class="it-page it-pricing">
-	<div class="it-container">
-		<div class="it-checkout-form it-canvas">
-      <h1 class="it-checkout-title it-title-highlight">{{title}}</h1>
-      <p>{{custom_excerpt}}</p>
-      <div class="it-checkout-box it-grid-c3">
-        {{> "members/tiers"}}
-      </div>
-
-      <div class="it-content">
-        {{content}}
-
-      </div>
-
+{{#post}}
+<div class="post-section">
+	{{>post_header membership_page=true}}
+</div>
+{{#if html}}
 <div class="faq-section global-padding">
 	<div class="faq-wrap">
 		<h2 class="faq-title">{{t "FAQs"}}</h2>
 		<div class="faq-content">
+			<div class="faq-content">
 			                    <div class="faq-item">
                         <h4>Podré cancelar mi plan?</h4>
                         <p>Sí, claro! Con un click, sin contratos ni reglas sin sentido 🙂<br><br>Las subscripciones son mensuales o anuales.</p>
@@ -36,15 +26,13 @@
                         <p>Sigue la burbuja de chat debajo a la derecha o <a href="mailto:somos@criptonautas.co">envianos un e-mail</a> 👊</p>
                     </div>
 		</div>
+		</div>
 	</div>
 </div>
+{{/if}}
 {{#get "posts" limit="6" filter="visibility:[members,paid,tiers]+feature_image:-null" include="authors" as |special_posts|}}
 	{{#if special_posts}}
-		{{>related label=(t "Last insights for Randoms, Padawans & Criptonautas 🔥")}}
+		{{>related label=(t "The latest posts {start-bold}only for subscribers{end-bold}" start-bold="<span>" end-bold="</span>")}}
 	{{/if}}
 {{/get}}
-    </div>
-    </div>
-	</div>
-</div>
-{{/page}}
+{{/post}}

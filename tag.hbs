@@ -1,31 +1,16 @@
 {{!< default}}
-
-<div class="gh-page">
-    <div class="gh-container">
-
-        {{#tag}}
-        <header class="gh-page-head">
-
-            <h1>{{name}}</h1>
-
-            <p>
-                {{#if description}}
-                    {{description}}
-                {{else}}
-                    A collection of {{plural ../pagination.total empty='posts' singular='% post' plural='% posts'}}
-                {{/if}}
-            </p>
-
-        </header>
-        {{/tag}}
-
-        <div class="gh-content">
-        {{#foreach posts}}
-
-            {{> "postlist-item"}}
-
-        {{/foreach}}
-        </div>
-
-    </div>
+{{#tag}}
+<div class="archive-section{{#if feature_image}} is-image{{/if}}">
+	{{#if feature_image}}
+	<div class="archive-image global-image">
+		{{>images/other_image other_image=feature_image alt=name}}
+	</div>
+	{{/if}}
+	<h1 class="archive-title global-title is-tag">{{name}}<span>{{../pagination.total}}</span></h1>
+	{{#if description}}
+	<p class="archive-excerpt global-excerpt">{{description}}</p>
+	{{/if}}
 </div>
+{{/tag}}
+{{>loop}}
+{{pagination}}
