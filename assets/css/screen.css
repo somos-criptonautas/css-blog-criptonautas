@@ -1683,12 +1683,16 @@ body,
 color: var(--color-base) !important;
 }
 
+.global-question {
+   display: block;
+   margin-top: 6.23vh;
+}
 
 /* --------------------------------------------------------------------------
 19.Custom — Account page
 -------------------------------------------------------------------------- */
 .account-section + .membership-section {
-padding-bottom: 5vh;
+padding-bottom: 6.23vh;
 }
 
 /* Question

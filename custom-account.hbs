@@ -89,7 +89,9 @@
 			{{else}}
 			{{t "First level subscription"}}
 			<p class="archive-excerpt global-excerpt">&nbsp;</p>
-			<p class="archive-excerpt global-excerpt">[AGREGAR CARDS DE ARTICULOS Y EMBED FORO]</p>
+				{{#if membership_page}}
+					{{>members/tiers}}
+				{{/if}}
 			<p class="archive-excerpt global-excerpt">Te faltan X desafíos para pasar de nivel 👾</p>
 			{{/if}}
 		</p>
