@@ -6,7 +6,7 @@
 		</div>
 		<div class="membership-cards">
 			{{#if @member.paid}}
-			{{#get "tiers" include="monthly_price,yearly_price,benefits" filter="type:paid"}}
+			{{#get "tiers" include="monthly_price,yearly_price,benefits" filter="visibility:member+type:paid"}}
 			{{#foreach tiers}}
 			<div class="membership-card">
 				<div class="membership-card-content">
