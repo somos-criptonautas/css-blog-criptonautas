@@ -1,10 +1,9 @@
-<div class="post-header">
+<div class="post-header gh-article-header">
 	<div class="post-header-wrap global-padding{{#if post_center}} is-center{{else if post_classic}} is-classic{{else if membership_page}} is-center{{else unless feature_image}} is-center{{/if}}">
 		<div class="post-header-container">
 			<div class="post-header-content">
 				<div>
 					<div class="post-tags global-tags">{{^if access}}{{>icons/padlock}}{{/if}}{{#if tags}}{{tags limit="all" separator=""}}{{/if}}</div>
-					<h1 class="post-title global-title">{{title}}</h1>
 					{{#if custom_excerpt}}
 					<p class="post-excerpt global-excerpt">{{custom_excerpt}}</p>
 					{{/if}}
