@@ -35,7 +35,7 @@
 			<div class="membership-card">
 				<div class="membership-card-content">
 					<div class="membership-card-label">{{name}}</div>
-					<h2 class="membership-card-price" data-monthly>{{#if monthly_price}}{{price currency=currency}}{{price monthly_price}}{{else}}$0{{/if}}<span>/{{t "month"}}</span></h2>
+					<h2 class="membership-card-price" data-yearly>{{price currency=currency}}{{price monthly_price}}<span>/{{t "month"}}</span></h2>
 					{{#if description}}<p>{{description}}</p>{{/if}}
 					{{#if benefits}}
 					<div class="membership-card-list">
