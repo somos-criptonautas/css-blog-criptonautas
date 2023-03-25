@@ -1,6 +1,6 @@
 <div class="membership-section global-padding">
 	<div class="membership-wrap global-radius{{#if feature_image}} global-bg-image" style="background-image: url({{feature_image}}){{/if}}">
-		<div class="membership-switch" data-active-price="yearly">
+		<div class="membership-switch" data-active-price="monthly">
 			<button data-price="monthly">{{t "Monthly"}}</button>
 			<button data-price="yearly">{{t "Yearly"}}</button>
 		</div>
@@ -51,7 +51,8 @@
 			</div>
 			{{/foreach}}
 			{{/get}}
-			
+			{{^if @member.paid}}
+
 		</div>
 	</div>
 	{{^if @member}}
