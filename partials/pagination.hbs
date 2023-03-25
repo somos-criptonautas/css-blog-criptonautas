@@ -1,7 +1,6 @@
-{{#if next}}
-  <div class="it-pagination">
-    <button class="it-load-posts it-button it-button-primary">
-      {{t "Load More"}}
-    </button>
-  </div>
-{{/if}}
+<div class="pagination-section">
+	{{#if next}}
+		<a href="{{page_url next}}" aria-label="Load more"></a>
+		<button class="global-button">{{t "Load more"}}</button>
+	{{/if}}
+</div>
