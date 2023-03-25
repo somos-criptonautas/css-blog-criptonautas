@@ -2479,6 +2479,7 @@ textarea::placeholder {
    width: 100%;
    color: var(--color-font-one);
    background-color: var(--color-body-partial);
+   
 }
 
 .post-header-container,
