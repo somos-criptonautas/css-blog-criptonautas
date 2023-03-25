@@ -1,13 +1,13 @@
 <div class="membership-section global-padding">
 	<div class="membership-wrap global-radius{{#if feature_image}} global-bg-image" style="background-image: url({{feature_image}}){{/if}}">
-		<div class="membership-switch" data-active-price="yearly">
+		<div class="membership-switch" data-active-price="monthly">
 			<button data-price="monthly">{{t "Monthly"}}</button>
 			<button data-price="yearly">{{t "Yearly"}}</button>
 		</div>
 		<div class="membership-cards">
 			{{^if @member}}
 			{{#if membership_page}}
-			{{#get "tiers" include="benefits" filter="type:free"}}
+			{{#get "tiers" include="benefits" filter="type:free" limit="1"}}
 			{{#foreach tiers}}
 			<div class="membership-card">
 				<div class="membership-card-content">
