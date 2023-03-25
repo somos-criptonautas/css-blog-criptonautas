@@ -7,7 +7,7 @@
 		<div class="membership-cards">
 			{{^if @member}}
 			{{#if membership_page}}
-			{{#get "tiers" include="benefits" filter="type:free" limit="1"}}
+			{{#get "tiers" include="benefits" filter="type:free"}}
 			{{#foreach tiers}}
 			<div class="membership-card">
 				<div class="membership-card-content">
@@ -24,13 +24,13 @@
 					</div>
 					{{/if}}
 				</div>
-				<a href="{{@site.url}}/signup/" class="membership-button global-button">{{t "Sign up for free"}}</a>
+				<a href="{{@site.url}}/start/" class="membership-button global-button">{{t "Sign up for free"}}</a>
 			</div>
 			{{/foreach}}
 			{{/get}}
 			{{/if}}
 			{{/if}}
-			{{#get "tiers" include="monthly_price,yearly_price,benefits" filter="type:paid" limit="all"}}
+			{{#get "tiers" include="monthly_price,yearly_price,benefits" filter="type:paid"}}
 			{{#foreach tiers}}
 			<div class="membership-card">
 				<div class="membership-card-content">
