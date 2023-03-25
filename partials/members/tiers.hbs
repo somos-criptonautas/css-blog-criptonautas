@@ -7,7 +7,7 @@
 		<div class="membership-cards">
 			{{^if @member}}
 			{{#if membership_page}}
-			{{#get "tiers" include="benefits" filter="visibility:public+type:free"}}
+			{{#get "tiers" include="benefits" filter="visibility:public+type:paid"}}
 			{{#foreach tiers}}
 			<div class="membership-card">
 				<div class="membership-card-content">
