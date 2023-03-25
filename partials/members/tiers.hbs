@@ -6,7 +6,7 @@
 		</div>
 		<div class="membership-cards">
 			{{#if @member.paid}}
-			{{#get "tiers" include="monthly_price,yearly_price,benefits" filter="visibility:all+type:paid"}}
+			{{#get "tiers" include="monthly_price,yearly_price,benefits" filter="visibility:none+type:paid"}}
 			{{#foreach tiers}}
 			<div class="membership-card">
 				<div class="membership-card-content">
@@ -84,12 +84,6 @@
 	{{/if}}
 	{{/if}}
 </div>
-	{{^if @member}}
-	{{#if membership_page}}
-	<span class="global-question">{{t "Already have an account?"}} <a href="{{@site.url}}/continue/">{{t "Sign in"}}</a></span>
-	{{/if}}
-
-	{{/if}}
 </div>
 {{#contentFor "script_js"}}
 <script>
