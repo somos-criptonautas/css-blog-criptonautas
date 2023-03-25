@@ -6,7 +6,6 @@
 		</div>
 		<div class="membership-cards">
 			{{^if @member}}
-			{{#if membership_page}}
 			{{#get "tiers" include="benefits" filter="type:free"}}
 			{{#foreach tiers}}
 			<div class="membership-card">
@@ -28,8 +27,7 @@
 			</div>
 			{{/foreach}}
 			{{/get}}
-			{{/if}}
-			{{/if}}
+			{{/else}}
 			{{#get "tiers" include="monthly_price,yearly_price,benefits" filter="type:paid"}}
 			{{#foreach tiers}}
 			<div class="membership-card">
@@ -53,6 +51,7 @@
 			</div>
 			{{/foreach}}
 			{{/get}}
+			{{/if}}
 		</div>
 	</div>
 	{{^if @member}}
