@@ -30,7 +30,7 @@
 			{{/get}}
 			{{/if}}
 			{{/if}}
-			{{#get "tiers" include="monthly_price,benefits" filter="visibility:none"}}
+			{{#get "tiers" include="monthly_price,benefits" filter="visibility:public+type:paid"}}
 			{{#foreach tiers}}
 			<div class="membership-card">
 				<div class="membership-card-content">
@@ -51,20 +51,15 @@
 			</div>
 			{{/foreach}}
 			{{/get}}
+			
 		</div>
 	</div>
 	{{^if @member}}
 	{{#if membership_page}}
-	<small class="global-question">{{t "Already have an account?"}} <a href="{{@site.url}}/signin/">{{t "Sign in"}}</a></small>
+	<small class="global-question">{{t "Already have an account?"}} <a href="{{@site.url}}/continue/">{{t "Sign in"}}</a></small>
 	{{/if}}
 	{{/if}}
 </div>
-	{{^if @member}}
-	{{#if membership_page}}
-	<span class="global-question">{{t "Already have an account?"}} <a href="{{@site.url}}/continue/">{{t "Sign in"}}</a></span>
-	{{/if}}
-
-	{{/if}}
 </div>
 {{#contentFor "script_js"}}
 <script>
