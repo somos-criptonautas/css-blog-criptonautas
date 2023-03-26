@@ -752,7 +752,7 @@ font-family: var(--font-serif);
       font-size: 2rem;
       font-weight: bold;
       margin-right: 7px;
-      content: "✓";
+      content: "none";
       transform: translateY(-3px);
    }
    
@@ -1028,9 +1028,14 @@ font-family: var(--font-serif);
       border: none;
       border-radius: 100px;
       outline: none;
-      background-color: var(--color-secondary);
+      background-color: var(--color-primary);
+      color: var(--color-white)
    }
-   
+   .global-button:hover,
+   .global-button:active {
+      background-color: var(--color-primary-hover);
+   }
+
    .global-button,
    .global-button.members-cta-button {
       transition-timing-function: ease;
