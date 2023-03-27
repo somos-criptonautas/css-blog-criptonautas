@@ -4869,13 +4869,13 @@ textarea::placeholder {
 /* Label */
 .membership-card-label {
    font-size: 1.8rem;
-   font-weight: var(--font-weight-three-medium);
+   font-weight: 500;
    line-height: 1;
    display: inline-block;
-   margin-bottom: 3vh;
-   padding: 6px 14px;
+   margin-bottom: 3.33vh;
+   padding: 0.55rem 1.23rem;
    border-radius: 100px;
-   background-color: var(--color-eight);
+   background-color: var(--color-bg-alt);
 }
 
 /* Price */
