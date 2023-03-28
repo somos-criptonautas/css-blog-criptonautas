@@ -541,7 +541,6 @@ font-family: var(--font-serif);
 .gh-topic-grid .gh-card:not(.large) .gh-card-excerpt,
 .gh-content > blockquote:not([class]), .gh-content > dl, .gh-content > ol, .gh-content > ul {
 font-size: 1.87rem;
-padding-bottom: 1.73rem;
 }
 .gh-author-name {
 font-size:2.5rem;
@@ -1015,40 +1014,23 @@ font-family: var(--font-serif);
 /* Button
    –––––––––––––––––––––––––––––––––––––––––––––––––––– */
    .global-button {
-      font-family: var(--font-sans);
       font-size: 2.4rem;
       font-weight: 600;
       line-height: 1.3;
-      position: relative;
-      display: inline-block;
       box-sizing: border-box;
-      padding: 21px 40px;
+      padding: 1.33rem 2rem;
       cursor: pointer;
       text-align: center;
-      border: none;
-      border-radius: 100px;
-      outline: none;
+      border-radius: 3.33rem;
       background-color: var(--color-primary);
       color: var(--color-white)
-   }
-   .global-button:hover,
-   .global-button:active {
-      background-color: var(--color-primary-hover) !important;
-   }
-
-   .global-button,
-   .global-button.members-cta-button {
-      transition-timing-function: ease;
-      transition-duration: .2s;
-      transition-property: color, opacity, background-color;
-      text-decoration: none;
    }
    
    .global-button:hover,
    .global-accent-color-buttons .global-button,
    .global-button.members-cta-button:hover {
       color: var(--color-white);
-      background-color: var(--ghost-accent-color);
+      background-color: var(--color-primary-hover);
    }
    
    .global-accent-color-buttons .global-button:hover {
@@ -2510,7 +2492,7 @@ margin-bottom: 6.11rem;
 }
 @media screen and (min-width: 768px) {
 .gh-main {
-   padding-bottom: 0;
+   padding-bottom: 7rem;
 }
 }
 @media screen and (max-width: 767px) {
@@ -2670,7 +2652,7 @@ padding: 0;
 }
 
 .gh-content > blockquote {
-margin-bottom: 2.5rem;
+margin-bottom: 2rem;
 }
 .kg-toggle-content {
 padding: 0 2rem 3rem !important;
@@ -2929,11 +2911,11 @@ text-align: center;
 margin:auto;
 }
 blockquote.kg-blockquote-alt {
-font-weight: 600;
-line-height: 1.9;
+font-weight: 500;
+line-height: 1.83;
 font-family: var(--font-serif);
 font-style: italic;
-margin-top: 7rem;
+margin-top: 5rem;
 font-size: 2.43rem;
 }
 @media screen and (min-width: 767px) and (max-width: 991px) {
