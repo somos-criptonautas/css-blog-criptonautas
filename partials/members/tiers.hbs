@@ -4,6 +4,11 @@
 			<button data-price="monthly">{{t "Monthly"}}</button>
 			<button data-price="yearly">{{t "Yearly"}}</button>
 		</div>
+{{#foreach @products as |product|}}
+  {{#match @member.subscriptions.0.price.product.product_id "=" product.id}}
+    {{log product.slug}}
+  {{/match}}
+{{/foreach}}
 		<div class="membership-cards">
 			{{#if @member.paid}}
 			{{#get "tiers" include="monthly_price,yearly_price,benefits" filter="type:paid" limit="all"}}
