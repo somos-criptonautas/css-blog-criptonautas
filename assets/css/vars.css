@@ -54,9 +54,10 @@ background-color: var(--color-secondary);
 
     /* Colours */
     --color-secondary-text: #939393;
-    --color-primary: #f67b22;
-    --color-primary-hover: #ed5107;
+    --color-primary: #ed5107;
+    --color-primary-hover: #f67b22;
     --color-secondary: #5107ed;
+    --color-secondary-hover: #5107ed;
     --color-success: #07815c;
     --color-danger: #ca203f;
     --color-base: #111;

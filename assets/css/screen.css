@@ -731,6 +731,7 @@ font-family: var(--font-serif);
       max-width: 500px;
       margin-top: 3vh;
       margin-bottom: 0;
+      color: var(--color-primary-hover);
    }
    
    /* List */
@@ -2838,7 +2839,7 @@ transition: top 0.75s;
 padding: 4rem 10vh;
 border: 5px dotted var(--color-gray);
 }
-gh-post-upgrade-cta, .gh-post-upgrade-cta-content, .gh-post-upgrade-cta h2, a.gh-portal-close {
+gh-post-upgrade-cta, .gh-post-upgrade-cta-content, .gh-post-upgrade-cta h2 {
 color: inherit !important;
 }
 gh-post-upgrade-cta, .gh-post-upgrade-cta-content {
