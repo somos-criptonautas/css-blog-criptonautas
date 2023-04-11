@@ -701,10 +701,9 @@ textarea::placeholder {
 }
 
 .global-button:hover,
-.global-accent-color-buttons .global-button,
 .global-button.members-cta-button:hover {
    color: var(--color-white);
-   background-color: var(--ghost-accent-color);
+   background-color: var(--ghost-accent-color) !important;
 }
 
 .global-accent-color-buttons .global-button:hover {

@@ -1028,10 +1028,8 @@ font-family: var(--font-serif);
    }
    
    .global-button:hover,
-   .global-accent-color-buttons .global-button,
    .global-button.members-cta-button:hover {
-      color: var(--color-white);
-      background-color: var(--color-primary-hover);
+      background-color: var(--color-primary-hover) !important;
    }
    
    .global-accent-color-buttons .global-button:hover {
@@ -2649,7 +2647,7 @@ margin-top: 1.5rem;
 align-items: inherit;
 }
 .gh-post-upgrade-cta-content {
-padding: 0;
+padding: 0 !important;
 }
 
 .gh-content > blockquote {
@@ -2836,8 +2834,10 @@ padding-left: 1rem;
 transition: top 0.75s; 
 }
 .gh-post-upgrade-cta {
-padding: 4rem 10vh;
-border: 5px dotted var(--color-gray);
+padding: 6rem 5vh;
+}
+.gh-post-upgrade-cta p {
+margin-top: 3.5rem;
 }
 gh-post-upgrade-cta, .gh-post-upgrade-cta-content, .gh-post-upgrade-cta h2 {
 color: inherit !important;
