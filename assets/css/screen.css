@@ -2648,6 +2648,7 @@ align-items: inherit;
 }
 .gh-post-upgrade-cta-content {
 padding: 0 !important;
+background-color: transparent !important;
 }
 
 .gh-content > blockquote {
