@@ -2650,7 +2650,10 @@ align-items: inherit;
 padding: 0 !important;
 background-color: transparent !important;
 }
-
+.gh-post-upgrade-cta a,
+.gh-post-upgrade-cta a:hover {
+color: inherit;
+}
 .gh-content > blockquote {
 margin-bottom: 2rem;
 }

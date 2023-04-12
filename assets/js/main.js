@@ -199,13 +199,6 @@ function darkMode() {
       var tapArea,startX;for(var item of(tapArea=document.querySelectorAll(".featured-wrap"),startX=0,tapArea))item.ontouchstart=function(t){startX=t.touches[0].clientX},item.ontouchmove=function(t){Math.abs(t.touches[0].clientX-startX)>5&&t.cancelable&&t.preventDefault()};
    }
 
-/* Minor scripts
-   –––––––––––––––––––––––––––––––––––––––––––––––––––– 
-   Website : fueko.net
-   Author  : fueko
-   –––––––––––––––––––––––––––––––––––––––––––––––––––– */
-   !function(){function e(e){e.matches&&(t.checked=!1)}const t=document.getElementById("toggle"),g=document.querySelector(".post-content"),o=document.querySelector(".is-dropdown"),c=document.querySelectorAll(".header-checkbox:checked"),n=document.querySelector(".footer-nav-column.is-social li"),d=document.querySelector(".footer-nav-column.is-social");if(o&&(o.addEventListener("click",function(){o.classList.toggle("is-active")}),document.addEventListener("click",function(e){e.target.closest(".is-dropdown")||o.classList.remove("is-active")})),c){const i=window.matchMedia("(min-width: 1024px)");i.addListener(e),e(i)}n||d.remove();g&&g.style.setProperty("--scrollbar-width",window.innerWidth-document.documentElement.clientWidth+"px");}();
-
    /* Fuse.js
       –––––––––––––––––––––––––––––––––––––––––––––––––––– 
       Version : 6.4.6
