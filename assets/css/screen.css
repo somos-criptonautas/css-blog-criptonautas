@@ -1335,6 +1335,18 @@ width: 100%;
    gap: 20px;
    line-height: 1.4;
  }
+ .is-head-open #gh-head :is(.gh-head-btn, .gh-head-link) {
+   opacity: 1;
+   transform: translateY(0);
+   transition: transform .4s,opacity .4s;
+     transition-delay: 0s, 0s;
+   transition-delay: .2s;
+ }
+ #gh-head .nav a {
+   font-size: 2.6rem;
+   font-weight: 600;
+   text-transform: none;
+ }
 }
 @media screen and (min-width: 992px) and (max-width: 1349px) {
 .is-head-b--a_n .gh-head-inner {
