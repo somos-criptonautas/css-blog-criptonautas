@@ -1322,6 +1322,13 @@ width: 100%;
    justify-content: center;
    flex-direction: column;
  }
+ .is-head-open #gh-head {
+   -webkit-overflow-scrolling: touch;
+   height: 100%;
+   inset: 0;
+   overflow-y: scroll;
+   position: fixed;
+   z-index: 3999999;
 }
 @media screen and (min-width: 992px) and (max-width: 1349px) {
 .is-head-b--a_n .gh-head-inner {
