@@ -2134,7 +2134,7 @@ textarea::placeholder {
 
 }
 
-@media (max-width:768px) {
+@media screen and (max-width:768px) {
    .subscribe-form {
       margin-right: 0;
    }
