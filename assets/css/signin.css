@@ -164,15 +164,18 @@ html[data-theme=dark].single-input .form-control:focus {
         flex-wrap: wrap;
         flex-direction: column;
         max-width: 90%;
+        margin: auto;
     }
     .subscribe-form input {
-    margin-bottom: 2rem !important;
     border-bottom-right-radius: 0.5rem;
-border-top-right-radius: 0.5rem;
+border-bottom-left-radius: 0.5rem;
     }
     .newsletter-subscribe {
-        border-bottom-left-radius: 0.5rem;
         border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+    }
+    .newsletter-title {
+    font-size: 4rem;
     }
 }
 .subscribe-form {
