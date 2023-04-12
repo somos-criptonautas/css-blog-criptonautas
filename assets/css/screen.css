@@ -1330,6 +1330,12 @@ width: 100%;
    position: fixed;
    z-index: 3999999;
 }
+#gh-head .nav {
+   align-items: center;
+   gap: 20px;
+   line-height: 1.4;
+ }
+}
 @media screen and (min-width: 992px) and (max-width: 1349px) {
 .is-head-b--a_n .gh-head-inner {
 row-gap: 0;
