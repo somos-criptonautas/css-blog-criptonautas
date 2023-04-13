@@ -32,6 +32,13 @@
 
   Typebot.initBubble({
     typebot: "hi",
+  prefilledVariables: {
+    'Current URL': 'https://my-site/account',
+    'User name': @member.firstname,
+    'E-mail': @member.email,
+    'Paid' : @member.paid,
+    'ID' : @member.uuid,
+  },
     apiHost: "https://bot.criptonautas.co",
     theme: {
       button: { backgroundColor: "#5107ed", iconColor: "#FFFFFF" },
