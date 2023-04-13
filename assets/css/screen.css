@@ -111,10 +111,22 @@ margin: auto;
 margin-bottom: 4.23rem;
 }
 
+.post-feed .post + .post {
+   border-top: 1px solid var(--mid-gray-color);
+ }
+
 .gh-topic-grid .gh-card-link {
 display: flex;
 gap: 1.5rem;
 transition: ease 0.11s;
+}
+
+.gh-topic-grid:hover .gh-topic-grid-item:hover {
+opacity: 0.5;
+}
+
+.gh-topic-grid-item {
+transition: opacity .2s var(--animation-base);
 }
 
 .gh-topic-grid .gh-card-link:hover {
@@ -146,7 +158,6 @@ flex: 1;
 position: relative;
 flex-shrink: 0;
 width: 33vh;
-height: 100%;
 }
 .gh-topic-grid .gh-card-image::before {
 display: block;
@@ -166,12 +177,13 @@ width: 100%;
 object-fit: cover;
 }
 .gh-topic-grid .gh-card-image img {
-top: 0;
-left: 0;
 width: 100%;
 height: 100%;
 border-radius:0.77rem;
-object-fit: cover;
+object-fit: none;
+}
+.gh-card-wrapper {
+padding-left: 1rem;
 }
 a.gh-card-lin {
 opacity: 0.73 !important;
@@ -209,8 +221,9 @@ color: var(--color-white);
 .gh-content p,
 .gh-author-bio .gh-pagehead-description {
 font-family: var(--font-serif);
-font-size: 2rem;
-line-height: 1.66;
+font-size: 2rem !important;
+line-height: 1.63;
+margin-bottom: 1.7rem;
 }
 
 .gh-topic-grid .gh-card.no-image.large .gh-card-excerpt {
@@ -583,6 +596,7 @@ margin: auto;
 letter-spacing: -0.01em;
 font-size: 4rem;
 margin: 0 0 3rem;
+var(--color-light-gray)
 }
 .gh-pagehead-description {
 margin: 1rem 0 5rem;
@@ -2294,13 +2308,9 @@ max-width: 880px;
 –––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .account-details {
 max-width: 600px;
-margin: 5vh auto 2vh;
+margin: 5vh 0 15vh;
 padding: 0 var(--margin-wrap-left-right);
 text-align: left;
-}
-
-.account-details + .account-details {
-margin-top: 20px;
 }
 
 .account-details-wrap,
@@ -2316,7 +2326,6 @@ background-color: var(--color-nine);
 .account-details-content {
 display: flex;
 flex-wrap: wrap;
-padding: 20px 6%;
 }
 
 .account-detail-column {
@@ -2357,16 +2366,14 @@ margin-top: 10px;
 
 /* Sign out button */
 .account-signout-wrap {
-width: 100%;
-margin-top: 2vh;
-padding-top: 18px;
 text-align: right;
-border-top: var(--border) var(--color-border-one);
+width: 100%;
 }
 
 .account-signout {
 font-size: 2rem;
 padding: 12px 26px;
+margin-left: 1rem;
 }
 
 /* Expired */
@@ -2385,7 +2392,7 @@ width: 100%;
 }
 
 .account-button {
-margin-right: 12px;
+font-size: 2rem;
 }
 
 .account-button:hover {
@@ -3026,6 +3033,12 @@ background-color: var(--color-base);
    blockquote.kg-blockquote-alt {
       line-height: 1.63;
    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+.gh-head-logo img {
+   max-height: 7rem;
+}
 }
 
 .gh-head-logo img {
@@ -3768,12 +3781,6 @@ box-shadow: none;
  .account-details-wrap {
     margin-bottom: 10px;
     background-color: var(--color-nine);
- }
- 
- .account-details-content {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px 6%;
  }
  
  .account-detail-column {
