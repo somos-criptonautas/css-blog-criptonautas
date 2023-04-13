@@ -596,7 +596,7 @@ margin: auto;
 letter-spacing: -0.01em;
 font-size: 4rem;
 margin: 0 0 3rem;
-var(--color-light-gray)
+color: var(--color-light-gray)
 }
 .gh-pagehead-description {
 margin: 1rem 0 5rem;
