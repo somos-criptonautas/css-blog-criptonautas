@@ -1,4 +1,3 @@
-{{#has visibility="public"}}
 {{#is "post"}}
     {{#get "posts" include="authors" filter="tags:[{{post.tags}}]+id:-{{post.id}}" limit="3" as |next|}}
         {{#if next}}
@@ -18,4 +17,3 @@
         {{/if}}
     {{/get}}
 {{/is}}
-{{/has}}
