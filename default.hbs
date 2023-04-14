@@ -72,7 +72,7 @@
                                             {{#unless @member}}
                         <a aria-label="signup-button" title="start here" class="gh-head-btn gh-btn shadow" href="{{@site.url}}">{{ t "Subscribe" }}</a>
                     {{else}}
-                        <a aria-label="signin-button" title="continue"  class="gh-head-btn gh-btn shadow" href="{{@site.url}}/player">{{ t "Account" }}</a>
+                        <a aria-label="signin-button" title="continue"  class="gh-head-btn gh-btn shadow" href="{{@site.url}}/profile">{{ t "Account" }}</a>
                     {{/unless}}
                     <div class="nav-icons">
                     <button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button>
@@ -92,6 +92,7 @@
             </div>
         {{{body}}}
 {{^is "page"}}
+{{^has visibility="paid"}}
         <footer class="gh-foot gh-outer">
             <div class="gh-foot-inner gh-inner">                     
 
@@ -117,6 +118,7 @@
                     </section>
             </div>
         </footer>
+{{/has}}
 {{/is}}
 <div class="footer-criptonauta">
                         <nav class="gh-foot-menu">

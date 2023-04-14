@@ -60,6 +60,7 @@ window.onscroll = function() {
 };
 </script>
         {{^is "page"}}
+        {{^has visibility="paid"}}
     <script>
             var toc = document.getElementsByClassName('toc')[0];
         if (toc.childNodes.length > 0) {
@@ -80,6 +81,7 @@ window.onscroll = function() {
         })
         }
     </script>
+        {{/has}}
         {{/is}}
 
 <script>    
@@ -110,7 +112,7 @@ window.onscroll = function() {
   window.addEventListener("load", () => {
     flyingPages({
       delay: 0,
-      ignoreKeywords: ["\/ghost","\/ghost\/#","\/p\/","\/start\/","\/continue\/","\/player\/","exit","\/public\/members.js","?action=continue","?action=start","#",".png",".jpeg",".jpg",".gif",".svg",".webp"],
+      ignoreKeywords: ["\/ghost","\/ghost\/#","\/p\/","\/start\/","\/continue\/","\/profile\/","exit","\/public\/members.js","?action=continue","?action=start","#",".png",".jpeg",".jpg",".gif",".svg",".webp"],
       maxRPS: 3,
       hoverDelay: 50
     });

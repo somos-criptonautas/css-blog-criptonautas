@@ -125,11 +125,13 @@ transition: ease 0.11s;
 opacity: 0.5;
 }
 
-.gh-topic-grid-item {
+.gh-topic-grid-item,
+.gh-post-upgrade-cta {
 transition: opacity .2s var(--animation-base);
 }
 
-.gh-topic-grid .gh-card-link:hover {
+.gh-topic-grid .gh-card-link:hover,
+.gh-post-upgrade-cta:hover {
 opacity: 1 !important;
 }
 
@@ -607,9 +609,10 @@ margin: auto;
 
 .gh-pagehead-title {
 letter-spacing: -0.01em;
-font-size: 4rem;
+font-size: 3rem;
 margin: 0 0 3rem;
 color: var(--color-light-gray);
+text-transform: uppercase;
 }
 .gh-pagehead-description {
 margin: 1rem 0 5rem;
@@ -2803,7 +2806,8 @@ padding: 0 1rem;
 @media screen and (min-width: 1500px) {
 .home-template .gh-main a,
 .kg-bookmark-container,
-.gh-topic-grid .gh-card-link {
+.gh-topic-grid .gh-card-link,
+.gh-post-upgrade-cta {
 opacity: 0.63;
 }
 .home-template .gh-main a:hover,
