@@ -34,7 +34,7 @@
     typebot: "hi",
   prefilledVariables: {
     'URL when chat': '{{url absolute="true"}}',
-    'Nick': {{ @member.firstname}},
+    {{#if @member}}'Nick': {{ @member.firstname}},{{/if}}
     'E-mail': {{ @member.email}},
     'Paid?' : {{ @member.paid}},
     'ID' : {{ @member.uuid}},
