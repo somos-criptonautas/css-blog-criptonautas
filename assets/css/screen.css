@@ -153,12 +153,21 @@ background: var(--color-secondary);
 .gh-topic-grid .gh-card.large .gh-card-link > * {
 flex: 1;
 }
-
 .gh-topic-grid .gh-card-image {
-position: relative;
-flex-shrink: 0;
+   position: relative;
+   flex-shrink: 0;
+}
+@media screen and (min-width: 1200px) {
+   .gh-topic-grid .gh-card-image {
 width: 33vh;
 }
+}
+@media screen and (min-width: 1200px) {
+.gh-topic-grid .gh-card-image {
+width: 43vh;
+}
+}
+
 .gh-topic-grid .gh-card-image::before {
 display: block;
 width: 100%;
@@ -175,7 +184,7 @@ object-fit: cover;
 }
 .gh-topic-grid .gh-card-image img {
 width: 100%;
-max-height: 33vh;
+height: 100%;
 border-radius:0.77rem;
 object-fit: cover;
 }
