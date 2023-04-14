@@ -28,17 +28,20 @@
     {{ghost_head}}
 
 <script type="module">
-  import Typebot from 'assets/js/typebot-web.min.js';
+  import Typebot from "assets/js/typebot-web.min.js";
 
   Typebot.initBubble({
-    typebot: 'hi',
+    typebot: "hi",
   prefilledVariables: {
+    'URL when chat': {{url absolute="true"}},
     'Nick': {{@member.firstname}},
     'E-mail': {{@member.email}},
     'Paid?' : {{@member.paid}},
     'ID' : {{@member.uuid}},
   },
-    apiHost: 'https://bot.criptonautas.co',
+    apiHost: "https://bot.criptonautas.co",
+    theme: {
+    },
   });
 </script>
 
