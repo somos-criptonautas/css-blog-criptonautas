@@ -249,6 +249,14 @@ text-transform: uppercase;
 margin-top:1rem;
 }
 
+.gh-read-next .gh-canvas {
+
+}
+
+.gh-read-next .gh-card-footer {
+   display: flex;
+}
+
 .gh-card-footer > * + * {
 display: flex;
 gap: 6px;
@@ -1059,7 +1067,7 @@ font-family: var(--font-serif);
    font-size: 1.57rem !important;
 }
 .gh-subscribe-title {
-font-size: 3.75rem;
+font-size: 4rem;
 }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
