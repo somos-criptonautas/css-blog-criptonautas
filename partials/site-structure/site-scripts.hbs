@@ -60,7 +60,8 @@ window.onscroll = function() {
 };
 </script>
         {{^is "page"}}
-        {{^has slug="arte"}}
+        {{#has slug="arte"}}
+        {{else}}
     <script>
             var toc = document.getElementsByClassName('toc')[0];
         if (toc.childNodes.length > 0) {
