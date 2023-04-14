@@ -60,7 +60,6 @@ window.onscroll = function() {
 };
 </script>
         {{^is "page"}}
-        {{^has "arte"}}
     <script>
             var toc = document.getElementsByClassName('toc')[0];
         if (toc.childNodes.length > 0) {
@@ -81,7 +80,6 @@ window.onscroll = function() {
         })
         }
     </script>
-        {{/has}}
         {{/is}}
 
 <script>    
@@ -119,7 +117,7 @@ window.onscroll = function() {
   });
 
 </script>
-<script src="flying-pages.min.js"></script>
+<script src="{{asset "js/flying-pages.min.js"></script>
 <script>
   /*
    * Light YouTube Embeds by @labnol
