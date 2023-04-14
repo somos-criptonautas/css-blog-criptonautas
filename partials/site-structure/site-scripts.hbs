@@ -60,7 +60,7 @@ window.onscroll = function() {
 };
 </script>
         {{^is "page"}}
-        {{^has visibility="paid"}}
+        {{#has visibility="public"}}
     <script>
             var toc = document.getElementsByClassName('toc')[0];
         if (toc.childNodes.length > 0) {
