@@ -2,7 +2,6 @@
     pagination(true);
 })();
 
-/* disable cover fixed height
 (function () {
     if (!document.body.classList.contains('post-template')) return;
 
@@ -16,7 +15,6 @@
         cover.classList.remove('loading');
     });
 })();
-*/
 
 const removeAccents = (str) => {
     return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
