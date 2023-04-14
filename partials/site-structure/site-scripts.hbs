@@ -98,11 +98,8 @@ window.onscroll = function() {
                );
         }
     };
-</script>
-        {{/has}}
-        {{/is}}
-        
-<script>
+   window.addEventListener('message', handleMessageListener);
+
   window.addEventListener("load", () => {
     flyingPages({
       delay: 0,
@@ -111,9 +108,11 @@ window.onscroll = function() {
       hoverDelay: 50
     });
   });
-   window.addEventListener('message', handleMessageListener);
-</script>
 
+</script>
+<script src="flying-pages.min.js"></script>
+        {{/has}}
+        {{/is}}
 <script>
   /*
    * Light YouTube Embeds by @labnol
