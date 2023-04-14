@@ -81,7 +81,13 @@ window.onscroll = function() {
         })
         }
     </script>
+        {{/has}}
+        {{/is}}
+
 <script>    
+
+/* disable discourse comments /*
+
     const handleMessageListener = ('message', (event) => {
         var origin = event.origin;
         if (origin == "https://comunidad.criptonautas.co") {
@@ -98,6 +104,9 @@ window.onscroll = function() {
                );
         }
     };
+/* disable discourse comments */
+
+
    window.addEventListener('message', handleMessageListener);
 
   window.addEventListener("load", () => {
@@ -111,8 +120,6 @@ window.onscroll = function() {
 
 </script>
 <script src="flying-pages.min.js"></script>
-        {{/has}}
-        {{/is}}
 <script>
   /*
    * Light YouTube Embeds by @labnol
