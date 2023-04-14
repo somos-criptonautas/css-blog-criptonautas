@@ -28,12 +28,12 @@
     {{ghost_head}}
 
 <script type="module">
-  import Typebot from "https://cdn.jsdelivr.net/npm/@typebot.io/js@0.0.14/dist/web.js";
+  import Typebot from "assets/js/typebot.web.js";
 
   Typebot.initBubble({
     typebot: "hi",
   prefilledVariables: {
-    'URL when chat': {{url absolute="true"}},
+    'URL when chat': '{{url absolute="true"}}'',
     'Nick': {{ @member.firstname}},
     'E-mail': {{ @member.email}},
     'Paid?' : {{ @member.paid}},
