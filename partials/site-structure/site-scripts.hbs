@@ -60,6 +60,7 @@ window.onscroll = function() {
 };
 </script>
         {{^is "page"}}
+        {{^has "arte"}}
     <script>
             var toc = document.getElementsByClassName('toc')[0];
         if (toc.childNodes.length > 0) {
@@ -98,6 +99,7 @@ window.onscroll = function() {
         }
     };
 </script>
+        {{/has}}
         {{/is}}
         
 <script>
