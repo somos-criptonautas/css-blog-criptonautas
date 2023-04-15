@@ -475,7 +475,7 @@ background-color: rgba(0, 0, 0, 0.4);
 }
 
 .post-template .gh-cover {
---cover-height: 100vh;
+--cover-height: 100vh !important;
 
 align-items: flex-end;
 padding-top: 120px;
@@ -1073,6 +1073,7 @@ font-family: var(--font-serif);
 }
    .gh-subscribe-title {
       padding-bottom: 3.33rem;
+      font-size: 4.5rem;
 }
 @media screen and (max-width: 767px) {
 .kg-bookmark-title {
@@ -1082,18 +1083,6 @@ font-family: var(--font-serif);
 font-size: 4rem;
 }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
-   .gh-subscribe-title {
-width: 90% !important;
-   }
-}
-@media screen and (min-width: 992px) {
-   .gh-subscribe-title {
-   width: 80% !important;
-   font-size: 5rem;
-   margin: auto;
-   }
-   }
 .custom-no-feature-sign p a {
 color: var(--color-primary) !important;
 }
