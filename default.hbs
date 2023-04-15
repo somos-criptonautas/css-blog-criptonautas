@@ -34,8 +34,8 @@
     typebot: "hi",
   prefilledVariables: {
     'URL': '{{url absolute="true"}}',
-    {{#if @member.firstname}}'Nick': {{ @member.firstname}},{{/if}}
-    'E-mail': '{{ @member.email}}',
+    {{#if @member.firstname}}'name': {{ @member.firstname}},{{/if}}
+    'email': '{{ @member.email}}',
     'Paid?' : {{ @member.paid}},
     'ID' : '{{ @member.uuid}}',
   },
