@@ -155,10 +155,6 @@ background: var(--color-secondary);
 .gh-topic-grid .gh-card.large .gh-card-link > * {
 flex: 1;
 }
-.gh-topic-grid .gh-card-image {
-   position: relative;
-   flex-shrink: 0;
-}
 @media screen and (min-width: 1200px) {
    .gh-topic-grid .gh-card-image {
 width: 33vh;
