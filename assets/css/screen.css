@@ -2432,13 +2432,13 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
-.page-juntada-criptonauta .gh-main {
+.page-juntada-criptonauta main.gh-main {
 padding-top: 0;
 }
-.page-juntada-criptonauta .gh-content {
+.page-juntada-criptonauta .gh-article  .gh-content {
 margin-top: 0;
 }
-.page-juntada-criptonauta .gh-content .gh-canvas {
+.page-juntada-criptonauta .gh-article .gh-content .gh-canvas {
 grid-template-columns: none;
 }
 .page-juntada-criptonauta .gh-article-header {
