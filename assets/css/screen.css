@@ -2434,7 +2434,8 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
-.page-juntada-criptonauta typebot-bubble {
+.page-juntada-criptonauta typebot-bubble,
+.page-working typebot-bubble:nth-of-type(2) {
 display: none;
 }
 .page-juntada-criptonauta main.gh-main {
