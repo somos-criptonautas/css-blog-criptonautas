@@ -50,8 +50,11 @@ html[data-theme=dark] .global-button {
 background-color: var(--color-secondary);
 }
 
-:root {
+.align-left {
+text-align: left;
+}
 
+:root {
     /* Colours */
     --color-secondary-text: #939393;
     --color-primary: #ed5107;
