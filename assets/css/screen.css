@@ -256,10 +256,6 @@ text-transform: uppercase;
 margin-top:1rem;
 }
 
-.gh-read-next .gh-canvas {
-
-}
-
 .gh-read-next .gh-card-footer {
    display: flex;
 }
@@ -2428,7 +2424,9 @@ background-color: var(--color-alert-error);
 }
 
 /* Matenauta stuff */
-
+.gh-card {
+   word-break: unset;
+}
 .faq-content {
 display: grid;
 -webkit-box-pack: justify;
