@@ -24,6 +24,7 @@ html {
 }
 
 html[data-theme="dark"] {
+    --color-primary: #5107ed;
     --color-primary-hover: #9a5cfd;
     --color-secondary-text: #f1f1f1;
     --color-base: #f1f1f1;
@@ -35,7 +36,7 @@ html[data-theme="dark"] {
     --color-svg: #f1f1f1;
     --border-form-control: #444c56;
     --bg-icon-mail: #539bf5;
-    --ghost-accent-color: #539bf5;
+    --ghost-accent-color: #9a5cfd;
 }
 html[data-theme=dark] h1,
 html[data-theme=dark] h2:not(.gh-pagehead-title),
