@@ -84,7 +84,7 @@
 	"by": "by",
 	"&": "&",
 	"and others": "and others",
-	"Load More": "see More",
+	"Load more": "see more",
 	"Loading": "loading...",
 	"Whatsapp": "Whatsapp",
 	"Linkedin": "Linkedin",
@@ -142,5 +142,7 @@
 	"Please check our last articles": "You can read our last articles 😬",
 	"Tourists description": "did you already say hellp?",
 	"Start free": "Let's have fun!",
-	"Sign out": "Exit"
+	"Sign out": "Exit",
+	"Check out the latest posts": "Check out the latest posts",
+	"See what we’ve written lately": "See what we’ve written lately"
 }

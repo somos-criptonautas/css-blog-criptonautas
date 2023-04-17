@@ -89,7 +89,7 @@
 	"by": "por",
 	"&": "Y",
 	"and others": "Y otras",
-	"Load More": "ver más",
+	"Load more": "más artículos",
 	"Loading": "Cargando...",
 	"Whatsapp": "Whatsapp",
 	"Linkedin": "Linkedin",
@@ -152,5 +152,7 @@
 	"First level subscription": "Tienes acceso a nuestros artículos y canales gratuitos.",
 	"Tourists description": "ya te presentaste?",
 	"Start free": "tipea tu e-mail y descubre por qué salir de La Matrix",
-	"Sign out": "Salir"
+	"Sign out": "Salir",
+	"Check out the latest posts": "Mis últimos artículos",
+	"See what we’ve written lately": "Últimos artículos del blog"
 }

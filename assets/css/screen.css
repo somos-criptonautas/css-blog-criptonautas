@@ -2220,6 +2220,7 @@ fill: var(--color-three);
    margin-bottom: 2vh;
    padding-top: 1.8vh;
    border-top: var(--border) var(--color-border-one);
+   text-align: center;
 }
 
 .global-subtitle-title {
@@ -2237,7 +2238,8 @@ fill: var(--color-three);
 14.Author & Tag page
 -------------------------------------------------------------------------- */
 .archive-section {
-padding: 4vh 0;
+padding: 7vh 0;
+margin-top: 11vh;
 text-align: center;
 color: var(--color-font-one);
 background-color: var(--color-bg-alt);
@@ -2250,6 +2252,12 @@ padding-top: 0;
 .archive-social,
 .archive-excerpt {
 margin: 3vh auto 0;
+}
+
+.archive-social svg.img {
+   height: 2.33rem;
+   width: 2.33rem;
+   color: var(--color-base);
 }
 
 .archive-title,
@@ -2423,6 +2431,23 @@ background-color: var(--color-alert-error);
 }
 
 /* Matenauta stuff */
+
+.user-cover {
+   display: block;
+   overflow: hidden;
+   width: 100%;
+   height: 300px;
+   margin: 0 0 30px;
+   background: #fafafa no-repeat 50%;
+     background-image: none;
+     background-size: auto;
+   background-size: cover;
+}
+
+.pagination-section {
+text-align: center;
+padding-top: 5rem;
+}
 .gh-card {
    word-break: unset;
 }
