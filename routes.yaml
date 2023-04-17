@@ -4,4 +4,3 @@ taxonomies:
 routes:
   /publicaciones/:
     controller: channel
-  /feedback/*: 
