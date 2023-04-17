@@ -2437,15 +2437,28 @@ display: none;
 }
 .page-juntada-criptonauta main.gh-main {
 padding-top: 0;
+padding-bottom: 3rem;
+}
+.page-juntada-criptonauta .gh-foot {
+padding: 0;
 }
 .page-juntada-criptonauta .gh-article  .gh-content {
 margin-top: 0;
 }
 .page-juntada-criptonauta .gh-article .gh-content .gh-canvas {
-grid-template-columns: none;
+grid-template-columns: none !important;
 }
-.page-juntada-criptonauta .gh-article-header {
+.page-juntada-criptonauta .gh-article-header,
+.page-juntada-criptonauta .gh-foot-menu,
+.page-juntada-criptonauta .it-foot-social {
 display: none;
+}
+.page-juntada-criptonauta iframe {
+width: 98vw;
+}
+
+.page-juntada-criptonauta .gh-canvas > * {
+grid-column: inherit;
 }
 .user-cover {
    display: block;
