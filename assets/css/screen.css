@@ -2432,6 +2432,18 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
+.page-juntada-criptonauta .gh-main {
+padding-top: 0;
+}
+.page-juntada-criptonauta .gh-content {
+margin-top: 0;
+}
+.page-juntada-criptonauta .gh-content .gh-canvas {
+grid-template-columns: none;
+}
+.page-juntada-criptonauta .gh-article-header {
+display: none;
+}
 .user-cover {
    display: block;
    overflow: hidden;

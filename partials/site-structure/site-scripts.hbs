@@ -78,7 +78,8 @@ window.onscroll = function() {
 </script>
     {{/has}}
         {{^is "page"}}
-        {{^has tag="no-toc"}}
+        {{#has tag="no-toc"}}
+        {{else}}
     <script>
             var toc = document.getElementsByClassName('toc')[0];
         if (toc.childNodes.length > 0) {

@@ -6,24 +6,6 @@
     <title>{{meta_title}}</title>
     <link rel="stylesheet" href="{{asset "built/screen.css"}}">
 <link rel="preconnect" href="https://comunidad.criptonautas.co">
-        <script>
-        	if(typeof(Storage) !== 'undefined') {
-                if (localStorage.getItem('selected-theme') == 'light') {
-                    document.documentElement.setAttribute('data-theme', 'light');
-                }
-                else if (localStorage.getItem('selected-theme') == 'dark') {
-                    document.documentElement.setAttribute('data-theme', 'dark');
-                }
-        	}
-        </script>
-        {{#if @member}}
-        {{else}}
-        {{#is "home"}}
-        {{> "newsletter"}}
-    <link rel="stylesheet" href="{{asset "built/home.css"}}">
-        {{else}}
-        {{/is}}
-        {{/if}}
     {{ghost_head}}
 
 </head>
@@ -77,35 +59,8 @@
 {{^is "page"}}
         <footer class="gh-foot gh-outer">
             <div class="gh-foot-inner gh-inner">                     
-
-  {{#get 'posts'}}
-    {{#foreach posts visibility='all'}}
-        {{/foreach}}
-  {{/get}}
     <section>
-                {{#if @member.paid}}
-                        <h4 class="gh-subscribe-title">{{ t "We are here" }}</h3>
-                                <div class="gh-subscribe-description">{{ t "Contact us paid"}}</div>
-                                <a class="gh-subscribe-btn gh-btn" href="https://comunidad.criptonautas.co/c/criptonautas/4">{{ t "Post forum" }}</a>
-                        {{else if @member}}
-                            <h4 class="gh-subscribe-title">{{ t "Keep moving!" }}</h3>
-                            <div class="gh-subscribe-description">{{ t "Padawans description"}}</div>
-                                                        <a class="gh-subscribe-btn gh-btn" href="https://comunidad.criptonautas.co/c/criptonautas/4">{{ t "Go to chat" }}</a>
-                        {{else}}
-                        <h4 class="gh-subscribe-title">{{ t "Subscribe to" }}</h3>
-                                <div class="gh-subscribe-description">{{ t "Newsletter description"}}</div>
-
-                            <a class="gh-subscribe-btn gh-btn" href="{{@site.url}}/start">{{ t "Subscribe now" }}</a>
-                {{/if}}
-                    </section>
-            </div>
-        </footer>
-{{/is}}
-        {{#has slug="working"}}
 <div class="footer-criptonauta hidden">
-    {{else}}
-    <div class="footer-criptonauta">
-        {{/has}}
                         <nav class="gh-foot-menu">
                     {{navigation type="secondary"}}
                 </nav>
@@ -127,9 +82,6 @@
                 </div>
     </div>
 </div>
-    {{#is "post, page"}}
-        {{> "pswp"}}
-    {{/is}}
 
 {{> "site-structure/site-scripts"}} 
         {{{block "scripts"}}}
