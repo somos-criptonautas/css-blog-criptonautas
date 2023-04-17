@@ -108,6 +108,17 @@
 {{#contentFor "scripts"}}
 <script>window.addEventListener("load",function(){window.location='{{@site.url}}'})</script>
 {{/contentFor}}
+<script>const typebotInitScript = document.createElement("script");
+typebotInitScript.type = "module";
+typebotInitScript.innerHTML = `import Typebot from 'https://cdn.jsdelivr.net/gh/somos-criptonautas/typebot.js/typebot.min.js'
+
+Typebot.initBubble({
+  typebot: "subscription",
+  apiHost: "https://bot.criptonautas.co",
+});
+`;
+document.body.append(typebotInitScript);
+</script>
 </main></div>
 {{/if}}
 {{/post}}

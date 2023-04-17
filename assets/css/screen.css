@@ -2435,7 +2435,8 @@ background-color: var(--color-alert-error);
 /* Matenauta stuff */
 
 .page-chat typebot-bubble,
-.page-working typebot-bubble:nth-of-type(2) {
+.page-working typebot-bubble:nth-of-type(2),
+.page-profile typebot-bubble:nth-of-type(2) {
 display: none;
 }
 
