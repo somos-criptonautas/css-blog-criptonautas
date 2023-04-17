@@ -173,6 +173,10 @@ content: "";
 padding-bottom: 0;
 }
 
+.gh-read-next .gh-topic-grid .gh-card-image::before {
+   width: 30%;
+}
+
 .gh-topic-grid .gh-card.featured.large .gh-card-image {
 position: absolute;
 inset: 0;

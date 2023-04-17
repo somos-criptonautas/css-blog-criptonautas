@@ -25,9 +25,9 @@
 	"Sign into your account again for full access": "Loguea tu perfil para tener acceso completo",
 	"Your email address": "Tu correo electrónico",
 	"Email": "tu@email.com",
-	"Sign in": "ingresa",
+	"Sign in": "START",
 	"Don't have an account yet?": "primera vez?",
-	"Sign up": "comienza gratis",
+	"Sign up": "START",
 	"Great! Check your inbox and click the link to complete signin": "¡Excelente! Revise su bandeja de entrada y haga clic en el enlace para completar el inicio de sesión",
 	"Please enter a valid email address!": "Oops, no pudimos avanzar. Revisas tu dirección o nos escribes al chat? 🙂",
 	"Follow the link": "-> Sigue este enlace si recién llegas",
@@ -46,7 +46,7 @@
 	"One easy payment instead of 12!": "¡Un pago fácil en lugar de 12!",
 	"Signup to": "start",
 	"Type your email...": "Escriba su correo electrónico ...",
-	"Continue": "empezar ahora →",
+	"Continue": "START →",
 	"Already have an account?": "ya te conocemos?",
 	"This post is for paying subscribers only": "Esta publicación es solo para suscriptores de pago",
 	"Upgrade your account to read the post and get access to the full library of posts for paying subscribers only.": "Sube de nivel y accede a la info para Padawans y Criptonautas 🛸",
@@ -151,6 +151,6 @@
 	"Please check our last articles": "Puedes ver nuestros últimos artículos 😬",
 	"First level subscription": "Tienes acceso a nuestros artículos y canales gratuitos.",
 	"Tourists description": "ya te presentaste?",
-	"Start free": "tipea tu e-mail (puede ser temporal) y descubre cómo salir de La Matrix",
+	"Start free": "tipea tu e-mail y descubre por qué salir de La Matrix",
 	"Sign out": "Salir"
 }

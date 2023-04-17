@@ -48,17 +48,8 @@ typebotInitScript.type = "module";
 typebotInitScript.innerHTML = `import Typebot from 'https://cdn.jsdelivr.net/gh/somos-criptonautas/typebot.js/typebot.min.js'
 
 Typebot.initBubble({
-  typebot: "hiring",
+  typebot: "working",
   apiHost: "https://bot.criptonautas.co",
-  previewMessage: {
-    message: "te gustaría sumarte?",
-    autoShowDelay: 5000,
-    avatarUrl: "https://avatars.githubusercontent.com/u/98671738?v=4",
-  },
-  theme: {
-    button: { backgroundColor: "#5107ed", iconColor: "#FFFFFF" },
-    previewMessage: { backgroundColor: "white", textColor: "black" },
-  },
 });
 `;
 document.body.append(typebotInitScript);
