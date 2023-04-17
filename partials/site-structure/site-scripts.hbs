@@ -60,6 +60,30 @@ window.onscroll = function() {
 };
 </script>
         {{^is "page"}}
+
+        {{#has slug="working"}}
+    <script>
+    const typebotInitScript = document.createElement("script");
+typebotInitScript.type = "module";
+typebotInitScript.innerHTML = `import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.0/dist/web.js'
+
+Typebot.initBubble({
+  typebot: "subscription-qbg88y1",
+  apiHost: "https://bot.criptonautas.co",
+  previewMessage: {
+    message: "te gustaría sumarte?",
+    autoShowDelay: 5000,
+    avatarUrl: "https://avatars.githubusercontent.com/u/98671738?v=4",
+  },
+  theme: {
+    button: { backgroundColor: "#5107ed", iconColor: "#FFFFFF" },
+    previewMessage: { backgroundColor: "white", textColor: "black" },
+  },
+});
+`;
+document.body.append(typebotInitScript);
+    </script>
+    {{/has}}
         {{#has slug="arte"}}
         {{else}}
     <script>

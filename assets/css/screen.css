@@ -1055,6 +1055,11 @@ font-family: var(--font-serif);
       cursor: pointer;
       text-align: center;
       border-radius: 3.33rem;
+      background-color: var(--color-primary);
+      color: #fff;
+   }
+
+   .membership-card .global-button {
       background-color: var(--color-border);
       color: #666;
    }
