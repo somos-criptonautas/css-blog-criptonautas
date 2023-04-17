@@ -2434,37 +2434,37 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
-.page-juntada-criptonauta typebot-bubble,
+.page-chat typebot-bubble,
 .page-working typebot-bubble:nth-of-type(2) {
 display: none;
 }
 
-.page-working .gh-head-btn.gh-btn {
+.page-working .gh-btn.center {
 margin: auto;
 }
-.page-juntada-criptonauta main.gh-main {
+.page-chat main.gh-main {
 padding-top: 0;
 padding-bottom: 3rem;
 }
-.page-juntada-criptonauta .gh-foot {
+.page-chat .gh-foot {
 padding: 0;
 }
-.page-juntada-criptonauta .gh-article  .gh-content {
+.page-chat .gh-article  .gh-content {
 margin-top: 0;
 }
-.page-juntada-criptonauta .gh-article .gh-content .gh-canvas {
+.page-chat .gh-article .gh-content .gh-canvas {
 grid-template-columns: none !important;
 }
-.page-juntada-criptonauta .gh-article-header,
-.page-juntada-criptonauta .gh-foot-menu,
-.page-juntada-criptonauta .it-foot-social {
+.page-chat .gh-article-header,
+.page-chat .gh-foot-menu,
+.page-chat .it-foot-social {
 display: none;
 }
-.page-juntada-criptonauta iframe {
+.page-chat iframe {
 width: 98vw;
 }
 
-.page-juntada-criptonauta .gh-canvas > * {
+.page-chat .gh-canvas > * {
 grid-column: inherit;
 }
 .user-cover {
