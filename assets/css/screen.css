@@ -1043,6 +1043,7 @@ font-family: var(--font-serif);
    –––––––––––––––––––––––––––––––––––––––––––––––––––– */
    .global-button-wrapper {
    cursor: not-allowed;
+   margin: 3rem auto;
    }
    .pointer-events-none {
       pointer-events: none;
