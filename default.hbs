@@ -118,7 +118,10 @@
             </div>
         </footer>
 {{/is}}
-<div class="footer-criptonauta">
+        {{#has slug="working"}}
+<div class="footer-criptonauta hidden">
+    {{/has}}
+    <div class="footer-criptonauta">
                         <nav class="gh-foot-menu">
                     {{navigation type="secondary"}}
                 </nav>

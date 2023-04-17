@@ -2862,7 +2862,7 @@ padding: 0;
 justify-content: inherit;
 }
 
-li.nav-wearehiring {
+li.nav-#working {
 font-weight: 600;
 }
 
@@ -3628,7 +3628,9 @@ opacity: 1 !important;
 .hide {
 display: none;
 }
-
+.hidden {
+visibility: hidden;
+}
 
 .it-pagination {
 text-align: center;

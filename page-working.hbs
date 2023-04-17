@@ -34,14 +34,7 @@
 
         <section class="gh-content gh-canvas">
             {{content}}
-            {{^if @member.name}}
-<form data-members-form>
-  <input data-members-name type="text" required="true"/>
-  <button type="submit">I take the red one!</button>
-</form>
-{{else}}
-<button class="submit" onclick="Typebot.open()">I take the red one!</button>
-{{/if}}
+<button class="gh-head-btn gh-btn shadow"onclick="Typebot.open()">I take the red one!</button>
         </section>
 <script>const typebotInitScript = document.createElement("script");
 typebotInitScript.type = "module";
