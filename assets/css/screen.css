@@ -1350,7 +1350,7 @@ width: 100%;
    inset: 0;
    overflow-y: scroll;
    position: fixed;
-   z-index: 3999999;
+   z-index: 99999999;
 }
 #gh-head .nav {
    align-items: center;
@@ -3313,6 +3313,10 @@ height: 100vh;
 }
 .is-head-brand:not(.is-head-transparent) .gh-head .nav a, .is-head-brand:not(.is-head-transparent) .gh-head-description, .is-head-brand:not(.is-head-transparent) .gh-head-logo, .is-head-brand:not(.is-head-transparent) .gh-search {
 color: var(--color-base) !important;
+}
+
+.gh-head .nav {
+font-size: 2.63rem;
 }
 
 .is-head-brand:not(.is-head-transparent) .gh-head-btn {
