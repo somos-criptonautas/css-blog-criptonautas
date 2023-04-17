@@ -2254,7 +2254,7 @@ padding-top: 0;
 margin: 3vh auto 0;
 }
 
-.archive-social svg.img {
+.archive-social svg {
    height: 2.33rem;
    width: 2.33rem;
    color: var(--color-base);
