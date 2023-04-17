@@ -326,6 +326,7 @@ display: inline-flex;
 align-items: center;
 font-weight: 600;
 letter-spacing: -0.011em;
+font-size: 3rem;
 }
 
 .gh-topic-link svg {
@@ -3302,11 +3303,11 @@ font-weight: 800;
 }
 
 h2 {
-font-size: 3.8rem;
+font-size: 3.7rem;
 }
 
 h3 {
-font-size: 3rem;
+font-size: 3.33rem;
 }
 
 h4 {
@@ -3456,11 +3457,13 @@ border-top-right-radius: 0 !important;
 @media screen and (min-width: 1200px) {
 .newsletter form {
 max-width: 80%;
+margin: auto;
 }
 }
 @media screen and (min-width: 1500px) {
 .newsletter form {
 max-width: 70%;
+margin: auto;
 }
 }
 .newsletter form {
