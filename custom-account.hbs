@@ -55,17 +55,13 @@
 					{{t "Your subscription will expire on"}} — {{date current_period_end format="DD MMMM YYYY"}}. {{t "If you change your mind in the meantime you can turn auto-renew back on to continue your subscription."}}
 					</small>
 					{{/if}}
+					<div class="account-buttons">
+				<a href="javascript:" class="account-button gh-portal-close" data-portal="account">Account settings</a>
+			</div>
 					<div class="account-signout-wrap">
 						<span class="account-signout global-button" data-members-signout>{{t "Sign out"}}</span>
 					</div>
 				</div>
-			</div>
-			<div class="account-buttons">
-				<a href="javascript:" class="account-button" data-portal="account">{{t "Account settings"}}</a>
-				{{cancel_link class="account-button" errorClass="cancel-error global-alert" cancelLabel=(t "Cancel subscription") continueLabel=(t "Continue subscription")}}
-				<a href="javascript:" class="account-button-billing" data-members-edit-billing>
-					{{t "Edit billing info"}} <span>&rarr;</span>
-				</a>
 			</div>
 		</div>
 		{{/foreach}}
