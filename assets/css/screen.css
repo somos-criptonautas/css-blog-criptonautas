@@ -2438,6 +2438,10 @@ background-color: var(--color-alert-error);
 .page-working typebot-bubble:nth-of-type(2) {
 display: none;
 }
+
+.page-working .gh-head-btn.gh-btn {
+margin: auto;
+}
 .page-juntada-criptonauta main.gh-main {
 padding-top: 0;
 padding-bottom: 3rem;
