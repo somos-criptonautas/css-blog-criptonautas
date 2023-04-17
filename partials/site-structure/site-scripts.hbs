@@ -60,7 +60,6 @@ window.onscroll = function() {
 };
 </script>
         {{#has slug="working"}}
-        {{^is "page"}}
     <script>
     const typebotInitScript = document.createElement("script");
 typebotInitScript.type = "module";
@@ -83,6 +82,7 @@ Typebot.initBubble({
 document.body.append(typebotInitScript);
     </script>
     {{/has}}
+        {{^is "page"}}
         {{#has slug="arte"}}
         {{else}}
     <script>
