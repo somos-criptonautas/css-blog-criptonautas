@@ -2448,6 +2448,9 @@ background-color: var(--color-alert-error);
 text-align: center;
 padding-top: 5rem;
 }
+.pagination-section .btn {
+margin: auto;
+}
 .gh-card {
    word-break: unset;
 }
