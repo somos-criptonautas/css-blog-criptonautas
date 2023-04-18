@@ -4,14 +4,8 @@
 <main class="gh-main gh-outer">
     <div class="gh-inner">
 <div class="account-section">
-	<div class="account-header archive-section is-image">
-		<div class="account-image archive-image global-image">
-			{{>icons/user}}
-			{{#if @member.avatar_image}}
-			<img src="{{@member.avatar_image}}">
-			{{/if}}
-		</div>
-		<h1 class="archive-title global-title">{{t "hi"}} {{#if @member.name}}{{@member.name}}{{else}}{{t "Your account"}}{{/if}}!</h1>
+	<div class="account-header archive-section">
+		<h1 class="archive-title global-title">{{t "hi"}} {{#if @member.name}}{{@member.name}}! 👋{{else}}{{t "Your account"}}{{/if}}!</h1>
 		<p class="archive-excerpt global-excerpt">
 			{{#if custom_excerpt}}
 			{{custom_excerpt}}
@@ -56,7 +50,7 @@
 					</small>
 					{{/if}}
 					<div class="account-buttons">
-				<a href="javascript:" class="account-button gh-portal-close" data-portal="account">Account settings</a>
+				<a href="javascript:" class="account-button gh-portal-close" data-portal="account">{{t "Your account"}}</a>
 			</div>
 					<div class="account-signout-wrap">
 						<span class="account-signout global-button" data-members-signout>{{t "Sign out"}}</span>
@@ -78,7 +72,7 @@
 			<img src="{{@member.avatar_image}}" size="s" alt="{{name}}" format="webp">
 			{{/if}}
 		</div>
-		<h1 class="archive-title global-title">{{#if @member.name}}{{@member.name}}{{else}}{{t "Your account"}}{{/if}}</h1>
+		<h1 class="archive-title global-title">{{#if @member.name}}{{t "hi"}} {{@member.name}}! 👋{{else}}{{t "Your account"}}{{/if}}</h1>
 		<p class="archive-excerpt global-excerpt">
 			{{#if custom_excerpt}}
 			{{custom_excerpt}}
@@ -91,13 +85,13 @@
 		<div class="account-details">
 			<div class="account-details-wrap global-radius">
 				<div class="account-details-content">
+			<div class="account-buttons">
+				<a href="javascript:" class="account-button" data-portal="account">{{t "Account settings"}}</a>
+			</div>
 					<div class="account-signout-wrap">
 						<span class="account-signout global-button" data-members-signout>{{t "Sign out"}}</span>
 					</div>
 				</div>
-			</div>
-			<div class="account-buttons">
-				<a href="javascript:" class="account-button" data-portal="account">{{t "Account settings"}}</a>
 			</div>
 		</div>
 	</div>

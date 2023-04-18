@@ -722,8 +722,16 @@ font-family: var(--font-serif);
       color: var(--color-font-three);
       border-radius: var(--border-radius);
       background-color: var(--color-bg);
+      opacity: 0.53;
    }
-   
+
+   .membership-card:hover {
+      border: 3px solid var(--color-primary-hover);
+      box-shadow: 0 6px 24px 0 rgba(154, 39, 250, 0.05),0 0 0 1px rgba(0,0,0,.08);
+      opacity: 1;
+      cursor: not-allowed;
+   }
+
    /* Label */
    .membership-card-label {
       font-size: 1.8rem;
@@ -2237,8 +2245,8 @@ fill: var(--color-three);
 14.Author & Tag page
 -------------------------------------------------------------------------- */
 .archive-section {
-padding: 7vh 0;
-margin-top: 11vh;
+padding-top: 11vh;
+margin-top: 5vh;
 text-align: center;
 color: var(--color-font-one);
 background-color: var(--color-bg-alt);
@@ -2322,7 +2330,6 @@ max-width: 880px;
 –––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .account-details {
 max-width: 600px;
-margin: 5vh 0 15vh;
 padding: 0 var(--margin-wrap-left-right);
 text-align: left;
 display: flex;
@@ -2398,7 +2405,6 @@ font-size: 1.2rem;
 position: relative;
 display: flex;
 flex-wrap: wrap;
-width: 100%;
 }
 
 .account-button {
@@ -2432,6 +2438,13 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
+.no-estamos {
+   margin: auto;
+   text-align: center;
+   font-size: 1rem;
+   opacity: .33;
+   color: var(--color-bg);
+}
 .membership-card:nth-child(1) .membership-card-list li:nth-child(4),
 .membership-card:nth-child(1) .membership-card-list li:nth-child(5) {
 visibility: hidden;
@@ -3261,10 +3274,6 @@ html[data-intro="hide"] .gh-burger {
 .is-head-open .gh-burger {
 opacity: 1;
 }
-#gh-head .gh-head-logo {
-   font-size: 2.2rem;
-   margin-top: 2.3rem;
- }
  #gh-head .gh-head-logo {
    font-size: 2.2rem;
  }
@@ -3920,16 +3929,6 @@ box-shadow: none;
  /* Expired */
  .account-alert-expired {
     font-size: 1.2rem;
- }
- 
- /* Buttons
-    –––––––––––––––––––––––––––––––––––––––––––––––––––– */
- .account-buttons {
-    font-size: 1.2rem;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
  }
  
  .account-button {
