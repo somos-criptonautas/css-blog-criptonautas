@@ -1731,7 +1731,7 @@ color: var(--color-base) !important;
 /* --------------------------------------------------------------------------
 19.Custom — Account page
 -------------------------------------------------------------------------- */
-.account-section + .membership-section {
+.account-section {
 padding-bottom: 6.23vh;
 }
 
@@ -1977,13 +1977,6 @@ font-size: 1.8rem;
 font-size: 3.8rem;
 }
 
-}
-
-/* --------------------------------------------------------------------------
-19.Custom — Account page
--------------------------------------------------------------------------- */
-.account-section + .membership-section {
-padding-bottom: 5vh;
 }
 
 /* Image
@@ -2445,6 +2438,7 @@ background-color: var(--color-alert-error);
    font-size: 1rem;
    opacity: .33;
    color: var(--color-bg);
+   display: inherit;
 }
 .membership-card:nth-child(1) .membership-card-list li:nth-child(4),
 .membership-card:nth-child(1) .membership-card-list li:nth-child(5) {
