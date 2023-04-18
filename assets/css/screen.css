@@ -1374,7 +1374,8 @@ grid-template-columns: 5fr 3fr;
 }
 @media screen and (min-width: 1350px) {
 .is-head-b--a_n .gh-head-inner {
-grid-template-columns: 5fr 11fr 7fr;
+grid-template-columns: 3fr 10fr 3fr;
+align-content: center;
 }
 }
 .gh-head-inner {
@@ -3256,6 +3257,7 @@ opacity: 1;
 }
 #gh-head .gh-head-logo {
    font-size: 2.2rem;
+   margin-top: 1rem;
  }
 .gh-burger::before {
 top: 3.33rem !important;
@@ -3319,7 +3321,7 @@ color: var(--color-base) !important;
 }
 
 .gh-head .nav {
-font-size: 2.63rem;
+font-size: 2.33rem;
 }
 
 .is-head-brand:not(.is-head-transparent) .gh-head-btn {
