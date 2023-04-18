@@ -105,9 +105,6 @@
 {{#get "posts" limit="6" filter="visibility:[members,paid]+feature_image:-null" include="authors" as |special_posts|}}
 {{/get}}
 {{else}}
-{{#contentFor "scripts"}}
-<script>window.addEventListener("load",function(){window.location='{{@site.url}}'})</script>
-{{/contentFor}}
 <script>const typebotInitScript = document.createElement("script");
 typebotInitScript.type = "module";
 typebotInitScript.innerHTML = `import Typebot from 'https://cdn.jsdelivr.net/gh/somos-criptonautas/typebot.js/typebot.min.js'
