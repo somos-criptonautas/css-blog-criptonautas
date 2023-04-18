@@ -22,13 +22,12 @@
         {{> "newsletter"}}
     <link rel="stylesheet" href="{{asset "built/home.css"}}">
         {{/is}}
-        {{else}}
         {{/if}}
     {{ghost_head}}
 
 </head>
 
-<body class="{{body_class}}{{{block "body_class"}}} {{#if @site.description}}is-head-b--a_n{{else}}is-head-b--n--a{{/if}}{{#is "tag"}}{{#if tag.feature_image}} is-head-transparent{{/if}}{{/is}}{{#match @custom.header_style "Accent color"}} is-head-brand{{/match}}{{#match @custom.header_style "Dark"}} is-head-dark{{/match}}">
+<body class="{{body_class}}{{{block "body_class"}}} {{#if @site.description}}is-head-b--a_n{{else}}is-head-b--n--a{{/if}}{{#is "tag"}}{{#if tag.feature_image}} is-head-transparent{{/if}}{{/is}}{{#match @custom.header_style "Accent color"}} is-head-brand{{/match}}">
     <div class="gh-site">
         <header id="gh-head" class="gh-head gh-outer">
             <div class="gh-head-inner gh-inner">
@@ -115,12 +114,7 @@
             </div>
             <span class="no-estamos">(no estamos en Discord)</span>
                 <div class="gh-copyright">
-                    {{#unless @custom.footer_text}}
                 <p>Criptonautas&nbsp;{{ t "is licensed under" }}  <a href="https://comunidad.criptonautas.co/t/actualizamos-la-licencia-de-criptonautas/3864" rel="license">Polyform</a><br>{{ t "with 🧘‍♂️" }} <a href="https://matenauta.co" title="matenauta's lab" target="_blank" rel="noopener">matenauta</a></p>
-
-                    {{else}}
-                        {{@custom.footer_text}}
-                    {{/unless}}
                 </div>
     </div>
 </div>
