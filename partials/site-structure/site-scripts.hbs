@@ -59,16 +59,14 @@ window.onscroll = function() {
       addClass(navbar2, 'headroom');
 };
 </script>
-        {{#has tag="no-bot"}}
-        {{else}}
-<script type="module">
+<script>
   import Typebot from "https://cdn.jsdelivr.net/gh/somos-criptonautas/typebot.js/typebot.min.js";
 
   Typebot.initBubble({
     typebot: "hi",
   prefilledVariables: {
     'URL': "{{url absolute="true"}}",
-    {{#if @member.name}}'name': "{{ @member.name}}",{{/if}}
+    'name': "{{#if @member.name}}{{ @member.name}}{{else}}null{{/if}}",
     'email': "{{ @member.email}}",
     'Paid?' : "{{ @member.paid}}",
     'ID' : "{{ @member.uuid}}",
@@ -76,10 +74,7 @@ window.onscroll = function() {
     apiHost: "https://bot.criptonautas.co",
   });
 </script>
-    {{/has}}
         {{^is "page"}}
-        {{#has tag="no-toc"}}
-        {{else}}
     <script>
             var toc = document.getElementsByClassName('toc')[0];
         if (toc.childNodes.length > 0) {
@@ -100,7 +95,6 @@ window.onscroll = function() {
         })
         }
     </script>
-        {{/has}}
         {{/is}}
 
 <script>    
