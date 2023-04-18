@@ -2440,6 +2440,13 @@ background-color: var(--color-alert-error);
 display: none;
 }
 
+@media screen and (max-width: 992px) {
+.is-head-transparent .gh-head .nav > li a, .is-head-transparent .gh-head-description,
+.is-head-transparent .gh-head-link, .is-head-transparent .gh-head-logo, .is-head-transparent .gh-head-logo a, .is-head-transparent .gh-search, .is-head-transparent .gh-social, .is-head-transparent .nav-more-toggle,
+.is-head-transparent .gh-icon-btn svg {
+   color: var(--color-base) !important;
+ }
+}
 .page-working .gh-btn.center {
 margin: auto;
 }
