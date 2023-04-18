@@ -174,7 +174,7 @@ padding-bottom: 0;
 }
 
 .gh-read-next .gh-topic-grid .gh-card-image::before {
-   width: 30%;
+   width: 23vw;
 }
 
 .gh-topic-grid .gh-card.featured.large .gh-card-image {
@@ -260,9 +260,6 @@ text-transform: uppercase;
 margin-top:1rem;
 }
 
-.gh-read-next .gh-card-footer {
-   display: flex;
-}
 
 .gh-card-footer > * + * {
 display: flex;
@@ -453,8 +450,7 @@ margin-left: 20vh;
 .gh-read-next .gh-pagehead,
 .comunidad-comments .gh-pagehead {
 max-width: none;
-margin-bottom: 3.33rem;
-}
+margin: 3.33rem auto 1.33rem;}
 
 .gh-read-next .gh-pagehead-title::after {
 display: none;
@@ -2434,7 +2430,7 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
-.page-chat typebot-bubble,
+.page-lounge typebot-bubble,
 .page-working typebot-bubble:nth-of-type(2),
 .page-profile typebot-bubble:nth-of-type(2) {
 display: none;
@@ -2450,29 +2446,29 @@ display: none;
 .page-working .gh-btn.center {
 margin: auto;
 }
-.page-chat main.gh-main {
+.page-lounge main.gh-main {
 padding-top: 0;
 padding-bottom: 3rem;
 }
-.page-chat .gh-foot {
+.page-lounge .gh-foot {
 padding: 0;
 }
-.page-chat .gh-article  .gh-content {
+.page-lounge .gh-article  .gh-content {
 margin-top: 0;
 }
-.page-chat .gh-article .gh-content .gh-canvas {
+.page-lounge .gh-article .gh-content .gh-canvas {
 grid-template-columns: none !important;
 }
-.page-chat .gh-article-header,
-.page-chat .gh-foot-menu,
-.page-chat .it-foot-social {
+.page-lounge .gh-article-header,
+.page-lounge .gh-foot-menu,
+.page-lounge .it-foot-social {
 display: none;
 }
-.page-chat iframe {
+.page-lounge iframe {
 width: 98vw;
 }
 
-.page-chat .gh-canvas > * {
+.page-lounge .gh-canvas > * {
 grid-column: inherit;
 }
 .user-cover {
@@ -2815,7 +2811,7 @@ flex-direction: column;
    display: flow-root;
    margin: 4.23rem auto 2.11rem;
 }
-.page-chat .gh-author-criptonaut {
+.page-lounge .gh-author-criptonaut {
 display: none;
 }
 @media screen and (max-width:767px) {
