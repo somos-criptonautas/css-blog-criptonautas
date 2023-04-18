@@ -723,7 +723,7 @@ font-family: var(--font-serif);
       border-radius: var(--border-radius);
       background-color: var(--color-bg);
       opacity: 0.53;
-      border: 3px transparent;
+      border: 3px solid transparent;
    }
 
    .membership-card:hover {
