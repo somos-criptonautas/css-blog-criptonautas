@@ -65,13 +65,7 @@
 {{/get}}
 {{else if @member}}
 <div class="account-section">
-	<div class="account-header archive-section is-image">
-		<div class="account-image archive-image global-image">
-			{{>icons/user}}
-			{{#if @member.avatar_image}}
-			<img src="{{@member.avatar_image}}" size="s" alt="{{name}}" format="webp">
-			{{/if}}
-		</div>
+	<div class="account-header archive-section">
 		<h1 class="archive-title global-title">{{#if @member.name}}{{t "hi"}} {{@member.name}}! 👋{{else}}{{t "Your account"}}{{/if}}</h1>
 		<p class="archive-excerpt global-excerpt">
 			{{#if custom_excerpt}}
