@@ -142,9 +142,9 @@ gap: 3rem;
 .gh-topic-grid .gh-card.featured.large .gh-card-link {
 position: relative;
 align-items: flex-end;
-min-height: 600px;
+min-height: 400px;
 padding: 48px 40px;
-background: linear-gradient(0deg,rgba(0,0,0,.8),transparent 73%);
+background: linear-gradient(0deg,rgba(0,0,0,.8),transparent 93%);
 }
 
 .gh-topic-grid .gh-card.featured.no-image.large .gh-card-link {
@@ -2432,8 +2432,8 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
-.membership-card-list li:nth-child(4),
-.membership-card-list li:nth-child(5) {
+.membership-card:nth-child(1) .membership-card-list li:nth-child(4),
+.membership-card:nth-child(1) .membership-card-list li:nth-child(5) {
 visibility: hidden;
 }
 
@@ -3267,7 +3267,6 @@ opacity: 1;
  }
  #gh-head .gh-head-logo {
    font-size: 2.2rem;
-   margin-top: 2.3rem;
  }
 .gh-burger::before {
 top: 3.33rem !important;
