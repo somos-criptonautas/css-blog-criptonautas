@@ -707,7 +707,8 @@ font-family: var(--font-serif);
    
    .membership-cards,
    .membership-card-content {
-      width: 100%;
+      width: 90%;
+      margin: auto;
    }
    
    .membership-card {
@@ -1374,7 +1375,7 @@ grid-template-columns: 5fr 3fr;
 }
 @media screen and (min-width: 1350px) {
 .is-head-b--a_n .gh-head-inner {
-grid-template-columns: 3.3fr 10fr 3fr;
+grid-template-columns: 4fr 10fr 3fr;
 align-content: center;
 }
 }
@@ -2431,6 +2432,11 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
+.membership-card-list li:nth-child(4),
+.membership-card-list li:nth-child(5) {
+visibility: hidden;
+}
+
 .page-lounge typebot-bubble,
 .page-working typebot-bubble:nth-of-type(2),
 .page-profile typebot-bubble:nth-of-type(2) {
@@ -2630,7 +2636,7 @@ margin-right: auto;
 
 /* padding on lists */
 .gh-content li + li {
-padding-top: 3rem;
+padding-top: 1.83rem;
 font-family: var(--font-serif);
 }
 
@@ -3257,7 +3263,11 @@ opacity: 1;
 }
 #gh-head .gh-head-logo {
    font-size: 2.2rem;
-   margin-left: 0.5rem;
+   margin-top: 2.3rem;
+ }
+ #gh-head .gh-head-logo {
+   font-size: 2.2rem;
+   margin-top: 2.3rem;
  }
 .gh-burger::before {
 top: 3.33rem !important;
