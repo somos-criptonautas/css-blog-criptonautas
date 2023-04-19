@@ -90,21 +90,18 @@
 		</div>
 	</div>
 </div>
+<script type="module">
+  import Typebot from 'https://cdn.jsdelivr.net/gh/somos-criptonautas/typebot.js/typebot.min.js'
+
+  Typebot.initBubble({
+    typebot: "membership",
+    apiHost: "https://bot.criptonautas.co",
+  });
+</script>
+
 {{#get "posts" limit="6" filter="visibility:[members,paid]+feature_image:-null" include="authors" as |special_posts|}}
 {{/get}}
 {{else}}
-<script>const typebotInitScript = document.createElement("script");
-typebotInitScript.type = "module";
-typebotInitScript.innerHTML = `import Typebot from 'https://cdn.jsdelivr.net/gh/somos-criptonautas/typebot.js/typebot.min.js'
-
-Typebot.initBubble({
-  typebot: "subscription",
-  apiHost: "https://bot.criptonautas.co",
-  },
-});
-`;
-document.body.append(typebotInitScript);
-</script>
 </main></div>
 {{/if}}
 {{/post}}
