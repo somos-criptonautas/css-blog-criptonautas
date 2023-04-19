@@ -55,24 +55,6 @@
     {{/is}}
 </div>
         </article>
-        <script>const typebotInitScript = document.createElement("script");
-typebotInitScript.type = "module";
-typebotInitScript.innerHTML = `import Typebot from 'https://cdn.jsdelivr.net/gh/somos-criptonautas/typebot.js/typebot.min.js'
-
-  Typebot.initBubble({
-    typebot: "hi",
-    apiHost: "https://bot.criptonautas.co",
-  prefilledVariables: {
-    'URL': {{url absolute="true"}},
-    'name': {{#if @member.name}}{{ @member.name}}{{else}}'null'{{/if}},
-    'email': {{ @member.email}},
-    'Paid?' : {{ @member.paid}},
-    'ID' : {{ @member.uuid}},
-  },
-});
-`;
-document.body.append(typebotInitScript);
-</script>
     {{/post}}
     {{> "related-posts"}}
 </div>
