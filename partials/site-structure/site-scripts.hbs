@@ -64,7 +64,6 @@ window.onscroll = function() {
 
   Typebot.initBubble({
     typebot: "membership",
-    apiHost: "https://bot.criptonautas.co",
       prefilledVariables: {
     'URL': {{url absolute="true"}},
     'name': {{#if @member.name}}{{ @member.name}}{{else}}'null'{{/if}},
@@ -72,6 +71,7 @@ window.onscroll = function() {
     'Paid?' : {{ @member.paid}},
     'ID' : {{ @member.uuid}},
   },
+    apiHost: "https://bot.criptonautas.co",
   });
 </script>
     <script>
