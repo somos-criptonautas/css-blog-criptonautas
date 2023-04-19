@@ -61,13 +61,13 @@
   import Typebot from 'https://cdn.jsdelivr.net/gh/somos-criptonautas/typebot.js/typebot.min.js'
 
   Typebot.initBubble({
-    typebot: "membership",
+    typebot: "hi",
       prefilledVariables: {
-    'URL': {{url absolute="true"}},
-    'name': {{#if @member.name}}{{ @member.name}}{{else}}'null'{{/if}},
-    'email': {{ @member.email}},
-    'Paid?' : {{ @member.paid}},
-    'ID' : {{ @member.uuid}},
+    'URL': '{{url absolute="true"}}',
+    'name': '{{#if @member.name}}{{ @member.name}}{{else}}null{{/if}}',
+    'email': '{{ @member.email}}',
+    'Paid?' : '{{ @member.paid}}',
+    'ID' : '{{ @member.uuid}}',
   },
     apiHost: "https://bot.criptonautas.co",
   });
