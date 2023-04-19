@@ -58,8 +58,9 @@
     {{/post}}
     {{> "related-posts"}}
 </div>
-<script type="module">
-  import Typebot from 'import Typebot from 'https://cdn.jsdelivr.net/gh/somos-criptonautas/typebot.js/typebot.min.js'
+<script>const typebotInitScript = document.createElement("script");
+typebotInitScript.type = "module";
+typebotInitScript.innerHTML = `import Typebot from 'https://cdn.jsdelivr.net/gh/somos-criptonautas/typebot.js/typebot.min.js'
 
   Typebot.initBubble({
     typebot: "hi",
@@ -71,6 +72,8 @@
     'Paid?' : {{ @member.paid}},
     'ID' : {{ @member.uuid}},
   },
-  });
+});
+`;
+document.body.append(typebotInitScript);
 </script>
 </main>
