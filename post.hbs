@@ -55,10 +55,7 @@
     {{/is}}
 </div>
         </article>
-    {{/post}}
-    {{> "related-posts"}}
-</div>
-<script>const typebotInitScript = document.createElement("script");
+        <script>const typebotInitScript = document.createElement("script");
 typebotInitScript.type = "module";
 typebotInitScript.innerHTML = `import Typebot from 'https://cdn.jsdelivr.net/gh/somos-criptonautas/typebot.js/typebot.min.js'
 
@@ -76,4 +73,8 @@ typebotInitScript.innerHTML = `import Typebot from 'https://cdn.jsdelivr.net/gh/
 `;
 document.body.append(typebotInitScript);
 </script>
+    {{/post}}
+    {{> "related-posts"}}
+</div>
+
 </main>
