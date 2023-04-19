@@ -1,5 +1,19 @@
 {{!< default}}
+<script type="module">
+  import Typebot from 'https://cdn.jsdelivr.net/gh/somos-criptonautas/typebot.js/typebot.min.js'
 
+  Typebot.initBubble({
+    typebot: "membership",
+      prefilledVariables: {
+    'URL': {{url absolute="true"}},
+    'name': {{#if @member.name}}{{ @member.name}}{{else}}'null'{{/if}},
+    'email': {{ @member.email}},
+    'Paid?' : {{ @member.paid}},
+    'ID' : {{ @member.uuid}},
+  },
+    apiHost: "https://bot.criptonautas.co",
+  });
+</script>
 <main class="gh-main">
     <div class="gh-inner">
     {{#post}}
