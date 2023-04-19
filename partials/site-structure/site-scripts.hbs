@@ -58,21 +58,6 @@ window.onscroll = function() {
 };
 </script>
         {{^is "page"}}
-<script type="module">
-  import Typebot from 'import Typebot from 'https://cdn.jsdelivr.net/gh/somos-criptonautas/typebot.js/typebot.min.js'
-
-  Typebot.initBubble({
-    typebot: "hi",
-    apiHost: "https://bot.criptonautas.co",
-  prefilledVariables: {
-    'URL': {{url absolute="true"}},
-    'name': {{#if @member.name}}{{ @member.name}}{{else}}'null'{{/if}},
-    'email': {{ @member.email}},
-    'Paid?' : {{ @member.paid}},
-    'ID' : {{ @member.uuid}},
-  },
-  });
-</script>
     <script>
             var toc = document.getElementsByClassName('toc')[0];
         if (toc.childNodes.length > 0) {
