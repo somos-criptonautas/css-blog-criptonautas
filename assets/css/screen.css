@@ -2432,6 +2432,9 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
+.search-criptonauta {
+   z-index:999999999;
+}
 .no-estamos {
    margin: auto;
    text-align: center;
