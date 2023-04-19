@@ -57,10 +57,9 @@ window.onscroll = function() {
       addClass(navbar2, 'headroom');
 };
 </script>
-<script>
-const typebotInitScript = document.createElement("script");
-typebotInitScript.type = "module";
-typebotInitScript.innerHTML = `import Typebot from 'https://cdn.jsdelivr.net/gh/somos-criptonautas/typebot.js/typebot.min.js'
+        {{^is "page"}}
+<script type="module">
+  import Typebot from 'import Typebot from 'https://cdn.jsdelivr.net/gh/somos-criptonautas/typebot.js/typebot.min.js'
 
   Typebot.initBubble({
     typebot: "hi",
@@ -72,11 +71,8 @@ typebotInitScript.innerHTML = `import Typebot from 'https://cdn.jsdelivr.net/gh/
     'Paid?' : {{ @member.paid}},
     'ID' : {{ @member.uuid}},
   },
-});
-`;
-document.body.append(typebotInitScript);
+  });
 </script>
-        {{^is "page"}}
     <script>
             var toc = document.getElementsByClassName('toc')[0];
         if (toc.childNodes.length > 0) {
