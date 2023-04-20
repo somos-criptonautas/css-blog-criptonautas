@@ -1356,7 +1356,7 @@ width: 100%;
    inset: 0;
    overflow-y: scroll;
    position: fixed;
-   z-index: 99999999;
+   z-index: 9999998;
 }
 #gh-head .nav {
    align-items: center;
@@ -2432,9 +2432,6 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
-.search-criptonauta {
-   z-index:999999999;
-}
 .no-estamos {
    margin: auto;
    text-align: center;
