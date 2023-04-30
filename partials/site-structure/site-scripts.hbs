@@ -1,7 +1,13 @@
 <script src="{{asset "built/main.min.js"}}" defer></script>
 <script>
     // Dark/Light Mode
-    
+
+const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+darkModeMediaQuery.addEventListener('change', (e) => {
+           html.setAttribute('data-theme', 'dark')
+           localStorage.setItem('selected-theme', 'dark');
+}
+
     var html = document.querySelector('html'),
     darkLight = document.querySelector('.it-dark-light')
     darkLight.addEventListener('click', function(){
@@ -80,8 +86,6 @@ window.onscroll = function() {
 
 <script>    
 
-/* disable discourse comments /*
-
     const handleMessageListener = ('message', (event) => {
         var origin = event.origin;
         if (origin == "https://comunidad.criptonautas.co") {
@@ -99,7 +103,6 @@ window.onscroll = function() {
         }ng
     };
    window.addEventListener('message', handleMessageListener);
-/* disable discourse comments */
 
   window.addEventListener("load", () => {
     flyingPages({
