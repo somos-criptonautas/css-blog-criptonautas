@@ -40,16 +40,16 @@ html[data-theme="dark"] {
     --ghost-accent-color: #9a5cfd;
 }
 
-html[data-theme=dark] h1,
-html[data-theme=dark] h2:not(.gh-pagehead-title),
-html[data-theme=dark] h3,
-html[data-theme=dark] h4:not(.gh-subscribe-title),
-html[data-theme=dark] h5,
-html[data-theme=dark] h6 {
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2:not(.gh-pagehead-title),
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4:not(.gh-subscribe-title),
+html[data-theme="dark"] h5,
+html[data-theme="dark"] h6 {
 color: var(--color-base)
 }
 
-html[data-theme=dark] .global-button {
+html[data-theme="dark"] .global-button {
 background-color: var(--color-secondary);
 }
 
