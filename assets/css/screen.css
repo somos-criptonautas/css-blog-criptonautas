@@ -320,11 +320,7 @@ font-weight: 600;
 line-height: 1.33;
 letter-spacing: -0.01em;
 font-size: 2.5rem;
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 1.6;
-    letter-spacing: -0.01em;
-    word-break: break-word;
+word-break: break-word;
 }
 
 .gh-topic-minimal .gh-card + .gh-card {
