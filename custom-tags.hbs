@@ -15,17 +15,17 @@
 	{{#get "tags" limit="all" filter="visibility:public" include="count.posts" order="count.posts desc" as |tags|}}
 	{{#if tags}}
 	<div class="loop-wrap is-tags">
+		<a href="{{url}}" class="global-link" aria-label="{{name}}">
 		{{#foreach tags}}
 		{{#if count.posts}}
 		<div class="item is-loop">
 			{{#if feature_image}}
 			<div class="item-image is-landscape global-image global-image-orientation global-radius">
-				<a href="{{url}}" class="global-link" aria-label="{{name}}"></a>
 				{{>images/archive_image archive_image=feature_image}}
 			</div>
 			{{/if}}
 			<div class="item-content">
-				<h2 class="item-title"><a href="{{url}}">{{name}}</a></h2>
+				<h2 class="item-title">{{name}}</h2>
 				<small>{{plural count.posts empty=(t "No posts") singular=(t "1 post") plural=(t "% posts")}}</small>
 				{{#if description}}
 				<p class="item-excerpt">
@@ -36,6 +36,7 @@
 		</div>
 		{{/if}}
 		{{/foreach}}
+		</a>
 	</div>
 	{{/if}}
 	{{/get}}
