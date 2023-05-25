@@ -2615,11 +2615,6 @@ max-width: 777px;
 .comunidad-comments {
 margin-bottom: 6.11rem;
 }
-@media screen and (min-width: 768px) {
-.gh-main {
-   padding-bottom: 7rem;
-}
-}
 @media screen and (max-width: 767px) {
 .gh-main {
 padding: 5rem 0;
