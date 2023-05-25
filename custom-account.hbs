@@ -5,7 +5,7 @@
     <div class="gh-inner">
 <div class="account-section">
 	<div class="account-header archive-section">
-		<h1 class="archive-title global-title">{{t "hi"}} {{#if @member.name}}{{@member.name}}! 👋{{else}}{{t "Your account"}}{{/if}}!</h1>
+		<h1 class="archive-title global-title">{{t "hi"}} {{#if @member.name}}{{@member.name}} 👋{{else}}{{t "Your account"}}{{/if}}</h1>
 		<p class="archive-excerpt global-excerpt">
 			{{#if custom_excerpt}}
 			{{custom_excerpt}}
@@ -66,7 +66,7 @@
 {{else if @member}}
 <div class="account-section">
 	<div class="account-header archive-section">
-		<h1 class="archive-title global-title">{{#if @member.name}}{{t "hi"}} {{@member.name}}! 👋{{else}}{{t "Your account"}}{{/if}}</h1>
+		<h1 class="archive-title global-title">{{#if @member.name}}{{t "hi"}} {{@member.name}} 👋{{else}}{{t "Your account"}}{{/if}}</h1>
 		<p class="archive-excerpt global-excerpt">
 			{{#if custom_excerpt}}
 			{{custom_excerpt}}
@@ -79,13 +79,13 @@
 		<div class="account-details">
 			<div class="account-details-wrap global-radius">
 				<div class="account-details-content">
+				</div>
 			<div class="account-buttons">
 				<a href="javascript:" class="account-button" data-portal="account">{{t "Account settings"}}</a>
 			</div>
 					<div class="account-signout-wrap">
 						<span class="account-signout gh-btn" data-members-signout>{{t "Sign out"}}</span>
 					</div>
-				</div>
 			</div>
 		</div>
 	</div>
