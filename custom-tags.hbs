@@ -25,7 +25,7 @@
 			</div>
 			{{/if}}
 			<div class="item-content">
-				<h2 class="item-title">{{name}}</h2>
+				<a href="{{url}}" class="global-link" aria-label="{{name}}"><h2 class="item-title">{{name}}</h2></a>
 				<small>{{plural count.posts empty=(t "No posts") singular=(t "1 post") plural=(t "% posts")}}</small>
 				{{#if description}}
 				<p class="item-excerpt">

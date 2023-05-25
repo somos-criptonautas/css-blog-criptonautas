@@ -2431,7 +2431,8 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
-.page-tags .global-subtitle {
+.page-tags .global-subtitle,
+.tag-template .global-subtitle {
 opacity: 0;
 }
 
