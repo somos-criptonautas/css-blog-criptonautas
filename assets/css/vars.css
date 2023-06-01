@@ -115,7 +115,7 @@ text-align: left;
    --border-radius: 26px;
 
    /* Grid gap */
-   --grid-gap: 16px;
+   --grid-gap: 1.33rem;
 
    /* Global wrapper */
    --max-width-global-wrap: 1600px;

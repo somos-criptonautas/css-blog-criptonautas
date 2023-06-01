@@ -33,8 +33,8 @@
             <div class="gh-head-inner gh-inner">
                 <div class="gh-head-brand">
                     <div class="gh-head-brand-wrapper">
-                    {{#is "home"}}<h1 class="gh-head-logo">{{/is}}
-                    <a {{^is "home"}}class="gh-head-logo"{{/is}} href="{{@site.url}}">
+                    {{#is "home"}}<a class="gh-head-logo">{{/is}}
+                    <a {{^is "home"}}class="gh-head-logo" href="{{@site.url}}">{{/is}}
                             {{#if @site.logo}}
         <img class="logo-light" src="{{@site.logo}}" alt="{{@site.title}}">
         <img class="logo-dark" src="{{@custom.white_publication_logo_for_transparent_header}}" alt="{{@site.title}}">
