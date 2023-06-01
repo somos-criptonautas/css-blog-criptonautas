@@ -1,48 +1,53 @@
 {{!< default}}
 <script>
-    const readIssue = document.querySelector('.letme');
-    const html = document.documentElement; // Add this line to select the html element
+    document.addEventListener("DOMContentLoaded", () => {
+        const readIssue = document.querySelector('.letme');
+        const html = document.documentElement;
 
-    readIssue.addEventListener('click', function(){
-        console.log('clicked')
-        html.setAttribute('data-intro', 'hide')
-        localStorage.setItem('data-intro', 'hide');
-        createCookie('data-intro', true, 1)
-        console.log(html.hasAttribute('data-intro'))
-        return false;
+        if (readIssue) {
+            readIssue.addEventListener('click', function () {
+                console.log('clicked')
+                html.setAttribute('data-intro', 'hide')
+                localStorage.setItem('data-intro', 'hide');
+                createCookie('data-intro', true, 1)
+                console.log(html.hasAttribute('data-intro'))
+                return false;
+            });
+        }
+
+        if (!readCookie('data-intro')) {
+            localStorage.removeItem("data-intro");
+            const list = document.querySelector('.newsletter').classList;
+            list.add('flex')
+        }
     });
 
-    if (!readCookie('data-intro')) {
-        localStorage.removeItem("data-intro");
-        const list = document.querySelector('.newsletter').classList;
-        list.add('flex')
-    }
     // And some generic cookie logic
-    function createCookie(name,value,days) {
+    function createCookie(name, value, days) {
         if (days) {
             var date = new Date();
-            date.setTime(date.getTime()+(60 * 60 * 1000));
-            var expires = "; expires="+date.toGMTString();
-        }
-        else var expires = "";
-        document.cookie = name+"="+value+expires+"; path=/";
+            date.setTime(date.getTime() + (60 * 60 * 1000));
+            var expires = "; expires=" + date.toGMTString();
+        } else var expires = "";
+        document.cookie = name + "=" + value + expires + "; path=/";
     }
 
     function readCookie(name) {
         var nameEQ = name + "=";
         var ca = document.cookie.split(';');
-        for(var i=0;i < ca.length;i++) {
+        for (var i = 0; i < ca.length; i++) {
             var c = ca[i];
-            while (c.charAt(0)==' ') c = c.substring(1,c.length);
-            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
         }
         return null;
     }
 
     function eraseCookie(name) {
-        createCookie(name,"",-1);
+        createCookie(name, "", -1);
     }
 </script>
+
 
 <main class="gh-main gh-outer">
     <div class="kg-card kg-callout-card kg-callout-card-grey beta-box"><div class="kg-callout-emoji">👷</div><div class="kg-callout-text">Resta poco en BETA, acercate a nuestra comunidad!</div></div>
