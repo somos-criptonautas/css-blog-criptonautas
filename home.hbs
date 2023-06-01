@@ -14,12 +14,14 @@
             });
         }
 
-        if (!readCookie('data-intro')) {
-            localStorage.removeItem("data-intro");
-            const list = document.querySelector('.newsletter').classList;
-            list.add('flex')
-        }
-    });
+document.addEventListener("DOMContentLoaded", function() {
+  if (!readCookie('data-intro')) {
+    localStorage.removeItem("data-intro");
+    const list = document.querySelector('.newsletter').classList;
+    list.add('flex')
+  }
+});
+
 
     // And some generic cookie logic
     function createCookie(name, value, days) {
