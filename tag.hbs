@@ -1,4 +1,7 @@
 {{!< default}}
+                {{#if primary_tag}}
+                    <a class="gh-article-tag" href="{{/tags}}">{{TAGs}}</a> - {{primary_tag.name}}
+                {{/if}}
 {{#tag}}
 <div class="archive-section{{#if feature_image}} is-image{{/if}}">
 	{{#if feature_image}}
