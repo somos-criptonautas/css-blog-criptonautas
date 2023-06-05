@@ -2434,6 +2434,9 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
+.upper {
+text-transform: uppercase;
+}
 
 /* Image
    –––––––––––––––––––––––––––––––––––––––––––––––––––– */
