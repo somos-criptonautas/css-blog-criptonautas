@@ -60,7 +60,7 @@
                             </div>
                             <div class="message-error">
                                 {{t "Please enter a valid email address!"}}<br><br>
-                                <a class="start-here" href="{{@site.url}}/start">{{ t "Follow the link"}}</a>
+                                <link class="start-here" href="{{@site.url}}/start" rel="prefetch">{{ t "Follow the link"}}</link>
                             </div>
                         </div>
                         <div>
@@ -73,7 +73,7 @@
                                     <span class="button-loader">{{> "icons/loader"}}</span>
                                 </button>
                             </div>
-                        <p>{{t "Don't have an account yet?"}}<br><a href="{{@site.url}}/start/">&nbsp;{{t "Sign up"}}</a></p>
+                        <p>{{t "Don't have an account yet?"}}<br><link href="{{@site.url}}/start/" rel="prefetch">&nbsp;{{t "Sign up"}}</link></p>
                         </div>
                     </form>
                 </div>
