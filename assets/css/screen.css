@@ -2434,8 +2434,9 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
-.upper {
+.-tag {
 text-transform: uppercase;
+margin-bottom: 5.33 rem;
 }
 
 /* Image
