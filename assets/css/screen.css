@@ -2250,8 +2250,9 @@ margin-top: 11vh;
 text-align: center;
 }
 
-
-
+.archive-section .left {
+   text-align: unset;
+}
 .archive-social,
 .archive-excerpt {
 margin: 3vh auto 0;
@@ -3109,7 +3110,6 @@ outline: 0;
 }
 .center {
 text-align: center;
-margin:auto;
 }
 blockquote.kg-blockquote-alt {
 font-weight: 500;
@@ -4248,6 +4248,7 @@ box-shadow: none;
    @media (max-width:1024px) {
       .loop-wrap {
          grid-template-columns: repeat(2, 1fr);
+         max-width: 92%
       }
    
       .special-wrap {

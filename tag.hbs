@@ -1,8 +1,8 @@
 {{!< default}}
 {{#tag}}
-<div class="archive-section{{#if feature_image}} is-image{{/if}}">
+<div class="archive-section{{#if feature_image}} is-image{{/if}} left">
 <a class="gh-article-tag" href="/tags">TAGs</a> - <span class="upper-tag is-tag">{{ name }}</span>
-	{{#if feature_image}}
+<span class="center">	{{#if feature_image}}
 	<div class="archive-image global-image">
 		{{>images/other_image other_image=feature_image alt=name}}
 	</div>
@@ -11,6 +11,7 @@
 	{{#if description}}
 	<p class="archive-excerpt global-excerpt">{{description}}</p>
 	{{/if}}
+	</span>
 </div>
 {{/tag}}
 {{>loop}}
