@@ -1,5 +1,7 @@
 {{!< default}}
-<a class="gh-article-tag" href="/tags">TAGs</a> - <span class="upper-tag is-tag"> </span>
+    {{#post}}
+<a class="gh-article-tag" href="/tags">TAGs</a> - <span class="upper-tag is-tag">{{ name }}</span>
+    {{/post}}
 {{#tag}}
 <div class="archive-section{{#if feature_image}} is-image{{/if}}">
 	{{#if feature_image}}
@@ -7,7 +9,7 @@
 		{{>images/other_image other_image=feature_image alt=name}}
 	</div>
 	{{/if}}
-	<h1 class="archive-title global-title is-tag"><span>{{../pagination.total}}</span></h1>
+	<h1 class="archive-title global-title is-tag">{{ name }}<span>{{../pagination.total}}</span></h1>
 	{{#if description}}
 	<p class="archive-excerpt global-excerpt">{{description}}</p>
 	{{/if}}
