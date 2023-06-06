@@ -149,5 +149,8 @@
 	"Start free": "Have fun!",
 	"Sign out": "exit",
 	"Check out the latest posts": "Check out the latest posts",
-	"See what we’ve written lately": "See what we’ve written lately"
+	"See what we’ve written lately": "See what we’ve written lately",
+	"no posts": "no articles",
+	"1 post": "1 article",
+	"% posts": "% articles"
 }
