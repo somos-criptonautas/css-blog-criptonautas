@@ -737,7 +737,7 @@ textarea::placeholder {
 
 .global-tags a {
    font-family: var(--font-family-three);
-   font-size: 1.4rem;
+   font-size: 1.55rem;
    font-weight: var(--font-weight-three-medium);
    line-height: 1;
    display: inline-block;

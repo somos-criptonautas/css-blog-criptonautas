@@ -54,9 +54,9 @@
                 <div class="gh-head-actions">
                     <div class ="actions-container">
                     {{#unless @member}}
-                        <link aria-label="signup-button" title="{{ t "start" }}" class="gh-head-btn gh-btn shadow" href="{{@site.url}}/start" rel="prefetch">START</link>
+                        <a aria-label="signup-button" title="{{ t "start" }}" class="gh-head-btn gh-btn shadow" href="{{@site.url}}/start">START</a>
                     {{else}}
-                        <link aria-label="signin-button" title="{{ t "profile" }}" class="gh-head-btn gh-btn shadow" href="{{@site.url}}/profile" rel="prefetch">{{ t "Account" }}</link>
+                        <a aria-label="signin-button" title="{{ t "profile" }}" class="gh-head-btn gh-btn shadow" href="{{@site.url}}/profile">{{ t "Account" }}</a>
                     {{/unless}}
                     <div class="nav-icons">
                     <button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button>

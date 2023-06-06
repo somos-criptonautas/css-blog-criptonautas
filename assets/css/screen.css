@@ -1155,7 +1155,7 @@ margin-right: 1rem;
    
    .global-tags a {
       font-family: var(--font-family-three);
-      font-size: 1.4rem;
+      font-size: 1.5rem;
       font-weight: var(--font-weight-three-medium);
       line-height: 1;
       display: inline-block;
@@ -2435,7 +2435,7 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
-.-tag {
+.tag {
 text-transform: uppercase;
 margin-bottom: 5.33 rem;
 }
@@ -2461,6 +2461,7 @@ margin-bottom: 5.33 rem;
       margin: 0;
       transition: transform .3s ease;
       aspect-ratio: 1/1.2;
+      max-height: 23vh;
    }
    
    .global-image-orientation > img {
