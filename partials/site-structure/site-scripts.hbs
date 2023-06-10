@@ -80,23 +80,24 @@ window.onscroll = function() {
         {{/is}}
 
 <script>    
-
-    const handleMessageListener = ('message', (event) => {
-        var origin = event.origin;
-        if (origin == "https://comunidad.criptonautas.co") {
-            setIframeStyle();
+const handleMessageListener = (event) => {
+    var origin = event.origin;
+    if (origin === "https://comunidad.criptonautas.co") {
+        setIframeStyle();
     }
-    });
-    
-    const setIframeStyle = () => {
-        const iframe = document.getElementById("discourse-embed-iframe");
-        if (iframe && iframe.contentWindow) {
-           iframe.contentWindow.postMessage(
-               darkModeFlag ? "dark" : "light",
-               "https://comunidad.criptonautas.co"
-               );
-        }
-    };
+};
+
+window.addEventListener('message', handleMessageListener);
+
+const setIframeStyle = () => {
+    const iframe = document.getElementById("discourse-embed-iframe");
+    if (iframe && iframe.contentWindow) {
+        iframe.contentWindow.postMessage(
+            darkModeFlag ? "dark" : "light",
+            "https://comunidad.criptonautas.co"
+        );
+    }
+};
    window.addEventListener('message', handleMessageListener);
 
   window.addEventListener("load", () => {
