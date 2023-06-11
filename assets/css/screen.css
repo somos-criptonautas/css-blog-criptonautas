@@ -1663,10 +1663,6 @@ img.logo-dark {
 display: none;
 }
 
-html[data-theme="dark"] img.logo-dark,
-.is-head-transparent img.logo-dark {
-display: block !important;
-}
 
 .is-head-open html[data-theme="dark"] img.logo-dark,
 .is-head-open .is-head-transparent img.logo-dark {
@@ -2264,10 +2260,11 @@ margin: 3vh auto 0;
    color: var(--color-base);
 }
 
-.archive-title,
-.archive-excerpt {
+.archive-title {
 box-sizing: border-box;
 padding: 0 var(--margin-wrap-left-right);
+}
+.archive-excerpt .global-title {
 text-transform: uppercase;
 }
 

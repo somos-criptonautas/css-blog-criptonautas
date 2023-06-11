@@ -98,8 +98,6 @@ const setIframeStyle = () => {
         );
     }
 };
-   window.addEventListener('message', handleMessageListener);
-
   window.addEventListener("load", () => {
     flyingPages({
       delay: 0,
@@ -109,7 +107,20 @@ const setIframeStyle = () => {
     });
   });
 
+
 </script>
+
+<script type="text/javascript">
+/* External links opens in new window */
+  var links = document.getElementsByTagName("article")[0].querySelectorAll('a');
+    var a = new RegExp('/' + window.location.host + '/');
+	links.forEach((link) => {
+		if(!a.test(link.href)) {
+			link.setAttribute("target","_blank");
+		}
+	});
+</script>
+
 <script src="{{asset "js/flying-pages.min.js"}}"></script>
 <script>
   /*
