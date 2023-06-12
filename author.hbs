@@ -10,13 +10,13 @@
 	{{#has any="location,website,facebook,twitter"}}
 	<div class="archive-social">
 		{{#if location}}
-		<span>{{>icons/pin}} {{location}}</span>
+		<span>{{>icons/pin}}{{location}}</span>
 		{{/if}}
 		{{#if website}}
-		<a href="{{website}}" aria-label="link Website" class="mx-1">{{>icons/link}} {{t "website"}}</a>
+		<a href="{{website}}" aria-label="link Website" class="mx-1">{{>icons/link}}{{t "website"}}</a>
 		{{/if}}
 		{{#if twitter}}
-		<a href="{{twitter_url}}" aria-label="link Twitter">{{>icons/twitter}} twitter</a>
+		<a href="{{twitter_url}}" aria-label="link Twitter">{{>icons/twitter}}twitter</a>
 		{{/if}}
 	</div>
 	{{/has}}

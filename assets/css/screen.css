@@ -2260,6 +2260,8 @@ margin: 3rem auto;
    height: 2.33rem;
    width: 2.33rem;
    color: var(--color-base);
+   vertical-align: middle;
+   margin-right: 0.53rem;
 }
 
 .archive-title {
@@ -2436,9 +2438,11 @@ background-color: var(--color-alert-error);
 /* Matenauta stuff */
 
 .mx-1 {
-margin: 1rem 0;
+margin: 0 1.33rem;
 }
-
+.archive-social a.mx-1:hover {
+text-decoration: underline;
+}
 .tag {
 text-transform: uppercase;
 margin-bottom: 5.33 rem;
