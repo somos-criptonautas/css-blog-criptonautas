@@ -160,12 +160,9 @@ flex: 1;
 }
 @media screen and (min-width: 1200px) {
    .gh-topic-grid .gh-card-image {
-width: 33vh;
-}
-}
-@media screen and (min-width: 1200px) {
-.gh-topic-grid .gh-card-image {
-width: 43vh;
+      width: 17vw;
+      min-width: 17vw;
+      min-height: 33vh;
 }
 }
 
@@ -1092,6 +1089,8 @@ font-family: var(--font-serif);
 /* Subscription banner */
 
 .gh-subscribe {
+   -webkit-animation: slideTop .8s ease;
+   animation: slideTop .8s ease;
    text-align: center;
 }
    .gh-subscribe-title {
@@ -1280,7 +1279,8 @@ padding: 32px 24px;
 }
 
 .gh-topic-grid .gh-card-image {
-width: 23vh;
+width: 27vw;
+min-width: 27vw;
 }
 
 .gh-topic-grid .gh-card.featured.large .gh-card-title {
@@ -2242,7 +2242,7 @@ fill: var(--color-three);
 14.Author & Tag page
 -------------------------------------------------------------------------- */
 .archive-section {
-margin-top: 11vh;
+margin: 13vh 0;
 text-align: center;
 }
 
@@ -2251,7 +2251,7 @@ text-align: unset;
 }
 .archive-social,
 .archive-excerpt {
-margin: 3vh auto 0;
+margin: 3rem auto;
 }
 
 .archive-social svg {
@@ -3391,6 +3391,7 @@ display: flex;
 #gh-head .nav a,
 #gh-head .gh-head-btn {
 font-weight: 500 !important;
+opacity: 1;
 }
 @media screen and (min-width: 992px) {
 .is-head-open #gh-head .gh-head-inner {
@@ -4158,6 +4159,7 @@ box-shadow: none;
       .item-image {
          margin-bottom: 2vh;
          transition: transform .3s ease;
+         min-height: 13vw;
       }
       
       .item-image:hover {
@@ -4306,7 +4308,7 @@ box-shadow: none;
    
       .item-title {
          font-size: 2.2rem;
-         line-height: 1.3;
+         line-height: 1.23;
       }
    
       .item-authors {
@@ -4406,8 +4408,8 @@ box-shadow: none;
       –––––––––––––––––––––––––––––––––––––––––––––––––––– */
    .item-title {
       font-family: var(--font-sans);
-      font-size: 3.33rem;
-      line-height: 1.3;
+      font-size: 3rem;
+      line-height: 1.27;
       max-width: 490px;
       margin: 1vh 0 0;
    }
