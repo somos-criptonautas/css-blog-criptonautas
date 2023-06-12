@@ -53,10 +53,6 @@ color: var(--color-bg) !important;
     letter-spacing: -0.006em;
 }
 
-body:not(.is-head-transparent):not(.is-head-brand):not(.is-head-dark) .gh-head-logo img + img {
-    display: none;
-}
-
 body:is(.is-head-transparent, .is-head-brand, .is-head-dark) .gh-head-logo img + img {
     opacity: 1;
 }
@@ -1656,6 +1652,11 @@ display: block !important;
 
 html[data-theme="dark"] img.logo-light,
 .is-head-transparent img.logo-light {
+display: none;
+}
+
+html[data-theme="light"] img.logo-dark,
+.is-head-transparent img.logo-dark {
 display: none;
 }
 
