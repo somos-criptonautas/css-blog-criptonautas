@@ -1,10 +1,6 @@
 {{!< default}}
 {{#author}}
 <div class="archive-section{{#if profile_image}} is-image{{/if}}">
-            {{#if cover_image}}
-                <figure class="user-cover" style={{user.coverImageUrl}}>
-                </figure>
-            {{/if}}
 	{{#if profile_image}}
 	<div class="archive-image global-image">
 		{{>images/other_image other_image=profile_image alt=name}}
@@ -17,10 +13,7 @@
 		<span>{{>icons/pin}} {{location}}</span>
 		{{/if}}
 		{{#if website}}
-		<a href="{{website}}" aria-label="link Website">{{>icons/link}} {{t "website"}}</a>
-		{{/if}}
-		{{#if facebook}}
-		<a href="{{facebook_url}}" aria-label="link Facebook">{{>icons/facebook}} facebook</a>
+		<a href="{{website}}" aria-label="link Website" class="mx-1">{{>icons/link}} {{t "website"}}</a>
 		{{/if}}
 		{{#if twitter}}
 		<a href="{{twitter_url}}" aria-label="link Twitter">{{>icons/twitter}} twitter</a>

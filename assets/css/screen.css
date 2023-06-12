@@ -2253,7 +2253,9 @@ text-align: unset;
 .archive-excerpt {
 margin: 3rem auto;
 }
+.archive-social span {
 
+}
 .archive-social svg {
    height: 2.33rem;
    width: 2.33rem;
@@ -2432,6 +2434,10 @@ background-color: var(--color-alert-error);
 }
 
 /* Matenauta stuff */
+
+.mx-1 {
+margin: 1rem 0;
+}
 
 .tag {
 text-transform: uppercase;

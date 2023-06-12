@@ -1,7 +1,5 @@
 <div class="loop-section global-padding">
 	<div class="{{#is "tag,author"}}global-subtitle{{else if is_error}}global-subtitle{{else}}loop-subtitle{{/is}}">
-		<small class="{{#is "tag,author"}}global-subtitle-title{{else if is_error}}global-subtitle-title{{else}}loop-subtitle-title global-title{{/is}}">
-		{{#is "tag,author"}}{{t "Check out the latest posts"}}{{else if is_error}}{{t "Check out the latest posts"}}{{else}}{{t "See what we’ve written lately"}}{{/is}}</small>
 		{{^if is_error}}
 		{{^is "tag,author"}}
 		{{#get "authors" limit="6" include="count.posts" order="count.posts desc"}}
