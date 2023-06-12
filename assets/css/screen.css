@@ -1663,9 +1663,6 @@ html[data-theme="light"] img.logo-dark,
 display: none;
 }
 
-img.logo-dark {
-display: none;
-}
 
 
 .is-head-open html[data-theme="dark"] img.logo-dark,
