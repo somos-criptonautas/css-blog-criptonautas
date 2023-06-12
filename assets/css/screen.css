@@ -2441,7 +2441,7 @@ background-color: var(--color-alert-error);
 .mx-1 {
 margin: 0 1.33rem;
 }
-.archive-social a.mx-1:hover {
+.archive-social a:hover {
 text-decoration: underline;
 }
 .tag {
