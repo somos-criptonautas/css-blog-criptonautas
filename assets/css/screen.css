@@ -1319,10 +1319,6 @@ gap: 0.75rem;
 display: none;
 }
 
-.gh-topic-grid .gh-topic-content {
-grid-template-columns: 1fr;
-}
-
 .gh-topic-grid .gh-card.large {
 grid-column: auto;
 padding-bottom: 4.23rem;
@@ -1655,7 +1651,7 @@ display: none;
 display: block;
 }
 }
-.is-head-open .logo-nav img {
+.is-head-open img.logo-nav {
 max-width: 55vh;
 padding-top: 4.33rem;
 margin: auto;
