@@ -1340,7 +1340,7 @@ min-height: 480px;
 width: 100%;
 }
 }
-@media screen and (min-width: 991px) {
+@media screen and (max-width: 991px) {
    #gh-head .gh-head-brand {
    align-items: center;
    display: grid;
