@@ -73,13 +73,18 @@ color: var(--color-base);
 padding: 1rem;
 border-radius: 0.77rem;
 }
-
+.gh-topic-grid .gh-topic-content {
+   display: unset;
+   gap: 1rem;
+   }
+   
+   @media screen and (min-width: 992px) {
    .gh-topic-grid .gh-topic-content {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
 }  
-
+   }
 body:not(.home-template) .gh-topic-grid .gh-topic-content {
 row-gap: 4.23rem;
 justify-items: center;
@@ -1636,7 +1641,7 @@ display: block;
 fill: #f1f1f1;
 }
 html[data-theme="dark"] img.logo-nav.logo-light,
-html[data-theme="light"] img.logo-nav.logo-dark {
+img.logo-nav.logo-dark {
 display: none;
 }
 
