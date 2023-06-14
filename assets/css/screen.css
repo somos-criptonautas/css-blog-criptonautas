@@ -1658,7 +1658,7 @@ html[data-theme="dark"] img.logo-nav.logo-light,
 .is-head-transparent img.logo-nav.logo-light {
 display: none;
 }
-.is-head-open html[data-theme="dark"] img.logo-nav.logo-dark,
+.is-head-open html[data-theme="light"] img.logo-nav.logo-dark,
 .is-head-transparent img.logo-nav.logo-dark {
 display: block;
 }
@@ -2245,7 +2245,7 @@ fill: var(--color-three);
 14.Author & Tag page
 -------------------------------------------------------------------------- */
 .archive-section {
-margin: 13vh 0;
+margin-top : 13vh;
 text-align: center;
 }
 
