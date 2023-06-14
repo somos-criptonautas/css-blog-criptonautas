@@ -1439,7 +1439,7 @@ body:not(.is-head-b--a_n) .gh-head-menu::after {
 display: none;
 }
 
-@media screen and (min-width: 991px) {
+@media screen and (max-width: 991px) {
    .gh-article-sidebar {
 margin-top: 5rem;
 flex-direction: row-reverse;
@@ -1651,7 +1651,7 @@ display: none;
    display: block;
    }
 }
-html[data-theme="light"] img.logo-nav.logo-dark,
+html[data-theme="dark"] img.logo-nav.logo-light,
 .is-head-transparent img.logo-nav.logo-light {
 display: none;
 }
@@ -2545,7 +2545,7 @@ visibility: hidden;
 display: none;
 }
 
-.is-head-transparent .gh-head .nav > li a, .is-head-transparent .gh-head-description,
+.is-head-transparent .gh-head-description,
 .is-head-transparent .gh-head-link, .is-head-transparent .gh-head-logo, .is-head-transparent .gh-head-logo a, .is-head-transparent .gh-search, .is-head-transparent .gh-social, .is-head-transparent .nav-more-toggle,
 .is-head-transparent .gh-icon-btn svg {
    color: var(--color-base) !important;
@@ -2678,7 +2678,9 @@ background-color: #f1f1f1;
 width: 7.5rem;
 height: 9.5rem;
 }
-
+.discourse .button {
+color: var(--color-base)
+}
 .discourse-embed-frame {
    border-radius: 1rem;
 }
