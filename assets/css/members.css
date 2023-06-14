@@ -69,7 +69,7 @@ display: none !important;
 }
 
 form[data-members-form=subscribe].error .subscribe-form {
-display: 
+display: none;
 }
 
 .it-button-content {
