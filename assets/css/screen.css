@@ -1651,7 +1651,7 @@ display: none;
    display: block;
    }
 }
-html[data-theme="dark"] img.logo-nav.logo-light,
+html[data-theme="light"] img.logo-nav.logo-dark,
 .is-head-transparent img.logo-nav.logo-light {
 display: none;
 }
