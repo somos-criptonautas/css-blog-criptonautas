@@ -1635,12 +1635,10 @@ display: block;
 .it-dark-light:hover .icon-light svg {
 fill: #f1f1f1;
 }
-html[data-theme="dark"] img.logo-nav.logo-light {
+html[data-theme="dark"] img.logo-nav.logo-light,
+html[data-theme="light"] img.logo-nav.logo-dark {
 display: none;
 }
-html[data-theme="light"] img.logo-nav.logo-dark {
-   display: none;
-   }
 
 img.logo-nav:not(.is-head-open) {
 display: none;
@@ -2653,7 +2651,7 @@ padding: 1.7em 1.5em;
  }
 }
 .is-head-transparent .gh-icon-btn svg {
-   color: var(--color-white);
+   color: var(--color-white) !important;
 }
 
 .beta-box {
