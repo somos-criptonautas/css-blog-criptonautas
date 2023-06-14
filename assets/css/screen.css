@@ -1640,16 +1640,16 @@ display: block;
 .it-dark-light:hover .icon-light svg {
 fill: #f1f1f1;
 }
-html[data-theme="dark"] img.logo-nav.logo-light,
-img.logo-nav.logo-dark {
-display: none;
-}
 
 .is-head-open img.logo-nav {
    max-width: 74vh;
    margin: auto;
    display: block;
    }
+}
+html[data-theme="dark"] img.logo-nav.logo-light,
+img.logo-nav.logo-dark {
+display: none;
 }
 html[data-theme="light"] img.logo-nav.logo-dark,
 .is-head-transparent img.logo-nav.logo-light {
