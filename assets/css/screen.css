@@ -1655,7 +1655,7 @@ html[data-theme="light"] img.logo-nav.logo-dark,
 .is-head-transparent img.logo-nav.logo-light {
 display: none;
 }
-.is-head-open html[data-theme="light"] img.logo-nav.logo-dark,
+.is-head-open html img.logo-nav.logo-dark,
 .is-head-transparent img.logo-nav.logo-dark {
 display: block;
 }
