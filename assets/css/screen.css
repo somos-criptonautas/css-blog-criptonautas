@@ -79,7 +79,6 @@ border-radius: 0.77rem;
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
 }
-}
 
 body:not(.home-template) .gh-topic-grid .gh-topic-content {
 row-gap: 4.23rem;
