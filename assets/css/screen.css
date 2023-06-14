@@ -1645,9 +1645,6 @@ img.logo-nav.logo-dark {
 display: none;
 }
 
-img.logo-nav:not(.is-head-open) {
-display: none;
-}
 .is-head-open img.logo-nav {
    max-width: 74vh;
    margin: auto;
