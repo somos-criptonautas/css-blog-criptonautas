@@ -3402,7 +3402,6 @@ position: relative;
 min-width: 23rem;
 width: 50%;
 margin: 3rem auto;
-border-radius: 0.77rem;
 display: flex;
 }
 .is-head-open #gh-head .nav {
@@ -4453,15 +4452,15 @@ box-shadow: none;
    position: relative;
    display: inline-block;
    overflow: hidden;
-   width: 84px;
-   height: 84px;
+   width: 2rem;
+   height: 2rem;
    margin-right: -25px;
    transition-timing-function: ease;
    transition-duration: .2s;
    transition-property: transform, background-color;
    pointer-events: none;
    border: 6px solid transparent;
-   background-color: var(--color-body);
+   background-color: var(--color-bg);
    will-change: transform;
 }
 
