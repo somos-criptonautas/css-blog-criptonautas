@@ -74,7 +74,7 @@ padding: 1rem;
 border-radius: 0.77rem;
 }
 body:not(.home-template) .gh-topic-grid .gh-topic-content {
-row-gap: 11vw;
+row-gap: 5.33rem;
 justify-items: center;
 display: grid;
 }
@@ -169,12 +169,12 @@ object-fit: cover;
 .gh-topic-grid .gh-card-image img {
 width: 100%;
 height: 100%;
-max-height: 33vh;
+max-height: 37vh;
 border-radius:0.77rem;
 object-fit: cover;
 }
 .gh-card-wrapper {
-   padding: 2.33rem 0 0 1rem;
+   padding: 2rem 0 0 1rem;
 }
 a.gh-card-lin {
 opacity: 0.73 !important;
