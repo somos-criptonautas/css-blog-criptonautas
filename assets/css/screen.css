@@ -2699,8 +2699,10 @@ margin-bottom:7.11rem;
 html[data-theme="dark"] hr {
 opacity: 33% !important;
 }
-.gh-topic-content .gh-feed {
-padding: 5rem 0;
+gh-topic-content {
+   display: grid;
+   row-gap: 5rem;
+   column-gap: 1.33rem;
 }
 .nav-icons {
 align-content: center;
