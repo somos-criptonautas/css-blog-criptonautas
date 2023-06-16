@@ -76,6 +76,7 @@ border-radius: 0.77rem;
 body:not(.home-template) .gh-topic-grid .gh-topic-content {
 row-gap: 4.23rem;
 justify-items: center;
+display: grid;
 }
 
 .gh-topic-footer {
@@ -1177,7 +1178,7 @@ margin-right: 1rem;
    margin: 2rem 1rem 3rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
    .gh-foot-menu .nav {
       gap: 1.11rem !important;
    }
@@ -1249,10 +1250,6 @@ margin-bottom: 32px;
 
 .gh-cover-description {
 font-size: 1.7rem;
-}
-
-.gh-topic-grid .gh-topic-content {
-row-gap: 32px !important;
 }
 
 .gh-topic-grid .gh-card-link {
@@ -1641,7 +1638,7 @@ display: none !important;
 img.logo-nav.logo-dark {
 display: none;
 }
-.is-head-open img.logo-nav.logo-dark,
+html[data-theme="dark"].is-head-open img.logo-nav.logo-dark,
 .is-head-transparent img.logo-nav.logo-dark {
 display: block !important;
 }
