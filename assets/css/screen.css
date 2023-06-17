@@ -1615,6 +1615,7 @@ fill: #f1f1f1;
 .is-head-open img.logo-nav {
    max-width: 74vh;
    margin: auto;
+   display: block;
    }
    img.logo-nav {
       display: none;
