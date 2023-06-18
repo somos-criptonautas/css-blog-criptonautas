@@ -1626,12 +1626,6 @@ fill: #f1f1f1;
    html[data-theme="dark"].is-head-open img.logo-nav.logo-dark {
    display: block !important;
 }
-   img.logo-nav {
-      display: none;
-   }
-   .is-head-open img.logo-nav {
-      display: block;
-   }
 }
 img.logo-nav.logo-dark,
 html[data-theme="dark"] img.logo-nav.logo-light {
