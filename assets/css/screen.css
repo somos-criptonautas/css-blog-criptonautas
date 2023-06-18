@@ -1623,11 +1623,11 @@ fill: #f1f1f1;
    margin: auto;
 }
    html:not([data-theme="dark"]).is-head-open img.logo-nav.logo-light,
-   html[data-theme="dark"].is-head-open img.logo-nav.logo-dark {
+   html[data-theme="dark"] .is-head-open .logo-nav.logo-dark {
    display: block !important;
 }
 }
-img.logo-nav.logo-dark,
+.logo-nav.logo-dark,
 html[data-theme="dark"] img.logo-nav.logo-light {
 display: none;
 }
@@ -2259,11 +2259,6 @@ background-color: var(--color-one);
 /* Image
 –––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .archive-image {
-width: 11vw;
-height: 11vw;
-margin: 2rem auto 20px;
-}
-.avatar-image {
    width: 11rem;
    height: 11rem;
    margin: 2rem auto 20px;
