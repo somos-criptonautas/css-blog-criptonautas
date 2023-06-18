@@ -190,7 +190,7 @@ z-index: 1;
 .gh-topic-grid .gh-card-title {
 font-family: var(--font-sans-serif);
 font-weight: 700;
-line-height: 1.3;
+line-height: 1.27;
 letter-spacing: -0.015em;
 word-break: break-word;
 }
@@ -2697,7 +2697,7 @@ margin-bottom: 6.11rem;
 padding-bottom: 3rem;
 padding-top: 7rem;
 }
-:not(.gh-topic-minimal).gh-topic-content {
+.gh-topic-content:not(.gh-topic-minimal) {
    display: grid;
    row-gap: 3.33rem;
    column-gap: 2.22rem;
