@@ -1606,11 +1606,13 @@ display: block;
 .icon-dark {
 display: block;
 }
+
 @media screen and (min-width: 992px) {
 html[data-theme="dark"] img.logo-dark {
    display: block;
 }
 }
+
 @media screen and (max-width: 991px) {
 .it-dark-light:hover .icon-light svg {
 fill: #f1f1f1;
@@ -1619,12 +1621,12 @@ fill: #f1f1f1;
 .is-head-open img.logo-nav {
    max-width: 74vh;
    margin: auto;
-   }
+}
    html:not([data-theme="dark"]).is-head-open img.logo-nav.logo-light,
    html[data-theme="dark"].is-head-open img.logo-nav.logo-dark {
    display: block !important;
 }
-   img.logo-nav {
+   img.logo-nav:not(.is-head-open) {
       display: none !important;
    }
    html[data-theme="dark"].is-head-open img.logo-dark {
