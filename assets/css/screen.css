@@ -1622,13 +1622,14 @@ fill: #f1f1f1;
    display: block !important;
    }
    img.logo-nav {
-      display: none;
+      display: none !important;
    }
    html[data-theme="dark"].is-head-open img.logo-dark {
       display: block !important;
    }
 }
 html[data-theme="light"]img.logo-nav.logo-dark,
+html[data-theme=""]img.logo-nav.logo-dark,
 html[data-theme="dark"] img.logo-nav.logo-light,
 .is-head-transparent:not(.is-head-open) img.logo-nav.logo-light {
 display: none !important;
