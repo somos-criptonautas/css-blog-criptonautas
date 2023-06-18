@@ -1628,14 +1628,12 @@ fill: #f1f1f1;
       display: block;
    }
 }
+img.logo-nav.logo-dark,
 html[data-theme="dark"] img.logo-nav.logo-light,
 .is-head-transparent:not(.is-head-open) img.logo-nav.logo-light {
 display: none;
 }
-img.logo-nav.logo-dark {
-display: none;
-}
-.is-head-transparent img.logo-nav.logo-dark {
+.is-head-transparent:not(.is-head-open) img.logo-nav.logo-dark {
 display: block;
 }
 
