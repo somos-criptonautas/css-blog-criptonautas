@@ -1620,9 +1620,9 @@ fill: #f1f1f1;
    max-width: 74vh;
    margin: auto;
    }
-   :not(html[data-theme="dark"]).is-head-open img.logo-nav.logo-light,
-   :not(html[data-theme="light"]).is-head-open img.logo-nav.logo-dark {
-   display: block !important;s
+   html:not([data-theme="dark"]).is-head-open img.logo-nav.logo-light,
+   html[data-theme="dark"].is-head-open img.logo-nav.logo-dark {
+   display: block !important;
 }
    img.logo-nav {
       display: none !important;
