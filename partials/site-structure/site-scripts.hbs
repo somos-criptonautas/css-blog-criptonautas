@@ -90,7 +90,7 @@ const handleMessageListener = (event) => {
 window.addEventListener('message', handleMessageListener);
 
 const setIframeStyle = () => {
-    const iframe = document.getElementById("discourse-embed-iframe");
+    const iframe = document.getElementById("discourse-embed-frame");
     if (iframe && iframe.contentWindow) {
         iframe.contentWindow.postMessage(
             darkModeFlag ? "dark" : "light",
