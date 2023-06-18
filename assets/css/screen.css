@@ -186,6 +186,9 @@ opacity: 1 !important;
 max-width: 560px;
 z-index: 1;
 }
+   .gh-card.large.gh-topic-grid .gh-card-title {
+      font-size: 3.7rem;
+   }
 
 @media screen and (max-width: 767px) {
    .gh-card:not(.large).gh-topic-grid .gh-card-title {
@@ -200,7 +203,6 @@ line-height: 1.27;
 letter-spacing: -0.015em;
 word-break: break-word;
 }
-
 .gh-topic-grid .gh-card.large .gh-card-title {
 letter-spacing: -0.02em;
 font-size: 3.77rem;
@@ -2703,7 +2705,7 @@ padding-top: 7rem;
    row-gap: 3.33rem;
    column-gap: 2.22rem;
 }
-.gh-topic .gh-topic-minimal .gh-topic-content {
+.gh-topic-list .gh-topic-minimal .gh-topic-content {
 display: unset !important;
 }
 @media screen and (max-width: 767px) {
