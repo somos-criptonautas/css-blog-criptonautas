@@ -2688,7 +2688,7 @@ margin-bottom: 6.11rem;
 padding-bottom: 3rem;
 padding-top: 7rem;
 }
-.gh-topic-content:not(.gh-topic-minimal) {
+:not(.gh-topic-minimal).gh-topic-content {
    display: grid;
    row-gap: 3.33rem;
    column-gap: 2.22rem;
