@@ -1633,7 +1633,7 @@ html[data-theme="dark"] img.logo-nav.logo-light,
 display: none !important;
 }
 img.logo-nav.logo-dark {
-display: none;
+display: none !important;
 }
 .is-head-transparent img.logo-nav.logo-dark {
 display: block !important;
@@ -2947,7 +2947,7 @@ display: unset !important;
 .gh-content,
 .gh-article-excerpt {
 font-size: 2rem;
-padding: 0 1rem;
+padding: 0 0.5rem;
 }
 
 @media screen and (min-width: 1500px) {
@@ -3400,7 +3400,9 @@ background-color: transparent;
 background-color: var(--color-bg) !important;
 height: 100vh;
 }
-.is-head-brand:not(.is-head-transparent) .gh-head .nav a, .is-head-brand:not(.is-head-transparent) .gh-head-description, .is-head-brand:not(.is-head-transparent) .gh-head-logo, .is-head-brand:not(.is-head-transparent) .gh-search {
+:not(html[data-theme="light"]).is-head-transparent.is-head-open .gh-head .nav a,
+:not(html[data-theme="light"]).is-head-transparent.is-head-open .gh-head .nav > li a,
+:not(html[data-theme="light"]).is-head-transparent.is-head-open .gh-search {
 color: var(--color-base) !important;
 }
 
