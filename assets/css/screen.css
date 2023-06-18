@@ -1625,7 +1625,7 @@ fill: #f1f1f1;
       display: none;
    }
    html[data-theme="dark"].is-head-open img.logo-dark {
-      display: block;
+      display: block !important;
    }
 }
 img.logo-nav.logo-dark,
