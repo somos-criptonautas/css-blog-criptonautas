@@ -1565,16 +1565,16 @@ margin: 40px auto 0px;
 
 /* End of toc */
 
-.is-head-transparent .gh-icon-btn {
-color: var(--color-white);
+.is-head-transparent:not(.is-head-open) .gh-icon-btn {
+color: var(--color-white) !important;
 }
-.is-head-transparent .gh-icon-btn:hover,
-.is-head-transparent .gh-icon-btn svg:active,
-.is-head-transparent .gh-icon-btn svg:hover {
+.is-head-transparent:not(.is-head-open) .gh-icon-btn:hover,
+.is-head-transparent:not(.is-head-open) .gh-icon-btn svg:active,
+.is-head-transparent:not(.is-head-open) .gh-icon-btn svg:hover {
 fill: var(--color-white) !important;
 }
-.is-head-transparent .nav-current,
-.is-head-transparent .nav .gh-head-menu li:hover {
+.is-head-transparent:not(.is-head-open) .nav-current,
+.is-head-transparent:not(.is-head-open) .nav .gh-head-menu li:hover {
 box-shadow: 0 -3px 0 0 var(--color-white) inset !important;
 }
 
@@ -2523,9 +2523,14 @@ visibility: hidden;
 display: none;
 }
 
+
+
 .is-head-transparent .gh-head-description,
-.is-head-transparent .gh-head-link, .is-head-transparent .gh-head-logo, .is-head-transparent .gh-head-logo a, .is-head-transparent .gh-search, .is-head-transparent .gh-social, .is-head-transparent .nav-more-toggle,
-.is-head-transparent .gh-icon-btn svg {
+.is-head-transparent .gh-head-link,
+.is-head-transparent .gh-head-logo,
+.is-head-transparent .gh-head-logo a,
+.is-head-transparent .gh-social,
+.is-head-transparent .nav-more-toggle {
    color: var(--color-base) !important;
  }
 .page-working .gh-btn.center {
@@ -2628,9 +2633,6 @@ padding: 1.7em 1.5em;
    font-size: 7rem !important;
    padding: 0.33rem !important;
  }
-}
-.is-head-transparent .gh-icon-btn svg {
-   color: var(--color-white) !important;
 }
 
 .beta-box {
@@ -3427,7 +3429,7 @@ ul.nav li:hover,
 .nav-current {
 box-shadow: 0 -3px 0 0 var(--color-base) inset;
 }
-.is-head-transparent ul.nav li:hover {
+.is-head-transparent:not(.is-head-open) ul.nav li:hover {
 box-shadow: 0 -3px 0 0 var(--color-white) inset;
 }
 h1, h2, h3, h4, h5, h6 {
