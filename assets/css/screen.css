@@ -187,6 +187,12 @@ max-width: 560px;
 z-index: 1;
 }
 
+@media screen and (max-width: 767px) {
+   .gh-card:not(.large).gh-topic-grid .gh-card-title {
+   font-size: 2.7rem;
+}
+}
+
 .gh-topic-grid .gh-card-title {
 font-family: var(--font-sans-serif);
 font-weight: 700;
@@ -1173,13 +1179,13 @@ margin-right: 1rem;
    margin: 2rem 1rem 3rem;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
    .gh-foot-menu .nav {
       gap: 1rem !important;
    }
    .gh-foot {
-      padding-bottom: 3.33rem;
       padding-top: 6rem;
+      padding-bottom: 5rem;
    }
 }
 .gh-foot {
@@ -2693,8 +2699,8 @@ padding-top: 7rem;
    row-gap: 3.33rem;
    column-gap: 2.22rem;
 }
-.gh-topic-minimal.gh-topic-content {
-display: unset;
+.gh-topic-minimal .gh-topic-content {
+display: unset !important;
 }
 @media screen and (max-width: 767px) {
 .gh-main {
