@@ -2688,10 +2688,13 @@ margin-bottom: 6.11rem;
 padding-bottom: 3rem;
 padding-top: 7rem;
 }
-:not(.gh-topic-minimal).gh-topic-content {
+.gh-topic-content {
    display: grid;
    row-gap: 3.33rem;
    column-gap: 2.22rem;
+}
+.gh-topic-minimal.gh-topic-content {
+display: unset;
 }
 @media screen and (max-width: 767px) {
 .gh-main {
