@@ -27,14 +27,14 @@ html {
 html[data-theme="dark"] {
     --color-primary: #5107ed;
     --color-primary-hover: #9a5cfd;
-    --color-secondary-text: #f1f1f1;
-    --color-base: #f1f1f1;
+    --color-secondary-text: #e7e7e7;
+    --color-base: #e7e7e7;
     --color-bg: #1C2128;
     --color-bg-alt: #22272e;
-    --color-link: #f1f1f1;
+    --color-link: #e7e7e7;
     --color-bg-white: #1C2128;
     --color-border: #444c56;
-    --color-svg: #f1f1f1;
+    --color-svg: #e7e7e7;
     --border-form-control: #444c56;
     --bg-icon-mail: #539bf5;
     --ghost-accent-color: #9a5cfd;
