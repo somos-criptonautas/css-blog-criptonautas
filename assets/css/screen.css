@@ -1631,7 +1631,7 @@ fill: #f1f1f1;
 img.logo-nav.logo-dark,
 html[data-theme="dark"] img.logo-nav.logo-light,
 .is-head-transparent:not(.is-head-open) img.logo-nav.logo-light {
-display: none;
+display: none !important;
 }
 .is-head-transparent:not(.is-head-open) img.logo-nav.logo-dark {
 display: block;
