@@ -203,6 +203,7 @@ word-break: break-word;
 
 .gh-topic-grid .gh-card.large .gh-card-title {
 letter-spacing: -0.02em;
+font-size: 3.77rem;
 }
 
 .gh-topic-grid .gh-card.no-image.large .gh-card-title {
@@ -2425,6 +2426,9 @@ background-color: var(--color-alert-error);
 
 /* Matenauta stuff */
 
+.sidebar-toc h3 {
+font-size: 2.73rem;
+}
 .mx-1 {
 margin: 0 1.33rem;
 }
@@ -2635,8 +2639,8 @@ padding: 1.7em 1.5em;
 
 @media screen and (max-width: 767px) {
 .kg-callout-emoji {
-   margin-left: -6.5rem;
-   margin-top: -4.5rem;
+   margin-left: -6rem;
+   margin-top: -6rem;
    font-size: 7rem !important;
    padding: 0.33rem !important;
  }
@@ -2699,7 +2703,7 @@ padding-top: 7rem;
    row-gap: 3.33rem;
    column-gap: 2.22rem;
 }
-.gh-topic-minimal .gh-topic-content {
+.gh-topic .gh-topic-minimal .gh-topic-content {
 display: unset !important;
 }
 @media screen and (max-width: 767px) {
