@@ -1619,8 +1619,11 @@ fill: #f1f1f1;
 .is-head-open img.logo-nav {
    max-width: 74vh;
    margin: auto;
-   display: block !important;
    }
+   :not(html[data-theme="dark"]).is-head-open img.logo-nav.logo-light,
+   :not(html[data-theme="light"]).is-head-open img.logo-nav.logo-dark {
+   display: block !important;s
+}
    img.logo-nav {
       display: none !important;
    }
@@ -2264,7 +2267,11 @@ width: 11vw;
 height: 11vw;
 margin: 2rem auto 20px;
 }
-
+.avatar-image {
+   width: 11rem;
+   height: 11rem;
+   margin: 2rem auto 20px;
+}
 .archive-image img {
 box-sizing: border-box;
 padding: 10px;
@@ -2690,7 +2697,7 @@ margin-bottom: 6.11rem;
 padding-bottom: 3rem;
 padding-top: 7rem;
 }
-.gh-topic-content {
+:not(.gh-topic-minimal).gh-topic-content {
    display: grid;
    row-gap: 3.33rem;
    column-gap: 2.22rem;
