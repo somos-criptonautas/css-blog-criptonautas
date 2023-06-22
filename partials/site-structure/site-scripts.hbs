@@ -87,6 +87,8 @@ const handleMessageListener = (event) => {
     }
 };
 
+let darkModeFlag = localStorage.getItem("selected-theme");
+
 window.addEventListener('message', handleMessageListener);
 
 const setIframeStyle = () => {
