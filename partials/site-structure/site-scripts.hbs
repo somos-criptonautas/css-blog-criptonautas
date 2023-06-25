@@ -80,15 +80,14 @@ window.onscroll = function() {
         {{/is}}
 
 <script>    
+let darkModeFlag = localStorage.getItem("selected-theme");
+
 const handleMessageListener = (event) => {
     var origin = event.origin;
     if (origin === "https://comunidad.criptonautas.co") {
         setIframeStyle();
     }
 };
-
-let darkModeFlag = localStorage.getItem("selected-theme");
-
 window.addEventListener('message', handleMessageListener);
 
 const setIframeStyle = () => {
