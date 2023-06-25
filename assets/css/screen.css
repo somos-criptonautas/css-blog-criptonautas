@@ -456,6 +456,11 @@ margin: 3.33rem auto 1.33rem;}
 display: none;
 }
 
+.gh-read-next .gh-topic .gh-topic-grid {
+max-width: 90%;
+margin: auto;
+}
+
 /* Full screen cover */
 
 .gh-cover {
