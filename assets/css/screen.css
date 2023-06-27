@@ -77,6 +77,8 @@ body:not(.home-template) .gh-topic-grid .gh-topic-content {
 row-gap: 5.33rem;
 justify-items: center;
 display: grid;
+max-width: 70vw;
+margin: auto;
 }
 
 .gh-topic-footer {
