@@ -138,7 +138,7 @@ align-items: flex-end;
 min-height: 400px;
 padding: 48px 40px;
 background: linear-gradient(0deg,rgba(0,0,0,.8),transparent 93%);
-display: inherit;
+display: inherit !important;
 }
 
 .gh-topic-grid .gh-card.featured.no-image.large .gh-card-link {
@@ -2580,6 +2580,8 @@ display: none;
 width: 98vw;
 }
 
+
+
 .page-lounge .gh-canvas > * {
 grid-column: inherit;
 }
@@ -2748,6 +2750,8 @@ padding-top: 1.83rem;
 .gh-content li {
 font-family: var(--font-serif);
 }
+
+
 /* search aligned */
 @media screen and (min-width:640px) {
 .sm\:max-w-lg {
@@ -4626,3 +4630,101 @@ box-shadow: none;
       0% { transform: translateY(40px) }
       100% { transform: translateY(0) }
    }
+
+   /* Weird update */
+
+   .gh-canvas,
+.kg-width-full.kg-content-wide {
+    --main: min(var(--content-width, 720px), 100% - var(--gap) * 2);
+    --wide: minmax(0, calc((var(--container-width, 1200px) - var(--content-width, 720px)) / 2));
+    --full: minmax(var(--gap), 1fr);
+    display: grid;
+    grid-template-columns: [full-start] var(--full) [wide-start] var(--wide) [main-start] var(--main) [main-end] var(--wide) [wide-end] var(--full) [full-end];
+}
+.gh-canvas > * {
+    grid-column: main;
+}
+.kg-content-wide > div,
+.kg-width-wide {
+    grid-column: wide;
+}
+.kg-width-full {
+    grid-column: full;
+}
+
+.gh-content table:not(.gist table) {
+   -webkit-overflow-scrolling: touch;
+   background: radial-gradient(ellipse at left, rgba(0, 0, 0, 0.2) 0, transparent 75%) 0, radial-gradient(ellipse at right, rgba(0, 0, 0, 0.2) 0, transparent 75%) 100%;
+   background-attachment: scroll, scroll;
+   background-repeat: no-repeat;
+   background-size: 10px 100%, 10px 100%;
+   border-collapse: collapse;
+   border-spacing: 0;
+   display: inline-block;
+   font-family: var(--font-sans);
+   font-size: 1.6rem;
+   max-width: 100%;
+   overflow-x: auto;
+   vertical-align: top;
+   white-space: nowrap;
+   width: auto;
+}
+.gh-content table:not(.gist table) td:first-child {
+   background-image: linear-gradient(90deg, #fff 50%, hsla(0, 0%, 100%, 0));
+   background-repeat: no-repeat;
+   background-size: 20px 100%;
+}
+.gh-content table:not(.gist table) td:last-child {
+   background-image: linear-gradient(270deg, #fff 50%, hsla(0, 0%, 100%, 0));
+   background-position: 100% 0;
+   background-repeat: no-repeat;
+   background-size: 20px 100%;
+}
+.gh-content table:not(.gist table) th {
+   background-color: var(--color-white);
+   color: var(--color-darkgrey);
+   font-size: 1.2rem;
+   font-weight: 700;
+   letter-spacing: 0.2px;
+   text-align: left;
+   text-transform: uppercase;
+}
+.gh-content table:not(.gist table) td,
+.gh-content table:not(.gist table) th {
+   border: 1px solid var(--color-light-gray);
+   padding: 6px 12px;
+}
+.gh-content .kg-nested-list-item {
+   list-style-type: none;
+}
+.gh-content ol ol li {
+   list-style-type: lower-alpha;
+}
+.gh-content ol ol ol li {
+   list-style-type: lower-roman;
+}
+
+.no-menu .gh-foot-inner {
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+}
+
+.gh-content :not(.kg-card):not(table):not([id]) + :is(.kg-card, table) {
+   margin-top: calc(2em * var(--content-spacing-multiplier, 1));
+}
+.gh-content :is(.kg-card, table) + :not(.kg-card):not(table):not([id]) {
+   margin-top: calc(2em * var(--content-spacing-multiplier, 1));
+}
+
+.gh-canvas > * {
+   grid-column: main;
+}
+.kg-content-wide > div,
+.kg-width-wide {
+   grid-column: wide;
+}
+.kg-width-full {
+   grid-column: full;
+}
