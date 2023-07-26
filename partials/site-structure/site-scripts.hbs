@@ -168,27 +168,3 @@ const setIframeStyle = () => {
 
   document.addEventListener('DOMContentLoaded', initYouTubeVideos);
 </script>
-<script type="module">
-import algoliasearch from 'algoliasearch/lite';
-import instantsearch from 'instantsearch.js';
-import { searchBox, hits } from 'instantsearch.js/es/widgets';
-
-const searchClient = algoliasearch('ENLA0HXCE3', 'a965c925a9df639164c534762a577741');
-
-const search = instantsearch({
-  indexName: 'demo_ecommerce',
-  searchClient,
-});
-
-search.addWidgets([
-  searchBox({
-    container: "#searchbox"
-  }),
-
-  hits({
-    container: "#hits"
-  })
-]);
-
-search.start();
-</script>
