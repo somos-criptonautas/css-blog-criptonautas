@@ -190,12 +190,8 @@ object-fit: cover;
 max-height: 43vh;
 }
 
-.large .gh-topic-grid .gh-card-image img {
+.large > .gh-card-image img {
 max-height: 100% !important;
-}
-
-.gh-card.large .gh-topic-grid .gh-card-image img {
-max-height: unset;
 }
 .gh-card-wrapper {
    padding: 3.33rem 0 0 1rem;
@@ -216,7 +212,7 @@ z-index: 1;
 
 @media screen and (max-width: 991px) {
    .gh-card:not(.large).gh-topic-grid .gh-card-title h1 {
-   font-size: 2.7rem;
+   font-size: 2.7rem !important;
 }
 }
 
@@ -1402,7 +1398,7 @@ align-content: center;
 }
 @media screen and (min-width: 992px) {
 .gh-head-inner {
-padding: 1.11rem;
+padding: 1.63rem;
 }
 }
 .gh-head-inner {
@@ -1737,7 +1733,6 @@ html,
 body,
 .gh-head {
 background: var(--color-bg);
-padding-top: 1.11rem;
 }
 html,
 body,
