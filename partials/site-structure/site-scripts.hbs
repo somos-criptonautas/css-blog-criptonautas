@@ -62,7 +62,7 @@ window.onscroll = function() {
     document.addEventListener("DOMContentLoaded", () => {
         var toc = document.getElementsByClassName('toc')[0];
         if (toc && toc.childNodes.length > 0) {
-            tocbot.init({
+            toc.init({
                 tocSelector: '.toc',
                 contentSelector: '.toc-content',
                 headingSelector: 'h1',
