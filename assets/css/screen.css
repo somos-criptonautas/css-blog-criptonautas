@@ -188,6 +188,10 @@ height: 100%;
 border-radius:0.77rem;
 object-fit: cover;
 }
+
+.gh-topic-grid .gh-card-image .fix img {
+   max-height: 43vh;
+}
 .gh-card.large .gh-topic-grid .gh-card-image img {
 max-height: unset;
 }
@@ -208,7 +212,7 @@ z-index: 1;
       font-size: 3.7rem;
    }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
    .gh-card:not(.large).gh-topic-grid .gh-card-title h1 {
    font-size: 2.7rem;
 }
@@ -1731,6 +1735,7 @@ html,
 body,
 .gh-head {
 background: var(--color-bg);
+padding-top: 1.11rem;
 }
 html,
 body,
