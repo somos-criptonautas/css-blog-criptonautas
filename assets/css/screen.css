@@ -359,11 +359,15 @@ justify-items: start;
 }
 
 .gh-article-tag {
-margin: 1rem;
+   margin: 1rem 0;
 font-size: 2rem;
 font-weight: 600;
 text-transform: uppercase;
 letter-spacing: 0.01em;
+background-color: var(--ghost-accent-color);
+padding: 0.33rem 1.33rem;
+border-radius: var(--border-radius);
+color: #fff;
 }
 
 .gh-article-image {
