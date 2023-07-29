@@ -1,6 +1,0 @@
-taxonomies:
-  author: /team/{slug}/
-
-routes:
-  /blog/:
-    controller: channel
