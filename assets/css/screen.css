@@ -161,7 +161,9 @@ width: 100%;
 content: "";
 padding-bottom: 0;
 }
-
+.gh-content .figcaption a {
+color: inherit;
+}
 .gh-topic-grid .gh-card.featured.large .gh-card-image {
 position: absolute;
 inset: 0;
