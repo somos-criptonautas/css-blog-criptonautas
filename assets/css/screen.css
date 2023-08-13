@@ -2480,6 +2480,10 @@ margin-bottom: 5.33 rem;
 
 /* Image
    –––––––––––––––––––––––––––––––––––––––––––––––––––– */
+   .global-image-author img {
+      width: 11rem;
+      margin: auto;
+   }
    .global-image img {
       width: 100%;
       height: 100%;
@@ -3488,7 +3492,7 @@ ul.nav li:hover,
 box-shadow: 0 -3px 0 0 var(--color-base) inset;
 }
 .is-head-transparent:not(.is-head-open) ul.nav li:hover {
-box-shadow: 0 -3px 0 0 var(--color-white) inset;
+box-shadow: 0 -3px 0 0 var(--color-base) inset;
 }
 h1, h2, h3, h4, h5, h6 {
 color: var(--color-base);
@@ -4202,9 +4206,9 @@ box-shadow: none;
          min-height: 13vw;
       }
       
-      .global-link:hover .item-image,
+      .item.is-loop:hover:hover .ite-image,
       .item-image:hover {
-         transform: translateY(-7px);
+         transform: translateY(-11px);
       }
 
 
