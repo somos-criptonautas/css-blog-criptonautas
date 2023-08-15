@@ -176,6 +176,9 @@ object-fit: cover;
 min-height: 13vh;
 opacity: 63%;
 }
+:root {
+--h1-size: 3rem;
+}
 }
 @media screen and (min-width: 768px) {
    .gh-card:not(.large).gh-topic-grid .gh-card-image img {
@@ -190,10 +193,16 @@ width: 100%;
 height: 100%;
 border-radius:0.77rem;
 object-fit: cover;
-max-height: 43vh;
 }
+@media screen and (min-width: 768px) {
 :not(.fix).gh-topic-grid .gh-card-image img {
 max-height: 43vh;
+}
+}
+@media screen and (max-width: 767px) {
+:not(.fix).gh-topic-grid .gh-card-image img {
+   max-height: 23vh;
+   }
 }
 .large > .gh-card-image img {
 max-height: 100% !important;
