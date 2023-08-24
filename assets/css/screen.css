@@ -199,6 +199,9 @@ object-fit: cover;
 max-height: 43vh;
 }
 }
+.gh-content figcaption a {
+color: default;
+}
 @media screen and (max-width: 767px) {
 :not(.fix).gh-topic-grid .gh-card-image img {
    max-height: 23vh;
