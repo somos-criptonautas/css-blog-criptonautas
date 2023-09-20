@@ -233,6 +233,12 @@ z-index: 1;
 }
 }
 .d-header .login-button {
+   border-radius: 999px !important;
+box-shadow: 0 10px 20px -10px var(--color-secondary);
+font-size: 1.33rem;  
+padding: 0.33rem 1.33rem !important;
+z-index: 0;
+}
 .gh-topic-grid .gh-card-title {
 font-family: var(--font-sans-serif);
 font-weight: 700;
