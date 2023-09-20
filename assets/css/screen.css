@@ -232,7 +232,7 @@ z-index: 1;
    font-size: 2.7rem !important;
 }
 }
-
+.d-header .login-button {
 .gh-topic-grid .gh-card-title {
 font-family: var(--font-sans-serif);
 font-weight: 700;
