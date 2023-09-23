@@ -13,7 +13,9 @@
 a:hover {
 opacity: 1;
 }
-
+.m-auto {
+margin: auto;
+}
 figcaption {
     font-size: 1.3rem;
 }
