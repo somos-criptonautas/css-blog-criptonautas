@@ -195,16 +195,16 @@ border-radius:0.77rem;
 object-fit: cover;
 }
 @media screen and (min-width: 768px) {
-:not(.fix).gh-topic-grid .gh-card-image img {
-max-height: 43vh;
+:not(.featured).gh-topic-grid .gh-card-image img {
+max-height: 41vh;
 }
 }
 .gh-content figcaption a {
 color: default;
 }
 @media screen and (max-width: 767px) {
-:not(.fix).gh-topic-grid .gh-card-image img {
-   max-height: 23vh;
+.gh-topic-grid .gh-card-image img {
+   max-height: 21vh;
    }
 }
 .large > .gh-card-image img {
@@ -2709,7 +2709,7 @@ padding: 1.7em 1.5em;
 }
 
 .beta-box {
-max-width: 777px;
+max-width: 666px;
 margin: 0 auto 3rem;
 
 }
