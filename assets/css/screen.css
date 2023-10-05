@@ -2636,11 +2636,6 @@ display: none;
 width: 98vw;
 }
 
-
-
-.page-lounge .gh-canvas > * {
-grid-column: inherit;
-}
 .user-cover {
    display: block;
    overflow: hidden;
