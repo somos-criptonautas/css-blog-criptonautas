@@ -483,7 +483,7 @@ textarea::placeholder {
    position: relative;
    width: 100%;
    margin: 0;
-   transition: transform .3s ease;
+   transition: c;
    aspect-ratio: 1/1.2;
 }
 
@@ -1709,7 +1709,7 @@ textarea::placeholder {
    –––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .item-image {
    margin-bottom: 2vh;
-   transition: transform .3s ease;
+   transition: transform .11s ease;
 }
 
 .item-image:hover {
@@ -3923,7 +3923,7 @@ textarea::placeholder {
    flex: 0 0 auto;
    width: 160px;
    height: 160px;
-   transition: transform .3s ease;
+   transition: transform .11s ease;
    pointer-events: auto;
 }
 

@@ -2526,7 +2526,7 @@ margin-bottom: 5.33 rem;
       position: relative;
       width: 100%;
       margin: 0;
-      transition: transform .3s ease;
+      transition: transform .11s ease;
       aspect-ratio: 1/1.2;
       max-height: 23vh;
    }
@@ -4050,7 +4050,7 @@ box-shadow: none;
     –––––––––––––––––––––––––––––––––––––––––––––––––––– */
  @media (min-width:1481px) {
     .custom-archive .loop-wrap {
-       grid-template-columns: repeat(4, 1fr);
+       grid-template-columns: repeat(6, 1fr);
     }
  
     .custom-archive .loop-wrap.is-authors .item-excerpt {
@@ -4219,7 +4219,7 @@ box-shadow: none;
       –––––––––––––––––––––––––––––––––––––––––––––––––––– */
       .item-image {
          margin-bottom: 2vh;
-         transition: transform .3s ease;
+         transition: transform .11s ease;
          min-height: 13vw;
       }
       
