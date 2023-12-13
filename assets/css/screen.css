@@ -1238,7 +1238,7 @@ margin-right: 1rem;
 /* Site footer */
 
 .footer-criptonauta {
-   margin: 2rem 1rem 3rem;
+   margin: 5rem 1rem 3rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -4758,6 +4758,9 @@ box-shadow: none;
 
 .gh-content :not(.kg-card):not(table):not([id]) + :is(.kg-card, table) {
    margin-top: calc(2em * var(--content-spacing-multiplier, 1));
+}
+.gh-content :not(.kg-card):not(table):not([id]) + :is(.kg-card, table):last-child {
+   margin: calc(2em * var(--content-spacing-multiplier, 1)) 0;
 }
 .gh-content :is(.kg-card, table) + :not(.kg-card):not(table):not([id]) {
    margin-top: calc(2em * var(--content-spacing-multiplier, 1));
