@@ -52,7 +52,7 @@ font-weight: 500;
 font-size: 2rem;
 background-color: var(--color-secondary) !important;
 box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px, rgba(0, 0, 0, 0.03) 0px 2px 6px 0px;
-border-radius: .6rem;s
+border-radius: .6rem;
 color: var(--color-bg) !important;
 }
 .nav {
@@ -3531,6 +3531,10 @@ background-color: var(--color-primary);
 color: white;
 font-weight: 500;
 }
+.global-link {
+text-transform: uppercase;
+
+}
 .gh-outer {
 padding: 0 1.33rem;
 }
@@ -4101,7 +4105,7 @@ box-shadow: none;
  
  @media screen and (max-width:1480px) and (min-width:1281px) {
     .custom-archive .loop-wrap {
-       grid-template-columns: repeat(4, 1fr);
+       grid-template-columns: repeat(3, 1fr);
     }
  
  }

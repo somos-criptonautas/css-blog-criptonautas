@@ -5418,7 +5418,7 @@ textarea::placeholder {
    –––––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media (min-width:1481px) {
    .custom-archive .loop-wrap {
-      grid-template-columns: repeat(6, 1fr);
+      grid-template-columns: repeat(5Fglobal-link, 1fr);
    }
 
    .custom-archive .loop-wrap.is-authors .item-excerpt {
@@ -5429,14 +5429,14 @@ textarea::placeholder {
 
 @media (max-width:1480px) and (min-width:1281px) {
    .custom-archive .loop-wrap {
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(4, 1fr);
    }
 
 }
 
 @media (max-width:1280px) and (min-width:1025px) {
    .custom-archive .loop-wrap {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
    }
 
 }
