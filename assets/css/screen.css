@@ -200,8 +200,11 @@ height: 100%;
 border-radius:0.77rem;
 object-fit: cover;
 }
+.gh-card .large .gh-topic-grid .gh-card-image img {
+   max-height: inherit !important;
+   }
 @media screen and (min-width: 768px) {
-.gh-topic-grid .gh-card-image img:not(.featured) {
+.gh-topic-grid .gh-card-image img {
 max-height: 41vh;
 }
 }
@@ -3534,9 +3537,6 @@ font-weight: 500;
 .global-link {
 text-transform: uppercase;
 
-}
-.gh-outer {
-padding: 0 1.33rem;
 }
 .gh-foot .gh-outer {
 opacity: 0.77;
