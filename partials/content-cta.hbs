@@ -2,20 +2,20 @@
 <aside class="gh-post-upgrade-cta">
     <div class="gh-post-upgrade-cta-content">
         {{#has visibility="paid"}}
-            <h2>Hey! Esta info es exclusiva para miembros</h2>
+            <h2>{{ t 'Selected content' }}</h2>
         {{/has}}
         {{#has visibility="members"}}
-            <h2>Hey! Esta info es visible para quienes comienzan su reseteo. Puedes empezar ya mismo (gratis y sin tarjeta de crédito):</h2>
+            <h2>{{ t 'Selected Random' }}</h2>
         {{/has}}
         {{#has visibility="tiers"}}
-            <h2>Hey! Esta info es solo para {{tiers}}</h2>
+            <h2>{{ t 'Only for' }} {{tiers}}</h2>
         {{/has}}
             <p>Sumate para leer el artículo completo y acceder a más beneficios.</p>
         {{#if @member}}
             <a class="gh-btn" href="/profile" style="color:{{@site.accent_color}}">Sube un nivel</a>
         {{else}}
             <a class="gh-btn" href="/start"  style="color:{{@site.accent_color}}">Quiero ser {{tiers}}</a>
-            <p><small>Nos conocemos? <a href="/continue">CONTINUE</a></small></p>
+            <p>{{ t 'We know us?' }} <a href="/continue">CONTINUE</a></p>
         {{/if}}
     </div>
 </aside>
