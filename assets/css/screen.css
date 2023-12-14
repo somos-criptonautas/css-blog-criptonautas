@@ -2289,10 +2289,14 @@ fill: var(--color-three);
 /* --------------------------------------------------------------------------
 14.Author & Tag page
 -------------------------------------------------------------------------- */
-.archive-section {
-margin-top : 11vh;
-text-align: center;
+@media (min-width: 768px) {
+   .archive-section {
+   margin-top : 11vh;
+   }
+}
 
+.archive-section {
+text-align: center;
 }
 
 .archive-section.left {
@@ -4050,7 +4054,7 @@ box-shadow: none;
     –––––––––––––––––––––––––––––––––––––––––––––––––––– */
  @media (min-width:1481px) {
     .custom-archive .loop-wrap {
-       grid-template-columns: repeat(6, 1fr);
+       grid-template-columns: repeat(4, 1fr);
     }
  
     .custom-archive .loop-wrap.is-authors .item-excerpt {
@@ -4086,11 +4090,11 @@ box-shadow: none;
     }
  
     .custom-archive .loop-wrap {
-       grid-template-columns: repeat(2, 1fr);
+       grid-template-columns: repeat(1, 1fr);
     }
  
     .custom-archive .item-title {
-       font-size: 2rem;
+       font-size: 2.73rem;
     }
  
  }
