@@ -2803,6 +2803,15 @@ margin-bottom: 6.11rem;
 padding-bottom: 3rem;
 padding-top: 7rem;
 }
+@media and (max-width: 767px) {s
+.gh-topic-content {
+display: inherit;
+}
+.gh-card.post {
+padding-top: 4.33rem;
+padding-bottom: 4.33rem;
+}
+}
 .gh-topic-content {
    display: grid;
    row-gap: 3.33rem;
@@ -2936,9 +2945,12 @@ padding: 0;
 .gh-site {
 min-height: auto !important;
 }
-
+.gh-outer {
+padding-left: 1.33rem;
+padding-right: 1.33rem;
+}
 @media screen and (min-width: 1199px) {
-gh-subscribe-description {
+.gh-subscribe-description {
 width: 87%;
 margin: auto;
 }
