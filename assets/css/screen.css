@@ -369,7 +369,7 @@ margin-top: 16px;
 .gh-topic-link {
 display: inline-flex;
 align-items: center;
-font-weight: 600;
+font-weight: 700;
 letter-spacing: -0.011em;
 font-size: 3rem;
 text-transform: uppercase;
@@ -1328,7 +1328,10 @@ font-size: 1.7rem;
 /* Media queries */
 
 @media (min-width:767px) and (max-width: 991px) {
-.gh-cover-content {
+:root {
+   --h1-size: 3.53rem;
+}
+   .gh-cover-content {
 margin-top: 40px;
 
 }
@@ -3529,7 +3532,7 @@ color: white;
 font-weight: 500;
 }
 .gh-outer {
-padding: 53vh 1.33rem 11vh 1.33rem;
+padding: 0 1.33rem;
 }
 .gh-foot .gh-outer {
 opacity: 0.77;
