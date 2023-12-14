@@ -202,7 +202,7 @@ border-radius:0.77rem;
 object-fit: cover;
 }
 @media screen and (min-width: 768px) {
-:not(.featured).gh-topic-grid .gh-card-image img {
+.gh-topic-grid .gh-card-image img:not(.featured) {
 max-height: 41vh;
 }
 }
@@ -373,6 +373,7 @@ align-items: center;
 font-weight: 600;
 letter-spacing: -0.011em;
 font-size: 3rem;
+text-transform: uppercase;
 }
 
 .gh-topic-link svg {
