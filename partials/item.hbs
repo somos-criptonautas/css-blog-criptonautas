@@ -20,26 +20,12 @@
 	 loading="lazy"
 	 alt="">
 {{/if}}
-		<div class="item-authors global-authors">
-			<div>
-				{{#foreach authors to="5"}}
-				<div class="item-author global-item-author{{#if profile_image}} is-image global-image{{/if}}">
-					<a href="{{url}}" class="global-link" title="{{name}}"></a>
-					{{#if profile_image}}
-					{{>other_image other_image=profile_image alt=name}}
-					{{else}}
-					<span>{{name}}</span>
-					{{/if}}
-				</div>
-				{{/foreach}}
-			</div>
-		</div>
 	</div>
 	{{/if}}
 	<div class="item-content">
 		{{^if is_special}}
 		<div class="item-tags global-tags">
-			{{^if access}}{{>icons/padlock}}{{/if}}{{#if tags}}{{tags limit="1" separator=""}}<span>{{tags from="2" limit="2" separator=""}}</span>{{/if}}
+			{{^if access}}{{>icons/padlock}}{{/if}}{{#if tags}}#{{tags limit="1" separator=""}}<span>{{tags from="2" limit="2" separator=""}}</span>{{/if}}
 		</div>
 		{{/if}}
 		<h2 class="item-title"><a href="{{url}}">{{title}}</a></h2>
