@@ -393,7 +393,7 @@ justify-items: start;
 }
 
 .gh-article-tag {
-margin: 1.33rem s0;
+margin: 3.33rem 0 1.33rem;
 font-size: 2rem;
 font-weight: 700;
 text-transform: uppercase;
@@ -1247,7 +1247,6 @@ margin-right: 1rem;
       font-weight: 700;
       line-height: 1;
       display: inline-block;
-      margin: 0 5px 5px 0;
       padding: 7px 10px;
       transition: background-color .2s ease;
       background-color: var(--color-one);
@@ -2331,7 +2330,9 @@ fill: var(--color-three);
    margin-top : 11vh;
    }
 }
-
+.archive-section .global-title {
+text-transform: uppercase;
+}
 .archive-section {
 text-align: center;
 padding-bottom: 3.33rem;
