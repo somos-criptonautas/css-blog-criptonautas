@@ -20,13 +20,13 @@
 		<div class="item is-loop">
 			{{#if feature_image}}
 			<div class="item-image is-landscape global-image global-image-orientation global-radius">
-				<a href="{{url}}" class="global-link" aria-label="# {{name}}"></a>
-					{{>images/archive_image archive_image=feature_image}}
+				<a href="{{url}}" class="global-link" aria-label="#{{name}}">
+					{{>images/archive_image archive_image=feature_image}}</a>
 			</div>
 			{{/if}}
 			<div class="item-content">
 			<a href="{{url}}" class="global-link" aria-label="{{name}}">
-				<h2 class="item-title">{{name}}</h2></a>
+				<h2 class="item-title">#{{name}}</h2></a>
 				<small>{{plural count.posts empty=(t "no posts") singular=(t "1 post") plural=(t "% posts")}}</small>
 				{{#if description}}
 				<p class="item-excerpt">

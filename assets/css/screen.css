@@ -393,13 +393,14 @@ justify-items: start;
 }
 
 .gh-article-tag {
-margin: 1.33rem 0;
+margin: 1.33rem s0;
 font-size: 2rem;
 font-weight: 700;
 text-transform: uppercase;
 letter-spacing: 0.01em;
 color: inherit;
 display: inherit;
+text-align: center;
 }
 
 .gh-article-image {
@@ -2360,6 +2361,7 @@ padding: 0 var(--margin-wrap-left-right);
 }
 .archive-excerpt .global-title {
 text-transform: uppercase;
+display: inherit;
 }
 
 .archive-image img,
@@ -4099,7 +4101,7 @@ box-shadow: none;
     –––––––––––––––––––––––––––––––––––––––––––––––––––– */
  @media (min-width:1481px) {
     .custom-archive .loop-wrap {
-       grid-template-columns: repeat(4, 1fr);
+       grid-template-columns: repeat(3, 1fr);
     }
  
     .custom-archive .loop-wrap.is-authors .item-excerpt {
@@ -4160,7 +4162,9 @@ box-shadow: none;
        font-size: 1.6rem;
     }
    }
-
+   .custom-archive .item-title {
+      padding: 0;
+   }
 /* Youtube without bloatware */
 
 .youtube-player {
@@ -4272,11 +4276,11 @@ box-shadow: none;
          min-height: 13vw;
       }
       
-      .item.is-loop:hover:hover .ite-image,
+/*      .item.is-loop:hover:hover .ite-image,
       .item-image:hover {
          transform: translateY(-11px);
       }
-
+*/
 
 /* RWD — Loop
    –––––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -4341,11 +4345,11 @@ box-shadow: none;
       .item-title {
          font-size: 2.4rem;
       }
-   
+/*   
       .item-image:hover {
          transform: translateY(0);
       }
-   
+*/   
       .item.is-featured,
       .item.is-featured.is-small {
          width: 30%;
@@ -4398,10 +4402,6 @@ box-shadow: none;
    
       .special-wrap {
          grid-template-columns: repeat(3, 1fr);
-      }
-   
-      .item-content {
-         padding-right: 3vw;
       }
    
       .item.is-featured {
