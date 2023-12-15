@@ -38,7 +38,7 @@
 
                 </div>
     <div class="gh-full-content">
-        {{#if access}}
+    {{#if access}}
 <aside class="gh-sidebar" id="sidebar-toc">
                 {{#if reading_time}}
                 <h3>
@@ -49,11 +49,10 @@
             </div></aside>
             <section class="gh-content gh-canvas toc-content">
             {{content}}
-            {{/if}}
     {{else}}
             <section class="gh-content gh-canvas">
             {{content}}
-    {{/is}}
+    {{/if}}
     {{> "comments"}}
             </section>
         </article>
