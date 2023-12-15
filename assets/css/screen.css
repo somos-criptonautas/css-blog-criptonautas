@@ -3070,7 +3070,6 @@ max-width: 1500px;
 display: unset !important;
 }
 
-.gh-content,
 .gh-article-excerpt {
 font-size: 2rem;
 padding: 0 0.5rem;
@@ -4748,7 +4747,7 @@ box-shadow: none;
    margin: calc(2em * var(--content-spacing-multiplier, 1)) 0;
 }
 .gh-content :is(.kg-card, table) + :not(.kg-card):not(table):not([id]) {
-   margin-top: calc(2em * var(--content-spacing-multiplier, 1));
+   margin-top: calc(3em * var(--content-spacing-multiplier, 1));
 }
 
 .gh-canvas > * {
