@@ -25,7 +25,7 @@
 	<div class="item-content">
 		{{^if is_special}}
 		<div class="item-tags global-tags">
-			{{^if access}}{{>icons/padlock}}{{/if}}{{#if tags}}#{{tags limit="1" separator=""}}<span>{{tags from="2" limit="2" separator=""}}</span>{{/if}}
+			{{^if access}}{{>icons/padlock}}{{/if}}{{#if tags}}{{tags limit="1" separator=""}}<span>{{tags from="2" limit="2" separator=""}}</span>{{/if}}
 		</div>
 		{{/if}}
 		<h2 class="item-title"><a href="{{url}}">{{title}}</a></h2>
