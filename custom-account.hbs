@@ -89,14 +89,6 @@
 		</div>
 	</div>
 </div>
-<script type="module">
-  import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.0.49/dist/web.js'
-
-  Typebot.initBubble({
-    typebot: "membership",
-    apiHost: "https://bot.criptonautas.co",
-  });
-</script>
 
 {{#get "posts" limit="6" filter="visibility:[members,paid]+feature_image:-null" include="authors" as |special_posts|}}
 {{/get}}
