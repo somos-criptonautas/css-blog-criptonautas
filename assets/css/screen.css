@@ -1192,40 +1192,99 @@ opacity: 1;
 margin-right: 1rem;
 }
 
-.button-jittery .gh-subscribe-btn {
-	animation: jittery 4s infinite;
-	&:hover {
-		animation: heartbeat 0.2s infinite;
-	}
-}
-
-@keyframes jittery {
-	5%,
-	50% {
-		transform: scale(1);
-	}
-	10% {
-		transform: scale(0.9);
-	}
-	15% {
-		transform: scale(1.15);
-	}
-	20% {
-		transform: scale(1.15) rotate(-5deg);
-	}
-	25% {
-		transform: scale(1.15) rotate(5deg);
-	}
-	30% {
-		transform: scale(1.15) rotate(-3deg);
-	}
-	35% {
-		transform: scale(1.15) rotate(2deg);
-	}
-	40% {
-		transform: scale(1.15) rotate(0);
-	}
-}
+.button-parrot {
+   button {
+      background: transparent;
+      color: #fff;
+      border: 3px solid #fff;
+      border-radius: 50px;
+      padding: 0.8rem 2rem;
+      font: 24px "Margarine", sans-serif;
+      outline: none;
+      cursor: pointer;
+      position: relative;
+      transition: 0.2s ease-in-out;
+      letter-spacing: 2px;
+   }
+   
+   .name {
+      width: 100%;
+      text-align: center;
+      padding: 0 0 3rem;
+      font: 500 14px 'Rubik', sans-serif;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+   }
+   
+      .parrot {
+         position: absolute;
+         width: 60px;
+         text-align: center;
+         animation: blink 0.8s infinite;
+         color: transparent;
+         &:before {
+            content: "Click Me!";
+         }
+         &:nth-child(1) {
+            top: -30px;
+            left: -40px;
+            font: 12px/1 "Margarine", sans-serif;
+            transform: rotate(-20deg);
+            animation-duration: 0.5s;
+         }
+         &:nth-child(2) {
+            font: 12px/1 "Margarine", sans-serif;
+            right: -40px;
+            top: -20px;
+            transform: rotate(15deg);
+            animation-duration: 0.3s;
+         }
+         &:nth-child(3) {
+            font: 16px/1 "Margarine", sans-serif;
+            top: -60px;
+            left: 15px;
+            transform: rotate(10deg);
+            animation-duration: 1s;
+         }
+         &:nth-child(4) {
+            font: 18px/1 "Margarine", sans-serif;
+            top: -70px;
+            left: 95px;
+            transform: rotate(2deg);
+            animation-duration: 0.7s;
+         }
+         &:nth-child(5) {
+            font: 14px/1 "Margarine", sans-serif;
+            top: 80px;
+            left: 105px;
+            transform: rotate(-20deg);
+            animation-duration: 0.8s;
+         }
+         &:nth-child(6) {
+            font: 12px/1 "Margarine", sans-serif;
+            top: 80px;
+            left: 5px;
+            transform: rotate(10deg);
+            animation-duration: 1.2s;
+         }
+      }
+      button:hover .parrot:before {
+         content: "Do it!";
+         width: 70px;
+      }
+   }
+   
+   @keyframes blink {
+      25%,
+      75% {
+         color: transparent;
+      }
+      40%,
+      60% {
+         color: #fff;
+      }
+   }
 
 /* Tags & Members visibility label
    –––––––––––––––––––––––––––––––––––––––––––––––––––– */
