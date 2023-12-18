@@ -194,13 +194,13 @@ max-height: 21vh;
 }
 }
 @media screen and (min-width: 768px) {
-.gh-card:not(.featured.large).gh-topic-grid.gh-card-image img,
-.gh-card:not(.featured.large).gh-topic-grid.gh-card-image {
+   .gh-topic-grid .gh-card.featured.large .gh-card-link.gh-card-image img,
+   .gh-topic-grid .gh-card.featured.large .gh-card-link.gh-card-image {
 min-height: 43vh;
 max-height: 43vh;
 }
-.gh-card.featured.large.gh-topic-grid.gh-card-image img,
-.gh-card.featured.large.gh-topic-grid.gh-card-image {
+.gh-topic-grid .gh-card.featured.large .gh-card-link.gh-card-image img,
+.gh-topic-grid .gh-card.featured.large .gh-card-link.gh-card-image {
 max-height: 100% !important;
 }
 }
