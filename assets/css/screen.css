@@ -188,11 +188,14 @@ max-height: 21vh;
 }
 }
 @media screen and (min-width: 768px) {
-.gh-topic-grid .gh-card-image img {
+.gh-topic-grid.gh-card-image img {
 min-height: 23vh;
 }
-.gh-topic-grid .gh-card:not(.featured).gh-card-image img {
+.gh-topic-grid.gh-card.gh-card-image img {
 max-height: 41vh;
+}
+.gh-topic-grid.gh-card.featured.gh-card-image img {
+max-height: 100%;
 }
 }
 .gh-topic-grid .gh-card-image img {
