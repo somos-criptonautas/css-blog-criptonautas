@@ -4410,7 +4410,7 @@ box-shadow: none;
    
    }
    
-   @media (max-width:1024px) {
+   @media (max-width:1199px) {
       .loop-wrap {
          grid-template-columns: repeat(2, 1fr);
          max-width: 100% !important;
