@@ -178,14 +178,14 @@ z-index: -1;
 width: 100%;
 object-fit: cover;
 }
-.gh-topic-grid .gh-card-image img {
+.gh-card-image img {
    width: 100%;
    height: 100%;
    border-radius: var(--border-radius);
    object-fit: cover;
    }
 @media screen and (max-width: 767px) {
-.gh-topic-grid .gh-card-image img {
+.gh-card-image img {
 min-height: 13vh;
 max-height: 21vh;
 }
@@ -194,11 +194,11 @@ max-height: 21vh;
 }
 }
 @media screen and (min-width: 768px) {
-   :not(.featured.large).gh-topic-grid .gh-card-image img {
+:not(.featured.large).gh-card-image img {
 min-height: 43vh;
 max-height: 43vh;
 }
-.featured.large.gh-topic-grid .gh-card-image img {
+.featured.large.gh-card-image img {
 max-height: 100% !important;
 }
 }
@@ -2599,7 +2599,6 @@ margin-bottom: 5.33 rem;
    .global-image img {
       width: 100%;
       height: 100%;
-      -o-object-fit: cover;
       object-fit: cover;
    }
    
