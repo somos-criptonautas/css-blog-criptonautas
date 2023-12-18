@@ -136,7 +136,7 @@ opacity: 1 !important;
 }
 
 .gh-topic-grid .gh-card.large .gh-card-link {
-gap: 3rem;
+gap: 3rem;  
 }
 
 .gh-topic-grid .gh-card.featured.large .gh-card-link {
@@ -144,7 +144,7 @@ position: relative;
 align-items: flex-end;
 min-height: 400px;
 padding: 48px 40px;
-background: linear-gradient(0deg,rgba(0,0,0,.8),transparent 93%);
+background: linear-gradient(0deg,rgba(0,0,0,.8),transparent 91%);
 display: inherit !important;
 }
 
@@ -189,12 +189,12 @@ max-height: 21vh;
 }
 @media screen and (min-width: 768px) {
 .gh-topic-grid.gh-card-image img {
-min-height: 23vh;
+min-height: 43vh;
 }
-.gh-topic-grid.gh-card.gh-card-image img {
-max-height: 41vh;
+.gh-topic-grid.gh-card:not(.featured).gh-card-image img {
+max-height: 43vh;
 }
-.gh-topic-grid.gh-card.featured.gh-card-image img {
+.gh-topic-grid .gh-card.featured.large .gh-card-link img {
 max-height: 100%;
 }
 }
