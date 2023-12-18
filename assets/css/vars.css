@@ -112,7 +112,7 @@ text-align: left;
    --margin-wrap-left-right: 5vw;
 
    /* Border-radius */
-   --border-radius: 26px;
+   --border-radius: 0.5rem;
 
    /* Grid gap */
    --grid-gap: 1.33rem;
