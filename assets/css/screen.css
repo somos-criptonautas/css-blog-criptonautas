@@ -2857,8 +2857,12 @@ padding-top: 4.33rem;
 padding-bottom: 4.33rem;
 }
 }
+@media screen and (min-width: 768px) {
 .gh-topic-content {
    display: grid;
+}
+}
+.gh-topic-content {
    row-gap: 3.33rem;
    column-gap: 2.22rem;
 }
