@@ -1,21 +1,16 @@
 {{#is "post"}}
 {{#if access}}
-<div class ="comunidad-comments">
-        <div class="gh-comments">
-                <div id='discourse-comments'></div>
-                <script type="text/javascript">
-                    window.DiscourseEmbed = {
-                        discourseUrl: 'https://comunidad.criptonautas.co/',
-                        discourseEmbedUrl: `https://criptonautas.co{{url}}`,
-                        discourseReferrerPolicy: 'no-referrer-when-downgrade'
-                    };
-  (function() {
-    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
-    d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
-  })();
+<script type="text/javascript" src="https://matrix.criptonautas.co/cactus-comments/cactus.js"></script>
+<link rel="stylesheet" href="https://matrix.criptonautas.co/cactus-comments/style.css" type="text/css">
+<div id="comment-section"></div>
+<script>
+initComments({
+  node: document.getElementById("comment-section"),
+  defaultHomeserverUrl: "https://matrix.criptonautas.co:8448",
+  serverName: "criptonautas.co",
+  siteName: "Criptonautas",
+  commentSectionId: "1"
+})
 </script>
-        </div>
-        </div>
 {{/if}}
 {{/is}}
