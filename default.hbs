@@ -30,7 +30,7 @@
 
 </head>
 
-<body class="{{body_class}}{{{block "body_class"}}} {{#if @site.description}}is-head-b--a_n{{else}}is-head-b--n--a{{/if}}{{#is "tag"}}{{/is}}{{#match @custom.header_style "Accent color"}} is-head-brand{{/match}}">
+<body class="{{body_class}}{{{block "body_class"}}} {{#if @site.description}}is-head-b--a_n{{else}}is-head-b--n--a{{/if}}{{#is "tag"}}{{/is}}">
     <div class="gh-site">
         <header id="gh-head" class="gh-head gh-outer">
             <div class="gh-head-inner gh-inner">
@@ -53,7 +53,7 @@
                 </nav>
                 <div class="gh-head-actions">
                     <div class ="actions-container">
-                                            {{#unless @member}}
+                    {{#unless @member}}
                         <a aria-label="signup-button" title="start here" class="gh-head-btn gh-btn shadow" href="{{@site.url}}/start">{{ t "Subscribe" }}</a>
                     {{else}}
                         <a aria-label="signin-button" title="your profile"  class="gh-head-btn gh-btn shadow" href="{{@site.url}}/nauta">{{ t "Account" }}</a>
@@ -76,14 +76,15 @@
             </div>
         {{{body}}}
 {{^is "page"}}
-        <footer class="gh-foot global-padding">
-            <div class="gh-foot-inner gh-inner">                     
-
   {{#get 'posts'}}
+
     {{#foreach posts visibility='all'}}
         {{/foreach}}
   {{/get}}
+{{/is}}
         {{#unless @member}}
+        <footer class="gh-foot global-padding">
+            <div class="gh-foot-inner gh-inner">       
     <section>
                         <h4 class="gh-subscribe-title">{{ t "Subscribe to" }}</h3>
                                 <div class="gh-subscribe-description">{{ t "Newsletter description"}}</div>
@@ -94,7 +95,6 @@
             {{#unless}}
             </div>
         </footer>
-{{/is}}
     <div class="footer-criptonauta global-padding">
                         <nav class="gh-foot-menu">
                     {{navigation type="secondary"}}
