@@ -53,7 +53,7 @@
                 </nav>
                 <div class="gh-head-actions">
                     <div class ="actions-container">
-                    {{#unless @member}}
+                                            {{#unless @member}}
                         <a aria-label="signup-button" title="start here" class="gh-head-btn gh-btn shadow" href="{{@site.url}}/start">{{ t "Subscribe" }}</a>
                     {{else}}
                         <a aria-label="signin-button" title="your profile"  class="gh-head-btn gh-btn shadow" href="{{@site.url}}/nauta">{{ t "Account" }}</a>
@@ -76,15 +76,15 @@
             </div>
         {{{body}}}
 {{^is "page"}}
-  {{#get 'posts'}}
+        <footer class="gh-foot global-padding">
+            <div class="gh-foot-inner gh-inner">                     
 
+  {{#get 'posts'}}
     {{#foreach posts visibility='all'}}
         {{/foreach}}
   {{/get}}
-{{/is}}
-        {{^if @member}}
-        <footer class="gh-foot global-padding">
-            <div class="gh-foot-inner gh-inner">       
+          {{#if @member}}
+          {{else}}
     <section>
                         <h4 class="gh-subscribe-title">{{ t "Subscribe to" }}</h3>
                                 <div class="gh-subscribe-description">{{ t "Newsletter description"}}</div>
@@ -92,9 +92,10 @@
                             <a class="gh-subscribe-btn gh-btn" href="{{@site.url}}/start">{{ t "Subscribe now" }}</a>
 
                     </section>
+            {{#if}}
             </div>
         </footer>
-        {{#if}}
+{{/is}}
     <div class="footer-criptonauta global-padding">
                         <nav class="gh-foot-menu">
                     {{navigation type="secondary"}}
