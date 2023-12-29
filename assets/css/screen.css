@@ -2471,6 +2471,7 @@ max-width: 600px;
 padding: 0 var(--margin-wrap-left-right);
 text-align: left;
 display: flex;
+margin: auto;
 }
 
 .account-details-wrap,
