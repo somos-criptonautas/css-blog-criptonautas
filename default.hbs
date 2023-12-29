@@ -82,7 +82,7 @@
         {{/foreach}}
   {{/get}}
 {{/is}}
-        {{#unless @member}}
+        {{^if @member}}
         <footer class="gh-foot global-padding">
             <div class="gh-foot-inner gh-inner">       
     <section>
@@ -94,7 +94,7 @@
                     </section>
             </div>
         </footer>
-        {{#unless}}
+        {{#if}}
     <div class="footer-criptonauta global-padding">
                         <nav class="gh-foot-menu">
                     {{navigation type="secondary"}}
