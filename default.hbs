@@ -83,7 +83,7 @@
     {{#foreach posts visibility='all'}}
         {{/foreach}}
   {{/get}}
-        {{#if @member}}
+        {{#has visibility="members"}}
         {{else}}
     <section>
                         <h4 class="gh-subscribe-title">{{ t "Subscribe to" }}</h3>
@@ -92,7 +92,7 @@
                             <a class="gh-subscribe-btn gh-btn" href="{{@site.url}}/start">{{ t "Subscribe now" }}</a>
 
                     </section>
-            {{#if}}
+            {{#has}}
             </div>
         </footer>
 {{/is}}
