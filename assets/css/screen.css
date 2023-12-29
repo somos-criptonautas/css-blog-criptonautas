@@ -194,7 +194,7 @@ max-height: 33vh;
 }
 }
 @media screen and (min-width: 768px) {
-.gh-card-image:not(large) img
+.gh-card-image:not(large) img {
 min-height: 43vh;
 max-height: 43vh;
 }
