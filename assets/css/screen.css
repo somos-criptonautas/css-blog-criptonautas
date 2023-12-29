@@ -198,7 +198,7 @@ max-height: 33vh;
 min-height: 43vh;
 max-height: 43vh;
 }
-.gh-topic-grid article.large .gh-card-image img {
+.gh-topic-grid article.large.gh-card-link.gh-card-image img {
 max-height: 100% !important;
 }
 }
