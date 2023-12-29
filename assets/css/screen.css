@@ -179,8 +179,6 @@ width: 100%;
 object-fit: cover;
 }
 .gh-topic-grid .gh-card-image img {
-   width: 100%;
-   height: 100%;
    border-radius: var(--border-radius);
    object-fit: cover;
    }
