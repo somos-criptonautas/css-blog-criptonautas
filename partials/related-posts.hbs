@@ -1,9 +1,26 @@
 {{#is "post"}}
-    {{#get "posts" include="authors" filter="tags:[{{post.tags}}]+id:-{{post.id}}" limit="all" as |next|}}
+    {{#get "posts" include="authors" filter="tags:[{{post.tags}}]+id:-{{post.id}},featured:true" limit="6" as |next|}}
         {{#if next}}
             <div class="gh-read-next gh-canvas">
                 <section class="gh-pagehead">
-                    <h2 class="gh-pagehead-title">{{ t "Read next" }}</h2>
+                    <h2 class="gh-pagehead-title">{{#if primary_tag}}{{ t "More on" }} {{primary_tag.name}}{{else}}{{ t "Read more" }}{{/if}}</h2>
+                </section>
+
+                <div class="gh-topic gh-topic-grid">
+                    <div class="gh-topic-content">
+                        {{#foreach next}}
+                            {{> "loop-grid" has_large_post=false}}
+                        {{/foreach}}
+                    </div>
+                </div>
+            </div>
+        {{/if}}
+    {{/get}}
+    {{#get "posts" include="authors" filter="+tags:-[{{post.tags}}]+id:-{{post.id}},featured:true" limit="6" as |next|}}
+        {{#if next}}
+            <div class="gh-read-next gh-canvas">
+                <section class="gh-pagehead">
+                    <h2 class="gh-pagehead-title">{{ t "Want more" }}</h2>
                 </section>
 
                 <div class="gh-topic gh-topic-grid">
