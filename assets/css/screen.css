@@ -181,11 +181,11 @@ object-fit: cover;
 .gh-topic-grid .gh-card-image img {
    border-radius: var(--border-radius);
    object-fit: cover;
-   width: 100%;
+      width: 100%;
    height: 100%;
    }
 @media screen and (max-width: 767px) {
-.gh-topic-grid.gh-card-image img {
+.gh-topic-grid .gh-card-image img {
 min-height: 17vh;
 max-height: 33vh;
 }
@@ -194,7 +194,7 @@ max-height: 33vh;
 }
 }
 @media screen and (min-width: 768px) {
-.gh-topic-grid.gh-card-image img {
+.gh-topic-grid .gh-card-image img {
 min-height: 43vh;
 max-height: 43vh;
 }
