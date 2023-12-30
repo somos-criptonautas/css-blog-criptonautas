@@ -2,7 +2,7 @@
 	<div class="{{#is "tag,author"}}global-subtitle{{else if is_error}}global-subtitle{{else}}loop-subtitle{{/is}}">
 		{{^if is_error}}
 		{{^is "tag,author"}}
-		{{#get "authors" limit="6" include="count.posts" order="count.posts desc"}}
+		{{#get "authors" limit="all" include="count.posts" order="count.posts desc"}}
 		<div class="global-authors option{{#foreach authors}}{{#if count.posts}}{{#has number="1"}}-1{{else has number="2"}}-2{{else has number="6"}}-3{{/has}}{{/if}}{{/foreach}}">
 			<div>
 				{{#foreach authors to="5"}}

@@ -198,8 +198,8 @@ max-height: 33vh;
 min-height: 43vh;
 max-height: 43vh;
 }
-.gh-topic-content.featured.large.gh-card-image img {
-max-width: 100%  !important;
+.gh-topic-grid .gh-card.featured.large .gh-card-image img {
+max-width: 100% !important;
 }
 }
 .gh-content figcaption a {
@@ -1451,7 +1451,6 @@ flex-direction: column;
 .gh-topic-grid .gh-card.featured.large .gh-card-link {
 min-height: 480px;
 }
-
 .gh-topic-grid .gh-card.large .gh-card-link > * {
 width: 100%;
 }
