@@ -691,9 +691,10 @@ font-family: var(--font-serif);
    .membership-switch button {
       position: relative;
    }
-   
+   .membership-section {
+      disply: none;
+   }
    .membership-switch {
-      display: none;
       box-sizing: border-box;
       width: 100%;
       max-width: 350px;
@@ -791,7 +792,7 @@ font-family: var(--font-serif);
    
    /* Price */
    .membership-card-price {
-      font-size: 7.8rem;
+      font-size: 5.5rem;
       line-height: 1;
       margin: 0;
    }
@@ -2478,6 +2479,7 @@ box-sizing: border-box;
 .account-details-wrap {
 margin-bottom: 10px;
 background-color: var(--color-nine);
+width: 100%;
 }
 
 .account-details-content {
@@ -2540,6 +2542,7 @@ font-size: 1.2rem;
 position: relative;
 display: flex;
 flex-wrap: wrap;
+float: left;
 }
 
 .account-button {
