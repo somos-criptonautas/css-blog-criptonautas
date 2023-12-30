@@ -17,7 +17,7 @@
     if (document.documentElement.classList.contains('no-infinite-scroll')) return;
 
     // next link element
-    var nextElement = document.querySelector('link[rel=next]');
+    var nextElement = document.querySelector('.gh-read-next');
     if (!nextElement) {
         return;
     }
