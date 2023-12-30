@@ -57,7 +57,8 @@ window.onscroll = function() {
       addClass(navbar2, 'headroom');
 };
 </script>
-        {{is "post"}}
+        {{is "page"}}
+        {{else}}
     <script>
     document.addEventListener("DOMContentLoaded", () => {
         var toc = document.getElementsByClassName('toc')[0];
