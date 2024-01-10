@@ -59,9 +59,9 @@ window.onscroll = function() {
 </script>
         {{#is "post"}}
     <script>
-      console.log(toc,tocbot);
     document.addEventListener("DOMContentLoaded", () => {
-        var toc = document.getElementsByClassName('toc')[0];
+        var toc = document.getElementsByClassName('toc');
+      console.log(toc,tocbot);
         if (toc && toc.childNodes.length > 2) {
             tocbot.init({
                 tocSelector: '.toc',
@@ -76,6 +76,7 @@ window.onscroll = function() {
             document.getElementById('sidebar-toc').style.display = 'flow-root';
         }
     });
+
 </script>
 
         {{/is}}
