@@ -60,7 +60,7 @@ window.onscroll = function() {
         {{#is "post"}}
     <script>
     document.addEventListener("DOMContentLoaded", () => {
-        var toc = document.getElementsByClassName('toc');
+        var toc = document.getElementsByClassName('toc')[0];
       console.log(toc,tocbot);
         if (toc && toc.childNodes.length > 2) {
             tocbot.init({
