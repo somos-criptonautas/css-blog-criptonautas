@@ -3155,7 +3155,7 @@ flex-basis: -moz-available;
 .toc-list {
 padding: 0;
 }
-.toc-list-item.is-active-li {
+.toc-list-item {
     list-style-type: none !important;
 }
 }
