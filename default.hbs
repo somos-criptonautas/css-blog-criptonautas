@@ -56,7 +56,7 @@
                                             {{#unless @member}}
                         <a aria-label="signup-button" title="start here" class="gh-head-btn gh-btn shadow" href="{{@site.url}}/start">{{ t "Subscribe" }}</a>
                     {{else}}
-                        <a aria-label="signin-button" title="your profile"  class="gh-head-btn gh-btn shadow" href="{{@site.url}}/nauta">{{ t "Account" }}</a>
+                        <a aria-label="signin-button" title="your profile"  class="gh-head-btn gh-btn shadow d-none" href="{{@site.url}}/nauta">{{ t "Account" }}</a>
                     {{/unless}}
                     <div class="nav-icons">
                     <button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button>
@@ -84,7 +84,7 @@
         {{/foreach}}
   {{/get}}
    {{#unless @member}}
-   <section>
+   <section class="d-none">
                         <h4 class="gh-subscribe-title">{{ t "Subscribe to" }}</h3>
                                 <div class="gh-subscribe-description">{{ t "Newsletter description"}}</div>
 
@@ -101,14 +101,14 @@
                 </nav>
             <div class="it-foot-social">
                 {{#if @site.twitter}}
-                <a href="{{twitter_url @site.twitter}}" title="{{t "Twitter"}}" target="_blank" rel="noopener" aria-label="{{t "Twitter"}}">{{> "icons/twitter"}}</a>
+                <a href="https://xcancel.com/satonotdead" title="{{t "Twitter"}}" target="_blank" rel="noopener" aria-label="{{t "Twitter"}}">{{> "icons/twitter"}}</a>
                 {{/if}}
                 <a href="https://github.com/somos-criptonautas/" class="github" title="{{t "Github"}}" target="_blank" rel="noopener" aria-label="{{t "Github"}}">{{> "icons/github"}}</a>
                 <a href="{{@site.url}}/rss/" class="rss" title="{{t "RSS"}}" target="_blank" rel="noopener" aria-label="{{t "RSS"}}">{{> "icons/rss"}}</a>
             </div>
             <span class="no-estamos">(no estamos en Discord)</span>
                 <div class="gh-copyright">
-                <p>Criptonautas&nbsp;{{ t "is licensed under" }}<br>{{ t "with 🔥" }} <a href="https://satoshinotdead.co" title="satoshinotdead's lab" target="_blank" rel="noopener">satoshinotdead</a></p>
+                <p>Criptonautas&nbsp;{{ t "is licensed under" }}<br>{{ t "with 🧘" }} <a href="https://satoshinotdead.co" title="satoshinotdead's lab" target="_blank" rel="noopener">satoshinotdead</a></p>
                 </div>
     </div>
 </div>

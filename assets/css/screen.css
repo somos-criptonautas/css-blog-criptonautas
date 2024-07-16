@@ -3153,7 +3153,7 @@ padding-bottom: 2rem;
 flex-basis: -moz-available;
 }
 .toc-list {
-padding: 0;
+padding: 0  !importantF;
 }
 .toc-list-item {
     list-style-type: none !important;
@@ -3198,7 +3198,9 @@ font-size: 1.11rem;
 padding-left: 1rem;
 }
 
-
+.d-none {
+display: none;
+}
 .navbar {
 -webkit-transition: top 0.75s; 
 -o-transition: top 0.75s; 
