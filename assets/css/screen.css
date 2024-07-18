@@ -3115,10 +3115,14 @@ padding-bottom: 6rem;
 .gh-inner {
 max-width: 1500px;
 }
+/*
 .gh-head-actions .gh-search {
 display: unset !important;
 }
-
+*/
+.gh-head-actions {
+   display: unset !important;
+   }
 .gh-article-excerpt {
 font-size: 2rem;
 padding: 0 0.5rem;
@@ -3577,10 +3581,12 @@ height: 100vh;
 }
 :not(html[data-theme="light"]).is-head-transparent.is-head-open .gh-head .nav a,
 :not(html[data-theme="light"]).is-head-transparent.is-head-open .gh-head .nav > li a,
+/*
 :not(html[data-theme="light"]).is-head-transparent.is-head-open .gh-search {
+
 color: var(--color-base) !important;
 }
-
+*/
 .gh-head .nav {
 font-size: 2.11rem;
 }
