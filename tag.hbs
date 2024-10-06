@@ -3,8 +3,8 @@
 <div class="archive-section{{#if feature_image}} is-image{{/if}}">
 <span class="center">	{{#if feature_image}}
 	<div class="archive-image global-image">
-		<a href="{{url}}" class="global-link" aria-label="#{{name}}">
-		{{>images/other_image other_image=feature_image alt=name}}</a>
+		<a href="{{url}}" class="global-link" aria-label="#{{name}}"></a>
+		{{>images/other_image other_image=feature_image alt=name}}
 	</div>
 	{{/if}}
 	<h1 class="archive-title global-title is-tag gh-topic-link"># {{ name }}<span>{{../pagination.total}}</span></h1>

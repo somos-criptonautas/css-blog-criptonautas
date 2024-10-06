@@ -16,8 +16,9 @@ opacity: 1;
 .m-auto {
 margin: auto;
 }
-figcaption {
-    font-size: 1.3rem;
+figcaption,
+figcaption p {
+    font-size: 1.32rem;
 }
 .gh-content h2 {
    font-size: 1.73em;
@@ -595,6 +596,7 @@ color: var(--color-link);
 .gh-content .kg-callout-card .kg-callout-text,
 .gh-content > blockquote {
 font-family: var(--font-serif);
+font-style: italic;
 }
 .gh-content > ul {
    font-family: var(--font-serif) !important;
@@ -2397,6 +2399,7 @@ margin: 3rem auto;
 
 .author-template .archive-title {
    cursor: none;
+   padding-top: 1rem;
 }
 .archive-title {
 box-sizing: border-box;
@@ -3158,7 +3161,7 @@ padding-bottom: 2rem;
 flex-basis: -moz-available;
 }
 .toc-list {
-padding: 0  !importantF;
+padding-left: 1.25rem;
 }
 .toc-list-item {
     list-style-type: none !important;
