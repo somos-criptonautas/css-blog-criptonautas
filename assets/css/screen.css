@@ -591,14 +591,6 @@ font-size: 1.9rem;
 color: var(--color-link);
 }
 
-.kg-audio-seek-slider {
-   max-width: 312px;
-}
-
-.kg-audio-card {
-padding: 0.6rem;
-}
-
 .has-serif-body .gh-cover-description,
 .gh-content > p,
 .gh-content .kg-callout-card .kg-callout-text,
