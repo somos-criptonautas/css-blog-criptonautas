@@ -20,21 +20,6 @@
         	}
         </script>
 
-        <script>
-            const typebotInitScript = document.createElement("script");
-typebotInitScript.type = "module";
-typebotInitScript.innerHTML = `import Typebot from 'https://cdn.jsdelivr.net/gh/somos-criptonautas/js/typebot-web.js'
-
-Typebot.initBubble({
-  typebot: "hello-anon",
-  apiHost: "https://bot.criptonautas.co",
-  theme: { button: { backgroundColor: "#0042DA", size: "large" } },
-});
-`;
-document.body.append(typebotInitScript);
-
-
-        </script>
         {{#if @member}}
         {{else}}
         {{#is "home"}}
