@@ -786,23 +786,23 @@ iframe {
 }
 .gh-content > * + * {
   margin-bottom: 0;
-  margin-top: calc(1.6em * var(--content-spacing-multiplier, 1));
+  margin-top: calc(1.3rem * var(--content-spacing-multiplier, 1));
 }
 .gh-content > [id] {
   margin: 0;
 }
 .gh-content > .kg-card + [id] {
-  margin-top: calc(2em * var(--content-spacing-multiplier, 1)) !important;
+  margin-top: calc(2rem * var(--content-spacing-multiplier, 1)) !important;
 }
 .has-serif-title .gh-content > [id] {
   font-family: var(--font-serif);
   letter-spacing: -0.01em;
 }
 .gh-content > [id]:not(:first-child) {
-  margin-top: calc(1.6em * var(--content-spacing-multiplier, 1));
+  margin-top: calc(1.3rem * var(--content-spacing-multiplier, 1));
 }
 .gh-content > [id] + * {
-  margin-top: calc(0.8em * var(--content-spacing-multiplier, 1));
+  margin-top: calc(0.8rem * var(--content-spacing-multiplier, 1));
 }
 .gh-content > blockquote,
 .gh-content > hr {
@@ -812,7 +812,7 @@ iframe {
 .gh-content > blockquote + *,
 .gh-content > hr,
 .gh-content > hr + * {
-  margin-top: calc(2.4em * var(--content-spacing-multiplier, 1));
+  margin-top: calc(2.4rem * var(--content-spacing-multiplier, 1));
 }
 .gh-content h2 {
   font-size: 1.6em;
@@ -2666,7 +2666,7 @@ a.gh-card-link:hover {
   font-family: var(--font-serif);
   font-size: 2rem !important;
   line-height: 1.63;
-  margin-bottom: 1.7rem;
+  margin-bottom: 1.3rem;
 }
 .gh-topic-grid .gh-card-excerpt {
   margin-top: 12px;
@@ -6289,9 +6289,9 @@ html.no-infinite-scroll .pagination {
   );
   --full: minmax(var(--gap), 1fr);
   display: grid;
-  grid-template-columns: [full-start] var(--full) [wide-start] var(--wide) [main-start] var(
-      --main
-    ) [main-end] var(--wide) [wide-end] var(--full) [full-end];
+  grid-template-columns:
+    [full-start] var(--full) [wide-start] var(--wide) [main-start] var(--main)
+    [main-end] var(--wide) [wide-end] var(--full) [full-end];
 }
 .gh-content table:not(.gist table) {
   -webkit-overflow-scrolling: touch;
