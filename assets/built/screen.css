@@ -785,7 +785,6 @@ iframe {
   word-break: break-word;
 }
 .gh-content > * + * {
-  margin-bottom: 0;
   margin-top: calc(1.3rem * var(--content-spacing-multiplier, 1));
 }
 .gh-content > [id] {
