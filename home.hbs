@@ -36,7 +36,7 @@
             {{/get}}
         {{else}}
             {{#match posts.length ">" 1}}
-                {{#get "tags" include="count.posts" order="count.posts desc" limit="3"}}
+                {{#get "tags" filter="tag:{{primary_tag.slug}}" include="count.posts" order="count.posts desc" limit="3"}}
                     {{#foreach tags}}
                         {{> "topic-grid"}}
                     {{/foreach}}
@@ -56,7 +56,7 @@
             {{/get}}
         {{else}}
             {{#match posts.length ">" 1}}
-                {{#get "tags" include="count.posts" order="count.posts desc"}}
+                {{#get "tags" filter="tag:{{primary_tag.slug}}" include="count.posts" order="count.posts desc"}}
                     {{#if tags.[3]}}
                         <div class="gh-topic-list">
                             {{#foreach tags from="4" limit="3"}}
