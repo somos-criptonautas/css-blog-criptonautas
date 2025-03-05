@@ -263,7 +263,6 @@ a.gh-card-link:hover {
 }
 
 .gh-topic-grid .gh-card-excerpt,
-.gh-content p,
 .gh-author-bio .gh-pagehead-description {
   font-family: var(--font-serif);
   font-size: 2rem !important;
@@ -598,7 +597,6 @@ gh-author-name-list {
 .gh-content .kg-callout-card .kg-callout-text,
 .gh-content > blockquote {
   font-family: var(--font-serif);
-  font-style: italic;
 }
 .gh-content > ul {
   font-family: var(--font-serif) !important;
