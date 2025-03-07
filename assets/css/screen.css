@@ -3620,9 +3620,7 @@ ul.nav li:hover,
 .nav-current {
   box-shadow: 0 -3px 0 0 var(--color-base) inset;
 }
-.is-head-transparent:not(.is-head-open) ul.nav li:hover {
-  box-shadow: 0 -3px 0 0 var(--color-base) inset;
-}
+
 h1,
 h2,
 h3,
