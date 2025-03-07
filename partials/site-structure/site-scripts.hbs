@@ -1,108 +1,108 @@
-<script src="{{asset "built/main.min.js"}}" defer></script>
+<script src="{{asset " built/main.min.js"}}" defer></script>
 <script>
-    // Dark/Light Mode
-    
-    const html = document.querySelector('html'),
+  // Dark/Light Mode
+
+  const html = document.querySelector('html'),
     darkLight = document.querySelector('.it-dark-light')
-    darkLight.addEventListener('click', function(){
-       if(html.getAttribute('data-theme') === 'dark'){
-           html.setAttribute('data-theme', 'light')
-           localStorage.setItem('selected-theme', 'light');
-       }else{
-           html.setAttribute('data-theme', 'dark')
-           localStorage.setItem('selected-theme', 'dark');
-       }
-       console.log(html.hasAttribute('data-theme'))
-    });
+  darkLight.addEventListener('click', function () {
+    if (html.getAttribute('data-theme') === 'dark') {
+      html.setAttribute('data-theme', 'light')
+      localStorage.setItem('selected-theme', 'light');
+    } else {
+      html.setAttribute('data-theme', 'dark')
+      localStorage.setItem('selected-theme', 'dark');
+    }
+    console.log(html.hasAttribute('data-theme'))
+  });
 
   /**
  * Boilerplate Functions
  */
-function posf (f, a) { for (var i=0; i < a.length; i++) { if (f(a[i])) return i; } return -1; }
-function apos (x, a) { return (typeof x == 'function') ? posf(x,a) : Array.prototype.indexOf.call(a,x) }
-function arem (a, x) { var i = apos(x, a); if (i >= 0) { a.splice(i, 1); } return a; }
-function afind (x, a) { var i = apos(x, a); return (i >= 0) ? a[i] : null; }
-function addClass (el, cl) { if (el) { var a = el.className.split(' '); if (!afind(cl, a)) { a.unshift(cl); el.className = a.join(' ')}} }
-function remClass (el, cl) { if (el) { var a = el.className.split(' '); arem(a, cl); el.className = a.join(' ') } }
+  function posf(f, a) { for (var i = 0; i < a.length; i++) { if (f(a[i])) return i; } return -1; }
+  function apos(x, a) { return (typeof x == 'function') ? posf(x, a) : Array.prototype.indexOf.call(a, x) }
+  function arem(a, x) { var i = apos(x, a); if (i >= 0) { a.splice(i, 1); } return a; }
+  function afind(x, a) { var i = apos(x, a); return (i >= 0) ? a[i] : null; }
+  function addClass(el, cl) { if (el) { var a = el.className.split(' '); if (!afind(cl, a)) { a.unshift(cl); el.className = a.join(' ') } } }
+  function remClass(el, cl) { if (el) { var a = el.className.split(' '); arem(a, cl); el.className = a.join(' ') } }
 
 
-/**
- * Setup Variables
- */
-var previousPosition = window.pageYOffset;
-var navbar = document.getElementById("gh-burger");
-var navbarHeight = navbar.offsetHeight;
+  /**
+   * Setup Variables
+   */
+  var previousPosition = window.pageYOffset;
+  var navbar = document.getElementById("gh-burger");
+  var navbarHeight = navbar.offsetHeight;
 
-if (previousPosition > navbarHeight) {
+  if (previousPosition > navbarHeight) {
     addClass(navbar, 'headroom');
-}
+  }
 
-var navbar2 = document.getElementById("gh-head");
-var navbar2Height = navbar2.offsetHeight;
+  var navbar2 = document.getElementById("gh-head");
+  var navbar2Height = navbar2.offsetHeight;
 
-if (previousPosition > navbar2Height) {
+  if (previousPosition > navbar2Height) {
     addClass(navbar2, 'headroom');
-}
+  }
 
 
-/**
- * Headroom Action
- */
-window.onscroll = function() {
-  
+  /**
+   * Headroom Action
+   */
+  window.onscroll = function () {
+
     var currentPosition = window.pageYOffset;
 
-      addClass(navbar, 'headroom');
-      addClass(navbar2, 'headroom');
-};
+    addClass(navbar, 'headroom');
+    addClass(navbar2, 'headroom');
+  };
 </script>
-        {{#is "post"}}
-    <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        var toc = document.getElementsByClassName('toc')[0];
-        if (toc.childNodes.length > 0) {
-            tocbot.init({
-                tocSelector: '.toc',
-                contentSelector: '.gh-content',
-                headingSelector: 'h1,h2',
-                hasInnerContainers: true,
-                scrollSmooth: true,
-                scrollSmoothDuration: 420,
-                headingsOffset: 40,
-                scrollSmoothOffset: -40
-            });
-            document.getElementById('sidebar-toc').style.display = 'flow-root';
-        }
-        console.log(toc,tocbot);
-    });
+{{#is "post"}}
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    var toc = document.getElementsByClassName('toc')[0];
+    if (toc.childNodes.length > 0) {
+      tocbot.init({
+        tocSelector: '.toc',
+        contentSelector: '.gh-content',
+        headingSelector: 'h1,h2',
+        hasInnerContainers: true,
+        scrollSmooth: true,
+        scrollSmoothDuration: 420,
+        headingsOffset: 40,
+        scrollSmoothOffset: -40
+      });
+      document.getElementById('sidebar-toc').style.display = 'flow-root';
+    }
+    console.log(toc, tocbot);
+  });
 </script>
 
-        {{/is}}
+{{/is}}
 
-<script>    
-let darkModeFlag = localStorage.getItem("selected-theme");
+<script>
+  let darkModeFlag = localStorage.getItem("selected-theme");
 
-const handleMessageListener = (event) => {
+  const handleMessageListener = (event) => {
     var origin = event.origin;
     if (origin === "https://comunidad.criptonautas.co") {
-        setIframeStyle();
+      setIframeStyle();
     }
-};
-window.addEventListener('message', handleMessageListener);
+  };
+  window.addEventListener('message', handleMessageListener);
 
-const setIframeStyle = () => {
+  const setIframeStyle = () => {
     const iframe = document.getElementById("discourse-embed-frame");
     if (iframe && iframe.contentWindow) {
-        iframe.contentWindow.postMessage(
-            darkModeFlag ? "dark" : "light",
-            "https://comunidad.criptonautas.co"
-        );
+      iframe.contentWindow.postMessage(
+        darkModeFlag ? "dark" : "light",
+        "https://comunidad.criptonautas.co"
+      );
     }
-};
+  };
   window.addEventListener("load", () => {
     flyingPages({
       delay: 0,
-      ignoreKeywords: ["\/ghost","\/ghost\/#","\/p\/","\/start\/","\/continue\/","\/profile\/","exit","\/public\/members.js","?action=continue","?action=start","#",".png",".jpeg",".jpg",".gif",".svg",".webp"],
+      ignoreKeywords: ["\/ghost", "\/ghost\/#", "\/p\/", "\/start\/", "\/continue\/", "\/profile\/", "exit", "\/public\/members.js", "?action=continue", "?action=start", "#", ".png", ".jpeg", ".jpg", ".gif", ".svg", ".webp"],
       maxRPS: 3,
       hoverDelay: 50
     });
@@ -112,17 +112,17 @@ const setIframeStyle = () => {
 </script>
 
 <script type="text/javascript">
-/* External links opens in new window */
+  /* External links opens in new window */
   var links = document.getElementsByTagName("article")[0].querySelectorAll('a');
-    var a = new RegExp('/' + window.location.host + '/');
-	links.forEach((link) => {
-		if(!a.test(link.href)) {
-			link.setAttribute("target","_blank");
-		}
-	});
+  var a = new RegExp('/' + window.location.host + '/');
+  links.forEach((link) => {
+    if (!a.test(link.href)) {
+      link.setAttribute("target", "_blank");
+    }
+  });
 </script>
 
-<script src="{{asset "js/flying-pages.min.js"}}"></script>
+<script src="{{asset " js/flying-pages.min.js"}}"></script>
 <script type="module">
   import Typebot from 'https://cdn.jsdelivr.net/gh/somos-criptonautas/js/typebot-web.js'
 
@@ -142,11 +142,12 @@ const setIframeStyle = () => {
 </script>
 
 </script>
-<script defer async data-api="/api/event" data-domain="criptonautas.co" src="https://stats.criptonautas.co/js/plausible.outbound-links.js"></script>
-<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script> 
+<script defer async data-domain="criptonautas.co"
+  src="https://stats.criptonautas.co/js/plausible.outbound-links.js"></script>
+<script>window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 
 <script type="text/javascript">
-!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://forms.criptonautas.co/api/packages/website";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e),setTimeout(function(){window.formbricks.init({environmentId: "clpsbym9s00094g21hp2l018u",  apiHost: "https://forms.criptonautas.co"})},500)}();
+  !function () { var t = document.createElement("script"); t.type = "text/javascript", t.async = !0, t.src = "https://forms.criptonautas.co/api/packages/website"; var e = document.getElementsByTagName("script")[0]; e.parentNode.insertBefore(t, e), setTimeout(function () { window.formbricks.init({ environmentId: "clpsbym9s00094g21hp2l018u", apiHost: "https://forms.criptonautas.co" }) }, 500) }();
 </script>
 
 
