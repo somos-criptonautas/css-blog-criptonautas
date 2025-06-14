@@ -1,29 +1,27 @@
-{{!< default}}
-{{#author}}
-<div class="global-padding archive-section{{#if profile_image}} is-image{{/if}}">
-	{{#if profile_image}}
-	<div class="global-image-author">
-		{{>images/other_image other_image=profile_image alt=name}}
-	</div>
-	{{/if}}
-	<h1 class="archive-title global-title">{{name}}</h1>
-	{{#has any="location,website,facebook,twitter"}}
-	<div class="archive-social">
-		{{#if location}}
-		<span>{{>icons/pin}}{{location}}</span>
-		{{/if}}
-		{{#if website}}
-		<a href="{{website}}" aria-label="link Website" class="mx-1">{{>icons/link}}{{t "website"}}</a>
-		{{/if}}
-		{{#if twitter}}
-		<a href="{{twitter_url}}" aria-label="link Twitter">{{>icons/twitter}}twitter</a>
-		{{/if}}
-	</div>
-	{{/has}}
-	{{#if bio}}
-	<p class="archive-excerpt global-excerpt">{{bio}}</p>
-	{{/if}}
-</div>
-{{/author}}
-{{>loop}}
-{{pagination}}
+{{!< default}} {{#author}} <div class="global-padding archive-section{{#if profile_image}} is-image{{/if}}">
+    {{#if profile_image}}
+    <div class="global-image-author">
+        {{>images/other_image other_image=profile_image alt=name}}
+    </div>
+    {{/if}}
+    <h1 class="archive-title global-title">{{name}}</h1>
+    {{#has any="location,website,facebook,twitter"}}
+    <div class="archive-social">
+        {{#if location}}
+        <span>{{>icons/pin}}{{location}}</span>
+        {{/if}}
+        {{#if website}}
+        <a href="{{website}}" aria-label="link Website" class="mx-1">{{>icons/link}}{{t "website"}}</a>
+        {{/if}}
+        {{#if twitter}}
+        <a href="{{twitter_url}}" aria-label="link Twitter">{{>icons/twitter}}twitter</a>
+        {{/if}}
+    </div>
+    {{/has}}
+    {{#if bio}}
+    <p class="archive-excerpt global-excerpt">{{bio}}</p>
+    {{/if}}
+    </div>
+    {{/author}}
+    {{>loop}}
+    {{pagination}}

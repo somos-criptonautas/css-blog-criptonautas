@@ -1,27 +1,31 @@
 {{#is "post"}}
-    <aside class="gh-article-sidebar">
+<aside class="gh-article-sidebar">
 
-            <figure class="gh-author-image-list">
-                {{#foreach authors}}
-                {{#if profile_image}}
-                    <a class="author-name-page" href="{{url}}"><img class="author-profile-image" src="{{img_url profile_image size="xs" format="webp"}}" alt="{{name}}" />
-                    </a></a>
-                {{else}}
-                    <a class="author-name" href="{{url}}"><div class="gh-author-icon">{{> icons/avatar}}</div></a>
-                {{/if}}
-            {{/foreach}}
-            </figure>
-        <div class="gh-article-meta">
-            <div class="gh-article-meta-inner">
-                <time class="gh-article-date" datetime="{{date format="YY-MM-DD"}}">{{ date published_at }} - {{ date published_at format='h:mm A' }}</time>
-            </div>
-            <h4 class="gh-author-name-list">
+    <figure class="gh-author-image-list">
+        {{#foreach authors}}
+        {{#if profile_image}}
+        <a class="author-name-page" href="{{url}}"><img class="author-profile-image" src="{{img_url profile_image size="
+                xs" format="webp" }}" alt="{{name}}" />
+        </a></a>
+        {{else}}
+        <a class="author-name" href="{{url}}">
+            <div class="gh-author-icon">{{> icons/avatar}}</div>
+        </a>
+        {{/if}}
+        {{/foreach}}
+    </figure>
+    <div class="gh-article-meta">
+        <div class="gh-article-meta-inner">
+            <time class="gh-article-date" datetime="{{date format=" YY-MM-DD"}}">{{ date published_at }} - {{ date
+                published_at format='h:mm A' }}</time>
+        </div>
+        <h4 class="gh-author-name-list">
             {{ t "by" }}
             {{#foreach authors}}
             <a href="{{url}}">{{name}}</a>
-            </h4>
-            {{#unless @last}},&nbsp;{{/unless}}
-            {{/foreach}}
-        </div>
-    </aside>
+        </h4>
+        {{#unless @last}},&nbsp;{{/unless}}
+        {{/foreach}}
+    </div>
+</aside>
 {{/is}}

@@ -40,4 +40,4 @@ At the moment you can Contribute coding or donating. CCS Proposals are in our ro
 
 ## Copyright & License
 
-Copyright (c) 2013-2023 Ghost Foundation - Released under the [MIT license](LICENSE).
+Copyright (c) 2013-2025 Ghost Foundation - Released under the [MIT license](LICENSE).
