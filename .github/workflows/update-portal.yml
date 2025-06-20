@@ -13,7 +13,7 @@ jobs:
       - name: Download and Update Portal
         run: |
           # Download latest portal
-          curl -o assets/built/portal.min.js "https://cdn.jsdelivr.net/gh/somos-criptonautas/ghost-custom-portal/portal.min.js"
+          curl -o /assets/built/portal.min.js "https://cdn.jsdelivr.net/gh/somos-criptonautas/ghost-custom-portal/portal.min.js"
           
           # Apply your customizations (replace "jamie" with your name)
           sed -i 's/jamie/YourName/g' assets/built/portal.min.js
