@@ -1,4 +1,4 @@
-<script src="{{asset "built/main.min.js"}}" defer></script>
+<script src="{{asset " built/main.min.js"}}" defer></script>
 <script>
   // Dark/Light Mode
 
@@ -59,8 +59,18 @@
 {{#is "post"}}
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-    var toc = document.getElementsByClassName('toc')[0];
-    if (toc.childNodes.length > 0) {
+    const toc = document.querySelector('.toc');
+    const sidebarToc = document.getElementById('sidebar-toc');
+    const headings = document.querySelectorAll('.gh-content .gh-canvas h1, .gh-content .gh-canvas h2');
+
+    // Hide sidebar if fewer than 3 headings
+    if (headings.length < 3) {
+      if (sidebarToc) sidebarToc.style.display = 'none';
+      return;
+    }
+
+    // Initialize tocbot if headings exist
+    if (toc && headings.length > 0) {
       tocbot.init({
         tocSelector: '.toc',
         contentSelector: '.gh-content',
@@ -71,58 +81,30 @@
         headingsOffset: 40,
         scrollSmoothOffset: -40
       });
-      document.getElementById('sidebar-toc').style.display = 'flow-root';
+      if (sidebarToc) sidebarToc.style.display = 'flow-root';
     }
-    console.log(toc, tocbot);
   });
 </script>
 
 {{/is}}
 
-<script>
-  let darkModeFlag = localStorage.getItem("selected-theme");
-
-  const handleMessageListener = (event) => {
-    var origin = event.origin;
-    if (origin === "https://comunidad.criptonautas.co") {
-      setIframeStyle();
-    }
-  };
-  window.addEventListener('message', handleMessageListener);
-
-  const setIframeStyle = () => {
-    const iframe = document.getElementById("discourse-embed-frame");
-    if (iframe && iframe.contentWindow) {
-      iframe.contentWindow.postMessage(
-        darkModeFlag ? "dark" : "light",
-        "https://comunidad.criptonautas.co"
-      );
-    }
-  };
-  window.addEventListener("load", () => {
-    flyingPages({
-      delay: 0,
-      ignoreKeywords: ["\/ghost", "\/ghost\/#", "\/p\/", "\/start\/", "\/continue\/", "\/profile\/", "exit", "\/public\/members.js", "?action=continue", "?action=start", "#", ".png", ".jpeg", ".jpg", ".gif", ".svg", ".webp"],
-      maxRPS: 3,
-      hoverDelay: 50
-    });
-  });
-
-
-</script>
-
 <script type="text/javascript">
   /* External links opens in new window */
-  var links = document.getElementsByTagName("article")[0].querySelectorAll('a');
-  var a = new RegExp('/' + window.location.host + '/');
-  links.forEach((link) => {
-    if (!a.test(link.href)) {
-      link.setAttribute("target", "_blank");
+  document.addEventListener("DOMContentLoaded", function () {
+    var articleElement = document.getElementsByTagName("article")[0];
+    if (articleElement) {
+      var links = articleElement.querySelectorAll('a');
+      var a = new RegExp('/' + window.location.host + '/');
+      links.forEach((link) => {
+        if (!a.test(link.href)) {
+          link.setAttribute("target", "_blank");
+        }
+      });
     }
   });
 </script>
 
-<script src="{{asset "js/flying-pages.min.js"}}"></script>
+<script src="{{asset " js/flying-pages.min.js"}}"></script>
 <script type="module">
   import Typebot from 'https://cdn.jsdelivr.net/gh/somos-criptonautas/js/typebot-web.js'
 
@@ -149,17 +131,3 @@
 <script type="text/javascript">
   !function () { var t = document.createElement("script"); t.type = "text/javascript", t.async = !0, t.src = "https://forms.criptonautas.co/api/packages/website"; var e = document.getElementsByTagName("script")[0]; e.parentNode.insertBefore(t, e), setTimeout(function () { window.formbricks.init({ environmentId: "clpsbym9s00094g21hp2l018u", apiHost: "https://forms.criptonautas.co" }) }, 500) }();
 </script>
-
-
-<!--
-<link rel="alternate" hreflang="es" href="https://criptonautas.co">
-<link rel="alternate" hreflang="en" href="https://en.criptonautas.co">
-<link rel="alternate" hreflang="eo" href="https://eo.criptonautas.co">
-<script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
-
-<script>
-    Weglot.initialize({
-        api_key: 'wg_4d66eca73bafdd0acbe7064a0eddfaac2'
-    });
-</script>
--->
