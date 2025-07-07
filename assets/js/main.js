@@ -1,11 +1,22 @@
 const html = document.documentElement;
 
 document.addEventListener('DOMContentLoaded', function() {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        html.classList.add('dark');
-    } else {
-        html.classList.remove('dark');
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+    function applyTheme() {
+        if (prefersDarkScheme.matches) {
+            html.classList.add('dark');
+        } else {
+            html.classList.remove('dark');
+        }
     }
+
+    // Apply theme on initial load
+    applyTheme();
+
+    // Listen for changes in the color scheme preference
+    prefersDarkScheme.addEventListener('change', applyTheme);
+
     darkMode();
 });
 
