@@ -5,7 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{meta_title}}</title>
-    <link rel="stylesheet" href="{{asset " built/screen.css"}}">
+
+    <!-- prettier-ignore-start -->
+    <link rel="stylesheet" href="{{asset "built/screen.css"}}">
+    <!-- prettier-ignore-end -->
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@8.0.0/themes/reset-min.css"
         integrity="sha256-2AeJLzExpZvqLUxMfcs+4DWcMwNfpnjUeAAvEtPr0wU=" crossorigin="anonymous">
     <link href="{{@site.url}}/continue" rel="prefetch">
@@ -27,7 +31,7 @@
     {{else}}
     {{#is "home"}}
     {{> "newsletter"}}
-    <link rel="stylesheet" href="{{asset " built/home.css"}}">
+    <link rel="stylesheet" href="{{asset "built/home.css"}}">
     {{/is}}
     {{/if}}
     {{ghost_head}}
