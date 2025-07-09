@@ -1,18 +1,17 @@
-<script src="{{asset "built/main.min.js"}}" defer></script>
+<script src="{{asset " built/main.min.js"}}" defer></script>
 <script>
   // Dark/Light Mode
 
-  var html = document.querySelector('html'),
-    darkLight = document.querySelector('.it-dark-light')
+  var darkLight = document.querySelector('.it-dark-light')
   darkLight.addEventListener('click', function () {
-    if (html.getAttribute('data-theme') === 'dark') {
-      html.setAttribute('data-theme', 'light')
+    if (document.querySelector('html').getAttribute('data-theme') === 'dark') {
+      document.querySelector('html').setAttribute('data-theme', 'light')
       localStorage.setItem('selected-theme', 'light');
     } else {
-      html.setAttribute('data-theme', 'dark')
+      document.querySelector('html').setAttribute('data-theme', 'dark')
       localStorage.setItem('selected-theme', 'dark');
     }
-    console.log(html.hasAttribute('data-theme'))
+    console.log(document.querySelector('html').hasAttribute('data-theme'))
   });
 
   /**
@@ -104,7 +103,7 @@
   });
 </script>
 
-<script src="{{asset "js/flying-pages.min.js"}}"></script>
+<script src="{{asset " js/flying-pages.min.js"}}"></script>
 <script type="module">
   import Typebot from 'https://cdn.jsdelivr.net/gh/somos-criptonautas/js/typebot-web.js'
 
@@ -126,5 +125,5 @@
 <script>window.plausible = window.plausible || function () {(window.plausible.q = window.plausible.q || []).push(arguments)}</script>
 
 <script type="text/javascript">
-  !function () { var t = document.createElement("script"); t.type = "text/javascript", t.async = !0, t.src = "https://forms.criptonautas.co/api/packages/website"; var e = document.getElementsByTagName("script")[0]; e.parentNode.insertBefore(t, e), setTimeout(function () {window.formbricks.init({ environmentId: "clpsbym9s00094g21hp2l018u", apiHost: "https://forms.criptonautas.co" })}, 500) }();
+    !function () { var t = document.createElement("script"); t.type = "text/javascript", t.async = !0, t.src = "https://forms.criptonautas.co/api/packages/website"; var e = document.getElementsByTagName("script")[0]; e.parentNode.insertBefore(t, e), setTimeout(function () {window.formbricks.init({ environmentId: "clpsbym9s00094g21hp2l018u", apiHost: "https://forms.criptonautas.co" })}, 500) }();
 </script>
