@@ -73,7 +73,7 @@ function js(done) {
             'node_modules/@tryghost/shared-theme-assets/assets/js/v1/main.js',
             'assets/js/*.js',
         ], {sourcemaps: true}),
-        concat('main.min.js'),
+        concat('main.js'),
         uglify(),
         dest('assets/built/', {sourcemaps: '.'}),
         livereload()
