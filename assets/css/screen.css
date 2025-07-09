@@ -88,7 +88,7 @@ body:not(.home-template) .gh-topic-grid .gh-topic-content {
   row-gap: 7.33rem;
   justify-items: center;
   display: grid;
-  max-width: 63vw;
+  max-width: 83vw;
   margin: auto;
 }
 
@@ -422,8 +422,7 @@ a.gh-card-link:hover {
 }
 .gh-author-image img,
 .gh-author-image-list img {
-  height: 11rem;
-  width: 11rem;
+  max-width: 11rem;
   position: inherit;
   margin-bottom: 2.23rem;
 }
@@ -438,7 +437,6 @@ a.gh-card-link:hover {
 }
 .gh-author-image img,
 .gh-author-image-list img {
-  height: 100%;
   object-fit: cover;
 }
 
@@ -2877,8 +2875,8 @@ blockquote.twitter-tweet {
     display: inherit;
   }
   .gh-card.post {
-    padding-top: 4.33rem;
-    padding-bottom: 4.33rem;
+    padding-top: 2.33rem;
+    padding-bottom: 2.33rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -3319,7 +3317,7 @@ blockquote.kg-blockquote-alt {
   font-family: var(--font-serif);
   font-style: italic;
   margin-top: 5rem;
-  font-size: 2.43rem;
+  font-size: 2.23rem;
 }
 @media screen and (min-width: 767px) and (max-width: 991px) {
   .kg-image-card {
