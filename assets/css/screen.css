@@ -3135,9 +3135,6 @@ html[data-theme="dark"] .kg-toggle-card {
 display: unset !important;
 }
 */
-.gh-head-actions {
-  display: unset !important;
-}
 .gh-article-excerpt {
   font-size: 2rem;
   padding: 0 0.5rem;
@@ -3154,6 +3151,12 @@ display: unset !important;
   .gh-topic-grid .gh-card-link a:hover {
     opacity: 1;
   }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1249px) {
+.gh-head-actions {
+  display: unset !important;
+}
 }
 @media screen and (max-width: 1249px) {
   .home-template .gh-main a {
@@ -4864,4 +4867,8 @@ html.no-infinite-scroll .pagination {
 }
 .kg-width-full {
   grid-column: full;
+}
+
+.nav-trading {
+font-weight: bold;
 }
