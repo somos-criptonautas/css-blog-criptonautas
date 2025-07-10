@@ -4869,6 +4869,6 @@ html.no-infinite-scroll .pagination {
   grid-column: full;
 }
 
-.nav-trading {
-font-weight: bold;
+.nav-trading a {
+font-weight: 600 !important;
 }
