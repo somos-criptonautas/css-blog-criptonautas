@@ -4872,3 +4872,30 @@ html.no-infinite-scroll .pagination {
 .nav-trading a {
 font-weight: 600 !important;
 }
+
+/* Bunny Stream Video Cards */
+.kg-bunny-video-card {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  margin: 2rem 0;
+}
+
+.kg-bunny-video-card iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Full-width video support */
+.kg-bunny-video-card.kg-width-wide {
+  grid-column: wide-start / wide-end;
+}
+
+.kg-bunny-video-card.kg-width-full {
+  grid-column: full-start / full-end;
+}
