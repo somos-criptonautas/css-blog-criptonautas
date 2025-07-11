@@ -4911,3 +4911,8 @@ font-weight: 600 !important;
     margin-left: calc(50% - 50vw + 2rem);
   }
 }
+
+/* Disable footer on coaching-page */
+.page-coaching .gh-foot-menu {
+  display: none !important;
+}
