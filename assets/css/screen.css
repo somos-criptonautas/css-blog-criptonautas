@@ -4920,11 +4920,14 @@ font-weight: 600 !important;
   display: none !important;
 }
 
+/* Better announcement on mobile */
+@media (max-width: 1024px) {
 .gh-announcement-bar {
 padding: 43px 48px !important;
 }
+}
 
 .gh-announcement-bar svg {
-  width: 1.3rem;
-  height: 1.3rem;
+  width: 1.3rem !important;
+  height: 1.3rem !important;
 }
