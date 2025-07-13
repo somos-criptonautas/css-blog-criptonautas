@@ -43,13 +43,16 @@ const removeAccents = (str) => {
   }
 
 function darkMode() {
-    document.querySelector('.it-dark-light').addEventListener('click', function () {
-        if (html.classList.contains('dark')) {
-            html.classList.remove('dark');
-        } else {
-            html.classList.add('dark');
-        }
-    });
+    const darkLight = document.querySelector('.it-dark-light');
+    if (darkLight) {
+        darkLight.addEventListener('click', function () {
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+            } else {
+                html.classList.add('dark');
+            }
+        });
+    }
 }
 
 /* Progress bar

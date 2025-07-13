@@ -1186,7 +1186,7 @@ html[data-theme="dark"].gh-pagehead-title {
   }
 }
 .custom-no-feature-sign p a {
-  color: var(--color-primary) !important;
+  color: var(--color-secondary);
 }
 html[data-theme="dark"].custom-no-feature-sign p a {
   background-color: var(--color-secondary) !important;
@@ -2812,8 +2812,8 @@ body,
 
 @media screen and (max-width: 767px) {
   .kg-callout-emoji {
-    margin-left: -6rem;
-    margin-top: -6rem;
+    margin-left: -4rem;
+    margin-top: -4rem;
     font-size: 4.5 rem !important;
     padding: 0.33rem !important;
   }
@@ -3588,7 +3588,7 @@ html[data-theme="dark"] .is-head-open .gh-burger::before {
 }
 #gh-head .nav a,
 #gh-head .gh-head-btn {
-  font-weight: 500 !important;
+  font-weight: 500;
   opacity: 1;
 }
 @media screen and (min-width: 992px) {
@@ -4869,11 +4869,11 @@ html.no-infinite-scroll .pagination {
   grid-column: full;
 }
 
-.nav-trading a {
+li.nav-trading a {
 font-weight: 600 !important;
 }
 
-.bunny-video-wrapper {
+.gh-content video {
   width: 100%;
   max-width: none;
   margin: 2rem 0;
@@ -4915,4 +4915,13 @@ font-weight: 600 !important;
 /* Disable footer on coaching-page */
 .page-coaching .gh-foot-menu {
   display: none !important;
+}
+
+.gh-announcement-bar {
+padding: 43px 48px !important;
+}
+
+.gh-announcement-bar svg {
+  width: 1.3rem;
+  height: 1.3rem;
 }
