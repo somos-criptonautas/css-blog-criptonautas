@@ -19,38 +19,33 @@
                 </div>
             </section>
             {{/if}}
-            <main class="gh-main">
-                {{#is "post"}}
-                <article class="gh-article {{post_class}}">
-                    <header class="gh-article-header gh-canvas">
-                    </header>
-                    {{#is "post"}}
-                    <div class="gh-author-criptonaut">
-                        {{#if custom_excerpt}}
-                        <p class="gh-article-excerpt">{{custom_excerpt}}</p>
-                        {{/if}}
+            <header class="gh-article-header gh-canvas">
+            </header>
+            <div class="gh-author-criptonaut">
+                {{#if custom_excerpt}}
+                <p class="gh-article-excerpt">{{custom_excerpt}}</p>
+                {{/if}}
 
-                        {{> "post-meta"}}
+                {{> "post-meta"}}
+            </div>
+            <div class="gh-full-content">
+
+                <aside class="gh-sidebar" id="sidebar-toc">
+                    {{#if reading_time}}
+                    <h3>
+                        {{reading_time minute="⌚ > 1 de libertad" minutes="⌚ % mins libre"}}
+                    </h3>
+                    {{/if}}
+                    <div class="toc">
                     </div>
-                    <div class="gh-full-content">
+                </aside>
 
-                        <aside class="gh-sidebar" id="sidebar-toc">
-                            {{#if reading_time}}
-                            <h3>
-                                {{reading_time minute="⌚ > 1 de libertad" minutes="⌚ % mins libre"}}
-                            </h3>
-                            {{/if}}
-                            <div class="toc">
-                            </div>
-                        </aside>
-
-                        <section class="gh-content gh-canvas">
-                            {{content}}
-                        </section>
-                        {{/is}}
-                    </div>
-                </article>
-                {{/post}}
+                <section class="gh-content gh-canvas">
+                    {{content}}
+                </section>
+            </div>
+        </article>
+        {{/post}}
     </div>
     </main>
     {{#contentFor "body_class"}} has-full-image{{#if post.feature_image}} is-head-transparent{{/if}}{{/contentFor}}
