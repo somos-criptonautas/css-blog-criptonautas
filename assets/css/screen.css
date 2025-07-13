@@ -1363,7 +1363,7 @@ html[data-theme="dark"].custom-no-feature-sign p a {
 
 @media screen and (max-width: 767px) {
   .gh-foot-menu .nav {
-    gap: 1rem !important;
+    gap: 0.9rem !important;
   }
   .gh-foot {
     padding-top: 6rem;
