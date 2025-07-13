@@ -14,3 +14,8 @@ jobs:
         with:
           api-url: ${{ secrets.GHOST_ADMIN_API_URL }}
           api-key: ${{ secrets.GHOST_ADMIN_API_KEY }}
+
+      - name: Download Typesense Search UI
+        run: |
+          mkdir -p assets/js
+          curl -L https://unpkg.com/@magicpages/ghost-typesense-search-ui/dist/search.min.js -o assets/js/search.min.js
