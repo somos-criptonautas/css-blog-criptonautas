@@ -13,6 +13,9 @@
 a:hover {
   opacity: 1;
 }
+.lined {
+text-decoration: underline;
+}
 .m-auto {
   margin: auto;
 }
@@ -1533,7 +1536,7 @@ html[data-theme="dark"].custom-no-feature-sign p a {
     transition-delay: 0.2s;
   }
   #gh-head .nav a {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     font-weight: 600;
     text-transform: none;
   }
@@ -1802,7 +1805,7 @@ html[data-theme="dark"] img.logo-dark {
   }
 
   .is-head-open img.logo-nav {
-    max-width: 74vh;
+    width: 70vh;
     margin: auto;
   }
   html:not([data-theme="dark"]).is-head-open img.logo-nav.logo-light,
