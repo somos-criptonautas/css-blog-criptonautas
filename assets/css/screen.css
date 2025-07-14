@@ -595,7 +595,10 @@ gh-author-name-list {
 .gh-cover-content .gh-article-tag {
   color: var(--color-link);
 }
-
+@media and (max-width: 991px) 
+.gh-cover-title {
+  font-size: 5rem;
+}
 .gh-cover-title {
   font-size: 5rem;
   color: var(--color-link);
@@ -2691,7 +2694,7 @@ body,
   border-radius: var(--border-radius);
 }
 
-@media and (max-width: 992px) {
+@media and (max-width: 991px) {
 .page-tags .gh-site {
   padding-top: 11vh;
 }
