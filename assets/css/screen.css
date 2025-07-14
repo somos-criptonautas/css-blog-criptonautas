@@ -1722,7 +1722,7 @@ body:not(.is-head-b--a_n) .gh-head-menu::after {
 }
 .gh-sidebar h3 {
   padding: 1rem;
-  font-size: 3rem;
+  font-size: 2.7rem;
 }
 @media screen and (max-width: 991px) {
   .gh-sidebar {
@@ -1805,7 +1805,7 @@ html[data-theme="dark"] img.logo-dark {
   }
 
   .is-head-open img.logo-nav {
-    width: 70vh;
+    max-width: 70vh;
     margin: auto;
   }
   html:not([data-theme="dark"]).is-head-open img.logo-nav.logo-light,
@@ -2399,6 +2399,7 @@ body,
 }
 .archive-section .global-title {
   text-transform: uppercase;
+  padding: 0 1rem;
 }
 .archive-section {
   text-align: center;
@@ -2690,6 +2691,11 @@ body,
   border-radius: var(--border-radius);
 }
 
+@media and (max-width: 992px) {
+.page-tags .gh-site {
+  padding-top: 11vh;
+}
+}
 .page-tags .global-subtitle,
 .tag-template .global-subtitle {
   opacity: 0;
@@ -3178,7 +3184,7 @@ display: unset !important;
     flex-basis: -moz-available;
   }
   .toc-list {
-    padding-left: 1.25rem;
+    padding: 0;
   }
   .toc-list-item {
     list-style-type: none !important;
