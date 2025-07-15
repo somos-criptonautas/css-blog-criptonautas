@@ -1,4 +1,4 @@
-<script src="{{asset "built/main.min.js"}}" defer></script>
+<script src="{{asset " built/main.min.js"}}" defer></script>
 <script>
   // Dark/Light Mode
 
@@ -103,7 +103,7 @@
   });
 </script>
 
-<script src="{{asset "js/flying-pages.min.js"}}"></script>
+<script src="{{asset " js/flying-pages.min.js"}}"></script>
 <script type="module">
   import Typebot from 'https://cdn.jsdelivr.net/gh/somos-criptonautas/js/typebot-web.js'
 
@@ -120,6 +120,20 @@
       chatWindow: { backgroundColor: "#fff" },
     },
   });
+</script>
+<script>
+  window.__MP_SEARCH_CONFIG__ = {
+    typesenseNodes: [{
+      host: 'https://typesense.criptonautas.co',
+      port: '443',
+      protocol: 'https'
+    }], // also supports a Typesense cluster
+    typesenseApiKey: '8hPtZRIeBeU4MM7c6Fy9viwynvG1F2F4', // Under no circumstances use an admin API key here. These values are stored client-side and are therefore accessible to the end user.
+    collectionName: 'ghost',
+    theme: 'system', // 'light', 'dark', or 'system'
+    enableHighlighting: true, // highlight search terms in results
+    commonSearches: ['cómo empezar', 'diseño humano', 'plantas del amazonas'] // can also be empty
+  };
 </script>
 <script defer async data-domain="criptonautas.co"
   src="https://stats.criptonautas.co/js/plausible.outbound-links.js"></script>
