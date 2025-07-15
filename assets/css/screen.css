@@ -2695,7 +2695,7 @@ body,
 }
 
 @media and (max-width: 991px) {
-.page-tags .gh-site {
+body.page-tags .gh-site {
   padding-top: 11vh;
 }
 }
