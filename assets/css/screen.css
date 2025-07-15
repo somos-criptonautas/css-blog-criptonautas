@@ -540,7 +540,7 @@ gh-author-name-list {
 }
 
 .post-template .gh-cover {
-  --cover-height: 100vh !important;
+  --cover-height: 100% !important;
 
   align-items: flex-end;
   padding-top: 120px;
