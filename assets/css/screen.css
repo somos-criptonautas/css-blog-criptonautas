@@ -3182,12 +3182,13 @@ display: unset !important;
   padding-bottom: 2rem;
 }
 
+  .toc-list {
+    padding: 0;
+  }
+  
 @media screen and (max-width: 1500px) {
   .gh-sidebar {
     flex-basis: -moz-available;
-  }
-  .toc-list {
-    padding: 0;
   }
   .toc-list-item {
     list-style-type: none !important;
