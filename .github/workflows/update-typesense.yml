@@ -1,4 +1,4 @@
-name: Auto-Update Portal
+name: Auto-Update Typesense
 on:
   schedule:
     - cron: "0 6 * * *"  # Daily at 6 AM
@@ -16,10 +16,10 @@ jobs:
       - name: Download and Update Portal
         run: |
           # Download latest portal
-          curl -o assets/built/portal.min.js "https://cdn.jsdelivr.net/gh/somos-criptonautas/ghost-custom-portal/portal.min.js"
+          curl -o assets/built/typesense.min.js "https://unpkg.com/@magicpages/ghost-typesense-search-ui@1.7.0/dist/search.min.js"
           
           # Further customizations
-          sed -i 's/testing/testing-changed/g' assets/built/portal.min.js
+          # sed -i 's/testing/testing-changed/g' assets/built/typesense.min.js
           
       - name: Deploy to Ghost
         uses: TryGhost/action-deploy-theme@v1
