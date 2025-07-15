@@ -211,7 +211,7 @@ body:not(.home-template) .gh-topic-grid .gh-card .gh-card-link:nth-child(even) {
   }
 }
 .gh-content figcaption a {
-  color: default;
+  color: default !important;
 }
 .gh-card-wrapper {
   padding: 2.33rem 0 0 1rem;
