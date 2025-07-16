@@ -3102,20 +3102,20 @@ html[data-theme="dark"] .kg-toggle-card {
     visibility: visible;
   }
 }
-.gh-author-criptonaut {
+.gh-author {
   display: flow-root;
   margin: 4.23rem auto 2.11rem;
 }
-.page-lounge .gh-author-criptonaut {
+.page-lounge .gh-author {
   display: none;
 }
 @media screen and (max-width: 767px) {
-  .gh-author-criptonaut {
+  .gh-author {
     width: 90%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .gh-author-criptonaut {
+  .gh-author {
     width: 75%;
   }
   .gh-article-excerpt {
@@ -3123,14 +3123,14 @@ html[data-theme="dark"] .kg-toggle-card {
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1349px) {
-  .gh-author-criptonaut {
+  .gh-author {
     width: 80%;
     display: grid;
     margin: 7rem auto;
   }
 }
 @media screen and (min-width: 1350px) {
-  .gh-author-criptonaut {
+  .gh-author {
     width: 70%;
     display: grid;
     margin: 7rem auto 11rem;
