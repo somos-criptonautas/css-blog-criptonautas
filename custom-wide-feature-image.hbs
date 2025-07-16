@@ -41,7 +41,15 @@
             </aside>
             <section class="gh-content gh-canvas">
                 {{content}}
-                {{> "comments"}}
+                <div class="comments-section">
+                    <div class="comments-wrap">
+                        <small class="global-subtitle-title">{{t "Member discussion"}}</small>
+                        <div id="cusdis_thread" class="disqus-lazy comments-content"
+                            data-host="https://comments.reseteo.co" data-page-id="{{id}}"
+                            data-page-url="{{url absolute=" true"}}" data-page-title="{{title}}">
+                        </div>
+                    </div>
+                </div>
             </section>
             {{/is}}
         </div>
