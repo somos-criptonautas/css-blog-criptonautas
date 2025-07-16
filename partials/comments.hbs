@@ -1,17 +1,8 @@
-{{#is "post"}}
-{{#if access}}
-{{#if comments}}
-<div class="comments-wrap">
-  <div class="comments-content">
-    <div class="comments-header">
-      <span class="global-subtitle-title">
-        <h3>{{t "Member discussion"}}</h3>
-        {{comment_count empty=(t "0 comments") singular=(t "comment") plural=(t "comments") autowrap="span"}}
-      </span>
+<div class="comments-section">
+  <div class="comments-wrap">
+    <small class="global-subtitle-title">{{t "Member discussion"}}</small>
+    <div id="cusdis_thread" class="disqus-lazy comments-content" data-host="https://comments.criptonautas.co"
+      data-page-id="{{id}}" data-page-url="{{url absolute=" true"}}" data-page-title="{{title}}">
     </div>
-    {{comments title="" count=false mode="auto"}}
   </div>
 </div>
-{{/if}}
-{{/if}}
-{{/is}}

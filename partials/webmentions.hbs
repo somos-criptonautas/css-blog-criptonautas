@@ -1,0 +1,115 @@
+<link rel="webmention" href="https://brid.gy/publish/webmention">
+
+<style>
+    /* Container */
+    .wm-container {
+        background: var(--color-four);
+        border-radius: var(--border-radius);
+        box-shadow: 0 4px 12px var(--opacity-four);
+        padding: 2.5rem;
+        margin: 4rem 0 6rem;
+        /* Reverted margin-top to original */
+    }
+
+    /* Header */
+    .wm-header {
+        font-family: var(--font-family-one);
+        font-size: 2.8rem;
+        font-weight: var(--font-weight-one-bold);
+        color: var(--color-font-one);
+        margin-bottom: 2rem;
+    }
+
+    /* Likes and Retweets Section */
+    .wm-avatar-grid {
+        display: flex;
+        align-items: center;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+        border-bottom: var(--border) var(--color-border-one);
+    }
+
+    .wm-avatar-grid .wm-avatar-link {
+        width: 40px;
+        height: 40px;
+        margin-right: -10px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .wm-avatar-grid .wm-avatar-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 2px solid var(--color-four);
+        object-fit: cover;
+    }
+
+    .wm-reactions-count {
+        font-size: 1.6rem;
+        color: var(--color-font-one);
+        margin-left: 1.5rem;
+    }
+
+    /* Comments Section */
+    .wm-mention-item {
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        gap: 15px;
+        padding: 20px 0;
+        border-bottom: var(--border) var(--color-border-one);
+    }
+
+    .wm-mention-item:last-child {
+        border-bottom: none;
+    }
+
+    /* Author Image */
+    .wm-author-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    /* Content Container */
+    .wm-mention-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    /* Author Name */
+    .wm-author-name {
+        font-size: 1.6rem;
+        font-weight: var(--font-weight-three-bold);
+        color: var(--color-font-one);
+        text-decoration: underline;
+    }
+
+    /* Content */
+    .wm-mention-content {
+        font-size: 1.6rem;
+        color: var(--color-font-one);
+        line-height: 1.5;
+    }
+
+    /* Source and Date Line */
+    .wm-mention-source-line {
+        font-size: 1.6rem;
+        color: var(--color-font-two);
+    }
+
+    .wm-mention-source {
+        color: var(--ghost-accent-color);
+        text-decoration: underline;
+    }
+
+    .wm-mention-metadata {
+        font-size: 1.6rem;
+    }
+</style>
+<div id="webmentions"><small class="global-subtitle-title"><a
+            href="https://janmonschke.com/adding-webmentions-to-your-static-blog/"
+            rel="noopener noreferrer">mentions</a></small></div>
+<script src="/assets/js/webmentions.js" async></script>

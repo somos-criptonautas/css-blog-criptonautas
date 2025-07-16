@@ -7,11 +7,8 @@
     <title>{{meta_title}}</title>
 
     <!-- prettier-ignore-start -->
-    <link rel="stylesheet" href="{{asset "built/screen.css"}}">
+    <link rel="stylesheet" href="{{asset " built/screen.css"}}">
     <!-- prettier-ignore-end -->
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@8.0.0/themes/reset-min.css"
-        integrity="sha256-2AeJLzExpZvqLUxMfcs+4DWcMwNfpnjUeAAvEtPr0wU=" crossorigin="anonymous">
     <link href="{{@site.url}}/continue" rel="prefetch">
     <link href="{{@site.url}}/start" rel="prefetch">
     <link rel="preconnect" href="https://comunidad.criptonautas.co">
@@ -31,7 +28,7 @@
     {{else}}
     {{#is "home"}}
     {{> "newsletter"}}
-    <link rel="stylesheet" href="{{asset "built/home.css"}}">
+    <link rel="stylesheet" href="{{asset " built/home.css"}}">
     {{/is}}
     {{/if}}
     {{ghost_head}}
