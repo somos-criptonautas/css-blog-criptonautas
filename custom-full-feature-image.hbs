@@ -41,7 +41,6 @@
                     {{else}}
                     <section class="gh-content gh-canvas">
                         {{content}}
-                        {{/is}}
                         <div class="comments-section">
                             <div class="comments-wrap">
                                 <small class="global-subtitle-title">{{t "Member discussion"}}</small>
@@ -53,6 +52,7 @@
                             </div>
                         </div>
                         {{>webmentions}}
+                        {{/is}}
                     </section>
         </article>
         {{/post}}
