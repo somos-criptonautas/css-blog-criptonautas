@@ -41,6 +41,7 @@ function css(done) {
     pump([
         src('assets/css/screen.css', {sourcemaps: true}),
         src('assets/css/home.css', {sourcemaps: true}),
+        src('node_modules/glightbox/dist/css/glightbox.min.css', {sourcemaps: true}),
         postcss([
             easyimport,
             autoprefixer(),
@@ -72,6 +73,7 @@ function js(done) {
             'node_modules/@tryghost/shared-theme-assets/assets/js/v1/lib/**/*.js',
             'node_modules/@tryghost/shared-theme-assets/assets/js/v1/main.js',
             'assets/js/*.js',
+            'node_modules/glightbox/dist/js/glightbox.min.js',
         ], {sourcemaps: true}),
         concat('main.js'),
         uglify(),
@@ -99,8 +101,22 @@ const hbsWatcher = () => watch(['*.hbs', 'partials/**/*.hbs'], hbs);
 const cssWatcher = () => watch('assets/css/**/*.css', css);
 const jsWatcher = () => watch('assets/js/*.js', js);
 const watcher = parallel(hbsWatcher, cssWatcher, jsWatcher);
+const { exec } = require('child_process');
+
+function updateGlightbox(done) {
+    exec('npm update glightbox', (err, stdout, stderr) => {
+        if (err) {
+            console.error(`exec error: ${err}`);
+            return done(err);
+        }
+        console.log(`stdout: ${stdout}`);
+        console.error(`stderr: ${stderr}`);
+        done();
+    });
+}
+
 const build = series(css, js);
 
 exports.build = build;
-exports.zip = series(build, zipper);
+exports.zip = series(updateGlightbox, build, zipper);
 exports.default = series(build, serve, watcher);
