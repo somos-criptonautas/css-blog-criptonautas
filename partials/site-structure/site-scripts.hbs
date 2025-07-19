@@ -1,4 +1,4 @@
-<script src="{{asset "built/main.min.js"}}" defer></script>
+<script src="{{asset " built/main.min.js"}}"></script>
 <script>
   // Dark/Light Mode
 
@@ -85,7 +85,7 @@
   });
 </script>
 <script defer async src="https://comments.criptonautas.co/js/cusdis.es.js" type="module"></script>
-<script src="{{asset "js/webmentions.js"}}"></script>
+<script src="{{asset " js/webmentions.js"}}"></script>
 {{/is}}
 
 <script type="text/javascript">
@@ -103,7 +103,7 @@
     }
   });
 </script>
-<script src="{{asset "js/flying-pages.min.js"}}"></script>
+<script src="{{asset " js/flying-pages.min.js"}}"></script>
 {{!--
 <script type="module">
   import Typebot from 'https://cdn.jsdelivr.net/gh/somos-criptonautas/js/typebot-web.js'
@@ -140,7 +140,9 @@
 <script>window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 <script src="{{asset " built/glightbox.min.js"}}"></script>
 <script>
-  const lightbox = GLightbox({
-    selector: '.kg-image-card a, .kg-gallery-image a'
-  });
+  if (typeof GLightbox === 'function' && !window.lightbox) {
+    window.lightbox = GLightbox({
+      selector: '.kg-image-card a, .kg-gallery-image a'
+    });
+  }
 </script>
