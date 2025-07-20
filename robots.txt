@@ -154,7 +154,7 @@ Disallow: /
 # TODO: investigate whether YouBot scrapes to train its own in-house LLM.
 
 # Ghost CMS + Webmentions allowed
-Sitemap: https://reseteo.co/sitemap.xml
+Sitemap: https://criptonautas.co/sitemap.xml
 Disallow: /ghost/
 Disallow: /email/
 Disallow: /members/api/comments/counts/
