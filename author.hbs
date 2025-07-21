@@ -6,16 +6,48 @@
     {{/if}}
     <h1 class="archive-title global-title">{{name}}</h1>
     {{#has any="location,website,facebook,twitter"}}
-    <div class="archive-social">
-        {{#if location}}
-        <span>{{>icons/pin}}{{location}}</span>
+    {{#if bio}}
+    <div class="gh-author-bio gh-pagehead-description">{{bio}}</div>
+    {{/if}}
+    <div class="gh-author-social">
+        {{#if twitter}}
+        <a class="gh-author-social-link" href="{{social_url type=" twitter"}}" target="_blank" rel="noopener">{{>
+            "icons/twitter"}}</a>
+        {{/if}}
+        {{#if facebook}}
+        <a class="gh-author-social-link" href="{{social_url type=" facebook"}}" target="_blank" rel="noopener">{{>
+            "icons/facebook"}}</a>
+        {{/if}}
+        {{#if linkedin}}
+        <a class="gh-author-social-link" href="{{social_url type=" linkedin"}}" target="_blank" rel="noopener">{{>
+            "icons/linkedin"}}</a>
+        {{/if}}
+        {{#if bluesky}}
+        <a class="gh-author-social-link" href="{{social_url type=" bluesky"}}" target="_blank" rel="noopener">{{>
+            "icons/bluesky"}}</a>
+        {{/if}}
+        {{#if threads}}
+        <a class="gh-author-social-link" href="{{social_url type=" threads"}}" target="_blank" rel="noopener">{{>
+            "icons/threads"}}</a>
+        {{/if}}
+        {{#if mastodon}}
+        <a class="gh-author-social-link" href="{{social_url type=" mastodon"}}" target="_blank" rel="noopener">{{>
+            "icons/mastodon"}}</a>
+        {{/if}}
+        {{#if tiktok}}
+        <a class="gh-author-social-link" href="{{social_url type=" tiktok"}}" target="_blank" rel="noopener">{{>
+            "icons/tiktok"}}</a>
+        {{/if}}
+        {{#if youtube}}
+        <a class="gh-author-social-link" href="{{social_url type=" youtube"}}" target="_blank" rel="noopener">{{>
+            "icons/youtube"}}</a>
+        {{/if}}
+        {{#if instagram}}
+        <a class="gh-author-social-link" href="{{social_url type=" instagram"}}" target="_blank" rel="noopener">{{>
+            "icons/instagram"}}</a>
         {{/if}}
         {{#if website}}
-        <a href="{{website}}" aria-label="link Website" class="mx-1">{{>icons/link}}{{t "website"}}</a>
-        {{/if}}
-        {{#if twitter}}
-        <a href="{{twitter_url}}" aria-label="link Twitter">{{>icons/twitter}}twitter</a>
-        {{/if}}
+        <a class="gh-author-social-link" href="{{website}}" target="_blank" rel="noopener">{{> "icons/website"}}</a>
     </div>
     {{/has}}
     {{#if bio}}

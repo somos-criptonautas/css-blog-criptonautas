@@ -2417,7 +2417,7 @@ body,
 .archive-excerpt {
   margin: 3rem auto;
 }
-.archive-social svg {
+.gh-author-social svg {
   height: 2.33rem;
   width: 2.33rem;
   color: var(--color-base);
