@@ -6,9 +6,6 @@
     {{/if}}
     <h1 class="archive-title global-title">{{name}}</h1>
     {{#has any="location,website,facebook,twitter"}}
-    {{#if bio}}
-    <div class="gh-author-bio gh-pagehead-description">{{bio}}</div>
-    {{/if}}
     <div class="gh-author-social">
         {{#if twitter}}
         <a class="gh-author-social-link" href="{{social_url type=" twitter"}}" target="_blank" rel="noopener">{{>
