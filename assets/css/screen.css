@@ -1418,6 +1418,14 @@ html[data-theme="dark"].custom-no-feature-sign p a {
   font-size: 1.53rem;
 }
 
+.gh-social-links:has(a) {
+    margin-top: 32px;
+}
+
+.gh-social-links:has(a) + .gh-copyright {
+    margin-top: -16px;
+}
+
 /* Media queries */
 
 @media (min-width: 767px) and (max-width: 991px) {
@@ -4456,6 +4464,10 @@ border-bottom-right-radius: 0; */
   .item.is-featured .item-excerpt {
     -webkit-line-clamp: 3;
   }
+}
+
+.gh-article-sidebar .gh-button-share {
+    margin-top: 16px;
 }
 
 @media (max-width: 1199px) {

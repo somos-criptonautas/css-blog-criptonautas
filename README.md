@@ -26,10 +26,10 @@ After that, from the theme's root directory:
 ```bash
 
 # Install
-yarn
+pnpm install
 
 # Run build & watch for changes
-yarn dev
+pnpm dev
 ```
 
 Then you could edit `/assets/css/` files, which will be compiled to `/assets/built/` automatically :)
@@ -38,6 +38,10 @@ Then you could edit `/assets/css/` files, which will be compiled to `/assets/bui
 
 At the moment you can Contribute coding or donating. CCS Proposals are in our roadmap like featured sponsored or backed for the crowd.
 
-## Copyright & License
+### Theme translations
 
-Copyright (c) 2013-2025 Ghost Foundation - Released under the [MIT license](LICENSE).
+Please see the @Tryghost/Themes/theme-translations/README.md for how to edit or contribute translations.
+
+# Copyright & License
+
+Copyright (c) 2013-2026 Ghost Foundation - Released under the [MIT license](LICENSE).
