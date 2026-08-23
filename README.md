@@ -1,10 +1,9 @@
 # Headline
 
-Headline is a [Ghost](https://github.com/TryGhost/Ghost) theme built from the ground up for local news. 
+> [!IMPORTANT]
+> This repo is synced automatically with the [TryGhost/Themes](https://github.com/TryGhost/Themes) monorepo. If you're looking to contribute or raise an issue, head over to the main repository [TryGhost/Themes](https://github.com/TryGhost/Themes) where our official themes are developed.
 
-While it can be used for any purpose, the theme takes a thoughtful approach to displaying large amounts of content across various areas of coverage.
-
-Headline adapts the content by allowing to choose which topics are front and center.
+Headline is a [Ghost](https://github.com/TryGhost/Ghost) theme built from the ground up for local news. While it can be used for any purpose, the theme takes a thoughtful approach to displaying large amounts of content across various areas of coverage. Headline adapts to your content by showcasing your most written about topics or by giving you the control to decide which topics are front and center.
 
 ## Criptonautas update
 
