@@ -9,6 +9,8 @@
   --head-nav-gap: 32px;
   --color-primary-text: var(--color-darker-gray);
   --h1-size: 4.11rem;
+  --gh-font-heading: 'Outfit', var(--font-sans);
+  --content-font-size: 1.6rem;
 }
 a:hover {
   opacity: 1;
@@ -680,6 +682,10 @@ gh-author-name-list {
   .gh-content > ol,
   .gh-content > ul {
     font-size: 2rem !important;
+  }
+  .gh-content {
+    max-width: min(70ch, 72vw);
+    margin-inline: auto;
   }
 }
 /* Page head */
@@ -1714,8 +1720,8 @@ body:not(.is-head-b--a_n) .gh-head-menu::after {
   flex-direction: column;
   position: sticky;
   top: 2rem;
-  font-size: 2rem;
-  line-height: 1.35;
+  font-size: 1.8rem;
+  line-height: 1.27;
   overflow-y: auto;
 }
 .toc-list-item {
@@ -1734,7 +1740,7 @@ body:not(.is-head-b--a_n) .gh-head-menu::after {
 }
 .gh-sidebar h3 {
   padding: 1rem;
-  font-size: 2.7rem;
+  font-size: 2.1rem;
 }
 @media screen and (max-width: 991px) {
   .gh-sidebar {
@@ -3159,6 +3165,7 @@ display: unset !important;
 .gh-article-excerpt {
   font-size: 2rem;
   padding: 0 0.5rem;
+  margin-top: 0;
 }
 
 @media screen and (min-width: 1500px) {
