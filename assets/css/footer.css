@@ -2,34 +2,33 @@
 /* ---------------------------------------------------------- */
 
 .it-foot-social {
-padding-top: 3.33rem;
-text-align: center;
-}
-.it-foot-social a,
-gh-copyright {
-opacity: 0.33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding-top: 3.33rem;
 }
 .it-foot-social a {
-margin-left: .8rem;
-display: inline-block;
-padding: .5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem;
+  opacity: 0.33;
+  color: var(--color-base);
+  transition: opacity 0.2s ease;
 }
-.it-foot-social a svg {
-    height: 3.23rem;
-    height: 3.23rem;
-}
-    .it-foot-social a {
-    color: var(--color-base);
-}
-.it-foot-social a svg:hover,
-.it-foot-social a svg:active,
 .it-foot-social a:hover,
 .it-foot-social a:active {
-fill: var(--color-base);
+  opacity: 1;
+}
+.it-foot-social a svg {
+  height: 3.23rem;
+  width: auto;
+  fill: currentColor;
 }
 .it-foot-social a.rss svg {
-width: 3.77rem;
-height: 3.77rem;
+  width: 3.77rem;
+  height: 3.77rem;
 }
 @media screen and (max-width: 767px) {
     .it-foot-menu {width: 2.3rem;

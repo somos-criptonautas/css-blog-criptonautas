@@ -12,6 +12,9 @@
   --gh-font-heading: 'Outfit', var(--font-sans);
   --content-font-size: 1.6rem;
 }
+.gh-content {
+  margin-top: 0;
+}
 a:hover {
   opacity: 1;
 }
@@ -1375,9 +1378,6 @@ html[data-theme="dark"].custom-no-feature-sign p a {
 }
 
 @media screen and (max-width: 767px) {
-  .gh-foot-menu .nav {
-    gap: 0.9rem !important;
-  }
   .gh-foot {
     padding-top: 6rem;
     padding-bottom: 5rem;
@@ -1411,6 +1411,14 @@ html[data-theme="dark"].custom-no-feature-sign p a {
 
 .gh-foot-menu .nav li + li::before {
   display: none;
+}
+@media (max-width: 767px) {
+  .gh-foot-menu .nav {
+    flex-direction: row;
+  }
+  .gh-foot-menu .nav li + li {
+    margin-top: 0;
+  }
 }
 
 .gh-copyright {
