@@ -15,16 +15,27 @@ jobs:
                   mkdir -p assets/js
                   curl -fsSL https://unpkg.com/@magicpages/ghost-typesense-search-ui/dist/search.min.js -o assets/js/search.min.js
 
-            - name: Deploy Ghost Theme
-              uses: TryGhost/action-deploy-theme@v1.6.4
-              with:
-                  api-url: ${{ secrets.GHOST_ADMIN_API_URL }}
-                  api-key: ${{ secrets.GHOST_ADMIN_API_KEY }}
-
-            - name: Activate theme
+            - name: Zip theme
               run: |
-                  NAME=$(node -p "require('./package.json').name")
+                  zip -r -y headline.zip . \
+                    -x '*.git*' '*.zip' 'yarn*' 'npm*' 'pnpm*' 'node_modules*' \
+                       'AGENTS.md' 'CLAUDE.md' 'pnpm-workspace.yaml' \
+                       '*routes.yaml' '*redirects.yaml' '*redirects.json'
+
+            - name: Upload & activate theme
+              env:
+                  API: ${{ secrets.GHOST_ADMIN_API_URL }}
+                  KEY: ${{ secrets.GHOST_ADMIN_API_KEY }}
+              run: |
+                  RESP=$(curl -fsSL -X POST \
+                    -H "Authorization: Ghost $KEY" \
+                    -H "Accept-Version: v6.0" \
+                    -F "file=@headline.zip;type=application/zip" \
+                    "$API/themes/upload/")
+                  echo "Upload response: $RESP"
+                  NAME=$(echo "$RESP" | jq -r '.themes[0].name // "headline"')
+                  echo "Activating theme: $NAME"
                   curl -fsSL -X PUT \
-                      -H "Authorization: Ghost ${{ secrets.GHOST_ADMIN_API_KEY }}" \
-                      -H "Accept-Version: v6.0" \
-                      "${{ secrets.GHOST_ADMIN_API_URL }}/themes/${NAME}/activate/"
+                    -H "Authorization: Ghost $KEY" \
+                    -H "Accept-Version: v6.0" \
+                    "$API/themes/$NAME/activate/"
