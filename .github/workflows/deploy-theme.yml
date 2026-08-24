@@ -15,8 +15,27 @@ jobs:
                   mkdir -p assets/js
                   curl -fsSL https://unpkg.com/@magicpages/ghost-typesense-search-ui/dist/search.min.js -o assets/js/search.min.js
 
-            - name: Deploy Ghost Theme
+            - name: Deploy Ghost Theme (upload)
               uses: TryGhost/action-deploy-theme@v1.6.4
               with:
                   api-url: ${{ secrets.GHOST_ADMIN_API_URL }}
                   api-key: ${{ secrets.GHOST_ADMIN_API_KEY }}
+
+            - name: Activate theme
+              env:
+                  API: ${{ secrets.GHOST_ADMIN_API_URL }}
+                  KEY: ${{ secrets.GHOST_ADMIN_API_KEY }}
+              run: |
+                  set -euo pipefail
+                  b64url() { openssl base64 -A | tr '+/' '-_' | tr -d '='; }
+                  ID="${KEY%%:*}"
+                  SECRET_HEX=$(printf '%s' "${KEY#*:}" | base64 -d | od -An -tx1 | tr -d ' \n')
+                  NOW=$(date +%s)
+                  HEADER=$(printf '{"alg":"HS256","typ":"JWT","kid":"%s"}' "$ID" | b64url)
+                  PAYLOAD=$(printf '{"iat":%d,"exp":%d,"aud":"/admin/"}' "$NOW" "$((NOW+300))" | b64url)
+                  SIG=$(printf '%s.%s' "$HEADER" "$PAYLOAD" | openssl dgst -sha256 -mac HMAC -macopt "hexkey:$SECRET_HEX" -binary | b64url)
+                  TOKEN="$HEADER.$PAYLOAD.$SIG"
+                  NAME="headline"
+                  echo "Activating theme: $NAME"
+                  curl -fsS -H "Authorization: Ghost $TOKEN" -H "Accept-Version: v5.0" \
+                       -X PUT "$API/themes/$NAME/activate/"
