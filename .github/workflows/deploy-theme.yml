@@ -16,7 +16,15 @@ jobs:
                   curl -fsSL https://unpkg.com/@magicpages/ghost-typesense-search-ui/dist/search.min.js -o assets/js/search.min.js
 
             - name: Deploy Ghost Theme
-              uses: TryGhost/action-deploy-theme@v2
+              uses: TryGhost/action-deploy-theme@v1.6.4
               with:
                   api-url: ${{ secrets.GHOST_ADMIN_API_URL }}
                   api-key: ${{ secrets.GHOST_ADMIN_API_KEY }}
+
+            - name: Activate theme
+              run: |
+                  NAME=$(node -p "require('./package.json').name")
+                  curl -fsSL -X PUT \
+                      -H "Authorization: Ghost ${{ secrets.GHOST_ADMIN_API_KEY }}" \
+                      -H "Accept-Version: v6.0" \
+                      "${{ secrets.GHOST_ADMIN_API_URL }}/themes/${NAME}/activate/"
