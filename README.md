@@ -7,7 +7,7 @@ Headline is a [Ghost](https://github.com/TryGhost/Ghost) theme built from the gr
 
 ## Criptonautas update
 
-We take the base of Headline but develop a new concept. Modern, minimalistic, readable and clean 🙂
+We take the base of Headline but develop a new concept. Modern, minimalistic, readable and clean. It uses bigger font-sizes and add a few goodies, you can fork it an adapt it to your website.
 
 
 # Development
