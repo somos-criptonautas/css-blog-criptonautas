@@ -6,77 +6,11 @@ on:
       - main
 jobs:
   deploy:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Verify API target
-        env:
-          API_URL: ${{ secrets.GHOST_ADMIN_API_URL }}
-        run: |
-          echo "--- DIAGNOSTIC ---"
-          SITE_URL=$(echo "$API_URL" | sed 's|/ghost/api/admin.*||')
-          # Extract hostname only (not full URL to avoid secret masking)
-          HOSTNAME=$(echo "$SITE_URL" | sed 's|https\?://||' | sed 's|/.*||')
-          echo "Target hostname: $HOSTNAME"
-          HTTP_CODE=$(curl -s -o /tmp/ghost_site.json -w "%{http_code}" "${SITE_URL}/ghost/api/admin/site/")
-          echo "Site API status: $HTTP_CODE"
-          if [ "$HTTP_CODE" = "200" ]; then
-            python3 -c "
-          import json
-          with open('/tmp/ghost_site.json') as f:
-              data = json.load(f)
-              site = data.get('site', [{}])[0] if isinstance(data.get('site'), list) else data.get('site', {})
-              print(f\"  Ghost version: {site.get('version', '?')}\")
-              print(f\"  Title: {site.get('title', '?')}\")
-          " 2>/dev/null || cat /tmp/ghost_site.json
-          else
-            echo "  Could not reach site API (HTTP $HTTP_CODE)"
-          fi
-          echo "------------------"
-
       - name: Deploy Ghost Theme
         uses: TryGhost/action-deploy-theme@v1.6.4
         with:
           api-url: ${{ secrets.GHOST_ADMIN_API_URL }}
           api-key: ${{ secrets.GHOST_ADMIN_API_KEY }}
-          exclude: ".github pnpm-lock.yaml pnpm-workspace.yaml gulpfile.js README.md CLAUDE.md AGENTS.md LICENSE node_modules *.map"
-
-      - name: Verify upload landed
-        env:
-          API_URL: ${{ secrets.GHOST_ADMIN_API_URL }}
-          API_KEY: ${{ secrets.GHOST_ADMIN_API_KEY }}
-        run: |
-          echo "--- POST-DEPLOY CHECK ---"
-          SITE_URL=$(echo "$API_URL" | sed 's|/ghost/api/admin.*||')
-          # Generate JWT for auth (same as action does)
-          HEADER=$(echo -n '{"alg":"HS256","typ":"JWT","kid":"'$(echo "$API_KEY" | cut -d':' -f1)'"}' | base64 -w0 | tr '+/' '-_' | tr -d '=')
-          NOW=$(date +%s)
-          PAYLOAD=$(echo -n '{"iat":'$NOW',"exp":'$((NOW+300))',"aud":"/admin/"}' | base64 -w0 | tr '+/' '-_' | tr -d '=')
-          SIGNING_INPUT="$HEADER.$PAYLOAD"
-          SECRET=$(echo "$API_KEY" | cut -d':' -f2 | base64 -d | od -An -tx1 | tr -d ' \n')
-          SIGNATURE=$(echo -n "$SIGNING_INPUT" | openssl dgst -sha256 -mac opt -macopt "hexkey:$SECRET" -binary | base64 -w0 | tr '+/' '-_' | tr -d '=')
-          TOKEN="$SIGNING_INPUT.$SIGNATURE"
-          HTTP_CODE=$(curl -s -o /tmp/ghost_themes.json -w "%{http_code}" \
-            "${SITE_URL}/ghost/api/admin/themes/" \
-            -H "Authorization: Ghost $TOKEN" \
-            -H "Accept-Version: v5.0")
-          echo "Themes API status: $HTTP_CODE"
-          if [ "$HTTP_CODE" = "200" ]; then
-            python3 -c "
-          import json
-          with open('/tmp/ghost_themes.json') as f:
-              data = json.load(f)
-              for t in data.get('themes', []):
-                  active = ' *** ACTIVE ***' if t.get('active') else ''
-                  print(f\"  {t['name']} v{t.get('version','?')}{active}\")
-          " 2>/dev/null || cat /tmp/ghost_themes.json
-          else
-            echo "  Could not list themes (HTTP $HTTP_CODE)"
-            cat /tmp/ghost_themes.json 2>/dev/null | head -5
-          fi
-          echo "------------------------"
-
-      - name: Download Typesense Search UI
-        run: |
-          mkdir -p assets/js
-          curl -L https://unpkg.com/@magicpages/ghost-typesense-search-ui/dist/search.min.js -o assets/js/search.min.js
