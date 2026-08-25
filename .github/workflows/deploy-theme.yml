@@ -39,6 +39,7 @@ jobs:
         with:
           api-url: ${{ secrets.GHOST_ADMIN_API_URL }}
           api-key: ${{ secrets.GHOST_ADMIN_API_KEY }}
+          exclude: ".github pnpm-lock.yaml pnpm-workspace.yaml gulpfile.js README.md CLAUDE.md AGENTS.md LICENSE node_modules *.map"
 
       - name: Verify upload landed
         env:
