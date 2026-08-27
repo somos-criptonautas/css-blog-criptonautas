@@ -5296,7 +5296,7 @@ li.nav-coaching a {
 /* Better announcement on mobile */
 @media (max-width: 1024px) {
   .gh-announcement-bar {
-    padding: 43px 48px !important;
+    padding: 1.5rem !important;
   }
 }
 
