@@ -47,18 +47,27 @@
                     <div class="comments-section">
                         <div class="comments-wrap">
                             <small class="global-subtitle-title">{{t "Member discussion"}}</small>
-                            <div id="cusdis_thread" class="disqus-lazy comments-content"
-                                data-host="https://comments.criptonautas.co"
-                                data-app-id="c2d7502c-ccb2-495a-9d67-8a93379b31d8" data-page-id="{{id}}"
-                                data-page-url="{{url absolute=" true"}}" data-page-title="{{title}}">
-                            </div>
+                            <div id='discourse-comments'></div>
+                            <script type="text/javascript">
+                                window.DiscourseEmbed = {
+                                    discourseUrl: 'https://comunidad.criptonautas.co/',
+                                    discourseEmbedUrl: `https://criptonautas.co{{url}}`,
+                                    discourseReferrerPolicy: 'no-referrer-when-downgrade'
+                                };
+                                (function () {
+                                    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+                                    d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+                                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+                                })();
+                            </script>
                         </div>
                     </div>
-                </section>
-                {{/is}}
             </div>
-        </article>
-        {{/post}}
-        {{> "related-posts"}}
+            </section>
+            {{/is}}
+    </div>
+    </article>
+    {{/post}}
+    {{> "related-posts"}}
     </div>
     </main>
