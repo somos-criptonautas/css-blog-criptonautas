@@ -22,13 +22,13 @@
                     <a class="gh-article-tag" href="{{primary_tag.url}}">{{primary_tag.name}}</a>
                     {{/if}}
                     <h1 class="gh-cover-title">{{title}}</h1>
+                    {{#if custom_excerpt}}
+                    <p class="gh-article-excerpt">{{custom_excerpt}}</p>
+                    {{/if}}
                 </div>
             </header>
             {{/if}}
             <div class="gh-author">
-                {{#if custom_excerpt}}
-                <p class="gh-article-excerpt">{{custom_excerpt}}</p>
-                {{/if}}
 
                 {{> "post-meta"}}
             </div>

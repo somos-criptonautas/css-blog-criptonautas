@@ -8,6 +8,9 @@
                 {{/if}}
 
                 <h1 class="gh-article-title">{{title}}</h1>
+                {{#if custom_excerpt}}
+                <p class="gh-article-excerpt">{{custom_excerpt}}</p>
+                {{/if}}
 
                 {{#if feature_image}}
                 <figure class="gh-article-image">
@@ -24,9 +27,6 @@
             </header>
             {{#is "post"}}
             <div class="gh-author">
-                {{#if custom_excerpt}}
-                <p class="gh-article-excerpt">{{custom_excerpt}}</p>
-                {{/if}}
 
                 {{> "post-meta"}}
             </div>
