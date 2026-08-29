@@ -465,7 +465,7 @@ a.gh-card-link:hover {
 
 .gh-author-image img,
 .gh-author-image-list img {
-  max-width: 11rem;
+  max-width: 9rem;
   position: inherit;
   margin-bottom: 2.23rem;
 }
@@ -702,7 +702,7 @@ gh-author-name-list {
 }
 
 .gh-article-meta {
-  font-size: 1.75rem;
+  font-size: 1.35rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -893,7 +893,7 @@ html[data-theme="dark"].gh-pagehead-title {
   box-shadow: 0 6px 24px 0 rgba(154, 39, 250, 0.05),
     0 0 0 1px rgba(0, 0, 0, 0.08);
   opacity: 1;
-  cursor: not-allowed;
+  cursor: help;
 }
 
 /* Label */
@@ -1205,7 +1205,7 @@ html[data-theme="dark"].gh-pagehead-title {
 /* Button
    –––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .global-button-wrapper {
-  cursor: not-allowed;
+  cursor: help;
   margin: 3rem auto;
 }
 
@@ -1817,7 +1817,7 @@ body:not(.is-head-b--a_n) .gh-head-menu::after {
   .gh-full-content,
   .gh-topic .gh-topic-grid {
     display: inherit !important;
-    margin: 0 8vh;
+    margin: 0 3vh;
   }
 }
 
@@ -4007,19 +4007,19 @@ h5 {
 
 @media screen and (max-width: 767px) {
   h2 {
-    font-size: 3.23rem;
+    font-size: 3rem;
   }
 
   h3 {
-    font-size: 2.85rem;
+    font-size: 2.65rem;
   }
 
   h4 {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
 
   h5 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 }
 
