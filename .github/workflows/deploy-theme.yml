@@ -15,4 +15,5 @@ jobs:
           api-url: ${{ secrets.GHOST_ADMIN_API_URL }}
           api-key: ${{ secrets.GHOST_ADMIN_API_KEY }}
           version: 'v5.0'
+          theme-name: 'css-blog-criptonautas-main'
           exclude: ".github pnpm-lock.yaml pnpm-workspace.yaml gulpfile.js README.md CLAUDE.md AGENTS.md LICENSE node_modules *.map"
