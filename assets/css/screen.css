@@ -653,7 +653,7 @@ gh-author-name-list {
 .gh-content>dl,
 .gh-content>ol,
 .gh-content>ul {
-  font-size: 1.87rem;
+  font-size: 1.7rem;
 }
 
 .gh-author-name {
@@ -1725,8 +1725,7 @@ body:not(.is-head-b--a_n) .gh-head-menu::after {
   }
 }
 
-@media screen and (max-width: 767px) {
-}
+@media screen and (max-width: 767px) {}
 
 /* End of toc */
 
@@ -3160,31 +3159,31 @@ display: unset !important;
   padding: 0;
 }
 
-@media screen and (max-width: 1500px) {
-  .gh-sidebar {
-    flex-basis: -moz-available;
-  }
-
-  .toc-list-item {
-    list-style-type: none !important;
-  }
+.toc-list-item {
+  list-style-type: none;
 }
 
-@media screen and (min-width: 992px) and (max-width: 1089px) {
+/* One TOC column across the whole desktop range. Previously it was static
+   (never stuck) and ~280px between 992-1089px, then sticky and derived from
+   width: 56% above 1090px, which grew to ~930px at 1920 and pushed the article
+   off-centre. --toc-width is the only knob. */
+@media screen and (min-width: 992px) {
+  .gh-full-content {
+    gap: var(--toc-gap);
+    align-items: flex-start;
+  }
+
   .gh-sidebar {
-    padding: 0 1.77rem;
+    position: sticky;
+    top: 2.23rem;
+    align-self: flex-start;
+    flex: 0 0 var(--toc-width);
+    max-height: calc(100vh - 4.5rem);
+    padding-right: 1.77rem;
   }
 }
 
 @media screen and (min-width: 1090px) {
-  .gh-sidebar {
-    position: sticky;
-    top: 2.23rem;
-    left: 3rem;
-    align-self: flex-start;
-    width: 56%;
-  }
-
   .kg-width-full img {
     width: 90%;
   }
@@ -3507,8 +3506,7 @@ html[data-theme="dark"] .page-template .gh-cover::before {
   opacity: 0.63;
 }
 
-@media screen and (max-width: 991px) {
-}
+@media screen and (max-width: 991px) {}
 
 #gh-head .gh-head-logo {
   font-size: 2.2rem;
@@ -3579,7 +3577,17 @@ color: var(--color-base) !important;
   font-weight: 500;
 }
 
+/* Overlay anchor that makes a whole card/image clickable (item.hbs, loop.hbs).
+   Lost when basho.css was dropped - the class survived with an unrelated
+   text-transform, so feature images stopped being clickable while titles kept
+   working. Parent is .global-image-orientation, which is position: relative. */
 .global-link {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   text-transform: uppercase;
 }
 
@@ -3823,8 +3831,7 @@ h5 {
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 767px) {
-}
+@media screen and (max-width: 767px) {}
 
 /*
 */
@@ -4810,11 +4817,6 @@ li.nav-coaching a {
 .gh-announcement-bar svg {
   width: 1.3rem !important;
   height: 1.3rem !important;
-}
-
-#cusdis_thread {
-  height: 100%;
-  margin-top: 1.5rem;
 }
 
 /* Hamburger — one place, no !important wars.
