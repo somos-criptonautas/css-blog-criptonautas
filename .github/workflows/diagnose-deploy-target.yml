@@ -38,8 +38,10 @@ jobs:
           const sig = crypto.createHmac('sha256', Buffer.from(secret, 'hex')).update(body).digest('base64url');
           const token = `${body}.${sig}`;
 
+          // The secret may or may not already include /ghost/api/admin.
+          const base = apiUrl.replace(/\/ghost(\/api(\/admin)?)?$/, '');
           const get = async (path) => {
-              const res = await fetch(`${apiUrl}/ghost/api/admin/${path}`, {
+              const res = await fetch(`${base}/ghost/api/admin/${path}`, {
                   headers: {Authorization: `Ghost ${token}`, 'Accept-Version': 'v5.0'}
               });
               if (!res.ok) {
@@ -52,6 +54,7 @@ jobs:
           const host = new URL(apiUrl).host;
           console.log('api-url host is criptonautas.co :', host === 'criptonautas.co');
           console.log('api-url host (redacted length)  :', host.length, 'chars');
+          console.log('api-url pathname                :', JSON.stringify(new URL(apiUrl).pathname));
 
           const main = async () => {
           const site = await get('site/');
