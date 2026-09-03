@@ -9,6 +9,30 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      # The action logs "successfully uploaded" for any 2xx, so when /ghost/ sits
+      # behind a forward-auth proxy the POST is redirected to a login page and
+      # the deploy reports success while Ghost never sees the theme. Fail here
+      # instead: unauthenticated Ghost answers 401 JSON, a proxy answers 3xx.
+      - name: Preflight - Ghost Admin API must be reachable
+        env:
+          API_URL: ${{ secrets.GHOST_ADMIN_API_URL }}
+        run: |
+          url="${API_URL%/}/ghost/api/admin/themes/"
+          code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 "$url" || echo 000)
+          case "$code" in
+            30*)
+              echo "::error::Admin API redirected (HTTP $code). /ghost/ is behind an auth proxy, so theme uploads silently do nothing. Exempt ^/ghost/api/admin/themes/ from it."
+              exit 1
+              ;;
+            401|403|200)
+              echo "Admin API reachable (HTTP $code)."
+              ;;
+            *)
+              echo "::error::Admin API unreachable (HTTP $code)."
+              exit 1
+              ;;
+          esac
+
       - name: Deploy Ghost Theme
         uses: TryGhost/action-deploy-theme@v2
         with:
