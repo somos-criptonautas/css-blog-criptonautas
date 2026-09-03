@@ -1,7 +1,6 @@
 .git
 package-lock.json
 node_modules/
-headline.zip
 node_modules
 yarn-error.log
 yarn.lock
@@ -9,3 +8,4 @@ yarn.lock
 assets/js/canny.js
 assets/built/canny.js
 .prettierignore
+*.zip
