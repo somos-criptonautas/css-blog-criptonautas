@@ -53,6 +53,7 @@ jobs:
           console.log('api-url host is criptonautas.co :', host === 'criptonautas.co');
           console.log('api-url host (redacted length)  :', host.length, 'chars');
 
+          const main = async () => {
           const site = await get('site/');
           console.log('site.url is criptonautas.co     :', /^https?:\/\/criptonautas\.co\/?$/.test(site.site.url));
           console.log('site.title                      :', site.site.title);
@@ -62,4 +63,6 @@ jobs:
           for (const t of themes) {
               console.log(`  ${t.active ? '* ACTIVE ' : '        '} id=${t.name}  package.name=${t.package && t.package.name}`);
           }
+          };
+          main().catch((e) => { console.error(String(e)); process.exit(1); });
           EOF
