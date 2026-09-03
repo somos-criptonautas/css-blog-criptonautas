@@ -17,6 +17,27 @@ const easyimport = require('postcss-easy-import');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 
+// The shared theme flips to the mobile nav at 767px; we want the burger through
+// tablet. Retarget that one breakpoint to 991/992 — but ONLY inside the shared
+// theme's nav CSS. A global rewrite would collapse this theme's own deliberate
+// 768-991px blocks into `min-width: 992px and max-width: 991px`, which never
+// matches. This replaces hand-editing assets/built/screen.css after every build.
+const mobileNavBreakpoint = () => ({
+    postcssPlugin: 'mobile-nav-breakpoint',
+    AtRule: {
+        media(rule) {
+            const file = (rule.source && rule.source.input && rule.source.input.file) || '';
+            if (!/shared-theme-assets\/assets\/css\/v\d\/components\/(header|navbar)\.css$/.test(file)) {
+                return;
+            }
+            rule.params = rule.params
+                .replace(/max-width:\s*767px/g, 'max-width: 991px')
+                .replace(/min-width:\s*768px/g, 'min-width: 992px');
+        }
+    }
+});
+mobileNavBreakpoint.postcss = true;
+
 // translations support
 const { mergeLocales } = require('@tryghost/theme-translations/build');
 const sharedThemeAssetsPath = path.dirname(require.resolve('@tryghost/shared-theme-assets/package.json'));
@@ -48,6 +69,7 @@ function css(done) {
         src('assets/css/home.css', {sourcemaps: true}),
         postcss([
             easyimport,
+            mobileNavBreakpoint(),
             autoprefixer(),
             cssnano()
         ]),
