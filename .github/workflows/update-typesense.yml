@@ -6,42 +6,61 @@ on:
     - cron: '0 0 * * 1'
   # Allow manual trigger
   workflow_dispatch:
-  # Optional: run on push to main branch
-  push:
-    branches:
-      - main
-      - master
+
+permissions:
+  contents: write
 
 jobs:
   update-search-ui:
     runs-on: ubuntu-latest
-    
+
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - uses: pnpm/action-setup@0977fd99725f1db4007ccb2928dbb4e90d06cc86 # v6
+
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
         with:
-          token: ${{ secrets.PAT }}  # Using Personal Access Token instead of default GITHUB_TOKEN
-          persist-credentials: true
-      
+          node-version-file: .nvmrc
+
+      - run: pnpm install --no-frozen-lockfile
+
       - name: Download latest Typesense Search UI
         run: |
-          mkdir -p assets/js
-          curl -L https://unpkg.com/@magicpages/ghost-typesense-search-ui/dist/search.min.js -o assets/js/typesense-search.min.js
-          
-      - name: Check for changes
+          curl --fail --silent --show-error --location \
+            https://unpkg.com/@magicpages/ghost-typesense-search-ui/dist/search.min.js \
+            -o assets/js/typesense-search.min.js
+
+      - name: Check for a new version
         id: git-check
         run: |
-          git add -A
-          if git diff --staged --quiet; then
-            echo "changed=false" >> $GITHUB_OUTPUT
+          if git diff --quiet -- assets/js/typesense-search.min.js; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           else
-            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
-          
-      - name: Commit and push if changed
+
+      # assets/js/*.js is concatenated into built/main.min.js, which is what the
+      # theme actually loads. Without this the download never reaches the site.
+      - name: Rebuild bundled assets
+        if: steps.git-check.outputs.changed == 'true'
+        run: pnpm exec gulp build
+
+      - name: Commit and push
         if: steps.git-check.outputs.changed == 'true'
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          git add assets/js/typesense-search.min.js assets/built
           git commit -m "Update Typesense Search UI to latest version"
           git push
+
+      # A GITHUB_TOKEN push does not trigger Deploy Theme, so ship it here.
+      - name: Deploy theme
+        if: steps.git-check.outputs.changed == 'true'
+        uses: TryGhost/action-deploy-theme@v2
+        with:
+          api-url: ${{ secrets.GHOST_ADMIN_API_URL }}
+          api-key: ${{ secrets.GHOST_ADMIN_API_KEY }}
+          version: 'v5.0'
+          exclude: ".github pnpm-lock.yaml pnpm-workspace.yaml gulpfile.js README.md CLAUDE.md AGENTS.md LICENSE node_modules *.map"
