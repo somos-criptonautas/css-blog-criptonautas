@@ -1,0 +1,5 @@
+# Prettier reformats Ghost handlebars inside HTML attributes, turning
+# {{social_url type="twitter"}} into {{social_url type=" twitter"}} and
+# {{{block "body_class"}}} into {{{block " body_class"}}}. Both silently break.
+*.hbs
+assets/built/
