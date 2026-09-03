@@ -575,7 +575,11 @@ gh-author-name-list {
 }
 
 .post-template .gh-cover {
-  --cover-height: 100% !important;
+  /* Was 100% !important, which never applied: min-height is a percentage of a
+     parent with no definite height, so it resolved to auto. The !important
+     also outranked the inline value main.js was setting, making that dead
+     code (now removed). A viewport unit actually resolves. */
+  --cover-height: 60vh;
 
   align-items: flex-end;
   padding-top: 120px;
@@ -1849,6 +1853,15 @@ html[data-theme="dark"] img.logo-nav.logo-light {
   display: block !important;
 }
 
+/* The .logo-dark slot exists for the white logo shown over a cover image and
+   in dark mode. No white logo is configured, so it falls back to the normal
+   (dark) logo - invisible in exactly the places the slot is for. Paint the
+   fallback white. Drops out automatically once a white logo is uploaded,
+   because the template only adds this class when the setting is empty. */
+img.logo-nav.logo-dark--inverted {
+  filter: brightness(0) invert(1);
+}
+
 .it-dark-light:hover .icon-dark svg {
   fill: #111;
 }
@@ -2847,9 +2860,10 @@ blockquote.twitter-tweet {
   margin-bottom: 6.11rem;
 }
 
+/* One logical shorthand instead of two physical properties layered over the
+   shared theme's own padding-top/padding-bottom. */
 .gh-main {
-  padding-bottom: 3rem;
-  padding-top: 7rem;
+  padding-block: 7rem 3rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -2880,7 +2894,7 @@ blockquote.twitter-tweet {
 
 @media screen and (max-width: 767px) {
   .gh-main {
-    padding: 5rem 0;
+    padding-block: 5rem;
   }
 }
 
@@ -2994,6 +3008,9 @@ a {
 
 .gh-site {
   min-height: auto !important;
+  /* keeps the last elements clear of the viewport edge on full-featured
+     image pages and posts */
+  padding-bottom: 1rem;
 }
 
 .gh-outer {
@@ -3095,35 +3112,26 @@ html[data-theme="dark"] .kg-toggle-card {
   }
 }
 
+/* Mobile-first and each property declared once. Was five rules across four
+   min/max breakpoint pairs, re-stating display twice and margin three times.
+   Computed values are unchanged at every width; only the small-screen display
+   moves from flow-root to grid, which this single-child block renders the
+   same. */
 .gh-author {
-  display: flow-root;
+  display: grid;
+  width: 90%;
   margin: 4.23rem auto 2.11rem;
 }
 
-.page-lounge .gh-author {
-  display: none;
-}
-
-@media screen and (max-width: 767px) {
-  .gh-author {
-    width: 90%;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) {
   .gh-author {
     width: 75%;
   }
-
-  .gh-article-excerpt {
-    font-size: 2rem !important;
-  }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1349px) {
+@media screen and (min-width: 992px) {
   .gh-author {
     width: 80%;
-    display: grid;
     margin: 7rem auto;
   }
 }
@@ -3131,8 +3139,17 @@ html[data-theme="dark"] .kg-toggle-card {
 @media screen and (min-width: 1350px) {
   .gh-author {
     width: 70%;
-    display: grid;
-    margin: 7rem auto 11rem;
+    margin-bottom: 11rem;
+  }
+}
+
+.page-lounge .gh-author {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .gh-article-excerpt {
+    font-size: 2rem !important;
   }
 }
 
@@ -3579,6 +3596,15 @@ html[data-theme="dark"] .page-template .gh-cover::before {
 #gh-head .gh-head-btn {
   font-weight: 500;
   opacity: 1;
+}
+
+/* shared-theme-assets 2.7.3 added `.nav a { display: inline-flex }` to align
+   optional Ghost nav icons. That collapses the anchor to its content height,
+   so the li shrinks and the hover underline - an inset box-shadow on the li -
+   sits tight against the text instead of below it. This nav uses no Ghost nav
+   icons, so keep the previous inline flow. */
+#gh-head .nav a {
+  display: inline;
 }
 
 @media screen and (min-width: 992px) {

@@ -8,10 +8,11 @@
     const cover = document.querySelector('.gh-cover');
     if (!cover) return;
 
-    const image = cover.querySelector('.gh-cover-image');
-
+    // Height belongs to --cover-height in CSS. This used to compute it from the
+    // image's aspect ratio, but a stylesheet !important outranked the inline
+    // value so it never took effect - and it dereferenced .gh-cover-image,
+    // which is absent on a post with no feature image.
     window.addEventListener('load', function () {
-        cover.style.setProperty('--cover-height', image.clientWidth * image.naturalHeight / image.naturalWidth + 'px');
         cover.classList.remove('loading');
     });
 })();
