@@ -13,8 +13,21 @@
   --content-font-size: 1.6rem;
 }
 
+/* Posts put .gh-author / post-meta between the header and the body, so the
+   shared theme's 4rem top margin is doubled there and gets zeroed. */
 .gh-content {
   margin-top: 0;
+}
+
+/* Pages have nothing between the header and the body, so zeroing it ran the
+   first paragraph straight into the title. Put the shared spacing back. */
+.page-template .gh-content.gh-canvas {
+  margin-top: 4rem;
+}
+
+/* Subtitle sits directly under the cover title. */
+.gh-cover-content .gh-article-excerpt {
+  margin-top: 1.2rem;
 }
 
 a:hover {
@@ -476,24 +489,39 @@ gh-author-name-list {
   letter-spacing: -0.01em;
 }
 
+/* Author social icons. The link box and the icon must be the same size: an
+   18px box with a 2.33rem (~26px) icon inside overflowed and knocked the row
+   out of line. One size, spacing from gap only. */
 .gh-author-social {
   display: flex;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 1.6rem;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 
 .gh-author-social-link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 18px;
-  height: 18px;
+  width: 2.4rem;
+  height: 2.4rem;
+  color: var(--color-base);
+  opacity: 0.63;
+  transition: opacity 0.2s ease;
 }
 
+.gh-author-social-link:hover,
+.gh-author-social-link:active {
+  opacity: 1;
+}
+
+/* The icons ship with different viewBoxes (16, 22, 24, 512), so pin both axes
+   and let the SVG scale inside its box rather than trusting intrinsic size. */
 .gh-author-social svg {
-  width: 18px;
-  height: 18px;
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
 }
 
 .gh-article-meta {
@@ -1675,17 +1703,27 @@ body:not(.is-head-b--a_n) .gh-head-menu::after {
 .toc {
   display: flex;
   flex-direction: column;
-  position: sticky;
-  top: 2rem;
+  /* the sticky lives on .gh-sidebar; nesting a second one here did nothing */
   font-size: 1.8rem;
-  line-height: 1.27;
+  line-height: 1.35;
   overflow-y: auto;
 }
 
 .toc-list-item {
-  padding: 1rem 0 0.5rem;
+  padding: 0.6rem 0;
   opacity: 0.63;
   list-style: none;
+}
+
+/* tocbot nests an h2 list inside its h1 item - indent it so the hierarchy reads */
+.toc-list .toc-list {
+  padding-left: 1.6rem;
+}
+
+a.toc-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 992px) {
@@ -1698,8 +1736,11 @@ body:not(.is-head-b--a_n) .gh-head-menu::after {
   }
 }
 
+/* padding: 1rem indented the reading-time heading while .toc-list sits at
+   padding: 0, so the heading and the links had different left edges. */
 .gh-sidebar h3 {
-  padding: 1rem;
+  margin: 0 0 1.2rem;
+  padding: 0;
   font-size: 2.1rem;
 }
 
@@ -2349,13 +2390,8 @@ body,
   margin: 3rem auto;
 }
 
-.gh-author-social svg {
-  height: 2.33rem;
-  width: 2.33rem;
-  color: var(--color-base);
-  vertical-align: middle;
-  margin-right: 0.53rem;
-}
+/* (the old .gh-author-social svg override lived here; it fought the sizing
+   above and added an uneven margin-right on top of the flex gap) */
 
 .author-template .archive-title {
   cursor: none;
@@ -3156,6 +3192,7 @@ display: unset !important;
 }
 
 .toc-list {
+  margin: 0;
   padding: 0;
 }
 

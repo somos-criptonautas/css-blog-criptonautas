@@ -95,10 +95,14 @@ function getJsFiles(version) {
 
 function js(done) {
     pump([
-        src([
-            'node_modules/@tryghost/shared-theme-assets/assets/js/v1/lib/**/*.js',
-            'node_modules/@tryghost/shared-theme-assets/assets/js/v1/main.js',
-            'assets/js/*.js',
+        // Order matters: the shared main.js calls reframe(), which the vendor
+        // lib defines. A single src([...]) with several globs does not preserve
+        // order across patterns - it emitted main.js first and the bundle threw
+        // "reframe is not defined", aborting every script after it.
+        order([
+            src(`${sharedThemeAssetsPath}/assets/js/v1/lib/**/*.js`, {sourcemaps: true}),
+            src(`${sharedThemeAssetsPath}/assets/js/v1/main.js`, {sourcemaps: true}),
+            src('assets/js/*.js', {sourcemaps: true}),
         ], {sourcemaps: true}),
         concat('main.min.js'),
         uglify(),
