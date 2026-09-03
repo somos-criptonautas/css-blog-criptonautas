@@ -27,7 +27,9 @@
     <link rel="stylesheet" href="{{asset "built/home.css"}}">
     {{/is}}
     {{/if}}
-    {{ghost_head}}
+    {{! Portal is not used on this site. Excluding it stops Ghost injecting
+        the members script; the exclude list is Ghost's supported switch. }}
+    {{ghost_head exclude="portal"}}
 
 </head>
 
