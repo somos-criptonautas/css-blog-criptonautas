@@ -1,19 +1,5 @@
 <script src="{{asset "built/main.min.js"}}"></script>
 <script>
-  // Dark/Light Mode
-
-  var darkLight = document.querySelector('.it-dark-light')
-  darkLight.addEventListener('click', function () {
-    if (document.querySelector('html').getAttribute('data-theme') === 'dark') {
-      document.querySelector('html').setAttribute('data-theme', 'light')
-      localStorage.setItem('selected-theme', 'light');
-    } else {
-      document.querySelector('html').setAttribute('data-theme', 'dark')
-      localStorage.setItem('selected-theme', 'dark');
-    }
-    console.log(document.querySelector('html').hasAttribute('data-theme'))
-  });
-
   /**
  * Boilerplate Functions
  */
@@ -85,7 +71,6 @@
     }
   });
 </script>
-<script defer async src="https://comments.criptonautas.co/js/cusdis.es.js" type="module"></script>
 <script src="{{asset "js/webmentions.js"}}"></script>
 {{/is}}
 

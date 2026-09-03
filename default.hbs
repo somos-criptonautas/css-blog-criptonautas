@@ -17,14 +17,51 @@
     <script
         src='https://pay.criptonautas.co/plugins/Ftaic9XyP8AYSuMKrU2bxw7PrAn9DZjyJKGY62BXThy1/ghost/public/paywall/btcpay-ghost-paywall.js'></script>
     <script>
-        if (typeof (Storage) !== 'undefined') {
-            if (localStorage.getItem('selected-theme') == 'light') {
-                document.documentElement.setAttribute('data-theme', 'light');
+        // Theme. An explicit choice wins and is remembered; with no choice made,
+        // follow the OS setting and keep following it when the OS flips.
+        // Inline and blocking on purpose, so there is no flash of the wrong theme.
+        (function () {
+            var media = window.matchMedia('(prefers-color-scheme: dark)');
+
+            function chosen() {
+                try {
+                    var v = localStorage.getItem('selected-theme');
+                    return v === 'light' || v === 'dark' ? v : null;
+                } catch (e) {
+                    return null; // storage blocked (private mode, cookie settings)
+                }
             }
-            else if (localStorage.getItem('selected-theme') == 'dark') {
-                document.documentElement.setAttribute('data-theme', 'dark');
+
+            function apply(theme) {
+                document.documentElement.setAttribute('data-theme', theme);
             }
-        }
+
+            apply(chosen() || (media.matches ? 'dark' : 'light'));
+
+            media.addEventListener('change', function (e) {
+                if (!chosen()) {
+                    apply(e.matches ? 'dark' : 'light');
+                }
+            });
+
+            document.addEventListener('DOMContentLoaded', function () {
+                var toggle = document.querySelector('.it-dark-light');
+                if (!toggle) {
+                    return;
+                }
+                toggle.addEventListener('click', function () {
+                    var next = document.documentElement.getAttribute('data-theme') === 'dark'
+                        ? 'light'
+                        : 'dark';
+                    try {
+                        localStorage.setItem('selected-theme', next);
+                    } catch (e) {
+                        // fall through: the theme still applies for this page view
+                    }
+                    apply(next);
+                });
+            });
+        })();
     </script>
     {{#if @member}}
     {{else}}
@@ -37,7 +74,7 @@
 
 </head>
 
-<body class="{{body_class}}{{{block " body_class"}}} {{#if
+<body class="{{body_class}}{{{block "body_class"}}} {{#if
     @site.description}}is-head-b--a_n{{else}}is-head-b--n--a{{/if}}{{#is "tag" }}{{/is}}">
     <div class="gh-site">
         <header id="gh-head" class="gh-head gh-outer">
@@ -73,14 +110,14 @@
                         {{/unless}}
                         <div class="nav-icons">
                             <button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button>
-                            <div class="it-dark-light gh-icon-btn">
+                            <button type="button" class="it-dark-light gh-icon-btn" aria-label="{{t "Toggle theme"}}">
                                 <div class="icon-dark">
                                     {{> icons/light}}
                                 </div>
                                 <div class="icon-light">
                                     {{> icons/dark}}
                                 </div>
-                            </div>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -113,10 +150,10 @@
             {{navigation type="secondary"}}
         </nav>
         <div class="it-foot-social">
-            <a href="https://github.com/somos-criptonautas/" class="github" title="{{t " Github"}}" target="_blank"
-                rel="noopener" aria-label="{{t " Github"}}">{{> "icons/github"}}</a>
-            <a href="{{@site.url}}/rss/" class="rss" title="{{t " RSS"}}" target="_blank" rel="noopener"
-                aria-label="{{t " RSS"}}">{{> "icons/rss"}}</a>
+            <a href="https://github.com/somos-criptonautas/" class="github" title="{{t "Github"}}" target="_blank"
+                rel="noopener" aria-label="{{t "Github"}}">{{> "icons/github"}}</a>
+            <a href="{{@site.url}}/rss/" class="rss" title="{{t "RSS"}}" target="_blank" rel="noopener"
+                aria-label="{{t "RSS"}}">{{> "icons/rss"}}</a>
         </div>
         <span class="no-estamos">(no estamos en Discord)</span>
         <div class="gh-copyright">

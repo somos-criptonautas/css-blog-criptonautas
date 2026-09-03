@@ -1,25 +1,3 @@
-const html = document.documentElement;
-
-document.addEventListener('DOMContentLoaded', function() {
-    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-
-    function applyTheme() {
-        if (prefersDarkScheme.matches) {
-            html.classList.add('dark');
-        } else {
-            html.classList.remove('dark');
-        }
-    }
-
-    // Apply theme on initial load
-    applyTheme();
-
-    // Listen for changes in the color scheme preference
-    prefersDarkScheme.addEventListener('change', applyTheme);
-
-    darkMode();
-});
-
 (function () {
     pagination(true);
 })();
@@ -42,18 +20,7 @@ const removeAccents = (str) => {
     return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
   }
 
-function darkMode() {
-    const darkLight = document.querySelector('.it-dark-light');
-    if (darkLight) {
-        darkLight.addEventListener('click', function () {
-            if (html.classList.contains('dark')) {
-                html.classList.remove('dark');
-            } else {
-                html.classList.add('dark');
-            }
-        });
-    }
-}
+
 
 /* Progress bar
    –––––––––––––––––––––––––––––––––––––––––––––––––––– 
