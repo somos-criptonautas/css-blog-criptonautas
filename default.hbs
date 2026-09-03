@@ -16,53 +16,10 @@
     <link rel="preconnect" href="https://comunidad.criptonautas.co">
     <script
         src='https://pay.criptonautas.co/plugins/Ftaic9XyP8AYSuMKrU2bxw7PrAn9DZjyJKGY62BXThy1/ghost/public/paywall/btcpay-ghost-paywall.js'></script>
-    <script>
-        // Theme. An explicit choice wins and is remembered; with no choice made,
-        // follow the OS setting and keep following it when the OS flips.
-        // Inline and blocking on purpose, so there is no flash of the wrong theme.
-        (function () {
-            var media = window.matchMedia('(prefers-color-scheme: dark)');
-
-            function chosen() {
-                try {
-                    var v = localStorage.getItem('selected-theme');
-                    return v === 'light' || v === 'dark' ? v : null;
-                } catch (e) {
-                    return null; // storage blocked (private mode, cookie settings)
-                }
-            }
-
-            function apply(theme) {
-                document.documentElement.setAttribute('data-theme', theme);
-            }
-
-            apply(chosen() || (media.matches ? 'dark' : 'light'));
-
-            media.addEventListener('change', function (e) {
-                if (!chosen()) {
-                    apply(e.matches ? 'dark' : 'light');
-                }
-            });
-
-            document.addEventListener('DOMContentLoaded', function () {
-                var toggle = document.querySelector('.it-dark-light');
-                if (!toggle) {
-                    return;
-                }
-                toggle.addEventListener('click', function () {
-                    var next = document.documentElement.getAttribute('data-theme') === 'dark'
-                        ? 'light'
-                        : 'dark';
-                    try {
-                        localStorage.setItem('selected-theme', next);
-                    } catch (e) {
-                        // fall through: the theme still applies for this page view
-                    }
-                    apply(next);
-                });
-            });
-        })();
-    </script>
+    <!-- Blocking on purpose: sets the theme before first paint. External
+         rather than inline because the CSP allowlists script hashes, which
+         disables 'unsafe-inline' and would block any edited inline script. -->
+    <script src="{{asset "js/theme.js"}}"></script>
     {{#if @member}}
     {{else}}
     {{#is "home"}}
@@ -85,8 +42,14 @@
                                 class="gh-head-logo">{{/is}}
                                 {{#if @site.logo}}
                                 <img class="logo-nav logo-light" src="{{@site.logo}}" alt="{{@site.title}}">
+                                {{! On a transparent header the CSS hides
+                                    .logo-light and shows .logo-dark, so when the
+                                    white-logo setting is empty this rendered
+                                    src="" - a broken image, which paints its alt
+                                    text and looks like "logo missing, title
+                                    showing". Fall back to the site logo. }}
                                 <img class="logo-nav logo-dark"
-                                    src="{{@custom.white_publication_logo_for_transparent_header}}"
+                                    src="{{#if @custom.white_publication_logo_for_transparent_header}}{{@custom.white_publication_logo_for_transparent_header}}{{else}}{{@site.logo}}{{/if}}"
                                     alt="{{@site.title}}">
                                 {{else}}
                                 {{@site.title}}

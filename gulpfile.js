@@ -102,7 +102,10 @@ function js(done) {
         order([
             src(`${sharedThemeAssetsPath}/assets/js/v1/lib/**/*.js`, {sourcemaps: true}),
             src(`${sharedThemeAssetsPath}/assets/js/v1/main.js`, {sourcemaps: true}),
-            src('assets/js/*.js', {sourcemaps: true}),
+            // theme.js is loaded on its own in <head> before first paint;
+            // bundling it too would register the toggle handler twice and
+            // cancel every click.
+            src(['assets/js/*.js', '!assets/js/theme.js'], {sourcemaps: true}),
         ], {sourcemaps: true}),
         concat('main.min.js'),
         uglify(),
