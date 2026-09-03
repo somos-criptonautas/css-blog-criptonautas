@@ -1,0 +1,65 @@
+name: Diagnose deploy target
+
+# Temporary, manual-only. Answers two questions the deploy logs cannot:
+#   1. which Ghost site GHOST_ADMIN_API_URL actually points at
+#   2. what the installed theme ids are, and which one is active
+# Prints no secret values - only booleans and theme names.
+
+on:
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: 24
+
+      - name: Query the Admin API
+        env:
+          API_URL: ${{ secrets.GHOST_ADMIN_API_URL }}
+          API_KEY: ${{ secrets.GHOST_ADMIN_API_KEY }}
+        run: |
+          node <<'EOF'
+          const crypto = require('crypto');
+
+          const apiUrl = (process.env.API_URL || '').replace(/\/+$/, '');
+          const [id, secret] = (process.env.API_KEY || '').split(':');
+          if (!apiUrl || !id || !secret) {
+              throw new Error('GHOST_ADMIN_API_URL or GHOST_ADMIN_API_KEY is empty');
+          }
+
+          const b64 = (o) => Buffer.from(JSON.stringify(o)).toString('base64url');
+          const iat = Math.floor(Date.now() / 1000);
+          const body = `${b64({alg: 'HS256', typ: 'JWT', kid: id})}.${b64({iat, exp: iat + 300, aud: '/admin/'})}`;
+          const sig = crypto.createHmac('sha256', Buffer.from(secret, 'hex')).update(body).digest('base64url');
+          const token = `${body}.${sig}`;
+
+          const get = async (path) => {
+              const res = await fetch(`${apiUrl}/ghost/api/admin/${path}`, {
+                  headers: {Authorization: `Ghost ${token}`, 'Accept-Version': 'v5.0'}
+              });
+              if (!res.ok) {
+                  throw new Error(`${path} -> HTTP ${res.status} ${await res.text()}`);
+              }
+              return res.json();
+          };
+
+          // Do not print the URL itself; report what it resolves to instead.
+          const host = new URL(apiUrl).host;
+          console.log('api-url host is criptonautas.co :', host === 'criptonautas.co');
+          console.log('api-url host (redacted length)  :', host.length, 'chars');
+
+          const site = await get('site/');
+          console.log('site.url is criptonautas.co     :', /^https?:\/\/criptonautas\.co\/?$/.test(site.site.url));
+          console.log('site.title                      :', site.site.title);
+
+          const {themes} = await get('themes/');
+          console.log('\ninstalled themes:');
+          for (const t of themes) {
+              console.log(`  ${t.active ? '* ACTIVE ' : '        '} id=${t.name}  package.name=${t.package && t.package.name}`);
+          }
+          EOF
