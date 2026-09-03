@@ -3599,28 +3599,6 @@ blockquote.kg-blockquote-alt {
   }
 }
 
-/* New hamburger */
-
-.gh-burger::before,
-.gh-burger::after {
-  left: 1.5rem !important;
-  top: 2.5rem !important;
-}
-
-.is-head-open .gh-burger {
-  background-color: transparent;
-}
-
-.is-head-open .gh-burger::before {
-  top: 2.5rem !important;
-}
-
-.is-head-open .gh-burger::before,
-.is-head-open .gh-burger::after {
-  color: var(--color-primary) !important;
-  opacity: 1 !important;
-}
-
 .gh-content>ol {
   font-size: inherit;
 }
@@ -3666,11 +3644,6 @@ blockquote.kg-blockquote-alt {
 
 .kg-header-card.kg-size-small h2.kg-header-card-header {
   font-size: 3.33rem;
-}
-
-.gh-burger::after,
-.gh-burger::before {
-  background-color: var(--color-base);
 }
 
 @media screen and (max-width: 991px) {
@@ -3774,13 +3747,6 @@ ol>li>ol {
   }
 }
 
-.gh-burger::after,
-.gh-burger::before {
-  height: 3px;
-  width: 3.75rem;
-  color: var(--color-base);
-}
-
 body.page-template {
   background: var(--color-bg);
 }
@@ -3799,62 +3765,16 @@ html[data-theme="dark"] body.page-template.page-ingresa {
   overflow: hidden;
 }
 
-html[data-theme="dark"] .gh-burger {
-  opacity: 1;
-}
-
 html[data-theme="dark"] .post-template .gh-cover::before,
 html[data-theme="dark"] .page-template .gh-cover::before {
   opacity: 0.63;
 }
 
-html[data-theme="dark"] .gh-burger::before,
-html[data-theme="dark"] .gh-burger::after {
-  background-color: var(--color-bg) !important;
-}
-
-html[data-theme="dark"] .is-head-open .gh-burger {
-  background-color: transparent !important;
-}
-
-html[data-theme="dark"] .is-head-open .gh-burger::after,
-html[data-theme="dark"] .is-head-open .gh-burger::before {
-  background-color: var(--color-base) !important;
-}
-
-.gh-burger {
-  display: none;
-  position: fixed;
-  right: 2rem;
-  width: 6.66rem;
-  height: 5.66rem;
-  background-color: var(--color-light-gray);
-  opacity: 0.77;
-  top: 1.5rem;
-  border-radius: 0.5rem;
-  z-index: 11;
-}
-
 @media screen and (max-width: 991px) {
-  html[data-intro="hide"] .gh-burger {
-    display: inherit;
-  }
-}
-
-.is-head-open .gh-burger {
-  opacity: 1;
 }
 
 #gh-head .gh-head-logo {
   font-size: 2.2rem;
-}
-
-.gh-burger::before {
-  top: 3.33rem !important;
-}
-
-.is-head-open .gh-burger::before {
-  top: 2.5rem !important;
 }
 
 @media screen and (max-width: 767px) {
@@ -3867,10 +3787,6 @@ html[data-theme="dark"] .is-head-open .gh-burger::before {
 @media screen and (max-width: 991px) {
   #gh-head .gh-head-btn {
     padding: 1.66rem 0 !important;
-  }
-
-  .gh-burger {
-    display: block;
   }
 
   #gh-head .gh-head-btn {
@@ -3897,16 +3813,6 @@ html[data-theme="dark"] .is-head-open .gh-burger::before {
   .is-head-open #gh-head .gh-head-inner {
     grid-template-rows: none;
   }
-}
-
-.is-head-open:not(.is-head-transparent) .gh-burger::after,
-.is-head-open:not(.is-head-transparent) .gh-burger::before {
-  background-color: var(--color-base);
-}
-
-.is-head-transparent .gh-burger::after,
-.is-head-transparent .gh-burger::before {
-  background-color: var(--color-base) !important;
 }
 
 .is-head-brand:not(.is-head-transparent) .gh-head {
@@ -5308,4 +5214,123 @@ li.nav-coaching a {
 #cusdis_thread {
   height: 100%;
   margin-top: 1.5rem;
+}
+
+/* Hamburger — one place, no !important wars.
+   Box is a fixed rounded square; both bars are centred on it, so the
+   closed state is symmetric and the open state's X sits dead centre. */
+
+.gh-burger {
+  display: none;
+  position: fixed;
+  top: 1.5rem;
+  right: 2rem;
+  width: 5.66rem;
+  height: 5.66rem;
+  background-color: var(--color-light-gray);
+  border-radius: var(--border-radius);
+  opacity: 0.77;
+  z-index: 11;
+}
+
+@media screen and (max-width: 991px) {
+  .gh-burger {
+    display: block;
+  }
+}
+
+.gh-burger::before,
+.gh-burger::after {
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  width: 3.4rem;
+  height: 3px;
+  border-radius: 3px;
+  background-color: var(--color-base);
+}
+
+/* The box is always light, so keep the bars dark on transparent/dark/brand
+   headers instead of the shared theme's white. */
+.is-head-transparent .gh-burger::before,
+.is-head-transparent .gh-burger::after,
+.is-head-dark:not(.is-head-transparent) .gh-burger::before,
+.is-head-dark:not(.is-head-transparent) .gh-burger::after,
+.is-head-brand:not(.is-head-transparent) .gh-burger::before,
+.is-head-brand:not(.is-head-transparent) .gh-burger::after {
+  background-color: var(--color-base);
+}
+
+.gh-burger::before {
+  transform: translate(-50%, calc(-50% - 0.55rem));
+}
+
+.gh-burger::after {
+  transform: translate(-50%, calc(-50% + 0.55rem));
+}
+
+.is-head-open .gh-burger {
+  opacity: 1;
+  background-color: transparent;
+}
+
+.is-head-open .gh-burger::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.is-head-open .gh-burger::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+html[data-theme="dark"] .gh-burger::before,
+html[data-theme="dark"] .gh-burger::after {
+  background-color: var(--color-bg);
+}
+
+html[data-theme="dark"] .is-head-open .gh-burger::before,
+html[data-theme="dark"] .is-head-open .gh-burger::after {
+  background-color: var(--color-base);
+}
+
+/* Migrated from the retired basho.css — the only rules there that the
+   templates still depend on. Basho's own custom properties are replaced
+   with the theme's. */
+
+/* loop.hbs renders all three author labels and relies on this to show
+   exactly one, picked by the .option-* class. */
+.global-authors small {
+  display: none;
+  width: 100%;
+  margin-top: 1.5vh;
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.global-authors.option-1 small:nth-of-type(1),
+.global-authors.option-1-2 small:nth-of-type(2),
+.global-authors.option-1-2-3 small:nth-of-type(3) {
+  display: block;
+}
+
+.comments-wrap {
+  border-top: 1px solid var(--color-border);
+}
+
+.account-signout-wrap {
+  width: 100%;
+  margin-top: 2vh;
+  padding-top: 18px;
+  text-align: right;
+  border-top: 1px solid var(--color-border);
+}
+
+/* Invisible last-featured-item marker (item.hbs). */
+.featured-wrap .item-image .is-last {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 10px;
+  width: 1px;
+  height: 1px;
+  background-color: transparent;
 }
