@@ -321,8 +321,9 @@ a.gh-card-link:hover {
 .gh-topic-grid .gh-card:not(.large) .gh-card-excerpt {
   display: -webkit-box;
   margin-top: 0.5rem;
-  overflow-y: hidden;
+  overflow: hidden;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
 }
 
@@ -1107,7 +1108,7 @@ html[data-theme="dark"].gh-pagehead-title {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .membership-switch {
     max-width: 300px;
     min-height: 50px;
@@ -1414,7 +1415,7 @@ html[data-theme="dark"].custom-no-feature-sign p a {
 
 /* Media queries */
 
-@media (min-width: 767px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   :root {
     --h1-size: 3.53rem;
   }
@@ -1594,16 +1595,6 @@ html[data-theme="dark"].custom-no-feature-sign p a {
   font-size: 3rem;
 }
 
-@media screen and (min-width: 992px) and (max-width: 1199) {
-  .is-head-open.gh-head-btn.gh-btn {
-    display: none;
-  }
-
-  .gh-head-btn.gh-btn {
-    min-width: 18rem;
-  }
-}
-
 .gh-head-btn.gh-btn {
   font-size: 2.11rem;
   padding: 1rem 2rem;
@@ -1769,8 +1760,6 @@ a.toc-link {
     margin: 50px auto 0px;
   }
 }
-
-@media screen and (max-width: 767px) {}
 
 /* End of toc */
 
@@ -2075,7 +2064,7 @@ body,
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .membership-switch {
     max-width: 300px;
     min-height: 50px;
@@ -2238,7 +2227,7 @@ body,
   padding-left: var(--margin-wrap-left-right);
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .post-header-wrap.is-center {
     text-align: center;
   }
@@ -2326,7 +2315,7 @@ body,
   }
 }
 
-@media (max-width: 1480px) and (min-width: 769px) {
+@media (max-width: 1480px) and (min-width: 768px) {
 
   .post-header-wrap.is-classic .post-header-content,
   .post-header-wrap.is-classic .post-header-image {
@@ -2938,56 +2927,6 @@ body:not(.is-dropdown-loaded) .gh-head-menu .nav>li {
   }
 }
 
-/*iPad Pro 9.7"*/
-/* Portrait */
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  html {
-    font-size: 67%;
-  }
-}
-
-/* Landscape */
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  html {
-    font-size: 63%;
-  }
-}
-
-/*iPad Pro 10.5"*/
-/* Portrait */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media screen and (min-width: 834px) and (max-width: 834px) and (orientation: portrait) {
-  html {
-    font-size: 53%;
-  }
-}
-
-/* Landscape */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media screen and (min-width: 1112px) and (max-width: 1112px) and (orientation: landscape) {
-  html {
-    font-size: 67%;
-  }
-}
-
-/*ipad PRo 12.9"*/
-/* Portrait */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: portrait) {
-  html {
-    font-size: 67%;
-  }
-}
-
-@media screen and (min-width: 1350) {
-  html {
-    font-size: 77%;
-  }
-}
-
 a {
   color: var(--color-base);
 }
@@ -3179,7 +3118,7 @@ display: unset !important;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1249px) {
+@media screen and (min-width: 768px) and (max-width: 1249px) {
   .gh-head-actions {
     display: unset !important;
   }
@@ -3372,7 +3311,7 @@ blockquote.kg-blockquote-alt {
   font-size: 2.23rem;
 }
 
-@media screen and (min-width: 767px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .kg-image-card {
     max-width: 90%;
     margin-left: auto;
@@ -3550,8 +3489,6 @@ html[data-theme="dark"] .post-template .gh-cover::before,
 html[data-theme="dark"] .page-template .gh-cover::before {
   opacity: 0.63;
 }
-
-@media screen and (max-width: 991px) {}
 
 #gh-head .gh-head-logo {
   font-size: 2.2rem;
@@ -3885,8 +3822,6 @@ h5 {
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 767px) {}
-
 /*
 */
 
@@ -4063,7 +3998,7 @@ border-bottom-right-radius: 0; */
 
 /* RWD — Account page
     –––––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .account-header {
     padding-bottom: 5vh;
   }
@@ -4114,6 +4049,7 @@ border-bottom-right-radius: 0; */
 
 .custom-archive .loop-wrap.is-tags .item-excerpt {
   -webkit-line-clamp: 3;
+  line-clamp: 3;
 }
 
 /* RWD — Authors & Tags page
@@ -4125,6 +4061,7 @@ border-bottom-right-radius: 0; */
 
   .custom-archive .loop-wrap.is-authors .item-excerpt {
     -webkit-line-clamp: 6;
+    line-clamp: 6;
   }
 }
 
@@ -4140,7 +4077,7 @@ border-bottom-right-radius: 0; */
   }
 }
 
-@media screen and (max-width: 1024px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 768px) {
   .custom-archive .loop-wrap {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -4332,7 +4269,7 @@ border-bottom-right-radius: 0; */
   }
 }
 
-@media (max-width: 1480px) and (min-width: 769px) {
+@media (max-width: 1480px) and (min-width: 768px) {
   .item.is-special:nth-child(6) {
     display: none;
   }
@@ -4367,6 +4304,7 @@ border-bottom-right-radius: 0; */
 
   .item.is-featured .item-excerpt {
     -webkit-line-clamp: 3;
+    line-clamp: 3;
   }
 }
 
@@ -4387,16 +4325,17 @@ border-bottom-right-radius: 0; */
   .item-excerpt {
     font-size: 1.4rem;
     -webkit-line-clamp: 3;
+    line-clamp: 3;
   }
 }
 
-@media (max-width: 1024px) and (min-width: 769px) {
+@media (max-width: 1024px) and (min-width: 768px) {
   .item.is-special:nth-child(5) {
     display: none;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
   .loop-wrap,
   .special-wrap {
@@ -4436,7 +4375,7 @@ border-bottom-right-radius: 0; */
   }
 }
 
-@media (max-width: 768px) and (min-width: 481px) {
+@media (max-width: 767px) and (min-width: 481px) {
   .item.is-loop .item-tags span {
     display: none;
   }
@@ -4592,7 +4531,7 @@ html.no-infinite-scroll .pagination {
   font-size: 1.8rem;
   line-height: 1.5;
   display: -webkit-box;
-  overflow-y: hidden;
+  overflow: hidden;
   max-width: 540px;
   margin: 0;
   margin-top: 1.5vh;
@@ -4600,10 +4539,12 @@ html.no-infinite-scroll .pagination {
   opacity: var(--opacity-two);
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
+  line-clamp: 4;
 }
 
 .item-excerpt.no-image {
   -webkit-line-clamp: 10;
+  line-clamp: 10;
 }
 
 /* Item
@@ -4640,6 +4581,7 @@ html.no-infinite-scroll .pagination {
 
 .item.is-featured.is-small .item-excerpt {
   -webkit-line-clamp: 3;
+  line-clamp: 3;
 }
 
 /* If 'special'
