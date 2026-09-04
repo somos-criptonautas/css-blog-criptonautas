@@ -32,9 +32,10 @@
   height: 100%;
   fill: currentColor;
 }
+/* 20% over the 3.4rem github box. */
 .it-foot-social a.rss {
-  width: 3.6rem;
-  height: 3.6rem;
+  width: 4.08rem;
+  height: 4.08rem;
 }
 @media screen and (max-width: 767px) {
     .it-foot-menu {width: 2.3rem;

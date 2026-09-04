@@ -44,14 +44,13 @@
                                 class="gh-head-logo">{{/is}}
                                 {{#if @site.logo}}
                                 <img class="logo-nav logo-light" src="{{@site.logo}}" alt="{{@site.title}}">
-                                {{! On a transparent header the CSS hides
-                                    .logo-light and shows .logo-dark, so when the
-                                    white-logo setting is empty this rendered
-                                    src="" - a broken image, which paints its alt
-                                    text and looks like "logo missing, title
-                                    showing". Fall back to the site logo. }}
-                                <img
-                                    class="logo-nav logo-dark{{#unless @custom.white_publication_logo_for_transparent_header}} logo-dark--inverted{{/unless}}"
+                                {{! Alternate logo for dark mode and for the
+                                    transparent header over a cover image. Set it
+                                    in Design -> Site-wide settings; falls back to
+                                    the normal logo so an empty setting never
+                                    renders src="" (a broken image showing alt
+                                    text). }}
+                                <img class="logo-nav logo-dark"
                                     src="{{#if @custom.white_publication_logo_for_transparent_header}}{{@custom.white_publication_logo_for_transparent_header}}{{else}}{{@site.logo}}{{/if}}"
                                     alt="{{@site.title}}">
                                 {{else}}

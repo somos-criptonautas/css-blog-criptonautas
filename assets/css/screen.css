@@ -1853,15 +1853,6 @@ html[data-theme="dark"] img.logo-nav.logo-light {
   display: block !important;
 }
 
-/* The .logo-dark slot exists for the white logo shown over a cover image and
-   in dark mode. No white logo is configured, so it falls back to the normal
-   (dark) logo - invisible in exactly the places the slot is for. Paint the
-   fallback white. Drops out automatically once a white logo is uploaded,
-   because the template only adds this class when the setting is empty. */
-img.logo-nav.logo-dark--inverted {
-  filter: brightness(0) invert(1);
-}
-
 .it-dark-light:hover .icon-dark svg {
   fill: #111;
 }
