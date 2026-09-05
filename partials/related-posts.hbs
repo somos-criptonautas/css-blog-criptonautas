@@ -1,36 +1,66 @@
+{{!-- Read-next, after the comments and before the footer.
+
+    Filters are built from primary_tag.slug, not from {{post.tags}}: Ghost only
+    interpolates simple paths into a filter string, and post.tags is an array of
+    tag objects, so "tags:[{{post.tags}}]" never resolved to a usable value. The
+    old first filter also carried a top-level ",featured:true" - a comma is OR in
+    NQL, so it pulled in every featured post regardless of tag.
+
+    A post with no tag falls through to the latest-posts block on its own. --}}
 {{#is "post"}}
-    {{#get "posts" include="authors" filter="tags:[{{post.tags}}]+id:-{{post.id}},featured:true" limit="6" as |next|}}
-        {{#if next}}
-            <div class="gh-read-next gh-canvas">
-                <section class="gh-pagehead">
-                    <h2 class="gh-pagehead-title">{{#if primary_tag}}{{ t "More on" }} {{primary_tag.name}}{{else}}{{ t "Read next" }}{{/if}}</h2>
-                </section>
+    {{#if post.primary_tag}}
+        {{#get "posts" include="authors" filter="tag:{{post.primary_tag.slug}}+id:-{{post.id}}" limit="6" as |next|}}
+            {{#if next}}
+                <div class="gh-read-next gh-canvas">
+                    <section class="gh-pagehead">
+                        <h2 class="gh-pagehead-title">{{ t "More on" }} {{post.primary_tag.name}}</h2>
+                    </section>
 
-                <div class="gh-topic gh-topic-grid">
-                    <div class="gh-topic-content">
-                        {{#foreach next}}
-                            {{> "loop-grid" has_large_post=false}}
-                        {{/foreach}}
+                    <div class="gh-topic gh-topic-grid">
+                        <div class="gh-topic-content">
+                            {{#foreach next}}
+                                {{> "loop-grid" has_large_post=false}}
+                            {{/foreach}}
+                        </div>
                     </div>
                 </div>
-            </div>
-        {{/if}}
-    {{/get}}
-    {{#get "posts" include="authors" filter="tags:-[{{post.tags}}]+id:-{{post.id}}" limit="6" as |next|}}
-        {{#if next}}
-            <div class="gh-read-next gh-canvas">
-                <section class="gh-pagehead">
-                    <h2 class="gh-pagehead-title">{{ t "Want more" }}</h2>
-                </section>
+            {{/if}}
+        {{/get}}
 
-                <div class="gh-topic gh-topic-grid">
-                    <div class="gh-topic-content">
-                        {{#foreach next}}
-                            {{> "loop-grid" has_large_post=false}}
-                        {{/foreach}}
+        {{#get "posts" include="authors" filter="tag:-{{post.primary_tag.slug}}+id:-{{post.id}}" limit="6" as |next|}}
+            {{#if next}}
+                <div class="gh-read-next gh-canvas">
+                    <section class="gh-pagehead">
+                        <h2 class="gh-pagehead-title">{{ t "Want more" }}</h2>
+                    </section>
+
+                    <div class="gh-topic gh-topic-grid">
+                        <div class="gh-topic-content">
+                            {{#foreach next}}
+                                {{> "loop-grid" has_large_post=false}}
+                            {{/foreach}}
+                        </div>
                     </div>
                 </div>
-            </div>
-        {{/if}}
-    {{/get}}
+            {{/if}}
+        {{/get}}
+    {{else}}
+        {{#get "posts" include="authors" filter="id:-{{post.id}}" limit="6" as |next|}}
+            {{#if next}}
+                <div class="gh-read-next gh-canvas">
+                    <section class="gh-pagehead">
+                        <h2 class="gh-pagehead-title">{{ t "Read next" }}</h2>
+                    </section>
+
+                    <div class="gh-topic gh-topic-grid">
+                        <div class="gh-topic-content">
+                            {{#foreach next}}
+                                {{> "loop-grid" has_large_post=false}}
+                            {{/foreach}}
+                        </div>
+                    </div>
+                </div>
+            {{/if}}
+        {{/get}}
+    {{/if}}
 {{/is}}

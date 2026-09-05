@@ -2843,7 +2843,7 @@ blockquote.twitter-tweet {
 /* One logical shorthand instead of two physical properties layered over the
    shared theme's own padding-top/padding-bottom. */
 .gh-main {
-  padding-block: 7rem 3rem;
+  padding-block: 5rem 3rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -2938,9 +2938,6 @@ a {
 
 .gh-site {
   min-height: auto !important;
-  /* keeps the last elements clear of the viewport edge on full-featured
-     image pages and posts */
-  padding-bottom: 1rem;
 }
 
 .gh-outer {
@@ -3106,7 +3103,6 @@ display: unset !important;
 @media screen and (min-width: 1500px) {
 
   .home-template .gh-main a,
-  .kg-bookmark-container,
   .gh-topic-grid .gh-card-link,
   .gh-post-upgrade-cta {
     opacity: 0.63;
@@ -3271,7 +3267,7 @@ html[data-theme="dark"] .gh-post-upgrade-cta a.gh-btn html[data-theme="dark"] .g
 
 .kg-bookmark-description,
 .kg-bookmark-metadata {
-  font-size: 1.5rem !important;
+  font-size: 1.25rem !important;
 }
 
 .kg-bookmark-description {
@@ -3279,8 +3275,8 @@ html[data-theme="dark"] .gh-post-upgrade-cta a.gh-btn html[data-theme="dark"] .g
 }
 
 .kg-bookmark-title {
-  font-size: 1.77rem !important;
-  padding-bottom: 1.5rem;
+  font-size: 1.45rem !important;
+  padding-bottom: 1rem;
 }
 
 .kg-bookmark-thumbnail img {
@@ -3325,18 +3321,28 @@ blockquote.kg-blockquote-alt {
 
 .kg-card .kg-bookmark-card {
   box-shadow: 0 2px 7px 0 rgba(20, 20, 43, 0.06);
-  padding-top: 2.23rem;
-  margin-bottom: 2.23rem;
+  padding-top: 1.8rem;
+  margin-bottom: 1.8rem;
 }
 
-@media screen and (min-width: 1500px) {
-  kg-bookmark-card a.kg-bookmark-container {
-    opacity: 0.63;
-  }
+/* Ghost's own cards.min.css pads the content 20px; ~20% off that, and the
+   thumbnail loses the same amount of column so the card is shorter too. */
+.kg-bookmark-content {
+  padding: 1.4rem 1.7rem;
+}
 
-  kg-bookmark-card a.kg-bookmark-container:hover {
-    opacity: 1 !important;
-  }
+/* Same hover language as the topic grid and nav: dimmed at rest, full on
+   hover, one 0.2s opacity transition - no lift, no colour change. The old
+   rule here was `kg-bookmark-card a...` with no leading dot, so it matched
+   nothing. */
+.kg-bookmark-container {
+  opacity: 0.78;
+  transition: opacity 0.2s var(--animation-base), box-shadow 0.2s var(--animation-base);
+}
+
+.kg-bookmark-container:hover {
+  opacity: 1;
+  box-shadow: 0 4px 14px 0 rgba(20, 20, 43, 0.1);
 }
 
 .kg-toggle-heading-text {

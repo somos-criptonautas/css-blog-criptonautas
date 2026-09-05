@@ -9,6 +9,15 @@ only screen and (min-resolution: 120dpi) {
             font-size: 90% !important;
           }
     }
+/* .gh-canvas reads --content-width for its main column (shared theme assets
+   default it to 720px). Wider only from the desktop breakpoint up; below that
+   the column is already capped by 100% - gap. */
+@media screen and (min-width: 992px) {
+    :root {
+        --content-width: 800px;
+    }
+}
+
 html {
     font-size: 71% !important;
   }

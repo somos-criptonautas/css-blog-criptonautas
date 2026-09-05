@@ -44,14 +44,13 @@
                                 class="gh-head-logo">{{/is}}
                                 {{#if @site.logo}}
                                 <img class="logo-nav logo-light" src="{{@site.logo}}" alt="{{@site.title}}">
-                                {{! Alternate logo for dark mode and for the
-                                    transparent header over a cover image. Set it
-                                    in Design -> Site-wide settings; falls back to
-                                    the normal logo so an empty setting never
-                                    renders src="" (a broken image showing alt
-                                    text). }}
+                                {{! Alternate logo: dark mode and the transparent
+                                    header over a cover image. Its image comes
+                                    from Design -> Site-wide settings, not from
+                                    this repo, so it resets to empty whenever the
+                                    active theme id changes. }}
                                 <img class="logo-nav logo-dark"
-                                    src="{{#if @custom.white_publication_logo_for_transparent_header}}{{@custom.white_publication_logo_for_transparent_header}}{{else}}{{@site.logo}}{{/if}}"
+                                    src="{{@custom.white_publication_logo_for_transparent_header}}"
                                     alt="{{@site.title}}">
                                 {{else}}
                                 {{@site.title}}
